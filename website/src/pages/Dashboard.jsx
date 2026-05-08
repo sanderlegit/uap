@@ -397,8 +397,9 @@ export default function Dashboard() {
         <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
           On May 8, 2026, the Pentagon released 162 files under the Presidential Unsealing and
           Reporting System for UAP Encounters — the largest single disclosure of UAP documents
-          in U.S. history. These files span 9 decades, 4 agencies, and include materials the
-          government denied existed for over 70 years. This is what they contain.
+          in U.S. history. Of these, 129 unique documents were analyzed for this explorer.
+          They span 9 decades, 4 agencies, and include materials the government denied existed
+          for over 70 years. This is what they contain.
         </p>
       </section>
 
@@ -418,7 +419,7 @@ export default function Dashboard() {
               </svg>
             </div>
             <h3 className="text-base font-bold text-slate-100 mb-1.5">Read the Documents</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">Browse all 129 declassified files by agency, date, or topic.</p>
+            <p className="text-xs text-slate-400 leading-relaxed">Browse all declassified files by agency, date, or topic.</p>
           </Link>
           <Link
             to="/graph"
@@ -460,6 +461,7 @@ export default function Dashboard() {
           </h2>
           <span className="h-px flex-1 bg-gradient-to-l from-amber-500/40 to-transparent" />
         </div>
+        <p className="text-[10px] text-slate-500 text-center mb-6">All statistics derived from analysis of the PURSUE document corpus. Click any card for methodology and sources.</p>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {briefingCards.map((card, i) => {

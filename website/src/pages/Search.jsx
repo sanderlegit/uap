@@ -112,7 +112,7 @@ export default function Search() {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search 129 declassified documents..."
+            placeholder="Search declassified documents..."
             className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-12 pr-4 py-4 text-slate-100 text-base placeholder:text-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500/50 transition-colors"
           />
           {query && (

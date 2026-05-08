@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import InfoTooltip from '../components/InfoTooltip'
 
-const DEMO_NEWS = [
+const NEWS_ITEMS = [
   {
     date: '2026-05-08',
     source: 'war.gov',
-    title: 'PURSUE Files Released: 162 Declassified UAP Documents',
-    summary: 'The Pentagon releases the largest single disclosure of UAP documents in U.S. history under the Presidential Unsealing and Reporting System for UAP Encounters.',
+    title: 'PURSUE Files Released: 162 Declassified UAP Files',
+    summary: 'The Pentagon releases 162 files — the largest single disclosure of UAP documents in U.S. history — under the Presidential Unsealing and Reporting System for UAP Encounters. 129 unique documents analyzed.',
     type: 'official',
   },
   {
@@ -91,9 +91,13 @@ export default function Pulse() {
               <span className="text-sm text-slate-400">/100</span>
               <span className="text-xs text-emerald-400 ml-auto">▲ {AWARENESS_DATA.trend}</span>
             </div>
-            <p className="text-xs text-slate-400 leading-relaxed mb-5">
+            <p className="text-xs text-slate-400 leading-relaxed mb-2">
               Composite measure of public, political, scientific, and media engagement with UAP disclosure.
               Higher scores indicate greater mainstream awareness and institutional legitimacy.
+            </p>
+            <p className="text-[10px] text-slate-500 leading-relaxed mb-5">
+              Scores are editorial estimates based on congressional records, Gallup/Pew polling, academic publication counts,
+              and media analysis. Not derived from a peer-reviewed methodology.
             </p>
 
             <div className="space-y-3">
@@ -127,7 +131,7 @@ export default function Pulse() {
         <section>
           <h2 className="text-lg font-bold text-slate-200 mb-4">Latest Developments</h2>
           <div className="space-y-3">
-            {DEMO_NEWS.map((item, i) => (
+            {NEWS_ITEMS.map((item, i) => (
               <div
                 key={i}
                 className={`bg-slate-900 border border-slate-700/50 rounded-lg p-4 border-l-2 ${TYPE_COLORS[item.type] || ''} hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all`}
@@ -144,7 +148,6 @@ export default function Pulse() {
           </div>
         </section>
 
-        {/* Future stubs */}
         <section className="mt-10">
           <div className="bg-slate-900/40 border border-dashed border-slate-700/50 rounded-lg p-6 text-center">
             <p className="text-xs text-slate-500 mb-2">Planned integrations</p>

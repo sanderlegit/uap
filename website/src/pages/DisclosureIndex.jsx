@@ -328,6 +328,7 @@ export default function DisclosureIndex() {
         <div className="bg-slate-900/60 border border-slate-700/40 rounded-lg p-4">
           <h3 className="text-sm font-semibold text-slate-300 mb-2">Methodology</h3>
           <p className="text-xs text-slate-400 leading-relaxed">{methodology}</p>
+          <p className="text-[10px] text-slate-500 leading-relaxed mt-2">Scores are editorial assessments based on public records, legislation, and official statements. Not a peer-reviewed index.</p>
           <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-500">
             {dimensions.map(d => (
               <span key={d.id}>
