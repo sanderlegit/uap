@@ -285,6 +285,10 @@ export default function DisclosureIndex() {
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
             Back to dashboard
           </Link>
+          {' '}&middot;{' '}
+          <Link to="/theories" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
+            Origin theories
+          </Link>
         </p>
       </section>
 

@@ -33,6 +33,10 @@ export default function Layout() {
               className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive ? 'bg-purple-500/20 text-purple-300' : 'text-slate-400 hover:text-slate-200'}`}>
               Disclosure Index
             </NavLink>
+            <NavLink to="/theories"
+              className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive ? 'bg-indigo-500/20 text-indigo-300' : 'text-slate-400 hover:text-slate-200'}`}>
+              Theories
+            </NavLink>
             <NavLink to="/analysis/report"
               className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive || location.pathname.startsWith('/analysis') ? 'bg-primary/20 text-primary-light' : 'text-slate-400 hover:text-slate-200'}`}>
               Analysis
@@ -55,6 +59,11 @@ export default function Layout() {
               onClick={() => setMenuOpen(false)}
               className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-purple-500/20 text-purple-300' : 'text-slate-300'}`}>
               <span className="text-base w-5 text-center">%</span>Disclosure Index
+            </NavLink>
+            <NavLink to="/theories"
+              onClick={() => setMenuOpen(false)}
+              className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-indigo-500/20 text-indigo-300' : 'text-slate-300'}`}>
+              <span className="text-base w-5 text-center">◈</span>Theories
             </NavLink>
             {['report', 'fbi', 'apollo', 'redactions', 'high_interest'].map(s => (
               <NavLink key={s} to={`/analysis/${s}`}

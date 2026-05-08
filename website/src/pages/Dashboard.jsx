@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useStats, useDocuments, useResearch, agencyClass, agencyColor, formatDate } from '../hooks/useData'
 
@@ -113,6 +113,7 @@ const navLinks = [
   { to: '/search',          label: 'Search',     icon: '⌕', desc: 'Full-text across all files' },
   { to: '/analysis/report', label: 'Analysis',   icon: '◫', desc: 'Deep dives & detailed reports' },
   { to: '/disclosure',      label: 'Disclosure', icon: '≡', desc: 'Disclosure progress index' },
+  { to: '/theories',        label: 'Theories',   icon: '◈', desc: 'Origin hypotheses & frameworks' },
 ]
 
 /* ── notable document ids ──────────────────────────────────────────── */
@@ -194,6 +195,19 @@ export default function Dashboard() {
   const research = useResearch()
   const navigate = useNavigate()
   const carouselRef = useRef(null)
+  const [theories, setTheories] = useState(null)
+
+  useEffect(() => {
+    fetch('/data/theories.json')
+      .then(r => r.json())
+      .then(setTheories)
+      .catch(() => {})
+  }, [])
+
+  const topTheories = useMemo(() => {
+    if (!theories) return []
+    return [...theories.theories].sort((a, b) => b.popularity - a.popularity).slice(0, 6)
+  }, [theories])
 
   useDashboardStyles()
 
@@ -304,16 +318,27 @@ export default function Dashboard() {
             The largest single disclosure of UAP documents in U.S. history.
           </p>
 
-          {/* disclosure index badge */}
-          <Link
-            to="/disclosure"
-            className="inline-flex items-center gap-2 mt-5 sm:mt-6 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 transition-colors group"
-          >
-            <span className="w-2 h-2 rounded-full bg-amber-500 group-hover:shadow-[0_0_8px_rgba(245,158,11,0.5)] transition-shadow" />
-            <span className="text-amber-400 text-xs sm:text-sm font-mono tracking-wider">
-              Disclosure Index: 39%
-            </span>
-          </Link>
+          {/* disclosure index + theories badges */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-5 sm:mt-6">
+            <Link
+              to="/disclosure"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 transition-colors group"
+            >
+              <span className="w-2 h-2 rounded-full bg-amber-500 group-hover:shadow-[0_0_8px_rgba(245,158,11,0.5)] transition-shadow" />
+              <span className="text-amber-400 text-xs sm:text-sm font-mono tracking-wider">
+                Disclosure Index: 39%
+              </span>
+            </Link>
+            <Link
+              to="/theories"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/5 hover:bg-indigo-500/10 transition-colors group"
+            >
+              <span className="w-2 h-2 rounded-full bg-indigo-500 group-hover:shadow-[0_0_8px_rgba(99,102,241,0.5)] transition-shadow" />
+              <span className="text-indigo-400 text-xs sm:text-sm font-mono tracking-wider">
+                11 Origin Theories
+              </span>
+            </Link>
+          </div>
 
           {/* explore button */}
           <div className="mt-8 sm:mt-10">
@@ -494,6 +519,108 @@ export default function Dashboard() {
       )}
 
       {/* ────────────────────────────────────────────────────────────────
+          ORIGIN THEORIES PREVIEW
+          ──────────────────────────────────────────────────────────────── */}
+      {theories && (
+        <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="h-px flex-1 bg-gradient-to-r from-indigo-500/30 to-transparent" />
+            <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-indigo-400/80 whitespace-nowrap">
+              Origin Theories // Competing Hypotheses
+            </h2>
+            <span className="h-px flex-1 bg-gradient-to-l from-indigo-500/30 to-transparent" />
+          </div>
+
+          {/* Gerb Framework callout */}
+          <Link
+            to="/theories"
+            className="dash-card block bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/30 border border-indigo-500/20 rounded-lg p-4 mb-4 hover:border-indigo-500/40 transition-colors group"
+            style={{ animationDelay: '100ms' }}
+          >
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-indigo-400">Featured Framework</span>
+            </div>
+            <h3 className="text-base font-bold text-slate-100 group-hover:text-indigo-200 transition-colors mb-1">
+              {theories.gerb_framework.title}
+            </h3>
+            <p className="text-xs text-slate-400 leading-relaxed line-clamp-2 mb-2">
+              {theories.gerb_framework.description}
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {theories.gerb_framework.three_layers.map((l, i) => (
+                <span key={i} className="text-[10px] font-mono text-slate-400 bg-slate-800/60 rounded px-2 py-0.5 border border-slate-700/30">
+                  {l.name}
+                </span>
+              ))}
+            </div>
+          </Link>
+
+          {/* Top theories grid */}
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 mb-4">
+            {topTheories.map((t, i) => (
+              <Link
+                key={t.id}
+                to="/theories"
+                className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-slate-600/60 transition-colors group"
+                style={{ animationDelay: `${i * 80 + 200}ms` }}
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg" style={{ color: t.color }}>{t.icon}</span>
+                  <h3 className="text-sm font-bold text-slate-200 group-hover:text-slate-100 transition-colors">{t.name}</h3>
+                </div>
+                <p className="text-[11px] text-slate-500 mb-2">{t.short}</p>
+                <div className="flex items-center gap-3">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-1 mb-0.5">
+                      <span className="text-[9px] text-slate-600 w-12">Popular</span>
+                      <div className="flex-1 h-1 rounded-full bg-slate-800 overflow-hidden">
+                        <div className="h-full rounded-full" style={{ width: `${t.popularity}%`, backgroundColor: t.color }} />
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <span className="text-[9px] text-slate-600 w-12">Science</span>
+                      <div className="flex-1 h-1 rounded-full bg-slate-800 overflow-hidden">
+                        <div className="h-full rounded-full" style={{ width: `${t.scientific_support}%`, backgroundColor: t.color, opacity: 0.6 }} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <Link to="/theories" className="text-xs text-indigo-400/60 hover:text-indigo-400 font-mono tracking-wider transition-colors">
+            VIEW ALL {theories.theories.length} THEORIES &rarr;
+          </Link>
+
+          {/* Community Sources */}
+          <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            {[theories.community_sources.uap_gerb, theories.community_sources.american_alchemy, theories.community_sources.mufon].map((src, i) => (
+              <a
+                key={i}
+                href={src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-3 hover:border-amber-500/20 transition-colors group"
+                style={{ animationDelay: `${i * 80 + 400}ms` }}
+              >
+                <div className="text-sm font-bold text-slate-200 group-hover:text-amber-300 transition-colors mb-1">
+                  {src.name}
+                </div>
+                <span className="text-[10px] text-slate-600 bg-slate-800 rounded px-1.5 py-0.5 mb-2 inline-block">{src.type}</span>
+                <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2 mt-1">{src.description}</p>
+                {src.stats_2025 && (
+                  <div className="mt-2 text-[10px] text-amber-500/70 font-mono">
+                    {src.stats_2025.total_cases?.toLocaleString()} cases
+                  </div>
+                )}
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ────────────────────────────────────────────────────────────────
           QUICK NAVIGATION
           ──────────────────────────────────────────────────────────────── */}
       <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto">
@@ -505,7 +632,7 @@ export default function Dashboard() {
           <span className="h-px flex-1 bg-gradient-to-l from-slate-700/60 to-transparent" />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
           {navLinks.map((link, i) => (
             <Link
               key={link.to}

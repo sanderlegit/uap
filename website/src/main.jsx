@@ -13,6 +13,7 @@ const GraphView = lazy(() => import('./pages/GraphView'))
 const Search = lazy(() => import('./pages/Search'))
 const Analysis = lazy(() => import('./pages/Analysis'))
 const DisclosureIndex = lazy(() => import('./pages/DisclosureIndex'))
+const Theories = lazy(() => import('./pages/Theories'))
 
 function Loading() {
   return (
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="search" element={<Search />} />
             <Route path="analysis/:section" element={<Analysis />} />
             <Route path="disclosure" element={<DisclosureIndex />} />
+            <Route path="theories" element={<Theories />} />
           </Route>
         </Routes>
       </Suspense>
