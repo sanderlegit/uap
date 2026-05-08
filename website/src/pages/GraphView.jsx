@@ -306,9 +306,10 @@ export default function GraphView() {
         </div>
       </div>
 
-      {/* Stats badge */}
-      <div className="absolute top-3 right-3 z-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2">
+      {/* Stats badge + guide */}
+      <div className="absolute top-3 right-3 z-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2 max-w-[180px]">
         <p className="text-[10px] text-slate-500 tabular-nums">{graph.nodes.length} nodes &middot; {graph.edges.length} edges</p>
+        <p className="text-[9px] text-slate-600 mt-1 leading-snug">Colors = agency. Edges = shared references or overlapping events. Click any node for details.</p>
       </div>
 
       {/* Zoom controls */}

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import InfoTooltip from '../components/InfoTooltip'
 
 const DEMO_NEWS = [
   {
@@ -75,15 +76,15 @@ export default function Pulse() {
         </p>
         <div className="mb-8 bg-amber-500/5 border border-amber-500/20 rounded-lg px-4 py-2.5 flex items-center gap-2.5">
           <span className="text-amber-500 text-sm">&#9888;</span>
-          <span className="text-xs text-amber-400/80">Demo content — live data integration planned</span>
-          <Link to="/" className="ml-auto text-xs text-slate-500 hover:text-slate-300 transition-colors">Dashboard &rarr;</Link>
+          <span className="text-xs text-amber-400/80">Editorial analysis based on publicly available data. Live feed integration planned.</span>
+          <Link to="/disclosure" className="ml-auto text-xs text-slate-500 hover:text-slate-300 transition-colors whitespace-nowrap">See also: Disclosure Index &rarr;</Link>
         </div>
 
         {/* Social Awareness Gauge */}
         <section className="mb-10">
           <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/20 border border-emerald-500/20 rounded-lg p-4 sm:p-6">
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-emerald-400">Social Awareness Index</span>
+              <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-emerald-400 inline-flex items-center">Social Awareness Index<InfoTooltip text="A composite tracking public, political, scientific, and media engagement with UAP disclosure. Based on congressional activity, media coverage, scientific publications, polling data, and international developments." /></span>
             </div>
             <div className="flex items-baseline gap-3 mb-1">
               <span className="text-4xl font-extrabold text-white tabular-nums">{AWARENESS_DATA.score}</span>

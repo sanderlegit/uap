@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
 import { Outlet, NavLink, Link, useLocation, useParams } from 'react-router-dom'
+import WelcomeBanner from './WelcomeBanner'
 
 const primaryNav = [
   { to: '/', label: 'Dashboard', icon: '◉' },
@@ -182,6 +183,7 @@ export default function Layout() {
           </nav>
         )}
       </header>
+      {location.pathname === '/' && <WelcomeBanner />}
       <Breadcrumb />
       <main className="flex-1">
         <Outlet />

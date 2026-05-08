@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import InfoTooltip from '../components/InfoTooltip'
 
 /* ---------- helpers ---------- */
 
@@ -103,7 +104,7 @@ function Gauge({ score }) {
         <span className="text-5xl font-extrabold text-white tabular-nums">
           {displayNum}%
         </span>
-        <span className="text-sm text-slate-400 mt-1 tracking-wide">Disclosure Index</span>
+        <span className="text-sm text-slate-400 mt-1 tracking-wide inline-flex items-center">Disclosure Index<InfoTooltip text="A weighted composite of 8 dimensions measuring how much the U.S. government has officially revealed about UAP. 100% would mean full, transparent disclosure across all dimensions." /></span>
       </div>
     </div>
   )
@@ -147,8 +148,9 @@ function DimensionCard({ dim }) {
           <span className="text-[11px] text-slate-500">
             {achieved}/{total} milestones achieved
           </span>
-          <span className="text-[11px] text-slate-500">
+          <span className="text-[11px] text-slate-500 inline-flex items-center">
             Weight: {(dim.weight * 100).toFixed(0)}%
+            <InfoTooltip text="How much this dimension contributes to the overall Disclosure Index score. Higher weight means this dimension has more influence on the composite number." />
           </span>
         </div>
       </button>
@@ -290,6 +292,10 @@ export default function DisclosureIndex() {
           Last updated {last_updated} &middot;{' '}
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
             Back to dashboard
+          </Link>
+          {' '}&middot;{' '}
+          <Link to="/pulse" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
+            Pulse (public awareness)
           </Link>
           {' '}&middot;{' '}
           <Link to="/theories" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
