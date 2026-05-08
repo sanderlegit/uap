@@ -2,6 +2,17 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { useSearch, agencyClass, formatDate } from '../hooks/useData'
 
+function useNarratives() {
+  const [data, setData] = useState(null)
+  useEffect(() => {
+    fetch('/data/doc_narratives.json')
+      .then(r => r.json())
+      .then(setData)
+      .catch(() => {})
+  }, [])
+  return data
+}
+
 const agencies = ['Department of War', 'FBI', 'NASA', 'Department of State']
 const agencyLabels = { 'Department of War': 'DoW', 'FBI': 'FBI', 'NASA': 'NASA', 'Department of State': 'DoS' }
 const decades = ['1940s', '1950s', '1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s', 'Unknown']
@@ -34,6 +45,7 @@ function getSnippet(text, query) {
 
 export default function Search() {
   const { ready, search } = useSearch()
+  const narratives = useNarratives()
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [activeAgencies, setActiveAgencies] = useState(new Set())
@@ -204,8 +216,11 @@ export default function Search() {
                           <span className="text-slate-500">{r.location}</span>
                         )}
                       </div>
+                      {narratives?.[String(r.id)]?.hook && (
+                        <p className="text-xs text-slate-300 leading-relaxed mb-1.5">{narratives[String(r.id)].hook}</p>
+                      )}
                       {snippet && (
-                        <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">
+                        <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
                           {snippet.before}
                           <mark className="bg-amber-500/30 text-amber-200">{snippet.match}</mark>
                           {snippet.after}

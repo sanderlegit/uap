@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import cytoscape from 'cytoscape'
 import { useGraph, agencyColor, agencyClass } from '../hooks/useData'
 
+const GRAPH_DECADES = ['1940s', '1950s', '1960s', '1970s', '1980s', '2020s']
+
 const AGENCIES = [
   { key: 'Department of War', label: 'Dept. of War', color: '#3b82f6' },
   { key: 'FBI', label: 'FBI', color: '#ef4444' },
@@ -28,6 +30,15 @@ export default function GraphView() {
   const [selected, setSelected] = useState(null)
   const [search, setSearch] = useState('')
   const [hiddenAgencies, setHiddenAgencies] = useState(new Set())
+  const [activeDecade, setActiveDecade] = useState(null)
+  const [narratives, setNarratives] = useState(null)
+
+  useEffect(() => {
+    fetch('/data/doc_narratives.json')
+      .then(r => r.json())
+      .then(setNarratives)
+      .catch(() => {})
+  }, [])
 
   const handleFit = useCallback(() => {
     if (cyRef.current) cyRef.current.animate({ fit: { padding: 40 } }, { duration: 300 })
@@ -58,19 +69,22 @@ export default function GraphView() {
     })
   }, [])
 
+
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
     cy.batch(() => {
       cy.nodes().forEach(n => {
-        n.style('display', hiddenAgencies.has(n.data('agency')) ? 'none' : 'element')
+        const agencyHidden = hiddenAgencies.has(n.data('agency'))
+        const decadeHidden = activeDecade && n.data('decade') !== activeDecade
+        n.style('display', (agencyHidden || decadeHidden) ? 'none' : 'element')
       })
       cy.edges().forEach(e => {
         const hidden = e.source().style('display') === 'none' || e.target().style('display') === 'none'
         e.style('display', hidden ? 'none' : 'element')
       })
     })
-  }, [hiddenAgencies])
+  }, [hiddenAgencies, activeDecade])
 
   useEffect(() => {
     const cy = cyRef.current
@@ -304,6 +318,29 @@ export default function GraphView() {
             )
           })}
         </div>
+        <div className="hidden sm:flex gap-1">
+          {GRAPH_DECADES.map(d => (
+            <button
+              key={d}
+              onClick={() => setActiveDecade(activeDecade === d ? null : d)}
+              className={`px-2 py-1 rounded-md text-[10px] font-medium backdrop-blur border transition-all cursor-pointer ${
+                activeDecade === d
+                  ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
+                  : 'bg-slate-900/60 border-slate-700/30 text-slate-500 hover:text-slate-300'
+              }`}
+            >
+              {d}
+            </button>
+          ))}
+          {activeDecade && (
+            <button
+              onClick={() => setActiveDecade(null)}
+              className="px-2 py-1 rounded-md text-[10px] text-slate-500 hover:text-slate-300 cursor-pointer"
+            >
+              All
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Stats badge + guide */}
@@ -322,21 +359,27 @@ export default function GraphView() {
         <button onClick={handleZoomOut} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom out" aria-label="Zoom out">&minus;</button>
       </div>
 
-      {/* Selected node panel */}
+      {/* Selected node preview panel */}
       {selected && (
-        <div className="absolute bottom-6 left-3 z-10 bg-slate-900/95 backdrop-blur border border-slate-700/50 rounded-lg p-4 max-w-[300px]">
-          <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-2 line-clamp-3">{selected.label}</h3>
+        <div className="absolute bottom-6 left-3 z-10 bg-slate-900/95 backdrop-blur border border-slate-700/50 rounded-lg p-4 max-w-[340px] shadow-xl">
+          <div className="flex items-start justify-between gap-2 mb-2">
+            <h3 className="text-sm font-semibold text-slate-100 leading-snug line-clamp-3">{selected.label}</h3>
+            <button onClick={() => setSelected(null)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-lg leading-none flex-shrink-0">&times;</button>
+          </div>
           <div className="flex flex-wrap items-center gap-2 text-xs mb-2">
             {selected.agency && <span className={`agency-badge ${agencyClass(selected.agency)}`}>{selected.agency}</span>}
             {selected.decade && <span className="text-slate-500">{selected.decade}</span>}
+            <span className="text-slate-500">{selected.connections} connections</span>
           </div>
-          <p className="text-xs text-slate-400 mb-3">
-            {selected.connections} connection{selected.connections !== 1 ? 's' : ''} to other documents
-          </p>
-          <div className="flex items-center gap-3">
-            <Link to={`/documents/${selected.id}`} className="text-xs text-blue-400 hover:text-blue-300 font-medium">View Document &rarr;</Link>
-            <button onClick={() => setSelected(null)} className="text-xs text-slate-500 hover:text-slate-300 cursor-pointer">Dismiss</button>
-          </div>
+          {narratives?.[selected.id]?.hook && (
+            <p className="text-xs text-slate-300 leading-relaxed mb-3">{narratives[selected.id].hook}</p>
+          )}
+          <Link
+            to={`/documents/${selected.id}`}
+            className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 font-medium"
+          >
+            Read Full Document &rarr;
+          </Link>
         </div>
       )}
     </div>
