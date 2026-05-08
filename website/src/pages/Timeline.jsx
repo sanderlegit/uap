@@ -11,6 +11,16 @@ const AGENCIES = [
 
 const DECADES = ['1940s', '1950s', '1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s']
 
+const YEAR_CONTEXT = {
+  '1944': 'WWII "foo fighters" reported',
+  '1947': 'Roswell incident; first modern UFO reports',
+  '1952': 'Washington D.C. UFO wave',
+  '1969': 'Apollo 11 crew observations; Project Blue Book ends',
+  '2017': 'NYT reveals Pentagon UFO program',
+  '2024': 'AARO expands; UAPDA legislation',
+  '2026': 'PURSUE files released',
+}
+
 const EVENT_ICONS = {
   'roswell': '🛸',
   'foo fighter': '✦',
@@ -179,11 +189,17 @@ export default function Timeline() {
                     className="flex-shrink-0 pr-2"
                     style={{ width: colWidth }}
                   >
+                    {/* Year context annotation */}
+                    {YEAR_CONTEXT[group.year] && (
+                      <div className="mb-1 z-10 relative">
+                        <span className="text-[9px] text-amber-500/70 bg-slate-950 pr-1 italic">{YEAR_CONTEXT[group.year]}</span>
+                      </div>
+                    )}
                     {/* Year marker */}
                     <div className="relative flex items-center gap-2 mb-4 z-10">
-                      <div className="w-2.5 h-2.5 rounded-full bg-slate-500 border-2 border-slate-950 shrink-0" />
+                      <div className={`w-2.5 h-2.5 rounded-full border-2 border-slate-950 shrink-0 ${group.docs.length >= 5 ? 'bg-amber-500' : 'bg-slate-500'}`} />
                       <span className="text-xs font-bold text-slate-200 bg-slate-950 pr-1">{group.year}</span>
-                      <span className="text-[10px] text-slate-500 bg-slate-950 pr-1 tabular-nums">{group.docs.length}</span>
+                      <span className={`text-[10px] bg-slate-950 pr-1 tabular-nums ${group.docs.length >= 5 ? 'text-amber-400 font-bold' : 'text-slate-500'}`}>{group.docs.length}</span>
                     </div>
 
                     {/* Document chips */}
