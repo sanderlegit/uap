@@ -14,6 +14,9 @@ const Search = lazy(() => import('./pages/Search'))
 const Analysis = lazy(() => import('./pages/Analysis'))
 const DisclosureIndex = lazy(() => import('./pages/DisclosureIndex'))
 const Theories = lazy(() => import('./pages/Theories'))
+const Cases = lazy(() => import('./pages/Cases'))
+const International = lazy(() => import('./pages/International'))
+const Pulse = lazy(() => import('./pages/Pulse'))
 
 function Loading() {
   return (
@@ -39,6 +42,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="analysis/:section" element={<Analysis />} />
             <Route path="disclosure" element={<DisclosureIndex />} />
             <Route path="theories" element={<Theories />} />
+            <Route path="cases" element={<Cases />} />
+            <Route path="international" element={<International />} />
+            <Route path="pulse" element={<Pulse />} />
           </Route>
         </Routes>
       </Suspense>

@@ -1,0 +1,395 @@
+{
+  "last_updated": "2026-05-08",
+  "overview": "The 20 highest-validity UAP encounters in history, selected for military/government involvement, multi-sensor corroboration, physical evidence, and multiple credible witnesses.",
+  "categories": {
+    "military_encounter": { "label": "Military Encounter", "color": "#3b82f6", "icon": "⬡" },
+    "retrieval": { "label": "Retrieval", "color": "#ef4444", "icon": "◆" },
+    "mass_sighting": { "label": "Mass Sighting", "color": "#f59e0b", "icon": "◎" },
+    "close_encounter": { "label": "Close Encounter", "color": "#8b5cf6", "icon": "◈" },
+    "historical_military": { "label": "Historical Military", "color": "#6b7280", "icon": "◫" },
+    "space_encounter": { "label": "Space Encounter", "color": "#06b6d4", "icon": "☽" },
+    "government_disclosure": { "label": "Government Disclosure", "color": "#10b981", "icon": "≡" }
+  },
+  "cases": [
+    {
+      "id": "nimitz_2004",
+      "name": "USS Nimitz / Tic Tac Encounter",
+      "year": 2004,
+      "date": "2004-11-14",
+      "location": "Pacific Ocean, off San Diego, CA",
+      "coordinates": { "lat": 31.5, "lng": -117.5 },
+      "category": "military_encounter",
+      "summary": "Commander David Fravor and Lt. Commander Alex Dietrich intercepted a Tic Tac-shaped object hovering over a churning ocean disturbance. The object demonstrated instantaneous acceleration with no visible propulsion and appeared at Fravor's CAP point 60 miles away within seconds.",
+      "detail": "During a routine training exercise, the USS Princeton's AN/SPY-1B radar tracked anomalous aerial vehicles for two weeks. On November 14, two F/A-18F Super Hornets from VFA-41 were vectored to intercept. The Tic Tac-shaped object was ~40 feet long, white, with no wings, windows, or exhaust. When Fravor descended to engage, the object mirrored his movements then accelerated from a hover to beyond visual range in less than a second. Weapons Systems Officer Chad Underwood captured the FLIR1 infrared video on a subsequent flight. The encounter was investigated by AATIP and the video was officially released by the Pentagon in April 2020.",
+      "validity": "Multiple independent sensor systems (AN/SPY-1B radar, E-2C Hawkeye, F/A-18 FLIR), four Navy aviators as eyewitnesses, officially released Pentagon video, confirmed by the Department of Defense.",
+      "evidence_types": ["Radar", "FLIR Video", "Military Witnesses", "Government Acknowledgment"],
+      "key_figures": ["CDR David Fravor", "LCDR Alex Dietrich", "Chad Underwood", "Kevin Day", "Luis Elizondo"],
+      "sources": [
+        { "title": "Pentagon Statement on Navy Videos", "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/" },
+        { "title": "NY Times: Pentagon UFO Program", "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html" }
+      ],
+      "thumbnail": "Grainy black-and-white FLIR1 infrared video still of the white oblong Tic Tac object with HUD targeting overlay"
+    },
+    {
+      "id": "gimbal_2015",
+      "name": "Gimbal / GoFast Encounters",
+      "year": 2015,
+      "date": "2015-01-21",
+      "location": "Atlantic Ocean, off Jacksonville, FL",
+      "coordinates": { "lat": 30.0, "lng": -79.0 },
+      "category": "military_encounter",
+      "summary": "Navy pilots from VFA-11 aboard the USS Theodore Roosevelt encountered UAPs almost daily from 2014-2015. The Gimbal video shows a rotating, saucer-like object flying against 120-knot winds. The GoFast video captured a small, fast-moving object skimming the ocean.",
+      "detail": "The encounters persisted for months during East Coast training exercises. Pilots reported near-midair collisions with objects that had no visible propulsion. The Gimbal video shows an infrared-bright object rotating on its axis while maintaining course — the audio captures a pilot exclaiming 'There's a whole fleet of them.' Lt. Ryan Graves testified before Congress in 2023, describing the objects as superior to any known technology. The encounters prompted the Navy to formally change its UAP reporting procedures.",
+      "validity": "Two officially released Pentagon infrared videos. Multiple F/A-18F crews reported encounters over months. Radar, IR, and visual corroboration. Congressional testimony under oath.",
+      "evidence_types": ["FLIR Video", "Radar", "Military Witnesses", "Congressional Testimony"],
+      "key_figures": ["Lt. Ryan Graves", "Lt. Danny Accoin", "Sen. Marco Rubio"],
+      "sources": [
+        { "title": "Pentagon Video Release", "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/" },
+        { "title": "NY Times: Navy Pilots Report UFOs", "url": "https://www.nytimes.com/2019/05/26/us/politics/ufo-sightings-navy-pilots.html" }
+      ],
+      "thumbnail": "Gimbal infrared video frame showing dark rotating disc shape with heat glare and HUD overlay"
+    },
+    {
+      "id": "rendlesham_1980",
+      "name": "Rendlesham Forest Incident",
+      "year": 1980,
+      "date": "1980-12-26",
+      "location": "Rendlesham Forest, Suffolk, England",
+      "coordinates": { "lat": 52.0835, "lng": 1.4347 },
+      "category": "military_encounter",
+      "summary": "Over two nights, USAF personnel observed and approached a luminous triangular craft in the forest. Deputy Base Commander Lt. Col. Charles Halt recorded observations in real-time while radiation readings at the landing site measured 10x above background.",
+      "detail": "On Night 1 (Dec 26), SSgt Jim Penniston and A1C John Burroughs approached a triangular craft with hieroglyphic-like symbols on its surface. Penniston claims to have touched it. On Night 2 (Dec 28), Lt. Col. Halt led a team into the forest, recording his observations on micro-cassette tape. The team measured radiation at three triangular ground impressions left by the craft, with readings 10x background. Tree branches were broken at height, and bark was scorched. Halt filed an official memo to the UK Ministry of Defence. The UK MoD files were later declassified.",
+      "validity": "Multiple USAF witnesses across two nights including a Deputy Base Commander. Official memo to UK MoD. Real-time audio recording. Measured radiation readings. Physical ground traces. Declassified UK MoD files.",
+      "evidence_types": ["Physical Traces", "Radiation Readings", "Audio Recording", "Military Witnesses", "Government Documents"],
+      "key_figures": ["Lt. Col. Charles Halt", "SSgt Jim Penniston", "A1C John Burroughs", "Nick Pope"],
+      "sources": [
+        { "title": "UK MoD Rendlesham Files", "url": "https://www.gov.uk/government/publications/rendlesham-forest-incident" },
+        { "title": "Black Vault: Rendlesham Files", "url": "https://www.theblackvault.com/documentarchive/rendlesham-forest-incident-uk-ministry-of-defence-files/" }
+      ],
+      "thumbnail": "Dark forest scene with pine trees silhouetted against triangular lights; Lt. Col. Halt's official memo on USAF letterhead"
+    },
+    {
+      "id": "roswell_1947",
+      "name": "Roswell Incident",
+      "year": 1947,
+      "date": "1947-07-08",
+      "location": "Roswell, New Mexico, USA",
+      "coordinates": { "lat": 33.9425, "lng": -105.1725 },
+      "category": "retrieval",
+      "summary": "The Roswell Army Air Field issued a press release stating they recovered a 'flying disc,' retracted hours later as a weather balloon. Major Jesse Marcel Sr., the intelligence officer who handled the debris, went public in 1978 stating the balloon explanation was a cover story.",
+      "detail": "Ranch foreman Mac Brazel found unusual debris with memory-metal properties scattered across a large field. The RAAF press release confirming a 'flying disc' is a verified historical document. Over 600 witnesses were later interviewed. The USAF conducted two official investigations — the 1994 report admitted the 'weather balloon' was actually a Project Mogul spy balloon, the 1997 report addressed body reports. A GAO investigation found key records from Roswell AAF had been destroyed. Multiple military personnel gave deathbed testimonies corroborating a non-conventional explanation.",
+      "validity": "Original RAAF press release. 600+ witnesses interviewed. USAF admitted cover story (Mogul balloon). GAO found destroyed records. Multiple deathbed testimonies from military personnel.",
+      "evidence_types": ["Government Press Release", "Physical Debris", "Military Witnesses", "Destroyed Records", "Deathbed Testimonies"],
+      "key_figures": ["Maj. Jesse Marcel Sr.", "Col. William Blanchard", "Gen. Roger Ramey", "Mac Brazel", "Stanton Friedman"],
+      "sources": [
+        { "title": "National Archives: USAF UFO Records", "url": "https://www.archives.gov/research/military/air-force/ufos" },
+        { "title": "GAO Report NSIAD-95-187", "url": "https://www.gao.gov/products/gao-nsiad-95-187" }
+      ],
+      "thumbnail": "Roswell Daily Record front page: 'RAAF Captures Flying Saucer On Ranch in Roswell Region' (July 8, 1947)"
+    },
+    {
+      "id": "tehran_1976",
+      "name": "Tehran UFO Incident",
+      "year": 1976,
+      "date": "1976-09-19",
+      "location": "Tehran, Iran",
+      "coordinates": { "lat": 35.6892, "lng": 51.389 },
+      "category": "military_encounter",
+      "summary": "Two Iranian Air Force F-4 Phantoms scrambled to intercept a brilliant object over Tehran. Both aircraft experienced total instrument failure and weapons system shutdowns when approaching. The DIA rated the case as meeting criteria for a valid study of the UFO phenomenon.",
+      "detail": "The first F-4 experienced total instrument failure and communication loss upon approach, restoring only when turning away. The second F-4, piloted by Lt. Parviz Jafari, achieved radar lock — the object released a smaller luminous object that descended rapidly toward the jet. When Jafari attempted to fire an AIM-9 missile, his weapons control panel went dead. A third luminous object was seen descending to the ground. The encounter was documented in a U.S. Defense Intelligence Agency report that gave it the highest merit rating. Hundreds of civilian witnesses also reported the object.",
+      "validity": "DIA report with highest merit rating. Dual F-4 intercepts with identical EM interference. Ground and aircraft radar confirmation. Instrument failures corroborated by ground control.",
+      "evidence_types": ["Radar", "EM Interference", "Military Witnesses", "DIA Report", "Instrument Failure"],
+      "key_figures": ["Gen. Parviz Jafari", "Lt. Jalal Damirian", "Col. Olin Mooy"],
+      "sources": [
+        { "title": "DIA Report on Tehran Incident", "url": "https://documents.theblackvault.com/documents/dia/tehran1976.pdf" },
+        { "title": "NSA Declassified Documents", "url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/ufo/routing_and_record_sheet.pdf" }
+      ],
+      "thumbnail": "Iranian Air Force F-4 Phantom II against a night sky; the DIA evaluation document with high merit rating"
+    },
+    {
+      "id": "belgium_wave_1989",
+      "name": "Belgian UFO Wave",
+      "year": 1989,
+      "date": "1989-11-29",
+      "location": "Belgium (nationwide)",
+      "coordinates": { "lat": 50.6333, "lng": 4.3667 },
+      "category": "mass_sighting",
+      "summary": "Over five months, 13,500 witnesses reported large, silent triangular craft. On March 30, 1990, Belgian Air Force F-16s scrambled and achieved radar lock on targets showing 40G+ maneuvers — accelerating from 280 km/h to 1,800 km/h in seconds.",
+      "detail": "The Belgian Air Force took the unprecedented step of holding a public press conference presenting the radar data. Major General Wilfried De Brouwer, Chief of Air Force Operations, publicly acknowledged the objects could not be explained. F-16 radar lock data showed objects performing maneuvers far beyond any known aircraft capability — diving from 3,000m to 1,000m in one second. NATO radar also tracked the objects. 2,600 witness reports were formally investigated by SOBEPS, the Belgian civilian scientific study group.",
+      "validity": "F-16 radar lock data officially released. 13,500+ witnesses. Belgian Air Force public press conference with radar data. NATO radar tracking. Police and military witnesses. Unprecedented government transparency.",
+      "evidence_types": ["Radar Lock Data", "F-16 Intercept", "Mass Witnesses", "Government Press Conference", "NATO Radar"],
+      "key_figures": ["MGen Wilfried De Brouwer", "Col. André Amond", "Prof. Auguste Meessen"],
+      "sources": [
+        { "title": "Belgian Air Force and UFO", "url": "https://www.ufoevidence.org/cases/case435.htm" },
+        { "title": "NICAP: Belgian Wave", "url": "https://www.nicap.org/belgium.htm" }
+      ],
+      "thumbnail": "Belgian Air Force F-16 HUD radar lock data printouts showing extreme speed and altitude changes"
+    },
+    {
+      "id": "phoenix_lights_1997",
+      "name": "Phoenix Lights",
+      "year": 1997,
+      "date": "1997-03-13",
+      "location": "Phoenix, Arizona, USA",
+      "coordinates": { "lat": 33.4484, "lng": -112.074 },
+      "category": "mass_sighting",
+      "summary": "Thousands of people across a 300-mile stretch of Arizona witnessed a massive V-shaped formation of lights pass silently overhead — possibly over a mile wide, blocking out the stars. Arizona Governor Fife Symington III, a former USAF pilot, later admitted he saw it too and found it inexplicable.",
+      "detail": "Two distinct events occurred: an enormous V-shaped craft traveled from north to south across the state (~8:00 PM), and stationary lights appeared over the Sierra Estrella mountains (~10:00 PM). The military later attributed the 10 PM lights to National Guard flares — but this does not explain the 8 PM V-formation reported by thousands as a solid, mile-wide craft. Governor Symington initially mocked the reports, then in 2007 admitted he personally witnessed the V-formation and was deeply shaken. Witnesses included police officers, pilots, and military veterans.",
+      "validity": "Thousands of independent witnesses across the state. Governor testimony. Multiple independent video recordings. Police and pilot witnesses. The 8 PM formation remains unexplained.",
+      "evidence_types": ["Mass Witnesses", "Video Footage", "Governor Testimony", "Police Witnesses", "Pilot Witnesses"],
+      "key_figures": ["Gov. Fife Symington III", "Dr. Lynne Kitei", "Frances Barwood"],
+      "sources": [
+        { "title": "AZ Central: Phoenix Lights 20th Anniversary", "url": "https://www.azcentral.com/story/news/local/phoenix/2017/03/13/phoenix-lights-20th-anniversary/98781106/" },
+        { "title": "FBI Vault: Phoenix Lights", "url": "https://vault.fbi.gov/Phoenix%20Lights" }
+      ],
+      "thumbnail": "Amateur video still showing V-formation of amber-orange lights hovering over the Phoenix skyline at night"
+    },
+    {
+      "id": "ariel_school_1994",
+      "name": "Ariel School Encounter",
+      "year": 1994,
+      "date": "1994-09-16",
+      "location": "Ruwa, Zimbabwe",
+      "coordinates": { "lat": -17.85, "lng": 31.2333 },
+      "category": "close_encounter",
+      "summary": "Sixty-two schoolchildren reported craft landing near their schoolyard and small beings with large eyes communicating telepathic messages. Harvard psychiatrist Dr. John Mack interviewed each child separately — their accounts and drawings were remarkably consistent.",
+      "detail": "The children (ages 5-12) had no prior exposure to UFO media in pre-internet rural Zimbabwe. Dr. John Mack (Harvard Medical School, Pulitzer Prize winner) and BBC journalist Tim Leach conducted independent interviews within weeks. The children described silver craft and beings with large dark eyes. Twenty years later, filmmaker Randall Nickerson re-interviewed the witnesses as adults for the documentary 'Ariel Phenomenon' (2022) — all maintained their accounts. The event is one of the strongest cases due to the number of independent child witnesses with no incentive for fabrication.",
+      "validity": "62 independent child witnesses with no prior UFO exposure. Harvard psychiatric evaluation. Remarkably consistent drawings. Long-term consistency maintained into adulthood. BBC investigation.",
+      "evidence_types": ["Child Witnesses", "Psychiatric Evaluation", "Consistent Drawings", "Long-term Consistency", "Documentary Follow-up"],
+      "key_figures": ["Dr. John Mack", "Cynthia Hind", "Tim Leach", "Randall Nickerson"],
+      "sources": [
+        { "title": "Ariel Phenomenon Documentary", "url": "https://www.arielphenomenon.com/" },
+        { "title": "John E. Mack Institute", "url": "https://johnemackinstitute.org/passport-to-the-cosmos/ariel-school-sighting/" }
+      ],
+      "thumbnail": "Collection of children's original crayon drawings showing silver disc-shaped craft and figure with large dark eyes"
+    },
+    {
+      "id": "foo_fighters_1944",
+      "name": "Foo Fighters (WWII)",
+      "year": 1944,
+      "date": "1944-11-23",
+      "location": "European & Pacific Theaters",
+      "coordinates": { "lat": 48.5, "lng": 7.5 },
+      "category": "historical_military",
+      "summary": "Allied aircrews across both theaters reported glowing spheres that paced their aircraft, performed impossible maneuvers, and could not be evaded or shot down. Both Allied and Axis forces independently reported the same phenomena, each suspecting the other's secret weapons.",
+      "detail": "First formally reported on November 23, 1944 by a Bristol Beaufighter crew of the 415th Night Fighter Squadron over the Rhine Valley. The objects — dubbed 'foo fighters' by radar observer Donald Meiers — appeared as glowing red, orange, or white balls of light. Gen. Jimmy Doolittle ordered an investigation. Both sides ruled out each other's secret weapons. The phenomenon was later referenced in the CIA's Robertson Panel proceedings (1953). The cross-theater corroboration from independent, geographically separated war zones is particularly compelling.",
+      "validity": "Hundreds of reports from multiple air forces across two theaters. Official military intelligence reports. Both Axis and Allied forces reported identical phenomena independently. Wartime news coverage.",
+      "evidence_types": ["Military Intelligence Reports", "Multiple Aircrews", "Squadron Records", "Cross-Theater Corroboration"],
+      "key_figures": ["Lt. Edward Schlueter", "Donald Meiers", "Gen. Jimmy Doolittle"],
+      "sources": [
+        { "title": "National Archives: WWII Records", "url": "https://www.archives.gov/research/military/ww2" },
+        { "title": "Smithsonian: The Mystery of the Foo Fighters", "url": "https://www.smithsonianmag.com/history/the-world-war-ii-mystery-of-the-foo-fighters-50883669/" }
+      ],
+      "thumbnail": "WWII-era B-17 bomber formation with small bright orbs of light visible nearby; wartime newspaper clippings"
+    },
+    {
+      "id": "washington_dc_1952",
+      "name": "1952 Washington D.C. UFO Incident",
+      "year": 1952,
+      "date": "1952-07-19",
+      "location": "Washington, D.C., USA",
+      "coordinates": { "lat": 38.8951, "lng": -77.0364 },
+      "category": "mass_sighting",
+      "summary": "Over two weekends, multiple radar stations tracked objects over the White House and Capitol at speeds up to 7,000 mph. F-94 interceptors were scrambled but couldn't catch them. The Pentagon held its largest press conference since WWII.",
+      "detail": "Three independent radar systems at Washington National Airport, Andrews AFB, and Bolling AFB simultaneously tracked the objects. Airline pilots and control tower operators visually confirmed them. Capital Airlines Captain S.C. Pierman observed six bright lights during the event. F-94 interceptors were scrambled and pilots visually confirmed objects. USAF Major General John Samford led the Pentagon press conference. The incidents directly led to the CIA-sponsored Robertson Panel (1953) and intensified Project Blue Book investigations.",
+      "validity": "Multiple independent radar systems with simultaneous tracking. Interceptor scramble with visual confirmation. Air traffic control witnesses. Largest Pentagon press conference since WWII. Front-page news nationwide.",
+      "evidence_types": ["Multiple Radar Systems", "Interceptor Scramble", "Visual Confirmation", "Air Traffic Control", "Government Press Conference"],
+      "key_figures": ["Edward Nugent", "Harry Barnes", "MGen John Samford", "Capt. S.C. Pierman"],
+      "sources": [
+        { "title": "FBI Vault: UFO Files", "url": "https://vault.fbi.gov/UFO/UFO%20Part%201%20of%2016" },
+        { "title": "Washington Post Retropolis", "url": "https://www.washingtonpost.com/news/retropolis/wp/2017/07/21/ufo-buzzes-washington-the-1952-flap-that-panicked-the-nation/" }
+      ],
+      "thumbnail": "Bright lights over the U.S. Capitol dome at night; newspaper headlines 'Saucers Swarm Over Capital'"
+    },
+    {
+      "id": "jal_1628_1986",
+      "name": "Japan Airlines Flight 1628",
+      "year": 1986,
+      "date": "1986-11-17",
+      "location": "Airspace over Alaska, near Fairbanks",
+      "coordinates": { "lat": 64.8, "lng": -147.7 },
+      "category": "military_encounter",
+      "summary": "Captain Kenju Terauchi's JAL Boeing 747 crew encountered an enormous craft — estimated the size of two aircraft carriers — that paced them for 50 minutes. FAA Division Chief John Callahan preserved the radar data after CIA officials ordered it destroyed.",
+      "detail": "Three professional flight crew members witnessed the objects. The primary craft was walnut-shaped with glowing panels. FAA radar intermittently confirmed unknown returns. After the incident, CIA officials met with the FAA and told Callahan the event 'never happened,' ordering all materials destroyed. Callahan retained his copies and went public at the National Press Club in 2001. This case is notable both for the quality of the encounter evidence and the documented government suppression attempt.",
+      "validity": "Three professional crew witnesses. FAA radar data (preserved despite destruction order). Air traffic controller recordings. Documented CIA suppression attempt. National Press Club disclosure.",
+      "evidence_types": ["Radar Data", "Crew Witnesses", "FAA Investigation", "Preserved Evidence", "Government Suppression Documented"],
+      "key_figures": ["Capt. Kenju Terauchi", "John Callahan", "Co-pilot Takanori Tamefuji"],
+      "sources": [
+        { "title": "Black Vault: JAL Flight 1628", "url": "https://www.theblackvault.com/documentarchive/japan-air-lines-jal-flight-1628-november-17-1986/" },
+        { "title": "NICAP: JAL 1628", "url": "https://www.nicap.org/jal1628.htm" }
+      ],
+      "thumbnail": "Captain Terauchi's sketch of the enormous walnut-shaped object dwarfing his Boeing 747"
+    },
+    {
+      "id": "varginha_1996",
+      "name": "Varginha Incident",
+      "year": 1996,
+      "date": "1996-01-20",
+      "location": "Varginha, Minas Gerais, Brazil",
+      "coordinates": { "lat": -21.5514, "lng": -45.4361 },
+      "category": "retrieval",
+      "summary": "Multiple witnesses in Varginha reported encountering strange humanoid creatures. Brazilian military reportedly captured at least two beings. Military policeman Marco Eli Chereze, who allegedly handled a creature, died weeks later of a mysterious infection.",
+      "detail": "Three young women encountered a being with large red eyes, brown oily skin, and strong ammonia smell crouching by a wall in broad daylight. Brazilian Army personnel and equipment were seen throughout the area conducting operations. Numerous witnesses reported coordinated military activity. Researcher James Fox documented the case extensively in 'Moment of Contact' (2022). Colonel Olimpio Wanderley Santos later confirmed a military operation occurred. The city of Varginha acknowledges the event as part of its civic identity, with alien statues erected around the city.",
+      "validity": "Multiple independent witness groups across the city. Confirmed military activity. Suspicious death of military policeman. Military personnel later confirmed operations. Extensive researcher investigation. Congressional interest in Brazil.",
+      "evidence_types": ["Civilian Witnesses", "Military Activity", "Suspicious Death", "Military Confirmation", "Documentary"],
+      "key_figures": ["Liliane & Valquiria Silva", "Marco Eli Chereze", "Col. Olimpio W. Santos", "James Fox"],
+      "sources": [
+        { "title": "Moment of Contact (Documentary)", "url": "https://www.momentofcontactfilm.com/" },
+        { "title": "Black Vault: Varginha", "url": "https://www.theblackvault.com/documentarchive/varginha-brazil-ufo-case/" }
+      ],
+      "thumbnail": "The Varginha alien statues in public spaces; the street corner where the three women encountered the being"
+    },
+    {
+      "id": "stephenville_2008",
+      "name": "Stephenville Lights",
+      "year": 2008,
+      "date": "2008-01-08",
+      "location": "Stephenville, Texas, USA",
+      "coordinates": { "lat": 32.2207, "lng": -98.2023 },
+      "category": "mass_sighting",
+      "summary": "Dozens of credible witnesses — including a pilot, police chief, and business owners — reported a mile-long silent object. FAA radar data obtained via FOIA confirmed the object and showed it heading toward the President's Crawford ranch.",
+      "detail": "MUFON conducted one of its most thorough investigations, with radar analyst Glen Schulze and researcher Robert Powell analyzing FAA data obtained through FOIA. The data confirmed anomalous radar returns exactly where witnesses reported them. The USAF initially denied any aircraft in the area, then reversed and admitted 10 F-16s were on training missions. The radar track showed the unknown object heading toward restricted airspace over President Bush's Western White House in Crawford, Texas.",
+      "validity": "FAA radar data confirmed via FOIA. Multiple credible witnesses (pilot, constable, business owners). USAF initially denied then confirmed military jets. Detailed MUFON investigation with radar analysis.",
+      "evidence_types": ["FAA Radar Data", "FOIA Documents", "Credible Witnesses", "Military Jets Confirmed", "MUFON Investigation"],
+      "key_figures": ["Steve Allen", "Ricky Sorrells", "Lee Roy Gaitan", "Robert Powell"],
+      "sources": [
+        { "title": "MUFON: Stephenville Investigation", "url": "https://www.mufon.com/stephenville-texas-ufo-sightings.html" },
+        { "title": "NPR: UFOs Over Texas Town", "url": "https://www.npr.org/2008/01/15/18116582/ufos-reported-over-texas-town" }
+      ],
+      "thumbnail": "FAA radar track plots overlaid on a map of the Stephenville area showing the unknown object's path"
+    },
+    {
+      "id": "uss_omaha_2019",
+      "name": "USS Omaha / Destroyer Swarm Events",
+      "year": 2019,
+      "date": "2019-07-15",
+      "location": "Off San Diego, California, USA",
+      "coordinates": { "lat": 32.5, "lng": -118.0 },
+      "category": "military_encounter",
+      "summary": "Multiple Navy destroyers reported swarms of up to 14 UAPs over consecutive nights. The USS Omaha's CIC captured radar and infrared footage of objects surrounding the ship, including one spherical object entering the ocean without a splash.",
+      "detail": "Ship deck logs obtained through FOIA confirm encounters across multiple vessels on multiple nights. The Pentagon confirmed the authenticity of leaked videos and photos. Up to 14 objects were tracked simultaneously, some matching no known flight profiles. The transmedium capability (air-to-water) was specifically highlighted in subsequent Congressional UAP hearings. A submarine was reportedly deployed to search underwater. Despite extensive investigation, no conventional explanation was found.",
+      "validity": "Ship deck logs via FOIA. Pentagon confirmed video authenticity. Multiple ships' crews as witnesses. Radar data from multiple systems. Congressional briefing material.",
+      "evidence_types": ["Ship Deck Logs", "Radar", "Infrared Video", "Pentagon Confirmation", "FOIA Documents"],
+      "key_figures": ["Jeremy Corbell", "George Knapp", "Susan Gough"],
+      "sources": [
+        { "title": "The Debrief: Navy Destroyer Logs", "url": "https://thedebrief.org/navy-destroyer-logs-confirm-encounter-with-mysterious-drones/" },
+        { "title": "The War Zone: Destroyer Swarms", "url": "https://www.thedrive.com/the-war-zone/43561/multiple-destroyers-were-swarmed-by-mysterious-drones-off-california-over-numerous-evenings" }
+      ],
+      "thumbnail": "USS Omaha CIC radar screen with multiple unidentified targets; infrared footage of spherical object entering the ocean"
+    },
+    {
+      "id": "apollo_sightings",
+      "name": "NASA Apollo Program UAP Encounters",
+      "year": 1969,
+      "date": "1969-07-19",
+      "location": "Earth-Moon Transit & Lunar Orbit",
+      "coordinates": { "lat": 28.5721, "lng": -80.648 },
+      "category": "space_encounter",
+      "summary": "Multiple Apollo missions reported and photographed anomalous objects. Apollo 11 crew observed a luminous object pacing their spacecraft. Skylab III crew logged a triangular formation of red lights. Former astronauts Mitchell and Cooper publicly stated their belief in non-human intelligence.",
+      "detail": "NASA mission photography and transcripts document anomalous observations across multiple missions. Apollo 17 visual monitoring photographs captured objects NASA catalogued but could not identify. The Skylab III crew formally logged their sighting. These witnesses are among the most psychologically screened and trained observers ever sent into space, reporting through official channels to debriefers with security clearances.",
+      "validity": "Official NASA mission photography and transcripts. Multiple astronauts from different missions. Observations formally logged in mission records. Witnesses are the most vetted observers in human history.",
+      "evidence_types": ["NASA Photography", "Mission Transcripts", "Astronaut Testimony", "Official Records"],
+      "key_figures": ["Buzz Aldrin", "Edgar Mitchell", "Gordon Cooper", "James McDivitt"],
+      "sources": [
+        { "title": "NASA Apollo Lunar Surface Journal", "url": "https://www.nasa.gov/history/alsj/" },
+        { "title": "NASA UAP Independent Study", "url": "https://www.nasa.gov/feature/uap-independent-study" }
+      ],
+      "thumbnail": "Apollo mission Hasselblad photograph showing anomalous luminous object against the blackness of space"
+    },
+    {
+      "id": "grusch_2023",
+      "name": "Grusch Whistleblower & Congressional Hearings",
+      "year": 2023,
+      "date": "2023-07-26",
+      "location": "Washington, D.C., USA",
+      "coordinates": { "lat": 38.887, "lng": -77.0046 },
+      "category": "government_disclosure",
+      "summary": "Former intelligence officer David Grusch testified under oath that the U.S. government possesses non-human craft and biological remains. His claims were deemed 'credible and urgent' by the Intelligence Community Inspector General. Led to bipartisan UAP Disclosure Act legislation.",
+      "detail": "Grusch held top-secret/SCI clearances and served on the UAP Task Force and NGA. Under oath before the House Oversight Committee, he stated a multi-decade secret program exists to reverse-engineer non-human materials, and that he faced retaliation for attempting to inform Congress. Pilots Fravor and Graves also testified. The hearing was bipartisan (Burchett, Luna, AOC, Gaetz) and led directly to the Schumer-Rounds UAP Disclosure Act amendment to the NDAA.",
+      "validity": "Testimony under oath (perjury carries criminal penalties). ICIG deemed claims 'credible and urgent.' Top-secret clearances verified. Bipartisan congressional support. Led to legislation.",
+      "evidence_types": ["Congressional Testimony", "ICIG Evaluation", "Whistleblower Protection", "Legislative Action"],
+      "key_figures": ["David Grusch", "CDR David Fravor", "Ryan Graves", "Sen. Chuck Schumer", "Rep. Tim Burchett"],
+      "sources": [
+        { "title": "House Oversight Committee Hearing", "url": "https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/" },
+        { "title": "The Debrief: US Has Retrieved Non-Human Craft", "url": "https://thedebrief.org/intelligence-officials-say-u-s-has-retrieved-non-human-craft/" }
+      ],
+      "thumbnail": "David Grusch in a dark suit, right hand raised being sworn in at the witness table in the House hearing room"
+    },
+    {
+      "id": "malmstrom_1967",
+      "name": "Malmstrom AFB Missile Shutdown",
+      "year": 1967,
+      "date": "1967-03-24",
+      "location": "Malmstrom AFB, Montana, USA",
+      "coordinates": { "lat": 47.5073, "lng": -111.1827 },
+      "category": "military_encounter",
+      "summary": "While a glowing red-orange object hovered over the front gate, all 10 Minuteman I nuclear ICBMs at Oscar Flight went into 'No-Go' status simultaneously. A similar incident occurred at Echo Flight eight days earlier. Boeing engineers found no technical cause.",
+      "detail": "Captain Robert Salas received the call from topside security about the hovering object and then watched his missile status board as all 10 missiles went offline — an event with essentially zero probability of coincidental failure. The Echo Flight incident (March 16) saw all 10 missiles also go offline under similar circumstances. Boeing engineering teams could find no technical explanation. Salas and other witnesses testified at the National Press Club in 2010. Similar incidents at other nuclear sites (Walker AFB, Minot AFB) suggest a pattern of UAP interest in nuclear weapons.",
+      "validity": "USAF documents and Boeing engineering reports. FOIA-confirmed missile shutdowns. Multiple military witnesses. National Press Club testimony. AFOSI report. Pattern of nuclear weapons interference across multiple sites.",
+      "evidence_types": ["USAF Documents", "Boeing Reports", "FOIA Records", "Military Witnesses", "Nuclear Interference"],
+      "key_figures": ["Capt. Robert Salas", "Capt. Robert Jamison", "Robert Hastings"],
+      "sources": [
+        { "title": "UFOs and Nukes Research", "url": "https://www.ufohastings.com/" },
+        { "title": "Black Vault: Malmstrom", "url": "https://www.theblackvault.com/documentarchive/malmstrom-afb-ufo-missile-incident-1967/" }
+      ],
+      "thumbnail": "Montana missile field landscape with a Minuteman silo; declassified USAF missile shutdown reports"
+    },
+    {
+      "id": "lakenheath_1956",
+      "name": "RAF Lakenheath-Bentwaters Incident",
+      "year": 1956,
+      "date": "1956-08-13",
+      "location": "RAF Lakenheath, Suffolk, England",
+      "coordinates": { "lat": 52.4093, "lng": 0.561 },
+      "category": "military_encounter",
+      "summary": "Multiple radar systems tracked high-speed objects at ~4,000 mph. An RAF Venom night fighter achieved radar lock, then the object circled behind the fighter and locked onto its tail — a reversal the experienced crew could not shake. The Condon Committee called this case the most puzzling in radar-visual files.",
+      "detail": "Multiple independent radar systems at two RAF bases tracked the objects simultaneously. Ground visual observers corroborated the radar tracks. The Condon Committee — the University of Colorado UFO study (1968), generally skeptical of UFO reports — concluded this case had no satisfactory explanation and highlighted it as the strongest radar-visual case in their files. A second Venom was scrambled but had to abort due to engine trouble.",
+      "validity": "Multiple independent radar systems. Interceptor radar lock and visual confirmation. The skeptical Condon Committee acknowledged this as unexplained. Ground observer corroboration. Detailed Project Blue Book records.",
+      "evidence_types": ["Multiple Radar", "Interceptor Lock", "Visual Confirmation", "Condon Committee Acknowledged", "Project Blue Book"],
+      "key_figures": ["Freddie Wimbledon", "Dr. Edward Condon", "Gordon Thayer"],
+      "sources": [
+        { "title": "Black Vault: Lakenheath", "url": "https://www.theblackvault.com/documentarchive/lakenheath-bentwaters-ufo-incident-1956/" },
+        { "title": "NICAP: Lakenheath", "url": "https://www.nicap.org/lakenheath.htm" }
+      ],
+      "thumbnail": "RAF de Havilland Venom night fighter with Cold War-era radar scope imagery showing the unknown target"
+    },
+    {
+      "id": "kecksburg_1965",
+      "name": "Kecksburg Incident",
+      "year": 1965,
+      "date": "1965-12-09",
+      "location": "Kecksburg, Pennsylvania, USA",
+      "coordinates": { "lat": 40.1845, "lng": -79.4612 },
+      "category": "retrieval",
+      "summary": "A fireball tracked across six states crashed in the woods near Kecksburg. Witnesses described an acorn-shaped metallic object with hieroglyphic writing. The U.S. Army cordoned off the area and removed an object on a flatbed truck. NASA files on the event went missing.",
+      "detail": "Local witnesses who reached the site before the military described an acorn-shaped object about the size of a Volkswagen Beetle with a band of hieroglyphic-like writing around its base. The military officially stated they found 'nothing.' A 2005 FOIA lawsuit by journalist Leslie Kean against NASA resulted in a court order, but key records were missing. Researcher Stan Gordon investigated the case for 40+ years with extensive witness documentation. The town of Kecksburg has erected a full-scale replica of the acorn object as a monument.",
+      "validity": "Multiple civilian witnesses. Military retrieval operation witnessed. Missing NASA files. FOIA lawsuit revealed destroyed records. 40+ years of researcher documentation. Multi-state fireball tracking.",
+      "evidence_types": ["Civilian Witnesses", "Military Retrieval", "Missing Files", "FOIA Lawsuit", "Physical Retrieval Witnessed"],
+      "key_figures": ["Stan Gordon", "Leslie Kean", "John Murphy", "James Romansky"],
+      "sources": [
+        { "title": "Black Vault: Kecksburg", "url": "https://www.theblackvault.com/documentarchive/the-kecksburg-ufo-incident/" },
+        { "title": "Stan Gordon Research", "url": "https://stangordon.info/" }
+      ],
+      "thumbnail": "The full-scale acorn-shaped monument in Kecksburg with hieroglyphic band; the wooded crash site"
+    },
+    {
+      "id": "aguadilla_2013",
+      "name": "Aguadilla, Puerto Rico UAP",
+      "year": 2013,
+      "date": "2013-04-25",
+      "location": "Aguadilla, Puerto Rico",
+      "coordinates": { "lat": 18.4949, "lng": -67.1294 },
+      "category": "military_encounter",
+      "summary": "A U.S. Customs and Border Protection aircraft captured thermal video of an object that entered and exited the ocean multiple times without losing speed and appeared to split into two objects. The SCU published a 161-page technical analysis.",
+      "detail": "The CBP DHC-8 aircraft's professional-grade FLIR system tracked the small, fast-moving object for several minutes as it crossed the airport, flew over residential areas, then demonstrated transmedium behavior — entering and exiting the ocean without deceleration. Airport radar data corroborated the track. The Scientific Coalition for UAP Studies conducted detailed photogrammetric analysis establishing size, speed, and trajectory. The object appeared to split into two separate objects during the transit.",
+      "validity": "Federal law enforcement aircraft thermal video. SCU 161-page technical analysis. Airport radar corroboration. Transmedium behavior documented. Object splitting observed.",
+      "evidence_types": ["Thermal Video", "Federal Aircraft", "Radar Data", "Scientific Analysis", "Transmedium Behavior"],
+      "key_figures": ["Robert Powell", "Morgan Beall", "SCU"],
+      "sources": [
+        { "title": "SCU: Aguadilla Analysis", "url": "https://www.explorescu.org/post/aguadilla" },
+        { "title": "The Debrief: Aguadilla Incident", "url": "https://thedebrief.org/the-aguadilla-puerto-rico-incident/" }
+      ],
+      "thumbnail": "CBP thermal video frames showing the bright object entering and emerging from the ocean surface"
+    }
+  ]
+}

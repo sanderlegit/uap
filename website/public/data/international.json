@@ -1,0 +1,346 @@
+{
+  "last_updated": "2026-05-08",
+  "overview": "International UAP investigation programs across 14 countries. France leads with 47+ years of continuous investigation through GEIPAN, while South America has the highest density of active programs.",
+  "summary": {
+    "active_programs": 6,
+    "closed_programs": 4,
+    "countries_researched": 14,
+    "gold_standard": "France (GEIPAN — continuous since 1977, all data public)",
+    "most_transparent": "Brazil (20,000+ pages declassified)",
+    "longest_continuous": "Uruguay (CRIDOVNI — since 1979, never interrupted)"
+  },
+  "countries": [
+    {
+      "id": "france",
+      "country": "France",
+      "code": "FR",
+      "status": "active",
+      "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+      "stance": "Gold standard for transparency. GEIPAN openly publishes all case data. The COMETA report (1999) concluded the ET hypothesis was the best explanation for ~5% of cases.",
+      "programs": [
+        {
+          "name": "GEIPAN",
+          "full_name": "Groupe d'Études et d'Informations sur les Phénomènes Aérospatiaux Non-identifiés",
+          "agency": "CNES (French Space Agency)",
+          "years": "1977–present",
+          "status": "active",
+          "description": "Official French government UAP investigation unit housed within the national space agency. Collects eyewitness accounts, gendarmerie reports, and aviation data. All case files are published online — most transparent government UAP program globally.",
+          "stats": { "total_testimonies": 9724, "cases_analyzed": 5300, "unexplained_pct": 3.4 }
+        },
+        {
+          "name": "COMETA Report",
+          "agency": "Private committee of retired military/intelligence officials",
+          "years": "1996–1999",
+          "status": "completed",
+          "description": "90-page report by retired generals and former CNES president concluding the physical reality of UFOs under intelligent control is 'quasi-certain.' Delivered personally to Prime Minister Jospin. First document to propose the term 'UAP.'"
+        },
+        {
+          "name": "SIGMA2",
+          "agency": "3AF (French Aeronautics and Astronautics Association)",
+          "years": "2008–present",
+          "status": "active",
+          "description": "Technical commission of engineers, radar experts, astrophysicists, and military officers conducting rigorous scientific analysis of UAP kinematics, electromagnetics, and radiation."
+        }
+      ],
+      "notable_case": "Trans-en-Provence (1981) — Physical trace case with biochemical soil changes analyzed by GEPAN",
+      "sources": [
+        { "title": "GEIPAN Official", "url": "https://www.cnes-geipan.fr/en" },
+        { "title": "SIGMA2 — 3AF", "url": "https://www.3af.fr/en/groupe/sigma2-unidentified-aerospace-phenomena-43" }
+      ]
+    },
+    {
+      "id": "uk",
+      "country": "United Kingdom",
+      "code": "GB",
+      "status": "closed",
+      "coordinates": { "lat": 51.5074, "lng": -0.1278 },
+      "stance": "MoD investigated for 50+ years, closing the UFO desk in 2009 as serving 'no defence purpose.' Participates in Five Eyes UAP cooperation.",
+      "programs": [
+        {
+          "name": "MoD UFO Desk",
+          "agency": "UK Ministry of Defence",
+          "years": "1953–2009",
+          "status": "closed",
+          "description": "Logged and investigated over 12,000 UFO sightings. Nick Pope ran the desk 1991–1994. Closed in 2009 despite receiving 643 reports that year.",
+          "stats": { "total_sightings": 12000 }
+        },
+        {
+          "name": "Project Condign",
+          "agency": "MoD Defence Intelligence Staff",
+          "years": "1997–2000",
+          "status": "completed",
+          "description": "Classified study declassified in 2006. Acknowledged genuine unknowns but proposed 'buoyant plasma' hypothesis. Pioneered use of 'UAP' terminology replacing 'UFO.'"
+        }
+      ],
+      "notable_case": "Rendlesham Forest (1980) — USAF personnel witnessed craft with physical traces; Lt. Col. Halt filed official memo",
+      "sources": [
+        { "title": "Nick Pope: UFOs", "url": "https://nickpope.net/wpte19/ufos/" },
+        { "title": "Project Condign", "url": "https://en.wikipedia.org/wiki/Project_Condign" }
+      ]
+    },
+    {
+      "id": "brazil",
+      "country": "Brazil",
+      "code": "BR",
+      "status": "disclosure",
+      "coordinates": { "lat": -15.7975, "lng": -47.8919 },
+      "stance": "Most transparent UAP disclosure of any country. Over 20,000 pages of military reports declassified. Air Force acknowledged objects demonstrated 'intelligent capabilities.'",
+      "programs": [
+        {
+          "name": "Operação Prato",
+          "agency": "Brazilian Air Force",
+          "years": "1977–1978",
+          "status": "completed",
+          "description": "Military investigation of mass UFO sightings on Colares island where residents reported injuries from lights. Documents declassified starting 2004."
+        },
+        {
+          "name": "National Archives Collection",
+          "agency": "Brazilian Air Force / Arquivo Nacional",
+          "years": "2010–present",
+          "status": "active",
+          "description": "Over 20,000 pages spanning 1952–2023 publicly accessible, including 893 incident reports with radar logs, pilot testimonies, and internal military memos.",
+          "stats": { "pages_declassified": 20000, "incident_reports": 893 }
+        }
+      ],
+      "notable_case": "Official Night of the UFOs (1986) — 21 objects observed across 4 states; F-5 and Mirage fighters scrambled; Air Force held press conference",
+      "sources": [
+        { "title": "Brazil's UFO Files", "url": "https://politicalsaucer.substack.com/p/brazils-ufo-files-the-worlds-most" },
+        { "title": "Washington Post: Brazil UFO Docs", "url": "https://www.washingtonpost.com/world/2023/09/06/ufo-brazil-documents-classified/" }
+      ]
+    },
+    {
+      "id": "chile",
+      "country": "Chile",
+      "code": "CL",
+      "status": "active",
+      "coordinates": { "lat": -33.4489, "lng": -70.6693 },
+      "stance": "One of the world's most respected active programs. CEFAA operates under civil aviation authority with multidisciplinary expert teams.",
+      "programs": [
+        {
+          "name": "CEFAA",
+          "full_name": "Comité de Estudios de Fenómenos Aéreos Anómalos",
+          "agency": "DGAC (Civil Aeronautics)",
+          "years": "1997–present",
+          "status": "active",
+          "description": "Brings together military, air traffic controllers, pilots, meteorologists, and astronomers. Known for releasing declassified footage including the 2014 Navy helicopter infrared video that eight expert panels over two years could not explain."
+        }
+      ],
+      "notable_case": "Navy Helicopter IR Video (2014) — Elongated object tracked for minutes; two radar stations couldn't see it; eight expert panels couldn't identify it",
+      "sources": [
+        { "title": "CEFAA Overview", "url": "https://theufodatabase.com/organizations/cefaa" }
+      ]
+    },
+    {
+      "id": "uruguay",
+      "country": "Uruguay",
+      "code": "UY",
+      "status": "active",
+      "coordinates": { "lat": -34.9011, "lng": -56.1645 },
+      "stance": "Longest continuously operating government UAP program in the world. Researchers work independently without military interference in conclusions.",
+      "programs": [
+        {
+          "name": "CRIDOVNI",
+          "agency": "Uruguayan Air Force",
+          "years": "1979–present",
+          "status": "active",
+          "description": "Established by presidential order. Researchers are paid Air Force employees who operate independently. Served as the regional model for Chile, Peru, Ecuador, and Argentina.",
+          "stats": { "cases_analyzed": 2100, "unexplained_pct": 2 }
+        }
+      ],
+      "notable_case": "Served as the founding model for South American UAP investigation programs",
+      "sources": [
+        { "title": "Uruguay Air Force UFO Research", "url": "https://www.theufochronicles.com/2012/02/uruguay-air-force-openly-researches.html" }
+      ]
+    },
+    {
+      "id": "argentina",
+      "country": "Argentina",
+      "code": "AR",
+      "status": "active",
+      "coordinates": { "lat": -34.6037, "lng": -58.3816 },
+      "stance": "Active scientific investigation program focused on identification rather than confirming exotic origins.",
+      "programs": [
+        {
+          "name": "CIAE",
+          "full_name": "Centro de Identificación Aeroespacial",
+          "agency": "Argentine Air Force",
+          "years": "2011–present",
+          "status": "active",
+          "description": "Created 2011 as CEFAE, renamed 2019 with expanded mandate. Publishes annual reports. Formal cooperation with France's SIGMA2."
+        }
+      ],
+      "notable_case": "Bahía Blanca military encounter (2023)",
+      "sources": [
+        { "title": "CIAE Overview", "url": "https://newspaceeconomy.ca/2025/07/30/centro-de-identificacion-aeroespacial-argentinas-evolving-uap-investigation/" }
+      ]
+    },
+    {
+      "id": "peru",
+      "country": "Peru",
+      "code": "PE",
+      "status": "active",
+      "coordinates": { "lat": -12.0464, "lng": -77.0428 },
+      "stance": "Officially recognizes UAP as a matter requiring investigation for airspace safety.",
+      "programs": [
+        {
+          "name": "DIFAA",
+          "full_name": "Departamento de Investigación de Fenómenos Aéreos Anómalos",
+          "agency": "Peruvian Air Force",
+          "years": "2013–present",
+          "status": "active",
+          "description": "Advisory board of 8 civilians and 2 military members. Investigates occurrence patterns, locations, and timing of anomalous phenomena."
+        }
+      ],
+      "notable_case": "Chulucanas sightings (2001) that prompted OIFAA creation",
+      "sources": [
+        { "title": "Peru Air Force UFO Office", "url": "https://foreignpolicy.com/2013/10/29/perus-air-force-opens-a-ufo-office-and-its-twitter-friendly/" }
+      ]
+    },
+    {
+      "id": "japan",
+      "country": "Japan",
+      "code": "JP",
+      "status": "forming",
+      "coordinates": { "lat": 35.6762, "lng": 139.6503 },
+      "stance": "Rapidly developing capabilities. 80+ member bipartisan parliamentary group formed 2024. Permanent AARO-style office proposed 2025.",
+      "programs": [
+        {
+          "name": "UAP Clarification League",
+          "agency": "National Diet (Parliament)",
+          "years": "2024–present",
+          "status": "active",
+          "description": "Bipartisan parliamentary body chaired by former Defense Minister Yasukazu Hamada. Proposing permanent Ministry of Defense UAP office with data collection, public disclosure, and parliamentary reporting mandates."
+        }
+      ],
+      "notable_case": "Fukushima/Iino concentrated sightings identified as 'hotspot' in AARO reporting",
+      "sources": [
+        { "title": "Japan UFO Task Force", "url": "https://www.newsnationnow.com/space/ufo/japan-ufo-task-force/" },
+        { "title": "Japan UAP Investigation — The Debrief", "url": "https://thedebrief.org/japan-launches-uap-investigation-following-u-s-report-identifying-region-as-hotspot-for-sightings/" }
+      ]
+    },
+    {
+      "id": "canada",
+      "country": "Canada",
+      "code": "CA",
+      "status": "closed",
+      "coordinates": { "lat": 45.4215, "lng": -75.6972 },
+      "stance": "Official programs ended by 1954 but participates in Five Eyes UAP cooperation.",
+      "programs": [
+        {
+          "name": "Project Magnet",
+          "agency": "Department of Transport",
+          "years": "1950–1954",
+          "status": "closed",
+          "description": "Radio engineer Wilbert Smith investigated whether UFOs used magnetic propulsion. Built a UFO observatory. Shut down after Smith went public with ET beliefs."
+        }
+      ],
+      "notable_case": "Falcon Lake (1967) — Witness suffered grid-pattern burns from craft exhaust; investigated by RCMP, RCAF, and DND",
+      "sources": [
+        { "title": "UFOs in Canada", "url": "https://thecanadianencyclopedia.ca/en/article/ufos-in-canada" }
+      ]
+    },
+    {
+      "id": "australia",
+      "country": "Australia",
+      "code": "AU",
+      "status": "closed",
+      "coordinates": { "lat": -33.8688, "lng": 151.2093 },
+      "stance": "RAAF investigated 1947–1996, concluding no threat. Participates in Five Eyes cooperation despite public denials contradicted by leaked Navy emails.",
+      "programs": [
+        {
+          "name": "RAAF Unusual Aerial Sightings",
+          "agency": "Royal Australian Air Force",
+          "years": "1947–1996",
+          "status": "closed",
+          "description": "Official UFO investigation for nearly 50 years. Closed under policy ADMIN 55-1. Intelligence agencies were on distribution lists suggesting internal investigation continued."
+        }
+      ],
+      "notable_case": "Westall (1966) — 200 witnesses at a school; RAAF files missing. Frederick Valentich disappearance (1978) — pilot vanished after reporting UAP",
+      "sources": [
+        { "title": "Australian Ufology", "url": "https://en.wikipedia.org/wiki/Australian_ufology" }
+      ]
+    },
+    {
+      "id": "belgium",
+      "country": "Belgium",
+      "code": "BE",
+      "status": "closed",
+      "coordinates": { "lat": 50.8503, "lng": 4.3517 },
+      "stance": "Conducted the most cooperative military-civilian UAP investigation in history during the 1989–90 wave. Air Force openly shared radar data.",
+      "programs": [
+        {
+          "name": "Belgian Wave Investigation",
+          "agency": "Belgian Air Force / SOBEPS",
+          "years": "1989–1991",
+          "status": "completed",
+          "description": "F-16 scrambles, public radar data release, 13,500+ witnesses. MGen De Brouwer publicly acknowledged objects as 'a real phenomenon.' Objects performed 40G+ maneuvers."
+        }
+      ],
+      "notable_case": "F-16 radar lock (March 30, 1990) — Objects dropped 1,300m in one second during interception attempt",
+      "sources": [
+        { "title": "Belgian UFO Wave", "url": "https://en.wikipedia.org/wiki/Belgian_UFO_wave" }
+      ]
+    },
+    {
+      "id": "mexico",
+      "country": "Mexico",
+      "code": "MX",
+      "status": "legislative",
+      "coordinates": { "lat": 19.4326, "lng": -99.1332 },
+      "stance": "First congressional UAP hearing 2023, but no permanent program. Hearing undermined by controversial 'alien bodies' presentation.",
+      "programs": [
+        {
+          "name": "Congressional FANI Hearings",
+          "agency": "Mexican Congress",
+          "years": "2023–present",
+          "status": "ongoing",
+          "description": "Debated UAP language in Aerial Space Protection Law. Ryan Graves called the alien bodies presentation 'a huge step backwards.' No formal investigation program established."
+        }
+      ],
+      "notable_case": "Mexican Air Force IR video (2004) — 11 objects over Campeche released by Defense Secretary",
+      "sources": [
+        { "title": "Mexico Alien Bodies Hearing — NPR", "url": "https://www.npr.org/2023/09/13/1199251336/mexico-alien-corpses-congress" }
+      ]
+    },
+    {
+      "id": "india",
+      "country": "India",
+      "code": "IN",
+      "status": "none",
+      "coordinates": { "lat": 28.6139, "lng": 77.209 },
+      "stance": "No formal UAP investigation program despite documented military sightings near the China-India border.",
+      "programs": [],
+      "notable_case": "Ladakh border sightings (2010s–2020s) — ITBP troops reported luminous objects. Imphal airport incident — flights disrupted 3 hours, Rafale fighters scrambled",
+      "sources": [
+        { "title": "UAPs and India", "url": "https://chintan.indiafoundation.in/articles/unidentified-anomalous-phenomena-uaps-india/" }
+      ]
+    },
+    {
+      "id": "israel",
+      "country": "Israel",
+      "code": "IL",
+      "status": "none",
+      "coordinates": { "lat": 31.7683, "lng": 35.2137 },
+      "stance": "No formal program. Notable claims from retired BGen Haim Eshed (2020) about government contact with aliens — distanced by Israel Space Agency chairman.",
+      "programs": [],
+      "notable_case": "Haim Eshed claims (2020) — Former space program director alleged US-Israel contact with 'Galactic Federation'",
+      "sources": [
+        { "title": "Eshed Claims — NBC News", "url": "https://www.nbcnews.com/news/weird-news/former-israeli-space-security-chief-says-extraterrestrials-exist-trump-knows-n1250333" }
+      ]
+    }
+  ],
+  "five_eyes": {
+    "name": "Five Eyes UAP Working Group",
+    "members": ["USA", "UK", "Canada", "Australia", "New Zealand"],
+    "description": "Formal UAP cooperation established through the intelligence alliance. AARO hosted the inaugural Five Eyes Working Group at the Pentagon in May 2023.",
+    "key_events": [
+      { "date": "2023-05", "event": "AARO hosts inaugural Five Eyes Working Group at Pentagon" },
+      { "date": "2023-06", "event": "Canadian military confirmed attendance at US UAP forum" },
+      { "date": "2024", "event": "ODNI issued GLOMAR response to FOIA request on Five Eyes UAP emails" }
+    ],
+    "sources": [
+      { "title": "Five Eyes Tight-Lipped — DefenseScoop", "url": "https://defensescoop.com/2023/06/15/five-eyes-alliance-remains-tight-lipped-on-how-its-collaborating-on-uncovering-uap/" },
+      { "title": "Pentagon Confirms Five Eyes Cooperation — Liberation Times", "url": "https://www.liberationtimes.com/home/pentagon-confirms-ongoing-collaboration-with-five-eyes-allies-on-uap-investigations" }
+    ]
+  }
+}

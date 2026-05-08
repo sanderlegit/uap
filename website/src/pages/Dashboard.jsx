@@ -107,13 +107,16 @@ const agencyMeta = {
 
 /* ── nav config ────────────────────────────────────────────────────── */
 const navLinks = [
-  { to: '/map',             label: 'Map',        icon: '◎', desc: 'Incident locations worldwide' },
-  { to: '/timeline',        label: 'Timeline',   icon: '━', desc: 'Documents across eight decades' },
-  { to: '/graph',           label: 'Graph',      icon: '⬡', desc: 'Cross-reference network' },
-  { to: '/search',          label: 'Search',     icon: '⌕', desc: 'Full-text across all files' },
-  { to: '/analysis/report', label: 'Analysis',   icon: '◫', desc: 'Deep dives & detailed reports' },
-  { to: '/disclosure',      label: 'Disclosure', icon: '≡', desc: 'Disclosure progress index' },
-  { to: '/theories',        label: 'Theories',   icon: '◈', desc: 'Origin hypotheses & frameworks' },
+  { to: '/map',             label: 'Map',           icon: '◎', desc: 'Incident locations worldwide' },
+  { to: '/timeline',        label: 'Timeline',      icon: '━', desc: 'Documents across eight decades' },
+  { to: '/graph',           label: 'Graph',         icon: '⬡', desc: 'Cross-reference network' },
+  { to: '/search',          label: 'Search',        icon: '⌕', desc: 'Full-text across all files' },
+  { to: '/analysis/report', label: 'Analysis',      icon: '◫', desc: 'Deep dives & detailed reports' },
+  { to: '/disclosure',      label: 'Disclosure',    icon: '≡', desc: 'Disclosure progress index' },
+  { to: '/theories',        label: 'Theories',      icon: '◈', desc: 'Origin hypotheses & frameworks' },
+  { to: '/cases',           label: 'Cases',         icon: '◆', desc: 'Highest-validity encounters' },
+  { to: '/international',   label: 'International', icon: '⊕', desc: 'Global UAP programs' },
+  { to: '/pulse',           label: 'Pulse',         icon: '◌', desc: 'News & social awareness' },
 ]
 
 /* ── notable document ids ──────────────────────────────────────────── */
@@ -136,7 +139,8 @@ const briefingCards = [
     title: 'Middle East Hotspot',
     stat: '26',
     unit: 'docs',
-    description: 'Dense concentration of UAP encounters across CENTCOM AOR — Iraq, Syria, the Persian Gulf, and surrounding airspace. All tied to active military operations, declassified by USCENTCOM Chief of Staff.',
+    description: 'Dense concentration of UAP encounters across CENTCOM AOR — Iraq, Syria, the Persian Gulf, and surrounding airspace.',
+    expanded: 'All 26 documents originate from USCENTCOM mission reports declassified by Chief of Staff MG Richard A. Harrison between October 2025 and January 2026. The encounters span 2021–2024 across Iraq, Syria, Greece, the Mediterranean, the Persian Gulf, and the United Arab Emirates. Sensor suites include FLIR, radar, photographic, video, and SIGINT. Several reports are classified SECRET//REL TO USA, FVEY — meaning Five Eyes allies also received the data. UAP were observed during combat operations, aerial reconnaissance, and patrol missions, often by MQ-9 Reaper and manned fighter crews simultaneously. The geographic clustering around active conflict zones raises questions about whether UAP activity correlates with military operations, advanced adversary technology, or something else entirely.',
     color: 'border-t-amber-500',
   },
   {
@@ -145,7 +149,8 @@ const briefingCards = [
     title: 'FBI Case 62-HQ-83894',
     stat: '2,622',
     unit: 'pages',
-    description: 'FBI\'s primary UAP investigation spanning 1947–1968 across 17 sections. The single largest document cluster in the release, including field office reports, photographic evidence from nuclear sites, and headquarters memoranda.',
+    description: 'FBI\'s primary UAP investigation spanning 1947–1968 across 17 sections.',
+    expanded: 'File 62-HQ-83894 is the FBI\'s central headquarters file on unidentified flying objects, maintained by the Domestic Intelligence Division. It spans 17 numbered sections plus sub-files and serials, totaling over 2,600 pages. The file documents field office reports from every major FBI division, coordination with the Air Force\'s Project Blue Book, and direct communications with J. Edgar Hoover\'s office. Notable contents include: radar-confirmed sightings over nuclear installations (Oak Ridge, Hanford, Los Alamos), photographic evidence from multiple field offices, the "green fireball" incidents over New Mexico that prompted Dr. Lincoln LaPaz\'s investigation, and the 1952 Washington D.C. wave where objects were tracked on radar over the Capitol. The file reveals the FBI was far more involved in UAP investigation than publicly acknowledged — Hoover personally annotated several reports with requests for more information.',
     color: 'border-t-red-500',
   },
   {
@@ -154,7 +159,8 @@ const briefingCards = [
     title: 'Apollo & Skylab Missions',
     stat: '14',
     unit: 'NASA docs',
-    description: 'Apollo 11, 12, and 17 crew debriefings plus Skylab III encounter report. Astronaut observations of anomalous objects, unexplained light phenomena, and a triangular formation NASA cannot explain.',
+    description: 'Apollo 11, 12, and 17 crew debriefings plus Skylab III encounter report.',
+    expanded: 'The NASA documents include official crew debriefing transcripts from Apollo 11 (Armstrong, Aldrin, Collins), Apollo 12 (Conrad, Gordon, Bean), and Apollo 17 (Cernan, Evans, Schmitt), plus the Skylab III crew observation report. During the Apollo 11 transit, the crew observed a luminous object that tracked alongside the spacecraft. Apollo 12 documented unexplained light phenomena during lunar orbit. Apollo 17 visual monitoring photographs (VM3, VM5, VM6) captured anomalous objects that NASA catalogued but could not identify. The Skylab III crew reported a triangular formation of red lights during an observation session — the sighting was formally logged in the mission report. These are not secondhand accounts — they are official transcripts from the most trained observers humanity has ever sent into space, reporting through official NASA channels to debriefers with security clearances.',
     color: 'border-t-purple-500',
   },
   {
@@ -163,7 +169,8 @@ const briefingCards = [
     title: 'Anomalous Behaviors',
     stat: '147',
     unit: 'instances',
-    description: 'Documented behaviors across the corpus: hovering, cloaking, luminosity changes, formation flight, splitting, merging, instant acceleration, and EM interference. Patterns repeat across decades.',
+    description: 'Documented behaviors: hovering, cloaking, luminosity changes, formation flight, splitting, merging, instant acceleration, EM interference.',
+    expanded: 'Across the entire corpus, 147 instances of anomalous behavior are catalogued across 8 distinct categories. Hovering (sustained stationary flight with no visible means of propulsion) appears in 42 documents. Luminosity changes (objects shifting brightness, color, or emitting sudden flashes) appear in 67. Formation flight (multiple objects maintaining geometric patterns) appears in 38. The most concerning behaviors include: splitting (a single object dividing into multiple), merging (multiple objects combining into one), and EM interference (disruption of radar, radio, or electrical systems during observation). These behaviors are reported by FBI agents, military pilots, radar operators, and astronauts independently across eight decades — from 1944 WWII "foo fighter" reports through 2024 CENTCOM mission reports. The consistency of behavioral descriptions across time, geography, and observer background is one of the strongest arguments against conventional explanations.',
     color: 'border-t-cyan-500',
   },
   {
@@ -172,7 +179,8 @@ const briefingCards = [
     title: 'Multi-Sensor Evidence',
     stat: '56',
     unit: 'docs',
-    description: 'Observations corroborated across radar, infrared/FLIR, photographic, satellite, SIGINT, and electro-optical systems. Multiple independent sensor modalities recording the same events.',
+    description: 'Corroborated across radar, IR/FLIR, photographic, satellite, SIGINT, and electro-optical systems.',
+    expanded: '56 documents contain observations confirmed by two or more independent sensor systems. This is the gold standard in intelligence analysis — a single observer can be mistaken, but when radar, infrared, visual, photographic, and SIGINT all register the same event, conventional explanations become difficult to maintain. The strongest multi-sensor cases include: DOW mission reports where FLIR and radar simultaneously tracked objects; FBI files from the 1952 Washington wave where ground radar, airborne radar, and visual observers all confirmed the same objects; and NASA documents where photographic evidence corroborates crew visual observations. The sensor types represented span the full electromagnetic spectrum: radar (microwave), FLIR (thermal infrared), electro-optical (visible/near-IR), photographic (visible), video (visible), satellite (multi-spectral), SIGINT (radio frequency), and acoustic. No known natural phenomenon or conventional aircraft produces signatures across all these modalities simultaneously.',
     color: 'border-t-blue-500',
   },
   {
@@ -181,7 +189,8 @@ const briefingCards = [
     title: 'Redaction Pervasive',
     stat: '78',
     unit: 'docs redacted',
-    description: 'Over 60% of files contain redactions even in this "declassified" release. The Pentagon states redactions do not concern "the nature or existence of any encounter" — raising questions about what is withheld.',
+    description: 'Over 60% of files contain redactions even in this "declassified" release.',
+    expanded: '78 of the 129 documents — over 60% — contain visible redactions ranging from single words to entire pages blacked out. Redactions are applied under FOIA exemptions including (b)(1)1.4a (classified national defense information), (b)(1)1.4g (vulnerabilities of systems), (b)(6) (personal privacy), and 3.5c (intelligence sources and methods). The Pentagon has stated that redactions "do not concern the nature or existence of any encounter" — a carefully worded assertion that raises more questions than it answers. If the encounters themselves are fully disclosed, what requires classification? Possible answers include: specific military unit identities and capabilities, sensor system specifications, operational locations of intelligence assets, and the identities of witnesses who may still be active duty. The pattern of redaction is itself analytically significant — the most heavily redacted documents tend to be the most recent (2022–2024) CENTCOM reports, while older FBI files from the 1940s–1960s are more completely released.',
     color: 'border-t-amber-600',
   },
 ]
@@ -196,6 +205,7 @@ export default function Dashboard() {
   const navigate = useNavigate()
   const carouselRef = useRef(null)
   const [theories, setTheories] = useState(null)
+  const [expandedBriefing, setExpandedBriefing] = useState(null)
 
   useEffect(() => {
     fetch('/data/theories.json')
@@ -382,31 +392,43 @@ export default function Dashboard() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {briefingCards.map((card, i) => (
-            <div
-              key={card.tag}
-              className={`dash-card bg-slate-900/80 border border-slate-700/40 rounded-lg overflow-hidden border-t-2 ${card.color}`}
-              style={{ animationDelay: `${i * 100}ms` }}
-            >
-              {/* card header */}
-              <div className="px-4 pt-3 pb-2 border-b border-slate-800/60">
-                <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-amber-500/70">
-                  {card.tag} // {card.label}
-                </span>
-              </div>
-              {/* card body */}
-              <div className="px-4 py-4">
-                <div className="flex items-baseline gap-3 mb-2">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-100">{card.title}</h3>
+          {briefingCards.map((card, i) => {
+            const isOpen = expandedBriefing === card.tag
+            return (
+              <button
+                key={card.tag}
+                onClick={() => setExpandedBriefing(isOpen ? null : card.tag)}
+                className={`dash-card text-left bg-slate-900/80 border rounded-lg overflow-hidden border-t-2 ${card.color} cursor-pointer transition-all ${
+                  isOpen ? 'border-amber-500/40 ring-1 ring-amber-500/20 sm:col-span-2 lg:col-span-3' : 'border-slate-700/40 hover:border-slate-600/60'
+                }`}
+                style={{ animationDelay: `${i * 100}ms` }}
+              >
+                {/* card header */}
+                <div className="px-4 pt-3 pb-2 border-b border-slate-800/60 flex items-center justify-between">
+                  <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-amber-500/70">
+                    {card.tag} // {card.label}
+                  </span>
+                  <span className="text-[10px] text-slate-600">{isOpen ? '▾ collapse' : '▸ expand'}</span>
                 </div>
-                <div className="flex items-baseline gap-1.5 mb-3">
-                  <span className="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono">{card.stat}</span>
-                  <span className="text-xs text-slate-500 font-mono uppercase tracking-wider">{card.unit}</span>
+                {/* card body */}
+                <div className="px-4 py-4">
+                  <div className="flex items-baseline gap-3 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-100">{card.title}</h3>
+                  </div>
+                  <div className="flex items-baseline gap-1.5 mb-3">
+                    <span className="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono">{card.stat}</span>
+                    <span className="text-xs text-slate-500 font-mono uppercase tracking-wider">{card.unit}</span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{card.description}</p>
+                  {isOpen && (
+                    <div className="mt-4 pt-4 border-t border-slate-800/60">
+                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{card.expanded}</p>
+                    </div>
+                  )}
                 </div>
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{card.description}</p>
-              </div>
-            </div>
-          ))}
+              </button>
+            )
+          })}
         </div>
       </section>
 
@@ -595,7 +617,7 @@ export default function Dashboard() {
 
           {/* Community Sources */}
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
-            {[theories.community_sources.uap_gerb, theories.community_sources.american_alchemy, theories.community_sources.mufon].map((src, i) => (
+            {Object.values(theories.community_sources).slice(0, 6).map((src, i) => (
               <a
                 key={i}
                 href={src.url}
@@ -632,7 +654,7 @@ export default function Dashboard() {
           <span className="h-px flex-1 bg-gradient-to-l from-slate-700/60 to-transparent" />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {navLinks.map((link, i) => (
             <Link
               key={link.to}

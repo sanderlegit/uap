@@ -23,14 +23,26 @@
         "name": "Industrial Layer",
         "lead_agency": "Lockheed Martin / Northrop Grumman",
         "description": "Performs reverse-engineering and hardware development through dual-use clearance contractors. Lockheed's Skunk Works and Northrop's facilities allegedly handle prototype development from recovered materials.",
-        "key_detail": "Lockheed utilizes Independent Research and Development (IRAD) billing for unmarked aerospace research — money never appears in congressional appropriations"
+        "key_detail": "Lockheed utilizes Independent Research and Development (IRAD) billing for unmarked aerospace research \u2014 money never appears in congressional appropriations"
       }
     ],
     "key_personnel": [
-      { "name": "Mary Sturivant", "role": "Lockheed VP → CIA Directorate of Science & Technology" },
-      { "name": "Doug Wolf", "role": "NRO → CIA → Office of Global Access" },
-      { "name": "Donald Kerr", "role": "NRO Director → CIA Deputy Director → Los Alamos/Sandia" },
-      { "name": "Paul Kaminsky", "role": "OUSD A&S → NRO, structured Black Budget framework in mid-1990s" }
+      {
+        "name": "Mary Sturivant",
+        "role": "Lockheed VP \u2192 CIA Directorate of Science & Technology"
+      },
+      {
+        "name": "Doug Wolf",
+        "role": "NRO \u2192 CIA \u2192 Office of Global Access"
+      },
+      {
+        "name": "Donald Kerr",
+        "role": "NRO Director \u2192 CIA Deputy Director \u2192 Los Alamos/Sandia"
+      },
+      {
+        "name": "Paul Kaminsky",
+        "role": "OUSD A&S \u2192 NRO, structured Black Budget framework in mid-1990s"
+      }
     ],
     "key_facilities": [
       "Area 51 / S4 (near Papoose Mountain, Nevada)",
@@ -40,34 +52,91 @@
       "Tonopah Test Range (Nevada)"
     ],
     "historical_timeline": [
-      { "year": "1940s", "event": "Manhattan Project laboratories allegedly receive UAP fragments from American Southwest crashes" },
-      { "year": "1947", "event": "Roswell incident — Interplanetary Phenomenon Unit reportedly involved in recovery" },
-      { "year": "1947", "event": "Twining memo confirms objects are 'real and not visionary or fictitious'" },
-      { "year": "1954", "event": "Atomic Energy Act provides legal framework for classifying UAP materials as transclassified foreign nuclear material" },
-      { "year": "1986", "event": "GAO discovers 1,400+ discrepancies in Lockheed Burbank programs" },
-      { "year": "1994", "event": "$3.7 billion in hidden NRO funds discovered; SAPOC (Special Access Program Oversight Committee) created" },
-      { "year": "2011", "event": "CIA DS&T blocks Lockheed VP's attempt to transfer UAP hardware to DIA's AAWSAP program (Kona Blue)" },
-      { "year": "2017", "event": "AATIP program revealed by New York Times" },
-      { "year": "2023", "event": "David Grusch congressional testimony on crash retrieval programs; wave of IG complaints" },
-      { "year": "2025", "event": "Claims of reverse-engineered propulsion module testing" },
-      { "year": "2026", "event": "PURSUE release — first batch of declassified UAP files from war.gov" }
+      {
+        "year": "1940s",
+        "event": "Manhattan Project laboratories allegedly receive UAP fragments from American Southwest crashes"
+      },
+      {
+        "year": "1947",
+        "event": "Roswell incident \u2014 Interplanetary Phenomenon Unit reportedly involved in recovery"
+      },
+      {
+        "year": "1947",
+        "event": "Twining memo confirms objects are 'real and not visionary or fictitious'"
+      },
+      {
+        "year": "1954",
+        "event": "Atomic Energy Act provides legal framework for classifying UAP materials as transclassified foreign nuclear material"
+      },
+      {
+        "year": "1986",
+        "event": "GAO discovers 1,400+ discrepancies in Lockheed Burbank programs"
+      },
+      {
+        "year": "1994",
+        "event": "$3.7 billion in hidden NRO funds discovered; SAPOC (Special Access Program Oversight Committee) created"
+      },
+      {
+        "year": "2011",
+        "event": "CIA DS&T blocks Lockheed VP's attempt to transfer UAP hardware to DIA's AAWSAP program (Kona Blue)"
+      },
+      {
+        "year": "2017",
+        "event": "AATIP program revealed by New York Times"
+      },
+      {
+        "year": "2023",
+        "event": "David Grusch congressional testimony on crash retrieval programs; wave of IG complaints"
+      },
+      {
+        "year": "2025",
+        "event": "Claims of reverse-engineered propulsion module testing"
+      },
+      {
+        "year": "2026",
+        "event": "PURSUE release \u2014 first batch of declassified UAP files from war.gov"
+      }
     ],
     "documentary_evidence": [
       "NRO FOIA Document C05136331 (Sentient AI, May 2021)",
       "GAO Report NSIAD-86-191 (1986 audit findings)",
-      "Atomic Energy Act of 1954 (42 U.S.C. § 2011)",
+      "Atomic Energy Act of 1954 (42 U.S.C. \u00a7 2011)",
       "David Grusch Congressional testimony (July 26, 2023)",
       "Twining-Schulgen Memo (1947)"
     ],
     "sources": [
-      { "title": "UAP Gerb YouTube Channel", "url": "https://www.youtube.com/@UAPGerb" },
-      { "title": "The Hidden UFO Program Is Real (American Alchemy ft. UAPGerb)", "url": "https://www.youtube.com/watch?v=u7g5Sn1DJF4" },
-      { "title": "Deep Sea Alien Bases (Danny Jones Podcast #320)", "url": "https://www.youtube.com/watch?v=QJiYc-6XcIU" },
-      { "title": "Lockheed Martin — UFO Reverse Engineering (UAP Gerb)", "url": "https://open.spotify.com/episode/00jq8i1FdxpfqDHeQr5uUm" },
-      { "title": "UFO Legacy Programs — Northrop Grumman (UAP Gerb)", "url": "https://open.spotify.com/episode/0wJwcsEzhKg3TJEZHirv6Y" },
-      { "title": "UAP Gerb Video Database (GitHub)", "url": "https://github.com/DuelingGroks/UAP-Gerb-Video-Database" },
-      { "title": "Three-Layer Secrecy System Analysis (Medium)", "url": "https://medium.com/@BandGA/9-hours-of-uap-research-condensed-the-three-layer-secrecy-system-0b5d08289019" },
-      { "title": "UAP Gerb WikiDisc Entry", "url": "https://www.wikidisc.org/wiki/UAP_Gerb" }
+      {
+        "title": "UAP Gerb YouTube Channel",
+        "url": "https://www.youtube.com/@UAPGerb"
+      },
+      {
+        "title": "The Hidden UFO Program Is Real (American Alchemy ft. UAPGerb)",
+        "url": "https://www.youtube.com/watch?v=u7g5Sn1DJF4"
+      },
+      {
+        "title": "Deep Sea Alien Bases (Danny Jones Podcast #320)",
+        "url": "https://www.youtube.com/watch?v=QJiYc-6XcIU"
+      },
+      {
+        "title": "Lockheed Martin \u2014 UFO Reverse Engineering (UAP Gerb)",
+        "url": "https://open.spotify.com/episode/00jq8i1FdxpfqDHeQr5uUm"
+      },
+      {
+        "title": "UFO Legacy Programs \u2014 Northrop Grumman (UAP Gerb)",
+        "url": "https://open.spotify.com/episode/0wJwcsEzhKg3TJEZHirv6Y"
+      },
+      {
+        "title": "UAP Gerb Video Database (GitHub)",
+        "url": "https://github.com/DuelingGroks/UAP-Gerb-Video-Database"
+      },
+      {
+        "title": "Three-Layer Secrecy System Analysis (Medium)",
+        "url": "https://medium.com/@BandGA/9-hours-of-uap-research-condensed-the-three-layer-secrecy-system-0b5d08289019"
+      },
+      {
+        "title": "UAP Gerb WikiDisc Entry",
+        "url": "https://www.wikidisc.org/wiki/UAP_Gerb"
+      }
     ]
   },
   "theories": [
@@ -75,12 +144,17 @@
       "id": "eth",
       "name": "Extraterrestrial Hypothesis (ETH)",
       "short": "Visitors from other star systems",
-      "icon": "★",
+      "icon": "\u2605",
       "color": "#3b82f6",
       "popularity": 85,
       "scientific_support": 40,
       "description": "The traditional hypothesis that some UAP are spacecraft, probes, or technological artifacts operated by an extraterrestrial intelligence from another star system. The most widely known theory, supported by the COMETA report and numerous military witnesses.",
-      "key_proponents": ["Stanton Friedman", "David Saunders", "COMETA Panel (France)", "Avi Loeb"],
+      "key_proponents": [
+        "Stanton Friedman",
+        "David Saunders",
+        "COMETA Panel (France)",
+        "Avi Loeb"
+      ],
       "evidence": [
         "1999 French COMETA report concluded ETI was the 'least implausible' explanation",
         "Consistent reports of structured craft performing maneuvers beyond known technology",
@@ -88,24 +162,48 @@
         "Multiple military witnesses describing craft with no visible propulsion",
         "850 spherules recovered from Pacific Ocean with composition unlike known solar system materials"
       ],
-      "strengths": ["Most parsimonious explanation for structured craft", "Supported by physical trace evidence", "Consistent with Drake equation predictions"],
-      "weaknesses": ["Vast interstellar distances pose engineering challenges", "No confirmed signal from SETI despite decades of searching", "Doesn't explain high-strangeness aspects of encounters"],
+      "strengths": [
+        "Most parsimonious explanation for structured craft",
+        "Supported by physical trace evidence",
+        "Consistent with Drake equation predictions"
+      ],
+      "weaknesses": [
+        "Vast interstellar distances pose engineering challenges",
+        "No confirmed signal from SETI despite decades of searching",
+        "Doesn't explain high-strangeness aspects of encounters"
+      ],
       "sources": [
-        { "title": "Extraterrestrial UFO Hypothesis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Extraterrestrial_UFO_hypothesis" },
-        { "title": "ETH: An Epistemological Case (Springer)", "url": "https://link.springer.com/article/10.1007/s13194-025-00634-8" },
-        { "title": "The Galileo Project (Harvard)", "url": "https://galileo.hsites.harvard.edu/" }
+        {
+          "title": "Extraterrestrial UFO Hypothesis (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Extraterrestrial_UFO_hypothesis"
+        },
+        {
+          "title": "ETH: An Epistemological Case (Springer)",
+          "url": "https://link.springer.com/article/10.1007/s13194-025-00634-8"
+        },
+        {
+          "title": "The Galileo Project (Harvard)",
+          "url": "https://galileo.hsites.harvard.edu/"
+        }
       ]
     },
     {
       "id": "interdimensional",
       "name": "Interdimensional Hypothesis",
       "short": "Entities from parallel dimensions",
-      "icon": "◈",
+      "icon": "\u25c8",
       "color": "#8b5cf6",
       "popularity": 72,
       "scientific_support": 25,
       "description": "The proposal that UAP originate from parallel dimensions or higher-dimensional space that coexists with our own. Has gained significant mainstream traction since 2023, with congressional members and former intelligence officials openly discussing it. String theory's prediction of 10-11 dimensions provides a theoretical physics framework.",
-      "key_proponents": ["Jacques Vallée", "J. Allen Hynek", "John Keel", "Anna Paulina Luna", "Lue Elizondo", "David Grusch"],
+      "key_proponents": [
+        "Jacques Vall\u00e9e",
+        "J. Allen Hynek",
+        "John Keel",
+        "Anna Paulina Luna",
+        "Lue Elizondo",
+        "David Grusch"
+      ],
       "evidence": [
         "David Grusch suggested UAP might originate from 'a higher dimensional physical space that might be co-located right here'",
         "Lue Elizondo stated UAPs were 'just as likely' from another dimension as from outer space",
@@ -114,24 +212,47 @@
         "UAP behaviors (appearing/disappearing, defying physics) consistent with higher-dimensional objects intersecting 3D space",
         "Carl Sagan's Flatland analogy being revived by lawmakers"
       ],
-      "strengths": ["Explains instantaneous appearance/disappearance", "Consistent with theoretical physics frameworks", "Accounts for 'high strangeness' in encounters", "Gaining mainstream political support"],
-      "weaknesses": ["Extra dimensions in string theory are compactified at Planck scale", "No empirical method to detect other dimensions", "Risks unfalsifiability"],
+      "strengths": [
+        "Explains instantaneous appearance/disappearance",
+        "Consistent with theoretical physics frameworks",
+        "Accounts for 'high strangeness' in encounters",
+        "Gaining mainstream political support"
+      ],
+      "weaknesses": [
+        "Extra dimensions in string theory are compactified at Planck scale",
+        "No empirical method to detect other dimensions",
+        "Risks unfalsifiability"
+      ],
       "sources": [
-        { "title": "Interdimensional UFO Hypothesis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Interdimensional_UFO_hypothesis" },
-        { "title": "UAP Interdimensional Theories (New Space Economy)", "url": "https://newspaceeconomy.ca/2025/07/24/uap-interdimensional-theories-beyond-the-extraterrestrial-hypothesis/" },
-        { "title": "Congressional Interdimensional Discussion (Fox News)", "url": "https://www.foxnews.com/politics/close-encounters-congressional-kind-lawmakers-struggle-grasp-alleged-interdimensional-nature-ufos" }
+        {
+          "title": "Interdimensional UFO Hypothesis (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Interdimensional_UFO_hypothesis"
+        },
+        {
+          "title": "UAP Interdimensional Theories (New Space Economy)",
+          "url": "https://newspaceeconomy.ca/2025/07/24/uap-interdimensional-theories-beyond-the-extraterrestrial-hypothesis/"
+        },
+        {
+          "title": "Congressional Interdimensional Discussion (Fox News)",
+          "url": "https://www.foxnews.com/politics/close-encounters-congressional-kind-lawmakers-struggle-grasp-alleged-interdimensional-nature-ufos"
+        }
       ]
     },
     {
       "id": "ultraterrestrial",
       "name": "Ultraterrestrial / Cryptoterrestrial",
       "short": "Hidden Earth-based civilization",
-      "icon": "◉",
+      "icon": "\u25c9",
       "color": "#10b981",
       "popularity": 48,
       "scientific_support": 15,
-      "description": "Proposes that UAP originate from a technologically advanced civilization that shares Earth with humanity — hidden underground, undersea, or otherwise concealed. John Keel coined 'ultraterrestrials' in 1970; Mac Tonnies developed the 'cryptoterrestrial' variant. A 2024 Harvard paper gave the idea renewed academic attention.",
-      "key_proponents": ["John Keel", "Mac Tonnies", "Tim Lomas (Harvard)", "Jacques Vallée"],
+      "description": "Proposes that UAP originate from a technologically advanced civilization that shares Earth with humanity \u2014 hidden underground, undersea, or otherwise concealed. John Keel coined 'ultraterrestrials' in 1970; Mac Tonnies developed the 'cryptoterrestrial' variant. A 2024 Harvard paper gave the idea renewed academic attention.",
+      "key_proponents": [
+        "John Keel",
+        "Mac Tonnies",
+        "Tim Lomas (Harvard)",
+        "Jacques Vall\u00e9e"
+      ],
       "evidence": [
         "Persistent USO (unidentified submerged object) reports from navies worldwide",
         "UAP Gerb's research on Navy obsession with underwater crash retrievals",
@@ -139,48 +260,89 @@
         "John Keel's documentation of entities manifesting across historical eras as demons, angels, fairies, then aliens",
         "Transmedium capability (air-to-water) reported in Navy encounters"
       ],
-      "strengths": ["Explains why UAP are observed near water and underground facilities", "No interstellar travel required", "Accounts for apparent long-term presence"],
-      "weaknesses": ["No confirmed evidence of hidden civilizations", "Difficult to explain how they remain undetected", "Speculative without physical evidence"],
+      "strengths": [
+        "Explains why UAP are observed near water and underground facilities",
+        "No interstellar travel required",
+        "Accounts for apparent long-term presence"
+      ],
+      "weaknesses": [
+        "No confirmed evidence of hidden civilizations",
+        "Difficult to explain how they remain undetected",
+        "Speculative without physical evidence"
+      ],
       "sources": [
-        { "title": "Cryptoterrestrial Hypothesis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Cryptoterrestrial_hypothesis" },
-        { "title": "Harvard Cryptoterrestrial Paper (Fox News)", "url": "https://static.foxnews.com/foxnews.com/content/uploads/2024/06/ThecryptoterrestrialhypothesisLomasetal.J2024.pdf" },
-        { "title": "Navy Underwater UFO Crash Retrievals (UAP Gerb)", "url": "https://www.youtube.com/watch?v=w9kzBG4YBoc" }
+        {
+          "title": "Cryptoterrestrial Hypothesis (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Cryptoterrestrial_hypothesis"
+        },
+        {
+          "title": "Harvard Cryptoterrestrial Paper (Fox News)",
+          "url": "https://static.foxnews.com/foxnews.com/content/uploads/2024/06/ThecryptoterrestrialhypothesisLomasetal.J2024.pdf"
+        },
+        {
+          "title": "Navy Underwater UFO Crash Retrievals (UAP Gerb)",
+          "url": "https://www.youtube.com/watch?v=w9kzBG4YBoc"
+        }
       ]
     },
     {
       "id": "temporal",
       "name": "Future Human / Temporal Hypothesis",
       "short": "Time travelers from Earth's future",
-      "icon": "⟳",
+      "icon": "\u27f3",
       "color": "#f59e0b",
       "popularity": 35,
       "scientific_support": 15,
       "description": "Biological anthropologist Michael P. Masters proposes that UAP are piloted by future humans conducting time-directed fieldwork at historical inflection points. The 'extratempestrial' model suggests UAP occupants' reported features (large heads, small faces) are consistent with long-term evolutionary trends in human biology.",
-      "key_proponents": ["Michael P. Masters"],
+      "key_proponents": [
+        "Michael P. Masters"
+      ],
       "evidence": [
         "UAP occupant descriptions match projected human evolutionary trends (larger cranium, smaller face)",
         "UAP appear at historical inflection points and military/nuclear sites",
         "General relativity permits time dilation; some physicists argue closed timelike curves are possible",
         "Humanoid appearance of reported occupants better explained by shared ancestry than convergent evolution"
       ],
-      "strengths": ["Explains humanoid appearance of reported beings", "Accounts for interest in nuclear sites and human evolution", "Grounded in observable biological trends"],
-      "weaknesses": ["Time travel remains theoretical and may violate causality", "Doesn't explain non-humanoid encounters", "Single proponent — limited academic support"],
+      "strengths": [
+        "Explains humanoid appearance of reported beings",
+        "Accounts for interest in nuclear sites and human evolution",
+        "Grounded in observable biological trends"
+      ],
+      "weaknesses": [
+        "Time travel remains theoretical and may violate causality",
+        "Doesn't explain non-humanoid encounters",
+        "Single proponent \u2014 limited academic support"
+      ],
       "sources": [
-        { "title": "Time-Traveler UFO Hypothesis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Time-traveler_UFO_hypothesis" },
-        { "title": "Dr. Michael P. Masters", "url": "https://idflyobj.com/" },
-        { "title": "Are the Aliens Us? (Space.com)", "url": "https://www.space.com/aliens-time-traveling-humans-ufo-hypothesis.html" }
+        {
+          "title": "Time-Traveler UFO Hypothesis (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Time-traveler_UFO_hypothesis"
+        },
+        {
+          "title": "Dr. Michael P. Masters",
+          "url": "https://idflyobj.com/"
+        },
+        {
+          "title": "Are the Aliens Us? (Space.com)",
+          "url": "https://www.space.com/aliens-time-traveling-humans-ufo-hypothesis.html"
+        }
       ]
     },
     {
       "id": "nhi",
       "name": "Non-Human Intelligence (NHI) Framework",
       "short": "Government's origin-agnostic term",
-      "icon": "◆",
+      "icon": "\u25c6",
       "color": "#ec4899",
       "popularity": 90,
       "scientific_support": 50,
       "description": "The U.S. government's preferred terminology, deliberately agnostic about whether the intelligence is extraterrestrial, interdimensional, ultraterrestrial, or something else. Adopted because previous terms (aliens, ETs) carried inherent assumptions. Colonel Karl Nell stated publicly that 'non-human intelligence is interacting with humanity.'",
-      "key_proponents": ["Karl Nell", "David Grusch", "Lue Elizondo", "The Sol Foundation"],
+      "key_proponents": [
+        "Karl Nell",
+        "David Grusch",
+        "Lue Elizondo",
+        "The Sol Foundation"
+      ],
       "evidence": [
         "Colonel Karl Nell's public statement: 'Non-human intelligence exists, non-human intelligence has been interacting with humanity'",
         "David Grusch's congressional testimony about crash retrieval of non-human origin craft",
@@ -188,49 +350,91 @@
         "AARO established to investigate NHI-related phenomena",
         "Multiple firsthand witnesses with security clearances testifying under oath"
       ],
-      "strengths": ["Methodologically sound — doesn't presuppose origin", "Officially adopted by U.S. government", "Allows investigation without theoretical commitment"],
-      "weaknesses": ["Umbrella term that doesn't advance understanding of what NHI actually is", "Can be used to avoid specificity", "Risk of becoming a catch-all that impedes research"],
+      "strengths": [
+        "Methodologically sound \u2014 doesn't presuppose origin",
+        "Officially adopted by U.S. government",
+        "Allows investigation without theoretical commitment"
+      ],
+      "weaknesses": [
+        "Umbrella term that doesn't advance understanding of what NHI actually is",
+        "Can be used to avoid specificity",
+        "Risk of becoming a catch-all that impedes research"
+      ],
       "sources": [
-        { "title": "Karl Nell: The Colonel Who Put NHI On Record (UAPedia)", "url": "https://www.uapedia.ai/wiki/karl-e-nell-the-quiet-colonel-who-put-non-human-intelligence-on-the-record/" },
-        { "title": "NHI Definition (ParaRational)", "url": "https://www.pararational.com/encyclopedia/nhi-non-human-intelligence/" },
-        { "title": "Sol Foundation White Paper", "url": "https://thesolfoundation.org/wp-content/uploads/2024/05/Sol_WhitePaper_Vol1N3.pdf" }
+        {
+          "title": "Karl Nell: The Colonel Who Put NHI On Record (UAPedia)",
+          "url": "https://www.uapedia.ai/wiki/karl-e-nell-the-quiet-colonel-who-put-non-human-intelligence-on-the-record/"
+        },
+        {
+          "title": "NHI Definition (ParaRational)",
+          "url": "https://www.pararational.com/encyclopedia/nhi-non-human-intelligence/"
+        },
+        {
+          "title": "Sol Foundation White Paper",
+          "url": "https://thesolfoundation.org/wp-content/uploads/2024/05/Sol_WhitePaper_Vol1N3.pdf"
+        }
       ]
     },
     {
       "id": "consciousness",
       "name": "Consciousness / Control System",
-      "short": "Vallée's psychic-interaction model",
-      "icon": "◎",
+      "short": "Vall\u00e9e's psychic-interaction model",
+      "icon": "\u25ce",
       "color": "#6366f1",
       "popularity": 55,
       "scientific_support": 20,
-      "description": "Jacques Vallée's hypothesis that UAP function as a 'control system' influencing human consciousness and belief systems across millennia. The phenomenon manifests differently across eras — as angels, fairies, airships, or aliens — but serves a consistent function of steering human development. Gary Nolan's brain studies of UAP experiencers found physical changes supporting a consciousness connection.",
-      "key_proponents": ["Jacques Vallée", "Diana Pasulka", "Gary Nolan", "John Mack"],
+      "description": "Jacques Vall\u00e9e's hypothesis that UAP function as a 'control system' influencing human consciousness and belief systems across millennia. The phenomenon manifests differently across eras \u2014 as angels, fairies, airships, or aliens \u2014 but serves a consistent function of steering human development. Gary Nolan's brain studies of UAP experiencers found physical changes supporting a consciousness connection.",
+      "key_proponents": [
+        "Jacques Vall\u00e9e",
+        "Diana Pasulka",
+        "Gary Nolan",
+        "John Mack"
+      ],
       "evidence": [
         "Gary Nolan's MRI scans of 100+ UAP witnesses revealed caudate-putamen hypertrophy and reduced corpus callosum white matter",
         "CLUAP1 gene variants found in 30% of studied experiencers",
         "Cross-cultural consistency of encounter reports spanning millennia",
         "Diana Pasulka's ethnographic research documenting UAP belief as a new form of religion",
-        "Vallée documented that encounter phenomenology changes to match cultural expectations across eras"
+        "Vall\u00e9e documented that encounter phenomenology changes to match cultural expectations across eras"
       ],
-      "strengths": ["Accounts for cross-cultural and transhistorical nature of phenomenon", "Supported by neurological evidence", "Explains why phenomenon seems to 'respond' to observers"],
-      "weaknesses": ["Difficult to falsify", "Control system purpose remains undefined", "Physical trace evidence harder to explain in consciousness framework"],
+      "strengths": [
+        "Accounts for cross-cultural and transhistorical nature of phenomenon",
+        "Supported by neurological evidence",
+        "Explains why phenomenon seems to 'respond' to observers"
+      ],
+      "weaknesses": [
+        "Difficult to falsify",
+        "Control system purpose remains undefined",
+        "Physical trace evidence harder to explain in consciousness framework"
+      ],
       "sources": [
-        { "title": "Jacques Vallée (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Jacques_Vall%C3%A9e" },
-        { "title": "Dr. Garry Nolan: Lab Discipline to UAP Studies (UAPedia)", "url": "https://www.uapedia.ai/wiki/dr-garry-p-nolan-the-stanford-pathologist-bringing-lab-discipline-to-uap-studies/" },
-        { "title": "Diana Pasulka: American Cosmic", "url": "https://dwpasulka.com/books/" }
+        {
+          "title": "Jacques Vall\u00e9e (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Jacques_Vall%C3%A9e"
+        },
+        {
+          "title": "Dr. Garry Nolan: Lab Discipline to UAP Studies (UAPedia)",
+          "url": "https://www.uapedia.ai/wiki/dr-garry-p-nolan-the-stanford-pathologist-bringing-lab-discipline-to-uap-studies/"
+        },
+        {
+          "title": "Diana Pasulka: American Cosmic",
+          "url": "https://dwpasulka.com/books/"
+        }
       ]
     },
     {
       "id": "breakaway",
       "name": "Advanced Terrestrial / Breakaway Civilization",
       "short": "Secret human technology programs",
-      "icon": "▲",
+      "icon": "\u25b2",
       "color": "#ef4444",
       "popularity": 40,
       "scientific_support": 30,
       "description": "The hypothesis that some UAP represent classified human technology developed through 'breakaway' programs that have separated from mainstream society. Proponents point to trillions in untraceable military spending and redacted government documents. This overlaps significantly with UAP Gerb's Legacy Program framework.",
-      "key_proponents": ["Richard Dolan", "Ben Rich (Lockheed Skunk Works)"],
+      "key_proponents": [
+        "Richard Dolan",
+        "Ben Rich (Lockheed Skunk Works)"
+      ],
       "evidence": [
         "Trillions in untraceable Department of Defense spending documented by auditors",
         "$3.7 billion in hidden NRO funds discovered in 1994",
@@ -238,24 +442,45 @@
         "Consistent whistleblower claims of reverse-engineered technology",
         "GAO discovery of 1,400+ discrepancies in Lockheed Burbank programs (1986)"
       ],
-      "strengths": ["Grounded in documented financial irregularities", "Doesn't require exotic physics", "Compatible with known compartmentalization practices"],
-      "weaknesses": ["Doesn't explain pre-modern sightings", "Assumes technological capability beyond known physics", "Whistleblower claims lack physical proof"],
+      "strengths": [
+        "Grounded in documented financial irregularities",
+        "Doesn't require exotic physics",
+        "Compatible with known compartmentalization practices"
+      ],
+      "weaknesses": [
+        "Doesn't explain pre-modern sightings",
+        "Assumes technological capability beyond known physics",
+        "Whistleblower claims lack physical proof"
+      ],
       "sources": [
-        { "title": "Breakaway Civilization Hypothesis (UAP Caucus)", "url": "https://www.uapcaucus.com/ocs/details/breakaway-civilization" },
-        { "title": "Harvard Hidden Civilization Paper (Futurism)", "url": "https://futurism.com/harvard-scientists-unknown-civilization-cryptoterrestrials" },
-        { "title": "Secret Crash Retrieval Programs (The War Zone)", "url": "https://www.twz.com/aliens-or-not-secret-crash-retrieval-programs-are-a-very-real-thing" }
+        {
+          "title": "Breakaway Civilization Hypothesis (UAP Caucus)",
+          "url": "https://www.uapcaucus.com/ocs/details/breakaway-civilization"
+        },
+        {
+          "title": "Harvard Hidden Civilization Paper (Futurism)",
+          "url": "https://futurism.com/harvard-scientists-unknown-civilization-cryptoterrestrials"
+        },
+        {
+          "title": "Secret Crash Retrieval Programs (The War Zone)",
+          "url": "https://www.twz.com/aliens-or-not-secret-crash-retrieval-programs-are-a-very-real-thing"
+        }
       ]
     },
     {
       "id": "plasma",
       "name": "Plasma / Natural Phenomena",
       "short": "Atmospheric and geological effects",
-      "icon": "○",
+      "icon": "\u25cb",
       "color": "#06b6d4",
       "popularity": 25,
       "scientific_support": 60,
-      "description": "The hypothesis that many UAP are natural atmospheric phenomena — ball lightning, tectonic stress luminosities, or exotic plasma formations. The Hessdalen lights in Norway have been studied scientifically since 1983 and provide the strongest case for naturally occurring luminous anomalies.",
-      "key_proponents": ["Erling Strand (Project Hessdalen)", "Michael Persinger", "Massimo Teodorani"],
+      "description": "The hypothesis that many UAP are natural atmospheric phenomena \u2014 ball lightning, tectonic stress luminosities, or exotic plasma formations. The Hessdalen lights in Norway have been studied scientifically since 1983 and provide the strongest case for naturally occurring luminous anomalies.",
+      "key_proponents": [
+        "Erling Strand (Project Hessdalen)",
+        "Michael Persinger",
+        "Massimo Teodorani"
+      ],
       "evidence": [
         "Hessdalen lights documented since 1811, scientifically studied since 1983",
         "Tectonic stress produces gas release and electromagnetic field variations that form atmospheric plasmas",
@@ -263,47 +488,86 @@
         "Spherical UAP (orbs) are the most commonly reported shape globally",
         "Some UAP appear near fault lines and areas of geological stress"
       ],
-      "strengths": ["Empirically testable and reproducible in some cases", "Explains a subset of sightings (especially orbs/lights)", "Doesn't require exotic hypotheses"],
-      "weaknesses": ["Cannot explain structured craft or intelligent behavior", "Doesn't account for radar returns or multi-sensor detections", "Limited to luminous phenomena only"],
+      "strengths": [
+        "Empirically testable and reproducible in some cases",
+        "Explains a subset of sightings (especially orbs/lights)",
+        "Doesn't require exotic hypotheses"
+      ],
+      "weaknesses": [
+        "Cannot explain structured craft or intelligent behavior",
+        "Doesn't account for radar returns or multi-sensor detections",
+        "Limited to luminous phenomena only"
+      ],
       "sources": [
-        { "title": "Hessdalen Lights (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Hessdalen_lights" },
-        { "title": "Spherical UAP: Scientific Observations (ResearchGate)", "url": "https://www.researchgate.net/publication/253814462_Spherical_Unidentified_Anomalous_Phenomena_Scientific_Observations_and_Physical_Hypotheses_Danger_Evaluation_For_Aviation_and_Future_Observational_Plans" },
-        { "title": "Project Hessdalen", "url": "https://www.hessdalen.org/theories" }
+        {
+          "title": "Hessdalen Lights (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Hessdalen_lights"
+        },
+        {
+          "title": "Spherical UAP: Scientific Observations (ResearchGate)",
+          "url": "https://www.researchgate.net/publication/253814462_Spherical_Unidentified_Anomalous_Phenomena_Scientific_Observations_and_Physical_Hypotheses_Danger_Evaluation_For_Aviation_and_Future_Observational_Plans"
+        },
+        {
+          "title": "Project Hessdalen",
+          "url": "https://www.hessdalen.org/theories"
+        }
       ]
     },
     {
       "id": "simulation",
       "name": "Simulation Hypothesis",
       "short": "Glitches in simulated reality",
-      "icon": "☐",
+      "icon": "\u2610",
       "color": "#a855f7",
       "popularity": 30,
       "scientific_support": 10,
-      "description": "UAP as anomalies or 'glitches' in a simulated reality. Nick Bostrom's 2003 simulation argument provides the philosophical foundation. Proponents note that UAP behaviors — violating physics, inconsistent sensor data, localized electromagnetic effects — are consistent with artifacts of a computational substrate.",
-      "key_proponents": ["Nick Bostrom", "Rizwan Virk", "Tom Campbell"],
+      "description": "UAP as anomalies or 'glitches' in a simulated reality. Nick Bostrom's 2003 simulation argument provides the philosophical foundation. Proponents note that UAP behaviors \u2014 violating physics, inconsistent sensor data, localized electromagnetic effects \u2014 are consistent with artifacts of a computational substrate.",
+      "key_proponents": [
+        "Nick Bostrom",
+        "Rizwan Virk",
+        "Tom Campbell"
+      ],
       "evidence": [
         "UAP violate known physics (inconsistent acceleration, gravity-defying movement)",
         "Inconsistent sensor data across instruments could indicate simulation subsystem differences",
         "Localized electromagnetic interference consistent with 'simulation layers' being altered",
         "Bostrom's trilemma: if civilizations can run simulations, we likely are in one"
       ],
-      "strengths": ["Provides framework for physics-defying observations", "Philosophically rigorous foundation", "Growing academic interest"],
-      "weaknesses": ["Unfalsifiable by definition", "Bostrom himself discounts 'glitch' reports", "Doesn't generate testable predictions for UAP specifically"],
+      "strengths": [
+        "Provides framework for physics-defying observations",
+        "Philosophically rigorous foundation",
+        "Growing academic interest"
+      ],
+      "weaknesses": [
+        "Unfalsifiable by definition",
+        "Bostrom himself discounts 'glitch' reports",
+        "Doesn't generate testable predictions for UAP specifically"
+      ],
       "sources": [
-        { "title": "The Simulation Argument", "url": "https://simulation-argument.com/" },
-        { "title": "Simulation Hypothesis and UAPs (New Space Economy)", "url": "https://newspaceeconomy.ca/2025/07/22/the-simulation-hypothesis-and-uaps-are-we-seeing-glitches/" }
+        {
+          "title": "The Simulation Argument",
+          "url": "https://simulation-argument.com/"
+        },
+        {
+          "title": "Simulation Hypothesis and UAPs (New Space Economy)",
+          "url": "https://newspaceeconomy.ca/2025/07/22/the-simulation-hypothesis-and-uaps-are-we-seeing-glitches/"
+        }
       ]
     },
     {
       "id": "demonic",
       "name": "Spiritual / Demonic Hypothesis",
       "short": "Religious interpretation of UAP",
-      "icon": "✝",
+      "icon": "\u271d",
       "color": "#dc2626",
       "popularity": 30,
       "scientific_support": 5,
       "description": "The interpretation that UAP represent demonic or spiritual entities rather than physical beings. Held by several U.S. government officials and politicians, including VP JD Vance. Former Pentagon officials reported that 'several individuals in the Pentagon objected for spiritual reasons' to UFO investigations.",
-      "key_proponents": ["JD Vance", "Charlie Duke (astronaut)", "Devon Woods (ODNI)"],
+      "key_proponents": [
+        "JD Vance",
+        "Charlie Duke (astronaut)",
+        "Devon Woods (ODNI)"
+      ],
       "evidence": [
         "Devon Woods of ODNI told Elizondo: 'It's demonic. There is no reason we should be looking into this.'",
         "Former astronaut Charlie Duke calls UAP 'real' but 'demonic beings'",
@@ -311,35 +575,69 @@
         "Harry Reid confirmed Pentagon pushback due to 'religious views' by intelligence officials",
         "Cross-cultural religious traditions describe non-human entities consistent with UAP encounters"
       ],
-      "strengths": ["Accounts for deceptive and consciousness-altering aspects", "Consistent with millennia of religious traditions", "Explains Pentagon reluctance to investigate"],
-      "weaknesses": ["Not scientifically testable", "Presupposes specific theological framework", "Can be used to shut down investigation rather than advance understanding"],
+      "strengths": [
+        "Accounts for deceptive and consciousness-altering aspects",
+        "Consistent with millennia of religious traditions",
+        "Explains Pentagon reluctance to investigate"
+      ],
+      "weaknesses": [
+        "Not scientifically testable",
+        "Presupposes specific theological framework",
+        "Can be used to shut down investigation rather than advance understanding"
+      ],
       "sources": [
-        { "title": "Demonic UFO Hypothesis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Demonic_UFO_hypothesis" },
-        { "title": "Demons and UAP in the Pentagon (Patheos)", "url": "https://www.patheos.com/blogs/publictheology/2025/01/demons-and-uap-in-the-pentagon/" },
-        { "title": "Why JD Vance Says UFOs Are Demons", "url": "https://www.doolly.com/blog/why-jd-vance-says-ufos-are-demons" }
+        {
+          "title": "Demonic UFO Hypothesis (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Demonic_UFO_hypothesis"
+        },
+        {
+          "title": "Demons and UAP in the Pentagon (Patheos)",
+          "url": "https://www.patheos.com/blogs/publictheology/2025/01/demons-and-uap-in-the-pentagon/"
+        },
+        {
+          "title": "Why JD Vance Says UFOs Are Demons",
+          "url": "https://www.doolly.com/blog/why-jd-vance-says-ufos-are-demons"
+        }
       ]
     },
     {
       "id": "zoo",
       "name": "Zoo / Planetarium Hypothesis",
       "short": "Deliberate non-interference by advanced civilizations",
-      "icon": "⊙",
+      "icon": "\u2299",
       "color": "#84cc16",
       "popularity": 20,
       "scientific_support": 15,
       "description": "Proposes that advanced extraterrestrial civilizations intentionally avoid full contact with Earth, observing humanity like animals in a zoo. First proposed by John A. Ball in 1973. The 'planetarium' variant suggests aliens create an illusion that makes space seem empty.",
-      "key_proponents": ["John A. Ball", "Stephen Baxter (planetarium variant)"],
+      "key_proponents": [
+        "John A. Ball",
+        "Stephen Baxter (planetarium variant)"
+      ],
       "evidence": [
         "UAP demonstrate awareness of being observed but avoid sustained contact",
-        "Consistent with the Fermi Paradox — if they exist, why no open contact?",
+        "Consistent with the Fermi Paradox \u2014 if they exist, why no open contact?",
         "Selective engagement pattern: military encounters but no mass landing",
         "Star Trek's 'Prime Directive' as cultural analogy"
       ],
-      "strengths": ["Elegant resolution to Fermi Paradox", "Explains selective/limited contact pattern", "Consistent with observed UAP avoidance behaviors"],
-      "weaknesses": ["Unfalsifiable — predicts we will never find proof", "Assumes benign intent", "Doesn't explain why some encounters occur at all"],
+      "strengths": [
+        "Elegant resolution to Fermi Paradox",
+        "Explains selective/limited contact pattern",
+        "Consistent with observed UAP avoidance behaviors"
+      ],
+      "weaknesses": [
+        "Unfalsifiable \u2014 predicts we will never find proof",
+        "Assumes benign intent",
+        "Doesn't explain why some encounters occur at all"
+      ],
       "sources": [
-        { "title": "Zoo Hypothesis (Wikipedia)", "url": "https://en.wikipedia.org/wiki/Zoo_hypothesis" },
-        { "title": "Zoo Hypothesis May Explain Why (SETI)", "url": "https://www.seti.org/news/zoo-hypothesis-may-explain-why-we-havent-seen-any-space-aliens/" }
+        {
+          "title": "Zoo Hypothesis (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Zoo_hypothesis"
+        },
+        {
+          "title": "Zoo Hypothesis May Explain Why (SETI)",
+          "url": "https://www.seti.org/news/zoo-hypothesis-may-explain-why-we-havent-seen-any-space-aliens/"
+        }
       ]
     }
   ],
@@ -366,7 +664,7 @@
       "url": "https://galileo.hsites.harvard.edu/"
     },
     {
-      "name": "Jacques Vallée",
+      "name": "Jacques Vall\u00e9e",
       "affiliation": "Independent researcher",
       "focus": "Control system hypothesis, phenomenology",
       "key_finding": "Proposed UAP as a transhistorical 'control system' influencing human consciousness; documented cross-cultural encounter consistency",
@@ -394,14 +692,17 @@
       "url": "https://www.youtube.com/@UAPGerb",
       "description": "Independent UAP journalist and documentarian specializing in crash retrieval research, legacy program investigation, and whistleblower analysis. Recognized as one of the most knowledgeable researchers on the organizational structure of alleged UAP programs.",
       "notable_content": [
-        "The Pentagon's UFO Program Is Real — comprehensive framework video",
-        "Lockheed Martin — UFO Reverse Engineering, Material Exploitation & Legacy Programs",
-        "UFO Legacy Programs — Northrop Grumman",
+        "The Pentagon's UFO Program Is Real \u2014 comprehensive framework video",
+        "Lockheed Martin \u2014 UFO Reverse Engineering, Material Exploitation & Legacy Programs",
+        "UFO Legacy Programs \u2014 Northrop Grumman",
         "Deep Sea Alien Bases: The Underwater CIA Project (Danny Jones #320)",
         "#1 Best Evidence the U.S. Military Has Reverse-Engineered Alien Craft",
         "Top UFO Investigator Reveals What They REALLY Found at Roswell"
       ],
-      "social": { "twitter": "https://x.com/uapgerb", "patreon": "https://www.patreon.com/UAPGerb" }
+      "social": {
+        "twitter": "https://x.com/uapgerb",
+        "patreon": "https://www.patreon.com/UAPGerb"
+      }
     },
     "american_alchemy": {
       "name": "American Alchemy",
@@ -409,13 +710,15 @@
       "url": "https://www.youtube.com/@AmericanAlchemy",
       "description": "Created by Jesse Michels, an investor at Thiel Capital. Explores UFOs, non-human intelligence, hidden history, and the edges of science. Functions as a translator between niche research communities and mainstream curiosity with longform interview format.",
       "notable_content": [
-        "The Hidden UFO Program Is Real — Here's How It Works! (ft. UAPGerb)",
+        "The Hidden UFO Program Is Real \u2014 Here's How It Works! (ft. UAPGerb)",
         "Marine Found Egg-Shaped UFO in the Jungle! (ft. UAP Gerb & Jesse Michels)",
         "The Most Knowledgeable UFO Researcher In The World",
         "Matthew Pines: Anti-Gravity Tech & Inter-Dimensional Aliens",
         "UFOs, Hidden Ancient Wisdom & the Consciousness Link"
       ],
-      "social": { "twitter": "https://x.com/AlchemyAmerican" }
+      "social": {
+        "twitter": "https://x.com/AlchemyAmerican"
+      }
     },
     "mufon": {
       "name": "MUFON (Mutual UFO Network)",
@@ -423,20 +726,133 @@
       "url": "https://mufon.com/",
       "description": "Founded 1969, headquartered in Cincinnati, Ohio. The oldest and largest civilian UFO investigation organization with 4,000+ members, 500+ certified field investigators, and 145,099 cases in their database. Operates the Case Management System (CMS), STAR Team for rapid deployment, and the Science Review Board.",
       "key_resources": [
-        { "name": "Case Management System (CMS)", "url": "https://mufoncms.com/cgi-bin/report_handler.pl?req=search_page", "description": "145,099+ cases searchable by location, date, shape, and more" },
-        { "name": "Project Aquarius Library", "url": "https://projectaquarius.mufon.com/", "description": "Possibly the world's largest online UFO/UAP library — includes MARRS files (7,000 paper reports), digitized journals (1967-2010), Ruppelt files, and private research collections" },
-        { "name": "Science Review Board", "url": "https://mufon.com/research/", "description": "Scientists from NASA, Lockheed, Northrop, LLNL review the strongest cases annually" }
+        {
+          "name": "Case Management System (CMS)",
+          "url": "https://mufoncms.com/cgi-bin/report_handler.pl?req=search_page",
+          "description": "145,099+ cases searchable by location, date, shape, and more"
+        },
+        {
+          "name": "Project Aquarius Library",
+          "url": "https://projectaquarius.mufon.com/",
+          "description": "Possibly the world's largest online UFO/UAP library \u2014 includes MARRS files (7,000 paper reports), digitized journals (1967-2010), Ruppelt files, and private research collections"
+        },
+        {
+          "name": "Science Review Board",
+          "url": "https://mufon.com/research/",
+          "description": "Scientists from NASA, Lockheed, Northrop, LLNL review the strongest cases annually"
+        }
       ],
       "stats_2025": {
         "total_cases": 145099,
         "cases_2025_jan_sep": 1959,
         "field_investigators": 500,
         "countries": 43,
-        "us_unknown_shapes": { "discoidal_spherical_circular": "42.4%", "cylindrical": "8%", "star_like": "6.8%", "square_rectangular": "3.2%" },
+        "us_unknown_shapes": {
+          "discoidal_spherical_circular": "42.4%",
+          "cylindrical": "8%",
+          "star_like": "6.8%",
+          "square_rectangular": "3.2%"
+        },
         "peak_month_2025": "January"
       },
       "executive_director": "Dave MacDonald",
       "upcoming": "MUFON Symposium 2026, August 28-30, Northern Kentucky Convention Center"
+    },
+    "black_vault": {
+      "name": "The Black Vault",
+      "type": "FOIA Archive",
+      "url": "https://www.theblackvault.com/",
+      "description": "The largest private collection of declassified government documents in the world, built over 25+ years through systematic FOIA requests by John Greenewald Jr. Hosts millions of pages covering UAP, intelligence, and defense topics.",
+      "notable_content": [
+        "Largest private FOIA archive in the world",
+        "First to obtain many declassified UAP documents",
+        "Key resource cited by journalists and congressional staffers",
+        "Survived February 2026 server wipe incident \u2014 fully restored"
+      ]
+    },
+    "the_debrief": {
+      "name": "The Debrief",
+      "type": "Journalism",
+      "url": "https://thedebrief.org/",
+      "description": "Online journalism outlet covering science, defense technology, and UAP. Founded in 2020 by Micah Hanks, Tim McMillan, and MJ Banias. Broke early Grusch whistleblower details and provides comprehensive PURSUE release analysis.",
+      "notable_content": [
+        "Early reporting on David Grusch allegations",
+        "Comprehensive PURSUE release analysis",
+        "Coverage of Sol Foundation symposiums",
+        "Regular features on AARO and congressional activity"
+      ]
+    },
+    "sol_foundation": {
+      "name": "The Sol Foundation",
+      "type": "Academic Think Tank",
+      "url": "https://thesolfoundation.org/",
+      "description": "Academic think tank co-founded by Dr. Garry Nolan (Stanford) researching the philosophical, policy, and scientific implications of UAP. Hosts annual symposiums bringing together academics and government officials.",
+      "notable_content": [
+        "Annual symposiums with published proceedings",
+        "Multi-disciplinary research framework",
+        "Network of credentialed academics engaging with UAP",
+        "Policy recommendations for disclosure"
+      ]
+    },
+    "scu": {
+      "name": "Scientific Coalition for UAP Studies",
+      "type": "Scientific Organization",
+      "url": "https://www.explorescu.org/",
+      "description": "Coalition of scientists and researchers dedicated to rigorous scientific examination of UAP. Publishes peer-reviewed research including in Nature Scientific Reports. 2026 conference keynoted by Christopher Mellon.",
+      "notable_content": [
+        "Peer-reviewed research on UAP and nuclear correlations",
+        "Annual scientific conferences (2026: Toronto)",
+        "VASCO project on pre-satellite-era transients",
+        "161-page Aguadilla case technical analysis"
+      ]
+    },
+    "liberation_times": {
+      "name": "Liberation Times",
+      "type": "Journalism",
+      "url": "https://www.liberationtimes.com/",
+      "description": "Independent news outlet by Christopher Sharp focused exclusively on UAP journalism. Known for breaking stories on Pentagon coordination, Five Eyes investigations, and UAPDA legislative developments.",
+      "notable_content": [
+        "Broke Pentagon-White House PURSUE coordination story",
+        "Reporting on Five Eyes UAP investigations",
+        "Coverage of UAPDA legislative trajectory",
+        "Whistleblower intimidation reporting"
+      ]
+    },
+    "the_war_zone": {
+      "name": "The War Zone",
+      "type": "Defense Journalism",
+      "url": "https://www.twz.com/",
+      "description": "Premier military aviation and defense technology outlet by Tyler Rogoway. Provides technically rigorous UAP analysis grounded in aerospace engineering and military operations knowledge.",
+      "notable_content": [
+        "Detailed technical analysis of Navy UAP encounters",
+        "Adversary drone hypothesis for some UAP incidents",
+        "FAA internal hotline UAP report investigations",
+        "Military drone incursion coverage"
+      ]
+    },
+    "galileo_project": {
+      "name": "The Galileo Project",
+      "type": "Academic Research",
+      "url": "https://galileo.hsites.harvard.edu/",
+      "description": "Harvard-based systematic scientific research program led by Prof. Avi Loeb. Operates three observatories monitoring the sky in infrared, optical, radio, and audio bands. AI models analyze millions of objects for anomalous outliers.",
+      "notable_content": [
+        "Three operational observatories with continuous monitoring",
+        "500,000+ aerial objects catalogued",
+        "AI-driven anomaly detection pipeline",
+        "First systematic civilian UAP detection program"
+      ]
+    },
+    "americans_safe_aerospace": {
+      "name": "Americans for Safe Aerospace",
+      "type": "Advocacy Organization",
+      "url": "https://www.safeaerospace.org/",
+      "description": "First military-pilot-led nonprofit dedicated to UAP as a matter of national security and aerospace safety. Founded by former Navy F/A-18F pilot Ryan Graves, who testified before Congress in July 2023.",
+      "notable_content": [
+        "Ryan Graves congressional testimony (July 2023)",
+        "Pilot witness reporting and protection advocacy",
+        "Collaboration with AIAA on UAP aerospace safety",
+        "Framing UAP as aviation safety issue"
+      ]
     }
   }
 }

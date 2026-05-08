@@ -37,6 +37,18 @@ export default function Layout() {
               className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive ? 'bg-indigo-500/20 text-indigo-300' : 'text-slate-400 hover:text-slate-200'}`}>
               Theories
             </NavLink>
+            <NavLink to="/cases"
+              className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive ? 'bg-red-500/20 text-red-300' : 'text-slate-400 hover:text-slate-200'}`}>
+              Cases
+            </NavLink>
+            <NavLink to="/international"
+              className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive ? 'bg-emerald-500/20 text-emerald-300' : 'text-slate-400 hover:text-slate-200'}`}>
+              International
+            </NavLink>
+            <NavLink to="/pulse"
+              className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive ? 'bg-cyan-500/20 text-cyan-300' : 'text-slate-400 hover:text-slate-200'}`}>
+              Pulse
+            </NavLink>
             <NavLink to="/analysis/report"
               className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive || location.pathname.startsWith('/analysis') ? 'bg-primary/20 text-primary-light' : 'text-slate-400 hover:text-slate-200'}`}>
               Analysis
@@ -64,6 +76,21 @@ export default function Layout() {
               onClick={() => setMenuOpen(false)}
               className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-indigo-500/20 text-indigo-300' : 'text-slate-300'}`}>
               <span className="text-base w-5 text-center">◈</span>Theories
+            </NavLink>
+            <NavLink to="/cases"
+              onClick={() => setMenuOpen(false)}
+              className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-red-500/20 text-red-300' : 'text-slate-300'}`}>
+              <span className="text-base w-5 text-center">◆</span>Cases
+            </NavLink>
+            <NavLink to="/international"
+              onClick={() => setMenuOpen(false)}
+              className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-emerald-500/20 text-emerald-300' : 'text-slate-300'}`}>
+              <span className="text-base w-5 text-center">🌐</span>International
+            </NavLink>
+            <NavLink to="/pulse"
+              onClick={() => setMenuOpen(false)}
+              className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-cyan-500/20 text-cyan-300' : 'text-slate-300'}`}>
+              <span className="text-base w-5 text-center">◌</span>Pulse
             </NavLink>
             {['report', 'fbi', 'apollo', 'redactions', 'high_interest'].map(s => (
               <NavLink key={s} to={`/analysis/${s}`}

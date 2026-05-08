@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import LegacyProgramChart from '../components/LegacyProgramChart'
 
 function useCountUp(target, duration = 1500) {
   const [value, setValue] = useState(0)
@@ -126,132 +127,6 @@ function TheoryCard({ theory, isExpanded, onToggle }) {
   )
 }
 
-function GerbFramework({ framework }) {
-  const [layerOpen, setLayerOpen] = useState(null)
-  const [timelineOpen, setTimelineOpen] = useState(false)
-
-  const layerColors = ['#3b82f6', '#f59e0b', '#ef4444']
-
-  return (
-    <section className="mt-10">
-      <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/30 border border-indigo-500/20 rounded-lg overflow-hidden">
-        <div className="p-4 sm:p-6">
-          <div className="flex items-center gap-2 mb-1">
-            <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider">Featured Framework</span>
-          </div>
-          <h2 className="text-lg font-bold text-slate-100 mb-1">{framework.title}</h2>
-          <p className="text-xs text-slate-500 mb-3">{framework.attribution}</p>
-          <p className="text-sm text-slate-300 leading-relaxed mb-6">{framework.description}</p>
-
-          {/* Three Layers */}
-          <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Three-Layer Secrecy Architecture</h3>
-          <div className="space-y-2 mb-6">
-            {framework.three_layers.map((layer, i) => (
-              <div key={i} className="border rounded-lg overflow-hidden"
-                style={{ borderColor: `${layerColors[i]}30` }}>
-                <button
-                  onClick={() => setLayerOpen(layerOpen === i ? null : i)}
-                  className="w-full text-left p-3 cursor-pointer hover:bg-slate-800/30 transition-colors"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold"
-                      style={{ backgroundColor: `${layerColors[i]}15`, color: layerColors[i] }}>
-                      {i + 1}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="text-sm font-semibold text-slate-200">{layer.name}</div>
-                      <div className="text-[11px] text-slate-500">{layer.lead_agency}</div>
-                    </div>
-                    <span className="text-xs text-slate-600">{layerOpen === i ? '▾' : '▸'}</span>
-                  </div>
-                </button>
-                {layerOpen === i && (
-                  <div className="px-3 pb-3 pt-0 border-t border-slate-800/50">
-                    <p className="text-xs text-slate-400 leading-relaxed mt-2">{layer.description}</p>
-                    <p className="text-[11px] text-indigo-400/80 mt-2 italic">{layer.key_detail}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Key Personnel */}
-          <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Key Personnel (Revolving Door)</h3>
-          <div className="grid gap-1.5 sm:grid-cols-2 mb-6">
-            {framework.key_personnel.map((p, i) => (
-              <div key={i} className="flex items-start gap-2 bg-slate-800/30 rounded px-2.5 py-1.5">
-                <span className="text-[10px] text-indigo-400 mt-0.5">●</span>
-                <div>
-                  <span className="text-xs font-medium text-slate-300">{p.name}</span>
-                  <span className="text-[10px] text-slate-500 ml-1.5">{p.role}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Facilities */}
-          <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Key Facilities</h3>
-          <div className="flex flex-wrap gap-1.5 mb-6">
-            {framework.key_facilities.map((f, i) => (
-              <span key={i} className="px-2 py-0.5 rounded text-[11px] bg-slate-800/60 text-slate-400 border border-slate-700/30">
-                {f}
-              </span>
-            ))}
-          </div>
-
-          {/* Timeline */}
-          <button
-            onClick={() => setTimelineOpen(o => !o)}
-            className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 cursor-pointer hover:text-slate-200 transition-colors flex items-center gap-1"
-          >
-            Historical Timeline <span className="text-slate-600">{timelineOpen ? '▾' : '▸'}</span>
-          </button>
-          {timelineOpen && (
-            <div className="relative pl-6 mt-2 mb-4">
-              <div className="absolute left-[7px] top-1 bottom-1 w-px bg-indigo-500/30" />
-              {framework.historical_timeline.map((ev, i) => (
-                <div key={i} className="relative mb-3 last:mb-0">
-                  <div className="absolute left-[-17px] top-1.5 w-2.5 h-2.5 rounded-full bg-indigo-500 ring-2 ring-slate-900" />
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xs font-bold text-indigo-400 tabular-nums w-10 shrink-0">{ev.year}</span>
-                    <span className="text-xs text-slate-300">{ev.event}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Documentary Evidence */}
-          <details className="mt-4">
-            <summary className="text-xs font-bold text-slate-400 uppercase tracking-wider cursor-pointer hover:text-slate-200 transition-colors">
-              Documentary Evidence Cited
-            </summary>
-            <ul className="mt-2 space-y-1">
-              {framework.documentary_evidence.map((d, i) => (
-                <li key={i} className="text-[11px] text-slate-500 flex items-start gap-1.5">
-                  <span className="text-indigo-500 mt-0.5">◆</span>{d}
-                </li>
-              ))}
-            </ul>
-          </details>
-
-          {/* Sources */}
-          <div className="mt-4 pt-3 border-t border-slate-800">
-            <h4 className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider mb-1.5">Sources</h4>
-            <div className="flex flex-wrap gap-x-3 gap-y-1">
-              {framework.sources.map((s, i) => (
-                <a key={i} href={s.url} target="_blank" rel="noopener noreferrer"
-                  className="text-[11px] text-indigo-400 hover:text-indigo-300 underline underline-offset-2">
-                  {s.title}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
 
 function ResearcherCard({ r }) {
   return (
@@ -364,7 +239,7 @@ export default function Theories() {
 
   if (!data) return <Skeleton />
 
-  const communitySources = [data.community_sources.uap_gerb, data.community_sources.american_alchemy, data.community_sources.mufon]
+  const communitySources = Object.values(data.community_sources)
 
   return (
     <div className="bg-slate-950 min-h-dvh pb-24">
@@ -379,8 +254,10 @@ export default function Theories() {
           </Link>
         </p>
 
-        {/* Gerb Framework — Featured */}
-        <GerbFramework framework={data.gerb_framework} />
+        {/* Legacy Program Interactive Framework */}
+        <section className="mt-10">
+          <LegacyProgramChart />
+        </section>
 
         {/* Theories Grid */}
         <section className="mt-10">
@@ -422,9 +299,9 @@ export default function Theories() {
         <section className="mt-10">
           <h2 className="text-lg font-bold text-slate-200 mb-2">Community Sources</h2>
           <p className="text-xs text-slate-500 mb-4 leading-relaxed">
-            Independent researchers and organizations providing ongoing UAP investigation and analysis.
+            Vetted independent researchers, journalists, and organizations providing ongoing UAP investigation and analysis.
           </p>
-          <div className="grid gap-4">
+          <div className="grid gap-3 sm:grid-cols-2">
             {communitySources.map((s, i) => (
               <CommunitySource key={i} source={s} />
             ))}
