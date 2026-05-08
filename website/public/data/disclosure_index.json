@@ -1,0 +1,135 @@
+{
+  "overall_score": 39,
+  "last_updated": "2026-05-08",
+  "methodology": "Composite weighted index across 7 dimensions of UAP disclosure, each scored 0-100 based on verified milestones. The overall score is the weighted average of all dimension scores. Weights reflect the relative importance of each dimension toward full disclosure. Milestone achievement alone does not determine the score — the significance of unachieved milestones and the quality of achieved ones are factored in.",
+  "dimensions": [
+    {
+      "id": "acknowledgment",
+      "name": "Government Acknowledgment",
+      "weight": 0.20,
+      "score": 62,
+      "description": "Official recognition that UAP are real, unexplained, and warrant investigation",
+      "milestones": [
+        {"label": "Military confirms UAP encounters are real", "achieved": true, "year": 2017, "detail": "DoD confirmed authenticity of FLIR1/GIMBAL/GOFAST videos"},
+        {"label": "Pentagon acknowledges UAP investigation program", "achieved": true, "year": 2017, "detail": "AATIP program revealed by NYT"},
+        {"label": "DNI issues official UAP assessment", "achieved": true, "year": 2021, "detail": "Preliminary Assessment: 144 reports, most unexplained"},
+        {"label": "Congress holds public UAP hearings", "achieved": true, "year": 2022, "detail": "First public hearings since 1966 (House Intel subcommittee)"},
+        {"label": "Military witnesses testify under oath", "achieved": true, "year": 2023, "detail": "Grusch, Fravor, Graves testimony to House Oversight"},
+        {"label": "President orders mass declassification", "achieved": true, "year": 2026, "detail": "Trump PURSUE directive, 162 files released on war.gov/UFO"},
+        {"label": "Government acknowledges non-human intelligence", "achieved": false, "detail": "No official confirmation of NHI origin"},
+        {"label": "Government confirms crash retrieval programs", "achieved": false, "detail": "Alleged by whistleblowers, not officially confirmed"},
+        {"label": "Government presents recovered materials", "achieved": false, "detail": "No public presentation of non-human materials"},
+        {"label": "Full historical accounting released", "achieved": false, "detail": "Decades of records still classified"}
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Institutional Infrastructure",
+      "weight": 0.15,
+      "score": 53,
+      "description": "Dedicated offices, reporting mechanisms, and permanent investigation apparatus",
+      "milestones": [
+        {"label": "Dedicated UAP investigation office established", "achieved": true, "year": 2022, "detail": "AARO (All-domain Anomaly Resolution Office) created under DoD"},
+        {"label": "Standardized military reporting mechanism", "achieved": true, "year": 2022, "detail": "DoD Instruction 5105.100, mandatory reporting"},
+        {"label": "Whistleblower protections enacted", "achieved": true, "year": 2023, "detail": "NDAA FY2023 Section 1673, legal protections for UAP whistleblowers"},
+        {"label": "Sensor system deployed for UAP detection", "achieved": true, "year": 2024, "detail": "GREMLIN multi-sensor system prototype deployed"},
+        {"label": "National Archives UAP records collection", "achieved": true, "year": 2024, "detail": "NARA Record Group 615 established"},
+        {"label": "Civilian reporting mechanism available", "achieved": false, "detail": "No official government portal for civilian UAP reports"},
+        {"label": "International cooperation framework", "achieved": false, "detail": "No formal multi-nation UAP investigation treaty"},
+        {"label": "Independent review board with subpoena power", "achieved": false, "detail": "UAPDA review board not yet established"}
+      ]
+    },
+    {
+      "id": "documents",
+      "name": "Document Release",
+      "weight": 0.15,
+      "score": 27,
+      "description": "Volume, quality, and completeness of declassified UAP files available to the public",
+      "milestones": [
+        {"label": "Pentagon releases UAP videos", "achieved": true, "year": 2020, "detail": "FLIR1, GIMBAL, GOFAST officially released"},
+        {"label": "FBI vault files partially available", "achieved": true, "year": 2011, "detail": "FBI Vault launched with UFO section"},
+        {"label": "AARO historical report published", "achieved": true, "year": 2024, "detail": "Volume 1 covering 1945-present investigations"},
+        {"label": "PURSUE mass declassification (162 files)", "achieved": true, "year": 2026, "detail": "First tranche from 4 agencies, 4,044 pages"},
+        {"label": "Range fouler debrief forms released", "achieved": true, "year": 2022, "detail": "72 Navy forms from 2004-2021"},
+        {"label": "Files released without heavy redaction", "achieved": false, "detail": "108 of 162 PURSUE files contain redactions"},
+        {"label": "Pre-2004 military encounter files released", "achieved": false, "detail": "Gap between Blue Book (1969) and modern era"},
+        {"label": "Crash retrieval program documentation", "achieved": false, "detail": "Alleged programs like KONA BLUE not disclosed"},
+        {"label": "Complete sensor data packages released", "achieved": false, "detail": "Only summaries, not raw radar/FLIR data"},
+        {"label": "All agency UAP files transferred to NARA", "achieved": false, "detail": "Transfer ongoing, far from complete"}
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Scientific Engagement",
+      "weight": 0.12,
+      "score": 25,
+      "description": "NASA, academic institutions, and peer-reviewed research engaging with UAP seriously",
+      "milestones": [
+        {"label": "NASA forms UAP study team", "achieved": true, "year": 2022, "detail": "Independent study team, report published Sept 2023"},
+        {"label": "NASA appoints Director of UAP Research", "achieved": true, "year": 2023, "detail": "Mark McInerney appointed"},
+        {"label": "Peer-reviewed UAP papers published", "achieved": true, "year": 2023, "detail": "Loeb et al., Knuth et al., SCU publications"},
+        {"label": "Galileo Project operational", "achieved": true, "year": 2023, "detail": "Harvard-based systematic UAP observation"},
+        {"label": "SOL Foundation academic conferences", "achieved": true, "year": 2023, "detail": "Stanford-affiliated UAP research symposia"},
+        {"label": "Major university UAP research programs", "achieved": false, "detail": "Still largely stigmatized in academia"},
+        {"label": "Recovered materials analyzed in peer review", "achieved": false, "detail": "No confirmed non-terrestrial materials studied"},
+        {"label": "Propulsion physics explained", "achieved": false, "detail": "No scientific consensus on UAP propulsion"},
+        {"label": "Scientific consensus on UAP reality", "achieved": false, "detail": "Mainstream science still largely skeptical"}
+      ]
+    },
+    {
+      "id": "congress",
+      "name": "Congressional Action",
+      "weight": 0.12,
+      "score": 45,
+      "description": "Legislative efforts toward transparency, oversight, and accountability",
+      "milestones": [
+        {"label": "Public Congressional hearings held", "achieved": true, "year": 2022, "detail": "House Intelligence subcommittee, May 2022"},
+        {"label": "AARO established by legislation", "achieved": true, "year": 2022, "detail": "NDAA FY2022 Section 1683"},
+        {"label": "UAP whistleblower protections passed", "achieved": true, "year": 2023, "detail": "NDAA FY2023"},
+        {"label": "UAPDA introduced (Schumer amendment)", "achieved": true, "year": 2023, "detail": "Modeled on JFK Records Act"},
+        {"label": "Bipartisan UAP caucus active", "achieved": true, "year": 2023, "detail": "Reps. Burchett, Luna, Moskowitz, Burlison, Senators Rubio, Gillibrand"},
+        {"label": "UAPDA passed with full provisions", "achieved": false, "detail": "Significantly weakened in conference, key provisions stripped"},
+        {"label": "Review board with subpoena power created", "achieved": false, "detail": "Core UAPDA provision not yet enacted"},
+        {"label": "Eminent domain over UAP materials authorized", "achieved": false, "detail": "UAPDA 2025 includes provision, not yet law"},
+        {"label": "Classified briefings produce public action", "achieved": false, "detail": "Lawmakers frustrated by SCIF-limited information"}
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Media & Public Discourse",
+      "weight": 0.10,
+      "score": 52,
+      "description": "Mainstream media coverage, public awareness, and destigmatization of UAP topic",
+      "milestones": [
+        {"label": "NYT publishes Pentagon UAP story", "achieved": true, "year": 2017, "detail": "Leslie Kean, Ralph Blumenthal, Helene Cooper"},
+        {"label": "60 Minutes covers UAP", "achieved": true, "year": 2021, "detail": "Bill Whitaker interviews Navy pilots"},
+        {"label": "UAP regularly covered by mainstream outlets", "achieved": true, "year": 2023, "detail": "CNN, NBC, CBS, Fox, NYT, WaPo all covering"},
+        {"label": "Term shift from UFO to UAP in media", "achieved": true, "year": 2022, "detail": "Most major outlets adopted UAP terminology"},
+        {"label": "PURSUE release gets wall-to-wall coverage", "achieved": true, "year": 2026, "detail": "All major outlets covered May 8 release"},
+        {"label": "Public polling shows majority believes UAP real", "achieved": true, "year": 2023, "detail": "Gallup: 57% believe some UFOs are alien craft"},
+        {"label": "Academic stigma fully eliminated", "achieved": false, "detail": "Researchers still face career risks"},
+        {"label": "International media unified coverage", "achieved": false, "detail": "Coverage varies widely by country"},
+        {"label": "Continuous dedicated UAP journalism beat", "achieved": false, "detail": "Few full-time UAP reporters at major outlets"}
+      ]
+    },
+    {
+      "id": "ontological",
+      "name": "Ontological Disclosure",
+      "weight": 0.16,
+      "score": 6,
+      "description": "The ultimate question: acknowledgment of non-human intelligence, recovered technology, and contact",
+      "milestones": [
+        {"label": "Officials use 'non-human intelligence' term", "achieved": true, "year": 2023, "detail": "Grusch testimony; term appears in 2 PURSUE documents"},
+        {"label": "Government official claims crash retrievals under oath", "achieved": true, "year": 2023, "detail": "David Grusch testimony to House Oversight"},
+        {"label": "Government confirms non-human origin of any UAP", "achieved": false, "detail": "No official confirmation"},
+        {"label": "Recovered craft or materials presented publicly", "achieved": false, "detail": "Alleged but never demonstrated"},
+        {"label": "Biological evidence of NHI presented", "achieved": false, "detail": "No confirmed non-human biological evidence"},
+        {"label": "Communication or interaction acknowledged", "achieved": false, "detail": "No official acknowledgment of contact"},
+        {"label": "Historical crash retrieval timeline disclosed", "achieved": false, "detail": "Alleged programs spanning decades undisclosed"},
+        {"label": "Reverse-engineering program details released", "achieved": false, "detail": "Alleged but fully classified"},
+        {"label": "Public demonstration of recovered technology", "achieved": false, "detail": "No public demonstration"},
+        {"label": "Full disclosure of NHI relationship/contact", "achieved": false, "detail": "Furthest milestone from achievement"}
+      ]
+    }
+  ]
+}

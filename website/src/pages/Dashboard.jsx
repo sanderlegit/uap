@@ -1,0 +1,652 @@
+import { useState, useEffect, useRef, useCallback } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useStats, useDocuments, useResearch, agencyClass, agencyColor, formatDate } from '../hooks/useData'
+
+/* ── animated counter hook ─────────────────────────────────────────── */
+function useCountUp(target, duration = 1500) {
+  const [value, setValue] = useState(0)
+  const ref = useRef()
+
+  useEffect(() => {
+    if (!target) return
+    let start = null
+    const step = (ts) => {
+      if (!start) start = ts
+      const progress = Math.min((ts - start) / duration, 1)
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setValue(Math.round(eased * target))
+      if (progress < 1) ref.current = requestAnimationFrame(step)
+    }
+    ref.current = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(ref.current)
+  }, [target, duration])
+
+  return value
+}
+
+/* ── spinner ───────────────────────────────────────────────────────── */
+function Spinner() {
+  return (
+    <div className="flex items-center justify-center min-h-dvh bg-slate-950">
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-10 h-10 border-2 border-amber-500/30 border-t-amber-500 rounded-full animate-spin" />
+        <p className="text-slate-500 text-sm font-mono tracking-wider uppercase">Decrypting files...</p>
+      </div>
+    </div>
+  )
+}
+
+/* ── CSS injected once via style tag ───────────────────────────────── */
+const STYLES_ID = 'dashboard-animations'
+function useDashboardStyles() {
+  useEffect(() => {
+    if (document.getElementById(STYLES_ID)) return
+    const style = document.createElement('style')
+    style.id = STYLES_ID
+    style.textContent = `
+      @keyframes dash-grid-scroll {
+        0% { background-position: 0 0; }
+        100% { background-position: 60px 60px; }
+      }
+      @keyframes dash-fade-up {
+        0% { opacity: 0; transform: translateY(24px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes dash-bar-fill {
+        0% { width: 0%; }
+        100% { width: var(--bar-width); }
+      }
+      @keyframes dash-pulse-ring {
+        0% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.15); opacity: 0; }
+        100% { transform: scale(1); opacity: 0; }
+      }
+      @keyframes dash-scan-line {
+        0% { top: 0; opacity: 0.5; }
+        50% { opacity: 0.15; }
+        100% { top: 100%; opacity: 0; }
+      }
+      .dash-grid-bg {
+        background-image:
+          linear-gradient(rgba(148,163,184,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(148,163,184,0.04) 1px, transparent 1px);
+        background-size: 60px 60px;
+        animation: dash-grid-scroll 30s linear infinite;
+      }
+      .dash-card {
+        opacity: 0;
+        animation: dash-fade-up 0.6s ease-out forwards;
+      }
+      .dash-bar-animated {
+        animation: dash-bar-fill 1.2s ease-out forwards;
+        animation-delay: 0.3s;
+        width: 0%;
+      }
+      .dash-pulse-ring {
+        animation: dash-pulse-ring 2s ease-out infinite;
+      }
+      .dash-scan-line {
+        animation: dash-scan-line 4s ease-in-out infinite;
+      }
+      .dash-carousel::-webkit-scrollbar { display: none; }
+      .dash-carousel { -ms-overflow-style: none; scrollbar-width: none; }
+    `
+    document.head.appendChild(style)
+    return () => { /* keep styles alive — single page app */ }
+  }, [])
+}
+
+/* ── agency metadata ───────────────────────────────────────────────── */
+const agencyMeta = {
+  'Department of War': { short: 'DEPT. OF WAR', accent: 'bg-blue-500', text: 'text-blue-400', border: 'border-blue-500/30', bg: 'bg-blue-500/10' },
+  'FBI':               { short: 'FBI',          accent: 'bg-red-500',  text: 'text-red-400',  border: 'border-red-500/30',  bg: 'bg-red-500/10' },
+  'NASA':              { short: 'NASA',         accent: 'bg-purple-500', text: 'text-purple-400', border: 'border-purple-500/30', bg: 'bg-purple-500/10' },
+  'Department of State':{ short: 'STATE DEPT.', accent: 'bg-emerald-500', text: 'text-emerald-400', border: 'border-emerald-500/30', bg: 'bg-emerald-500/10' },
+}
+
+/* ── nav config ────────────────────────────────────────────────────── */
+const navLinks = [
+  { to: '/map',             label: 'Map',        icon: '◎', desc: 'Incident locations worldwide' },
+  { to: '/timeline',        label: 'Timeline',   icon: '━', desc: 'Documents across eight decades' },
+  { to: '/graph',           label: 'Graph',      icon: '⬡', desc: 'Cross-reference network' },
+  { to: '/search',          label: 'Search',     icon: '⌕', desc: 'Full-text across all files' },
+  { to: '/analysis/report', label: 'Analysis',   icon: '◫', desc: 'Deep dives & detailed reports' },
+  { to: '/disclosure',      label: 'Disclosure', icon: '≡', desc: 'Disclosure progress index' },
+]
+
+/* ── notable document ids ──────────────────────────────────────────── */
+const notableDocIds = [
+  103, // Apollo 11 Crew Debriefing
+  112, // FBI 62-HQ-83894 Section 1
+  111, // Western US Event
+  55,  // Apollo 17 photos
+  0,   // DOW Mission Report Iraq
+  106, // Skylab Crew Debriefing
+  75,  // State Dept Cable Papua New Guinea
+  64,  // German WWII foo fighter docs
+]
+
+/* ── briefing card data ────────────────────────────────────────────── */
+const briefingCards = [
+  {
+    tag: 'FINDING 01',
+    label: 'GEOGRAPHIC ANALYSIS',
+    title: 'Middle East Hotspot',
+    stat: '26',
+    unit: 'docs',
+    description: 'Dense concentration of UAP encounters across CENTCOM AOR — Iraq, Syria, the Persian Gulf, and surrounding airspace. All tied to active military operations, declassified by USCENTCOM Chief of Staff.',
+    color: 'border-t-amber-500',
+  },
+  {
+    tag: 'FINDING 02',
+    label: 'LARGEST FILE CLUSTER',
+    title: 'FBI Case 62-HQ-83894',
+    stat: '2,622',
+    unit: 'pages',
+    description: 'FBI\'s primary UAP investigation spanning 1947–1968 across 17 sections. The single largest document cluster in the release, including field office reports, photographic evidence from nuclear sites, and headquarters memoranda.',
+    color: 'border-t-red-500',
+  },
+  {
+    tag: 'FINDING 03',
+    label: 'SPACE ENCOUNTERS',
+    title: 'Apollo & Skylab Missions',
+    stat: '14',
+    unit: 'NASA docs',
+    description: 'Apollo 11, 12, and 17 crew debriefings plus Skylab III encounter report. Astronaut observations of anomalous objects, unexplained light phenomena, and a triangular formation NASA cannot explain.',
+    color: 'border-t-purple-500',
+  },
+  {
+    tag: 'FINDING 04',
+    label: 'BEHAVIORAL PATTERNS',
+    title: 'Anomalous Behaviors',
+    stat: '147',
+    unit: 'instances',
+    description: 'Documented behaviors across the corpus: hovering, cloaking, luminosity changes, formation flight, splitting, merging, instant acceleration, and EM interference. Patterns repeat across decades.',
+    color: 'border-t-cyan-500',
+  },
+  {
+    tag: 'FINDING 05',
+    label: 'SENSOR CORROBORATION',
+    title: 'Multi-Sensor Evidence',
+    stat: '56',
+    unit: 'docs',
+    description: 'Observations corroborated across radar, infrared/FLIR, photographic, satellite, SIGINT, and electro-optical systems. Multiple independent sensor modalities recording the same events.',
+    color: 'border-t-blue-500',
+  },
+  {
+    tag: 'FINDING 06',
+    label: 'TRANSPARENCY GAP',
+    title: 'Redaction Pervasive',
+    stat: '78',
+    unit: 'docs redacted',
+    description: 'Over 60% of files contain redactions even in this "declassified" release. The Pentagon states redactions do not concern "the nature or existence of any encounter" — raising questions about what is withheld.',
+    color: 'border-t-amber-600',
+  },
+]
+
+/* ══════════════════════════════════════════════════════════════════════
+   DASHBOARD COMPONENT
+   ══════════════════════════════════════════════════════════════════════ */
+export default function Dashboard() {
+  const stats = useStats()
+  const docs = useDocuments()
+  const research = useResearch()
+  const navigate = useNavigate()
+  const carouselRef = useRef(null)
+
+  useDashboardStyles()
+
+  /* animated stat counters */
+  const totalDocs = stats?.total_files ?? 129
+  const totalPages = stats?.total_pages ?? 4044
+  const agencyCount = stats?.by_agency ? Object.keys(stats.by_agency).length : 4
+  const decadeCount = stats?.by_decade ? Object.keys(stats.by_decade).filter(k => k !== 'Unknown').length : 8
+  const redacted = stats?.redaction_count ?? 78
+
+  const countDocs = useCountUp(stats ? totalDocs : 0)
+  const countPages = useCountUp(stats ? totalPages : 0)
+  const countAgencies = useCountUp(stats ? agencyCount : 0)
+  const countDecades = useCountUp(stats ? decadeCount : 0)
+
+  /* scroll-to-content handler */
+  const contentRef = useRef(null)
+  const scrollToContent = useCallback(() => {
+    contentRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [])
+
+  /* carousel scroll */
+  const scrollCarousel = useCallback((dir) => {
+    if (!carouselRef.current) return
+    const amount = dir * 300
+    carouselRef.current.scrollBy({ left: amount, behavior: 'smooth' })
+  }, [])
+
+  if (!stats) return <Spinner />
+
+  /* resolve notable docs */
+  const notableDocs = notableDocIds
+    .map(id => docs?.find(d => d.id === id))
+    .filter(Boolean)
+    .slice(0, 8)
+
+  /* research correlations — pick top 5 most interesting */
+  const researchTopics = research?.correlations
+    ?.filter(c => c.sources?.length > 0)
+    ?.slice(0, 5) ?? []
+
+  return (
+    <div className="bg-slate-950 min-h-dvh pb-20">
+
+      {/* ────────────────────────────────────────────────────────────────
+          HERO SECTION
+          ──────────────────────────────────────────────────────────────── */}
+      <section className="relative min-h-[85vh] sm:min-h-[90vh] flex flex-col items-center justify-center overflow-hidden">
+        {/* background: radial gradient + animated grid */}
+        <div
+          className="absolute inset-0 dash-grid-bg"
+          style={{
+            background: 'radial-gradient(ellipse at center, #0f172a 0%, #020617 70%)',
+          }}
+        />
+        {/* scan line effect */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            className="absolute left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-500/20 to-transparent dash-scan-line"
+          />
+        </div>
+
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          {/* classification marker */}
+          <div className="inline-flex items-center gap-2 mb-6 sm:mb-8">
+            <span className="h-px w-8 bg-amber-500/40" />
+            <span className="text-amber-500/80 text-[10px] sm:text-xs font-mono tracking-[0.25em] uppercase">
+              Declassified // May 8, 2026
+            </span>
+            <span className="h-px w-8 bg-amber-500/40" />
+          </div>
+
+          {/* title */}
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-[0.2em] sm:tracking-[0.3em] text-slate-100 uppercase">
+            PURSUE
+            <span className="block text-2xl sm:text-4xl md:text-5xl tracking-[0.25em] sm:tracking-[0.35em] mt-1 sm:mt-2 text-slate-300">
+              FILES
+            </span>
+          </h1>
+
+          {/* subtitle */}
+          <p className="mt-4 sm:mt-6 text-slate-400 text-xs sm:text-sm md:text-base font-mono tracking-wide max-w-2xl mx-auto leading-relaxed">
+            Presidential Unsealing and Reporting System<br className="hidden sm:block" />
+            {' '}for UAP Encounters
+          </p>
+
+          {/* animated stat counters */}
+          <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-x-3 gap-y-2 sm:gap-x-6 text-sm sm:text-base">
+            <span className="text-slate-300 font-mono">
+              <span className="text-amber-400 font-bold">{countDocs.toLocaleString()}</span> Documents
+            </span>
+            <span className="text-slate-600 hidden sm:inline">|</span>
+            <span className="text-slate-300 font-mono">
+              <span className="text-amber-400 font-bold">{countPages.toLocaleString()}</span> Pages
+            </span>
+            <span className="text-slate-600 hidden sm:inline">|</span>
+            <span className="text-slate-300 font-mono">
+              <span className="text-amber-400 font-bold">{countAgencies}</span> Agencies
+            </span>
+            <span className="text-slate-600 hidden sm:inline">|</span>
+            <span className="text-slate-300 font-mono">
+              <span className="text-amber-400 font-bold">{countDecades}</span> Decades
+            </span>
+          </div>
+
+          {/* tagline */}
+          <p className="mt-6 sm:mt-8 text-slate-500 text-xs sm:text-sm italic max-w-lg mx-auto">
+            The largest single disclosure of UAP documents in U.S. history.
+          </p>
+
+          {/* disclosure index badge */}
+          <Link
+            to="/disclosure"
+            className="inline-flex items-center gap-2 mt-5 sm:mt-6 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 transition-colors group"
+          >
+            <span className="w-2 h-2 rounded-full bg-amber-500 group-hover:shadow-[0_0_8px_rgba(245,158,11,0.5)] transition-shadow" />
+            <span className="text-amber-400 text-xs sm:text-sm font-mono tracking-wider">
+              Disclosure Index: 39%
+            </span>
+          </Link>
+
+          {/* explore button */}
+          <div className="mt-8 sm:mt-10">
+            <button
+              onClick={scrollToContent}
+              className="relative inline-flex items-center justify-center w-12 h-12 rounded-full border border-slate-600/50 hover:border-amber-500/50 transition-colors cursor-pointer group"
+            >
+              {/* pulsing ring */}
+              <span className="absolute inset-0 rounded-full border border-amber-500/30 dash-pulse-ring" />
+              <svg className="w-5 h-5 text-slate-400 group-hover:text-amber-400 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
+
+          {/* source */}
+          <p className="mt-4 text-[10px] text-slate-600">
+            Source:{' '}
+            <a
+              href="https://war.gov/UFO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-amber-400/70 underline underline-offset-2 transition-colors"
+            >
+              war.gov/UFO
+            </a>
+          </p>
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────
+          KEY INTELLIGENCE BRIEFING
+          ──────────────────────────────────────────────────────────────── */}
+      <section ref={contentRef} className="px-4 sm:px-6 py-12 sm:py-16 max-w-6xl mx-auto">
+        <div className="flex items-center gap-3 mb-8">
+          <span className="h-px flex-1 bg-gradient-to-r from-amber-500/40 to-transparent" />
+          <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-amber-500/80 whitespace-nowrap">
+            Key Intelligence Briefing
+          </h2>
+          <span className="h-px flex-1 bg-gradient-to-l from-amber-500/40 to-transparent" />
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {briefingCards.map((card, i) => (
+            <div
+              key={card.tag}
+              className={`dash-card bg-slate-900/80 border border-slate-700/40 rounded-lg overflow-hidden border-t-2 ${card.color}`}
+              style={{ animationDelay: `${i * 100}ms` }}
+            >
+              {/* card header */}
+              <div className="px-4 pt-3 pb-2 border-b border-slate-800/60">
+                <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-amber-500/70">
+                  {card.tag} // {card.label}
+                </span>
+              </div>
+              {/* card body */}
+              <div className="px-4 py-4">
+                <div className="flex items-baseline gap-3 mb-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-100">{card.title}</h3>
+                </div>
+                <div className="flex items-baseline gap-1.5 mb-3">
+                  <span className="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono">{card.stat}</span>
+                  <span className="text-xs text-slate-500 font-mono uppercase tracking-wider">{card.unit}</span>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{card.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────
+          AGENCY BREAKDOWN
+          ──────────────────────────────────────────────────────────────── */}
+      <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto">
+        <div className="flex items-center gap-3 mb-8">
+          <span className="h-px flex-1 bg-gradient-to-r from-slate-700/60 to-transparent" />
+          <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-slate-500 whitespace-nowrap">
+            By Agency
+          </h2>
+          <span className="h-px flex-1 bg-gradient-to-l from-slate-700/60 to-transparent" />
+        </div>
+
+        <div className="space-y-3">
+          {Object.entries(stats.by_agency ?? {})
+            .sort(([, a], [, b]) => b - a)
+            .map(([agency, count], i) => {
+              const meta = agencyMeta[agency]
+              if (!meta) return null
+              const pct = ((count / totalDocs) * 100).toFixed(0)
+              const color = agencyColor(agency)
+              return (
+                <button
+                  key={agency}
+                  onClick={() => navigate(`/documents?agency=${encodeURIComponent(agency)}`)}
+                  className="dash-card w-full text-left group cursor-pointer"
+                  style={{ animationDelay: `${i * 80}ms` }}
+                >
+                  <div className="bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-slate-600/60 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className={`text-sm font-mono font-bold tracking-wider ${meta.text}`}>
+                        {meta.short}
+                      </span>
+                      <span className="text-sm text-slate-400 font-mono">
+                        <span className="text-slate-200 font-bold">{count}</span> docs ({pct}%)
+                      </span>
+                    </div>
+                    {/* progress bar */}
+                    <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
+                      <div
+                        className="h-full rounded-full dash-bar-animated transition-all"
+                        style={{
+                          '--bar-width': `${pct}%`,
+                          backgroundColor: color,
+                          opacity: 0.8,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </button>
+              )
+            })}
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────
+          RESEARCH CONTEXT / INTELLIGENCE BRIEFING
+          ──────────────────────────────────────────────────────────────── */}
+      {researchTopics.length > 0 && (
+        <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="h-px flex-1 bg-gradient-to-r from-amber-500/30 to-transparent" />
+            <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-amber-500/70 whitespace-nowrap">
+              Intelligence Briefing // External Context
+            </h2>
+            <span className="h-px flex-1 bg-gradient-to-l from-amber-500/30 to-transparent" />
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {researchTopics.map((item, i) => (
+              <div
+                key={item.topic}
+                className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg overflow-hidden"
+                style={{ animationDelay: `${i * 100 + 200}ms` }}
+              >
+                {/* header stripe */}
+                <div className="h-0.5 bg-gradient-to-r from-amber-500/60 via-amber-500/20 to-transparent" />
+                <div className="p-4">
+                  <h3 className="text-sm font-bold text-slate-200 mb-2 leading-snug">{item.topic}</h3>
+                  <p className="text-xs text-slate-400 leading-relaxed mb-3 line-clamp-4">
+                    {item.context}
+                  </p>
+                  {item.sources?.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {item.sources.slice(0, 2).map((src, si) => (
+                        <a
+                          key={si}
+                          href={src.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[10px] font-mono text-amber-500/60 hover:text-amber-400 border border-amber-500/20 hover:border-amber-500/40 rounded px-2 py-0.5 transition-colors truncate max-w-[180px]"
+                        >
+                          {src.title}
+                        </a>
+                      ))}
+                      {item.sources.length > 2 && (
+                        <span className="text-[10px] font-mono text-slate-600 px-1 py-0.5">
+                          +{item.sources.length - 2} more
+                        </span>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ────────────────────────────────────────────────────────────────
+          QUICK NAVIGATION
+          ──────────────────────────────────────────────────────────────── */}
+      <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto">
+        <div className="flex items-center gap-3 mb-8">
+          <span className="h-px flex-1 bg-gradient-to-r from-slate-700/60 to-transparent" />
+          <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-slate-500 whitespace-nowrap">
+            Explore
+          </h2>
+          <span className="h-px flex-1 bg-gradient-to-l from-slate-700/60 to-transparent" />
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          {navLinks.map((link, i) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-amber-500/30 hover:bg-slate-800/60 transition-all group"
+              style={{ animationDelay: `${i * 60 + 100}ms` }}
+            >
+              <span className="text-2xl block mb-3 text-slate-600 group-hover:text-amber-400 transition-colors">
+                {link.icon}
+              </span>
+              <div className="text-sm font-bold text-slate-200 group-hover:text-slate-100 transition-colors">
+                {link.label}
+              </div>
+              <div className="text-[11px] text-slate-500 mt-1 leading-snug">{link.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────
+          NOTABLE DOCUMENTS CAROUSEL
+          ──────────────────────────────────────────────────────────────── */}
+      {notableDocs.length > 0 && (
+        <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto">
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3 min-w-0">
+              <span className="h-px w-6 sm:w-12 bg-slate-700/60 flex-shrink-0" />
+              <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-slate-500 whitespace-nowrap">
+                Notable Documents
+              </h2>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => scrollCarousel(-1)}
+                className="w-8 h-8 rounded-full border border-slate-700/50 flex items-center justify-center text-slate-500 hover:text-amber-400 hover:border-amber-500/30 transition-colors cursor-pointer"
+                aria-label="Scroll left"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={() => scrollCarousel(1)}
+                className="w-8 h-8 rounded-full border border-slate-700/50 flex items-center justify-center text-slate-500 hover:text-amber-400 hover:border-amber-500/30 transition-colors cursor-pointer"
+                aria-label="Scroll right"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+              <Link to="/documents" className="text-xs text-amber-500/60 hover:text-amber-400 font-mono tracking-wider ml-2 transition-colors">
+                VIEW ALL &rarr;
+              </Link>
+            </div>
+          </div>
+
+          <div
+            ref={carouselRef}
+            className="dash-carousel flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4"
+          >
+            {notableDocs.map((doc, i) => {
+              const meta = doc.agency ? agencyMeta[doc.agency] : null
+              const topSensor = doc.sensors?.[0]?.sensor_type
+              const topBehavior = doc.behaviors?.[0]?.behavior_type
+              return (
+                <Link
+                  key={doc.id}
+                  to={`/documents/${doc.id}`}
+                  className="dash-card flex-shrink-0 w-[280px] sm:w-[300px] snap-start bg-slate-900/70 border border-slate-700/40 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all group"
+                  style={{ animationDelay: `${i * 80 + 100}ms` }}
+                >
+                  {/* top accent */}
+                  <div
+                    className="h-0.5"
+                    style={{ backgroundColor: doc.agency ? agencyColor(doc.agency) : '#475569', opacity: 0.6 }}
+                  />
+                  <div className="p-4">
+                    {/* agency badge + date */}
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      {meta ? (
+                        <span className={`text-[10px] font-mono font-bold tracking-wider px-2 py-0.5 rounded ${meta.bg} ${meta.text} ${meta.border} border`}>
+                          {meta.short}
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-mono text-slate-600">UNKNOWN</span>
+                      )}
+                      {doc.incident_date_parsed && (
+                        <span className="text-[10px] font-mono text-slate-500">
+                          {formatDate(doc.incident_date_parsed)}
+                        </span>
+                      )}
+                    </div>
+                    {/* title */}
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-slate-100 leading-snug line-clamp-2 mb-2 transition-colors min-h-[2.5em]">
+                      {doc.title}
+                    </h3>
+                    {/* location */}
+                    {doc.incident_location && doc.incident_location !== 'N/A' && (
+                      <div className="flex items-center gap-1.5 mb-2">
+                        <span className="text-amber-500/50 text-xs">{'◎'}</span>
+                        <span className="text-[11px] text-slate-400">{doc.incident_location}</span>
+                      </div>
+                    )}
+                    {/* detail tags */}
+                    <div className="flex flex-wrap gap-1.5 mt-auto">
+                      {topSensor && (
+                        <span className="text-[10px] font-mono text-slate-500 bg-slate-800 rounded px-1.5 py-0.5">
+                          {topSensor}
+                        </span>
+                      )}
+                      {topBehavior && (
+                        <span className="text-[10px] font-mono text-cyan-500/70 bg-cyan-500/5 border border-cyan-500/20 rounded px-1.5 py-0.5">
+                          {topBehavior}
+                        </span>
+                      )}
+                      {doc.has_redaction ? (
+                        <span className="text-[10px] font-mono text-amber-500/70 bg-amber-500/5 border border-amber-500/20 rounded px-1.5 py-0.5 uppercase tracking-wider">
+                          Redacted
+                        </span>
+                      ) : null}
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* ────────────────────────────────────────────────────────────────
+          FOOTER MARKER
+          ──────────────────────────────────────────────────────────────── */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-4">
+        <div className="flex items-center gap-3">
+          <span className="h-px flex-1 bg-slate-800/60" />
+          <span className="text-[10px] font-mono tracking-[0.2em] text-slate-700 uppercase">
+            End of briefing
+          </span>
+          <span className="h-px flex-1 bg-slate-800/60" />
+        </div>
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,198 @@
+{
+  "last_updated": "2026-05-08",
+  "correlations": [
+    {
+      "topic": "The PURSUE Release",
+      "context": "On May 8, 2026, the Pentagon released 162 files under PURSUE (Presidential Unsealing and Reporting System for UAP Encounters). Secretary of War Pete Hegseth: 'These files, hidden behind classifications, have long fueled justified speculation — it's time the American people see it for themselves.' FBI Director Kash Patel called it 'the first time in history the American people have unfettered access to declassified government files on UAP.' 108 of 162 files contain redactions, though the Pentagon stated redactions do not concern 'the nature or existence of any encounter.'",
+      "sources": [
+        {"title": "war.gov/UFO — Official Release Portal", "url": "https://www.war.gov/UFO/"},
+        {"title": "DoW Press Release", "url": "https://www.war.gov/News/Releases/Release/Article/4480582/"},
+        {"title": "CNN Coverage", "url": "https://www.cnn.com/2026/05/08/politics/ufo-files-pentagon-release-aliens"},
+        {"title": "CBS News Breakdown", "url": "https://www.cbsnews.com/news/pentagon-begins-release-ufo-files/"},
+        {"title": "The Debrief: PURSUE Analysis", "url": "https://thedebrief.org/trump-releases-ufo-files-with-rollout-of-new-presidential-unsealing-and-reporting-system-for-uap-encounters-pursue/"},
+        {"title": "Scientific American: Expert Reactions", "url": "https://www.scientificamerican.com/article/pentagon-releases-trove-of-new-ufo-files-but-skeptics-arent-impressed/"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "FBI Case File 62-HQ-83894 (1947–1968)",
+      "context": "The FBI's primary UFO investigation file, spanning June 1947 to July 1968, consisting of 17 sections/serials totaling 2,622 pages — the single largest document cluster in the PURSUE release. This newly released version includes 'fewer redactions and several newly declassified pages' compared to previously available FBI Vault versions. Contents include high-profile incident accounts, photographic evidence from Oak Ridge (nuclear facility), technical propulsion proposals, and a 1967 Chesapeake witness claiming encounter with a 'transparent craft occupied by undersized creatures wearing regular trouser pants and T-Shirts.' The file is contemporaneous with Project Blue Book (1952–1969, 12,618 sightings catalogued, 701 'unidentified').",
+      "sources": [
+        {"title": "FBI Vault: UFO Files", "url": "https://vault.fbi.gov/UFO"},
+        {"title": "Project Blue Book Archive (NARA)", "url": "https://www.archives.gov/research/military/air-force/ufos"},
+        {"title": "Sunday Guardian: Inside the FBI Files", "url": "https://sundayguardianlive.com/world/ufo-file-release-whats-inside-the-162-secret-pentagon-uap-files-from-apollo-moon-photos-to-fbis-mysterious-62-hq-83894-case-file-190234/"},
+        {"title": "Wikipedia: Project Blue Book", "url": "https://en.wikipedia.org/wiki/Project_Blue_Book"}
+      ],
+      "related_docs": ["65_hs1-834228961_62-hq-83894_section_1", "65_hs1-834228961_62-hq-83894_section_2", "65_hs1-834228961_62-hq-83894_section_3", "65_hs1-834228961_62-hq-83894_section_4", "65_hs1-834228961_62-hq-83894_section_5", "65_hs1-834228961_62-hq-83894_section_6", "65_hs1-834228961_62-hq-83894_section_7", "65_hs1-834228961_62-hq-83894_section_8", "65_hs1-834228961_62-hq-83894_section_9", "65_hs1-834228961_62-hq-83894_section_10", "65_hs1-834228961_62-hq-83894_serial_130", "65_hs1-834228961_62-hq-83894_serial_164", "65_hs1-834228961_62-hq-83894_serial_220", "65_hs1-834228961_62-hq-83894_serial_403", "65_hs1-834228961_62-hq-83894_serial_438", "65_hs1-834228961_62-hq-83894_serial_449", "65_hs1-834228961_62-hq-83894_sub_a"]
+    },
+    {
+      "topic": "Apollo 11 Crew Debriefing (1969)",
+      "context": "Buzz Aldrin reported: 'The first unusual thing that we saw I guess was 1 day out or something pretty close to the moon. It had a sizeable dimension to it, so we put the monocular on it.' He also observed 'little flashes inside the cabin, spaced a couple of minutes apart' and 'a fairly bright light source which we tentatively ascribed to a possible laser.' Collins, Armstrong, and Aldrin discussed seeing 'all sorts of little objects' and one 'brighter object' that 'wasn't part of the urine dump.'",
+      "sources": [
+        {"title": "NASA Technical Reports Server", "url": "https://ntrs.nasa.gov/"},
+        {"title": "Apollo 11 Debriefing (NASA)", "url": "https://ntrs.nasa.gov/citations/19690027742"}
+      ],
+      "related_docs": ["nasa-uap-d4-apollo-11-technical-crew-debriefing-1969"]
+    },
+    {
+      "topic": "Apollo 12 Photographs (1969)",
+      "context": "Five photographs from the Apollo 12 landing site were released with highlighted 'areas of interest' labeled 'Area 1' and 'Area 2' above the lunar horizon showing unidentified phenomena. Astronaut Alan L. Bean reported 'flashes of light' during the mission.",
+      "sources": [
+        {"title": "NewsNation: Pentagon UFO Photos", "url": "https://www.newsnationnow.com/space/ufo-files-pictures-pentagon-released/"},
+        {"title": "Redstate: Apollo Objects Over Moon", "url": "https://redstate.com/rusty-weiss/2026/05/08/trump-drops-ufo-files-apollo-missions-reveal-strange-objects-hovering-over-the-moon-n2202128"}
+      ],
+      "related_docs": ["nasa-uap-d1-apollo-12-transcript-1969"]
+    },
+    {
+      "topic": "Apollo 17 Triangular Formation (1972)",
+      "context": "A NASA photograph from December 1972 shows 'three dots in a triangular formation in the lower right quadrant of the lunar sky.' New preliminary U.S. government analysis 'suggests the image is potentially the result of a physical object in the scene' but 'there is no consensus about the nature of the anomaly.' The original film has been obtained for further analysis. Harrison Schmitt reported: 'It looks like the Fourth of July out of Ron's window.' Ronald Evans noted 'bright particles or fragments drifting by as we maneuver.' Schmitt also reported 'a flash on the lunar surface north of Grimaldi crater.'",
+      "sources": [
+        {"title": "CBS News: Apollo 17 Mystery Objects", "url": "https://www.cbsnews.com/news/ufo-files-apollo-17-crew-mysterious-objects-1972-mission/"},
+        {"title": "Artvoice: NASA Cannot Explain Apollo 17 Photo", "url": "https://artvoice.com/2026/05/08/ufo-files-are-public-and-nasa-cannot-explain-what-apollo-17-photographed/"},
+        {"title": "Daily Beast: Eerie Apollo Moment", "url": "https://www.thedailybeast.com/eerie-apollo-mission-moment-revealed-in-ufo-files/"}
+      ],
+      "related_docs": ["nasa-uap-d2-apollo-17-transcript-1972"]
+    },
+    {
+      "topic": "Skylab III UAP Encounter (1973)",
+      "context": "On September 20, 1973, Skylab III crew (Alan Bean, Owen Garriott, Jack Lousma) observed and photographed an unidentified bright red rotating object for at least 10 minutes before losing visual contact at the sunset terminator. No NORAD or NASA detection of any object near Skylab was reported. The incident has never been explained.",
+      "sources": [
+        {"title": "UFO Casebook: Skylab", "url": "https://ufocasebook.com/1973skylab.html"},
+        {"title": "Wikipedia: UFO Sightings in Outer Space", "url": "https://en.wikipedia.org/wiki/UFO_sightings_in_outer_space"}
+      ],
+      "related_docs": ["nasa-uap-d7-skylab-technical-crew-debriefing-1973"]
+    },
+    {
+      "topic": "Middle East UAP Concentration",
+      "context": "The PURSUE files show heavy Middle East concentration (29 documents from CENTCOM AOR). This correlates with known incidents: the 'Mosul Orb' recorded by an MC-12 over Iraq in April 2016 (analyzed 6+ years without resolution), a 'metallic orb' recorded by an MQ-9 Reaper drone on July 12, 2022, Congress requesting videos including '4 UAP formation — Iran, 8/26/22' and 'Syrian UAP instant acceleration, 2021,' and Navy personnel in the Persian Gulf reporting UAPs flooding a ship's bridge with extreme light. All modern DoW MISREPs are declassified by MG Richard A. Harrison, USCENTCOM Chief of Staff.",
+      "sources": [
+        {"title": "Vice: Reaper Drone Metallic Orb", "url": "https://www.vice.com/en/article/pentagon-says-reaper-drone-spotted-metallic-orb-ufo-in-middle-east/"},
+        {"title": "Fox News: Mosul Orb", "url": "https://www.foxnews.com/us/mosul-orb-us-silent-ufo-filmed-military-iraq/"},
+        {"title": "Fox News: UAPs Over Conflict Zones", "url": "https://www.foxnews.com/us/footage-of-ufos-over-conflict-zones-seen-for-first-time-this-is-a-devastating"}
+      ],
+      "related_docs": ["dow-uap-d10-mission-report-middle-east-may-2022", "dow-uap-d12-mission-report-iraq-may-2022", "dow-uap-d14-mission-report-iraq-may-2022", "dow-uap-d16-mission-report-syria-july-2022", "dow-uap-d18-mission-report-iraq-december-2022", "dow-uap-d19-mission-report-syria-february-21-2023", "dow-uap-d3-mission-report-arabian-gulf-2020", "dow-uap-d4-mission-report-arabian-gulf-2020", "dow-uap-d5-mission-report-arabian-gulf-2020", "dow-uap-d6-mission-report-arabian-gulf-2020", "dow-uap-d7-mission-report-arabian-gulf-2020", "dow-uap-d60-mission-report-persian-gulf-august-2020", "dow-uap-d61-mission-report-persian-gulf-august-2020", "dow-uap-d62-mission-report-strait-of-hormuz-september-2020", "dow-uap-d63-mission-report-strait-of-hormuz-october-2020", "dow-uap-d64-mission-report-iran-november-2020", "dow-uap-d65-mission-report-persian-gulf-july-2020", "dow-uap-d32-mission-report,-syria-october-2024"]
+    },
+    {
+      "topic": "Range Fouler Reports",
+      "context": "The Navy defines 'range fouler' as 'an activity or object that interrupts pre-planned training or other military activity in a military operating area or restricted airspace.' The U.S. Navy previously released 72 heavily redacted Range Fouler Debrief Forms covering 2004–2021, including the famous 2004 Nimitz 'Tic Tac' incident. The terminology evolution: 'Flying saucer' (1940s–50s) → 'UFO' (1960s–80s) → 'UAP' (2020s) → 'range fouler' (operational military context).",
+      "sources": [
+        {"title": "The Black Vault: Range Fouler Forms", "url": "https://www.theblackvault.com/documentarchive/range-fouler-debrief-forms-and-reports/"},
+        {"title": "The War Zone: Tic Tac in Range Reports", "url": "https://www.twz.com/tic-tac-uap-incident-included-in-72-newly-released-range-incursion-reports"}
+      ],
+      "related_docs": ["dow-uap-d38-range-fouler-debrief-middle-east-may-2020", "dow-uap-d42-range-fouler-debrief-japan-2023", "dow-uap-d44-range-fouler-arabian-sea-october-2020", "dow-uap-d56-range-fouler-debrief-arabian-sea-august-2020", "dow-uap-d58-range-fouler-debrief-na-october-2020"]
+    },
+    {
+      "topic": "Western US Event (2023) — 'Most Compelling' AARO Case",
+      "context": "Seven federal law enforcement special agents across three teams independently reported UAP over western states over two days. Sightings included: large orange orbs (12–18m diameter) hovering near a rock pinnacle, and 'orbs launching orbs' — orange orbs emitting groups of 2–4 smaller red orbs. One agent described an orb as 'similar to the Eye of Sauron from Lord of the Rings, except without the pupil.' AARO deemed this case 'among the most compelling cases in AARO's holdings due to the credibility of the witnesses.'",
+      "sources": [
+        {"title": "CBS News: Western US Event", "url": "https://www.cbsnews.com/news/pentagon-begins-release-ufo-files/"},
+        {"title": "France 24: UFO Files", "url": "https://www.france24.com/en/americas/20260508-pentagon-releases-decades-of-top-secret-ufo-files"},
+        {"title": "Hollywood Reporter: 5 Strangest", "url": "https://www.hollywoodreporter.com/news/general-news/trump-ufo-files-revelations-1236590123/"}
+      ],
+      "related_docs": ["western_us_event_slides_5.08.2026"]
+    },
+    {
+      "topic": "WWII Foo Fighters & German Documents (1944–1945)",
+      "context": "Allied pilots reported 'foo fighters' from November 1944 — mysterious glowing objects following aircraft. On December 13, 1944, SHAEF issued a press release calling them a 'new German weapon.' German and Japanese pilots reported identical phenomena, contradicting the enemy weapon theory. The PURSUE file 331_120752 documents the military response: HQ IX Tactical Air Command ordering photographic reconnaissance of 'long cylindrical objects' and collecting reports of 'aluminum coloured cylinder shaped objects, about 12 feet long and 1 foot wide.' This is a primary source from the active investigation period.",
+      "sources": [
+        {"title": "Wikipedia: Foo Fighter", "url": "https://en.wikipedia.org/wiki/Foo_fighter"},
+        {"title": "History.com: WWII UFOs", "url": "https://www.history.com/articles/wwii-ufos-allied-airmen-orange-lights-foo-fighters"},
+        {"title": "The Debrief: Foo Fighters", "url": "https://thedebrief.org/the-foo-fighters-todays-pilots-encounters-with-uap-are-nothing-new/"}
+      ],
+      "related_docs": ["331_120752_numeric_files_1944-1945_37153_german_armament_equipment_documents"]
+    },
+    {
+      "topic": "State Department Diplomatic Cables",
+      "context": "The Kazakhstan cable (1994): Tajik Airlines Captain Edward Rhodes and three Americans observed a brightly lit UAP at 41,000 feet on January 27, 1994, tracking it for over 40 minutes as it 'maneuvered in circles, corkscrews and made 90 degree turns.' The crew was 'adamant it was extraterrestrial and under intelligent control.' State Department assessed it was likely a meteor 'skidding in and out of the atmosphere.' The Papua New Guinea cable (1985) connects to the famous 1959 Father William Gill sighting at Boianai Anglican Mission — 38 witnesses observing a disc-shaped craft with humanoid figures that appeared to wave back.",
+      "sources": [
+        {"title": "Boston Globe/AP: State Dept Cables", "url": "https://www.bostonglobe.com/2026/05/08/nation/pentagon-releases-ufo-files/"},
+        {"title": "Black Vault: Father Gill Sighting", "url": "https://www.theblackvault.com/casefiles/father-gill-1959-papua-new-guinea-ufo-sighting/"}
+      ],
+      "related_docs": ["dos-uap-d1-cable-1-papua-new-guinea-january-1985", "dos-uap-d2-cable-2-kazakhstan-january-1994"]
+    },
+    {
+      "topic": "Sphere/Orb Shape Dominance",
+      "context": "The PURSUE corpus shows sphere/orb as the dominant shape (337 combined mentions). This directly correlates with AARO data showing 52% of UAP reports involve 'round' or 'sphere' objects, Enigma Labs' 6,226 orb/sphere sightings (Dec 2022–Sep 2024), and NUFORC's 170,000+ reports where orbs/spheres are consistently the most common shape. AARO characterizes metallic orbs as 1–4 meters in diameter, silver/translucent, at 10,000–30,000 feet, often with no thermal exhaust detected.",
+      "sources": [
+        {"title": "Enigma Labs: Metallic Orb Analysis", "url": "https://enigmalabs.io/blog/metallic-orb-ufos--a-trend-analysis"},
+        {"title": "AARO April 2023 Briefing", "url": "https://www.aaro.mil/Portals/136/PDFs/AARO_Brief_to_SASC-DoD_UAP_Mission-April_19_2023_508.pdf"},
+        {"title": "Global News: Metallic Flying Orbs", "url": "https://globalnews.ca/news/9746110/metallic-flying-orbs-nasa-pentagon-panel-ufos-uaps/"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "Multi-Sensor Detection & GREMLIN",
+      "context": "56 PURSUE documents contain multi-sensor observations (radar + FLIR + photographic + SIGINT). The famous Pentagon UFO videos (FLIR1, GIMBAL, GOFAST) were captured by AN/AAQ-37 FLIR targeting pods. AARO's new GREMLIN sensor system (deployed 2024) integrates 2D/3D radar, long-range EO/IR telescopes, GPS, SATCOM, aircraft tracking, and RF spectrum monitoring specifically for UAP detection.",
+      "sources": [
+        {"title": "Breaking Defense: GREMLIN Sensor", "url": "https://breakingdefense.com/2024/11/gremlin-but-no-aliens-pentagon-uap-office-plans-first-deployment-of-new-sensor-suite/"},
+        {"title": "DefenseScoop: GREMLIN Development", "url": "https://defensescoop.com/2024/03/08/embargo-10a-friday-dod-developing-gremlin-capability-to-help-personnel-collect-real-time-uap-data/"},
+        {"title": "Wikipedia: Pentagon UFO Videos", "url": "https://en.wikipedia.org/wiki/Pentagon_UFO_videos"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "Robertson Panel (1953) & Institutional Secrecy",
+      "context": "The CIA-convened Robertson Panel (January 14–18, 1953) reviewed six years of UFO data in 12 hours and recommended a 'debunking campaign' using mass media including Walt Disney Productions. Consequences: Air Force Regulation 200-2 ordered officers to only publicly discuss solved cases; JANAP 146 made discussing classified UFO reports a crime punishable by 2 years prison. This established the institutional culture of secrecy that persisted 70+ years until the current disclosure push — directly relevant to understanding why the FBI 62-HQ-83894 file was classified for so long.",
+      "sources": [
+        {"title": "Wikipedia: Robertson Panel", "url": "https://en.wikipedia.org/wiki/Robertson_Panel"},
+        {"title": "CIA's Role in UFO Study", "url": "https://sgp.fas.org/library/ciaufo.html"},
+        {"title": "Enigma Labs: Robertson Panel", "url": "https://enigmalabs.io/library/3396bbf7-0cae-47c5-8f58-607063dc01c8"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "Congressional UAP Legislation",
+      "context": "The PURSUE release follows sustained Congressional action: the UAPDA 2023 (Schumer-Rounds amendment modeled on JFK Assassination Records Collection Act), the UAPDA 2025 (SA 3111, authorizing $20M with eminent domain provision), the UAP Transparency Act (H.R. 1187), and Rep. Luna's March 2026 letter demanding 46 specific UAP videos from the Pentagon. David Grusch's July 2023 Congressional testimony claiming a 'multi-decade UAP crash retrieval and reverse-engineering program' accelerated legislative momentum.",
+      "sources": [
+        {"title": "UAPDA 2025 Text (Congress.gov)", "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/3111/text"},
+        {"title": "UAP Transparency Act (H.R. 1187)", "url": "https://www.congress.gov/bill/119th-congress/house-bill/1187/text"},
+        {"title": "Grusch Hearing Transcript (GovInfo)", "url": "https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "AARO & Government Databases",
+      "context": "AARO's FY2024 report: 757 UAP reports received, 49 resolved (balloons, birds, UAS), 21 merit further analysis, 444 lacked sufficient data. NARA Record Group 615 (UAP Records Collection) established under 2024 NDAA. Agencies transferring records include ODNI, Office of SecDef, FAA, and NRC. Public databases for cross-referencing: NUFORC (170,000+ reports), Enigma Labs, MUFON Project Aquarius Library, and The Black Vault.",
+      "sources": [
+        {"title": "AARO Official Records", "url": "https://www.aaro.mil/UAP-Records/"},
+        {"title": "AARO FY2024 Report (PDF)", "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"},
+        {"title": "NARA UAP Records (RG 615)", "url": "https://www.archives.gov/research/topics/uaps/rg-615"},
+        {"title": "NARA Bulk Downloads", "url": "https://www.archives.gov/research/catalog/catalog-bulk-downloads/uap-bulk-download"},
+        {"title": "NUFORC Databank", "url": "https://nuforc.org/databank/"},
+        {"title": "Enigma Labs", "url": "https://enigmalabs.io/"},
+        {"title": "CASEFILES Archive", "url": "https://www.casefiles.space"},
+        {"title": "The Black Vault", "url": "https://www.theblackvault.com/documentarchive/"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "UAP-Nuclear Correlation",
+      "context": "French economists provided the first statistical analysis (2015) confirming UFO reports correlate with atomic sites 'to a highly significant degree.' Notable incidents: Malmstrom AFB 1967 (10 nuclear missiles went offline during UAP sighting), Rendlesham Forest/RAF Bentwaters 1980 (known nuclear weapons site). FBI Section 5 references objects detected on radar over Oak Ridge, TN — a key nuclear facility. The PURSUE files' concentration near military operations zones is consistent with this historical pattern.",
+      "sources": [
+        {"title": "Wikipedia: UFO Reports and Atomic Sites", "url": "https://en.wikipedia.org/wiki/UFO_reports_and_atomic_sites"},
+        {"title": "History.com: UFOs Near Nuclear Facilities", "url": "https://www.history.com/articles/ufos-near-nuclear-facilities-uss-roosevelt-rendlesham"}
+      ],
+      "related_docs": ["65_hs1-834228961_62-hq-83894_section_5"]
+    },
+    {
+      "topic": "The Black Vault Deletion Incident",
+      "context": "Hours after Trump's February 20, 2026 declassification announcement, The Black Vault (world's largest private UFO document archive, ~3.8 million files) had its entire server wiped. The hosting provider confirmed the data was 'deliberately deleted — not the result of corruption or hardware failure.' File permissions and ownership logs had been changed. The archive was restored from offsite backups within hours. The cause remains unexplained.",
+      "sources": [
+        {"title": "Factually: Black Vault Deletion Fact-Check", "url": "https://factually.co/fact-checks/media/black-vault-3-9-million-files-deleted-after-trump-declassification-order-bbfcfb"},
+        {"title": "Wion News: Files Vanish After Trump Order", "url": "https://www.wionews.com/trending/files-on-secret-alien-and-ufo-programs-vanish-hours-after-trump-s-order-deletion-not-corruption-1771922604653"}
+      ],
+      "related_docs": []
+    },
+    {
+      "topic": "USS Nimitz 'Tic Tac' & Famous Navy Encounters",
+      "context": "November 14, 2004: USS Princeton tracked objects for two weeks on radar. Cmdr. David Fravor encountered a 'Tic Tac' shaped object (~40 feet, white, no wings, no exhaust) demonstrating extraordinary maneuverability. Lt. Cmdr. Chad Underwood recorded the FLIR1 video. The 2014–2015 USS Roosevelt encounters produced the GIMBAL and GOFAST videos. A 'Chandelier' UAP from the Persian Gulf shows an 'eight-pointed star rotating with no flight control surfaces' — described as having 'everyone across the intelligence community just asking questions.' These form the modern precedent for the PURSUE military mission reports.",
+      "sources": [
+        {"title": "History.com: Tic Tac Encounter", "url": "https://www.history.com/articles/uss-nimitz-2004-tic-tac-ufo-encounter"},
+        {"title": "CBS News: Tic Tac Testimony", "url": "https://www.cbsnews.com/news/tic-tac-ufo-sighting-uap-video-dave-fravor-alex-dietrich-navy-fighter-pilots-house-testimony/"},
+        {"title": "DoD: Official UAP Video Release", "url": "https://www.defense.gov/News/Releases/Release/Article/2165713/"},
+        {"title": "NewsNation: Chandelier UAP", "url": "https://www.newsnationnow.com/space/ufo/chandelier-uap-photo-persian-gulf/"}
+      ],
+      "related_docs": []
+    }
+  ]
+}

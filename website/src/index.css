@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #2563eb;
+  --color-accent: #f59e0b;
+  --color-danger: #ef4444;
+  --color-surface: #1e293b;
+  --color-surface-light: #334155;
+  --color-surface-dark: #0f172a;
+
+  --color-agency-dow: #3b82f6;
+  --color-agency-fbi: #ef4444;
+  --color-agency-nasa: #8b5cf6;
+  --color-agency-dos: #10b981;
+}
+
+html { scroll-behavior: smooth; }
+body { min-height: 100dvh; }
+
+.leaflet-container { background: #1e293b !important; }
+.leaflet-popup-content-wrapper { background: #1e293b !important; color: #e2e8f0 !important; border-radius: 0.5rem !important; }
+.leaflet-popup-tip { background: #1e293b !important; }
+
+.doc-text { white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, monospace; font-size: 0.8rem; line-height: 1.5; }
+.page-break { border-top: 2px dashed #475569; margin: 1.5rem 0; padding-top: 0.5rem; }
+.page-break::before { content: 'PAGE BREAK'; font-size: 0.65rem; color: #64748b; letter-spacing: 0.1em; }
+
+.redacted-bar { background: #000; color: #000; padding: 2px 8px; user-select: none; }
+
+.agency-badge { padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.agency-dow { background: color-mix(in srgb, var(--color-agency-dow) 20%, transparent); color: var(--color-agency-dow); }
+.agency-fbi { background: color-mix(in srgb, var(--color-agency-fbi) 20%, transparent); color: var(--color-agency-fbi); }
+.agency-nasa { background: color-mix(in srgb, var(--color-agency-nasa) 20%, transparent); color: var(--color-agency-nasa); }
+.agency-dos { background: color-mix(in srgb, var(--color-agency-dos) 20%, transparent); color: var(--color-agency-dos); }
