@@ -67,6 +67,60 @@ function LoadingSkeleton() {
   )
 }
 
+function PDFViewer({ url, title }) {
+  const [showViewer, setShowViewer] = useState(false)
+
+  return (
+    <div className="mb-6">
+      <div className="flex items-center justify-between mb-2">
+        <h2 className="text-sm font-semibold text-slate-300">Original Document</h2>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setShowViewer(!showViewer)}
+            className="text-xs text-primary hover:text-primary-light transition-colors cursor-pointer"
+          >
+            {showViewer ? 'Hide viewer' : 'Show embedded viewer'}
+          </button>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-amber-500/70 hover:text-amber-400 transition-colors"
+          >
+            Open on war.gov ↗
+          </a>
+        </div>
+      </div>
+      {showViewer && (
+        <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
+          <iframe
+            src={url}
+            title={`PDF: ${title}`}
+            className="w-full border-0"
+            style={{ height: '80vh', minHeight: '500px' }}
+          />
+        </div>
+      )}
+      {!showViewer && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 bg-slate-900/60 border border-slate-700/50 rounded-lg p-4 hover:border-primary/30 transition-colors group"
+        >
+          <div className="w-12 h-14 bg-red-500/10 border border-red-500/20 rounded flex items-center justify-center flex-shrink-0">
+            <span className="text-red-400 text-xs font-bold">PDF</span>
+          </div>
+          <div>
+            <span className="text-sm text-slate-200 group-hover:text-primary-light transition-colors block">View original declassified PDF</span>
+            <span className="text-xs text-slate-500">war.gov — opens in new tab</span>
+          </div>
+        </a>
+      )}
+    </div>
+  )
+}
+
 export default function DocumentDetail() {
   const { id } = useParams()
   const numId = Number(id)
@@ -78,19 +132,26 @@ export default function DocumentDetail() {
   const research = useResearch()
 
   const [textExpanded, setTextExpanded] = useState(false)
+  const [narratives, setNarratives] = useState(null)
 
-  // Scroll to top when id changes
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [numId])
 
-  // Manifest entry for this document
+  useEffect(() => {
+    fetch('/data/doc_narratives.json')
+      .then(r => r.json())
+      .then(setNarratives)
+      .catch(() => {})
+  }, [])
+
   const manifestEntry = useMemo(() => {
     if (!manifest || !doc) return null
     return manifest[doc.filename] || null
   }, [manifest, doc])
 
-  // Cross-referenced documents via graph edges
+  const narrative = narratives?.[String(numId)]
+
   const crossRefs = useMemo(() => {
     if (!graph || !docs) return []
     const connected = graph.edges
@@ -119,11 +180,9 @@ export default function DocumentDetail() {
     )
   }, [research, doc])
 
-  // Previous / Next navigation
   const prevId = numId > 0 ? numId - 1 : null
   const nextId = docs && numId < docs.length - 1 ? numId + 1 : null
 
-  // Split full text into pages
   const pages = useMemo(() => {
     if (!doc?.full_text) return []
     return doc.full_text.split('--- PAGE BREAK ---')
@@ -145,46 +204,79 @@ export default function DocumentDetail() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 pb-24">
-      {/* Back link */}
-      <Link to="/documents" className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-slate-300 transition-colors mb-4">
-        &larr; All documents
-      </Link>
-
-      {/* Header */}
+      {/* ── Document Header ────────────────────────────────────────── */}
       <div className="mb-6">
-        <h1 className="text-lg font-bold text-slate-100 mb-3 leading-snug">{doc.title}</h1>
+        <h1 className="text-xl sm:text-2xl font-bold text-slate-100 mb-3 leading-snug">{doc.title}</h1>
         <div className="flex flex-wrap items-center gap-2">
-          <span className={`agency-badge ${acls}`}>
+          <span
+            className="agency-badge text-sm px-3 py-1"
+            style={{
+              backgroundColor: `${acol}20`,
+              color: acol,
+            }}
+          >
             {AGENCY_SHORT[doc.agency] || doc.agency}
           </span>
-          <span className="text-sm text-slate-400">{formatDate(doc.incident_date_parsed)}</span>
-          {doc.incident_location && (
+          {doc.incident_date_parsed && (
+            <span className="text-sm text-slate-400">{formatDate(doc.incident_date_parsed)}</span>
+          )}
+          {doc.incident_location && doc.incident_location !== 'N/A' && (
             <span className="text-sm text-slate-500">{doc.incident_location}</span>
           )}
-          <span className="text-xs text-slate-500">
+          <span className="text-xs text-slate-500 bg-slate-800 rounded px-2 py-0.5">
             {doc.total_pages} {doc.total_pages === 1 ? 'page' : 'pages'}
           </span>
-          <span className="text-xs text-slate-500">{doc.text_length?.toLocaleString()} chars</span>
           {hasRedaction && (
-            <span className="flex items-center gap-1 text-xs text-red-400">
+            <span className="flex items-center gap-1 text-xs text-red-400 bg-red-500/10 rounded px-2 py-0.5">
               <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
               Redacted
             </span>
           )}
-          {doc.ocr_applied === 1 && (
-            <span className="text-xs text-amber-500">OCR extracted</span>
-          )}
         </div>
       </div>
 
-      {/* Official Description (from manifest) */}
-      {manifestEntry?.description && (
-        <Section title="Official Description" defaultOpen>
-          <p className="text-sm text-slate-300 leading-relaxed">{manifestEntry.description}</p>
-        </Section>
+      {/* ── "Why This Matters" ─────────────────────────────────────── */}
+      {(narrative?.why_it_matters || manifestEntry?.description) && (
+        <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950/20 border border-blue-500/20 rounded-lg p-5 mb-6">
+          <h2 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-blue-400 mb-2">Why This Matters</h2>
+          <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
+            {narrative?.why_it_matters || manifestEntry?.description}
+          </p>
+        </div>
       )}
 
-      {/* Metadata Panel */}
+      {/* ── Key Findings ───────────────────────────────────────────── */}
+      {narrative?.key_findings?.length > 0 && (
+        <div className="mb-6">
+          <h2 className="text-sm font-semibold text-slate-300 mb-3">Key Findings</h2>
+          <div className="space-y-2">
+            {narrative.key_findings.map((finding, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-[10px] font-bold mt-0.5">
+                  {i + 1}
+                </span>
+                <p className="text-sm text-slate-300 leading-relaxed">{finding}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ── Embedded PDF Viewer ─────────────────────────────────────── */}
+      {manifestEntry?.url && (
+        <PDFViewer url={manifestEntry.url} title={doc.title} />
+      )}
+
+      {/* ── Official Description ───────────────────────────────────── */}
+      {manifestEntry?.description && (
+        <div className="mb-4">
+          <Section title="Official Pentagon Description" defaultOpen>
+            <p className="text-sm text-slate-400 leading-relaxed">{manifestEntry.description}</p>
+          </Section>
+        </div>
+      )}
+
+      {/* ── Metadata Panel ─────────────────────────────────────────── */}
       {hasMetadata && (
         <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-4 mb-4">
           {hasSensors && (
@@ -241,7 +333,7 @@ export default function DocumentDetail() {
         </div>
       )}
 
-      {/* Redaction Info */}
+      {/* ── Redaction Info ──────────────────────────────────────────── */}
       {hasRedaction && doc.redaction?.length > 0 && (
         <div className="bg-red-950/20 border border-red-900/30 rounded-lg p-4 mb-4">
           <Section title="Redaction Details" defaultOpen>
@@ -261,46 +353,12 @@ export default function DocumentDetail() {
         </div>
       )}
 
-      {/* Document Text */}
-      {pages.length > 0 && (
-        <div className="mb-4">
-          <div className="flex items-center justify-between mb-2">
-            <h2 className="text-sm font-semibold text-slate-300">Document Text</h2>
-            {pages.length > 3 && (
-              <button
-                onClick={() => setTextExpanded(!textExpanded)}
-                className="text-xs text-primary hover:text-primary-light transition-colors"
-              >
-                {textExpanded ? 'Collapse' : `Show all ${pages.length} pages`}
-              </button>
-            )}
-          </div>
-          <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
-            <div className="p-4 max-h-[80vh] overflow-y-auto" style={!textExpanded && pages.length > 3 ? { maxHeight: '60vh' } : { maxHeight: 'none' }}>
-              {pages.map((page, i) => (
-                <div key={i}>
-                  {i > 0 && (
-                    <div className="page-break" />
-                  )}
-                  <div className="relative">
-                    <span className="absolute -left-0 top-0 text-[10px] text-slate-500 select-none font-mono">
-                      p.{i + 1}
-                    </span>
-                    <div className="doc-text pl-6 text-slate-300">{page.trim()}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Cross-references */}
+      {/* ── Related Documents ──────────────────────────────────────── */}
       {hasCrossRefs && (
         <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-4 mb-4">
           <Section title="Related Documents" count={crossRefs.length} defaultOpen>
             <div className="space-y-1.5">
-              {crossRefs.map(ref => (
+              {crossRefs.slice(0, 8).map(ref => (
                 <Link
                   key={ref.id}
                   to={`/documents/${ref.id}`}
@@ -322,7 +380,7 @@ export default function DocumentDetail() {
         </div>
       )}
 
-      {/* Research Context */}
+      {/* ── Research Context ───────────────────────────────────────── */}
       {researchContext.length > 0 && (
         <div className="bg-indigo-950/20 border border-indigo-900/30 rounded-lg p-4 mb-4">
           <Section title="Research Context" defaultOpen>
@@ -348,32 +406,52 @@ export default function DocumentDetail() {
         </div>
       )}
 
-      {/* External link */}
-      {manifestEntry?.url && (
-        <div className="mb-6">
-          <a
-            href={manifestEntry.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary-light transition-colors"
-          >
-            View original PDF on war.gov
-            <span className="text-xs opacity-60">&nearr;</span>
-          </a>
+      {/* ── Document Text ──────────────────────────────────────────── */}
+      {pages.length > 0 && (
+        <div className="mb-4">
+          <div className="flex items-center justify-between mb-2">
+            <h2 className="text-sm font-semibold text-slate-300">Extracted Text</h2>
+            {pages.length > 3 && (
+              <button
+                onClick={() => setTextExpanded(!textExpanded)}
+                className="text-xs text-primary hover:text-primary-light transition-colors cursor-pointer"
+              >
+                {textExpanded ? 'Collapse' : `Show all ${pages.length} pages`}
+              </button>
+            )}
+          </div>
+          <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
+            <div className="p-4 max-h-[80vh] overflow-y-auto" style={!textExpanded && pages.length > 3 ? { maxHeight: '60vh' } : { maxHeight: 'none' }}>
+              {pages.map((page, i) => (
+                <div key={i}>
+                  {i > 0 && (
+                    <div className="page-break" />
+                  )}
+                  <div className="relative">
+                    <span className="absolute -left-0 top-0 text-[10px] text-slate-500 select-none font-mono">
+                      p.{i + 1}
+                    </span>
+                    <div className="doc-text pl-6 text-slate-300">{page.trim()}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       )}
 
-      {/* Extraction info */}
+      {/* ── Extraction info ────────────────────────────────────────── */}
       <div className="text-[11px] text-slate-500 mb-6">
         Extracted via {doc.extraction_method}{doc.ocr_applied ? ' + OCR' : ''}
+        {' · '}Source: <a href="https://war.gov/UFO" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-slate-400 underline underline-offset-2">war.gov/UFO</a>
       </div>
 
-      {/* Previous / Next navigation */}
+      {/* ── Previous / Next navigation ─────────────────────────────── */}
       <div className="flex items-center justify-between border-t border-slate-700/50 pt-4">
         {prevId != null ? (
           <button
             onClick={() => navigate(`/documents/${prevId}`)}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer"
           >
             <span>&larr;</span>
             <span>Previous</span>
@@ -387,7 +465,7 @@ export default function DocumentDetail() {
         {nextId != null ? (
           <button
             onClick={() => navigate(`/documents/${nextId}`)}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer"
           >
             <span>Next</span>
             <span>&rarr;</span>
