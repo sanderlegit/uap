@@ -235,6 +235,27 @@ export default function DocumentDetail() {
         </div>
       </div>
 
+      {/* ── Explore This Document In ─────────────────────────────── */}
+      <div className="flex flex-wrap items-center gap-2 mb-6 text-xs">
+        <span className="text-slate-500">Explore in:</span>
+        {doc.incident_date_parsed && (
+          <Link to="/timeline" className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+            Timeline
+          </Link>
+        )}
+        <Link to="/graph" className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          Network Graph
+        </Link>
+        {doc.incident_location && doc.incident_location !== 'N/A' && (
+          <Link to="/map" className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+            Map
+          </Link>
+        )}
+        <Link to={`/search`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          Search
+        </Link>
+      </div>
+
       {/* ── "Why This Matters" ─────────────────────────────────────── */}
       {(narrative?.why_it_matters || manifestEntry?.description) && (
         <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950/20 border border-blue-500/20 rounded-lg p-5 mb-6">

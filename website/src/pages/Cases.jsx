@@ -11,6 +11,12 @@ const CATEGORY_COLORS = {
   government_disclosure: '#10b981',
 }
 
+const CASE_DOC_IDS = {
+  foo_fighters_1944: [64],
+  apollo_sightings: [103, 55, 106, 101, 102, 104, 105, 50, 51, 52, 53, 54],
+  washington_dc_1952: [68, 69, 70],
+}
+
 function CaseCard({ c, categories, isExpanded, onToggle }) {
   const cat = categories[c.category] || {}
   const color = CATEGORY_COLORS[c.category] || '#6b7280'
@@ -76,6 +82,32 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
               ))}
             </div>
           </div>
+
+          {CASE_DOC_IDS[c.id] && (
+            <div className="pt-2 border-t border-slate-800">
+              <h4 className="text-[10px] font-bold text-blue-400/70 uppercase tracking-wider mb-1.5">PURSUE Documents</h4>
+              <p className="text-[10px] text-slate-500 mb-2">Declassified documents from this collection related to this case:</p>
+              <div className="flex flex-wrap gap-1.5">
+                {CASE_DOC_IDS[c.id].slice(0, 6).map(docId => (
+                  <Link
+                    key={docId}
+                    to={`/documents/${docId}`}
+                    className="text-[11px] px-2 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/30 transition-colors"
+                  >
+                    Doc #{docId} →
+                  </Link>
+                ))}
+                {CASE_DOC_IDS[c.id].length > 6 && (
+                  <Link
+                    to="/documents"
+                    className="text-[11px] px-2 py-1 rounded bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors"
+                  >
+                    +{CASE_DOC_IDS[c.id].length - 6} more
+                  </Link>
+                )}
+              </div>
+            </div>
+          )}
 
           {c.sources.length > 0 && (
             <div className="pt-2 border-t border-slate-800">
@@ -149,6 +181,8 @@ export default function Cases() {
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Dashboard</Link>
           {' '}&middot;{' '}
           <Link to="/theories" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Theories</Link>
+          {' '}&middot;{' '}
+          <Link to="/documents" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">All Documents</Link>
         </p>
 
         {/* Category filter */}

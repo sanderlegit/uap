@@ -255,6 +255,11 @@ export default function MapView() {
             ))}
           </div>
           <p className="text-[10px] text-slate-500 mt-2">{geolocated.length} of {docs.length} mapped</p>
+          <div className="flex gap-2 mt-2 pt-2 border-t border-slate-700/40">
+            <Link to="/timeline" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Timeline</Link>
+            <Link to="/graph" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Graph</Link>
+            <Link to="/documents" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">All Docs</Link>
+          </div>
         </div>
 
         {/* Mobile space toggle */}

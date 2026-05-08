@@ -129,9 +129,16 @@ export default function Timeline() {
       {/* Header & Filters */}
       <div className="px-4 pt-6 pb-3">
         <h1 className="text-xl font-bold text-slate-100 mb-1">Timeline</h1>
-        <p className="text-sm text-slate-400 mb-4">
+        <p className="text-sm text-slate-400 mb-1">
           {datedCount} dated, {undatedCount} undated
           <span className="ml-2 text-xs text-slate-500">&larr; Scroll horizontally to explore &rarr;</span>
+        </p>
+        <p className="text-xs text-slate-500 mb-4">
+          <Link to="/documents" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">All Documents</Link>
+          {' '}&middot;{' '}
+          <Link to="/graph" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Network Graph</Link>
+          {' '}&middot;{' '}
+          <Link to="/map" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Map</Link>
         </p>
 
         <div className="flex flex-wrap gap-2 mb-3">

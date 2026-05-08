@@ -153,6 +153,10 @@ export default function International() {
         <p className="text-xs text-slate-500 mb-6">
           {data.countries.length} countries &middot; Last updated {data.last_updated} &middot;{' '}
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Dashboard</Link>
+          {' '}&middot;{' '}
+          <Link to="/cases" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Cases</Link>
+          {' '}&middot;{' '}
+          <Link to="/theories" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Theories</Link>
         </p>
 
         {/* Summary stats */}

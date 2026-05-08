@@ -250,7 +250,15 @@ export default function Theories() {
         <p className="text-xs text-slate-500 mb-8">
           Last updated {data.last_updated} &middot;{' '}
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
-            Back to dashboard
+            Dashboard
+          </Link>
+          {' '}&middot;{' '}
+          <Link to="/cases" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
+            Cases
+          </Link>
+          {' '}&middot;{' '}
+          <Link to="/documents" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
+            Documents
           </Link>
         </p>
 
