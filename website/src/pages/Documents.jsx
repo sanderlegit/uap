@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useDocuments, agencyClass, formatDate } from '../hooks/useData'
 
@@ -40,6 +40,14 @@ function SkeletonCard() {
 export default function Documents() {
   const docs = useDocuments()
   const [searchParams, setSearchParams] = useSearchParams()
+  const [narratives, setNarratives] = useState(null)
+
+  useEffect(() => {
+    fetch('/data/doc_narratives.json')
+      .then(r => r.json())
+      .then(setNarratives)
+      .catch(() => {})
+  }, [])
 
   const agency = searchParams.get('agency') || ''
   const decade = searchParams.get('decade') || ''
@@ -231,11 +239,9 @@ export default function Documents() {
                   <span className="text-amber-600">OCR</span>
                 )}
               </div>
-              {doc.excerpt && (
-                <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">
-                  {doc.excerpt}
-                </p>
-              )}
+              <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">
+                {narratives?.[String(doc.id)]?.hook || doc.excerpt || ''}
+              </p>
             </Link>
           ))}
         </div>
