@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react'
-import { Outlet, NavLink, useLocation } from 'react-router-dom'
+import { useState, useRef, useEffect, useMemo } from 'react'
+import { Outlet, NavLink, Link, useLocation, useParams } from 'react-router-dom'
 
 const primaryNav = [
   { to: '/', label: 'Dashboard', icon: '◉' },
@@ -17,6 +17,66 @@ const insightsNav = [
   { to: '/international', label: 'International', icon: '⊕', activeBg: 'bg-emerald-500/20', activeText: 'text-emerald-300' },
   { to: '/pulse', label: 'Pulse', icon: '◌', activeBg: 'bg-cyan-500/20', activeText: 'text-cyan-300' },
 ]
+
+const breadcrumbMeta = {
+  '/documents': { label: 'Documents', hint: 'Browse all 129 declassified files by agency, date, or topic.' },
+  '/map': { label: 'Map', hint: 'Incident locations plotted from document coordinates worldwide.' },
+  '/timeline': { label: 'Timeline', hint: '99 dated documents spanning 1945 to present.' },
+  '/graph': { label: 'Graph', hint: 'Visualizing connections between 129 documents across 4 agencies.' },
+  '/search': { label: 'Search', hint: 'Full-text search across all declassified document content.' },
+  '/disclosure': { label: 'Disclosure Index', hint: 'A composite measure of how much the government has officially acknowledged about UAP.' },
+  '/theories': { label: 'Theories', hint: 'Competing hypotheses for what these documents describe.' },
+  '/cases': { label: 'Cases', hint: 'The highest-validity UAP encounters with multi-source evidence.' },
+  '/international': { label: 'International', hint: 'Global UAP programs and how other governments are responding.' },
+  '/pulse': { label: 'Pulse', hint: 'Tracking public, political, and scientific momentum around UAP disclosure.' },
+}
+
+function Breadcrumb() {
+  const location = useLocation()
+  const path = location.pathname
+
+  if (path === '/') return null
+
+  const isDocDetail = path.startsWith('/documents/') && path !== '/documents'
+  const isAnalysis = path.startsWith('/analysis/')
+
+  let crumbs = [{ to: '/', label: 'Dashboard' }]
+  let hint = null
+
+  if (isDocDetail) {
+    crumbs.push({ to: '/documents', label: 'Documents' })
+  } else if (isAnalysis) {
+    crumbs.push({ to: '/analysis/report', label: 'Analysis' })
+  } else if (breadcrumbMeta[path]) {
+    hint = breadcrumbMeta[path].hint
+  }
+
+  const current = isDocDetail ? null
+    : isAnalysis ? null
+    : breadcrumbMeta[path]?.label || path.slice(1)
+
+  return (
+    <div className="bg-slate-900/60 border-b border-slate-800/50">
+      <div className="max-w-6xl mx-auto px-4 py-2 flex items-center gap-2 flex-wrap">
+        {crumbs.map((c, i) => (
+          <span key={c.to} className="flex items-center gap-2">
+            {i > 0 && <span className="text-slate-600 text-xs">/</span>}
+            <Link to={c.to} className="text-xs text-slate-500 hover:text-slate-300 transition-colors">{c.label}</Link>
+          </span>
+        ))}
+        {current && (
+          <>
+            <span className="text-slate-600 text-xs">/</span>
+            <span className="text-xs text-slate-300">{current}</span>
+          </>
+        )}
+        {hint && (
+          <span className="text-[11px] text-slate-500 ml-2 hidden sm:inline">{hint}</span>
+        )}
+      </div>
+    </div>
+  )
+}
 
 function InsightsDropdown() {
   const [open, setOpen] = useState(false)
@@ -122,6 +182,7 @@ export default function Layout() {
           </nav>
         )}
       </header>
+      <Breadcrumb />
       <main className="flex-1">
         <Outlet />
       </main>
