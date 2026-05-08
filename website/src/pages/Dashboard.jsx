@@ -119,7 +119,7 @@ const navLinks = [
   { to: '/pulse',           label: 'Pulse',         icon: '◌', desc: 'News & social awareness' },
 ]
 
-/* ── notable document ids ──────────────────────────────────────────── */
+/* ── notable document ids + compelling hooks ──────────────────────── */
 const notableDocIds = [
   103, // Apollo 11 Crew Debriefing
   112, // FBI 62-HQ-83894 Section 1
@@ -130,6 +130,17 @@ const notableDocIds = [
   75,  // State Dept Cable Papua New Guinea
   64,  // German WWII foo fighter docs
 ]
+
+const docHooks = {
+  103: "Buzz Aldrin saw something tracking Apollo 11 on the way to the moon. The crew debriefing was classified for over 50 years.",
+  112: "The FBI investigated UFOs for 21 years and filled 2,622 pages they never expected you to read. This is Section 1 of the complete case file.",
+  111: "Seven federal employees independently reported four categories of anomalous objects over two days in the western U.S. The Pentagon compiled their statements into a single file.",
+  55: "NASA photographed three dots in triangular formation in the lunar sky during Apollo 17. They opened a case to investigate — and never closed it.",
+  0: "A military drone operator over Iraq filmed five unidentified objects crossing the sensor feed. The report was classified SECRET and shared with Five Eyes allies.",
+  106: "All three Skylab crews reported anomalous observations in orbit. The sightings were formally logged in NASA mission reports and classified for decades.",
+  75: "The U.S. Embassy in Papua New Guinea cabled the Pentagon about a UFO inquiry from the host government. The State Department's response has never been released.",
+  64: "In 1944, the 415th Night Fighter Squadron reported glowing objects following their planes over Germany. The Army called them 'foo fighters' and filed 17 pages of reports.",
+}
 
 /* ── briefing card data ────────────────────────────────────────────── */
 const briefingCards = [
@@ -380,9 +391,68 @@ export default function Dashboard() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────
+          "WHAT JUST HAPPENED" CONTEXT BLOCK
+          ──────────────────────────────────────────────────────────────── */}
+      <section ref={contentRef} className="px-4 sm:px-6 pt-12 sm:pt-16 pb-6 max-w-2xl mx-auto text-center">
+        <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
+          On May 8, 2026, the Pentagon released 162 files under the Presidential Unsealing and
+          Reporting System for UAP Encounters — the largest single disclosure of UAP documents
+          in U.S. history. These files span 9 decades, 4 agencies, and include materials the
+          government denied existed for over 70 years. This is what they contain.
+        </p>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────
+          THREE GUIDED ENTRY POINTS
+          ──────────────────────────────────────────────────────────────── */}
+      <section className="px-4 sm:px-6 py-8 sm:py-10 max-w-4xl mx-auto">
+        <div className="grid gap-4 sm:grid-cols-3">
+          <Link
+            to="/documents"
+            className="dash-card group bg-slate-900/80 border border-slate-700/40 rounded-lg p-6 hover:border-blue-500/40 hover:bg-slate-800/60 hover:translate-y-[-1px] hover:shadow-lg transition-all text-center"
+            style={{ animationDelay: '100ms' }}
+          >
+            <div className="text-3xl mb-3 text-blue-400 group-hover:text-blue-300 transition-colors">
+              <svg className="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+              </svg>
+            </div>
+            <h3 className="text-base font-bold text-slate-100 mb-1.5">Read the Documents</h3>
+            <p className="text-xs text-slate-400 leading-relaxed">Browse all 129 declassified files by agency, date, or topic.</p>
+          </Link>
+          <Link
+            to="/graph"
+            className="dash-card group bg-slate-900/80 border border-slate-700/40 rounded-lg p-6 hover:border-purple-500/40 hover:bg-slate-800/60 hover:translate-y-[-1px] hover:shadow-lg transition-all text-center"
+            style={{ animationDelay: '200ms' }}
+          >
+            <div className="text-3xl mb-3 text-purple-400 group-hover:text-purple-300 transition-colors">
+              <svg className="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+              </svg>
+            </div>
+            <h3 className="text-base font-bold text-slate-100 mb-1.5">Understand the Patterns</h3>
+            <p className="text-xs text-slate-400 leading-relaxed">See how documents, agencies, and events connect across decades.</p>
+          </Link>
+          <Link
+            to="/disclosure"
+            className="dash-card group bg-slate-900/80 border border-slate-700/40 rounded-lg p-6 hover:border-amber-500/40 hover:bg-slate-800/60 hover:translate-y-[-1px] hover:shadow-lg transition-all text-center"
+            style={{ animationDelay: '300ms' }}
+          >
+            <div className="text-3xl mb-3 text-amber-400 group-hover:text-amber-300 transition-colors">
+              <svg className="w-10 h-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h3 className="text-base font-bold text-slate-100 mb-1.5">Track the Disclosure</h3>
+            <p className="text-xs text-slate-400 leading-relaxed">How much has actually been revealed — and what's still hidden.</p>
+          </Link>
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────
           KEY INTELLIGENCE BRIEFING
           ──────────────────────────────────────────────────────────────── */}
-      <section ref={contentRef} className="px-4 sm:px-6 py-12 sm:py-16 max-w-6xl mx-auto">
+      <section className="px-4 sm:px-6 py-12 sm:py-16 max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <span className="h-px flex-1 bg-gradient-to-r from-amber-500/40 to-transparent" />
           <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-amber-500/80 whitespace-nowrap">
@@ -549,6 +619,11 @@ export default function Dashboard() {
             <span className="h-px flex-1 bg-gradient-to-l from-indigo-500/30 to-transparent" />
           </div>
 
+          <p className="text-sm text-slate-400 leading-relaxed mb-6 max-w-2xl">
+            Researchers and government officials have proposed several frameworks for what these
+            documents describe. None are confirmed. Here are the leading hypotheses.
+          </p>
+
           {/* Gerb Framework callout */}
           <Link
             to="/theories"
@@ -713,8 +788,7 @@ export default function Dashboard() {
           >
             {notableDocs.map((doc, i) => {
               const meta = doc.agency ? agencyMeta[doc.agency] : null
-              const topSensor = doc.sensors?.[0]?.sensor_type
-              const topBehavior = doc.behaviors?.[0]?.behavior_type
+              const hook = docHooks[doc.id]
               return (
                 <Link
                   key={doc.id}
@@ -722,13 +796,11 @@ export default function Dashboard() {
                   className="dash-card flex-shrink-0 w-[280px] sm:w-[300px] snap-start bg-slate-900/70 border border-slate-700/40 rounded-lg overflow-hidden hover:border-amber-500/30 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
                   style={{ animationDelay: `${i * 80 + 100}ms` }}
                 >
-                  {/* top accent */}
                   <div
                     className="h-0.5"
                     style={{ backgroundColor: doc.agency ? agencyColor(doc.agency) : '#475569', opacity: 0.6 }}
                   />
                   <div className="p-4">
-                    {/* agency badge + date */}
                     <div className="flex items-center justify-between gap-2 mb-2">
                       {meta ? (
                         <span className={`text-[10px] font-mono font-bold tracking-wider px-2 py-0.5 rounded ${meta.bg} ${meta.text} ${meta.border} border`}>
@@ -743,33 +815,16 @@ export default function Dashboard() {
                         </span>
                       )}
                     </div>
-                    {/* title */}
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-slate-100 leading-snug line-clamp-2 mb-2 transition-colors min-h-[2.5em]">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-slate-100 leading-snug line-clamp-2 mb-2 transition-colors">
                       {doc.title}
                     </h3>
-                    {/* location */}
-                    {doc.incident_location && doc.incident_location !== 'N/A' && (
-                      <div className="flex items-center gap-1.5 mb-2">
-                        <span className="text-amber-500/50 text-xs">{'◎'}</span>
-                        <span className="text-[11px] text-slate-400">{doc.incident_location}</span>
-                      </div>
+                    {hook && (
+                      <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">{hook}</p>
                     )}
-                    {/* detail tags */}
-                    <div className="flex flex-wrap gap-1.5 mt-auto">
-                      {topSensor && (
-                        <span className="text-[10px] font-mono text-slate-500 bg-slate-800 rounded px-1.5 py-0.5">
-                          {topSensor}
-                        </span>
-                      )}
-                      {topBehavior && (
-                        <span className="text-[10px] font-mono text-cyan-500/70 bg-cyan-500/5 border border-cyan-500/20 rounded px-1.5 py-0.5">
-                          {topBehavior}
-                        </span>
-                      )}
+                    <div className="flex items-center gap-2 mt-3 text-[10px] text-slate-500">
+                      {doc.total_pages && <span>{doc.total_pages} pages</span>}
                       {doc.has_redaction ? (
-                        <span className="text-[10px] font-mono text-amber-500/70 bg-amber-500/5 border border-amber-500/20 rounded px-1.5 py-0.5 uppercase tracking-wider">
-                          Redacted
-                        </span>
+                        <span className="text-amber-500/70">Redacted</span>
                       ) : null}
                     </div>
                   </div>
