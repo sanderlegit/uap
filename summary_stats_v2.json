@@ -1,0 +1,118 @@
+{
+  "total_files": 129,
+  "total_pages": 4044,
+  "total_text_chars": 4177431,
+  "files_with_text": 88,
+  "files_ocr_applied": 62,
+  "duplicates_removed": 16,
+  "by_agency": {
+    "Department of War": 52,
+    "FBI": 57,
+    "NASA": 14,
+    "Department of State": 6
+  },
+  "by_decade": {
+    "2020s": 69,
+    "Unknown": 30,
+    "1990s": 2,
+    "2000s": 4,
+    "2010s": 1,
+    "1960s": 8,
+    "1970s": 5,
+    "1940s": 4,
+    "1950s": 5,
+    "1980s": 1
+  },
+  "by_location": {
+    "Iraq": 6,
+    "Syria": 6,
+    "Persian Gulf": 5,
+    "Mediterranean Sea": 4,
+    "Gulf of Oman": 1,
+    "Aegean Sea": 2,
+    "Arabian Gulf": 1,
+    "Arabian Sea": 2,
+    "Pacific Time Zone": 1,
+    "Gulf of Aden": 2,
+    "Pacific Ocean": 1,
+    "Strait of Hormuz": 2,
+    "Iran": 1,
+    "Moon": 8,
+    "Georgia": 1,
+    "Turkmenistan": 1,
+    "Mexico": 1,
+    "United States": 5,
+    "Low Earth Orbit": 1,
+    "Germany": 2,
+    "Netherlands": 1,
+    "Azerbaijan": 1,
+    "Detroit, MI": 1,
+    "Papua New Guinea": 1,
+    "Kazakhstan": 1,
+    "Western United States": 25
+  },
+  "redaction_count": 78,
+  "redaction_analysis": {
+    "documents_with_visual_redactions": 77,
+    "total_redacted_pages": 152,
+    "total_black_rectangles": 0
+  },
+  "sensor_types": {
+    "acoustic": 370,
+    "radar": 365,
+    "photographic": 263,
+    "infrared/FLIR": 124,
+    "satellite": 114,
+    "visual": 68,
+    "electro-optical": 58,
+    "signals_intelligence": 31,
+    "video": 27
+  },
+  "witness_types": {
+    "Instrument Only": 43,
+    "Military Pilot": 35,
+    "Civilian": 26,
+    "Law Enforcement": 23,
+    "Scientist": 22,
+    "Military Other": 21,
+    "Intelligence": 17,
+    "Astronaut": 2
+  },
+  "object_shapes": {
+    "disc/saucer": 1235,
+    "metallic": 367,
+    "sphere/orb": 220,
+    "triangle": 217,
+    "light/orb": 117,
+    "oval/ellipse": 81,
+    "cigar/cylinder": 78,
+    "rectangle/cube": 32,
+    "diamond": 10,
+    "amorphous": 4,
+    "tic-tac": 3
+  },
+  "observed_behaviors": {
+    "luminosity_change": 33,
+    "cloaking": 26,
+    "formation": 24,
+    "hovering": 21,
+    "merging": 12,
+    "splitting": 11,
+    "direction_change": 10,
+    "acceleration": 7,
+    "EM_interference": 3
+  },
+  "quantitative_data": {
+    "altitude_range_ft": [
+      100,
+      120000
+    ],
+    "altitude_count": 502,
+    "speed_measurements": 161
+  },
+  "cross_reference_graph": {
+    "nodes": 129,
+    "edges": 224,
+    "connected_components": 64
+  }
+}

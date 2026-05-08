@@ -1,0 +1,26 @@
+# Downloaded source files (2.3GB PDFs, images, videos)
+ufo-files/pdfs/
+ufo-files/videos/
+ufo-files/images/
+
+# Large corpus JSON (5MB, regenerable from PDFs)
+ufo-files/corpus.json
+
+# v1 outputs (superseded by v2)
+analysis_report.md
+incidents.db
+timeline.html
+map.html
+cross_reference_graph.html
+summary_stats.json
+
+# Failed/unused scripts from Round 1
+scrape_war_gov.py
+fetch_page.py
+fetch_stealth.py
+parse_and_download.py
+download_server.py
+
+# Python
+__pycache__/
+*.pyc

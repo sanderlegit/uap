@@ -1,0 +1,2490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce02be58ab503a903442f64714061cc6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ce02be58ab503a903442f64714061cc6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ce02be58ab503a903442f64714061cc6 = L.map(
+                "map_ce02be58ab503a903442f64714061cc6",
+                {
+                    center: [25.0, 40.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f01cd2c87d3e07b47dd7743b52c77c1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0f01cd2c87d3e07b47dd7743b52c77c1.addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            var circle_marker_1318f0d59278ccb4885e1a081f0afec2 = L.circleMarker(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_388a0540ef663967d3a174bdce0980fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_618d62c01797638dcacb0aa7e0bdb171 = $(`<div id="html_618d62c01797638dcacb0aa7e0bdb171" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D10, Mission Report, Middle East, May 2022</b><br>         Agency: Department of War<br>         Location: Iraq<br>         Date: 5/6/22<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_388a0540ef663967d3a174bdce0980fa.setContent(html_618d62c01797638dcacb0aa7e0bdb171);
+            
+        
+
+        circle_marker_1318f0d59278ccb4885e1a081f0afec2.bindPopup(popup_388a0540ef663967d3a174bdce0980fa)
+        ;
+
+        
+    
+    
+            circle_marker_1318f0d59278ccb4885e1a081f0afec2.bindTooltip(
+                `<div>
+                     DOW-UAP-D10, Mission Report, Middle East, May 2022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_30eb8c9cd143c8b70efdc9895fcdcd10 = L.circleMarker(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_1e3702b1fc7c53dff5a4b913825ecdc8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_365b154406a89d6be7a4ca3e7c56fb5e = $(`<div id="html_365b154406a89d6be7a4ca3e7c56fb5e" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D12, Mission Report, Iraq, May 2022</b><br>         Agency: Department of War<br>         Location: Iraq<br>         Date: 5/20/22<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_1e3702b1fc7c53dff5a4b913825ecdc8.setContent(html_365b154406a89d6be7a4ca3e7c56fb5e);
+            
+        
+
+        circle_marker_30eb8c9cd143c8b70efdc9895fcdcd10.bindPopup(popup_1e3702b1fc7c53dff5a4b913825ecdc8)
+        ;
+
+        
+    
+    
+            circle_marker_30eb8c9cd143c8b70efdc9895fcdcd10.bindTooltip(
+                `<div>
+                     DOW-UAP-D12, Mission Report, Iraq, May 2022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90ce83f40a3f9b4da25d6cc714611c03 = L.circleMarker(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_cc9efef70dc1a617a87c263329960e12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c1c4d3766ec795851408bcad5fa06c12 = $(`<div id="html_c1c4d3766ec795851408bcad5fa06c12" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D14, Mission Report, Iraq, May 2022</b><br>         Agency: Department of War<br>         Location: Syria<br>         Date: 5/29/22<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_cc9efef70dc1a617a87c263329960e12.setContent(html_c1c4d3766ec795851408bcad5fa06c12);
+            
+        
+
+        circle_marker_90ce83f40a3f9b4da25d6cc714611c03.bindPopup(popup_cc9efef70dc1a617a87c263329960e12)
+        ;
+
+        
+    
+    
+            circle_marker_90ce83f40a3f9b4da25d6cc714611c03.bindTooltip(
+                `<div>
+                     DOW-UAP-D14, Mission Report, Iraq, May 2022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_527f1987efa485220efbfa2a6e30ff7b = L.circleMarker(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_ff42b6911ed10f8f19fa45b4f796b820 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38c8a7c34b783782a71fb796b7ec37f1 = $(`<div id="html_38c8a7c34b783782a71fb796b7ec37f1" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D16, Mission Report, Syria, July 2022</b><br>         Agency: Department of War<br>         Location: Syria<br>         Date: 7/31/22<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_ff42b6911ed10f8f19fa45b4f796b820.setContent(html_38c8a7c34b783782a71fb796b7ec37f1);
+            
+        
+
+        circle_marker_527f1987efa485220efbfa2a6e30ff7b.bindPopup(popup_ff42b6911ed10f8f19fa45b4f796b820)
+        ;
+
+        
+    
+    
+            circle_marker_527f1987efa485220efbfa2a6e30ff7b.bindTooltip(
+                `<div>
+                     DOW-UAP-D16, Mission Report, Syria, July 2022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42f029d4c8cf7c7541f32450a1eba243 = L.circleMarker(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_cb2b871fd0b80a3ead265ec4e5ae956c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_865938389da8a4e6e5b1849cb7891d91 = $(`<div id="html_865938389da8a4e6e5b1849cb7891d91" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D18, Mission Report, Iraq, December 2022</b><br>         Agency: Department of War<br>         Location: Iraq<br>         Date: 12/1/22<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_cb2b871fd0b80a3ead265ec4e5ae956c.setContent(html_865938389da8a4e6e5b1849cb7891d91);
+            
+        
+
+        circle_marker_42f029d4c8cf7c7541f32450a1eba243.bindPopup(popup_cb2b871fd0b80a3ead265ec4e5ae956c)
+        ;
+
+        
+    
+    
+            circle_marker_42f029d4c8cf7c7541f32450a1eba243.bindTooltip(
+                `<div>
+                     DOW-UAP-D18, Mission Report, Iraq, December 2022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ccd751a705033aebc973d5fc0fe7cdb = L.circleMarker(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_70ede8ed63d85a12a5a28bd4136666f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da8cbb88a247c4b58a2f62253e255385 = $(`<div id="html_da8cbb88a247c4b58a2f62253e255385" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D19, Mission Report, Syria, February 21, 2023</b><br>         Agency: Department of War<br>         Location: Syria<br>         Date: 2/21/23<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_70ede8ed63d85a12a5a28bd4136666f2.setContent(html_da8cbb88a247c4b58a2f62253e255385);
+            
+        
+
+        circle_marker_0ccd751a705033aebc973d5fc0fe7cdb.bindPopup(popup_70ede8ed63d85a12a5a28bd4136666f2)
+        ;
+
+        
+    
+    
+            circle_marker_0ccd751a705033aebc973d5fc0fe7cdb.bindTooltip(
+                `<div>
+                     DOW-UAP-D19, Mission Report, Syria, February 21, 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_044316df7487cc1490cb0a0fb62d8e22 = L.circleMarker(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_07728322a7e59cd5bfb636db862ab059 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c0bc28c785d3002b360d3ea16d9fa5f = $(`<div id="html_8c0bc28c785d3002b360d3ea16d9fa5f" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D20, Mission Report, Southern United States, 2020</b><br>         Agency: Department of War<br>         Location: Iraq<br>         Date: 3/31/23<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_07728322a7e59cd5bfb636db862ab059.setContent(html_8c0bc28c785d3002b360d3ea16d9fa5f);
+            
+        
+
+        circle_marker_044316df7487cc1490cb0a0fb62d8e22.bindPopup(popup_07728322a7e59cd5bfb636db862ab059)
+        ;
+
+        
+    
+    
+            circle_marker_044316df7487cc1490cb0a0fb62d8e22.bindTooltip(
+                `<div>
+                     DOW-UAP-D20, Mission Report, Southern United States, 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b87b185b7cc47c9abce2e683e549cfc2 = L.circleMarker(
+                [26.5, 52.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_8c7708320d1c5064513997700cfff157 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ec9bd0b79a2842ce739795c1636a793 = $(`<div id="html_4ec9bd0b79a2842ce739795c1636a793" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D23, Mission Report, United Arab Emirates, October 2023</b><br>         Agency: Department of War<br>         Location: Persian Gulf<br>         Date: 10/31/23<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_8c7708320d1c5064513997700cfff157.setContent(html_4ec9bd0b79a2842ce739795c1636a793);
+            
+        
+
+        circle_marker_b87b185b7cc47c9abce2e683e549cfc2.bindPopup(popup_8c7708320d1c5064513997700cfff157)
+        ;
+
+        
+    
+    
+            circle_marker_b87b185b7cc47c9abce2e683e549cfc2.bindTooltip(
+                `<div>
+                     DOW-UAP-D23, Mission Report, United Arab Emirates, October 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6433b0c1a59c0ae43a0b5c900fd22dd7 = L.circleMarker(
+                [35.0, 18.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_cf560aa4d11a5dfe0dd9116e2d7dbe25 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51d64bd6c286cfa99040f93e824a55df = $(`<div id="html_51d64bd6c286cfa99040f93e824a55df" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D25, Mission Report, Greece, January 2024</b><br>         Agency: Department of War<br>         Location: Mediterranean Sea<br>         Date: 1/25/24<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_cf560aa4d11a5dfe0dd9116e2d7dbe25.setContent(html_51d64bd6c286cfa99040f93e824a55df);
+            
+        
+
+        circle_marker_6433b0c1a59c0ae43a0b5c900fd22dd7.bindPopup(popup_cf560aa4d11a5dfe0dd9116e2d7dbe25)
+        ;
+
+        
+    
+    
+            circle_marker_6433b0c1a59c0ae43a0b5c900fd22dd7.bindTooltip(
+                `<div>
+                     DOW-UAP-D25, Mission Report, Greece, January 2024
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c927fbfc1cef9e90c2ae2a927bdaecfc = L.circleMarker(
+                [24.5, 58.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_00bd661c8e0754c6ca5bcf405eef9c97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94dedcb597eb9d08c2ce90de975f3147 = $(`<div id="html_94dedcb597eb9d08c2ce90de975f3147" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D27, Mission Report, United Arab Emirates, October 2023</b><br>         Agency: Department of War<br>         Location: Gulf of Oman<br>         Date: 6/7/24<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_00bd661c8e0754c6ca5bcf405eef9c97.setContent(html_94dedcb597eb9d08c2ce90de975f3147);
+            
+        
+
+        circle_marker_c927fbfc1cef9e90c2ae2a927bdaecfc.bindPopup(popup_00bd661c8e0754c6ca5bcf405eef9c97)
+        ;
+
+        
+    
+    
+            circle_marker_c927fbfc1cef9e90c2ae2a927bdaecfc.bindTooltip(
+                `<div>
+                     DOW-UAP-D27, Mission Report, United Arab Emirates, October 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34d454eeeb2ed634f993ef5ac8b5acfa = L.circleMarker(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_d7b4d3e428c6d7b74f43e37aa8874ace = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09376cafa4a6ae1c54026fe56b5a4007 = $(`<div id="html_09376cafa4a6ae1c54026fe56b5a4007" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D28, Mission Report, Iraq, September 2024</b><br>         Agency: Department of War<br>         Location: Iraq<br>         Date: 9/20/24<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_d7b4d3e428c6d7b74f43e37aa8874ace.setContent(html_09376cafa4a6ae1c54026fe56b5a4007);
+            
+        
+
+        circle_marker_34d454eeeb2ed634f993ef5ac8b5acfa.bindPopup(popup_d7b4d3e428c6d7b74f43e37aa8874ace)
+        ;
+
+        
+    
+    
+            circle_marker_34d454eeeb2ed634f993ef5ac8b5acfa.bindTooltip(
+                `<div>
+                     DOW-UAP-D28, Mission Report, Iraq, September 2024
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f373e42cb88ddd54abcc0a9c56ded8b0 = L.circleMarker(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_072ebd9a0238d676ec0101be895a8c07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a415f9b00f95296c2b9835a3d8656e66 = $(`<div id="html_a415f9b00f95296c2b9835a3d8656e66" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D32, Mission Report, Syria, October 2024</b><br>         Agency: Department of War<br>         Location: Syria<br>         Date: 10/20/24<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_072ebd9a0238d676ec0101be895a8c07.setContent(html_a415f9b00f95296c2b9835a3d8656e66);
+            
+        
+
+        circle_marker_f373e42cb88ddd54abcc0a9c56ded8b0.bindPopup(popup_072ebd9a0238d676ec0101be895a8c07)
+        ;
+
+        
+    
+    
+            circle_marker_f373e42cb88ddd54abcc0a9c56ded8b0.bindTooltip(
+                `<div>
+                     DOW-UAP-D32, Mission Report, Syria, October 2024
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf91437fcd8349efbc6405a205194252 = L.circleMarker(
+                [39.0, 25.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_1cc4ac70d764c6da4dc4a98f083d9a59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0762772140b4d4aebba95412c1b1c28 = $(`<div id="html_b0762772140b4d4aebba95412c1b1c28" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D33, Mission Report, Greece, October 2023</b><br>         Agency: Department of War<br>         Location: Aegean Sea<br>         Date: 10/27/23<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_1cc4ac70d764c6da4dc4a98f083d9a59.setContent(html_b0762772140b4d4aebba95412c1b1c28);
+            
+        
+
+        circle_marker_bf91437fcd8349efbc6405a205194252.bindPopup(popup_1cc4ac70d764c6da4dc4a98f083d9a59)
+        ;
+
+        
+    
+    
+            circle_marker_bf91437fcd8349efbc6405a205194252.bindTooltip(
+                `<div>
+                     DOW-UAP-D33, Mission Report, Greece, October 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_845b55d46d49fde50850e4af53b5ba56 = L.circleMarker(
+                [39.0, 25.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_d6c0ff0f01daa1de1cd0147d3432a2a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96f60ab2f4f8ae4d22e1823712d70b86 = $(`<div id="html_96f60ab2f4f8ae4d22e1823712d70b86" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D35, Mission Report, Greece, October 2023</b><br>         Agency: Department of War<br>         Location: Aegean Sea<br>         Date: 10/29/23<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_d6c0ff0f01daa1de1cd0147d3432a2a9.setContent(html_96f60ab2f4f8ae4d22e1823712d70b86);
+            
+        
+
+        circle_marker_845b55d46d49fde50850e4af53b5ba56.bindPopup(popup_d6c0ff0f01daa1de1cd0147d3432a2a9)
+        ;
+
+        
+    
+    
+            circle_marker_845b55d46d49fde50850e4af53b5ba56.bindTooltip(
+                `<div>
+                     DOW-UAP-D35, Mission Report, Greece, October 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12ef573dfe82ace7d60f963747f801f0 = L.circleMarker(
+                [26.5, 52.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_eb745707bdee04132b9a3c715b94bdea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4030e34566e6b6435cc7102e7d4bd679 = $(`<div id="html_4030e34566e6b6435cc7102e7d4bd679" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D38, Range Fouler Debrief, Middle East, May 2020</b><br>         Agency: Department of War<br>         Location: Persian Gulf<br>         Date: 5/14/20<br>         <small>This document is a Range Fouler Debrief, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active milit</small></div>`)[0];
+                popup_eb745707bdee04132b9a3c715b94bdea.setContent(html_4030e34566e6b6435cc7102e7d4bd679);
+            
+        
+
+        circle_marker_12ef573dfe82ace7d60f963747f801f0.bindPopup(popup_eb745707bdee04132b9a3c715b94bdea)
+        ;
+
+        
+    
+    
+            circle_marker_12ef573dfe82ace7d60f963747f801f0.bindTooltip(
+                `<div>
+                     DOW-UAP-D38, Range Fouler Debrief, Middle East, May 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcb0939877810c4f528ae77780fdc4aa = L.circleMarker(
+                [26.5, 51.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_81f2c3b336356f526239aaa12dcd92ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e70aa66cf2c91d94494c40142b87a32c = $(`<div id="html_e70aa66cf2c91d94494c40142b87a32c" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D42, Range Fouler Debrief, Japan, 2023</b><br>         Agency: Department of War<br>         Location: Arabian Gulf<br>         Date: 8/31/20<br>         <small>This document is a Range Fouler Debrief Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active </small></div>`)[0];
+                popup_81f2c3b336356f526239aaa12dcd92ee.setContent(html_e70aa66cf2c91d94494c40142b87a32c);
+            
+        
+
+        circle_marker_dcb0939877810c4f528ae77780fdc4aa.bindPopup(popup_81f2c3b336356f526239aaa12dcd92ee)
+        ;
+
+        
+    
+    
+            circle_marker_dcb0939877810c4f528ae77780fdc4aa.bindTooltip(
+                `<div>
+                     DOW-UAP-D42, Range Fouler Debrief, Japan, 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4a40d6ff4a0d6a3903d7403413b7e01 = L.circleMarker(
+                [15.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_8d2824bc9170f82826be2808960d9240 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0a89e74ddf8965aa87d8435d6ac704b = $(`<div id="html_b0a89e74ddf8965aa87d8435d6ac704b" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D44, Range Fouler Reporting Form, Gulf of Aden, October 2020</b><br>         Agency: Department of War<br>         Location: Arabian Sea<br>         Date: 10/15/20<br>         <small>This document is a Range Fouler Reporting Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during activ</small></div>`)[0];
+                popup_8d2824bc9170f82826be2808960d9240.setContent(html_b0a89e74ddf8965aa87d8435d6ac704b);
+            
+        
+
+        circle_marker_c4a40d6ff4a0d6a3903d7403413b7e01.bindPopup(popup_8d2824bc9170f82826be2808960d9240)
+        ;
+
+        
+    
+    
+            circle_marker_c4a40d6ff4a0d6a3903d7403413b7e01.bindTooltip(
+                `<div>
+                     DOW-UAP-D44, Range Fouler Reporting Form, Gulf of Aden, October 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69852148f2ec9303889ac513289f5a4f = L.circleMarker(
+                [35.0, 18.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_86d399ddb8f3da5d2cbbcfca00a0277e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c94652ae78b414df7f386b92b8f38237 = $(`<div id="html_c94652ae78b414df7f386b92b8f38237" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D5, Mission Report, Arabian Gulf, 2020</b><br>         Agency: Department of War<br>         Location: Mediterranean Sea<br>         Date: N/A<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_86d399ddb8f3da5d2cbbcfca00a0277e.setContent(html_c94652ae78b414df7f386b92b8f38237);
+            
+        
+
+        circle_marker_69852148f2ec9303889ac513289f5a4f.bindPopup(popup_86d399ddb8f3da5d2cbbcfca00a0277e)
+        ;
+
+        
+    
+    
+            circle_marker_69852148f2ec9303889ac513289f5a4f.bindTooltip(
+                `<div>
+                     DOW-UAP-D5, Mission Report, Arabian Gulf, 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7b24b1d546b55e43cd62e1722ade1cb = L.circleMarker(
+                [37.0, -122.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_eb8f8c39d494f37f0674014e4bf2ddbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2814ebc66a433975a049133f07e575a3 = $(`<div id="html_2814ebc66a433975a049133f07e575a3" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D51, Email Correspondence, Pacific Time Zone, March 2023</b><br>         Agency: Department of War<br>         Location: Pacific Time Zone<br>         Date: 3/23/26<br>         <small>This document is email correspondence describing the content of a mission report and requesting clarification on its content. All descriptive and estimative language contained in this report reflects </small></div>`)[0];
+                popup_eb8f8c39d494f37f0674014e4bf2ddbb.setContent(html_2814ebc66a433975a049133f07e575a3);
+            
+        
+
+        circle_marker_c7b24b1d546b55e43cd62e1722ade1cb.bindPopup(popup_eb8f8c39d494f37f0674014e4bf2ddbb)
+        ;
+
+        
+    
+    
+            circle_marker_c7b24b1d546b55e43cd62e1722ade1cb.bindTooltip(
+                `<div>
+                     DOW-UAP-D51, Email Correspondence, Pacific Time Zone, March 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ca4577454dfb5e9326b8d2b6a448bf5 = L.circleMarker(
+                [35.0, 18.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_0814e14da970eaaa471212903ad21e99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eea259ec52340ed5bb93e576ac6c2fff = $(`<div id="html_eea259ec52340ed5bb93e576ac6c2fff" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D54, Mission Report, Mediterranean Sea, NA</b><br>         Agency: Department of War<br>         Location: Mediterranean Sea<br>         Date: N/A<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_0814e14da970eaaa471212903ad21e99.setContent(html_eea259ec52340ed5bb93e576ac6c2fff);
+            
+        
+
+        circle_marker_8ca4577454dfb5e9326b8d2b6a448bf5.bindPopup(popup_0814e14da970eaaa471212903ad21e99)
+        ;
+
+        
+    
+    
+            circle_marker_8ca4577454dfb5e9326b8d2b6a448bf5.bindTooltip(
+                `<div>
+                     DOW-UAP-D54, Mission Report, Mediterranean Sea, NA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8396717dae9b5a8a0c6237dab205d66 = L.circleMarker(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_b2bc9cc7159499b4a74a943e6f535861 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aac4058ac9cf252ab768bc5d0336584d = $(`<div id="html_aac4058ac9cf252ab768bc5d0336584d" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D55, Mission Report, Syria, November 2016</b><br>         Agency: Department of War<br>         Location: Syria<br>         Date: 11/18/16<br>         <small>This document is a mission briefing summarizing an observation of Unidentified Anomalous Phenomena (UAP) by a U.S. military platform near Latakia, Syria. A U.S. military pilot flying a P-8A aircraft r</small></div>`)[0];
+                popup_b2bc9cc7159499b4a74a943e6f535861.setContent(html_aac4058ac9cf252ab768bc5d0336584d);
+            
+        
+
+        circle_marker_f8396717dae9b5a8a0c6237dab205d66.bindPopup(popup_b2bc9cc7159499b4a74a943e6f535861)
+        ;
+
+        
+    
+    
+            circle_marker_f8396717dae9b5a8a0c6237dab205d66.bindTooltip(
+                `<div>
+                     DOW-UAP-D55, Mission Report, Syria, November 2016
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5935e9ba0e192108c37c450acda6a08 = L.circleMarker(
+                [15.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_3f71985b6a93ab905c84cdf6e2f11450 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f2be12d2e0ef6c8d267442a7da7945b = $(`<div id="html_1f2be12d2e0ef6c8d267442a7da7945b" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D56, Range Fouler Debrief, Arabian Sea, August 2020</b><br>         Agency: Department of War<br>         Location: Arabian Sea<br>         Date: 8/24/20<br>         <small>This document is a Range Fouler Debrief Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active </small></div>`)[0];
+                popup_3f71985b6a93ab905c84cdf6e2f11450.setContent(html_1f2be12d2e0ef6c8d267442a7da7945b);
+            
+        
+
+        circle_marker_f5935e9ba0e192108c37c450acda6a08.bindPopup(popup_3f71985b6a93ab905c84cdf6e2f11450)
+        ;
+
+        
+    
+    
+            circle_marker_f5935e9ba0e192108c37c450acda6a08.bindTooltip(
+                `<div>
+                     DOW-UAP-D56, Range Fouler Debrief, Arabian Sea, August 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2dfe6c4d4aed8cea8a534a3824c98457 = L.circleMarker(
+                [12.5, 45.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_29d668c984604429447bbaafde78b62b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f5cd91d3c8ae546cf7d9f30795aef4c = $(`<div id="html_3f5cd91d3c8ae546cf7d9f30795aef4c" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D57, Range Fouler Reporting Form, Gulf of Aden, September 2020</b><br>         Agency: Department of War<br>         Location: Gulf of Aden<br>         Date: 9/4/20<br>         <small>This document is a Range Fouler Reporting Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during activ</small></div>`)[0];
+                popup_29d668c984604429447bbaafde78b62b.setContent(html_3f5cd91d3c8ae546cf7d9f30795aef4c);
+            
+        
+
+        circle_marker_2dfe6c4d4aed8cea8a534a3824c98457.bindPopup(popup_29d668c984604429447bbaafde78b62b)
+        ;
+
+        
+    
+    
+            circle_marker_2dfe6c4d4aed8cea8a534a3824c98457.bindTooltip(
+                `<div>
+                     DOW-UAP-D57, Range Fouler Reporting Form, Gulf of Aden, September 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77a01b04e7b8d8fdb5bc96c6828b7a55 = L.circleMarker(
+                [0.0, -170.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_16775b44750365e4830482c8075a5061 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6395f3c855d53a96d4e1d0d99882fe0 = $(`<div id="html_e6395f3c855d53a96d4e1d0d99882fe0" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D6, Mission Report, Arabian Gulf, 2020</b><br>         Agency: Department of War<br>         Location: Pacific Ocean<br>         Date: N/A<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_16775b44750365e4830482c8075a5061.setContent(html_e6395f3c855d53a96d4e1d0d99882fe0);
+            
+        
+
+        circle_marker_77a01b04e7b8d8fdb5bc96c6828b7a55.bindPopup(popup_16775b44750365e4830482c8075a5061)
+        ;
+
+        
+    
+    
+            circle_marker_77a01b04e7b8d8fdb5bc96c6828b7a55.bindTooltip(
+                `<div>
+                     DOW-UAP-D6, Mission Report, Arabian Gulf, 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f89b5200bcdad112dd99630fcf5fc6c = L.circleMarker(
+                [26.5, 52.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_9eb728c05d15f1e88f98a4d5a31c638c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d9f1e2e0f3755dbcf0270222489da33 = $(`<div id="html_2d9f1e2e0f3755dbcf0270222489da33" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D60, Mission Report, Persian Gulf, August 2020</b><br>         Agency: Department of War<br>         Location: Persian Gulf<br>         Date: 8/8/20<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_9eb728c05d15f1e88f98a4d5a31c638c.setContent(html_2d9f1e2e0f3755dbcf0270222489da33);
+            
+        
+
+        circle_marker_3f89b5200bcdad112dd99630fcf5fc6c.bindPopup(popup_9eb728c05d15f1e88f98a4d5a31c638c)
+        ;
+
+        
+    
+    
+            circle_marker_3f89b5200bcdad112dd99630fcf5fc6c.bindTooltip(
+                `<div>
+                     DOW-UAP-D60, Mission Report, Persian Gulf, August 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f0b362faae8e998de92033b475cc7bf = L.circleMarker(
+                [26.5, 52.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_5fcd8980f07666937e9bcb95cbf6c8bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7614a084d4bb8337b2798be965682a01 = $(`<div id="html_7614a084d4bb8337b2798be965682a01" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D61, Mission Report, Persian Gulf, August 2020</b><br>         Agency: Department of War<br>         Location: Persian Gulf<br>         Date: 8/27/20<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_5fcd8980f07666937e9bcb95cbf6c8bf.setContent(html_7614a084d4bb8337b2798be965682a01);
+            
+        
+
+        circle_marker_0f0b362faae8e998de92033b475cc7bf.bindPopup(popup_5fcd8980f07666937e9bcb95cbf6c8bf)
+        ;
+
+        
+    
+    
+            circle_marker_0f0b362faae8e998de92033b475cc7bf.bindTooltip(
+                `<div>
+                     DOW-UAP-D61, Mission Report, Persian Gulf, August 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a2e432b6d48de30304740df0edbb7d4 = L.circleMarker(
+                [26.5, 56.3],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_f613c699578bf70a68994d8f61c62294 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91c626534e58a75419b9df244a41725e = $(`<div id="html_91c626534e58a75419b9df244a41725e" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D62, Mission Report, Strait of Hormuz, September 2020</b><br>         Agency: Department of War<br>         Location: Strait of Hormuz<br>         Date: 9/16/20<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_f613c699578bf70a68994d8f61c62294.setContent(html_91c626534e58a75419b9df244a41725e);
+            
+        
+
+        circle_marker_6a2e432b6d48de30304740df0edbb7d4.bindPopup(popup_f613c699578bf70a68994d8f61c62294)
+        ;
+
+        
+    
+    
+            circle_marker_6a2e432b6d48de30304740df0edbb7d4.bindTooltip(
+                `<div>
+                     DOW-UAP-D62, Mission Report, Strait of Hormuz, September 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8894fa0b42da0b0243aef79f729d12b9 = L.circleMarker(
+                [26.5, 56.3],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_41d0225d20f8f318238881989d6191cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0baa76030cfcabbca6a0740fc17ad305 = $(`<div id="html_0baa76030cfcabbca6a0740fc17ad305" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D63, Mission Report, Strait of Hormuz, October 2020</b><br>         Agency: Department of War<br>         Location: Strait of Hormuz<br>         Date: 10/1/20<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_41d0225d20f8f318238881989d6191cd.setContent(html_0baa76030cfcabbca6a0740fc17ad305);
+            
+        
+
+        circle_marker_8894fa0b42da0b0243aef79f729d12b9.bindPopup(popup_41d0225d20f8f318238881989d6191cd)
+        ;
+
+        
+    
+    
+            circle_marker_8894fa0b42da0b0243aef79f729d12b9.bindTooltip(
+                `<div>
+                     DOW-UAP-D63, Mission Report, Strait of Hormuz, October 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_010c949befb5c428339ec4555547107b = L.circleMarker(
+                [32.0, 53.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_cf26865ecf0e31ee9bbc3a4b3016626b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03f882132bcd3b17c6c68cf1bdf53cd9 = $(`<div id="html_03f882132bcd3b17c6c68cf1bdf53cd9" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D64, Mission Report, Iran, November 2020</b><br>         Agency: Department of War<br>         Location: Iran<br>         Date: 11/2/20<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_cf26865ecf0e31ee9bbc3a4b3016626b.setContent(html_03f882132bcd3b17c6c68cf1bdf53cd9);
+            
+        
+
+        circle_marker_010c949befb5c428339ec4555547107b.bindPopup(popup_cf26865ecf0e31ee9bbc3a4b3016626b)
+        ;
+
+        
+    
+    
+            circle_marker_010c949befb5c428339ec4555547107b.bindTooltip(
+                `<div>
+                     DOW-UAP-D64, Mission Report, Iran, November 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d0e41f966663ea3d6128d294d418bb5 = L.circleMarker(
+                [26.5, 52.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_1dd114ec14eabbe1430db3b1be12d3ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d38e39eadc7d02f5c073e05f259c76b1 = $(`<div id="html_d38e39eadc7d02f5c073e05f259c76b1" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D65, Mission Report, Persian Gulf, July 2020</b><br>         Agency: Department of War<br>         Location: Persian Gulf<br>         Date: 7/16/20<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_1dd114ec14eabbe1430db3b1be12d3ce.setContent(html_d38e39eadc7d02f5c073e05f259c76b1);
+            
+        
+
+        circle_marker_1d0e41f966663ea3d6128d294d418bb5.bindPopup(popup_1dd114ec14eabbe1430db3b1be12d3ce)
+        ;
+
+        
+    
+    
+            circle_marker_1d0e41f966663ea3d6128d294d418bb5.bindTooltip(
+                `<div>
+                     DOW-UAP-D65, Mission Report, Persian Gulf, July 2020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0f188fde4b6f2f3690d72338df52b33 = L.circleMarker(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_612fc3ec0db7416f70bf04e69c6b452c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f039050d219de415f0538fbb5b3a312 = $(`<div id="html_5f039050d219de415f0538fbb5b3a312" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D74, Mission Report, Syria, November 2023</b><br>         Agency: Department of War<br>         Location: Syria<br>         Date: 11/9/23<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_612fc3ec0db7416f70bf04e69c6b452c.setContent(html_5f039050d219de415f0538fbb5b3a312);
+            
+        
+
+        circle_marker_c0f188fde4b6f2f3690d72338df52b33.bindPopup(popup_612fc3ec0db7416f70bf04e69c6b452c)
+        ;
+
+        
+    
+    
+            circle_marker_c0f188fde4b6f2f3690d72338df52b33.bindTooltip(
+                `<div>
+                     DOW-UAP-D74, Mission Report, Syria, November 2023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_334cabaabf558303b2ce094ab967a1fa = L.circleMarker(
+                [12.5, 45.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_06aecca9621f0b79183cbe8ac1b6bb6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49745693a971e94aefb694a5ebe875b9 = $(`<div id="html_49745693a971e94aefb694a5ebe875b9" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D75, Mission Report, Gulf of Aden, July 2024</b><br>         Agency: Department of War<br>         Location: Gulf of Aden<br>         Date: 7/14/24<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_06aecca9621f0b79183cbe8ac1b6bb6c.setContent(html_49745693a971e94aefb694a5ebe875b9);
+            
+        
+
+        circle_marker_334cabaabf558303b2ce094ab967a1fa.bindPopup(popup_06aecca9621f0b79183cbe8ac1b6bb6c)
+        ;
+
+        
+    
+    
+            circle_marker_334cabaabf558303b2ce094ab967a1fa.bindTooltip(
+                `<div>
+                     DOW-UAP-D75, Mission Report, Gulf of Aden, July 2024
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1272e7bb33393cd3ea04cc983922e80 = L.circleMarker(
+                [35.0, 18.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_b428950e54ab66e3e39a9d6f70320652 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c202172d1d4579a007f7db8edc6874b5 = $(`<div id="html_c202172d1d4579a007f7db8edc6874b5" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-D8, Mission Report, Djibouti, 2025</b><br>         Agency: Department of War<br>         Location: Mediterranean Sea<br>         Date: N/A<br>         <small>This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to rep</small></div>`)[0];
+                popup_b428950e54ab66e3e39a9d6f70320652.setContent(html_c202172d1d4579a007f7db8edc6874b5);
+            
+        
+
+        circle_marker_d1272e7bb33393cd3ea04cc983922e80.bindPopup(popup_b428950e54ab66e3e39a9d6f70320652)
+        ;
+
+        
+    
+    
+            circle_marker_d1272e7bb33393cd3ea04cc983922e80.bindTooltip(
+                `<div>
+                     DOW-UAP-D8, Mission Report, Djibouti, 2025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_942e06d526593ab182b45cd166efcd4f = L.circleMarker(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_256b07ff50cccd4c55098f9249c275b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_609e0f1d64eeeb237ef80655b9e4871c = $(`<div id="html_609e0f1d64eeeb237ef80655b9e4871c" style="width: 100.0%; height: 100.0%;"><b>DOW-UAP-PR20, Unresolved UAP Report, Kuwait, May 2022</b><br>         Agency: Department of War<br>         Location: Iraq<br>         Date: N/A<br>         <small>The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a U.S. mi</small></div>`)[0];
+                popup_256b07ff50cccd4c55098f9249c275b3.setContent(html_609e0f1d64eeeb237ef80655b9e4871c);
+            
+        
+
+        circle_marker_942e06d526593ab182b45cd166efcd4f.bindPopup(popup_256b07ff50cccd4c55098f9249c275b3)
+        ;
+
+        
+    
+    
+            circle_marker_942e06d526593ab182b45cd166efcd4f.bindTooltip(
+                `<div>
+                     DOW-UAP-PR20, Unresolved UAP Report, Kuwait, May 2022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5948f81dd6584c186bb869e56628fd6 = L.circleMarker(
+                [39.0, -98.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_837950839426998ed95cfba8329ce40a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d694a6cace781b3edc33292c86f7014 = $(`<div id="html_2d694a6cace781b3edc33292c86f7014" style="width: 100.0%; height: 100.0%;"><b>FBI September 2023 Sighting - Composite Sketch</b><br>         Agency: FBI<br>         Location: United States<br>         Date: 9/1/23<br>         <small>Actual site photo with FBI Lab rendered graphic overlay depicting corroborating eyewitness reports from September 2023 of an apparent ellipsoid bronze metallic object materializing out of a bright lig</small></div>`)[0];
+                popup_837950839426998ed95cfba8329ce40a.setContent(html_2d694a6cace781b3edc33292c86f7014);
+            
+        
+
+        circle_marker_d5948f81dd6584c186bb869e56628fd6.bindPopup(popup_837950839426998ed95cfba8329ce40a)
+        ;
+
+        
+    
+    
+            circle_marker_d5948f81dd6584c186bb869e56628fd6.bindTooltip(
+                `<div>
+                     FBI September 2023 Sighting - Composite Sketch
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f205613d50d9ddf617b847d48653005f = L.circleMarker(
+                [51.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_7c5fe9fad460a11f0e13e6204b476ec1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b491108471e31440b9fd45174251cffa = $(`<div id="html_b491108471e31440b9fd45174251cffa" style="width: 100.0%; height: 100.0%;"><b>331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents</b><br>         Agency: Department of War<br>         Location: Germany<br>         Date: 3/18/45<br>         <small>This file contains SHAEF messages and memorandums related to "night phenomena (foofighters)," flak rockets, unidentified cylindrical objects, and blinking lights. The documents include multiple refere</small></div>`)[0];
+                popup_7c5fe9fad460a11f0e13e6204b476ec1.setContent(html_b491108471e31440b9fd45174251cffa);
+            
+        
+
+        circle_marker_f205613d50d9ddf617b847d48653005f.bindPopup(popup_7c5fe9fad460a11f0e13e6204b476ec1)
+        ;
+
+        
+    
+    
+            circle_marker_f205613d50d9ddf617b847d48653005f.bindTooltip(
+                `<div>
+                     331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11db26d5006c52b193e649d7a29827c2 = L.circleMarker(
+                [51.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_ce4efb32b272c2d822fea0dc2a4a939b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c6268006fd6b2860806080fb3043f04 = $(`<div id="html_1c6268006fd6b2860806080fb3043f04" style="width: 100.0%; height: 100.0%;"><b>65_HS1-101634279_100-DE-26505</b><br>         Agency: FBI<br>         Location: Germany<br>         Date: 11/7/57<br>         <small>An FBI report from 1957 detailing the interview with Wladyslaw Krasuski, who recounted seeing a large, circular, vertically-rising vehicle in 1944 Germany near a German military compound.</small></div>`)[0];
+                popup_ce4efb32b272c2d822fea0dc2a4a939b.setContent(html_1c6268006fd6b2860806080fb3043f04);
+            
+        
+
+        circle_marker_11db26d5006c52b193e649d7a29827c2.bindPopup(popup_ce4efb32b272c2d822fea0dc2a4a939b)
+        ;
+
+        
+    
+    
+            circle_marker_11db26d5006c52b193e649d7a29827c2.bindTooltip(
+                `<div>
+                     65_HS1-101634279_100-DE-26505
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4bb2747778dfc7a3120d3983c75167b = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_2c4a2e341bfcdee0486288633b5ba036 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c32997d2dfe08c1bb4aabc18a636fc5d = $(`<div id="html_c32997d2dfe08c1bb4aabc18a636fc5d" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B1</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_2c4a2e341bfcdee0486288633b5ba036.setContent(html_c32997d2dfe08c1bb4aabc18a636fc5d);
+            
+        
+
+        circle_marker_f4bb2747778dfc7a3120d3983c75167b.bindPopup(popup_2c4a2e341bfcdee0486288633b5ba036)
+        ;
+
+        
+    
+    
+            circle_marker_f4bb2747778dfc7a3120d3983c75167b.bindTooltip(
+                `<div>
+                     FBI Photo B1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2d76d824fc067bcf00b22b66435b589 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_bd2e45b0d34be748bbfb35268550d158 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_927d48019516e7e53b746fbe3ea92e52 = $(`<div id="html_927d48019516e7e53b746fbe3ea92e52" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B10</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_bd2e45b0d34be748bbfb35268550d158.setContent(html_927d48019516e7e53b746fbe3ea92e52);
+            
+        
+
+        circle_marker_e2d76d824fc067bcf00b22b66435b589.bindPopup(popup_bd2e45b0d34be748bbfb35268550d158)
+        ;
+
+        
+    
+    
+            circle_marker_e2d76d824fc067bcf00b22b66435b589.bindTooltip(
+                `<div>
+                     FBI Photo B10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1f8e984f37b3f41b404c193e45be61a = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_b77ea9bdb6948dc2991966d0f0e37002 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28a973f155365982a4bb99969a6c880d = $(`<div id="html_28a973f155365982a4bb99969a6c880d" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B11</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_b77ea9bdb6948dc2991966d0f0e37002.setContent(html_28a973f155365982a4bb99969a6c880d);
+            
+        
+
+        circle_marker_f1f8e984f37b3f41b404c193e45be61a.bindPopup(popup_b77ea9bdb6948dc2991966d0f0e37002)
+        ;
+
+        
+    
+    
+            circle_marker_f1f8e984f37b3f41b404c193e45be61a.bindTooltip(
+                `<div>
+                     FBI Photo B11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_725ff27959fa109fcdd747a98a20ea56 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_877a9bf558ad5e815e5ca027a299a979 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1566eca7c85a4e69b05717accb329ca9 = $(`<div id="html_1566eca7c85a4e69b05717accb329ca9" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B12</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_877a9bf558ad5e815e5ca027a299a979.setContent(html_1566eca7c85a4e69b05717accb329ca9);
+            
+        
+
+        circle_marker_725ff27959fa109fcdd747a98a20ea56.bindPopup(popup_877a9bf558ad5e815e5ca027a299a979)
+        ;
+
+        
+    
+    
+            circle_marker_725ff27959fa109fcdd747a98a20ea56.bindTooltip(
+                `<div>
+                     FBI Photo B12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cad988cae66404c0f72262aad29074a5 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_2ba2eff4d0977da450b360441a924d91 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65986ee96262a41dee4251fb8240d09d = $(`<div id="html_65986ee96262a41dee4251fb8240d09d" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B13</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_2ba2eff4d0977da450b360441a924d91.setContent(html_65986ee96262a41dee4251fb8240d09d);
+            
+        
+
+        circle_marker_cad988cae66404c0f72262aad29074a5.bindPopup(popup_2ba2eff4d0977da450b360441a924d91)
+        ;
+
+        
+    
+    
+            circle_marker_cad988cae66404c0f72262aad29074a5.bindTooltip(
+                `<div>
+                     FBI Photo B13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_553e037bc77e6dc96cb8cf8410f98d13 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_cf0d72103d7ce1b32a8a5eb47539818d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_293e5196c7b637a7a2353cf8eba60103 = $(`<div id="html_293e5196c7b637a7a2353cf8eba60103" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B14</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_cf0d72103d7ce1b32a8a5eb47539818d.setContent(html_293e5196c7b637a7a2353cf8eba60103);
+            
+        
+
+        circle_marker_553e037bc77e6dc96cb8cf8410f98d13.bindPopup(popup_cf0d72103d7ce1b32a8a5eb47539818d)
+        ;
+
+        
+    
+    
+            circle_marker_553e037bc77e6dc96cb8cf8410f98d13.bindTooltip(
+                `<div>
+                     FBI Photo B14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_038ea826882e4aed3c7352a83963120f = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_a983188918292c354560fa2b535dde7b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcd0089a04bc9cde72f47f87d70d76f3 = $(`<div id="html_bcd0089a04bc9cde72f47f87d70d76f3" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B15</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_a983188918292c354560fa2b535dde7b.setContent(html_bcd0089a04bc9cde72f47f87d70d76f3);
+            
+        
+
+        circle_marker_038ea826882e4aed3c7352a83963120f.bindPopup(popup_a983188918292c354560fa2b535dde7b)
+        ;
+
+        
+    
+    
+            circle_marker_038ea826882e4aed3c7352a83963120f.bindTooltip(
+                `<div>
+                     FBI Photo B15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_68188e05a21c5174b99de549bcde3d77 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_76774f6633f4d70217ec7e74d5855a62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf0a03714ebc0327d49e2bed18d641a1 = $(`<div id="html_bf0a03714ebc0327d49e2bed18d641a1" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B16</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_76774f6633f4d70217ec7e74d5855a62.setContent(html_bf0a03714ebc0327d49e2bed18d641a1);
+            
+        
+
+        circle_marker_68188e05a21c5174b99de549bcde3d77.bindPopup(popup_76774f6633f4d70217ec7e74d5855a62)
+        ;
+
+        
+    
+    
+            circle_marker_68188e05a21c5174b99de549bcde3d77.bindTooltip(
+                `<div>
+                     FBI Photo B16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e4bea764c803012fccde4c03a005601 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_fd3132f1e791abdd2f7dbb38bc6c0c84 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b40c2c4482b3a4dfc18e9ef4a9c348f5 = $(`<div id="html_b40c2c4482b3a4dfc18e9ef4a9c348f5" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B17</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_fd3132f1e791abdd2f7dbb38bc6c0c84.setContent(html_b40c2c4482b3a4dfc18e9ef4a9c348f5);
+            
+        
+
+        circle_marker_3e4bea764c803012fccde4c03a005601.bindPopup(popup_fd3132f1e791abdd2f7dbb38bc6c0c84)
+        ;
+
+        
+    
+    
+            circle_marker_3e4bea764c803012fccde4c03a005601.bindTooltip(
+                `<div>
+                     FBI Photo B17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e209f661507bf96d8ec2e366e314642d = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_2919290ff590e155f2eb860b46563109 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a7d3675a4df822ba07c59c84e2da442 = $(`<div id="html_1a7d3675a4df822ba07c59c84e2da442" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B18</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_2919290ff590e155f2eb860b46563109.setContent(html_1a7d3675a4df822ba07c59c84e2da442);
+            
+        
+
+        circle_marker_e209f661507bf96d8ec2e366e314642d.bindPopup(popup_2919290ff590e155f2eb860b46563109)
+        ;
+
+        
+    
+    
+            circle_marker_e209f661507bf96d8ec2e366e314642d.bindTooltip(
+                `<div>
+                     FBI Photo B18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f99c5e816e80116a216deeb45a9b1581 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_9d9d9406c47cfdff71aab9bcee5584d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8befffa32515fa420cef386af4d35b8 = $(`<div id="html_c8befffa32515fa420cef386af4d35b8" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B19</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_9d9d9406c47cfdff71aab9bcee5584d0.setContent(html_c8befffa32515fa420cef386af4d35b8);
+            
+        
+
+        circle_marker_f99c5e816e80116a216deeb45a9b1581.bindPopup(popup_9d9d9406c47cfdff71aab9bcee5584d0)
+        ;
+
+        
+    
+    
+            circle_marker_f99c5e816e80116a216deeb45a9b1581.bindTooltip(
+                `<div>
+                     FBI Photo B19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c4603142fd10db2de2ec7ac0057e99e = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_48710ed63fa3c7330b3eb56fa944f77a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3a246fbd57c0535e1165a6852305e41 = $(`<div id="html_b3a246fbd57c0535e1165a6852305e41" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B2</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_48710ed63fa3c7330b3eb56fa944f77a.setContent(html_b3a246fbd57c0535e1165a6852305e41);
+            
+        
+
+        circle_marker_0c4603142fd10db2de2ec7ac0057e99e.bindPopup(popup_48710ed63fa3c7330b3eb56fa944f77a)
+        ;
+
+        
+    
+    
+            circle_marker_0c4603142fd10db2de2ec7ac0057e99e.bindTooltip(
+                `<div>
+                     FBI Photo B2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d507a1864326c33213b0518667f7d765 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_8229ba407a8c2c36f3350d47532405b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_053e22bb5389663594f7f77851e17e1e = $(`<div id="html_053e22bb5389663594f7f77851e17e1e" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B20</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_8229ba407a8c2c36f3350d47532405b9.setContent(html_053e22bb5389663594f7f77851e17e1e);
+            
+        
+
+        circle_marker_d507a1864326c33213b0518667f7d765.bindPopup(popup_8229ba407a8c2c36f3350d47532405b9)
+        ;
+
+        
+    
+    
+            circle_marker_d507a1864326c33213b0518667f7d765.bindTooltip(
+                `<div>
+                     FBI Photo B20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b526351b235f844eaddc5d4d2009cb6d = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_d6796ba7d7c9f1151e7f666a021d893c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_474579583b4ca2cc8aaca38ecc062580 = $(`<div id="html_474579583b4ca2cc8aaca38ecc062580" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B21</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_d6796ba7d7c9f1151e7f666a021d893c.setContent(html_474579583b4ca2cc8aaca38ecc062580);
+            
+        
+
+        circle_marker_b526351b235f844eaddc5d4d2009cb6d.bindPopup(popup_d6796ba7d7c9f1151e7f666a021d893c)
+        ;
+
+        
+    
+    
+            circle_marker_b526351b235f844eaddc5d4d2009cb6d.bindTooltip(
+                `<div>
+                     FBI Photo B21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb851f41236e6de70eb3ec4c7cb06a82 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_429e69cf23df9ab65a8cf2efb2152471 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3711bcd39262033c6e70310a73318288 = $(`<div id="html_3711bcd39262033c6e70310a73318288" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B22</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_429e69cf23df9ab65a8cf2efb2152471.setContent(html_3711bcd39262033c6e70310a73318288);
+            
+        
+
+        circle_marker_fb851f41236e6de70eb3ec4c7cb06a82.bindPopup(popup_429e69cf23df9ab65a8cf2efb2152471)
+        ;
+
+        
+    
+    
+            circle_marker_fb851f41236e6de70eb3ec4c7cb06a82.bindTooltip(
+                `<div>
+                     FBI Photo B22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59905de22990611c18a097c616b9d327 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_794b0f2ff06447942eb2f502c987d28f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ece6b5b19545d212b5ce94046cd3fa48 = $(`<div id="html_ece6b5b19545d212b5ce94046cd3fa48" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B23</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_794b0f2ff06447942eb2f502c987d28f.setContent(html_ece6b5b19545d212b5ce94046cd3fa48);
+            
+        
+
+        circle_marker_59905de22990611c18a097c616b9d327.bindPopup(popup_794b0f2ff06447942eb2f502c987d28f)
+        ;
+
+        
+    
+    
+            circle_marker_59905de22990611c18a097c616b9d327.bindTooltip(
+                `<div>
+                     FBI Photo B23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb788462f7485424959dfb39df4b1898 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_97bff0f11681d80e48b9fe2aa51ccff6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_694fd028b4ba35a059f1133e3947cd5f = $(`<div id="html_694fd028b4ba35a059f1133e3947cd5f" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B24</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_97bff0f11681d80e48b9fe2aa51ccff6.setContent(html_694fd028b4ba35a059f1133e3947cd5f);
+            
+        
+
+        circle_marker_eb788462f7485424959dfb39df4b1898.bindPopup(popup_97bff0f11681d80e48b9fe2aa51ccff6)
+        ;
+
+        
+    
+    
+            circle_marker_eb788462f7485424959dfb39df4b1898.bindTooltip(
+                `<div>
+                     FBI Photo B24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5df9d14adb51389a05c5058336a46bd7 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_d9443c9021b94380abc96faf9e03c532 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bc92d47885d92aa6cbf86f791095bee = $(`<div id="html_5bc92d47885d92aa6cbf86f791095bee" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B3</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_d9443c9021b94380abc96faf9e03c532.setContent(html_5bc92d47885d92aa6cbf86f791095bee);
+            
+        
+
+        circle_marker_5df9d14adb51389a05c5058336a46bd7.bindPopup(popup_d9443c9021b94380abc96faf9e03c532)
+        ;
+
+        
+    
+    
+            circle_marker_5df9d14adb51389a05c5058336a46bd7.bindTooltip(
+                `<div>
+                     FBI Photo B3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fce5094195d4721c2e46d30c5e762c0 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_361a20056b12b86474d61443289f6f86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_113b6931d814780e2a009803f489f2f7 = $(`<div id="html_113b6931d814780e2a009803f489f2f7" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B4</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_361a20056b12b86474d61443289f6f86.setContent(html_113b6931d814780e2a009803f489f2f7);
+            
+        
+
+        circle_marker_1fce5094195d4721c2e46d30c5e762c0.bindPopup(popup_361a20056b12b86474d61443289f6f86)
+        ;
+
+        
+    
+    
+            circle_marker_1fce5094195d4721c2e46d30c5e762c0.bindTooltip(
+                `<div>
+                     FBI Photo B4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2c2d39d62ae4710c10eaa20a4d7a50c = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_2f58132c5e388a41a84dd23858b4509e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90e8bdf25e2556d099b27051ce6b000e = $(`<div id="html_90e8bdf25e2556d099b27051ce6b000e" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B5</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_2f58132c5e388a41a84dd23858b4509e.setContent(html_90e8bdf25e2556d099b27051ce6b000e);
+            
+        
+
+        circle_marker_c2c2d39d62ae4710c10eaa20a4d7a50c.bindPopup(popup_2f58132c5e388a41a84dd23858b4509e)
+        ;
+
+        
+    
+    
+            circle_marker_c2c2d39d62ae4710c10eaa20a4d7a50c.bindTooltip(
+                `<div>
+                     FBI Photo B5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfdebad2ff04858a0f1d913515dd5f1a = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_ce72519ba0cf389813de89a096e21f87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c2a5b07bdbfc3fe18a1c3d8af0a8c37 = $(`<div id="html_7c2a5b07bdbfc3fe18a1c3d8af0a8c37" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B6</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_ce72519ba0cf389813de89a096e21f87.setContent(html_7c2a5b07bdbfc3fe18a1c3d8af0a8c37);
+            
+        
+
+        circle_marker_bfdebad2ff04858a0f1d913515dd5f1a.bindPopup(popup_ce72519ba0cf389813de89a096e21f87)
+        ;
+
+        
+    
+    
+            circle_marker_bfdebad2ff04858a0f1d913515dd5f1a.bindTooltip(
+                `<div>
+                     FBI Photo B6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f2375d5b70c48ed758855903af878d0 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_b46518f178fe5436df54d933614b1f78 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_822d72ef979d989b3b8d00cc19f8279d = $(`<div id="html_822d72ef979d989b3b8d00cc19f8279d" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B7</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_b46518f178fe5436df54d933614b1f78.setContent(html_822d72ef979d989b3b8d00cc19f8279d);
+            
+        
+
+        circle_marker_3f2375d5b70c48ed758855903af878d0.bindPopup(popup_b46518f178fe5436df54d933614b1f78)
+        ;
+
+        
+    
+    
+            circle_marker_3f2375d5b70c48ed758855903af878d0.bindTooltip(
+                `<div>
+                     FBI Photo B7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6750f1432c091d296238c4d21bdfcf9 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_e57114bdad9fc5eaf95ac845b703453a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fce706753f34d8150d082a2686332b4 = $(`<div id="html_1fce706753f34d8150d082a2686332b4" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B8</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_e57114bdad9fc5eaf95ac845b703453a.setContent(html_1fce706753f34d8150d082a2686332b4);
+            
+        
+
+        circle_marker_e6750f1432c091d296238c4d21bdfcf9.bindPopup(popup_e57114bdad9fc5eaf95ac845b703453a)
+        ;
+
+        
+    
+    
+            circle_marker_e6750f1432c091d296238c4d21bdfcf9.bindTooltip(
+                `<div>
+                     FBI Photo B8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d52cf7ffc037b68bc6250bfce25ce1e6 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_61864c4d609360c3db4978ea246728dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00acdf57ae688eafaae992ba86256b35 = $(`<div id="html_00acdf57ae688eafaae992ba86256b35" style="width: 100.0%; height: 100.0%;"><b>FBI Photo B9</b><br>         Agency: FBI<br>         Location: Western United States<br>         Date: Late 2025<br>         <small>The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a</small></div>`)[0];
+                popup_61864c4d609360c3db4978ea246728dd.setContent(html_00acdf57ae688eafaae992ba86256b35);
+            
+        
+
+        circle_marker_d52cf7ffc037b68bc6250bfce25ce1e6.bindPopup(popup_61864c4d609360c3db4978ea246728dd)
+        ;
+
+        
+    
+    
+            circle_marker_d52cf7ffc037b68bc6250bfce25ce1e6.bindTooltip(
+                `<div>
+                     FBI Photo B9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4de6bb38467301618d499b76aebaa371 = L.circleMarker(
+                [39.0, -98.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_05bb5e6004384ad3516133c42535d23c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_523adacb03810146b8fbd68809de5311 = $(`<div id="html_523adacb03810146b8fbd68809de5311" style="width: 100.0%; height: 100.0%;"><b>FBI September 2023 Sighting - Serial 3</b><br>         Agency: FBI<br>         Location: United States<br>         Date: 9/1/23<br>         <small>This is an FBI 302 interview conducted with a US citizen regarding their first-hand account of a UAP encounter at a US test site.  USPER described an object "metallic bronze in color."</small></div>`)[0];
+                popup_05bb5e6004384ad3516133c42535d23c.setContent(html_523adacb03810146b8fbd68809de5311);
+            
+        
+
+        circle_marker_4de6bb38467301618d499b76aebaa371.bindPopup(popup_05bb5e6004384ad3516133c42535d23c)
+        ;
+
+        
+    
+    
+            circle_marker_4de6bb38467301618d499b76aebaa371.bindTooltip(
+                `<div>
+                     FBI September 2023 Sighting - Serial 3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd1b65300f1601404e711e31786f83cd = L.circleMarker(
+                [39.0, -98.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_bb4300fafd4c36b40aaf41b7b83e9dbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b6c072be59b064ed89e364677a1a4b7 = $(`<div id="html_7b6c072be59b064ed89e364677a1a4b7" style="width: 100.0%; height: 100.0%;"><b>FBI September 2023 Sighting - Serial 4</b><br>         Agency: FBI<br>         Location: United States<br>         Date: 9/1/23<br>         <small>This is an FBI 302 interview conducted with a US citizen regarding their first-hand account of a UAP encounter at a US test site. USPER described an object "metallic/gray in color."</small></div>`)[0];
+                popup_bb4300fafd4c36b40aaf41b7b83e9dbf.setContent(html_7b6c072be59b064ed89e364677a1a4b7);
+            
+        
+
+        circle_marker_fd1b65300f1601404e711e31786f83cd.bindPopup(popup_bb4300fafd4c36b40aaf41b7b83e9dbf)
+        ;
+
+        
+    
+    
+            circle_marker_fd1b65300f1601404e711e31786f83cd.bindTooltip(
+                `<div>
+                     FBI September 2023 Sighting - Serial 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f868c4548b1eeb0cc8336ba512df9a0 = L.circleMarker(
+                [39.0, -98.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_8dc1eb5bb7911802cec00c5220794d7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c97d930c22fa4e49908812e586b7fb1e = $(`<div id="html_c97d930c22fa4e49908812e586b7fb1e" style="width: 100.0%; height: 100.0%;"><b>FBI September 2023 Sighting - Serial 5</b><br>         Agency: FBI<br>         Location: United States<br>         Date: 9/1/23<br>         <small>This is an FBI 302 interview conducted with a US citizen regarding their first-hand account of a UAP encounter at a US test site. USPER described a "bright light over the horizon."</small></div>`)[0];
+                popup_8dc1eb5bb7911802cec00c5220794d7c.setContent(html_c97d930c22fa4e49908812e586b7fb1e);
+            
+        
+
+        circle_marker_6f868c4548b1eeb0cc8336ba512df9a0.bindPopup(popup_8dc1eb5bb7911802cec00c5220794d7c)
+        ;
+
+        
+    
+    
+            circle_marker_6f868c4548b1eeb0cc8336ba512df9a0.bindTooltip(
+                `<div>
+                     FBI September 2023 Sighting - Serial 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71dc438a80b49d5edd9c935cb4445e11 = L.circleMarker(
+                [39.0, -98.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_ec2bd544c076fc1da1885e274e77057b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f9329cc4b934884c818c806b70e25eb = $(`<div id="html_2f9329cc4b934884c818c806b70e25eb" style="width: 100.0%; height: 100.0%;"><b>USPER Statement about UAP Sighting</b><br>         Agency: FBI<br>         Location: United States<br>         Date: Late 2025<br>         <small>This is an FBI 302 interview conducted with a senior US intelligence official regarding his first-hand account of a UAP encounter at a US military facility. USPER relayed to FBI agents that he and oth</small></div>`)[0];
+                popup_ec2bd544c076fc1da1885e274e77057b.setContent(html_2f9329cc4b934884c818c806b70e25eb);
+            
+        
+
+        circle_marker_71dc438a80b49d5edd9c935cb4445e11.bindPopup(popup_ec2bd544c076fc1da1885e274e77057b)
+        ;
+
+        
+    
+    
+            circle_marker_71dc438a80b49d5edd9c935cb4445e11.bindTooltip(
+                `<div>
+                     USPER Statement about UAP Sighting
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47deaf4f4c156c1e8a18a24042d97840 = L.circleMarker(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+        var popup_e175539bc6435bb7eab5ae1b041f1de7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d910b0b271028dbac3c0d84057dedc5e = $(`<div id="html_d910b0b271028dbac3c0d84057dedc5e" style="width: 100.0%; height: 100.0%;"><b>Western US Event</b><br>         Agency: Department of War<br>         Location: Western United States<br>         Date: 2023<br>         <small>This document is a summary of statements by seven US PERSONs employed by the federal government who separately reported observing several unidentified anomalous phenomena in the western United States </small></div>`)[0];
+                popup_e175539bc6435bb7eab5ae1b041f1de7.setContent(html_d910b0b271028dbac3c0d84057dedc5e);
+            
+        
+
+        circle_marker_47deaf4f4c156c1e8a18a24042d97840.bindPopup(popup_e175539bc6435bb7eab5ae1b041f1de7)
+        ;
+
+        
+    
+    
+            circle_marker_47deaf4f4c156c1e8a18a24042d97840.bindTooltip(
+                `<div>
+                     Western US Event
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var heat_map_7fecba71f2ecda4e8cd5907921f044f9 = L.heatLayer(
+                [[33.0, 44.0], [33.0, 44.0], [35.0, 38.0], [35.0, 38.0], [33.0, 44.0], [35.0, 38.0], [33.0, 44.0], [26.5, 52.0], [35.0, 18.0], [24.5, 58.5], [33.0, 44.0], [35.0, 38.0], [39.0, 25.0], [39.0, 25.0], [26.5, 52.0], [26.5, 51.5], [15.0, 65.0], [35.0, 18.0], [37.0, -122.0], [35.0, 18.0], [35.0, 38.0], [15.0, 65.0], [12.5, 45.0], [0.0, -170.0], [26.5, 52.0], [26.5, 52.0], [26.5, 56.3], [26.5, 56.3], [32.0, 53.0], [26.5, 52.0], [35.0, 38.0], [12.5, 45.0], [35.0, 18.0], [33.0, 44.0], [39.0, -98.0], [51.0, 10.0], [51.0, 10.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [38.0, -118.0], [39.0, -98.0], [39.0, -98.0], [39.0, -98.0], [39.0, -98.0], [38.0, -118.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_7fecba71f2ecda4e8cd5907921f044f9.addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            var circle_831bc56966a9933762d50363a0ce391f = L.circle(
+                [33.0, 44.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_831bc56966a9933762d50363a0ce391f.bindTooltip(
+                `<div>
+                     Cluster 1: 6 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_68abf596a912caa60096ad5ec20d205d = L.circle(
+                [35.0, 38.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_68abf596a912caa60096ad5ec20d205d.bindTooltip(
+                `<div>
+                     Cluster 2: 6 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_5f262739ba99052b9ba38b98154e789f = L.circle(
+                [26.5, 51.916666666666664],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_5f262739ba99052b9ba38b98154e789f.bindTooltip(
+                `<div>
+                     Cluster 3: 6 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c22d515e34ceb27cacab49326e19fe5a = L.circle(
+                [35.0, 18.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_c22d515e34ceb27cacab49326e19fe5a.bindTooltip(
+                `<div>
+                     Cluster 4: 4 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_d4b3da5c9272ad773978f8825fa18ddd = L.circle(
+                [25.833333333333332, 57.03333333333333],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_d4b3da5c9272ad773978f8825fa18ddd.bindTooltip(
+                `<div>
+                     Cluster 5: 3 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_da07a38c99eaa5c8a8fb75b1e520170a = L.circle(
+                [39.0, 25.0],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_da07a38c99eaa5c8a8fb75b1e520170a.bindTooltip(
+                `<div>
+                     Cluster 6: 2 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6c1a141a2e027a06fc472a57460d2933 = L.circle(
+                [15.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_6c1a141a2e027a06fc472a57460d2933.bindTooltip(
+                `<div>
+                     Cluster 7: 2 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6f3cdf209be669689fba3b33517ab462 = L.circle(
+                [12.5, 45.0],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_6f3cdf209be669689fba3b33517ab462.bindTooltip(
+                `<div>
+                     Cluster 8: 2 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_98592e774e46330488296e84d33acc8b = L.circle(
+                [39.0, -98.0],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_98592e774e46330488296e84d33acc8b.bindTooltip(
+                `<div>
+                     Cluster 9: 5 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c065bd1dfc1092eca9dce5f67c98cb04 = L.circle(
+                [51.0, 10.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_c065bd1dfc1092eca9dce5f67c98cb04.bindTooltip(
+                `<div>
+                     Cluster 10: 2 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_814f9cf3a2317a5d905347b8885f298b = L.circle(
+                [38.0, -118.0],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100000, "stroke": true, "weight": 2}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+        
+    
+            circle_814f9cf3a2317a5d905347b8885f298b.bindTooltip(
+                `<div>
+                     Cluster 11: 25 incidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_b9f5589616525eb9d1df3276243199ee_layers = {
+                base_layers : {
+                    "cartodbdarkmatter" : tile_layer_0f01cd2c87d3e07b47dd7743b52c77c1,
+                },
+                overlays :  {
+                    "Heatmap" : heat_map_7fecba71f2ecda4e8cd5907921f044f9,
+                },
+            };
+            let layer_control_b9f5589616525eb9d1df3276243199ee = L.control.layers(
+                layer_control_b9f5589616525eb9d1df3276243199ee_layers.base_layers,
+                layer_control_b9f5589616525eb9d1df3276243199ee_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_ce02be58ab503a903442f64714061cc6);
+
+        
+</script>
+</html>
