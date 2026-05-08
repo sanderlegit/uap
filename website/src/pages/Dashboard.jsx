@@ -365,7 +365,7 @@ export default function Dashboard() {
           </div>
 
           {/* source */}
-          <p className="mt-4 text-[10px] text-slate-600">
+          <p className="mt-4 text-[10px] text-slate-500">
             Source:{' '}
             <a
               href="https://war.gov/UFO"
@@ -398,28 +398,24 @@ export default function Dashboard() {
               <button
                 key={card.tag}
                 onClick={() => setExpandedBriefing(isOpen ? null : card.tag)}
-                className={`dash-card text-left bg-slate-900/80 border rounded-lg overflow-hidden border-t-2 ${card.color} cursor-pointer transition-all ${
+                className={`dash-card text-left bg-slate-900/80 border rounded-lg overflow-hidden border-t-2 ${card.color} cursor-pointer transition-all hover:translate-y-[-1px] hover:shadow-lg ${
                   isOpen ? 'border-amber-500/40 ring-1 ring-amber-500/20 sm:col-span-2 lg:col-span-3' : 'border-slate-700/40 hover:border-slate-600/60'
                 }`}
                 style={{ animationDelay: `${i * 100}ms` }}
               >
-                {/* card header */}
                 <div className="px-4 pt-3 pb-2 border-b border-slate-800/60 flex items-center justify-between">
                   <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-amber-500/70">
                     {card.tag} // {card.label}
                   </span>
                   <span className="text-[10px] text-slate-600">{isOpen ? '▾ collapse' : '▸ expand'}</span>
                 </div>
-                {/* card body */}
                 <div className="px-4 py-4">
-                  <div className="flex items-baseline gap-3 mb-2">
-                    <h3 className="text-base sm:text-lg font-bold text-slate-100">{card.title}</h3>
-                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-100 mb-2">{card.title}</h3>
                   <div className="flex items-baseline gap-1.5 mb-3">
-                    <span className="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono">{card.stat}</span>
+                    <span className="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono tabular-nums">{card.stat}</span>
                     <span className="text-xs text-slate-500 font-mono uppercase tracking-wider">{card.unit}</span>
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{card.description}</p>
+                  <p className={`text-xs sm:text-sm text-slate-400 leading-relaxed ${isOpen ? '' : 'line-clamp-3'}`}>{card.description}</p>
                   {isOpen && (
                     <div className="mt-4 pt-4 border-t border-slate-800/60">
                       <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{card.expanded}</p>
@@ -583,24 +579,24 @@ export default function Dashboard() {
               <Link
                 key={t.id}
                 to="/theories"
-                className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-slate-600/60 transition-colors group"
+                className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-slate-600/60 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
                 style={{ animationDelay: `${i * 80 + 200}ms` }}
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-lg" style={{ color: t.color }}>{t.icon}</span>
                   <h3 className="text-sm font-bold text-slate-200 group-hover:text-slate-100 transition-colors">{t.name}</h3>
                 </div>
-                <p className="text-[11px] text-slate-500 mb-2">{t.short}</p>
+                <p className="text-[11px] text-slate-500 mb-2 line-clamp-2">{t.short}</p>
                 <div className="flex items-center gap-3">
                   <div className="flex-1">
                     <div className="flex items-center gap-1 mb-0.5">
-                      <span className="text-[9px] text-slate-600 w-12">Popular</span>
+                      <span className="text-[9px] text-slate-500 w-12">Popular</span>
                       <div className="flex-1 h-1 rounded-full bg-slate-800 overflow-hidden">
                         <div className="h-full rounded-full" style={{ width: `${t.popularity}%`, backgroundColor: t.color }} />
                       </div>
                     </div>
                     <div className="flex items-center gap-1">
-                      <span className="text-[9px] text-slate-600 w-12">Science</span>
+                      <span className="text-[9px] text-slate-500 w-12">Science</span>
                       <div className="flex-1 h-1 rounded-full bg-slate-800 overflow-hidden">
                         <div className="h-full rounded-full" style={{ width: `${t.scientific_support}%`, backgroundColor: t.color, opacity: 0.6 }} />
                       </div>
@@ -659,7 +655,7 @@ export default function Dashboard() {
             <Link
               key={link.to}
               to={link.to}
-              className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-amber-500/30 hover:bg-slate-800/60 transition-all group"
+              className="dash-card bg-slate-900/60 border border-slate-700/40 rounded-lg p-4 hover:border-amber-500/30 hover:bg-slate-800/60 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
               style={{ animationDelay: `${i * 60 + 100}ms` }}
             >
               <span className="text-2xl block mb-3 text-slate-600 group-hover:text-amber-400 transition-colors">
@@ -668,7 +664,7 @@ export default function Dashboard() {
               <div className="text-sm font-bold text-slate-200 group-hover:text-slate-100 transition-colors">
                 {link.label}
               </div>
-              <div className="text-[11px] text-slate-500 mt-1 leading-snug">{link.desc}</div>
+              <div className="text-[11px] text-slate-500 mt-1 leading-snug line-clamp-2">{link.desc}</div>
             </Link>
           ))}
         </div>
@@ -713,7 +709,7 @@ export default function Dashboard() {
 
           <div
             ref={carouselRef}
-            className="dash-carousel flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4"
+            className="dash-carousel scroll-container flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4"
           >
             {notableDocs.map((doc, i) => {
               const meta = doc.agency ? agencyMeta[doc.agency] : null
@@ -723,7 +719,7 @@ export default function Dashboard() {
                 <Link
                   key={doc.id}
                   to={`/documents/${doc.id}`}
-                  className="dash-card flex-shrink-0 w-[280px] sm:w-[300px] snap-start bg-slate-900/70 border border-slate-700/40 rounded-lg overflow-hidden hover:border-amber-500/30 transition-all group"
+                  className="dash-card flex-shrink-0 w-[280px] sm:w-[300px] snap-start bg-slate-900/70 border border-slate-700/40 rounded-lg overflow-hidden hover:border-amber-500/30 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
                   style={{ animationDelay: `${i * 80 + 100}ms` }}
                 >
                   {/* top accent */}
@@ -739,7 +735,7 @@ export default function Dashboard() {
                           {meta.short}
                         </span>
                       ) : (
-                        <span className="text-[10px] font-mono text-slate-600">UNKNOWN</span>
+                        <span className="text-[10px] font-mono text-slate-500">UNKNOWN</span>
                       )}
                       {doc.incident_date_parsed && (
                         <span className="text-[10px] font-mono text-slate-500">

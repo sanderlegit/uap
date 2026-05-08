@@ -120,7 +120,8 @@ export default function Timeline() {
       <div className="px-4 pt-6 pb-3">
         <h1 className="text-xl font-bold text-slate-100 mb-1">Timeline</h1>
         <p className="text-sm text-slate-400 mb-4">
-          {datedCount} dated, {undatedCount} undated &middot; Scroll horizontally to explore
+          {datedCount} dated, {undatedCount} undated
+          <span className="ml-2 text-xs text-slate-500">&larr; Scroll horizontally to explore &rarr;</span>
         </p>
 
         <div className="flex flex-wrap gap-2 mb-3">
@@ -142,7 +143,7 @@ export default function Timeline() {
         </div>
 
         <div className="flex flex-wrap gap-1.5">
-          <span className="text-[10px] text-slate-600 self-center mr-1">Jump to:</span>
+          <span className="text-[10px] text-slate-500 self-center mr-1">Jump to:</span>
           {DECADES.map(d => (
             <button
               key={d}
@@ -161,8 +162,8 @@ export default function Timeline() {
         </div>
       ) : (
         <div
-          className="overflow-x-auto"
-          style={{ scrollbarWidth: 'thin', scrollbarColor: '#334155 transparent', paddingBottom: selectedDoc ? '7rem' : '6rem' }}
+          className="overflow-x-auto scroll-container"
+          style={{ paddingBottom: selectedDoc ? '7rem' : '6rem' }}
         >
           <div className="relative min-w-max px-6 pt-4 pb-8">
             {/* Horizontal axis */}
@@ -170,7 +171,7 @@ export default function Timeline() {
 
             <div className="flex items-start">
               {grouped.map((group) => {
-                const colWidth = Math.max(150, Math.min(220, group.docs.length * 28 + 110))
+                const colWidth = Math.max(170, Math.min(220, group.docs.length * 28 + 110))
                 return (
                   <div
                     key={group.year}
@@ -182,7 +183,7 @@ export default function Timeline() {
                     <div className="relative flex items-center gap-2 mb-4 z-10">
                       <div className="w-2.5 h-2.5 rounded-full bg-slate-500 border-2 border-slate-950 shrink-0" />
                       <span className="text-xs font-bold text-slate-200 bg-slate-950 pr-1">{group.year}</span>
-                      <span className="text-[10px] text-slate-600 bg-slate-950 pr-1 tabular-nums">{group.docs.length}</span>
+                      <span className="text-[10px] text-slate-500 bg-slate-950 pr-1 tabular-nums">{group.docs.length}</span>
                     </div>
 
                     {/* Document chips */}
@@ -197,7 +198,7 @@ export default function Timeline() {
                             className={`w-full text-left rounded px-2 py-1.5 transition-all cursor-pointer border-l-2 ${
                               isSelected
                                 ? 'bg-slate-800 ring-1 ring-blue-500/40'
-                                : 'bg-slate-900/70 hover:bg-slate-800/50'
+                                : 'bg-slate-900/70 hover:bg-slate-800/50 hover:translate-y-[-1px]'
                             }`}
                             style={{ borderLeftColor: agencyColor(doc.agency) }}
                           >
@@ -208,7 +209,7 @@ export default function Timeline() {
                                   {doc.title}
                                 </span>
                                 {doc.incident_date_parsed && (
-                                  <span className="text-[10px] text-slate-600 mt-0.5 block">
+                                  <span className="text-[10px] text-slate-500 mt-0.5 block">
                                     {formatDate(doc.incident_date_parsed)}
                                   </span>
                                 )}

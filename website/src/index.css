@@ -2,15 +2,37 @@
 @import "leaflet/dist/leaflet.css";
 
 @theme {
+  /* Brand */
   --color-primary: #3b82f6;
   --color-primary-light: #60a5fa;
   --color-primary-dark: #2563eb;
-  --color-accent: #f59e0b;
+  --color-accent: #7c5cfc;
+  --color-accent-light: #a78bfa;
+
+  /* Semantic */
+  --color-success: #22c55e;
+  --color-success-muted: #22c55e26;
+  --color-warning: #f59e0b;
+  --color-warning-muted: #f59e0b26;
   --color-danger: #ef4444;
+  --color-danger-muted: #ef444426;
+
+  /* Surfaces */
   --color-surface: #1e293b;
   --color-surface-light: #334155;
   --color-surface-dark: #0f172a;
+  --color-bg: #0a0f1a;
+  --color-card: #111827;
+  --color-card-hover: #1a2332;
+  --color-border: #1e293b;
+  --color-border-light: #334155;
 
+  /* Text */
+  --color-text: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  /* Agency */
   --color-agency-dow: #3b82f6;
   --color-agency-fbi: #ef4444;
   --color-agency-nasa: #8b5cf6;
@@ -35,3 +57,41 @@ body { min-height: 100dvh; }
 .agency-fbi { background: color-mix(in srgb, var(--color-agency-fbi) 20%, transparent); color: var(--color-agency-fbi); }
 .agency-nasa { background: color-mix(in srgb, var(--color-agency-nasa) 20%, transparent); color: var(--color-agency-nasa); }
 .agency-dos { background: color-mix(in srgb, var(--color-agency-dos) 20%, transparent); color: var(--color-agency-dos); }
+
+/* Card system */
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-border-light);
+}
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Section headers */
+.section-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* Scroll indicator for horizontal scroll containers */
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-light) transparent;
+}
+.scroll-container::-webkit-scrollbar { height: 6px; }
+.scroll-container::-webkit-scrollbar-track { background: transparent; }
+.scroll-container::-webkit-scrollbar-thumb { background: var(--color-border-light); border-radius: 3px; }
+.scroll-container::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }

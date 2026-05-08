@@ -11,19 +11,12 @@ const AGENCIES = [
 ]
 
 const SPACE_ENCOUNTERS = [
-  { name: 'Gemini IV Object', year: 1965, body: 'Earth Orbit', detail: 'Astronaut James McDivitt photographed a cylindrical object with a protrusion during orbital EVA preparations.', icon: '🛰' },
-  { name: 'Apollo 11 Translunar Object', year: 1969, body: 'Moon Transit', detail: 'Crew observed an L-shaped object through the window en route to the Moon, initially thought to be the S-IVB booster.', icon: '🌙' },
-  { name: 'Apollo 12 Lightning Events', year: 1969, body: 'Moon', detail: 'Unusual double lightning strike during launch plus anomalous objects observed in lunar orbit.', icon: '🌙' },
-  { name: 'STS-48 Maneuver Objects', year: 1991, body: 'Earth Orbit', detail: 'Space Shuttle Discovery footage captured objects making apparent sharp directional changes near the spacecraft.', icon: '🛰' },
-  { name: 'STS-75 Tether Swarm', year: 1996, body: 'Earth Orbit', detail: 'Hundreds of luminous pulsing objects observed near the broken TSS-1R tether during shuttle mission.', icon: '🛰' },
-  { name: 'ISS Multiple Sightings', year: 2005, body: 'Earth Orbit', detail: 'Multiple ISS crew members across several expeditions have reported unidentified objects near the station, some captured on external cameras.', icon: '🛰' },
-]
-
-const CELESTIAL = [
-  { name: 'Earth Orbit', icon: '🛰', count: 4, color: '#38bdf8' },
-  { name: 'Moon', icon: '🌙', count: 2, color: '#94a3b8' },
-  { name: 'Mars', icon: '🔴', count: 0, color: '#ef4444', note: 'No confirmed encounters' },
-  { name: 'Saturn', icon: '🪐', count: 0, color: '#fbbf24', note: 'Cassini anomalies under review' },
+  { name: 'Gemini IV Object', year: 1965, body: 'orbit', detail: 'Astronaut James McDivitt photographed a cylindrical object with a protrusion during orbital EVA preparations.', icon: '🛰' },
+  { name: 'Apollo 11 Translunar Object', year: 1969, body: 'moon', detail: 'Crew observed an L-shaped object through the window en route to the Moon, initially thought to be the S-IVB booster.', icon: '🌙' },
+  { name: 'Apollo 12 Lightning Events', year: 1969, body: 'moon', detail: 'Unusual double lightning strike during launch plus anomalous objects observed in lunar orbit.', icon: '🌙' },
+  { name: 'STS-48 Maneuver Objects', year: 1991, body: 'orbit', detail: 'Space Shuttle Discovery footage captured objects making apparent sharp directional changes near the spacecraft.', icon: '🛰' },
+  { name: 'STS-75 Tether Swarm', year: 1996, body: 'orbit', detail: 'Hundreds of luminous pulsing objects observed near the broken TSS-1R tether during shuttle mission.', icon: '🛰' },
+  { name: 'ISS Multiple Sightings', year: 2005, body: 'orbit', detail: 'Multiple ISS crew members across several expeditions reported unidentified objects near the station, some captured on external cameras.', icon: '🛰' },
 ]
 
 function Spinner() {
@@ -37,10 +30,169 @@ function Spinner() {
   )
 }
 
+function MoonGraphic() {
+  return (
+    <div className="relative w-20 h-20 mx-auto">
+      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500 shadow-[0_0_30px_rgba(148,163,184,0.3)]" />
+      <div className="absolute top-3 left-4 w-4 h-4 rounded-full bg-slate-500/40" />
+      <div className="absolute top-8 left-9 w-2.5 h-2.5 rounded-full bg-slate-500/30" />
+      <div className="absolute top-5 right-3 w-3 h-3 rounded-full bg-slate-500/35" />
+      <div className="absolute bottom-3 left-6 w-2 h-2 rounded-full bg-slate-500/25" />
+    </div>
+  )
+}
+
+function OrbitGraphic({ count }) {
+  return (
+    <div className="relative w-24 h-24 mx-auto">
+      <div className="absolute inset-0 rounded-full border border-dashed border-cyan-500/30" />
+      <div className="absolute inset-3 rounded-full border border-cyan-500/20" />
+      {/* Earth */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-br from-blue-400 to-emerald-500 shadow-[0_0_12px_rgba(56,189,248,0.4)]" />
+      {/* Orbit dots */}
+      {Array.from({ length: count }).map((_, i) => {
+        const angle = (i / count) * Math.PI * 2 - Math.PI / 2
+        const r = 44
+        const x = 48 + Math.cos(angle) * r
+        const y = 48 + Math.sin(angle) * r
+        return (
+          <div
+            key={i}
+            className="absolute w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_6px_rgba(34,211,238,0.6)]"
+            style={{ left: x - 4, top: y - 4 }}
+          />
+        )
+      })}
+    </div>
+  )
+}
+
+function SpaceSidebar({ expandedEncounter, setExpandedEncounter }) {
+  const moonEncounters = SPACE_ENCOUNTERS.filter(e => e.body === 'moon')
+  const orbitEncounters = SPACE_ENCOUNTERS.filter(e => e.body === 'orbit')
+
+  return (
+    <div className="h-full overflow-y-auto bg-gradient-to-b from-[#070b14] via-[#0a0f1a] to-[#060a12] border-l border-slate-800/60 px-4 py-5"
+      style={{ scrollbarWidth: 'thin', scrollbarColor: '#1e293b transparent' }}>
+
+      {/* Starfield dots */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {Array.from({ length: 40 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full bg-white"
+            style={{
+              width: Math.random() > 0.7 ? 2 : 1,
+              height: Math.random() > 0.7 ? 2 : 1,
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              opacity: 0.1 + Math.random() * 0.3,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="relative z-10">
+        <h3 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-purple-400 mb-1">Beyond Earth</h3>
+        <p className="text-[10px] text-slate-500 mb-5">{SPACE_ENCOUNTERS.length} documented encounters</p>
+
+        {/* Moon Section */}
+        <div className="mb-6">
+          <MoonGraphic />
+          <div className="text-center mt-2 mb-3">
+            <span className="text-xs font-semibold text-slate-300">Moon</span>
+            <span className="text-[10px] text-slate-500 ml-2">{moonEncounters.length} events</span>
+          </div>
+          <div className="space-y-1.5">
+            {moonEncounters.map((enc, i) => {
+              const idx = SPACE_ENCOUNTERS.indexOf(enc)
+              return (
+                <button
+                  key={i}
+                  onClick={() => setExpandedEncounter(expandedEncounter === idx ? null : idx)}
+                  className={`w-full text-left rounded px-2.5 py-2 transition-all cursor-pointer border-l-2 ${
+                    expandedEncounter === idx
+                      ? 'bg-purple-500/10 border-l-purple-400'
+                      : 'bg-slate-800/30 border-l-slate-700 hover:bg-slate-800/50'
+                  }`}
+                >
+                  <div className="text-[11px] font-medium text-slate-200">{enc.name}</div>
+                  <div className="text-[10px] text-slate-500">{enc.year}</div>
+                  {expandedEncounter === idx && (
+                    <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
+                  )}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
+        {/* Orbit Section */}
+        <div className="mb-6">
+          <OrbitGraphic count={orbitEncounters.length} />
+          <div className="text-center mt-2 mb-3">
+            <span className="text-xs font-semibold text-slate-300">Earth Orbit</span>
+            <span className="text-[10px] text-slate-500 ml-2">{orbitEncounters.length} events</span>
+          </div>
+          <div className="space-y-1.5">
+            {orbitEncounters.map((enc, i) => {
+              const idx = SPACE_ENCOUNTERS.indexOf(enc)
+              return (
+                <button
+                  key={i}
+                  onClick={() => setExpandedEncounter(expandedEncounter === idx ? null : idx)}
+                  className={`w-full text-left rounded px-2.5 py-2 transition-all cursor-pointer border-l-2 ${
+                    expandedEncounter === idx
+                      ? 'bg-cyan-500/10 border-l-cyan-400'
+                      : 'bg-slate-800/30 border-l-slate-700 hover:bg-slate-800/50'
+                  }`}
+                >
+                  <div className="text-[11px] font-medium text-slate-200">{enc.name}</div>
+                  <div className="text-[10px] text-slate-500">{enc.year}</div>
+                  {expandedEncounter === idx && (
+                    <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
+                  )}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
+        {/* Distant bodies */}
+        <div className="border-t border-slate-800/60 pt-4">
+          <p className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold mb-2">Outer System</p>
+          <div className="flex gap-4 justify-center mb-3">
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-2xl">🔴</span>
+              <span className="text-[9px] text-slate-500">Mars</span>
+              <span className="text-[9px] text-slate-700">&mdash;</span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-2xl">🪐</span>
+              <span className="text-[9px] text-slate-500">Saturn</span>
+              <span className="text-[9px] text-slate-700">&mdash;</span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-2xl">⭐</span>
+              <span className="text-[9px] text-slate-500">Deep Space</span>
+              <span className="text-[9px] text-slate-700">&mdash;</span>
+            </div>
+          </div>
+          <p className="text-[10px] text-slate-700 text-center italic">No confirmed encounters beyond LEO/lunar space</p>
+        </div>
+
+        <p className="text-[10px] text-slate-700 mt-4 pt-3 border-t border-slate-800/40 text-center">
+          Sources: astronaut testimony, NASA mission footage
+        </p>
+      </div>
+    </div>
+  )
+}
+
 export default function MapView() {
   const docs = useDocuments()
-  const [spaceOpen, setSpaceOpen] = useState(false)
   const [expandedEncounter, setExpandedEncounter] = useState(null)
+  const [mobileSpaceOpen, setMobileSpaceOpen] = useState(false)
 
   const geolocated = useMemo(() => {
     if (!docs) return []
@@ -50,134 +202,85 @@ export default function MapView() {
   if (!docs) return <Spinner />
 
   return (
-    <div className="relative h-[calc(100dvh-7.5rem)]">
-      <MapContainer
-        center={[20, 0]}
-        zoom={2}
-        className="h-full w-full z-0"
-        scrollWheelZoom={true}
-        zoomControl={true}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        />
-        {geolocated.map(doc => (
-          <CircleMarker
-            key={doc.id}
-            center={[doc.latitude, doc.longitude]}
-            radius={8}
-            pathOptions={{
-              color: agencyColor(doc.agency),
-              fillColor: agencyColor(doc.agency),
-              fillOpacity: 0.7,
-              weight: 1,
-            }}
-          >
-            <Popup>
-              <div className="min-w-[200px]">
-                <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-1.5">
-                  {doc.title}
-                </h3>
-                <div className="flex flex-wrap items-center gap-2 text-xs mb-2">
-                  {doc.agency && (
-                    <span className={`agency-badge ${agencyClass(doc.agency)}`}>{doc.agency}</span>
-                  )}
+    <div className="relative h-[calc(100dvh-7.5rem)] flex">
+      {/* Map */}
+      <div className="flex-1 relative">
+        <MapContainer
+          center={[20, 0]}
+          zoom={2}
+          className="h-full w-full z-0"
+          scrollWheelZoom={true}
+          zoomControl={true}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          />
+          {geolocated.map(doc => (
+            <CircleMarker
+              key={doc.id}
+              center={[doc.latitude, doc.longitude]}
+              radius={8}
+              pathOptions={{
+                color: agencyColor(doc.agency),
+                fillColor: agencyColor(doc.agency),
+                fillOpacity: 0.7,
+                weight: 1,
+              }}
+            >
+              <Popup>
+                <div className="min-w-[200px]">
+                  <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-1.5">{doc.title}</h3>
+                  <div className="flex flex-wrap items-center gap-2 text-xs mb-2">
+                    {doc.agency && <span className={`agency-badge ${agencyClass(doc.agency)}`}>{doc.agency}</span>}
+                  </div>
+                  {doc.incident_date_parsed && <p className="text-xs text-slate-400 mb-0.5">{formatDate(doc.incident_date_parsed)}</p>}
+                  {doc.incident_location && <p className="text-xs text-slate-400 mb-2">{doc.incident_location}</p>}
+                  <Link to={`/documents/${doc.id}`} className="text-xs text-blue-400 hover:text-blue-300 font-medium">View Document &rarr;</Link>
                 </div>
-                {doc.incident_date_parsed && (
-                  <p className="text-xs text-slate-400 mb-0.5">{formatDate(doc.incident_date_parsed)}</p>
-                )}
-                {doc.incident_location && (
-                  <p className="text-xs text-slate-400 mb-2">{doc.incident_location}</p>
-                )}
-                <Link to={`/documents/${doc.id}`} className="text-xs text-blue-400 hover:text-blue-300 font-medium">
-                  View Document &rarr;
-                </Link>
-              </div>
-            </Popup>
-          </CircleMarker>
-        ))}
-      </MapContainer>
-
-      {/* Agency Legend */}
-      <div className="absolute bottom-6 left-3 z-[1000] bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2.5">
-        <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1.5">Agencies</p>
-        <div className="flex flex-col gap-1">
-          {AGENCIES.map(a => (
-            <div key={a.label} className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: a.color }} />
-              <span className="text-xs text-slate-300">{a.label}</span>
-            </div>
+              </Popup>
+            </CircleMarker>
           ))}
+        </MapContainer>
+
+        {/* Agency Legend */}
+        <div className="absolute bottom-6 left-3 z-[1000] bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2.5">
+          <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1.5">Agencies</p>
+          <div className="flex flex-col gap-1">
+            {AGENCIES.map(a => (
+              <div key={a.label} className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: a.color }} />
+                <span className="text-xs text-slate-300">{a.label}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-[10px] text-slate-500 mt-2">{geolocated.length} of {docs.length} mapped</p>
         </div>
-        <p className="text-[10px] text-slate-500 mt-2">
-          {geolocated.length} of {docs.length} documents mapped
-        </p>
+
+        {/* Mobile space toggle */}
+        <button
+          onClick={() => setMobileSpaceOpen(!mobileSpaceOpen)}
+          className="md:hidden absolute top-3 right-3 z-[1000] bg-[#070b14]/95 backdrop-blur border border-purple-500/30 rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer hover:border-purple-500/50 transition-colors"
+        >
+          <span className="text-base">🌌</span>
+          <span className="text-xs font-medium text-purple-300">Space</span>
+          <span className="text-[10px] text-purple-400 bg-purple-500/20 rounded px-1.5 py-0.5 tabular-nums">{SPACE_ENCOUNTERS.length}</span>
+        </button>
       </div>
 
-      {/* Space Encounters Button */}
-      <button
-        onClick={() => setSpaceOpen(!spaceOpen)}
-        className="absolute top-3 right-3 z-[1000] bg-slate-900/90 backdrop-blur border border-purple-500/30 rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer hover:border-purple-500/50 transition-colors"
-      >
-        <span className="text-base">🌌</span>
-        <span className="text-xs font-medium text-purple-300">Space</span>
-        <span className="text-[10px] text-purple-400 bg-purple-500/20 rounded px-1.5 py-0.5 tabular-nums">{SPACE_ENCOUNTERS.length}</span>
-      </button>
+      {/* Desktop: persistent space sidebar */}
+      <div className="hidden md:block w-64 lg:w-72 relative shrink-0">
+        <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} />
+      </div>
 
-      {/* Space Encounters Panel */}
-      {spaceOpen && (
-        <div className="absolute top-14 right-3 z-[1000] bg-slate-900/95 backdrop-blur border border-purple-500/20 rounded-lg p-4 w-80 max-h-[70vh] overflow-y-auto"
-          style={{ scrollbarWidth: 'thin', scrollbarColor: '#334155 transparent' }}>
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-bold text-slate-100">Beyond Earth</h3>
-            <button onClick={() => setSpaceOpen(false)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-lg leading-none">&times;</button>
+      {/* Mobile: slide-up panel */}
+      {mobileSpaceOpen && (
+        <div className="md:hidden absolute inset-x-0 bottom-0 z-[1001] h-[60vh] rounded-t-xl overflow-hidden shadow-2xl">
+          <div className="flex items-center justify-between px-4 py-2 bg-[#070b14] border-b border-slate-800/60">
+            <span className="text-xs font-semibold text-purple-400">Space Encounters</span>
+            <button onClick={() => setMobileSpaceOpen(false)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-lg leading-none">&times;</button>
           </div>
-
-          {/* Celestial bodies */}
-          <div className="grid grid-cols-4 gap-2 mb-4 py-3 bg-slate-950/80 rounded-lg border border-slate-800/50 px-2">
-            {CELESTIAL.map(b => (
-              <div key={b.name} className="flex flex-col items-center gap-1 text-center">
-                <span className="text-xl">{b.icon}</span>
-                <span className="text-[9px] text-slate-400 leading-tight">{b.name}</span>
-                {b.count > 0 ? (
-                  <span className="text-[10px] font-bold" style={{ color: b.color }}>{b.count}</span>
-                ) : (
-                  <span className="text-[10px] text-slate-700">&mdash;</span>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Encounters */}
-          <div className="space-y-2">
-            {SPACE_ENCOUNTERS.map((enc, i) => (
-              <button
-                key={i}
-                onClick={() => setExpandedEncounter(expandedEncounter === i ? null : i)}
-                className={`w-full text-left rounded-lg p-2.5 border transition-all cursor-pointer ${
-                  expandedEncounter === i
-                    ? 'bg-purple-500/10 border-purple-500/30'
-                    : 'bg-slate-800/50 border-slate-700/30 hover:border-slate-600/50'
-                }`}
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-base shrink-0">{enc.icon}</span>
-                  <div className="min-w-0">
-                    <div className="text-xs font-medium text-slate-200">{enc.name}</div>
-                    <div className="text-[10px] text-slate-500">{enc.year} &middot; {enc.body}</div>
-                    {expandedEncounter === i && (
-                      <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
-                    )}
-                  </div>
-                </div>
-              </button>
-            ))}
-          </div>
-
-          <p className="text-[10px] text-slate-600 mt-3 pt-2 border-t border-slate-800">
-            Based on astronaut testimony and NASA mission footage
-          </p>
+          <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} />
         </div>
       )}
     </div>

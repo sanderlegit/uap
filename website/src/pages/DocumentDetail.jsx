@@ -161,10 +161,10 @@ export default function DocumentDetail() {
           {doc.incident_location && (
             <span className="text-sm text-slate-500">{doc.incident_location}</span>
           )}
-          <span className="text-xs text-slate-600">
+          <span className="text-xs text-slate-500">
             {doc.total_pages} {doc.total_pages === 1 ? 'page' : 'pages'}
           </span>
-          <span className="text-xs text-slate-600">{doc.text_length?.toLocaleString()} chars</span>
+          <span className="text-xs text-slate-500">{doc.text_length?.toLocaleString()} chars</span>
           {hasRedaction && (
             <span className="flex items-center gap-1 text-xs text-red-400">
               <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
@@ -283,7 +283,7 @@ export default function DocumentDetail() {
                     <div className="page-break" />
                   )}
                   <div className="relative">
-                    <span className="absolute -left-0 top-0 text-[10px] text-slate-600 select-none font-mono">
+                    <span className="absolute -left-0 top-0 text-[10px] text-slate-500 select-none font-mono">
                       p.{i + 1}
                     </span>
                     <div className="doc-text pl-6 text-slate-300">{page.trim()}</div>
@@ -312,7 +312,7 @@ export default function DocumentDetail() {
                   <span className="text-sm text-slate-400 group-hover:text-slate-200 transition-colors line-clamp-1">
                     {ref.title}
                   </span>
-                  <span className="ml-auto text-[10px] text-slate-600 shrink-0 mt-0.5">
+                  <span className="ml-auto text-[10px] text-slate-500 shrink-0 mt-0.5">
                     {(ref.weight * 100).toFixed(0)}% match
                   </span>
                 </Link>
@@ -364,7 +364,7 @@ export default function DocumentDetail() {
       )}
 
       {/* Extraction info */}
-      <div className="text-[11px] text-slate-600 mb-6">
+      <div className="text-[11px] text-slate-500 mb-6">
         Extracted via {doc.extraction_method}{doc.ocr_applied ? ' + OCR' : ''}
       </div>
 

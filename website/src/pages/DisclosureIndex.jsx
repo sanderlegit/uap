@@ -117,20 +117,26 @@ function DimensionCard({ dim }) {
   const total = dim.milestones.length
 
   return (
-    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
+    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all">
       <button
         onClick={() => setOpen(o => !o)}
         className="w-full text-left p-4 cursor-pointer hover:bg-slate-800/50 transition-colors"
       >
         <div className="flex items-start justify-between gap-3 mb-2">
           <h3 className="text-sm font-semibold text-slate-200 leading-snug">{dim.name}</h3>
-          <span className="text-lg font-bold text-indigo-400 tabular-nums flex-shrink-0">
+          <span className="text-lg font-bold tabular-nums flex-shrink-0" style={{ color: dim.score >= 60 ? '#22c55e' : dim.score >= 30 ? '#f59e0b' : '#ef4444' }}>
             {dim.score}
           </span>
         </div>
 
-        {/* progress bar */}
-        <div className={`h-2 rounded-full ${barTrack(dim.score)} overflow-hidden`}>
+        <div
+          className={`h-2 rounded-full ${barTrack(dim.score)} overflow-hidden`}
+          role="progressbar"
+          aria-valuenow={dim.score}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`${dim.name}: ${dim.score}%`}
+        >
           <div
             className={`h-full rounded-full ${barColor(dim.score)} transition-all duration-1000`}
             style={{ width: `${dim.score}%` }}
@@ -320,7 +326,7 @@ export default function DisclosureIndex() {
             {dimensions.map(d => (
               <span key={d.id}>
                 {d.name}: <span className="text-slate-400 font-medium">{d.score}</span>
-                <span className="text-slate-600 ml-0.5">({(d.weight * 100).toFixed(0)}%)</span>
+                <span className="text-slate-500 ml-0.5">({(d.weight * 100).toFixed(0)}%)</span>
               </span>
             ))}
           </div>

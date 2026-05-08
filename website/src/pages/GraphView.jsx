@@ -132,7 +132,7 @@ export default function GraphView() {
             'text-max-width': 120,
             color: '#e2e8f0',
             'text-outline-color': '#0f172a',
-            'text-outline-width': 2,
+            'text-outline-width': 3,
             'text-valign': 'bottom',
             'text-margin-y': 5,
             shape: 'ellipse',
@@ -146,9 +146,9 @@ export default function GraphView() {
         {
           selector: 'edge',
           style: {
-            'line-color': '#475569',
+            'line-color': '#64748b',
             width: 'mapData(weight, 1, 10, 1, 4)',
-            opacity: 0.45,
+            opacity: 0.5,
             'curve-style': 'bezier',
           },
         },
@@ -313,9 +313,12 @@ export default function GraphView() {
 
       {/* Zoom controls */}
       <div className="absolute bottom-6 right-3 z-10 flex flex-col gap-1.5">
-        <button onClick={handleFit} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm flex items-center justify-center cursor-pointer" title="Fit all">⊡</button>
-        <button onClick={handleZoomIn} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom in">+</button>
-        <button onClick={handleZoomOut} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom out">&minus;</button>
+        <button onClick={handleFit} className="bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-xs font-medium flex items-center gap-1.5 px-3 py-2 cursor-pointer" title="Fit all" aria-label="Fit graph to screen">
+          <span className="text-sm">⊡</span>
+          <span className="hidden sm:inline">Reset</span>
+        </button>
+        <button onClick={handleZoomIn} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom in" aria-label="Zoom in">+</button>
+        <button onClick={handleZoomOut} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom out" aria-label="Zoom out">&minus;</button>
       </div>
 
       {/* Selected node panel */}

@@ -202,7 +202,7 @@ export default function Documents() {
             <Link
               key={doc.id}
               to={`/documents/${doc.id}`}
-              className="block bg-slate-800/60 border border-slate-700/50 rounded-lg p-4 hover:border-slate-600 hover:bg-slate-800/80 transition-all group"
+              className="block bg-slate-800/60 border border-slate-700/50 rounded-lg p-4 hover:border-slate-600 hover:bg-slate-800/80 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
             >
               <h2 className="text-sm font-semibold text-slate-200 group-hover:text-primary-light transition-colors mb-2 line-clamp-2">
                 {doc.title}

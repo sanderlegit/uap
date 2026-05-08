@@ -37,7 +37,7 @@ function PopularityBar({ label, value, color }) {
 
 function TheoryCard({ theory, isExpanded, onToggle }) {
   return (
-    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
+    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all">
       <button
         onClick={onToggle}
         className="w-full text-left p-4 cursor-pointer hover:bg-slate-800/40 transition-colors"
@@ -51,7 +51,7 @@ function TheoryCard({ theory, isExpanded, onToggle }) {
           </span>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm font-semibold text-slate-200">{theory.name}</h3>
-            <p className="text-xs text-slate-400 mt-0.5">{theory.short}</p>
+            <p className="text-xs text-slate-400 mt-0.5 line-clamp-2">{theory.short}</p>
             <div className="mt-2.5 space-y-1">
               <PopularityBar label="Popularity" value={theory.popularity} color={theory.color} />
               <PopularityBar label="Sci. support" value={theory.scientific_support} color={theory.color} />
@@ -247,7 +247,7 @@ export default function Theories() {
         {/* Header */}
         <h1 className="text-xl font-bold text-slate-100 mb-2">UAP Origin Theories</h1>
         <p className="text-sm text-slate-400 leading-relaxed mb-1">{data.overview}</p>
-        <p className="text-xs text-slate-600 mb-8">
+        <p className="text-xs text-slate-500 mb-8">
           Last updated {data.last_updated} &middot;{' '}
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
             Back to dashboard

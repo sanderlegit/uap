@@ -73,11 +73,11 @@ export default function Pulse() {
           News feed and public awareness tracking. Monitoring the social, political, and scientific
           momentum around UAP disclosure.
         </p>
-        <p className="text-xs text-slate-600 mb-8">
-          <span className="text-amber-500/60 bg-amber-500/5 border border-amber-500/20 rounded px-1.5 py-0.5 text-[10px] font-mono">STUB</span>
-          {' '}Demo content — live data integration planned &middot;{' '}
-          <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Dashboard</Link>
-        </p>
+        <div className="mb-8 bg-amber-500/5 border border-amber-500/20 rounded-lg px-4 py-2.5 flex items-center gap-2.5">
+          <span className="text-amber-500 text-sm">&#9888;</span>
+          <span className="text-xs text-amber-400/80">Demo content — live data integration planned</span>
+          <Link to="/" className="ml-auto text-xs text-slate-500 hover:text-slate-300 transition-colors">Dashboard &rarr;</Link>
+        </div>
 
         {/* Social Awareness Gauge */}
         <section className="mb-10">
@@ -100,9 +100,16 @@ export default function Pulse() {
                 <div key={i}>
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-xs text-slate-300">{ind.label}</span>
-                    <span className="text-xs text-slate-400 tabular-nums">{ind.value}%</span>
+                    <span className="text-xs tabular-nums font-medium" style={{ color: ind.value >= 65 ? '#22c55e' : ind.value >= 40 ? '#f59e0b' : '#ef4444' }}>{ind.value}%</span>
                   </div>
-                  <div className="h-2 rounded-full bg-slate-800 overflow-hidden mb-1">
+                  <div
+                    className="h-2 rounded-full bg-slate-800 overflow-hidden mb-1"
+                    role="progressbar"
+                    aria-valuenow={ind.value}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-label={`${ind.label}: ${ind.value}%`}
+                  >
                     <div
                       className={`h-full rounded-full ${barColor(ind.value)} transition-all duration-1000`}
                       style={{ width: `${ind.value}%` }}
@@ -122,13 +129,14 @@ export default function Pulse() {
             {DEMO_NEWS.map((item, i) => (
               <div
                 key={i}
-                className={`bg-slate-900 border border-slate-700/50 rounded-lg p-4 border-l-2 ${TYPE_COLORS[item.type] || ''}`}
+                className={`bg-slate-900 border border-slate-700/50 rounded-lg p-4 border-l-2 ${TYPE_COLORS[item.type] || ''} hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all`}
               >
-                <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-[10px] text-slate-500 font-mono tabular-nums">{item.date}</span>
-                  <span className="text-[10px] text-indigo-400 bg-indigo-500/10 rounded px-1.5 py-0.5">{item.source}</span>
+                <div className="flex items-center gap-2 mb-2">
+                  <time className="text-[10px] text-slate-500 font-mono tabular-nums">{item.date}</time>
+                  <span className="text-[10px] font-medium text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded px-2 py-0.5">{item.source}</span>
+                  <span className="text-[10px] text-slate-500 font-mono uppercase tracking-wider">{item.type}</span>
                 </div>
-                <h3 className="text-sm font-semibold text-slate-200 mb-1">{item.title}</h3>
+                <h3 className="text-sm font-semibold text-slate-200 mb-1.5">{item.title}</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">{item.summary}</p>
               </div>
             ))}

@@ -16,7 +16,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
   const color = CATEGORY_COLORS[c.category] || '#6b7280'
 
   return (
-    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
+    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all">
       <button
         onClick={onToggle}
         className="w-full text-left p-4 cursor-pointer hover:bg-slate-800/40 transition-colors"
@@ -41,7 +41,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
               </span>
               <span className="text-[10px] text-slate-500">{c.location}</span>
             </div>
-            <p className="text-xs text-slate-400 leading-relaxed">{c.summary}</p>
+            <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">{c.summary}</p>
           </div>
         </div>
       </button>
@@ -144,7 +144,7 @@ export default function Cases() {
       <div className="max-w-3xl mx-auto px-4 pt-8 sm:pt-12">
         <h1 className="text-xl font-bold text-slate-100 mb-2">High-Validity UAP Cases</h1>
         <p className="text-sm text-slate-400 leading-relaxed mb-1">{data.overview}</p>
-        <p className="text-xs text-slate-600 mb-6">
+        <p className="text-xs text-slate-500 mb-6">
           {data.cases.length} cases &middot; Last updated {data.last_updated} &middot;{' '}
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Dashboard</Link>
           {' '}&middot;{' '}

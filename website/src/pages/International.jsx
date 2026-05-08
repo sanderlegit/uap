@@ -14,7 +14,7 @@ function CountryCard({ country, isExpanded, onToggle }) {
   const status = STATUS_COLORS[country.status] || STATUS_COLORS.none
 
   return (
-    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
+    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all">
       <button
         onClick={onToggle}
         className="w-full text-left p-4 cursor-pointer hover:bg-slate-800/40 transition-colors"
@@ -150,7 +150,7 @@ export default function International() {
       <div className="max-w-3xl mx-auto px-4 pt-8 sm:pt-12">
         <h1 className="text-xl font-bold text-slate-100 mb-2">International UAP Programs</h1>
         <p className="text-sm text-slate-400 leading-relaxed mb-1">{data.overview}</p>
-        <p className="text-xs text-slate-600 mb-6">
+        <p className="text-xs text-slate-500 mb-6">
           {data.countries.length} countries &middot; Last updated {data.last_updated} &middot;{' '}
           <Link to="/" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Dashboard</Link>
         </p>
