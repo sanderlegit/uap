@@ -110,7 +110,7 @@ const agencyMeta = {
 const navLinks = [
   { to: '/map',             label: 'Map',           icon: '◎', desc: 'Incident locations worldwide' },
   { to: '/timeline',        label: 'Timeline',      icon: '━', desc: 'Documents across eight decades' },
-  { to: '/graph',           label: 'Graph',         icon: '⬡', desc: 'Cross-reference network' },
+  { to: '/graph',           label: 'Graph',         icon: '◈', desc: 'Program structure & cross-references' },
   { to: '/search',          label: 'Search',        icon: '⌕', desc: 'Full-text across all files' },
   { to: '/analysis/report', label: 'Analysis',      icon: '◫', desc: 'Deep dives & detailed reports' },
   { to: '/disclosure',      label: 'Disclosure',    icon: '≡', desc: 'Disclosure progress index' },
@@ -344,7 +344,7 @@ export default function Dashboard() {
           {/* CTA badges */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-5 sm:mt-6">
             <Link
-              to="/web"
+              to="/graph"
               className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 transition-colors group"
             >
               <span className="w-2 h-2 rounded-full bg-amber-500 group-hover:shadow-[0_0_8px_rgba(245,158,11,0.5)] transition-shadow animate-pulse" />

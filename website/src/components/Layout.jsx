@@ -6,11 +6,10 @@ import { useExplorationTrail } from '../hooks/useExplorationTrail'
 
 const primaryNav = [
   { to: '/', label: 'Dashboard', icon: '◉' },
-  { to: '/web', label: 'The Web', icon: '◈' },
+  { to: '/graph', label: 'Graph', icon: '◈' },
   { to: '/documents', label: 'Documents', icon: '◫' },
   { to: '/map', label: 'Map', icon: '◎' },
   { to: '/timeline', label: 'Timeline', icon: '━' },
-  { to: '/graph', label: 'Graph', icon: '⬡' },
   { to: '/search', label: 'Search', icon: '⌕' },
 ]
 
@@ -24,11 +23,10 @@ const insightsNav = [
 ]
 
 const breadcrumbMeta = {
-  '/web': { label: 'The Web', hint: 'How 129 declassified documents connect to the alleged Legacy Program structure.' },
+  '/graph': { label: 'Graph', hint: 'Legacy Program structure and document cross-references in one network.' },
   '/documents': { label: 'Documents', hint: 'Browse all 129 declassified files by agency, date, or topic.' },
   '/map': { label: 'Map', hint: 'Incident locations plotted from document coordinates worldwide.' },
   '/timeline': { label: 'Timeline', hint: '99 dated documents spanning 1945 to present.' },
-  '/graph': { label: 'Graph', hint: 'Visualizing connections between 129 documents across 4 agencies.' },
   '/search': { label: 'Search', hint: 'Full-text search across all declassified document content.' },
   '/disclosure': { label: 'Disclosure Index', hint: 'A composite measure of how much the government has officially acknowledged about UAP.' },
   '/theories': { label: 'Theories', hint: 'Competing hypotheses for what these documents describe.' },

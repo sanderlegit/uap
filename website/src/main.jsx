@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import Layout from './components/Layout'
 import { ExplorationTrailProvider } from './hooks/useExplorationTrail'
@@ -10,7 +10,7 @@ const Documents = lazy(() => import('./pages/Documents'))
 const DocumentDetail = lazy(() => import('./pages/DocumentDetail'))
 const MapView = lazy(() => import('./pages/MapView'))
 const Timeline = lazy(() => import('./pages/Timeline'))
-const GraphView = lazy(() => import('./pages/GraphView'))
+const Graph = lazy(() => import('./pages/LegacyWeb'))
 const Search = lazy(() => import('./pages/Search'))
 const Analysis = lazy(() => import('./pages/Analysis'))
 const DisclosureIndex = lazy(() => import('./pages/DisclosureIndex'))
@@ -19,7 +19,6 @@ const Cases = lazy(() => import('./pages/Cases'))
 const International = lazy(() => import('./pages/International'))
 const Entities = lazy(() => import('./pages/Entities'))
 const Pulse = lazy(() => import('./pages/Pulse'))
-const LegacyWeb = lazy(() => import('./pages/LegacyWeb'))
 
 function Loading() {
   return (
@@ -37,12 +36,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Routes>
             <Route element={<Layout />}>
               <Route index element={<Dashboard />} />
-              <Route path="web" element={<LegacyWeb />} />
+              <Route path="graph" element={<Graph />} />
+              <Route path="web" element={<Navigate to="/graph" replace />} />
               <Route path="documents" element={<Documents />} />
               <Route path="documents/:id" element={<DocumentDetail />} />
               <Route path="map" element={<MapView />} />
               <Route path="timeline" element={<Timeline />} />
-              <Route path="graph" element={<GraphView />} />
               <Route path="search" element={<Search />} />
               <Route path="analysis/:section" element={<Analysis />} />
               <Route path="disclosure" element={<DisclosureIndex />} />
