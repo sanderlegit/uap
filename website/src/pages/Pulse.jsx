@@ -138,7 +138,7 @@ export default function Pulse() {
               >
                 <div className="flex items-center gap-2 mb-2">
                   <time className="text-[10px] text-slate-500 font-mono tabular-nums">{item.date}</time>
-                  <span className="text-[10px] font-medium text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded px-2 py-0.5">{item.source}</span>
+                  <span className="text-[11px] font-medium text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded px-2.5 py-1">{item.source}</span>
                   <span className="text-[10px] text-slate-500 font-mono uppercase tracking-wider">{item.type}</span>
                 </div>
                 <h3 className="text-sm font-semibold text-slate-200 mb-1.5">{item.title}</h3>
@@ -153,7 +153,7 @@ export default function Pulse() {
             <p className="text-xs text-slate-500 mb-2">Planned integrations</p>
             <div className="flex flex-wrap justify-center gap-2">
               {['RSS/News Aggregation', 'Reddit/X Monitoring', 'Congressional Alert Feed', 'AARO Update Tracker', 'Podcast New Episodes'].map((s, i) => (
-                <span key={i} className="text-[10px] px-2 py-1 rounded bg-slate-800/60 text-slate-500 border border-slate-700/30">
+                <span key={i} className="text-[11px] px-2.5 py-1.5 rounded bg-slate-800/60 text-slate-500 border border-slate-700/30">
                   {s}
                 </span>
               ))}

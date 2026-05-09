@@ -180,7 +180,7 @@ function DimensionCard({ dim }) {
                   {' '}
                   <Link
                     to={`/search?q=${encodeURIComponent(m.label.split(/[\s:,]+/).find(w => w.length > 4 && !/^(their|these|those|about|which|under|after|being|would|could|still)$/i.test(w)) || m.label.split(/\s+/)[0])}`}
-                    className="text-blue-400 hover:text-blue-300 text-[10px]"
+                    className="text-blue-400 hover:text-blue-300 text-[11px] py-1 inline-block"
                   >
                     Search docs →
                   </Link>

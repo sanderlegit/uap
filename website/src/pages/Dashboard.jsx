@@ -698,7 +698,7 @@ export default function Dashboard() {
                           href={src.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[10px] font-mono text-amber-500/60 hover:text-amber-400 border border-amber-500/20 hover:border-amber-500/40 rounded px-2 py-0.5 transition-colors truncate max-w-[180px]"
+                          className="text-[11px] font-mono text-amber-500/60 hover:text-amber-400 border border-amber-500/20 hover:border-amber-500/40 rounded px-2.5 py-1 transition-colors truncate max-w-[180px]"
                         >
                           {src.title}
                         </a>
@@ -752,7 +752,7 @@ export default function Dashboard() {
             </p>
             <div className="flex flex-wrap gap-1.5">
               {theories.gerb_framework.three_layers.map((l, i) => (
-                <span key={i} className="text-[10px] font-mono text-slate-400 bg-slate-800/60 rounded px-2 py-0.5 border border-slate-700/30">
+                <span key={i} className="text-[11px] font-mono text-slate-400 bg-slate-800/60 rounded px-2.5 py-1 border border-slate-700/30">
                   {l.name}
                 </span>
               ))}
@@ -811,7 +811,7 @@ export default function Dashboard() {
                 <div className="text-sm font-bold text-slate-200 group-hover:text-amber-300 transition-colors mb-1">
                   {src.name}
                 </div>
-                <span className="text-[10px] text-slate-600 bg-slate-800 rounded px-1.5 py-0.5 mb-2 inline-block">{src.type}</span>
+                <span className="text-[11px] text-slate-600 bg-slate-800 rounded px-2 py-0.5 mb-2 inline-block">{src.type}</span>
                 <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2 mt-1">{src.description}</p>
                 {src.stats_2025 && (
                   <div className="mt-2 text-[10px] text-amber-500/70 font-mono">

@@ -75,7 +75,7 @@ function TheoryCard({ theory, isExpanded, onToggle }) {
             <h4 className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Key Proponents</h4>
             <div className="flex flex-wrap gap-1.5">
               {theory.key_proponents.map((p, i) => (
-                <span key={i} className="px-2 py-0.5 rounded text-[11px] bg-slate-800 text-slate-300">{p}</span>
+                <span key={i} className="px-2.5 py-1 rounded text-[11px] bg-slate-800 text-slate-300">{p}</span>
               ))}
             </div>
           </div>
@@ -325,7 +325,7 @@ export default function Theories() {
             <select
               value={sortBy}
               onChange={e => setSortBy(e.target.value)}
-              className="text-xs bg-slate-800 border border-slate-700 rounded px-2 py-1 text-slate-300"
+              className="text-xs bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-slate-300"
             >
               <option value="popularity">Sort: Popularity</option>
               <option value="scientific">Sort: Scientific Support</option>

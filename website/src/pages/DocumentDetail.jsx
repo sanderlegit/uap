@@ -24,7 +24,7 @@ const AGENCY_SHORT = {
 function Badge({ children, color }) {
   return (
     <span
-      className="inline-block px-2 py-0.5 rounded text-[11px] font-medium"
+      className="inline-block px-2.5 py-1 rounded text-[11px] font-medium"
       style={{
         backgroundColor: color ? `${color}20` : 'rgba(100,116,139,0.2)',
         color: color || '#94a3b8',
@@ -180,11 +180,11 @@ export default function DocumentDetail() {
           {doc.incident_location && doc.incident_location !== 'N/A' && (
             <span className="text-sm text-slate-500">{doc.incident_location}</span>
           )}
-          <span className="text-xs text-slate-500 bg-slate-800 rounded px-2 py-0.5">
+          <span className="text-xs text-slate-500 bg-slate-800 rounded px-2.5 py-1">
             {doc.total_pages} {doc.total_pages === 1 ? 'page' : 'pages'}
           </span>
           {hasRedaction && (
-            <span className="flex items-center gap-1 text-xs text-red-400 bg-red-500/10 rounded px-2 py-0.5">
+            <span className="flex items-center gap-1 text-xs text-red-400 bg-red-500/10 rounded px-2.5 py-1">
               <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
               Redacted
             </span>
@@ -196,19 +196,19 @@ export default function DocumentDetail() {
       <div className="flex flex-wrap items-center gap-2 mb-6 text-xs">
         <span className="text-slate-500">Explore in:</span>
         {doc.incident_date_parsed && (
-          <Link to={`/timeline?doc=${doc.id}${doc.decade ? `&decade=${doc.decade}` : ''}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          <Link to={`/timeline?doc=${doc.id}${doc.decade ? `&decade=${doc.decade}` : ''}`} className="px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
             Timeline
           </Link>
         )}
-        <Link to={`/graph?node=${doc.id}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+        <Link to={`/graph?node=${doc.id}`} className="px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
           Network Graph
         </Link>
         {doc.incident_location && doc.incident_location !== 'N/A' && (
-          <Link to={`/map?${doc.latitude != null && doc.longitude != null ? `lat=${doc.latitude}&lng=${doc.longitude}&zoom=10&` : ''}doc=${doc.id}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          <Link to={`/map?${doc.latitude != null && doc.longitude != null ? `lat=${doc.latitude}&lng=${doc.longitude}&zoom=10&` : ''}doc=${doc.id}`} className="px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
             Map
           </Link>
         )}
-        <Link to={`/search?q=${encodeURIComponent(doc.title.split(',')[0].trim())}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+        <Link to={`/search?q=${encodeURIComponent(doc.title.split(',')[0].trim())}`} className="px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
           Search
         </Link>
       </div>
@@ -412,7 +412,7 @@ export default function DocumentDetail() {
         {prevId != null ? (
           <button
             onClick={() => navigate(`/documents/${prevId}`)}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer py-2 px-3"
           >
             <span>&larr;</span>
             <span>Previous</span>
@@ -420,13 +420,13 @@ export default function DocumentDetail() {
         ) : (
           <div />
         )}
-        <Link to="/documents" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">
+        <Link to="/documents" className="text-xs text-slate-500 hover:text-slate-300 transition-colors py-2 px-3">
           All documents
         </Link>
         {nextId != null ? (
           <button
             onClick={() => navigate(`/documents/${nextId}`)}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer"
+            className="flex items-center gap-2 text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer py-2 px-3"
           >
             <span>Next</span>
             <span>&rarr;</span>

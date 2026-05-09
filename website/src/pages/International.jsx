@@ -32,7 +32,7 @@ function CountryCard({ country, isExpanded, onToggle }) {
         {country.programs.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-2">
             {country.programs.map((p, i) => (
-              <span key={i} className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/60 text-slate-400 border border-slate-700/30">
+              <span key={i} className="text-[11px] px-2 py-1 rounded bg-slate-800/60 text-slate-400 border border-slate-700/30">
                 {p.name} ({p.years})
               </span>
             ))}
@@ -207,7 +207,7 @@ export default function International() {
           <p className="text-xs text-slate-400 leading-relaxed mb-3">{data.five_eyes.description}</p>
           <div className="flex flex-wrap gap-1.5 mb-3">
             {data.five_eyes.members.map((m, i) => (
-              <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
+              <span key={i} className="text-[11px] px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
                 {m}
               </span>
             ))}
@@ -232,7 +232,7 @@ export default function International() {
               <button
                 key={s}
                 onClick={() => setStatusFilter(s)}
-                className={`text-[10px] px-2 py-1 rounded border cursor-pointer transition-colors ${
+                className={`text-[11px] px-2.5 py-1.5 rounded border cursor-pointer transition-colors ${
                   statusFilter === s
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-400'
                     : 'border-slate-700/40 text-slate-500 hover:text-slate-300'

@@ -184,7 +184,7 @@ export default function Timeline() {
               <button
                 key={a.key}
                 onClick={() => toggleAgency(a.key)}
-                className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors cursor-pointer ${
+                className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors cursor-pointer ${
                   active ? 'border-transparent text-white' : 'border-slate-700 text-slate-400 hover:text-slate-200 hover:border-slate-600'
                 }`}
                 style={active ? { backgroundColor: agencyColor(a.key), borderColor: agencyColor(a.key) } : undefined}
@@ -196,12 +196,12 @@ export default function Timeline() {
         </div>
 
         <div className="flex flex-wrap gap-1.5">
-          <span className="text-[10px] text-slate-500 self-center mr-1">Jump to:</span>
+          <span className="text-[11px] text-slate-500 self-center mr-1">Jump to:</span>
           {DECADES.map(d => (
             <button
               key={d}
               onClick={() => scrollToDecade(d)}
-              className="px-2.5 py-1 rounded text-xs font-medium text-slate-500 hover:text-slate-200 hover:bg-slate-800 transition-colors cursor-pointer"
+              className="px-2.5 py-1.5 rounded text-xs font-medium text-slate-500 hover:text-slate-200 hover:bg-slate-800 transition-colors cursor-pointer"
             >
               {d}
             </button>
@@ -320,9 +320,9 @@ export default function Timeline() {
                   )}
                 </div>
                 {selectedDoc.behaviors?.length > 0 && (
-                  <div className="flex flex-wrap gap-1 mb-2">
+                  <div className="flex flex-wrap gap-1.5 mb-2">
                     {selectedDoc.behaviors.slice(0, 5).map(b => (
-                      <span key={b} className="text-[10px] bg-slate-800 text-slate-400 px-1.5 py-0.5 rounded">{b}</span>
+                      <span key={b} className="text-[11px] bg-slate-800 text-slate-400 px-2 py-1 rounded">{b}</span>
                     ))}
                   </div>
                 )}
@@ -330,7 +330,7 @@ export default function Timeline() {
                   View Document &rarr;
                 </Link>
               </div>
-              <button onClick={() => setSelectedDoc(null)} className="text-slate-500 hover:text-slate-300 p-1 cursor-pointer text-lg leading-none">&times;</button>
+              <button onClick={() => setSelectedDoc(null)} className="text-slate-500 hover:text-slate-300 w-10 h-10 flex items-center justify-center cursor-pointer text-lg leading-none shrink-0">&times;</button>
             </div>
           </div>
         </div>

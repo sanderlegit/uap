@@ -65,7 +65,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
             <h4 className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">Evidence Types</h4>
             <div className="flex flex-wrap gap-1.5">
               {c.evidence_types.map((e, i) => (
-                <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700/30">
+                <span key={i} className="text-[11px] px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700/30">
                   {e}
                 </span>
               ))}
@@ -76,7 +76,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
             <h4 className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">Key Figures</h4>
             <div className="flex flex-wrap gap-1.5">
               {c.key_figures.map((f, i) => (
-                <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span key={i} className="text-[11px] px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                   {f}
                 </span>
               ))}
@@ -92,7 +92,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
                   <Link
                     key={docId}
                     to={`/documents/${docId}`}
-                    className="text-[11px] px-2 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/30 transition-colors"
+                    className="text-[11px] px-2.5 py-1.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/30 transition-colors"
                   >
                     Doc #{docId} →
                   </Link>
@@ -100,7 +100,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
                 {CASE_DOC_IDS[c.id].length > 6 && (
                   <Link
                     to={`/search?q=${encodeURIComponent(c.name)}`}
-                    className="text-[11px] px-2 py-1 rounded bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors"
+                    className="text-[11px] px-2.5 py-1.5 rounded bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors"
                   >
                     +{CASE_DOC_IDS[c.id].length - 6} more
                   </Link>
@@ -230,7 +230,7 @@ export default function Cases() {
         <div className="flex flex-wrap gap-1.5 mb-4">
           <button
             onClick={() => setFilter('all')}
-            className={`text-[10px] px-2 py-1 rounded border cursor-pointer transition-colors ${
+            className={`text-[11px] px-2.5 py-1.5 rounded border cursor-pointer transition-colors ${
               filter === 'all'
                 ? 'border-amber-500/40 bg-amber-500/10 text-amber-400'
                 : 'border-slate-700/40 text-slate-500 hover:text-slate-300'
@@ -245,7 +245,7 @@ export default function Cases() {
               <button
                 key={key}
                 onClick={() => setFilter(filter === key ? 'all' : key)}
-                className={`text-[10px] px-2 py-1 rounded border cursor-pointer transition-colors ${
+                className={`text-[11px] px-2.5 py-1.5 rounded border cursor-pointer transition-colors ${
                   filter === key
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-400'
                     : 'border-slate-700/40 text-slate-500 hover:text-slate-300'
@@ -263,7 +263,7 @@ export default function Cases() {
           <select
             value={sortBy}
             onChange={e => setSortBy(e.target.value)}
-            className="text-xs bg-slate-800 border border-slate-700 rounded px-2 py-1 text-slate-300"
+            className="text-xs bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-slate-300"
           >
             <option value="year_desc">Newest First</option>
             <option value="year_asc">Oldest First</option>

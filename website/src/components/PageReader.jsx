@@ -183,11 +183,11 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                   page {num}
                   {isRedacted && <span className="text-red-400 ml-2">contains redactions</span>}
                 </span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
                   {pageText && (
                     <button
                       onClick={() => toggleText(num)}
-                      className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors cursor-pointer"
+                      className="text-[11px] text-slate-500 hover:text-slate-300 transition-colors cursor-pointer px-2 py-1.5"
                     >
                       {textShown ? 'hide text' : 'show text'}
                     </button>
@@ -195,7 +195,7 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                   {hasImage && (
                     <button
                       onClick={() => setLightboxPage(num)}
-                      className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors cursor-pointer"
+                      className="text-[11px] text-slate-500 hover:text-slate-300 transition-colors cursor-pointer px-2 py-1.5"
                     >
                       zoom
                     </button>

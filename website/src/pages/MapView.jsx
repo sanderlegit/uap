@@ -237,7 +237,7 @@ export default function MapView() {
   if (!docs) return <Spinner />
 
   return (
-    <div className="relative h-[calc(100dvh-7.5rem)] flex">
+    <div className="relative h-[calc(100dvh-7.5rem-3.5rem)] md:h-[calc(100dvh-7.5rem)] flex">
       {/* Map */}
       <div className="flex-1 relative">
         <MapContainer
@@ -307,9 +307,9 @@ export default function MapView() {
           </div>
           <p className="text-[10px] text-slate-500 mt-2">{geolocated.length} of {docs.length} mapped</p>
           <div className="flex gap-2 mt-2 pt-2 border-t border-slate-700/40">
-            <Link to={`/timeline${selectedDocId ? `?doc=${selectedDocId}` : ''}`} className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Timeline</Link>
-            <Link to={`/graph${selectedDocId ? `?node=${selectedDocId}` : ''}`} className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Graph</Link>
-            <Link to="/documents" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">All Docs</Link>
+            <Link to={`/timeline${selectedDocId ? `?doc=${selectedDocId}` : ''}`} className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">Timeline</Link>
+            <Link to={`/graph${selectedDocId ? `?node=${selectedDocId}` : ''}`} className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">Graph</Link>
+            <Link to="/documents" className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">All Docs</Link>
           </div>
         </div>
 
@@ -334,7 +334,7 @@ export default function MapView() {
         <div className="md:hidden absolute inset-x-0 bottom-0 z-[1001] h-[60vh] rounded-t-xl overflow-hidden shadow-2xl">
           <div className="flex items-center justify-between px-4 py-2 bg-[#070b14] border-b border-slate-800/60">
             <span className="text-xs font-semibold text-purple-400">Space Encounters</span>
-            <button onClick={() => setMobileSpaceOpen(false)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-lg leading-none">&times;</button>
+            <button onClick={() => setMobileSpaceOpen(false)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-lg leading-none w-10 h-10 flex items-center justify-center">&times;</button>
           </div>
           <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} />
         </div>

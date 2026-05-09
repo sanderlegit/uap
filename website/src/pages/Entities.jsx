@@ -73,7 +73,7 @@ function EntityCard({ entity, docs }) {
             <h2 className="text-sm font-semibold text-slate-200 mb-2">{entity.name}</h2>
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <span
-                className="inline-block px-2 py-0.5 rounded text-[11px] font-medium"
+                className="inline-block px-2.5 py-1 rounded text-[11px] font-medium"
                 style={{ backgroundColor: `${color}20`, color }}
               >
                 {entity.type}
@@ -109,14 +109,14 @@ function EntityCard({ entity, docs }) {
           <div className="flex flex-wrap gap-2 mb-3 text-xs">
             <Link
               to={`/graph?search=${encodeURIComponent(entity.name)}`}
-              className="px-2.5 py-1 rounded bg-slate-700/50 text-slate-400 hover:text-slate-200 hover:bg-slate-700 transition-colors"
+              className="px-3 py-1.5 rounded bg-slate-700/50 text-slate-400 hover:text-slate-200 hover:bg-slate-700 transition-colors"
             >
               View on Graph
             </Link>
             {decades.length > 0 && (
               <Link
                 to={`/timeline?decade=${decades[0]}`}
-                className="px-2.5 py-1 rounded bg-slate-700/50 text-slate-400 hover:text-slate-200 hover:bg-slate-700 transition-colors"
+                className="px-3 py-1.5 rounded bg-slate-700/50 text-slate-400 hover:text-slate-200 hover:bg-slate-700 transition-colors"
               >
                 View on Timeline
               </Link>
@@ -140,7 +140,7 @@ function EntityCard({ entity, docs }) {
                   className="flex items-center gap-2 py-1.5 px-2 -mx-2 rounded hover:bg-slate-700/30 transition-colors group"
                 >
                   <span
-                    className="text-[10px] font-medium px-1.5 py-0.5 rounded shrink-0"
+                    className="text-[11px] font-medium px-2 py-0.5 rounded shrink-0"
                     style={{
                       backgroundColor: `${agencyColor(doc.agency)}20`,
                       color: agencyColor(doc.agency),
@@ -243,7 +243,7 @@ export default function Entities() {
               <button
                 key={t}
                 onClick={() => setFilter('type', type === t ? '' : t)}
-                className={`px-2.5 py-1 rounded text-xs font-medium transition-colors ${
+                className={`px-2.5 py-1.5 rounded text-xs font-medium transition-colors ${
                   type === t
                     ? 'text-white'
                     : 'bg-slate-700/50 text-slate-400 hover:text-slate-200'

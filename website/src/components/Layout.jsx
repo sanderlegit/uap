@@ -62,11 +62,11 @@ function Breadcrumb() {
 
   return (
     <div className="bg-slate-900/60 border-b border-slate-800/50">
-      <div className="max-w-6xl mx-auto px-4 py-2 flex items-center gap-2 flex-wrap">
+      <div className="max-w-6xl mx-auto px-4 py-1 flex items-center gap-2 flex-wrap">
         {crumbs.map((c, i) => (
           <span key={c.to} className="flex items-center gap-2">
             {i > 0 && <span className="text-slate-600 text-xs">/</span>}
-            <Link to={c.to} className="text-xs text-slate-500 hover:text-slate-300 transition-colors">{c.label}</Link>
+            <Link to={c.to} className="text-xs text-slate-500 hover:text-slate-300 transition-colors py-1.5">{c.label}</Link>
           </span>
         ))}
         {current && (
@@ -117,7 +117,7 @@ function ExplorationTrail() {
             <Link
               key={`${item.type}:${item.id}`}
               to={item.path}
-              className="flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800 border border-slate-600/40 text-slate-400 hover:text-slate-200 hover:border-slate-500 transition-colors shrink-0 text-xs"
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded bg-slate-800 border border-slate-600/40 text-slate-400 hover:text-slate-200 hover:border-slate-500 transition-colors shrink-0 text-xs"
             >
               <TypeIcon type={item.type} />
               <span>{item.title.length > 25 ? item.title.slice(0, 25) + '...' : item.title}</span>
@@ -126,10 +126,10 @@ function ExplorationTrail() {
         </div>
         <button
           onClick={clearTrail}
-          className="text-slate-500 hover:text-slate-300 transition-colors shrink-0 text-xs px-1 cursor-pointer"
+          className="text-slate-500 hover:text-slate-300 transition-colors shrink-0 text-xs w-8 h-8 flex items-center justify-center cursor-pointer"
           title="Clear recent trail"
         >
-          x
+          &times;
         </button>
       </div>
     </div>
@@ -242,14 +242,14 @@ export default function Layout() {
       {location.pathname === '/' && <WelcomeBanner />}
       <Breadcrumb />
       <ExplorationTrail />
-      <main className="flex-1">
+      <main className="flex-1 pb-16 md:pb-0">
         <Outlet />
       </main>
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 safe-area-pb">
         <div className="flex justify-around items-center h-14 px-2">
           {primaryNav.map(n => (
             <NavLink key={n.to} to={n.to} end={n.to === '/'}
-              className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-1 ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+              className={({isActive}) => `flex flex-col items-center gap-0.5 px-3 py-2 min-w-[44px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
               <span className="text-base">{n.icon}</span>
               <span className="text-[10px]">{n.label}</span>
             </NavLink>
