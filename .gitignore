@@ -28,3 +28,10 @@ __pycache__/
 # Website build artifacts
 website/node_modules/
 website/dist/
+/node_modules
+/.vite/deps
+
+# Root-level tooling (Playwright audit scripts)
+/audit/
+/package.json
+/package-lock.json
