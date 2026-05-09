@@ -80,9 +80,45 @@ export function useSearch() {
   }), [ready])
 }
 
+export function useThumbnailManifest() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/thumbnails/manifest.json').then(setData).catch(() => {}) }, [])
+  return data
+}
+
+export function usePageManifest() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/pages/manifest.json').then(setData).catch(() => {}) }, [])
+  return data
+}
+
+export function thumbUrl(docId) {
+  return `/data/thumbnails/${docId}_thumb.jpg`
+}
+
+export function coverUrl(docId) {
+  return `/data/thumbnails/${docId}_cover.jpg`
+}
+
+export function pageImageUrl(docId, pageNum) {
+  return `/data/pages/${docId}_p${pageNum}.jpg`
+}
+
 export function useResearch() {
   const [data, setData] = useState(null)
   useEffect(() => { fetchJSON('/data/research.json').then(setData) }, [])
+  return data
+}
+
+export function useInvestigations() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/investigations.json').then(setData) }, [])
+  return data
+}
+
+export function useEntities() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/entities.json').then(setData) }, [])
   return data
 }
 

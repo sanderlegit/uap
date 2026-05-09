@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { useDocuments, agencyClass, formatDate } from '../hooks/useData'
+import DocThumbnail from '../components/DocThumbnail'
 
 const AGENCIES = ['Department of War', 'FBI', 'NASA', 'Department of State']
 const AGENCY_SHORT = {
@@ -210,38 +211,41 @@ export default function Documents() {
             <Link
               key={doc.id}
               to={`/documents/${doc.id}`}
-              className="block bg-slate-800/60 border border-slate-700/50 rounded-lg p-4 hover:border-slate-600 hover:bg-slate-800/80 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
+              className="flex gap-4 bg-slate-800/60 border border-slate-700/50 rounded-lg p-4 hover:border-slate-600 hover:bg-slate-800/80 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
             >
-              <h2 className="text-sm font-semibold text-slate-200 group-hover:text-primary-light transition-colors mb-2 line-clamp-2">
-                {doc.title}
-              </h2>
-              <div className="flex flex-wrap items-center gap-2 mb-2.5">
-                <span className={`agency-badge ${agencyClass(doc.agency)}`}>
-                  {AGENCY_SHORT[doc.agency] || doc.agency}
-                </span>
-                <span className="text-xs text-slate-400">
-                  {formatDate(doc.incident_date_parsed)}
-                </span>
-                {doc.incident_location && (
-                  <span className="text-xs text-slate-500">{doc.incident_location}</span>
-                )}
-              </div>
-              <div className="flex flex-wrap items-center gap-3 text-[11px] text-slate-500 mb-2.5">
-                <span>{doc.total_pages} {doc.total_pages === 1 ? 'page' : 'pages'}</span>
-                <span>{doc.text_length?.toLocaleString()} chars</span>
-                {doc.has_redaction === 1 && (
-                  <span className="flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
-                    Redacted
+              <DocThumbnail docId={doc.id} size="md" />
+              <div className="min-w-0 flex-1">
+                <h2 className="text-sm font-semibold text-slate-200 group-hover:text-primary-light transition-colors mb-2 line-clamp-2">
+                  {doc.title}
+                </h2>
+                <div className="flex flex-wrap items-center gap-2 mb-2.5">
+                  <span className={`agency-badge ${agencyClass(doc.agency)}`}>
+                    {AGENCY_SHORT[doc.agency] || doc.agency}
                   </span>
-                )}
-                {doc.ocr_applied === 1 && (
-                  <span className="text-amber-600">OCR</span>
-                )}
+                  <span className="text-xs text-slate-400">
+                    {formatDate(doc.incident_date_parsed)}
+                  </span>
+                  {doc.incident_location && (
+                    <span className="text-xs text-slate-500">{doc.incident_location}</span>
+                  )}
+                </div>
+                <div className="flex flex-wrap items-center gap-3 text-[11px] text-slate-500 mb-2.5">
+                  <span>{doc.total_pages} {doc.total_pages === 1 ? 'page' : 'pages'}</span>
+                  <span>{doc.text_length?.toLocaleString()} chars</span>
+                  {doc.has_redaction === 1 && (
+                    <span className="flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-500 inline-block" />
+                      Redacted
+                    </span>
+                  )}
+                  {doc.ocr_applied === 1 && (
+                    <span className="text-amber-600">OCR</span>
+                  )}
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">
+                  {narratives?.[String(doc.id)]?.hook || doc.excerpt || ''}
+                </p>
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">
-                {narratives?.[String(doc.id)]?.hook || doc.excerpt || ''}
-              </p>
             </Link>
           ))}
         </div>

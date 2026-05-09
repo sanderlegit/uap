@@ -1,0 +1,77 @@
+[
+  {
+    "id": "fbi_case_file",
+    "title": "The FBI's 21-Year UFO File",
+    "hook": "The Bureau investigated UFOs from 1947 to 1968 and filled 2,622 pages they never expected you to read.",
+    "description": "Case file 62-HQ-83894 is the FBI's central headquarters file on unidentified flying objects, spanning 17 sections across two decades. It documents radar-confirmed sightings over nuclear installations, photographic evidence, and direct communications with J. Edgar Hoover's office. This newly released version contains fewer redactions than any previous public version.",
+    "entry_doc_id": 112,
+    "related_doc_ids": [113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 127, 128],
+    "view_links": [
+      {"label": "View on Timeline", "path": "/timeline?doc=112"},
+      {"label": "Explore Connections", "path": "/graph?node=112"},
+      {"label": "Browse All Sections", "path": "/documents?agency=FBI"}
+    ],
+    "category": "government_investigation",
+    "color": "#ef4444"
+  },
+  {
+    "id": "apollo_skylab",
+    "title": "What the Astronauts Saw",
+    "hook": "Buzz Aldrin tracked an object on the way to the moon. Apollo 17 photographed a triangular formation in lunar orbit. Skylab III logged a red rotating object for 10 minutes.",
+    "description": "Across multiple missions from 1965 to 1973, NASA's most trained observers reported anomalous objects through official channels to debriefers with security clearances. The crew debriefings were classified for over 50 years. The Apollo 17 photographs triggered a government analysis that remains inconclusive to this day.",
+    "entry_doc_id": 103,
+    "related_doc_ids": [101, 102, 104, 105, 106, 55, 63, 50, 51, 52, 53, 54],
+    "view_links": [
+      {"label": "View on Timeline", "path": "/timeline?doc=103"},
+      {"label": "Explore Connections", "path": "/graph?node=103"},
+      {"label": "All NASA Documents", "path": "/documents?agency=NASA"}
+    ],
+    "category": "space_encounter",
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "middle_east_hotspot",
+    "title": "The Middle East Hotspot",
+    "hook": "Twenty-nine classified mission reports from a single theater of operations. UAPs observed by combat crews during live military operations.",
+    "description": "From 2020 to 2024, USCENTCOM filed dozens of SECRET//REL TO USA, FVEY mission reports documenting UAP encounters across Iraq, Syria, the Persian Gulf, and surrounding airspace. Sensor suites include FLIR, radar, and SIGINT. One report captures a diamond-shaped UAP at 499 mph, invisible to the naked eye but visible on Short-Wave Infrared sensors.",
+    "entry_doc_id": 8,
+    "related_doc_ids": [0, 1, 2, 3, 4, 5, 7, 9, 10, 12, 13, 14, 31, 32, 33, 34, 35, 36],
+    "view_links": [
+      {"label": "View on Map", "path": "/map"},
+      {"label": "View on Timeline", "path": "/timeline?doc=8"},
+      {"label": "Explore Connections", "path": "/graph?node=8"}
+    ],
+    "category": "military_encounter",
+    "color": "#3b82f6"
+  },
+  {
+    "id": "western_us_event",
+    "title": "The Western US Event",
+    "hook": "Seven federal agents across three teams independently reported orange orbs launching smaller red orbs over two days. AARO called it their most compelling case.",
+    "description": "In September 2023, seven federal law enforcement special agents independently observed UAP in the western United States. They described large orange orbs hovering near a rock pinnacle and emitting groups of smaller red orbs. One agent compared it to the Eye of Sauron. The Pentagon compiled 24 photographs and multiple witness statements into what AARO deemed 'among the most compelling cases in AARO's holdings.'",
+    "entry_doc_id": 111,
+    "related_doc_ids": [107, 108, 109, 61, 110, 77, 88, 94],
+    "view_links": [
+      {"label": "View on Timeline", "path": "/timeline?doc=111"},
+      {"label": "Explore Connections", "path": "/graph?node=111"},
+      {"label": "FBI Photo Evidence", "path": "/documents/77"}
+    ],
+    "category": "close_encounter",
+    "color": "#f59e0b"
+  },
+  {
+    "id": "foo_fighters",
+    "title": "The Foo Fighters of WWII",
+    "hook": "In 1944, Allied pilots reported glowing objects following their planes over Germany. Both sides suspected secret weapons. Neither side had them.",
+    "description": "The 415th Night Fighter Squadron reported mysterious glowing objects pacing their aircraft over the Rhine Valley in November 1944. The Army ordered photographic reconnaissance of 'aluminum coloured cylinder shaped objects, about 12 feet long.' German and Japanese pilots reported identical phenomena, ruling out enemy weapons. This is a primary source from the active investigation period, accompanied by early postwar intelligence files documenting the first wave of flying disc reports.",
+    "entry_doc_id": 64,
+    "related_doc_ids": [59, 60, 65, 66, 67],
+    "view_links": [
+      {"label": "View on Timeline", "path": "/timeline?doc=64"},
+      {"label": "Explore Connections", "path": "/graph?node=64"},
+      {"label": "Postwar Intel Files", "path": "/documents/59"}
+    ],
+    "category": "historical_military",
+    "color": "#6b7280"
+  }
+]

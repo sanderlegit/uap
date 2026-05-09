@@ -1,6 +1,7 @@
-import { useState, useMemo, useRef, useCallback } from 'react'
-import { Link } from 'react-router-dom'
-import { useDocuments, agencyColor, agencyClass, formatDate } from '../hooks/useData'
+import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
+import { useDocuments, agencyColor, agencyClass, formatDate, thumbUrl } from '../hooks/useData'
+import DocThumbnail from '../components/DocThumbnail'
 
 const AGENCIES = [
   { key: 'Department of War', label: 'Dept. of War' },
@@ -65,17 +66,36 @@ function Skeleton() {
 
 export default function Timeline() {
   const docs = useDocuments()
-  const [selectedAgencies, setSelectedAgencies] = useState(new Set())
-  const [selectedDoc, setSelectedDoc] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
   const yearRefs = useRef({})
 
+  const selectedAgencies = useMemo(() => {
+    const v = searchParams.get('agency')
+    return v ? new Set(v.split(',')) : new Set()
+  }, [searchParams])
+
+  const selectedDocId = searchParams.get('doc') || null
+
+  const selectedDoc = useMemo(() => {
+    if (!docs || !selectedDocId) return null
+    return docs.find(d => String(d.id) === selectedDocId) || null
+  }, [docs, selectedDocId])
+
+  const setSelectedDoc = useCallback((doc) => {
+    const next = new URLSearchParams(searchParams)
+    if (doc) next.set('doc', String(doc.id))
+    else next.delete('doc')
+    setSearchParams(next, { replace: true })
+  }, [searchParams, setSearchParams])
+
   const toggleAgency = (agency) => {
-    setSelectedAgencies(prev => {
-      const next = new Set(prev)
-      if (next.has(agency)) next.delete(agency)
-      else next.add(agency)
-      return next
-    })
+    const next = new URLSearchParams(searchParams)
+    const updated = new Set(selectedAgencies)
+    if (updated.has(agency)) updated.delete(agency)
+    else updated.add(agency)
+    if (updated.size > 0) next.set('agency', Array.from(updated).join(','))
+    else next.delete('agency')
+    setSearchParams(next, { replace: true })
   }
 
   const scrollToDecade = useCallback((decade) => {
@@ -85,7 +105,10 @@ export default function Timeline() {
     if (target && yearRefs.current[target]) {
       yearRefs.current[target].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' })
     }
-  }, [])
+    const next = new URLSearchParams(searchParams)
+    next.set('decade', decade)
+    setSearchParams(next, { replace: true })
+  }, [searchParams, setSearchParams])
 
   const { grouped, datedCount, undatedCount } = useMemo(() => {
     if (!docs) return { grouped: [], datedCount: 0, undatedCount: 0 }
@@ -122,6 +145,19 @@ export default function Timeline() {
     return { grouped: groups, datedCount: dated.length, undatedCount: undated.length }
   }, [docs, selectedAgencies])
 
+  const initialDecadeRef = useRef(searchParams.get('decade'))
+  useEffect(() => {
+    if (initialDecadeRef.current && grouped.length > 0) {
+      const startYear = parseInt(initialDecadeRef.current)
+      const keys = Object.keys(yearRefs.current).filter(k => k !== 'Undated').map(Number).sort((a, b) => a - b)
+      const target = keys.find(y => y >= startYear)
+      if (target && yearRefs.current[target]) {
+        yearRefs.current[target].scrollIntoView({ inline: 'start', block: 'nearest' })
+      }
+      initialDecadeRef.current = null
+    }
+  }, [grouped])
+
   if (!docs) return <Skeleton />
 
   return (
@@ -134,9 +170,9 @@ export default function Timeline() {
           <span className="ml-2 text-xs text-slate-500">&larr; Scroll horizontally to explore &rarr;</span>
         </p>
         <p className="text-xs text-slate-500 mb-4">
-          <Link to="/documents" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">All Documents</Link>
+          <Link to={`/documents${selectedAgencies.size > 0 ? `?agency=${Array.from(selectedAgencies).map(a => encodeURIComponent(a)).join(',')}` : ''}`} className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">All Documents</Link>
           {' '}&middot;{' '}
-          <Link to="/graph" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Network Graph</Link>
+          <Link to={`/graph${selectedAgencies.size > 0 ? `?agency=${Array.from(selectedAgencies).map(a => encodeURIComponent(a)).join(',')}` : ''}`} className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Network Graph</Link>
           {' '}&middot;{' '}
           <Link to="/map" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Map</Link>
         </p>
@@ -225,8 +261,14 @@ export default function Timeline() {
                             }`}
                             style={{ borderLeftColor: agencyColor(doc.agency) }}
                           >
-                            <div className="flex items-start gap-1.5">
-                              {icon && <span className="text-sm shrink-0 mt-px">{icon}</span>}
+                            <div className="flex items-start gap-2">
+                              <img
+                                src={thumbUrl(doc.id)}
+                                alt=""
+                                loading="lazy"
+                                className="w-8 h-[42px] object-cover rounded bg-slate-800 flex-shrink-0"
+                                onError={(e) => { e.target.style.display = 'none' }}
+                              />
                               <div className="min-w-0">
                                 <span className="text-[11px] font-medium text-slate-300 line-clamp-2 leading-tight block">
                                   {doc.title}
@@ -258,6 +300,7 @@ export default function Timeline() {
         <div className="fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur-md border-t border-slate-700/50 safe-area-pb">
           <div className="max-w-2xl mx-auto px-4 py-3">
             <div className="flex items-start gap-3">
+              <DocThumbnail docId={selectedDoc.id} size="md" />
               <div className="flex-1 min-w-0">
                 <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-1">
                   {selectedDoc.title}

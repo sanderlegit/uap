@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useStats, useDocuments, useResearch, agencyClass, agencyColor, formatDate } from '../hooks/useData'
+import { useStats, useDocuments, useResearch, useInvestigations, agencyClass, agencyColor, formatDate, coverUrl } from '../hooks/useData'
+import DocThumbnail from '../components/DocThumbnail'
 
 /* ── animated counter hook ─────────────────────────────────────────── */
 function useCountUp(target, duration = 1500) {
@@ -213,6 +214,7 @@ export default function Dashboard() {
   const stats = useStats()
   const docs = useDocuments()
   const research = useResearch()
+  const investigations = useInvestigations()
   const navigate = useNavigate()
   const carouselRef = useRef(null)
   const [theories, setTheories] = useState(null)
@@ -302,17 +304,17 @@ export default function Dashboard() {
           </div>
 
           {/* title */}
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-[0.2em] sm:tracking-[0.3em] text-slate-100 uppercase">
-            PURSUE
-            <span className="block text-2xl sm:text-4xl md:text-5xl tracking-[0.25em] sm:tracking-[0.35em] mt-1 sm:mt-2 text-slate-300">
-              FILES
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-[0.15em] sm:tracking-[0.2em] text-slate-100 uppercase">
+            THE LEGACY
+            <span className="block text-3xl sm:text-5xl md:text-6xl tracking-[0.15em] sm:tracking-[0.2em] mt-1 sm:mt-2 text-amber-400">
+              PROGRAM
             </span>
           </h1>
 
           {/* subtitle */}
           <p className="mt-4 sm:mt-6 text-slate-400 text-xs sm:text-sm md:text-base font-mono tracking-wide max-w-2xl mx-auto leading-relaxed">
-            Presidential Unsealing and Reporting System<br className="hidden sm:block" />
-            {' '}for UAP Encounters
+            Mapping the alleged multi-decade covert UAP program<br className="hidden sm:block" />
+            {' '}through 129 declassified government documents
           </p>
 
           {/* animated stat counters */}
@@ -336,26 +338,33 @@ export default function Dashboard() {
 
           {/* tagline */}
           <p className="mt-6 sm:mt-8 text-slate-500 text-xs sm:text-sm italic max-w-lg mx-auto">
-            The largest single disclosure of UAP documents in U.S. history.
+            Follow the threads. See the web.
           </p>
 
-          {/* disclosure index + theories badges */}
+          {/* CTA badges */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-5 sm:mt-6">
             <Link
-              to="/disclosure"
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 transition-colors group"
+              to="/web"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 transition-colors group"
             >
-              <span className="w-2 h-2 rounded-full bg-amber-500 group-hover:shadow-[0_0_8px_rgba(245,158,11,0.5)] transition-shadow" />
-              <span className="text-amber-400 text-xs sm:text-sm font-mono tracking-wider">
+              <span className="w-2 h-2 rounded-full bg-amber-500 group-hover:shadow-[0_0_8px_rgba(245,158,11,0.5)] transition-shadow animate-pulse" />
+              <span className="text-amber-400 text-xs sm:text-sm font-mono font-bold tracking-wider">
+                Enter the Web
+              </span>
+            </Link>
+            <Link
+              to="/disclosure"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-600/30 bg-slate-800/30 hover:bg-slate-800/50 transition-colors group"
+            >
+              <span className="text-slate-400 text-xs sm:text-sm font-mono tracking-wider">
                 Disclosure Index: 39%
               </span>
             </Link>
             <Link
               to="/theories"
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/5 hover:bg-indigo-500/10 transition-colors group"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-600/30 bg-slate-800/30 hover:bg-slate-800/50 transition-colors group"
             >
-              <span className="w-2 h-2 rounded-full bg-indigo-500 group-hover:shadow-[0_0_8px_rgba(99,102,241,0.5)] transition-shadow" />
-              <span className="text-indigo-400 text-xs sm:text-sm font-mono tracking-wider">
+              <span className="text-slate-400 text-xs sm:text-sm font-mono tracking-wider">
                 11 Origin Theories
               </span>
             </Link>
@@ -395,13 +404,113 @@ export default function Dashboard() {
           ──────────────────────────────────────────────────────────────── */}
       <section ref={contentRef} className="px-4 sm:px-6 pt-12 sm:pt-16 pb-6 max-w-2xl mx-auto text-center">
         <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-          On May 8, 2026, the Pentagon released 162 files under the Presidential Unsealing and
-          Reporting System for UAP Encounters — the largest single disclosure of UAP documents
-          in U.S. history. Of these, 129 unique documents were analyzed for this explorer.
-          They span 9 decades, 4 agencies, and include materials the government denied existed
-          for over 70 years. This is what they contain.
+          On May 8, 2026, the Pentagon released 162 files under the PURSUE Act — the largest
+          single disclosure of UAP documents in U.S. history. Of these, 129 unique documents
+          were analyzed and mapped against the alleged Legacy Program — a multi-decade covert
+          system spanning surveillance, material custody, and industrial reverse-engineering
+          across four agencies and eight decades.
         </p>
       </section>
+
+      {/* ────────────────────────────────────────────────────────────────
+          FEATURED INVESTIGATIONS
+          ──────────────────────────────────────────────────────────────── */}
+      {investigations && investigations.length > 0 && (
+        <section className="px-4 sm:px-6 py-10 sm:py-14 max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="h-px flex-1 bg-gradient-to-r from-amber-500/40 to-transparent" />
+            <h2 className="text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-amber-500/80 whitespace-nowrap">
+              Featured Investigations
+            </h2>
+            <span className="h-px flex-1 bg-gradient-to-l from-amber-500/40 to-transparent" />
+          </div>
+          <p className="text-[11px] text-slate-500 text-center mb-8">
+            Curated pathways through the document collection
+          </p>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {investigations.map((inv, i) => (
+              <div
+                key={inv.id}
+                className="dash-card group relative bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800/50 border border-slate-700/40 rounded-lg overflow-hidden hover:border-slate-500/50 hover:scale-[1.02] hover:shadow-xl hover:shadow-black/20 transition-all"
+                style={{ animationDelay: `${i * 100 + 100}ms` }}
+              >
+                <div
+                  className="absolute left-0 top-0 bottom-0 w-1 rounded-l-lg"
+                  style={{ backgroundColor: inv.color }}
+                />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{
+                    background: `radial-gradient(ellipse at top left, ${inv.color}08 0%, transparent 70%)`,
+                  }}
+                />
+                <div className="relative p-5 pl-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <span
+                      className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase px-2 py-0.5 rounded border"
+                      style={{
+                        color: inv.color,
+                        borderColor: `${inv.color}30`,
+                        backgroundColor: `${inv.color}10`,
+                      }}
+                    >
+                      {inv.category.replace(/_/g, ' ')}
+                    </span>
+                    <span className="text-[10px] font-mono text-slate-500">
+                      {inv.related_doc_ids.length + 1} docs
+                    </span>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-white mb-2 transition-colors">
+                    {inv.title}
+                  </h3>
+                  <p className="text-xs text-slate-400 leading-relaxed mb-3 line-clamp-2">
+                    {inv.hook}
+                  </p>
+                  <p className="text-[11px] text-slate-500 leading-relaxed mb-4 line-clamp-3 group-hover:text-slate-400 transition-colors">
+                    {inv.description}
+                  </p>
+                  <div className="flex flex-col gap-2">
+                    <Link
+                      to={`/documents/${inv.entry_doc_id}`}
+                      className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md text-xs font-mono font-bold tracking-wider uppercase transition-all"
+                      style={{
+                        backgroundColor: `${inv.color}15`,
+                        borderColor: `${inv.color}40`,
+                        color: inv.color,
+                        border: `1px solid ${inv.color}40`,
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = `${inv.color}25`
+                        e.currentTarget.style.borderColor = `${inv.color}60`
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = `${inv.color}15`
+                        e.currentTarget.style.borderColor = `${inv.color}40`
+                      }}
+                    >
+                      Start Investigation
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                    </Link>
+                    <div className="flex flex-wrap gap-x-3 gap-y-1">
+                      {inv.view_links.map((vl, vi) => (
+                        <Link
+                          key={vi}
+                          to={vl.path}
+                          className="text-[10px] font-mono text-slate-500 hover:text-amber-400 transition-colors"
+                        >
+                          {vl.label} &rarr;
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ────────────────────────────────────────────────────────────────
           THREE GUIDED ENTRY POINTS
@@ -798,12 +907,16 @@ export default function Dashboard() {
                   className="dash-card flex-shrink-0 w-[280px] sm:w-[300px] snap-start bg-slate-900/70 border border-slate-700/40 rounded-lg overflow-hidden hover:border-amber-500/30 hover:translate-y-[-1px] hover:shadow-lg transition-all group"
                   style={{ animationDelay: `${i * 80 + 100}ms` }}
                 >
-                  <div
-                    className="h-0.5"
-                    style={{ backgroundColor: doc.agency ? agencyColor(doc.agency) : '#475569', opacity: 0.6 }}
-                  />
-                  <div className="p-4">
-                    <div className="flex items-center justify-between gap-2 mb-2">
+                  <div className="relative h-36 overflow-hidden bg-slate-800/60">
+                    <img
+                      src={coverUrl(doc.id)}
+                      alt=""
+                      loading="lazy"
+                      className="w-full h-full object-cover object-top opacity-60 group-hover:opacity-80 transition-opacity"
+                      onError={(e) => { e.target.style.display = 'none' }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent" />
+                    <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between">
                       {meta ? (
                         <span className={`text-[10px] font-mono font-bold tracking-wider px-2 py-0.5 rounded ${meta.bg} ${meta.text} ${meta.border} border`}>
                           {meta.short}
@@ -812,11 +925,13 @@ export default function Dashboard() {
                         <span className="text-[10px] font-mono text-slate-500">UNKNOWN</span>
                       )}
                       {doc.incident_date_parsed && (
-                        <span className="text-[10px] font-mono text-slate-500">
+                        <span className="text-[10px] font-mono text-slate-400">
                           {formatDate(doc.incident_date_parsed)}
                         </span>
                       )}
                     </div>
+                  </div>
+                  <div className="p-4">
                     <h3 className="text-sm font-semibold text-slate-200 group-hover:text-slate-100 leading-snug line-clamp-2 mb-2 transition-colors">
                       {doc.title}
                     </h3>

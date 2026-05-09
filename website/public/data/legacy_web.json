@@ -1,0 +1,4446 @@
+{
+  "nodes": [
+    {
+      "id": "legacy_program",
+      "label": "The Legacy Program",
+      "type": "hub",
+      "layer": "center",
+      "color": "#f59e0b",
+      "size": 80,
+      "description": "Alleged multi-decade covert UAP program spanning surveillance, custodial, and industrial operations"
+    },
+    {
+      "id": "surveillance",
+      "label": "Surveillance Layer",
+      "type": "layer",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 60,
+      "description": "Detection, tracking, and initial assessment of UAP"
+    },
+    {
+      "id": "custodial",
+      "label": "Custodial Layer",
+      "type": "layer",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 60,
+      "description": "Material storage, classification, and containment"
+    },
+    {
+      "id": "industrial",
+      "label": "Industrial Layer",
+      "type": "layer",
+      "layer": "industrial",
+      "color": "#ef4444",
+      "size": 60,
+      "description": "Reverse engineering and technology exploitation"
+    },
+    {
+      "id": "nro",
+      "label": "NRO",
+      "type": "org",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 40,
+      "description": "National Reconnaissance Office \u2014 detection & satellite tracking"
+    },
+    {
+      "id": "cia_oga",
+      "label": "CIA Office of Global Access",
+      "type": "org",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 35,
+      "description": "CIA Office of Global Access \u2014 foreign recovery coordination"
+    },
+    {
+      "id": "cia_dst",
+      "label": "CIA DS&T",
+      "type": "org",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 35,
+      "description": "CIA Directorate of Science & Technology"
+    },
+    {
+      "id": "aaro",
+      "label": "AARO / UAPTF",
+      "type": "org",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 40,
+      "description": "All-domain Anomaly Resolution Office / UAP Task Force \u2014 modern investigation"
+    },
+    {
+      "id": "blue_book",
+      "label": "Project Blue Book / Sign / Grudge",
+      "type": "org",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 35,
+      "description": "Historical USAF investigation programs (1947-1969)"
+    },
+    {
+      "id": "doe_aec",
+      "label": "DOE / AEC",
+      "type": "org",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 40,
+      "description": "Department of Energy / Atomic Energy Commission \u2014 classification authority"
+    },
+    {
+      "id": "sandia",
+      "label": "Sandia National Labs",
+      "type": "org",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 35,
+      "description": "Sandia National Laboratories \u2014 primary storage facility"
+    },
+    {
+      "id": "lanl_ornl_battelle",
+      "label": "Los Alamos / Oak Ridge / Battelle",
+      "type": "org",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 35,
+      "description": "National laboratory analysis facilities"
+    },
+    {
+      "id": "mitre",
+      "label": "MITRE Corporation",
+      "type": "org",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 30,
+      "description": "MITRE Corporation \u2014 FFRDC program management"
+    },
+    {
+      "id": "wright_patterson",
+      "label": "Wright-Patterson AFB",
+      "type": "org",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 35,
+      "description": "Wright-Patterson Air Force Base \u2014 historical storage (Hangar 18)"
+    },
+    {
+      "id": "lockheed",
+      "label": "Lockheed Martin Skunk Works",
+      "type": "org",
+      "layer": "industrial",
+      "color": "#ef4444",
+      "size": 40,
+      "description": "Lockheed Martin Skunk Works \u2014 alleged reverse engineering"
+    },
+    {
+      "id": "northrop",
+      "label": "Northrop Grumman",
+      "type": "org",
+      "layer": "industrial",
+      "color": "#ef4444",
+      "size": 35,
+      "description": "Northrop Grumman Advanced Programs \u2014 prototyping"
+    },
+    {
+      "id": "saic",
+      "label": "SAIC",
+      "type": "org",
+      "layer": "industrial",
+      "color": "#ef4444",
+      "size": 30,
+      "description": "Science Applications International Corporation \u2014 technology exploitation"
+    },
+    {
+      "id": "irad",
+      "label": "IRAD Funding",
+      "type": "org",
+      "layer": "industrial",
+      "color": "#ef4444",
+      "size": 30,
+      "description": "Independent Research & Development funding mechanism \u2014 billing concealment"
+    },
+    {
+      "id": "area51",
+      "label": "Area 51 / S4",
+      "type": "org",
+      "layer": "industrial",
+      "color": "#ef4444",
+      "size": 35,
+      "description": "Area 51 / S4 \u2014 testing facilities near Groom Lake, Nevada"
+    },
+    {
+      "id": "aea_1954",
+      "label": "Atomic Energy Act 1954",
+      "type": "org",
+      "layer": "custodial",
+      "color": "#f59e0b",
+      "size": 40,
+      "description": "Atomic Energy Act of 1954 \u2014 classification shield for UAP materials"
+    },
+    {
+      "id": "five_eyes",
+      "label": "Five Eyes",
+      "type": "org",
+      "layer": "surveillance",
+      "color": "#3b82f6",
+      "size": 35,
+      "description": "Five Eyes intelligence alliance \u2014 international UAP cooperation"
+    },
+    {
+      "id": "congressional",
+      "label": "Congressional Oversight",
+      "type": "org",
+      "layer": "center",
+      "color": "#10b981",
+      "size": 40,
+      "description": "Congressional oversight \u2014 UAPDA / disclosure efforts"
+    },
+    {
+      "id": "doc_0",
+      "label": "DOW-UAP-D10, Mission Report, Middle East, May 2022",
+      "type": "document",
+      "doc_id": 0,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_1",
+      "label": "DOW-UAP-D12, Mission Report, Iraq, May 2022",
+      "type": "document",
+      "doc_id": 1,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_2",
+      "label": "DOW-UAP-D14, Mission Report, Iraq, May 2022",
+      "type": "document",
+      "doc_id": 2,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 9,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_3",
+      "label": "DOW-UAP-D16, Mission Report, Syria, July 2022",
+      "type": "document",
+      "doc_id": 3,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_4",
+      "label": "DOW-UAP-D18, Mission Report, Iraq, December 2022",
+      "type": "document",
+      "doc_id": 4,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_5",
+      "label": "DOW-UAP-D19, Mission Report, Syria, February 21, 2023",
+      "type": "document",
+      "doc_id": 5,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 10,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_6",
+      "label": "DOW-UAP-D20, Mission Report, Southern United States, 2020",
+      "type": "document",
+      "doc_id": 6,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_7",
+      "label": "DOW-UAP-D23, Mission Report, United Arab Emirates, October 2023",
+      "type": "document",
+      "doc_id": 7,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 9,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_8",
+      "label": "DOW-UAP-D25, Mission Report, Greece, January 2024",
+      "type": "document",
+      "doc_id": 8,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_9",
+      "label": "DOW-UAP-D27, Mission Report, United Arab Emirates, October 2023",
+      "type": "document",
+      "doc_id": 9,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 8,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_10",
+      "label": "DOW-UAP-D28, Mission Report, Iraq, September 2024",
+      "type": "document",
+      "doc_id": 10,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_11",
+      "label": "DOW-UAP-D3, Mission Report, Arabian Gulf, 2020",
+      "type": "document",
+      "doc_id": 11,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_12",
+      "label": "DOW-UAP-D32, Mission Report, Syria, October 2024",
+      "type": "document",
+      "doc_id": 12,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 10,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_13",
+      "label": "DOW-UAP-D33, Mission Report, Greece, October 2023",
+      "type": "document",
+      "doc_id": 13,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_14",
+      "label": "DOW-UAP-D35, Mission Report, Greece, October 2023",
+      "type": "document",
+      "doc_id": 14,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_15",
+      "label": "DOW-UAP-D38, Range Fouler Debrief, Middle East, May 2020",
+      "type": "document",
+      "doc_id": 15,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_16",
+      "label": "DOW-UAP-D4, Mission Report, Arabian Gulf, 2020",
+      "type": "document",
+      "doc_id": 16,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 5,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_17",
+      "label": "DOW-UAP-D42, Range Fouler Debrief, Japan, 2023",
+      "type": "document",
+      "doc_id": 17,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_18",
+      "label": "DOW-UAP-D44, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+      "type": "document",
+      "doc_id": 18,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_19",
+      "label": "DOW-UAP-D48, Department of the Air Force Report, 1996",
+      "type": "document",
+      "doc_id": 19,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1990s",
+      "pages": 181,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_20",
+      "label": "DOW-UAP-D49, Launch Summary, Vandenberg AFB, 2000",
+      "type": "document",
+      "doc_id": 20,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2000s",
+      "pages": 113,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_21",
+      "label": "DOW-UAP-D5, Mission Report, Arabian Gulf, 2020",
+      "type": "document",
+      "doc_id": 21,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_22",
+      "label": "DOW-UAP-D50, Email Correspondence, INDOPACOM, April 2025",
+      "type": "document",
+      "doc_id": 22,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 2,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_23",
+      "label": "DOW-UAP-D51, Email Correspondence, Pacific Time Zone, March 2023",
+      "type": "document",
+      "doc_id": 23,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_24",
+      "label": "DOW-UAP-D52, Email Correspondance, NA, August 2024",
+      "type": "document",
+      "doc_id": 24,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 2,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_25",
+      "label": "DOW-UAP-D54, Mission Report, Mediterranean Sea, NA",
+      "type": "document",
+      "doc_id": 25,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_26",
+      "label": "DOW-UAP-D55, Mission Report, Syria, November 2016",
+      "type": "document",
+      "doc_id": 26,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2010s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_27",
+      "label": "DOW-UAP-D56, Range Fouler Debrief, Arabian Sea, August 2020",
+      "type": "document",
+      "doc_id": 27,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_28",
+      "label": "DOW-UAP-D57, Range Fouler Reporting Form, Gulf of Aden, September 2020",
+      "type": "document",
+      "doc_id": 28,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_29",
+      "label": "DOW-UAP-D58, Range Fouler Debrief, NA, October 2020",
+      "type": "document",
+      "doc_id": 29,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_30",
+      "label": "DOW-UAP-D6, Mission Report, Arabian Gulf, 2020",
+      "type": "document",
+      "doc_id": 30,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_31",
+      "label": "DOW-UAP-D60, Mission Report, Persian Gulf, August 2020",
+      "type": "document",
+      "doc_id": 31,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_32",
+      "label": "DOW-UAP-D61, Mission Report, Persian Gulf, August 2020",
+      "type": "document",
+      "doc_id": 32,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_33",
+      "label": "DOW-UAP-D62, Mission Report, Strait of Hormuz, September 2020",
+      "type": "document",
+      "doc_id": 33,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 9,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_34",
+      "label": "DOW-UAP-D63, Mission Report, Strait of Hormuz, October 2020",
+      "type": "document",
+      "doc_id": 34,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 8,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_35",
+      "label": "DOW-UAP-D64, Mission Report, Iran, November 2020",
+      "type": "document",
+      "doc_id": 35,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_36",
+      "label": "DOW-UAP-D65, Mission Report, Persian Gulf, July 2020",
+      "type": "document",
+      "doc_id": 36,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 8,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_37",
+      "label": "DOW-UAP-D7, Mission Report, Arabian Gulf, 2020",
+      "type": "document",
+      "doc_id": 37,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 6,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_38",
+      "label": "DOW-UAP-D74, Mission Report, Syria, November 2023",
+      "type": "document",
+      "doc_id": 38,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 10,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_39",
+      "label": "DOW-UAP-D75, Mission Report, Gulf of Aden, July 2024",
+      "type": "document",
+      "doc_id": 39,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 8,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_40",
+      "label": "DOW-UAP-D8, Mission Report, Djibouti, 2025",
+      "type": "document",
+      "doc_id": 40,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 7,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_41",
+      "label": "DOW-UAP-PR20, Unresolved UAP Report, Kuwait, May 2022",
+      "type": "document",
+      "doc_id": 41,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_42",
+      "label": "FBI Photo A1",
+      "type": "document",
+      "doc_id": 42,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_43",
+      "label": "FBI Photo A2",
+      "type": "document",
+      "doc_id": 43,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_44",
+      "label": "FBI Photo A3",
+      "type": "document",
+      "doc_id": 44,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_45",
+      "label": "FBI Photo A4",
+      "type": "document",
+      "doc_id": 45,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_46",
+      "label": "FBI Photo A5",
+      "type": "document",
+      "doc_id": 46,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_47",
+      "label": "FBI Photo A6",
+      "type": "document",
+      "doc_id": 47,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_48",
+      "label": "FBI Photo A7",
+      "type": "document",
+      "doc_id": 48,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_49",
+      "label": "FBI Photo A8",
+      "type": "document",
+      "doc_id": 49,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_50",
+      "label": "NASA-UAP-VM1, Apollo 12, 1969",
+      "type": "document",
+      "doc_id": 50,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_51",
+      "label": "NASA-UAP-VM2, Apollo 12, 1969",
+      "type": "document",
+      "doc_id": 51,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_52",
+      "label": "NASA-UAP-VM3, Apollo 12, 1969",
+      "type": "document",
+      "doc_id": 52,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_53",
+      "label": "NASA-UAP-VM4, Apollo 12, 1969",
+      "type": "document",
+      "doc_id": 53,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_54",
+      "label": "NASA-UAP-VM5, Apollo 12, 1969",
+      "type": "document",
+      "doc_id": 54,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_55",
+      "label": "NASA-UAP-VM6, Apollo 17, 1972",
+      "type": "document",
+      "doc_id": 55,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1970s",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_56",
+      "label": "State Department UAP Cable 3, Tbilisi, Georgia, October 30, 2001",
+      "type": "document",
+      "doc_id": 56,
+      "agency": "Department of State",
+      "color": "#10b981",
+      "size": 15,
+      "decade": "2000s",
+      "pages": 5,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_57",
+      "label": "State Department UAP Cable 4, Ashgabat, Turkmenistan, November 5, 2004",
+      "type": "document",
+      "doc_id": 57,
+      "agency": "Department of State",
+      "color": "#10b981",
+      "size": 15,
+      "decade": "2000s",
+      "pages": 5,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_58",
+      "label": "State Department UAP Cable 5, Mexico, September 16, 2003",
+      "type": "document",
+      "doc_id": 58,
+      "agency": "Department of State",
+      "color": "#10b981",
+      "size": 15,
+      "decade": "2000s",
+      "pages": 7,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_59",
+      "label": "18_100754_ General 1946-7_Vol_2",
+      "type": "document",
+      "doc_id": 59,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1940s",
+      "pages": 28,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_60",
+      "label": "18_6369445_General_1948_Vol_1",
+      "type": "document",
+      "doc_id": 60,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1940s",
+      "pages": 28,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_61",
+      "label": "FBI September 2023 Sighting - Composite Sketch",
+      "type": "document",
+      "doc_id": 61,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_62",
+      "label": "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For",
+      "type": "document",
+      "doc_id": 62,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 0,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_63",
+      "label": "NASA-UAP-D3, Gemini 7 Transcript, 1965",
+      "type": "document",
+      "doc_id": 63,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 4,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_64",
+      "label": "331_120752_Numeric_Files_1944\u20131945_37153_German_Armament_Equipment_Documents",
+      "type": "document",
+      "doc_id": 64,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1940s",
+      "pages": 17,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_65",
+      "label": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_",
+      "type": "document",
+      "doc_id": 65,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1940s",
+      "pages": 7,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_66",
+      "label": "341_110677_Numerical_File,_5-2500",
+      "type": "document",
+      "doc_id": 66,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1950s",
+      "pages": 10,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_67",
+      "label": "342_HS1-416511228_319.1 Flying Discs 1949",
+      "type": "document",
+      "doc_id": 67,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "1950s",
+      "pages": 143,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_68",
+      "label": "38_143685_box7_Incident_Summaries_1-100",
+      "type": "document",
+      "doc_id": 68,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 209,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_69",
+      "label": "38_143685_box_Incident_Summaries_101-172",
+      "type": "document",
+      "doc_id": 69,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 178,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_70",
+      "label": "38_143685_box_Incident_Summaries_173-233",
+      "type": "document",
+      "doc_id": 70,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 144,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_71",
+      "label": "59_64634_711.5612[7-2852",
+      "type": "document",
+      "doc_id": 71,
+      "agency": "Department of State",
+      "color": "#10b981",
+      "size": 15,
+      "decade": "1950s",
+      "pages": 6,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_72",
+      "label": "65_HS1-101634279_100-DE-18221_Serial_844",
+      "type": "document",
+      "doc_id": 72,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "1950s",
+      "pages": 1,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_73",
+      "label": "65_HS1-101634279_100-DE-26505",
+      "type": "document",
+      "doc_id": 73,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "1950s",
+      "pages": 15,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_74",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_153",
+      "type": "document",
+      "doc_id": 74,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 0,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_75",
+      "label": "State Department UAP Cable 1, Papua New Guinea, January 28, 1985",
+      "type": "document",
+      "doc_id": 75,
+      "agency": "Department of State",
+      "color": "#10b981",
+      "size": 15,
+      "decade": "1980s",
+      "pages": 3,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_76",
+      "label": "State Department UAP Cable 2, Kazakhstan, January 31, 1994",
+      "type": "document",
+      "doc_id": 76,
+      "agency": "Department of State",
+      "color": "#10b981",
+      "size": 15,
+      "decade": "1990s",
+      "pages": 3,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_77",
+      "label": "FBI Photo B1",
+      "type": "document",
+      "doc_id": 77,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_78",
+      "label": "FBI Photo B10",
+      "type": "document",
+      "doc_id": 78,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_79",
+      "label": "FBI Photo B11",
+      "type": "document",
+      "doc_id": 79,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_80",
+      "label": "FBI Photo B12",
+      "type": "document",
+      "doc_id": 80,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_81",
+      "label": "FBI Photo B13",
+      "type": "document",
+      "doc_id": 81,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_82",
+      "label": "FBI Photo B14",
+      "type": "document",
+      "doc_id": 82,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_83",
+      "label": "FBI Photo B15",
+      "type": "document",
+      "doc_id": 83,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_84",
+      "label": "FBI Photo B16",
+      "type": "document",
+      "doc_id": 84,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_85",
+      "label": "FBI Photo B17",
+      "type": "document",
+      "doc_id": 85,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_86",
+      "label": "FBI Photo B18",
+      "type": "document",
+      "doc_id": 86,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_87",
+      "label": "FBI Photo B19",
+      "type": "document",
+      "doc_id": 87,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_88",
+      "label": "FBI Photo B2",
+      "type": "document",
+      "doc_id": 88,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_89",
+      "label": "FBI Photo B20",
+      "type": "document",
+      "doc_id": 89,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_90",
+      "label": "FBI Photo B21",
+      "type": "document",
+      "doc_id": 90,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_91",
+      "label": "FBI Photo B22",
+      "type": "document",
+      "doc_id": 91,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_92",
+      "label": "FBI Photo B23",
+      "type": "document",
+      "doc_id": 92,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_93",
+      "label": "FBI Photo B24",
+      "type": "document",
+      "doc_id": 93,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_94",
+      "label": "FBI Photo B3",
+      "type": "document",
+      "doc_id": 94,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_95",
+      "label": "FBI Photo B4",
+      "type": "document",
+      "doc_id": 95,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_96",
+      "label": "FBI Photo B5",
+      "type": "document",
+      "doc_id": 96,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_97",
+      "label": "FBI Photo B6",
+      "type": "document",
+      "doc_id": 97,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_98",
+      "label": "FBI Photo B7",
+      "type": "document",
+      "doc_id": 98,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_99",
+      "label": "FBI Photo B8",
+      "type": "document",
+      "doc_id": 99,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_100",
+      "label": "FBI Photo B9",
+      "type": "document",
+      "doc_id": 100,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 1,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_101",
+      "label": "NASA-UAP-D1, Apollo 12 Transcript, 1969",
+      "type": "document",
+      "doc_id": 101,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 4,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_102",
+      "label": "NASA-UAP-D2, Apollo 17 Transcript, 1972",
+      "type": "document",
+      "doc_id": 102,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1970s",
+      "pages": 16,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_103",
+      "label": "NASA-UAP-D4, Apollo 11 Technical Crew Debriefing, 1969",
+      "type": "document",
+      "doc_id": 103,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1960s",
+      "pages": 11,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_104",
+      "label": "NASA-UAP-D5, Apollo 17 Crew Debriefing for Science, 1973",
+      "type": "document",
+      "doc_id": 104,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1970s",
+      "pages": 3,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_105",
+      "label": "NASA-UAP-D6, Apollo 17 Technical Crew Debriefing, 1973",
+      "type": "document",
+      "doc_id": 105,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1970s",
+      "pages": 2,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_106",
+      "label": "NASA-UAP-D7, Skylab Techincal Crew Debriefing 1973",
+      "type": "document",
+      "doc_id": 106,
+      "agency": "NASA",
+      "color": "#8b5cf6",
+      "size": 15,
+      "decade": "1970s",
+      "pages": 11,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_107",
+      "label": "FBI September 2023 Sighting - Serial 3",
+      "type": "document",
+      "doc_id": 107,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 2,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_108",
+      "label": "FBI September 2023 Sighting - Serial 4",
+      "type": "document",
+      "doc_id": 108,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 2,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_109",
+      "label": "FBI September 2023 Sighting - Serial 5",
+      "type": "document",
+      "doc_id": 109,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 2,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_110",
+      "label": "USPER Statement about UAP Sighting",
+      "type": "document",
+      "doc_id": 110,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 3,
+      "has_redaction": true
+    },
+    {
+      "id": "doc_111",
+      "label": "Western US Event",
+      "type": "document",
+      "doc_id": 111,
+      "agency": "Department of War",
+      "color": "#3b82f6",
+      "size": 15,
+      "decade": "2020s",
+      "pages": 4,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_112",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_1",
+      "type": "document",
+      "doc_id": 112,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 185,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_113",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_10",
+      "type": "document",
+      "doc_id": 113,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 184,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_114",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_2",
+      "type": "document",
+      "doc_id": 114,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 194,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_115",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_3",
+      "type": "document",
+      "doc_id": 115,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 190,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_116",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_4",
+      "type": "document",
+      "doc_id": 116,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 214,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_117",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_5",
+      "type": "document",
+      "doc_id": 117,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 209,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_118",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_6",
+      "type": "document",
+      "doc_id": 118,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 271,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_119",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_7",
+      "type": "document",
+      "doc_id": 119,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 205,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_120",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_8",
+      "type": "document",
+      "doc_id": 120,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 217,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_121",
+      "label": "65_HS1-834228961_62-HQ-83894_Section_9",
+      "type": "document",
+      "doc_id": 121,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 290,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_122",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_130",
+      "type": "document",
+      "doc_id": 122,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 126,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_123",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_164",
+      "type": "document",
+      "doc_id": 123,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 137,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_124",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_220",
+      "type": "document",
+      "doc_id": 124,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 15,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_125",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_403",
+      "type": "document",
+      "doc_id": 125,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 3,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_126",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_438",
+      "type": "document",
+      "doc_id": 126,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 40,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_127",
+      "label": "65_HS1-834228961_62-HQ-83894_Serial_449",
+      "type": "document",
+      "doc_id": 127,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 18,
+      "has_redaction": false
+    },
+    {
+      "id": "doc_128",
+      "label": "65_HS1-834228961_62-HQ-83894_SUB_A",
+      "type": "document",
+      "doc_id": 128,
+      "agency": "FBI",
+      "color": "#ef4444",
+      "size": 15,
+      "decade": "Unknown",
+      "pages": 124,
+      "has_redaction": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "legacy_program",
+      "target": "surveillance",
+      "type": "structure",
+      "weight": 1.0
+    },
+    {
+      "source": "legacy_program",
+      "target": "custodial",
+      "type": "structure",
+      "weight": 1.0
+    },
+    {
+      "source": "legacy_program",
+      "target": "industrial",
+      "type": "structure",
+      "weight": 1.0
+    },
+    {
+      "source": "surveillance",
+      "target": "nro",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "surveillance",
+      "target": "cia_oga",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "surveillance",
+      "target": "cia_dst",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "surveillance",
+      "target": "aaro",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "surveillance",
+      "target": "blue_book",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "surveillance",
+      "target": "five_eyes",
+      "type": "structure",
+      "weight": 0.7
+    },
+    {
+      "source": "custodial",
+      "target": "doe_aec",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "custodial",
+      "target": "sandia",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "custodial",
+      "target": "lanl_ornl_battelle",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "custodial",
+      "target": "mitre",
+      "type": "structure",
+      "weight": 0.7
+    },
+    {
+      "source": "custodial",
+      "target": "wright_patterson",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "custodial",
+      "target": "aea_1954",
+      "type": "structure",
+      "weight": 0.9
+    },
+    {
+      "source": "industrial",
+      "target": "lockheed",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "industrial",
+      "target": "northrop",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "industrial",
+      "target": "saic",
+      "type": "structure",
+      "weight": 0.7
+    },
+    {
+      "source": "industrial",
+      "target": "irad",
+      "type": "structure",
+      "weight": 0.7
+    },
+    {
+      "source": "industrial",
+      "target": "area51",
+      "type": "structure",
+      "weight": 0.8
+    },
+    {
+      "source": "legacy_program",
+      "target": "congressional",
+      "type": "structure",
+      "weight": 0.7
+    },
+    {
+      "source": "wright_patterson",
+      "target": "blue_book",
+      "type": "cross_layer",
+      "weight": 0.6
+    },
+    {
+      "source": "cia_dst",
+      "target": "lockheed",
+      "type": "cross_layer",
+      "weight": 0.5
+    },
+    {
+      "source": "doe_aec",
+      "target": "aea_1954",
+      "type": "cross_layer",
+      "weight": 0.8
+    },
+    {
+      "source": "nro",
+      "target": "area51",
+      "type": "cross_layer",
+      "weight": 0.5
+    },
+    {
+      "source": "lanl_ornl_battelle",
+      "target": "lockheed",
+      "type": "cross_layer",
+      "weight": 0.4
+    },
+    {
+      "source": "sandia",
+      "target": "doe_aec",
+      "type": "cross_layer",
+      "weight": 0.7
+    },
+    {
+      "source": "aaro",
+      "target": "congressional",
+      "type": "cross_layer",
+      "weight": 0.6
+    },
+    {
+      "source": "doc_0",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (10 hits)"
+    },
+    {
+      "source": "doc_0",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (46 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_0",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (17 hits)"
+    },
+    {
+      "source": "doc_0",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, secret, declassif (56 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_1",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (10 hits)"
+    },
+    {
+      "source": "doc_1",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (36 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_1",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "Content mentions: reconnaissance (2 hits); Content mentions: radar, flir, infrared (10 hits)"
+    },
+    {
+      "source": "doc_1",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (71 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_2",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (12 hits)"
+    },
+    {
+      "source": "doc_2",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (34 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_2",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (14 hits)"
+    },
+    {
+      "source": "doc_2",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (66 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_3",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous, unidentified aerial (13 hits)"
+    },
+    {
+      "source": "doc_3",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (12 hits)"
+    },
+    {
+      "source": "doc_3",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, declassif (44 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_4",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (11 hits)"
+    },
+    {
+      "source": "doc_4",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (12 hits)"
+    },
+    {
+      "source": "doc_4",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, declassif (40 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_5",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (14 hits)"
+    },
+    {
+      "source": "doc_5",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.59,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (3 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_5",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (24 hits)"
+    },
+    {
+      "source": "doc_5",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (62 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_6",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (9 hits)"
+    },
+    {
+      "source": "doc_6",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (14 hits)"
+    },
+    {
+      "source": "doc_6",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, declassif (38 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_7",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (5 hits)"
+    },
+    {
+      "source": "doc_7",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_7",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, declassif (31 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_8",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous, unidentified aerial (13 hits)"
+    },
+    {
+      "source": "doc_8",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (48 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_8",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (16 hits)"
+    },
+    {
+      "source": "doc_8",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (82 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_9",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (12 hits)"
+    },
+    {
+      "source": "doc_9",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (32 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_9",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (9 hits)"
+    },
+    {
+      "source": "doc_9",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (110 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_10",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous, unidentified aerial (11 hits)"
+    },
+    {
+      "source": "doc_10",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (36 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_10",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (22 hits)"
+    },
+    {
+      "source": "doc_10",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (66 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_11",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.68,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (8 hits)"
+    },
+    {
+      "source": "doc_11",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (2 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_11",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (11 hits)"
+    },
+    {
+      "source": "doc_12",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (14 hits)"
+    },
+    {
+      "source": "doc_12",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (72 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_12",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (21 hits)"
+    },
+    {
+      "source": "doc_12",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: foia, classified, secret (120 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_13",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (10 hits)"
+    },
+    {
+      "source": "doc_13",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_14",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (10 hits)"
+    },
+    {
+      "source": "doc_14",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_14",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, declassif (37 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_15",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.64,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro (2 hits)"
+    },
+    {
+      "source": "doc_15",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (2 hits)"
+    },
+    {
+      "source": "doc_15",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, sensor, detection (10 hits)"
+    },
+    {
+      "source": "doc_15",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Content mentions: classified, declassif (4 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_16",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (4 hits)"
+    },
+    {
+      "source": "doc_17",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_17",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, sensor, detection (10 hits)"
+    },
+    {
+      "source": "doc_18",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_18",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_19",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.8,
+      "reason": "Content mentions: satellite (13 hits); Content mentions: radar, sensor, tracking (7 hits)"
+    },
+    {
+      "source": "doc_19",
+      "target": "lockheed",
+      "type": "document",
+      "weight": 0.72,
+      "reason": "Content mentions: lockheed (9 hits); Content mentions: propulsion (6 hits)"
+    },
+    {
+      "source": "doc_19",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (24 hits)"
+    },
+    {
+      "source": "doc_19",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.45,
+      "reason": "Content mentions: nato (4 hits)"
+    },
+    {
+      "source": "doc_19",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: representative (29 hits)"
+    },
+    {
+      "source": "doc_19",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: incident report (2 hits)"
+    },
+    {
+      "source": "doc_20",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.8,
+      "reason": "Content mentions: satellite (26 hits); Content mentions: radar, flir, infrared (7 hits)"
+    },
+    {
+      "source": "doc_20",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.71,
+      "reason": "Content mentions: atomic energy commission, aec (22 hits); Content mentions: atomic, radiation, radioactive (3 hits)"
+    },
+    {
+      "source": "doc_20",
+      "target": "lockheed",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "Content mentions: lockheed (8 hits); Content mentions: propulsion (2 hits)"
+    },
+    {
+      "source": "doc_20",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.25,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2000s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_20",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.18,
+      "reason": "Content mentions: retriev, recover, crash (4 hits)"
+    },
+    {
+      "source": "doc_20",
+      "target": "sandia",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "Content mentions: sandia (1 hits)"
+    },
+    {
+      "source": "doc_21",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (4 hits)"
+    },
+    {
+      "source": "doc_22",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.46,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_22",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, secret (24 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_23",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.46,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_23",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (2 hits)"
+    },
+    {
+      "source": "doc_23",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: oversight, disclosure (4 hits)"
+    },
+    {
+      "source": "doc_23",
+      "target": "lockheed",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "Content mentions: propulsion (3 hits)"
+    },
+    {
+      "source": "doc_24",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.46,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_24",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, secret (10 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_25",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (4 hits)"
+    },
+    {
+      "source": "doc_26",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.67,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2010s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (3 hits)"
+    },
+    {
+      "source": "doc_26",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: flir, infrared, sensor (8 hits)"
+    },
+    {
+      "source": "doc_26",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, declassif (10 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_27",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_27",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, sensor, detection (8 hits)"
+    },
+    {
+      "source": "doc_28",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_28",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_29",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.64,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro (2 hits)"
+    },
+    {
+      "source": "doc_29",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_29",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Content mentions: classified, declassif (4 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_30",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (4 hits)"
+    },
+    {
+      "source": "doc_31",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (10 hits)"
+    },
+    {
+      "source": "doc_31",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (14 hits)"
+    },
+    {
+      "source": "doc_32",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (2 hits)"
+    },
+    {
+      "source": "doc_32",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (19 hits)"
+    },
+    {
+      "source": "doc_33",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (2 hits)"
+    },
+    {
+      "source": "doc_33",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_33",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, declassif (17 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_33",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (1 hits)"
+    },
+    {
+      "source": "doc_34",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (11 hits)"
+    },
+    {
+      "source": "doc_34",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (10 hits)"
+    },
+    {
+      "source": "doc_35",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous, unidentified aerial (3 hits)"
+    },
+    {
+      "source": "doc_35",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (10 hits)"
+    },
+    {
+      "source": "doc_35",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: classified, declassif (25 hits); Heavily redacted \u2014 indicates active classification controls"
+    },
+    {
+      "source": "doc_36",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous, unidentified aerial (12 hits)"
+    },
+    {
+      "source": "doc_36",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar, flir, infrared (13 hits)"
+    },
+    {
+      "source": "doc_37",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (4 hits)"
+    },
+    {
+      "source": "doc_37",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "Content mentions: infrared, sensor (2 hits)"
+    },
+    {
+      "source": "doc_38",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous, unidentified aerial (16 hits)"
+    },
+    {
+      "source": "doc_38",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (16 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_38",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: sensor, sigint (9 hits)"
+    },
+    {
+      "source": "doc_39",
+      "target": "aaro",
+      "type": "document",
+      "weight": 1.0,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, unidentified anomalous (11 hits)"
+    },
+    {
+      "source": "doc_39",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, rel to usa.*fvey (54 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_39",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.27,
+      "reason": "Content mentions: sensor (5 hits)"
+    },
+    {
+      "source": "doc_40",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "Content mentions: fvey, nato, rel to usa.*fvey (15 hits); Document marked REL TO USA, FVEY \u2014 Five Eyes distribution"
+    },
+    {
+      "source": "doc_40",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, unidentified anomalous (2 hits); Content mentions: mission report, misrep (4 hits)"
+    },
+    {
+      "source": "doc_41",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.74,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: aaro, anomaly resolution, unidentified anomalous (8 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_42",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_42",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_43",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_43",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_44",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_44",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_45",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_45",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_46",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_46",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_47",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_47",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_48",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_48",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_49",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_49",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_50",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.35,
+      "reason": "NASA space observation and tracking programs; NASA Apollo mission photographic anomaly"
+    },
+    {
+      "source": "doc_51",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.35,
+      "reason": "NASA space observation and tracking programs; NASA Apollo mission photographic anomaly"
+    },
+    {
+      "source": "doc_52",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.35,
+      "reason": "NASA space observation and tracking programs; NASA Apollo mission photographic anomaly"
+    },
+    {
+      "source": "doc_53",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.35,
+      "reason": "NASA space observation and tracking programs; NASA Apollo mission photographic anomaly"
+    },
+    {
+      "source": "doc_54",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.35,
+      "reason": "NASA space observation and tracking programs; NASA Apollo mission photographic anomaly"
+    },
+    {
+      "source": "doc_55",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.35,
+      "reason": "NASA space observation and tracking programs; NASA Apollo mission photographic anomaly"
+    },
+    {
+      "source": "doc_56",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "State Department diplomatic cables on international UAP incidents"
+    },
+    {
+      "source": "doc_57",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.39,
+      "reason": "Content mentions: cia (3 hits)"
+    },
+    {
+      "source": "doc_57",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "State Department diplomatic cables on international UAP incidents"
+    },
+    {
+      "source": "doc_57",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Content mentions: committee (2 hits)"
+    },
+    {
+      "source": "doc_58",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.45,
+      "reason": "State Department diplomatic cables on international UAP incidents; Content mentions: allied (1 hits)"
+    },
+    {
+      "source": "doc_58",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, hearing, testimony (21 hits)"
+    },
+    {
+      "source": "doc_58",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: cia (2 hits)"
+    },
+    {
+      "source": "doc_58",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.29,
+      "reason": "2000s era document \u2014 relevant to Aaro; Content mentions: unidentified aerial (2 hits)"
+    },
+    {
+      "source": "doc_59",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.71,
+      "reason": "Historical USAF investigation lineage; 1940s era document \u2014 relevant to Blue Book; Content mentions: air materiel command (10 hits)"
+    },
+    {
+      "source": "doc_59",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.7,
+      "reason": "1940s era document \u2014 relevant to Wright Patterson; Content mentions: wright field (8 hits); Content mentions: recover, crash (2 hits)"
+    },
+    {
+      "source": "doc_59",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.44,
+      "reason": "1940s era document \u2014 relevant to Doe Aec; Content mentions: atomic energy commission (1 hits); Content mentions: nuclear, atomic (3 hits)"
+    },
+    {
+      "source": "doc_59",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: radar, electro.?optical (7 hits)"
+    },
+    {
+      "source": "doc_59",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.26,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: incident report (1 hits)"
+    },
+    {
+      "source": "doc_59",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.26,
+      "reason": "Content mentions: representative (3 hits)"
+    },
+    {
+      "source": "doc_60",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.71,
+      "reason": "Historical USAF investigation lineage; 1940s era document \u2014 relevant to Blue Book; Content mentions: project sign, air materiel command (28 hits)"
+    },
+    {
+      "source": "doc_60",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.64,
+      "reason": "1940s era document \u2014 relevant to Wright Patterson; Content mentions: wright.?patterson, wright field (15 hits); Content mentions: debris (1 hits)"
+    },
+    {
+      "source": "doc_60",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: incident report (2 hits)"
+    },
+    {
+      "source": "doc_60",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: radar, electro.?optical (3 hits)"
+    },
+    {
+      "source": "doc_61",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_62",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "NASA space observation and tracking programs"
+    },
+    {
+      "source": "doc_63",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "1960s era document \u2014 relevant to Wright Patterson; Content mentions: debris (3 hits)"
+    },
+    {
+      "source": "doc_63",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "NASA space observation and tracking programs"
+    },
+    {
+      "source": "doc_64",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.45,
+      "reason": "Content mentions: allied (4 hits)"
+    },
+    {
+      "source": "doc_64",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.23,
+      "reason": "Historical USAF investigation lineage; 1940s era document \u2014 relevant to Blue Book"
+    },
+    {
+      "source": "doc_64",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: flir, infrared, electro.?optical (3 hits)"
+    },
+    {
+      "source": "doc_64",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO"
+    },
+    {
+      "source": "doc_64",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "1940s era document \u2014 relevant to Wright Patterson; Content mentions: recover (1 hits)"
+    },
+    {
+      "source": "doc_65",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.23,
+      "reason": "Historical USAF investigation lineage; 1940s era document \u2014 relevant to Blue Book"
+    },
+    {
+      "source": "doc_65",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO"
+    },
+    {
+      "source": "doc_65",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "1940s era document \u2014 relevant to Wright Patterson; Content mentions: crash (1 hits)"
+    },
+    {
+      "source": "doc_65",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "Content mentions: flir, infrared (2 hits)"
+    },
+    {
+      "source": "doc_66",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.23,
+      "reason": "Historical USAF investigation lineage; 1950s era document \u2014 relevant to Blue Book"
+    },
+    {
+      "source": "doc_66",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO"
+    },
+    {
+      "source": "doc_67",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.26,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: incident report (1 hits)"
+    },
+    {
+      "source": "doc_67",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.23,
+      "reason": "Historical USAF investigation lineage; 1950s era document \u2014 relevant to Blue Book"
+    },
+    {
+      "source": "doc_68",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.44,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: unidentified aerial (2 hits)"
+    },
+    {
+      "source": "doc_68",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (2 hits)"
+    },
+    {
+      "source": "doc_68",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.23,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: electro.?optical (1 hits)"
+    },
+    {
+      "source": "doc_68",
+      "target": "lockheed",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "Content mentions: propulsion (3 hits)"
+    },
+    {
+      "source": "doc_69",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "Content mentions: satellite, reconnaissance (4 hits); Content mentions: radar, flir, infrared (8 hits)"
+    },
+    {
+      "source": "doc_69",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.44,
+      "reason": "Content mentions: wright field (2 hits); Content mentions: retriev, recover, debris (5 hits)"
+    },
+    {
+      "source": "doc_69",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.39,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (3 hits)"
+    },
+    {
+      "source": "doc_69",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.38,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: unidentified aerial (1 hits); Content mentions: incident report (1 hits)"
+    },
+    {
+      "source": "doc_69",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.33,
+      "reason": "Content mentions: hearing, testimony, committee (5 hits)"
+    },
+    {
+      "source": "doc_70",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "Content mentions: satellite, reconnaissance (2 hits); Content mentions: radar, flir, infrared (14 hits)"
+    },
+    {
+      "source": "doc_70",
+      "target": "sandia",
+      "type": "document",
+      "weight": 0.39,
+      "reason": "Content mentions: sandia (3 hits)"
+    },
+    {
+      "source": "doc_70",
+      "target": "lanl_ornl_battelle",
+      "type": "document",
+      "weight": 0.36,
+      "reason": "Content mentions: los alamos (4 hits)"
+    },
+    {
+      "source": "doc_70",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; Content mentions: unidentified aerial (1 hits)"
+    },
+    {
+      "source": "doc_70",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Historical USAF investigation lineage; Content mentions: atic (2 hits)"
+    },
+    {
+      "source": "doc_70",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.31,
+      "reason": "Content mentions: wright.?patterson (3 hits)"
+    },
+    {
+      "source": "doc_71",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "State Department diplomatic cables on international UAP incidents"
+    },
+    {
+      "source": "doc_71",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.29,
+      "reason": "1950s era document \u2014 relevant to Doe Aec; Content mentions: nuclear, atomic (4 hits)"
+    },
+    {
+      "source": "doc_71",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.27,
+      "reason": "1950s era document \u2014 relevant to Blue Book; Content mentions: atic (1 hits)"
+    },
+    {
+      "source": "doc_71",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "1950s era document \u2014 relevant to Wright Patterson; Content mentions: debris (1 hits)"
+    },
+    {
+      "source": "doc_72",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.46,
+      "reason": "1950s era document \u2014 relevant to Blue Book; Content mentions: atic (3 hits)"
+    },
+    {
+      "source": "doc_73",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.27,
+      "reason": "1950s era document \u2014 relevant to Blue Book; Content mentions: atic (1 hits)"
+    },
+    {
+      "source": "doc_73",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.18,
+      "reason": "FBI involved in classified document handling; Content mentions: foia (5 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_74",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "FBI investigative record subject to classification"
+    },
+    {
+      "source": "doc_75",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.31,
+      "reason": "Content mentions: unidentified aerial (3 hits)"
+    },
+    {
+      "source": "doc_75",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "State Department diplomatic cables on international UAP incidents"
+    },
+    {
+      "source": "doc_75",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.24,
+      "reason": "Content mentions: atic (2 hits)"
+    },
+    {
+      "source": "doc_75",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.24,
+      "reason": "Content mentions: radar (4 hits)"
+    },
+    {
+      "source": "doc_75",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Content mentions: testimony, representative (2 hits)"
+    },
+    {
+      "source": "doc_76",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "State Department diplomatic cables on international UAP incidents"
+    },
+    {
+      "source": "doc_76",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: cia (2 hits)"
+    },
+    {
+      "source": "doc_77",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_77",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_78",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_78",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_79",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_79",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_80",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_80",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_81",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_81",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_82",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_82",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (2 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_83",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_83",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_84",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_84",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_85",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_85",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_86",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_86",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_87",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_87",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_88",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_88",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_89",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_89",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_90",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_90",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_91",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_91",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_92",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_92",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_93",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_93",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_94",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_94",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_95",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_95",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_96",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_96",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_97",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_97",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_98",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_98",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_99",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_99",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_100",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (4 hits); Content mentions: mission report (1 hits)"
+    },
+    {
+      "source": "doc_100",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.15,
+      "reason": "FBI involved in classified document handling; Content mentions: redact (1 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_101",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.52,
+      "reason": "NASA space observation and tracking programs; Content mentions: radar, tracking (8 hits)"
+    },
+    {
+      "source": "doc_101",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.17,
+      "reason": "1960s era document \u2014 relevant to Wright Patterson; Content mentions: debris (2 hits)"
+    },
+    {
+      "source": "doc_102",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.66,
+      "reason": "NASA space observation and tracking programs; Content mentions: satellite (2 hits); Content mentions: flir, infrared (2 hits)"
+    },
+    {
+      "source": "doc_102",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.17,
+      "reason": "1970s era document \u2014 relevant to Blue Book; Content mentions: atic (1 hits)"
+    },
+    {
+      "source": "doc_103",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.34,
+      "reason": "1960s era document \u2014 relevant to Blue Book; Content mentions: atic (2 hits)"
+    },
+    {
+      "source": "doc_103",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.33,
+      "reason": "Content mentions: disclosure (5 hits)"
+    },
+    {
+      "source": "doc_103",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "NASA space observation and tracking programs"
+    },
+    {
+      "source": "doc_104",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.27,
+      "reason": "Content mentions: radiation (5 hits)"
+    },
+    {
+      "source": "doc_104",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "NASA space observation and tracking programs"
+    },
+    {
+      "source": "doc_105",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.26,
+      "reason": "Content mentions: disclosure (3 hits)"
+    },
+    {
+      "source": "doc_105",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "NASA space observation and tracking programs"
+    },
+    {
+      "source": "doc_106",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.78,
+      "reason": "NASA space observation and tracking programs; Content mentions: satellite (15 hits); Content mentions: sensor (1 hits)"
+    },
+    {
+      "source": "doc_106",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.33,
+      "reason": "Content mentions: disclosure (5 hits)"
+    },
+    {
+      "source": "doc_107",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_108",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_109",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_110",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.24,
+      "reason": "Content mentions: flir, infrared (4 hits)"
+    },
+    {
+      "source": "doc_110",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "2020s era document \u2014 relevant to Aaro"
+    },
+    {
+      "source": "doc_110",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.18,
+      "reason": "FBI involved in classified document handling; Content mentions: secret (5 hits); Contains redactions \u2014 material subject to classification"
+    },
+    {
+      "source": "doc_111",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.88,
+      "reason": "U.S. military reporting chain \u2014 modern UAP reporting to AARO; 2020s era document \u2014 relevant to Aaro; Content mentions: aaro, anomaly resolution, unidentified anomalous (8 hits)"
+    },
+    {
+      "source": "doc_112",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.64,
+      "reason": "FBI involved in classified document handling; Content mentions: atomic energy act (3 hits); Content mentions: classified, secret, redact (12 hits)"
+    },
+    {
+      "source": "doc_112",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.53,
+      "reason": "Content mentions: wright field (2 hits); Content mentions: retriev, recover, crash (15 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_112",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.47,
+      "reason": "Content mentions: atomic energy commission (1 hits); Content mentions: atomic, radiation, radioactive (14 hits)"
+    },
+    {
+      "source": "doc_112",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.45,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: radar, flir, infrared (7 hits)"
+    },
+    {
+      "source": "doc_112",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, hearing, disclosure (17 hits)"
+    },
+    {
+      "source": "doc_112",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: atic (2 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_113",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.82,
+      "reason": "Content mentions: satellite, reconnaissance (6 hits); Content mentions: radar, flir, infrared (29 hits)"
+    },
+    {
+      "source": "doc_113",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Content mentions: blue book, atic (35 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_113",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.53,
+      "reason": "Content mentions: wright.?patterson (2 hits); Content mentions: recover, crash, debris (18 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_113",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: cia, oga (9 hits)"
+    },
+    {
+      "source": "doc_113",
+      "target": "five_eyes",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: allied (6 hits)"
+    },
+    {
+      "source": "doc_113",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, hearing, committee (56 hits)"
+    },
+    {
+      "source": "doc_114",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "FBI investigative record subject to classification"
+    },
+    {
+      "source": "doc_115",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "Content mentions: wright field (11 hits); Content mentions: retriev, recover, crash (58 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_115",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.48,
+      "reason": "Content mentions: atic (5 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_115",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.44,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: flir, infrared, tracking (6 hits)"
+    },
+    {
+      "source": "doc_115",
+      "target": "lanl_ornl_battelle",
+      "type": "document",
+      "weight": 0.44,
+      "reason": "Content mentions: oak ridge (1 hits); Content mentions: specimen (9 hits)"
+    },
+    {
+      "source": "doc_115",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: hearing, senator, representative (4 hits)"
+    },
+    {
+      "source": "doc_115",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "Content mentions: atomic (2 hits)"
+    },
+    {
+      "source": "doc_116",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.82,
+      "reason": "Content mentions: atomic energy commission, aec (6 hits); Content mentions: nuclear, atomic, radioactive (21 hits)"
+    },
+    {
+      "source": "doc_116",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "Content mentions: wright.?patterson, wright field (18 hits); Content mentions: retriev, recover, crash (17 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_116",
+      "target": "lanl_ornl_battelle",
+      "type": "document",
+      "weight": 0.75,
+      "reason": "Content mentions: los alamos, oak ridge (23 hits); Content mentions: specimen (5 hits)"
+    },
+    {
+      "source": "doc_116",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Content mentions: project grudge, atic, air materiel command (15 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_116",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: oversight, committee, senator (31 hits)"
+    },
+    {
+      "source": "doc_116",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.36,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: flir, infrared, electro.?optical (3 hits)"
+    },
+    {
+      "source": "doc_117",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.82,
+      "reason": "Content mentions: doe, aec (14 hits); Content mentions: atomic (8 hits)"
+    },
+    {
+      "source": "doc_117",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.54,
+      "reason": "Content mentions: wright.?patterson, wright field (3 hits); Content mentions: recover, crash (4 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_117",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: cia (8 hits)"
+    },
+    {
+      "source": "doc_117",
+      "target": "lanl_ornl_battelle",
+      "type": "document",
+      "weight": 0.48,
+      "reason": "Content mentions: oak ridge (24 hits)"
+    },
+    {
+      "source": "doc_117",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.47,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: radar, flir, infrared (58 hits)"
+    },
+    {
+      "source": "doc_117",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: testimony, committee, representative (16 hits)"
+    },
+    {
+      "source": "doc_118",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.82,
+      "reason": "Content mentions: atomic energy commission, aec (9 hits); Content mentions: nuclear, atomic, radioactive (25 hits)"
+    },
+    {
+      "source": "doc_118",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.74,
+      "reason": "Content mentions: wright.?patterson, wright field (7 hits); Content mentions: recover, crash, debris (7 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_118",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Content mentions: atic, air technical intelligence, air materiel command (19 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_118",
+      "target": "sandia",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: sandia (10 hits)"
+    },
+    {
+      "source": "doc_118",
+      "target": "lanl_ornl_battelle",
+      "type": "document",
+      "weight": 0.48,
+      "reason": "Content mentions: los alamos, oak ridge (54 hits)"
+    },
+    {
+      "source": "doc_118",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.47,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: radar, flir, infrared (63 hits)"
+    },
+    {
+      "source": "doc_119",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.79,
+      "reason": "Content mentions: doe, aec (6 hits); Content mentions: nuclear, atomic (6 hits)"
+    },
+    {
+      "source": "doc_119",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.65,
+      "reason": "Content mentions: wright.?patterson, wright field (12 hits); Content mentions: crash (2 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_119",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "Content mentions: satellite (2 hits); Content mentions: radar, flir, infrared (22 hits)"
+    },
+    {
+      "source": "doc_119",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Content mentions: project saucer, atic, air technical intelligence (26 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_119",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.43,
+      "reason": "Content mentions: unidentified aerial (6 hits)"
+    },
+    {
+      "source": "doc_119",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, committee, representative (24 hits)"
+    },
+    {
+      "source": "doc_120",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.82,
+      "reason": "Content mentions: satellite (11 hits); Content mentions: radar, flir, infrared (9 hits)"
+    },
+    {
+      "source": "doc_120",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.75,
+      "reason": "Content mentions: wright.?patterson, wright field (14 hits); Content mentions: recover, crash (6 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_120",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.51,
+      "reason": "Content mentions: blue book, atic (6 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_120",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: cia, central intelligence, langley (7 hits)"
+    },
+    {
+      "source": "doc_120",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, hearing, testimony (30 hits)"
+    },
+    {
+      "source": "doc_120",
+      "target": "sandia",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: sandia (2 hits)"
+    },
+    {
+      "source": "doc_121",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: cia, central intelligence, langley (7 hits)"
+    },
+    {
+      "source": "doc_121",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.45,
+      "reason": "Content mentions: wright.?patterson (5 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_121",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, hearing, testimony (44 hits)"
+    },
+    {
+      "source": "doc_121",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: nuclear, radiation, radioactive (11 hits)"
+    },
+    {
+      "source": "doc_121",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: flir, infrared, electro.?optical (3 hits)"
+    },
+    {
+      "source": "doc_121",
+      "target": "lanl_ornl_battelle",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Content mentions: oak ridge (1 hits); Content mentions: metallurg (1 hits)"
+    },
+    {
+      "source": "doc_122",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.39,
+      "reason": "Content mentions: satellite (1 hits); Content mentions: flir, infrared, detection (4 hits)"
+    },
+    {
+      "source": "doc_122",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.39,
+      "reason": "Content mentions: atic (3 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_122",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.33,
+      "reason": "Content mentions: hearing, senator, representative (5 hits)"
+    },
+    {
+      "source": "doc_122",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.24,
+      "reason": "Content mentions: unidentified aerial (2 hits)"
+    },
+    {
+      "source": "doc_122",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.17,
+      "reason": "Content mentions: recover, crash (2 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_122",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.16,
+      "reason": "Content mentions: atomic (2 hits)"
+    },
+    {
+      "source": "doc_123",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Content mentions: atic, air materiel command (119 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_123",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.53,
+      "reason": "Content mentions: wright.?patterson (53 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_123",
+      "target": "cia_oga",
+      "type": "document",
+      "weight": 0.5,
+      "reason": "Content mentions: central intelligence (17 hits)"
+    },
+    {
+      "source": "doc_123",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.32,
+      "reason": "Content mentions: radar (35 hits)"
+    },
+    {
+      "source": "doc_123",
+      "target": "lockheed",
+      "type": "document",
+      "weight": 0.24,
+      "reason": "Content mentions: propulsion (18 hits)"
+    },
+    {
+      "source": "doc_124",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.39,
+      "reason": "Content mentions: atic (3 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_124",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "Content mentions: nuclear, atomic (7 hits)"
+    },
+    {
+      "source": "doc_125",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "FBI investigative record subject to classification"
+    },
+    {
+      "source": "doc_126",
+      "target": "aea_1954",
+      "type": "document",
+      "weight": 0.3,
+      "reason": "FBI investigative record subject to classification"
+    },
+    {
+      "source": "doc_127",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.6,
+      "reason": "Content mentions: satellite (2 hits); Content mentions: radar, flir, infrared (7 hits)"
+    },
+    {
+      "source": "doc_127",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.44,
+      "reason": "Content mentions: blue book, atic (4 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_127",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: congress, hearing, committee (9 hits)"
+    },
+    {
+      "source": "doc_127",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.21,
+      "reason": "Content mentions: nuclear, atomic (3 hits)"
+    },
+    {
+      "source": "doc_127",
+      "target": "lockheed",
+      "type": "document",
+      "weight": 0.2,
+      "reason": "Content mentions: propulsion, anti.?grav (5 hits)"
+    },
+    {
+      "source": "doc_127",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.17,
+      "reason": "Content mentions: recover, crash (2 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_128",
+      "target": "wright_patterson",
+      "type": "document",
+      "weight": 0.77,
+      "reason": "Content mentions: wright.?patterson, wright field (9 hits); Content mentions: recover, crash, wreckage (8 hits); FBI HQ investigations often coordinated with Wright Field"
+    },
+    {
+      "source": "doc_128",
+      "target": "nro",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "Content mentions: satellite (2 hits); Content mentions: radar, flir, infrared (51 hits)"
+    },
+    {
+      "source": "doc_128",
+      "target": "doe_aec",
+      "type": "document",
+      "weight": 0.62,
+      "reason": "Content mentions: atomic energy commission (2 hits); Content mentions: nuclear, atomic, radiation (41 hits)"
+    },
+    {
+      "source": "doc_128",
+      "target": "blue_book",
+      "type": "document",
+      "weight": 0.56,
+      "reason": "Content mentions: atic, air materiel command (10 hits); FBI HQ file \u2014 cross-referenced with USAF programs"
+    },
+    {
+      "source": "doc_128",
+      "target": "congressional",
+      "type": "document",
+      "weight": 0.4,
+      "reason": "Content mentions: hearing, testimony, disclosure (12 hits)"
+    },
+    {
+      "source": "doc_128",
+      "target": "aaro",
+      "type": "document",
+      "weight": 0.36,
+      "reason": "Content mentions: unidentified aerial (2 hits); Content mentions: misrep (2 hits)"
+    }
+  ],
+  "metadata": {
+    "total_documents": 129,
+    "total_connections": 357,
+    "total_structure_edges": 28,
+    "layers": [
+      "surveillance",
+      "custodial",
+      "industrial"
+    ],
+    "avg_connections_per_doc": 2.8,
+    "max_connections_per_doc": 6,
+    "min_connections_per_doc": 1,
+    "docs_per_node": {
+      "aaro": 94,
+      "five_eyes": 21,
+      "nro": 69,
+      "aea_1954": 59,
+      "blue_book": 31,
+      "lockheed": 6,
+      "congressional": 21,
+      "doe_aec": 15,
+      "wright_patterson": 23,
+      "sandia": 4,
+      "cia_oga": 8,
+      "lanl_ornl_battelle": 6
+    }
+  }
+}

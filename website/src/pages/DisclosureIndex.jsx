@@ -175,7 +175,16 @@ function DimensionCard({ dim }) {
                     <span className="ml-1.5 text-[10px] text-indigo-400/70 font-medium">{m.year}</span>
                   )}
                 </span>
-                <p className="text-[11px] text-slate-500 leading-snug mt-0.5">{m.detail}</p>
+                <p className="text-[11px] text-slate-500 leading-snug mt-0.5">
+                  {m.detail}
+                  {' '}
+                  <Link
+                    to={`/search?q=${encodeURIComponent(m.label.split(/[\s:,]+/).find(w => w.length > 4 && !/^(their|these|those|about|which|under|after|being|would|could|still)$/i.test(w)) || m.label.split(/\s+/)[0])}`}
+                    className="text-blue-400 hover:text-blue-300 text-[10px]"
+                  >
+                    Search docs →
+                  </Link>
+                </p>
               </div>
             </div>
           ))}
@@ -337,6 +346,18 @@ export default function DisclosureIndex() {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Explore Further */}
+      <section className="px-4 mt-10 max-w-3xl mx-auto">
+        <h2 className="text-lg font-bold text-slate-200 mb-4">Explore Further</h2>
+        <div className="flex flex-wrap gap-3">
+          <Link to="/cases" className="text-blue-400 hover:text-blue-300 text-sm">High-Validity Cases →</Link>
+          <Link to="/theories" className="text-blue-400 hover:text-blue-300 text-sm">Origin Theories →</Link>
+          <Link to="/analysis/report" className="text-blue-400 hover:text-blue-300 text-sm">Analysis Report →</Link>
+          <Link to="/documents" className="text-blue-400 hover:text-blue-300 text-sm">All Documents →</Link>
+          <Link to="/timeline" className="text-blue-400 hover:text-blue-300 text-sm">Timeline →</Link>
         </div>
       </section>
     </div>

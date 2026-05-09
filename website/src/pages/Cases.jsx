@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 
 const CATEGORY_COLORS = {
   military_encounter: '#3b82f6',
@@ -99,7 +99,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
                 ))}
                 {CASE_DOC_IDS[c.id].length > 6 && (
                   <Link
-                    to="/documents"
+                    to={`/search?q=${encodeURIComponent(c.name)}`}
                     className="text-[11px] px-2 py-1 rounded bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors"
                   >
                     +{CASE_DOC_IDS[c.id].length - 6} more
@@ -122,6 +122,29 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
               </div>
             </div>
           )}
+
+          <div className="pt-2 border-t border-slate-800">
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to={`/graph?search=${encodeURIComponent(c.name.split(/[\s:,]+/).find(w => w.length > 3 && !/^(the|and|over|from|with|near)$/i.test(w)) || c.name.split(/\s+/)[0])}`}
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                View on Graph →
+              </Link>
+              <Link
+                to={`/timeline?decade=${Math.floor(c.year / 10) * 10}s`}
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                View on Timeline →
+              </Link>
+              <Link
+                to="/theories"
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                Related Theories →
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </div>
@@ -146,9 +169,25 @@ function Skeleton() {
 
 export default function Cases() {
   const [data, setData] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
   const [expandedCase, setExpandedCase] = useState(null)
-  const [filter, setFilter] = useState('all')
-  const [sortBy, setSortBy] = useState('year_desc')
+
+  const filter = searchParams.get('category') || 'all'
+  const sortBy = searchParams.get('sort') || 'year_desc'
+
+  const setFilter = (value) => {
+    const next = new URLSearchParams(searchParams)
+    if (value && value !== 'all') next.set('category', value)
+    else next.delete('category')
+    setSearchParams(next, { replace: true })
+  }
+
+  const setSortBy = (value) => {
+    const next = new URLSearchParams(searchParams)
+    if (value && value !== 'year_desc') next.set('sort', value)
+    else next.delete('sort')
+    setSearchParams(next, { replace: true })
+  }
 
   useEffect(() => {
     fetch('/data/cases.json')
@@ -183,6 +222,8 @@ export default function Cases() {
           <Link to="/theories" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Theories</Link>
           {' '}&middot;{' '}
           <Link to="/documents" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">All Documents</Link>
+          {' '}&middot;{' '}
+          <Link to="/timeline" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">Timeline</Link>
         </p>
 
         {/* Category filter */}

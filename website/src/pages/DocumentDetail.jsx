@@ -10,6 +10,9 @@ import {
   agencyColor,
   formatDate,
 } from '../hooks/useData'
+import { useExplorationTrail } from '../hooks/useExplorationTrail'
+import DocThumbnail from '../components/DocThumbnail'
+import PageReader from '../components/PageReader'
 
 const AGENCY_SHORT = {
   'Department of War': 'DoW',
@@ -67,59 +70,6 @@ function LoadingSkeleton() {
   )
 }
 
-function PDFViewer({ url, title }) {
-  const [showViewer, setShowViewer] = useState(false)
-
-  return (
-    <div className="mb-6">
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-sm font-semibold text-slate-300">Original Document</h2>
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setShowViewer(!showViewer)}
-            className="text-xs text-primary hover:text-primary-light transition-colors cursor-pointer"
-          >
-            {showViewer ? 'Hide viewer' : 'Show embedded viewer'}
-          </button>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-amber-500/70 hover:text-amber-400 transition-colors"
-          >
-            Open on war.gov ↗
-          </a>
-        </div>
-      </div>
-      {showViewer && (
-        <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
-          <iframe
-            src={url}
-            title={`PDF: ${title}`}
-            className="w-full border-0"
-            style={{ height: '80vh', minHeight: '500px' }}
-          />
-        </div>
-      )}
-      {!showViewer && (
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 bg-slate-900/60 border border-slate-700/50 rounded-lg p-4 hover:border-primary/30 transition-colors group"
-        >
-          <div className="w-12 h-14 bg-red-500/10 border border-red-500/20 rounded flex items-center justify-center flex-shrink-0">
-            <span className="text-red-400 text-xs font-bold">PDF</span>
-          </div>
-          <div>
-            <span className="text-sm text-slate-200 group-hover:text-primary-light transition-colors block">View original declassified PDF</span>
-            <span className="text-xs text-slate-500">war.gov — opens in new tab</span>
-          </div>
-        </a>
-      )}
-    </div>
-  )
-}
 
 export default function DocumentDetail() {
   const { id } = useParams()
@@ -131,8 +81,15 @@ export default function DocumentDetail() {
   const graph = useGraph()
   const research = useResearch()
 
-  const [textExpanded, setTextExpanded] = useState(false)
   const [narratives, setNarratives] = useState(null)
+
+  const { addToTrail } = useExplorationTrail()
+
+  useEffect(() => {
+    if (doc) {
+      addToTrail({ type: 'document', id: numId, title: doc.title, path: '/documents/' + numId })
+    }
+  }, [doc, numId, addToTrail])
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -239,19 +196,19 @@ export default function DocumentDetail() {
       <div className="flex flex-wrap items-center gap-2 mb-6 text-xs">
         <span className="text-slate-500">Explore in:</span>
         {doc.incident_date_parsed && (
-          <Link to="/timeline" className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          <Link to={`/timeline?doc=${doc.id}${doc.decade ? `&decade=${doc.decade}` : ''}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
             Timeline
           </Link>
         )}
-        <Link to="/graph" className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+        <Link to={`/graph?node=${doc.id}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
           Network Graph
         </Link>
         {doc.incident_location && doc.incident_location !== 'N/A' && (
-          <Link to="/map" className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          <Link to={`/map?${doc.latitude != null && doc.longitude != null ? `lat=${doc.latitude}&lng=${doc.longitude}&zoom=10&` : ''}doc=${doc.id}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
             Map
           </Link>
         )}
-        <Link to={`/search`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+        <Link to={`/search?q=${encodeURIComponent(doc.title.split(',')[0].trim())}`} className="px-2.5 py-1 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
           Search
         </Link>
       </div>
@@ -283,9 +240,18 @@ export default function DocumentDetail() {
         </div>
       )}
 
-      {/* ── Embedded PDF Viewer ─────────────────────────────────────── */}
-      {manifestEntry?.url && (
-        <PDFViewer url={manifestEntry.url} title={doc.title} />
+      {/* ── Page-by-Page Document Reader ─────────────────────────────── */}
+      {doc.total_pages > 0 && (
+        <PageReader
+          docId={numId}
+          pageCount={doc.total_pages}
+          pages={pages}
+          redactedPages={doc.redaction?.flatMap(r => {
+            const count = r.redacted_pages || 0
+            return count > 0 ? Array.from({ length: count }, (_, i) => i + 1) : []
+          })}
+          originalUrl={manifestEntry?.url}
+        />
       )}
 
       {/* ── Official Description ───────────────────────────────────── */}
@@ -344,9 +310,11 @@ export default function DocumentDetail() {
             <Section title="Entities Mentioned" count={doc.entities.length} defaultOpen>
               <div className="flex flex-wrap gap-1.5">
                 {doc.entities.map((e, i) => (
-                  <Badge key={i} color={e.entity_type === 'organization' ? '#3b82f6' : e.entity_type === 'person' ? '#ec4899' : '#6b7280'}>
-                    <span className="opacity-60 mr-1">{e.entity_type}:</span>{e.entity_value}
-                  </Badge>
+                  <Link key={i} to={`/entities?q=${encodeURIComponent(e.entity_value)}`} className="hover:brightness-125 transition-all">
+                    <Badge color={e.entity_type === 'organization' ? '#3b82f6' : e.entity_type === 'person' ? '#ec4899' : '#6b7280'}>
+                      <span className="opacity-60 mr-1">{e.entity_type}:</span>{e.entity_value}
+                    </Badge>
+                  </Link>
                 ))}
               </div>
             </Section>
@@ -383,16 +351,21 @@ export default function DocumentDetail() {
                 <Link
                   key={ref.id}
                   to={`/documents/${ref.id}`}
-                  className="flex items-start gap-2 py-1.5 px-2 -mx-2 rounded hover:bg-slate-700/30 transition-colors group"
+                  className="flex items-center gap-3 py-1.5 px-2 -mx-2 rounded hover:bg-slate-700/30 transition-colors group"
                 >
-                  <span className={`agency-badge ${agencyClass(ref.agency)} mt-0.5 shrink-0`}>
-                    {AGENCY_SHORT[ref.agency] || ref.agency}
-                  </span>
-                  <span className="text-sm text-slate-400 group-hover:text-slate-200 transition-colors line-clamp-1">
-                    {ref.title}
-                  </span>
-                  <span className="ml-auto text-[10px] text-slate-500 shrink-0 mt-0.5">
-                    {(ref.weight * 100).toFixed(0)}% match
+                  <DocThumbnail docId={ref.id} size="sm" className="flex-shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-2">
+                      <span className={`agency-badge ${agencyClass(ref.agency)} shrink-0`}>
+                        {AGENCY_SHORT[ref.agency] || ref.agency}
+                      </span>
+                      <span className="text-sm text-slate-400 group-hover:text-slate-200 transition-colors line-clamp-1">
+                        {ref.title}
+                      </span>
+                    </div>
+                  </div>
+                  <span className="text-[10px] text-slate-500 shrink-0">
+                    {(ref.weight * 100).toFixed(0)}%
                   </span>
                 </Link>
               ))}
@@ -427,39 +400,6 @@ export default function DocumentDetail() {
         </div>
       )}
 
-      {/* ── Document Text ──────────────────────────────────────────── */}
-      {pages.length > 0 && (
-        <div className="mb-4">
-          <div className="flex items-center justify-between mb-2">
-            <h2 className="text-sm font-semibold text-slate-300">Extracted Text</h2>
-            {pages.length > 3 && (
-              <button
-                onClick={() => setTextExpanded(!textExpanded)}
-                className="text-xs text-primary hover:text-primary-light transition-colors cursor-pointer"
-              >
-                {textExpanded ? 'Collapse' : `Show all ${pages.length} pages`}
-              </button>
-            )}
-          </div>
-          <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden">
-            <div className="p-4 max-h-[80vh] overflow-y-auto" style={!textExpanded && pages.length > 3 ? { maxHeight: '60vh' } : { maxHeight: 'none' }}>
-              {pages.map((page, i) => (
-                <div key={i}>
-                  {i > 0 && (
-                    <div className="page-break" />
-                  )}
-                  <div className="relative">
-                    <span className="absolute -left-0 top-0 text-[10px] text-slate-500 select-none font-mono">
-                      p.{i + 1}
-                    </span>
-                    <div className="doc-text pl-6 text-slate-300">{page.trim()}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* ── Extraction info ────────────────────────────────────────── */}
       <div className="text-[11px] text-slate-500 mb-6">

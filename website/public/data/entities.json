@@ -1,0 +1,634 @@
+[
+  {
+    "name": "AIR FORCE",
+    "type": "organization",
+    "doc_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      19,
+      20,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      38,
+      39,
+      59,
+      60,
+      64,
+      65,
+      69,
+      70,
+      72,
+      112,
+      113,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      127,
+      128
+    ],
+    "doc_count": 45,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "1950s",
+      "1990s",
+      "2000s",
+      "2020s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "AARO",
+    "type": "organization",
+    "doc_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      26,
+      29,
+      31,
+      34,
+      36,
+      38,
+      39,
+      41,
+      111
+    ],
+    "doc_count": 24,
+    "agencies": [
+      "Department of War"
+    ],
+    "decades": [
+      "2010s",
+      "2020s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "ARMY",
+    "type": "organization",
+    "doc_ids": [
+      2,
+      20,
+      59,
+      60,
+      64,
+      68,
+      69,
+      70,
+      112,
+      113,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      128
+    ],
+    "doc_count": 20,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "2000s",
+      "2020s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "FBI",
+    "type": "organization",
+    "doc_ids": [
+      60,
+      69,
+      72,
+      73,
+      107,
+      108,
+      112,
+      113,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      126,
+      127,
+      128
+    ],
+    "doc_count": 20,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "1950s",
+      "2020s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "NAVY",
+    "type": "organization",
+    "doc_ids": [
+      2,
+      20,
+      58,
+      59,
+      68,
+      69,
+      112,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      128
+    ],
+    "doc_count": 17,
+    "agencies": [
+      "Department of State",
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "2000s",
+      "2020s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "DIA",
+    "type": "organization",
+    "doc_ids": [
+      57,
+      58,
+      68,
+      69,
+      70,
+      76,
+      113,
+      115,
+      116,
+      118,
+      119,
+      128
+    ],
+    "doc_count": 12,
+    "agencies": [
+      "Department of State",
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1990s",
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "WRIGHT-PATTERSON",
+    "type": "organization",
+    "doc_ids": [
+      60,
+      70,
+      113,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      123,
+      128
+    ],
+    "doc_count": 11,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "PENTAGON",
+    "type": "organization",
+    "doc_ids": [
+      112,
+      113,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      127,
+      128
+    ],
+    "doc_count": 10,
+    "agencies": [
+      "FBI"
+    ],
+    "decades": [
+      "Unknown"
+    ]
+  },
+  {
+    "name": "WRIGHT FIELD",
+    "type": "organization",
+    "doc_ids": [
+      59,
+      60,
+      69,
+      112,
+      115,
+      116,
+      118,
+      119,
+      120,
+      128
+    ],
+    "doc_count": 10,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "DEPARTMENT OF STATE",
+    "type": "organization",
+    "doc_ids": [
+      56,
+      57,
+      58,
+      71,
+      75,
+      76,
+      117,
+      120,
+      123
+    ],
+    "doc_count": 9,
+    "agencies": [
+      "Department of State",
+      "FBI"
+    ],
+    "decades": [
+      "1950s",
+      "1980s",
+      "1990s",
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "MARINE",
+    "type": "organization",
+    "doc_ids": [
+      113,
+      115,
+      117,
+      119,
+      120,
+      121,
+      122,
+      128
+    ],
+    "doc_count": 8,
+    "agencies": [
+      "FBI"
+    ],
+    "decades": [
+      "Unknown"
+    ]
+  },
+  {
+    "name": "CIA",
+    "type": "organization",
+    "doc_ids": [
+      57,
+      58,
+      76,
+      113,
+      117,
+      120,
+      121
+    ],
+    "doc_count": 7,
+    "agencies": [
+      "Department of State",
+      "FBI"
+    ],
+    "decades": [
+      "1990s",
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "NASA",
+    "type": "organization",
+    "doc_ids": [
+      19,
+      20,
+      103,
+      105,
+      106,
+      113,
+      116
+    ],
+    "doc_count": 7,
+    "agencies": [
+      "Department of War",
+      "FBI",
+      "NASA"
+    ],
+    "decades": [
+      "1960s",
+      "1970s",
+      "1990s",
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "COAST GUARD",
+    "type": "organization",
+    "doc_ids": [
+      68,
+      69,
+      70,
+      119,
+      123,
+      128
+    ],
+    "doc_count": 6,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "Unknown"
+    ]
+  },
+  {
+    "name": "CONGRESS",
+    "type": "organization",
+    "doc_ids": [
+      58,
+      112,
+      113,
+      119,
+      120,
+      127
+    ],
+    "doc_count": 6,
+    "agencies": [
+      "Department of State",
+      "FBI"
+    ],
+    "decades": [
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "WHITE HOUSE",
+    "type": "organization",
+    "doc_ids": [
+      58,
+      69,
+      113,
+      121,
+      127
+    ],
+    "doc_count": 5,
+    "agencies": [
+      "Department of State",
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "CENTCOM",
+    "type": "organization",
+    "doc_ids": [
+      8,
+      9,
+      10,
+      38
+    ],
+    "doc_count": 4,
+    "agencies": [
+      "Department of War"
+    ],
+    "decades": [
+      "2020s"
+    ]
+  },
+  {
+    "name": "DEPARTMENT OF DEFENSE",
+    "type": "organization",
+    "doc_ids": [
+      41,
+      118,
+      119,
+      121
+    ],
+    "doc_count": 4,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "Unknown"
+    ]
+  },
+  {
+    "name": "SECTION 2",
+    "type": "case_number",
+    "doc_ids": [
+      19,
+      70,
+      118,
+      128
+    ],
+    "doc_count": 4,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1990s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "SENATE",
+    "type": "organization",
+    "doc_ids": [
+      58,
+      69,
+      113,
+      116
+    ],
+    "doc_count": 4,
+    "agencies": [
+      "Department of State",
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "2000s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "NACA",
+    "type": "organization",
+    "doc_ids": [
+      59,
+      117,
+      128
+    ],
+    "doc_count": 3,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1940s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "PROJECT BLUE BOOK",
+    "type": "organization",
+    "doc_ids": [
+      113,
+      120,
+      127
+    ],
+    "doc_count": 3,
+    "agencies": [
+      "FBI"
+    ],
+    "decades": [
+      "Unknown"
+    ]
+  },
+  {
+    "name": "SECTION 5",
+    "type": "case_number",
+    "doc_ids": [
+      19,
+      117,
+      118
+    ],
+    "doc_count": 3,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1990s",
+      "Unknown"
+    ]
+  },
+  {
+    "name": "SECTION 1",
+    "type": "case_number",
+    "doc_ids": [
+      120,
+      128
+    ],
+    "doc_count": 2,
+    "agencies": [
+      "FBI"
+    ],
+    "decades": [
+      "Unknown"
+    ]
+  },
+  {
+    "name": "SECTION 3",
+    "type": "case_number",
+    "doc_ids": [
+      19,
+      128
+    ],
+    "doc_count": 2,
+    "agencies": [
+      "Department of War",
+      "FBI"
+    ],
+    "decades": [
+      "1990s",
+      "Unknown"
+    ]
+  }
+]

@@ -95,3 +95,9 @@ body { min-height: 100dvh; }
 .scroll-container::-webkit-scrollbar-track { background: transparent; }
 .scroll-container::-webkit-scrollbar-thumb { background: var(--color-border-light); border-radius: 3px; }
 .scroll-container::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }

@@ -25,11 +25,20 @@ download_server.py
 __pycache__/
 *.pyc
 
+# Generated media assets (regenerable from source PDFs)
+website/public/data/thumbnails/
+website/public/data/pages/
+website/public/data/pdfs/
+
 # Website build artifacts
 website/node_modules/
 website/dist/
 /node_modules
 /.vite/deps
+
+# Server build artifacts
+server/node_modules/
+server/dist/
 
 # Root-level tooling (Playwright audit scripts)
 /audit/

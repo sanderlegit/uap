@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, useCallback } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import cytoscape from 'cytoscape'
 import { useGraph, agencyColor, agencyClass } from '../hooks/useData'
 
@@ -27,11 +27,46 @@ export default function GraphView() {
   const graph = useGraph()
   const containerRef = useRef(null)
   const cyRef = useRef(null)
-  const [selected, setSelected] = useState(null)
-  const [search, setSearch] = useState('')
-  const [hiddenAgencies, setHiddenAgencies] = useState(new Set())
-  const [activeDecade, setActiveDecade] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
   const [narratives, setNarratives] = useState(null)
+
+  const selectedNodeId = searchParams.get('node') || null
+  const search = searchParams.get('search') || ''
+  const hiddenAgencies = useMemo(() => {
+    const v = searchParams.get('agency')
+    return v ? new Set(v.split(',')) : new Set()
+  }, [searchParams])
+  const activeDecade = searchParams.get('decade') || null
+
+  const selected = useMemo(() => {
+    if (!graph || !selectedNodeId) return null
+    const node = graph.nodes.find(n => String(n.id) === selectedNodeId)
+    if (!node) return null
+    return {
+      id: String(node.id),
+      label: node.label,
+      agency: node.agency,
+      decade: node.decade,
+      connections: node.connections || 0,
+    }
+  }, [graph, selectedNodeId])
+
+  const searchParamsRef = useRef(searchParams)
+  searchParamsRef.current = searchParams
+
+  const setSelected = useCallback((sel) => {
+    const next = new URLSearchParams(searchParamsRef.current)
+    if (sel) next.set('node', sel.id)
+    else next.delete('node')
+    setSearchParams(next, { replace: true })
+  }, [setSearchParams])
+
+  const setSearch = useCallback((val) => {
+    const next = new URLSearchParams(searchParamsRef.current)
+    if (val.trim()) next.set('search', val)
+    else next.delete('search')
+    setSearchParams(next, { replace: true })
+  }, [setSearchParams])
 
   useEffect(() => {
     fetch('/data/doc_narratives.json')
@@ -60,14 +95,18 @@ export default function GraphView() {
     }, { duration: 200 })
   }, [])
 
+  const hiddenAgenciesRef = useRef(hiddenAgencies)
+  hiddenAgenciesRef.current = hiddenAgencies
+
   const toggleAgency = useCallback((key) => {
-    setHiddenAgencies(prev => {
-      const next = new Set(prev)
-      if (next.has(key)) next.delete(key)
-      else next.add(key)
-      return next
-    })
-  }, [])
+    const next = new URLSearchParams(searchParamsRef.current)
+    const updated = new Set(hiddenAgenciesRef.current)
+    if (updated.has(key)) updated.delete(key)
+    else updated.add(key)
+    if (updated.size > 0) next.set('agency', Array.from(updated).join(','))
+    else next.delete('agency')
+    setSearchParams(next, { replace: true })
+  }, [setSearchParams])
 
 
   useEffect(() => {
@@ -322,7 +361,7 @@ export default function GraphView() {
           {GRAPH_DECADES.map(d => (
             <button
               key={d}
-              onClick={() => setActiveDecade(activeDecade === d ? null : d)}
+              onClick={() => { const next = new URLSearchParams(searchParams); if (activeDecade === d) next.delete('decade'); else next.set('decade', d); setSearchParams(next, { replace: true }) }}
               className={`px-2 py-1 rounded-md text-[10px] font-medium backdrop-blur border transition-all cursor-pointer ${
                 activeDecade === d
                   ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
@@ -334,7 +373,7 @@ export default function GraphView() {
           ))}
           {activeDecade && (
             <button
-              onClick={() => setActiveDecade(null)}
+              onClick={() => { const next = new URLSearchParams(searchParams); next.delete('decade'); setSearchParams(next, { replace: true }) }}
               className="px-2 py-1 rounded-md text-[10px] text-slate-500 hover:text-slate-300 cursor-pointer"
             >
               All
@@ -374,12 +413,26 @@ export default function GraphView() {
           {narratives?.[selected.id]?.hook && (
             <p className="text-xs text-slate-300 leading-relaxed mb-3">{narratives[selected.id].hook}</p>
           )}
-          <Link
-            to={`/documents/${selected.id}`}
-            className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 font-medium"
-          >
-            Read Full Document &rarr;
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              to={`/documents/${selected.id}`}
+              className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 font-medium"
+            >
+              Read Full Document &rarr;
+            </Link>
+            <Link
+              to={`/timeline?doc=${selected.id}${selected.decade ? `&decade=${selected.decade}` : ''}`}
+              className="text-[10px] text-indigo-400/70 hover:text-indigo-400"
+            >
+              Timeline
+            </Link>
+            <Link
+              to={`/map?doc=${selected.id}`}
+              className="text-[10px] text-indigo-400/70 hover:text-indigo-400"
+            >
+              Map
+            </Link>
+          </div>
         </div>
       )}
     </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { useSearch, agencyClass, formatDate } from '../hooks/useData'
+import DocThumbnail from '../components/DocThumbnail'
 
 function useNarratives() {
   const [data, setData] = useState(null)
@@ -46,39 +47,55 @@ function getSnippet(text, query) {
 export default function Search() {
   const { ready, search } = useSearch()
   const narratives = useNarratives()
-  const [query, setQuery] = useState('')
-  const [debouncedQuery, setDebouncedQuery] = useState('')
-  const [activeAgencies, setActiveAgencies] = useState(new Set())
-  const [activeDecades, setActiveDecades] = useState(new Set())
+  const [searchParams, setSearchParams] = useSearchParams()
   const inputRef = useRef(null)
 
-  // Auto-focus on mount
+  const paramQ = searchParams.get('q') || ''
+  const activeAgencies = useMemo(() => {
+    const v = searchParams.get('agency')
+    return v ? new Set(v.split(',')) : new Set()
+  }, [searchParams])
+  const activeDecades = useMemo(() => {
+    const v = searchParams.get('decade')
+    return v ? new Set(v.split(',')) : new Set()
+  }, [searchParams])
+
+  const [query, setQuery] = useState(paramQ)
+  const [debouncedQuery, setDebouncedQuery] = useState(paramQ)
+
   useEffect(() => {
     if (inputRef.current) inputRef.current.focus()
   }, [ready])
 
-  // Debounce query by 300ms
   useEffect(() => {
-    const timer = setTimeout(() => setDebouncedQuery(query), 300)
+    const timer = setTimeout(() => {
+      setDebouncedQuery(query)
+      const next = new URLSearchParams(searchParams)
+      if (query.trim()) next.set('q', query.trim())
+      else next.delete('q')
+      setSearchParams(next, { replace: true })
+    }, 300)
     return () => clearTimeout(timer)
   }, [query])
 
   const toggleAgency = (a) => {
-    setActiveAgencies(prev => {
-      const next = new Set(prev)
-      if (next.has(a)) next.delete(a)
-      else next.add(a)
-      return next
-    })
+    const next = new URLSearchParams(searchParams)
+    const updated = new Set(activeAgencies)
+    if (updated.has(a)) updated.delete(a)
+    else updated.add(a)
+    if (updated.size > 0) next.set('agency', Array.from(updated).join(','))
+    else next.delete('agency')
+    setSearchParams(next, { replace: true })
   }
 
   const toggleDecade = (d) => {
-    setActiveDecades(prev => {
-      const next = new Set(prev)
-      if (next.has(d)) next.delete(d)
-      else next.add(d)
-      return next
-    })
+    const next = new URLSearchParams(searchParams)
+    const updated = new Set(activeDecades)
+    if (updated.has(d)) updated.delete(d)
+    else updated.add(d)
+    if (updated.size > 0) next.set('decade', Array.from(updated).join(','))
+    else next.delete('decade')
+    setSearchParams(next, { replace: true })
   }
 
   const results = useMemo(() => {
@@ -117,7 +134,7 @@ export default function Search() {
           />
           {query && (
             <button
-              onClick={() => { setQuery(''); inputRef.current?.focus() }}
+              onClick={() => { setQuery(''); setDebouncedQuery(''); const next = new URLSearchParams(searchParams); next.delete('q'); setSearchParams(next, { replace: true }); inputRef.current?.focus() }}
               className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-500 hover:text-slate-300"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -198,34 +215,37 @@ export default function Search() {
                     <Link
                       key={r.id}
                       to={`/documents/${r.id}`}
-                      className="bg-slate-900 border border-slate-700/50 rounded-lg p-4 hover:border-blue-500/40 hover:bg-slate-800/80 transition-colors block"
+                      className="flex gap-4 bg-slate-900 border border-slate-700/50 rounded-lg p-4 hover:border-blue-500/40 hover:bg-slate-800/80 transition-colors"
                     >
-                      <h3 className="text-sm font-medium text-slate-200 leading-snug line-clamp-2 mb-2">
-                        {r.title}
-                      </h3>
-                      <div className="flex flex-wrap items-center gap-2 text-xs mb-2">
-                        {r.agency && (
-                          <span className={`agency-badge ${agencyClass(r.agency)}`}>
-                            {r.agency}
-                          </span>
+                      <DocThumbnail docId={r.id} size="sm" />
+                      <div className="min-w-0 flex-1">
+                        <h3 className="text-sm font-medium text-slate-200 leading-snug line-clamp-2 mb-2">
+                          {r.title}
+                        </h3>
+                        <div className="flex flex-wrap items-center gap-2 text-xs mb-2">
+                          {r.agency && (
+                            <span className={`agency-badge ${agencyClass(r.agency)}`}>
+                              {r.agency}
+                            </span>
+                          )}
+                          {r.date && (
+                            <span className="text-slate-500">{formatDate(r.date)}</span>
+                          )}
+                          {r.location && (
+                            <span className="text-slate-500">{r.location}</span>
+                          )}
+                        </div>
+                        {narratives?.[String(r.id)]?.hook && (
+                          <p className="text-xs text-slate-300 leading-relaxed mb-1.5">{narratives[String(r.id)].hook}</p>
                         )}
-                        {r.date && (
-                          <span className="text-slate-500">{formatDate(r.date)}</span>
-                        )}
-                        {r.location && (
-                          <span className="text-slate-500">{r.location}</span>
+                        {snippet && (
+                          <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
+                            {snippet.before}
+                            <mark className="bg-amber-500/30 text-amber-200">{snippet.match}</mark>
+                            {snippet.after}
+                          </p>
                         )}
                       </div>
-                      {narratives?.[String(r.id)]?.hook && (
-                        <p className="text-xs text-slate-300 leading-relaxed mb-1.5">{narratives[String(r.id)].hook}</p>
-                      )}
-                      {snippet && (
-                        <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
-                          {snippet.before}
-                          <mark className="bg-amber-500/30 text-amber-200">{snippet.match}</mark>
-                          {snippet.after}
-                        </p>
-                      )}
                     </Link>
                   )
                 })}

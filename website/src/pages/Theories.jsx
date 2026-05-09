@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import LegacyProgramChart from '../components/LegacyProgramChart'
 
 function useCountUp(target, duration = 1500) {
@@ -17,6 +17,13 @@ function useCountUp(target, duration = 1500) {
     return () => cancelAnimationFrame(raf)
   }, [target, duration])
   return value
+}
+
+const THEORY_CASE_CATEGORIES = {
+  extraterrestrial: ['military_encounter', 'close_encounter'],
+  advanced_human_tech: ['military_encounter', 'historical_military'],
+  natural_phenomena: ['/cases'],
+  interdimensional: ['close_encounter'],
 }
 
 function PopularityBar({ label, value, color }) {
@@ -121,6 +128,37 @@ function TheoryCard({ theory, isExpanded, onToggle }) {
               </div>
             </div>
           )}
+
+          <div className="pt-2 border-t border-slate-800 space-y-2">
+            <h4 className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Supporting Cases</h4>
+            <div className="flex flex-wrap gap-2">
+              {(THEORY_CASE_CATEGORIES[theory.id] || ['/cases']).map((cat, i) =>
+                cat.startsWith('/') ? (
+                  <Link key={i} to={cat} className="text-blue-400 hover:text-blue-300 text-sm">
+                    Browse Cases →
+                  </Link>
+                ) : (
+                  <Link key={i} to={`/cases?category=${cat}`} className="text-blue-400 hover:text-blue-300 text-sm">
+                    {cat.replace(/_/g, ' ')} cases →
+                  </Link>
+                )
+              )}
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to={`/search?q=${encodeURIComponent(theory.name.split(/\s+/).find(w => w.length > 3 && !/^(the|and|with)$/i.test(w)) || theory.name)}`}
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                Explore Documents →
+              </Link>
+              <Link
+                to="/analysis/report"
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                View Analysis →
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </div>
@@ -218,8 +256,17 @@ function Skeleton() {
 
 export default function Theories() {
   const [data, setData] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
   const [expandedTheory, setExpandedTheory] = useState(null)
-  const [sortBy, setSortBy] = useState('popularity')
+
+  const sortBy = searchParams.get('sort') || 'popularity'
+
+  const setSortBy = (value) => {
+    const next = new URLSearchParams(searchParams)
+    if (value && value !== 'popularity') next.set('sort', value)
+    else next.delete('sort')
+    setSearchParams(next, { replace: true })
+  }
 
   useEffect(() => {
     fetch('/data/theories.json')
@@ -259,6 +306,10 @@ export default function Theories() {
           {' '}&middot;{' '}
           <Link to="/documents" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
             Documents
+          </Link>
+          {' '}&middot;{' '}
+          <Link to="/timeline" className="text-indigo-400/70 hover:text-indigo-400 underline underline-offset-2">
+            Timeline
           </Link>
         </p>
 

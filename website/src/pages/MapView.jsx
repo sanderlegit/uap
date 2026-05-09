@@ -1,7 +1,7 @@
-import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { MapContainer, TileLayer, CircleMarker, Popup } from 'react-leaflet'
-import { useDocuments, agencyColor, agencyClass, formatDate } from '../hooks/useData'
+import { useMemo, useState, useEffect, useRef, useCallback } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
+import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from 'react-leaflet'
+import { useDocuments, agencyColor, agencyClass, formatDate, thumbUrl } from '../hooks/useData'
 
 const AGENCIES = [
   { label: 'Dept. of War', color: '#3b82f6' },
@@ -189,10 +189,45 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter }) {
   )
 }
 
+function MapSync({ searchParams, setSearchParams }) {
+  const map = useMap()
+  const timerRef = useRef(null)
+  const searchParamsRef = useRef(searchParams)
+  searchParamsRef.current = searchParams
+
+  useEffect(() => {
+    function onMoveEnd() {
+      if (timerRef.current) clearTimeout(timerRef.current)
+      timerRef.current = setTimeout(() => {
+        const center = map.getCenter()
+        const zoom = map.getZoom()
+        const next = new URLSearchParams(searchParamsRef.current)
+        next.set('lat', center.lat.toFixed(2))
+        next.set('lng', center.lng.toFixed(2))
+        next.set('zoom', String(zoom))
+        setSearchParams(next, { replace: true })
+      }, 500)
+    }
+    map.on('moveend', onMoveEnd)
+    return () => {
+      map.off('moveend', onMoveEnd)
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [map, setSearchParams])
+
+  return null
+}
+
 export default function MapView() {
   const docs = useDocuments()
+  const [searchParams, setSearchParams] = useSearchParams()
   const [expandedEncounter, setExpandedEncounter] = useState(null)
   const [mobileSpaceOpen, setMobileSpaceOpen] = useState(false)
+
+  const initialLat = parseFloat(searchParams.get('lat')) || 20
+  const initialLng = parseFloat(searchParams.get('lng')) || 0
+  const initialZoom = parseInt(searchParams.get('zoom')) || 2
+  const selectedDocId = searchParams.get('doc') || null
 
   const geolocated = useMemo(() => {
     if (!docs) return []
@@ -206,41 +241,57 @@ export default function MapView() {
       {/* Map */}
       <div className="flex-1 relative">
         <MapContainer
-          center={[20, 0]}
-          zoom={2}
+          center={[initialLat, initialLng]}
+          zoom={initialZoom}
           className="h-full w-full z-0"
           scrollWheelZoom={true}
           zoomControl={true}
         >
+          <MapSync searchParams={searchParams} setSearchParams={setSearchParams} />
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
-          {geolocated.map(doc => (
-            <CircleMarker
-              key={doc.id}
-              center={[doc.latitude, doc.longitude]}
-              radius={8}
-              pathOptions={{
-                color: agencyColor(doc.agency),
-                fillColor: agencyColor(doc.agency),
-                fillOpacity: 0.7,
-                weight: 1,
-              }}
-            >
-              <Popup>
-                <div className="min-w-[200px]">
-                  <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-1.5">{doc.title}</h3>
-                  <div className="flex flex-wrap items-center gap-2 text-xs mb-2">
-                    {doc.agency && <span className={`agency-badge ${agencyClass(doc.agency)}`}>{doc.agency}</span>}
+          {geolocated.map(doc => {
+            const isSelected = String(doc.id) === selectedDocId
+            return (
+              <CircleMarker
+                key={doc.id}
+                center={[doc.latitude, doc.longitude]}
+                radius={isSelected ? 12 : 8}
+                pathOptions={{
+                  color: isSelected ? '#f59e0b' : agencyColor(doc.agency),
+                  fillColor: agencyColor(doc.agency),
+                  fillOpacity: isSelected ? 0.9 : 0.7,
+                  weight: isSelected ? 3 : 1,
+                }}
+                eventHandlers={{
+                  click: () => {
+                    const next = new URLSearchParams(searchParams)
+                    next.set('doc', String(doc.id))
+                    setSearchParams(next, { replace: true })
+                  },
+                }}
+              >
+                <Popup>
+                  <div className="min-w-[200px]">
+                    <div className="flex gap-3 mb-2">
+                      <img src={thumbUrl(doc.id)} alt="" className="w-10 h-[52px] object-cover rounded bg-slate-800 flex-shrink-0" onError={(e) => { e.target.style.display = 'none' }} />
+                      <div className="min-w-0">
+                        <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-1">{doc.title}</h3>
+                        <div className="flex flex-wrap items-center gap-2 text-xs">
+                          {doc.agency && <span className={`agency-badge ${agencyClass(doc.agency)}`}>{doc.agency}</span>}
+                        </div>
+                      </div>
+                    </div>
+                    {doc.incident_date_parsed && <p className="text-xs text-slate-400 mb-0.5">{formatDate(doc.incident_date_parsed)}</p>}
+                    {doc.incident_location && <p className="text-xs text-slate-400 mb-2">{doc.incident_location}</p>}
+                    <Link to={`/documents/${doc.id}`} className="text-xs text-blue-400 hover:text-blue-300 font-medium">View Document &rarr;</Link>
                   </div>
-                  {doc.incident_date_parsed && <p className="text-xs text-slate-400 mb-0.5">{formatDate(doc.incident_date_parsed)}</p>}
-                  {doc.incident_location && <p className="text-xs text-slate-400 mb-2">{doc.incident_location}</p>}
-                  <Link to={`/documents/${doc.id}`} className="text-xs text-blue-400 hover:text-blue-300 font-medium">View Document &rarr;</Link>
-                </div>
-              </Popup>
-            </CircleMarker>
-          ))}
+                </Popup>
+              </CircleMarker>
+            )
+          })}
         </MapContainer>
 
         {/* Agency Legend */}
@@ -256,8 +307,8 @@ export default function MapView() {
           </div>
           <p className="text-[10px] text-slate-500 mt-2">{geolocated.length} of {docs.length} mapped</p>
           <div className="flex gap-2 mt-2 pt-2 border-t border-slate-700/40">
-            <Link to="/timeline" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Timeline</Link>
-            <Link to="/graph" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Graph</Link>
+            <Link to={`/timeline${selectedDocId ? `?doc=${selectedDocId}` : ''}`} className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Timeline</Link>
+            <Link to={`/graph${selectedDocId ? `?node=${selectedDocId}` : ''}`} className="text-[10px] text-indigo-400/70 hover:text-indigo-400">Graph</Link>
             <Link to="/documents" className="text-[10px] text-indigo-400/70 hover:text-indigo-400">All Docs</Link>
           </div>
         </div>

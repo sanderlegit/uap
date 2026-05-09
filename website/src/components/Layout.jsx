@@ -1,9 +1,12 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
 import { Outlet, NavLink, Link, useLocation, useParams } from 'react-router-dom'
 import WelcomeBanner from './WelcomeBanner'
+import ChatPanel from './ChatPanel'
+import { useExplorationTrail } from '../hooks/useExplorationTrail'
 
 const primaryNav = [
   { to: '/', label: 'Dashboard', icon: '◉' },
+  { to: '/web', label: 'The Web', icon: '◈' },
   { to: '/documents', label: 'Documents', icon: '◫' },
   { to: '/map', label: 'Map', icon: '◎' },
   { to: '/timeline', label: 'Timeline', icon: '━' },
@@ -15,11 +18,13 @@ const insightsNav = [
   { to: '/disclosure', label: 'Disclosure Index', icon: '%', activeBg: 'bg-purple-500/20', activeText: 'text-purple-300' },
   { to: '/theories', label: 'Theories', icon: '◈', activeBg: 'bg-indigo-500/20', activeText: 'text-indigo-300' },
   { to: '/cases', label: 'Cases', icon: '◆', activeBg: 'bg-red-500/20', activeText: 'text-red-300' },
+  { to: '/entities', label: 'Entities', icon: '▣', activeBg: 'bg-amber-500/20', activeText: 'text-amber-300' },
   { to: '/international', label: 'International', icon: '⊕', activeBg: 'bg-emerald-500/20', activeText: 'text-emerald-300' },
   { to: '/pulse', label: 'Pulse', icon: '◌', activeBg: 'bg-cyan-500/20', activeText: 'text-cyan-300' },
 ]
 
 const breadcrumbMeta = {
+  '/web': { label: 'The Web', hint: 'How 129 declassified documents connect to the alleged Legacy Program structure.' },
   '/documents': { label: 'Documents', hint: 'Browse all 129 declassified files by agency, date, or topic.' },
   '/map': { label: 'Map', hint: 'Incident locations plotted from document coordinates worldwide.' },
   '/timeline': { label: 'Timeline', hint: '99 dated documents spanning 1945 to present.' },
@@ -28,6 +33,7 @@ const breadcrumbMeta = {
   '/disclosure': { label: 'Disclosure Index', hint: 'A composite measure of how much the government has officially acknowledged about UAP.' },
   '/theories': { label: 'Theories', hint: 'Competing hypotheses for what these documents describe.' },
   '/cases': { label: 'Cases', hint: 'The highest-validity UAP encounters with multi-source evidence.' },
+  '/entities': { label: 'Entities', hint: 'Investigate by organization, person, or location across all documents.' },
   '/international': { label: 'International', hint: 'Global UAP programs and how other governments are responding.' },
   '/pulse': { label: 'Pulse', hint: 'Tracking public, political, and scientific momentum around UAP disclosure.' },
 }
@@ -74,6 +80,59 @@ function Breadcrumb() {
         {hint && (
           <span className="text-[11px] text-slate-500 ml-2 hidden sm:inline">{hint}</span>
         )}
+      </div>
+    </div>
+  )
+}
+
+function TypeIcon({ type }) {
+  if (type === 'document') {
+    return (
+      <svg className="w-3 h-3 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <rect x="3" y="1" width="10" height="14" rx="1" />
+        <line x1="5.5" y1="5" x2="10.5" y2="5" />
+        <line x1="5.5" y1="8" x2="10.5" y2="8" />
+        <line x1="5.5" y1="11" x2="8.5" y2="11" />
+      </svg>
+    )
+  }
+  return (
+    <svg className="w-3 h-3 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <rect x="2" y="4" width="12" height="10" rx="1" />
+      <path d="M4 4V3a1 1 0 011-1h6a1 1 0 011 1v1" />
+      <line x1="5" y1="8" x2="11" y2="8" />
+    </svg>
+  )
+}
+
+function ExplorationTrail() {
+  const { trail, clearTrail } = useExplorationTrail()
+
+  if (!trail || trail.length === 0) return null
+
+  return (
+    <div className="bg-slate-900/40 border-b border-slate-800/30">
+      <div className="max-w-6xl mx-auto px-4 py-1.5 flex items-center gap-2">
+        <span className="text-[11px] text-slate-500 shrink-0">Recent:</span>
+        <div className="flex-1 overflow-x-auto flex items-center gap-1.5 scrollbar-hide">
+          {trail.map(item => (
+            <Link
+              key={`${item.type}:${item.id}`}
+              to={item.path}
+              className="flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800 border border-slate-600/40 text-slate-400 hover:text-slate-200 hover:border-slate-500 transition-colors shrink-0 text-xs"
+            >
+              <TypeIcon type={item.type} />
+              <span>{item.title.length > 25 ? item.title.slice(0, 25) + '...' : item.title}</span>
+            </Link>
+          ))}
+        </div>
+        <button
+          onClick={clearTrail}
+          className="text-slate-500 hover:text-slate-300 transition-colors shrink-0 text-xs px-1 cursor-pointer"
+          title="Clear recent trail"
+        >
+          x
+        </button>
       </div>
     </div>
   )
@@ -133,8 +192,7 @@ export default function Layout() {
       <header className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800">
         <div className="flex items-center justify-between px-4 h-14">
           <NavLink to="/" className="flex items-center gap-2 font-bold text-sm tracking-wide">
-            <span className="text-primary text-lg">PURSUE</span>
-            <span className="text-slate-400 hidden sm:inline">UAP Document Explorer</span>
+            <span className="text-amber-500 text-lg tracking-[0.15em]">THE LEGACY PROGRAM</span>
           </NavLink>
           <nav className="hidden md:flex items-center gap-1">
             {primaryNav.map(n => (
@@ -185,10 +243,11 @@ export default function Layout() {
       </header>
       {location.pathname === '/' && <WelcomeBanner />}
       <Breadcrumb />
+      <ExplorationTrail />
       <main className="flex-1">
         <Outlet />
       </main>
-      <nav className="md:hidden fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-800 safe-area-pb">
+      <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 safe-area-pb">
         <div className="flex justify-around items-center h-14 px-2">
           {primaryNav.map(n => (
             <NavLink key={n.to} to={n.to} end={n.to === '/'}
@@ -199,6 +258,7 @@ export default function Layout() {
           ))}
         </div>
       </nav>
+      <ChatPanel />
     </div>
   )
 }

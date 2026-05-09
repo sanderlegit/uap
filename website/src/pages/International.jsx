@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 
 const STATUS_COLORS = {
   active: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', border: 'border-emerald-500/30', label: 'Active' },
@@ -105,6 +105,23 @@ function CountryCard({ country, isExpanded, onToggle }) {
               </div>
             </div>
           )}
+
+          <div className="pt-2 border-t border-slate-800">
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to="/cases"
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                Related Cases →
+              </Link>
+              <Link
+                to={`/search?q=${encodeURIComponent(country.country)}`}
+                className="text-blue-400 hover:text-blue-300 text-sm"
+              >
+                Search Documents →
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </div>
@@ -129,8 +146,17 @@ function Skeleton() {
 
 export default function International() {
   const [data, setData] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
   const [expanded, setExpanded] = useState(null)
-  const [statusFilter, setStatusFilter] = useState('all')
+
+  const statusFilter = searchParams.get('status') || 'all'
+
+  const setStatusFilter = (value) => {
+    const next = new URLSearchParams(searchParams)
+    if (value && value !== 'all') next.set('status', value)
+    else next.delete('status')
+    setSearchParams(next, { replace: true })
+  }
 
   useEffect(() => {
     fetch('/data/international.json')
