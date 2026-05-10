@@ -14,20 +14,38 @@ import { useExplorationTrail } from '../hooks/useExplorationTrail'
 import DocThumbnail from '../components/DocThumbnail'
 import PageReader from '../components/PageReader'
 
-function QuoteBlock({ quote, page, onQuoteClick }) {
-  if (!quote) return null
+function QuoteCarousel({ quotes, onQuoteClick }) {
+  const [idx, setIdx] = useState(0)
+  if (!quotes || quotes.length === 0) return null
+  const q = quotes[idx]
+  const multi = quotes.length > 1
   return (
-    <button
-      onClick={() => onQuoteClick({ quote, page })}
-      className="mt-1.5 block w-full text-left border-l-2 border-amber-500/40 pl-3 py-1 bg-amber-500/5 rounded-r cursor-pointer hover:bg-amber-500/10 hover:border-amber-400/60 transition-colors group"
-    >
-      <span className="text-xs text-amber-200/70 italic leading-relaxed line-clamp-2 group-hover:text-amber-200/90">
-        &ldquo;{quote}&rdquo;
-      </span>
-      {page != null && (
-        <span className="text-[10px] text-amber-500/50 ml-2 group-hover:text-amber-400/70">p.{page} &rarr;</span>
+    <div className="mt-1.5 border-l-2 border-amber-500/40 bg-amber-500/5 rounded-r">
+      <button
+        onClick={() => onQuoteClick({ quote: q.text, page: q.page })}
+        className="block w-full text-left pl-3 pr-2 py-1.5 cursor-pointer hover:bg-amber-500/10 hover:border-amber-400/60 transition-colors group"
+      >
+        <span className="text-xs text-amber-200/70 italic leading-relaxed line-clamp-2 group-hover:text-amber-200/90">
+          &ldquo;{q.text}&rdquo;
+        </span>
+        {q.page != null && (
+          <span className="text-[10px] text-amber-500/50 ml-2 group-hover:text-amber-400/70">p.{q.page} &rarr;</span>
+        )}
+      </button>
+      {multi && (
+        <div className="flex items-center gap-2 pl-3 pb-1.5">
+          <button
+            onClick={(e) => { e.stopPropagation(); setIdx(i => (i - 1 + quotes.length) % quotes.length) }}
+            className="text-[10px] text-amber-500/50 hover:text-amber-400 cursor-pointer px-1"
+          >&larr;</button>
+          <span className="text-[10px] text-amber-500/40 font-mono">{idx + 1}/{quotes.length}</span>
+          <button
+            onClick={(e) => { e.stopPropagation(); setIdx(i => (i + 1) % quotes.length) }}
+            className="text-[10px] text-amber-500/50 hover:text-amber-400 cursor-pointer px-1"
+          >&rarr;</button>
+        </div>
       )}
-    </button>
+    </div>
   )
 }
 
@@ -201,6 +219,13 @@ export default function DocumentDetail() {
     }
   }, [])
 
+  const handleBadgeClick = useCallback((term) => {
+    setActiveQuote({ searchTerm: term })
+    if (pageReaderRef.current) {
+      pageReaderRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [])
+
   const prevId = numId > 0 ? numId - 1 : null
   const nextId = docs && numId < docs.length - 1 ? numId + 1 : null
 
@@ -295,9 +320,11 @@ export default function DocumentDetail() {
               <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-blue-400/70 mb-1.5">Sensors</div>
               <div className="flex flex-wrap gap-1.5">
                 {doc.sensors.map((s, i) => (
-                  <Badge key={i} color="#3b82f6">
-                    {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
-                  </Badge>
+                  <button key={i} onClick={() => handleBadgeClick(s.sensor_type)} className="cursor-pointer hover:brightness-125 transition-all">
+                    <Badge color="#3b82f6">
+                      {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
+                    </Badge>
+                  </button>
                 ))}
               </div>
             </div>
@@ -307,7 +334,9 @@ export default function DocumentDetail() {
               <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-amber-400/70 mb-1.5">Behaviors</div>
               <div className="flex flex-wrap gap-1.5">
                 {doc.behaviors.map((b, i) => (
-                  <Badge key={i} color="#f59e0b">{b}</Badge>
+                  <button key={i} onClick={() => handleBadgeClick(b)} className="cursor-pointer hover:brightness-125 transition-all">
+                    <Badge color="#f59e0b">{b}</Badge>
+                  </button>
                 ))}
               </div>
             </div>
@@ -317,9 +346,11 @@ export default function DocumentDetail() {
               <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-purple-400/70 mb-1.5">Shapes</div>
               <div className="flex flex-wrap gap-1.5">
                 {doc.shapes.map((s, i) => (
-                  <Badge key={i} color="#8b5cf6">
-                    {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
-                  </Badge>
+                  <button key={i} onClick={() => handleBadgeClick(s.shape)} className="cursor-pointer hover:brightness-125 transition-all">
+                    <Badge color="#8b5cf6">
+                      {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
+                    </Badge>
+                  </button>
                 ))}
               </div>
             </div>
@@ -329,7 +360,9 @@ export default function DocumentDetail() {
               <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-emerald-400/70 mb-1.5">Witnesses</div>
               <div className="flex flex-wrap gap-1.5">
                 {doc.witnesses.map((w, i) => (
-                  <Badge key={i} color="#10b981">{w}</Badge>
+                  <button key={i} onClick={() => handleBadgeClick(w)} className="cursor-pointer hover:brightness-125 transition-all">
+                    <Badge color="#10b981">{w}</Badge>
+                  </button>
                 ))}
               </div>
             </div>
@@ -343,10 +376,11 @@ export default function DocumentDetail() {
           <h2 className="text-sm font-semibold text-slate-300 mb-3">Key Findings</h2>
           <div className="space-y-3">
             {narrative.key_findings.map((finding, i) => {
-              const isV2 = typeof finding === 'object' && finding !== null
-              const text = isV2 ? finding.finding : finding
-              const quote = isV2 ? finding.quote : null
-              const page = isV2 ? finding.page : null
+              const isObj = typeof finding === 'object' && finding !== null
+              const text = isObj ? finding.finding : finding
+              const quotes = isObj
+                ? (finding.quotes || (finding.quote ? [{ text: finding.quote, page: finding.page }] : []))
+                : []
               return (
                 <div key={i} className="flex items-start gap-3">
                   <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-[10px] font-bold mt-0.5">
@@ -354,7 +388,7 @@ export default function DocumentDetail() {
                   </span>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm text-slate-300 leading-relaxed">{text}</p>
-                    <QuoteBlock quote={quote} page={page} onQuoteClick={handleQuoteClick} />
+                    <QuoteCarousel quotes={quotes} onQuoteClick={handleQuoteClick} />
                   </div>
                 </div>
               )

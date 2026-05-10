@@ -170,8 +170,12 @@ Respond with a JSON object (no markdown, no code fences, just raw JSON):
   "key_findings": [
     {{
       "finding": "A specific factual finding from the document. Ground it in the text.",
-      "quote": "The exact verbatim quote from the document text that supports this finding. Copy it character-for-character — do not paraphrase or clean up OCR artifacts. If no single quote captures it, use the most relevant passage.",
-      "page": 1
+      "quotes": [
+        {{
+          "text": "The exact verbatim quote from the document text. Copy character-for-character — do not paraphrase or clean up OCR artifacts.",
+          "page": 1
+        }}
+      ]
     }}
   ],
   "document_type": "one of: mission_report, investigation, memo, photo, cable, analysis, congressional, technical, historical_file, other",
@@ -186,12 +190,12 @@ Respond with a JSON object (no markdown, no code fences, just raw JSON):
 }}
 
 Important:
-- Produce 3-5 key_findings. Each MUST include a verbatim "quote" copied exactly from the document text and a 1-indexed "page" number. Pages are separated by "--- PAGE BREAK ---" markers. Count from 1.
+- Produce 3-5 key_findings. Each MUST include a "quotes" array with 1-3 verbatim excerpts copied exactly from the document text. Each quote has a "text" string and a 1-indexed "page" number. Pages are separated by "--- PAGE BREAK ---" markers. Count from 1. Include multiple quotes when a finding draws from different pages or passages.
 - For "legacy_program_connections": only include nodes that the document content actually relates to. Most documents connect to 2-4 nodes.
 - The "hook" should be unique to THIS document. Never use template language like "This is Section X of...".
 - For FBI HQ files (62-HQ-83894 sections): each section contains different reports and memos. Describe what THIS section specifically contains.
 - Ground everything in the text. If the text is heavily redacted, say so. If it's a photo, describe what we know from metadata.
-- For photos/images with no extractable text: set quote to null and page to null."""
+- For photos/images with no extractable text: set quotes to an empty array []."""
 
     return prompt
 

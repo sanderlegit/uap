@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { pageImageUrl } from '../hooks/useData'
 
 function PageImage({ docId, pageNum, onError }) {
@@ -85,25 +85,29 @@ function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate }) {
   )
 }
 
-function HighlightedText({ text, quote }) {
+function HighlightedText({ text, quote, searchTerm }) {
   const base = <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">{text}</pre>
-  if (!quote || !text) return base
+  const term = quote || searchTerm
+  if (!term || !text) return base
 
-  const escQ = quote.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  const pattern = new RegExp(escQ.replace(/\s+/g, '\\s+'), 'i')
-  const match = text.match(pattern)
+  const escQ = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const flexWs = escQ.replace(/\s+/g, '\\s+')
+  const pattern = new RegExp(flexWs, 'gi')
 
-  if (!match) return base
-
-  const start = match.index
-  const end = start + match[0].length
+  const parts = []
+  let lastIndex = 0
+  let match
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index))
+    parts.push(<mark key={match.index} className="bg-amber-500/30 text-amber-100 rounded px-0.5">{match[0]}</mark>)
+    lastIndex = match.index + match[0].length
+    if (!searchTerm) break
+  }
+  if (parts.length === 0) return base
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex))
 
   return (
-    <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">
-      {text.slice(0, start)}
-      <mark className="bg-amber-500/30 text-amber-100 rounded px-0.5">{text.slice(start, end)}</mark>
-      {text.slice(end)}
-    </pre>
+    <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">{parts}</pre>
   )
 }
 
@@ -151,24 +155,62 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
     }
   }, [])
 
+  const matchPages = useMemo(() => {
+    if (!activeQuote?.searchTerm || !pages) return []
+    const term = activeQuote.searchTerm.toLowerCase()
+    return pages.reduce((acc, p, i) => {
+      if (p && p.toLowerCase().includes(term)) acc.push(i + 1)
+      return acc
+    }, [])
+  }, [activeQuote, pages])
+
   useEffect(() => {
     if (!activeQuote) return
     if (hasAnyText) setViewMode('side')
-    if (activeQuote.page) {
-      const el = pageRefs.current[activeQuote.page]
+    const targetPage = activeQuote.page || matchPages[0]
+    if (targetPage) {
+      const el = pageRefs.current[targetPage]
       if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100)
     }
-  }, [activeQuote, hasAnyText])
+  }, [activeQuote, hasAnyText, matchPages])
 
   const effectivePageCount = pageCount || pages?.length || 0
   if (effectivePageCount === 0) return null
 
   return (
     <div className="mb-6">
-      {/* Quote highlight banner */}
+      {/* Highlight banner */}
       {activeQuote && (
         <div className="flex items-center justify-between gap-3 px-3 py-2 mb-2 bg-amber-500/10 border border-amber-500/20 rounded-lg">
-          <span className="text-xs text-amber-300 truncate italic">&ldquo;{activeQuote.quote?.slice(0, 80)}{activeQuote.quote?.length > 80 ? '...' : ''}&rdquo;</span>
+          <div className="flex items-center gap-2 min-w-0">
+            {activeQuote.searchTerm ? (
+              <>
+                <span className="text-xs text-amber-300 font-medium shrink-0">{activeQuote.searchTerm}</span>
+                {matchPages.length > 0 && (
+                  <span className="text-[10px] text-amber-500/60 shrink-0">
+                    {matchPages.length} page{matchPages.length !== 1 ? 's' : ''}
+                  </span>
+                )}
+                {matchPages.length > 1 && (
+                  <div className="flex items-center gap-1 shrink-0">
+                    {matchPages.map(p => (
+                      <button
+                        key={p}
+                        onClick={() => pageRefs.current[p]?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                        className="text-[10px] text-amber-500/50 hover:text-amber-400 cursor-pointer px-1 py-0.5 rounded hover:bg-amber-500/10"
+                      >
+                        p.{p}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : (
+              <span className="text-xs text-amber-300 truncate italic">
+                &ldquo;{activeQuote.quote?.slice(0, 80)}{activeQuote.quote?.length > 80 ? '...' : ''}&rdquo;
+              </span>
+            )}
+          </div>
           <button onClick={onClearQuote} className="text-xs text-amber-500/60 hover:text-amber-400 shrink-0 cursor-pointer">dismiss</button>
         </div>
       )}
@@ -273,7 +315,11 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                       ? 'w-1/2 flex-shrink-0 overflow-y-auto max-h-[80vh] border-l border-slate-700/30 bg-slate-900/40'
                       : 'bg-slate-900/60'
                   }`}>
-                    <HighlightedText text={pageText} quote={activeQuote?.page === num ? activeQuote.quote : null} />
+                    <HighlightedText
+                      text={pageText}
+                      quote={activeQuote?.page === num ? activeQuote.quote : null}
+                      searchTerm={activeQuote?.searchTerm || null}
+                    />
                   </div>
                 )}
 
