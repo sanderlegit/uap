@@ -21,7 +21,7 @@ export default function DocThumbnail({ docId, size = 'sm', className = '' }) {
   const dims = size === 'lg'
     ? 'w-full max-w-sm'
     : size === 'cover'
-    ? 'w-28 h-[145px]'
+    ? 'w-40 h-[208px]'
     : size === 'md'
     ? 'w-20 h-[104px]'
     : 'w-12 h-[62px]'
