@@ -24,7 +24,14 @@
   "entities": [],
   "shapes": [],
   "redaction": [],
-  "cross_refs": [],
+  "cross_refs": [
+    "doc_50",
+    "doc_51",
+    "doc_52",
+    "doc_54",
+    "doc_101",
+    "doc_55"
+  ],
   "excerpt": "",
   "full_text": ""
 }
