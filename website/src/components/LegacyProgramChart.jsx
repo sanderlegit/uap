@@ -3,6 +3,32 @@ import { Link } from 'react-router-dom'
 
 const LAYER_COLORS = ['#3b82f6', '#f59e0b', '#ef4444']
 
+function NodeLinks({ node }) {
+  if (!node.search && !node.lat) return null
+  return (
+    <div className="flex flex-wrap gap-2 mt-2">
+      {node.lat != null && (
+        <Link to={`/map?lat=${node.lat}&lng=${node.lng}&zoom=${node.zoom || 13}`}
+          className="inline-flex items-center gap-1 text-[11px] text-emerald-400 hover:text-emerald-300 transition-colors">
+          <span>◎</span><span>Map</span>
+        </Link>
+      )}
+      {node.search && (
+        <>
+          <Link to={`/search?q=${encodeURIComponent(node.search)}`}
+            className="inline-flex items-center gap-1 text-[11px] text-blue-400 hover:text-blue-300 transition-colors">
+            <span>◫</span><span>Documents</span>
+          </Link>
+          <Link to={`/entities?q=${encodeURIComponent(node.search)}`}
+            className="inline-flex items-center gap-1 text-[11px] text-amber-400 hover:text-amber-300 transition-colors">
+            <span>▣</span><span>Entities</span>
+          </Link>
+        </>
+      )}
+    </div>
+  )
+}
+
 function NodeDetail({ node, color }) {
   return (
     <div className="px-3 pb-3 space-y-2">
@@ -23,6 +49,7 @@ function NodeDetail({ node, color }) {
           </div>
         </div>
       )}
+      <NodeLinks node={node} />
     </div>
   )
 }
@@ -107,8 +134,9 @@ function LayerSection({ layer, index, expanded, onToggle }) {
                     <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expanded.has(f.name) ? 'rotate-180' : ''}`}>&#9662;</span>
                   </button>
                   {expanded.has(f.name) && (
-                    <div className="px-2.5 pb-2">
+                    <div className="px-2.5 pb-2 space-y-1.5">
                       <p className="text-xs text-slate-400 leading-relaxed">{f.detail}</p>
+                      <NodeLinks node={f} />
                     </div>
                   )}
                 </div>
@@ -192,20 +220,20 @@ const CHART_DATA = {
         {
           name: 'NRO — Detection & Tracking',
           nodes: [
-            { name: 'Sentient AI', role: 'Autonomous detection system', detail: 'AI program that continuously monitors global sensor data for anomalous signatures. Flags events for human review and satellite retasking.', evidence: 'NRO FOIA Document C05136331 (May 2021)' },
-            { name: 'Immaculate Constellation', role: 'Satellite retasking program', detail: 'When Sentient flags an anomaly, this program retasks NRO satellites to track and characterize the object. Catalogs every kinetic engagement between military assets and UAP.', evidence: 'DoD stated it has "no record" of this program; whistleblowers insist it exists' },
+            { name: 'Sentient AI', role: 'Autonomous detection system', detail: 'AI program that continuously monitors global sensor data for anomalous signatures. Flags events for human review and satellite retasking.', evidence: 'NRO FOIA Document C05136331 (May 2021)', search: 'NRO' },
+            { name: 'Immaculate Constellation', role: 'Satellite retasking program', detail: 'When Sentient flags an anomaly, this program retasks NRO satellites to track and characterize the object. Catalogs every kinetic engagement between military assets and UAP.', evidence: 'DoD stated it has "no record" of this program; whistleblowers insist it exists', search: 'NRO' },
           ],
         },
         {
           name: 'CIA — Coordination & Foreign Recovery',
           nodes: [
-            { name: 'Office of Global Access', role: 'Foreign retrieval coordination', detail: 'CIA division that coordinates recovery of foreign technology and UAP materials outside U.S. territory. Works with JSOC for physical recovery operations.', connections: ['JSOC', 'NRO', 'DOE/OST'] },
-            { name: 'DS&T', role: 'Directorate of Science & Technology', detail: 'CIA\'s technical division. In 2011, blocked Lockheed VP James Ryder\'s attempt to transfer UAP hardware to DIA\'s AAWSAP program (Kona Blue).', evidence: 'AARO historical record references Kona Blue proposal' },
+            { name: 'Office of Global Access', role: 'Foreign retrieval coordination', detail: 'CIA division that coordinates recovery of foreign technology and UAP materials outside U.S. territory. Works with JSOC for physical recovery operations.', connections: ['JSOC', 'NRO', 'DOE/OST'], search: 'CIA' },
+            { name: 'DS&T', role: 'Directorate of Science & Technology', detail: 'CIA\'s technical division. In 2011, blocked Lockheed VP James Ryder\'s attempt to transfer UAP hardware to DIA\'s AAWSAP program (Kona Blue).', evidence: 'AARO historical record references Kona Blue proposal', search: 'CIA' },
           ],
         },
       ],
       facilities: [
-        { name: 'NRO HQ (Chantilly, VA)', detail: 'Headquarters of the National Reconnaissance Office. Manages satellite constellation and Sentient AI system.' },
+        { name: 'NRO HQ (Chantilly, VA)', detail: 'Headquarters of the National Reconnaissance Office. Manages satellite constellation and Sentient AI system.', lat: 38.924, lng: -77.444, zoom: 14, search: 'NRO' },
       ],
     },
     {
@@ -215,23 +243,23 @@ const CHART_DATA = {
         {
           name: 'DOE — Storage & Classification',
           nodes: [
-            { name: 'Office of Secure Transport', role: 'Material transport teams', detail: 'Teams identified by DOE rain jackets and black fatigues. Dispatched to recovery sites, sometimes in full MOPP gear (chemical/biological protection). The first responders to crash sites.', connections: ['NEST', 'Sandia'] },
-            { name: 'NEST Teams', role: 'Nuclear Emergency Support Team', detail: 'Founded under 1954 Atomic Energy Act authority. Teams with expertise in handling exotic materials. Authority overlaps with UAP material classification as "transclassified foreign nuclear material."', evidence: 'Atomic Energy Act of 1954 (42 U.S.C. § 2011)' },
+            { name: 'Office of Secure Transport', role: 'Material transport teams', detail: 'Teams identified by DOE rain jackets and black fatigues. Dispatched to recovery sites, sometimes in full MOPP gear (chemical/biological protection). The first responders to crash sites.', connections: ['NEST', 'Sandia'], search: 'DOE' },
+            { name: 'NEST Teams', role: 'Nuclear Emergency Support Team', detail: 'Founded under 1954 Atomic Energy Act authority. Teams with expertise in handling exotic materials. Authority overlaps with UAP material classification as "transclassified foreign nuclear material."', evidence: 'Atomic Energy Act of 1954 (42 U.S.C. § 2011)', search: 'nuclear' },
           ],
         },
         {
           name: 'FFRDCs — Federally Funded Research Centers',
           nodes: [
-            { name: 'Sandia National Labs', role: 'Primary material storage hub', detail: 'Operates as the main storage facility under FFRDC protection. Lockheed contractors access materials here without corporate inventory recording. FFRDC status provides additional legal shield.', connections: ['Lockheed Martin', 'DOE'] },
-            { name: 'MITRE Corporation', role: 'Program manager & oversight', detail: 'Called "the most overlooked entity in this entire subject" by UAP Gerb. Acts as program manager and consultant, providing oversight to contractors. Revolving door with NRO and CIA DS&T.', connections: ['NRO', 'CIA DS&T', 'All contractors'] },
-            { name: 'Oak Ridge / Battelle', role: 'Analysis & examination', detail: 'AARO sent materials to Oak Ridge for analysis. Former AARO chief Sean Kirkpatrick departed to become CTO at Oak Ridge — the "job carousel" that keeps oversight internal.', evidence: 'Kirkpatrick appointment reported Dec 2023' },
+            { name: 'Sandia National Labs', role: 'Primary material storage hub', detail: 'Operates as the main storage facility under FFRDC protection. Lockheed contractors access materials here without corporate inventory recording. FFRDC status provides additional legal shield.', connections: ['Lockheed Martin', 'DOE'], search: 'Sandia' },
+            { name: 'MITRE Corporation', role: 'Program manager & oversight', detail: 'Called "the most overlooked entity in this entire subject" by UAP Gerb. Acts as program manager and consultant, providing oversight to contractors. Revolving door with NRO and CIA DS&T.', connections: ['NRO', 'CIA DS&T', 'All contractors'], search: 'MITRE' },
+            { name: 'Oak Ridge / Battelle', role: 'Analysis & examination', detail: 'AARO sent materials to Oak Ridge for analysis. Former AARO chief Sean Kirkpatrick departed to become CTO at Oak Ridge — the "job carousel" that keeps oversight internal.', evidence: 'Kirkpatrick appointment reported Dec 2023', search: 'Battelle' },
           ],
         },
       ],
       facilities: [
-        { name: 'Sandia Labs (Albuquerque, NM)', detail: 'Primary storage location for recovered materials under FFRDC nuclear facility protection.' },
-        { name: 'Los Alamos (NM)', detail: 'Nuclear weapons lab with historical ties to UAP material analysis since Manhattan Project era.' },
-        { name: 'Oak Ridge (TN)', detail: 'Analysis facility. Operated by UT-Battelle. Former AARO chief moved here after tenure.' },
+        { name: 'Sandia Labs (Albuquerque, NM)', detail: 'Primary storage location for recovered materials under FFRDC nuclear facility protection.', lat: 35.042, lng: -106.545, zoom: 13, search: 'Sandia' },
+        { name: 'Los Alamos (NM)', detail: 'Nuclear weapons lab with historical ties to UAP material analysis since Manhattan Project era.', lat: 35.881, lng: -106.299, zoom: 13, search: 'Los Alamos' },
+        { name: 'Oak Ridge (TN)', detail: 'Analysis facility. Operated by UT-Battelle. Former AARO chief moved here after tenure.', lat: 35.931, lng: -84.310, zoom: 13, search: 'Oak Ridge' },
       ],
     },
     {
@@ -241,38 +269,38 @@ const CHART_DATA = {
         {
           name: 'Lockheed Martin — Skunk Works',
           nodes: [
-            { name: 'Skunk Works', role: 'Advanced Development Programs', detail: 'Lockheed\'s secretive division responsible for U-2, SR-71, F-117, and allegedly UAP reverse-engineering. Known for operating outside normal procurement processes.', connections: ['Sandia', 'Tonopah Test Range'] },
-            { name: 'IRAD Billing', role: 'Independent R&D funding', detail: 'Lockheed uses Internal Research and Development billing for unmarked aerospace research. Money never appears in congressional appropriations. Provides plausible deniability for UAP programs.', evidence: 'GAO Report NSIAD-86-191 found 1,400+ discrepancies in Lockheed Burbank programs (1986)' },
+            { name: 'Skunk Works', role: 'Advanced Development Programs', detail: 'Lockheed\'s secretive division responsible for U-2, SR-71, F-117, and allegedly UAP reverse-engineering. Known for operating outside normal procurement processes.', connections: ['Sandia', 'Tonopah Test Range'], search: 'Lockheed' },
+            { name: 'IRAD Billing', role: 'Independent R&D funding', detail: 'Lockheed uses Internal Research and Development billing for unmarked aerospace research. Money never appears in congressional appropriations. Provides plausible deniability for UAP programs.', evidence: 'GAO Report NSIAD-86-191 found 1,400+ discrepancies in Lockheed Burbank programs (1986)', search: 'Lockheed' },
           ],
         },
         {
           name: 'Northrop Grumman',
           nodes: [
-            { name: 'Advanced Programs', role: 'Reverse engineering & prototyping', detail: 'UAP Gerb\'s Northrop project analyzes decades of acquisitions (TRW, Teledyne Ryan, BDM), alleged program locations, and whistleblower testimony surrounding Northrop UAP operations.', connections: ['Sandia', 'Area 51'] },
+            { name: 'Advanced Programs', role: 'Reverse engineering & prototyping', detail: 'UAP Gerb\'s Northrop project analyzes decades of acquisitions (TRW, Teledyne Ryan, BDM), alleged program locations, and whistleblower testimony surrounding Northrop UAP operations.', connections: ['Sandia', 'Area 51'], search: 'Northrop' },
           ],
         },
         {
           name: 'SAIC & Others',
           nodes: [
-            { name: 'SAIC', role: 'Technology exploitation', detail: 'Science Applications International Corporation. Named alongside Lockheed and Northrop as engaging in Technologies of Unknown Origin (TUO) retrieval and exploitation programs.' },
+            { name: 'SAIC', role: 'Technology exploitation', detail: 'Science Applications International Corporation. Named alongside Lockheed and Northrop as engaging in Technologies of Unknown Origin (TUO) retrieval and exploitation programs.', search: 'SAIC' },
           ],
         },
       ],
       facilities: [
-        { name: 'Area 51 / S4 (Papoose Mt, NV)', detail: 'Hangar doors into mountainside. Alleged reverse-engineering bays for recovered craft. Bob Lazar\'s testimony describes 9 craft in hangars.' },
-        { name: 'Tonopah Test Range (NV)', detail: 'Lockheed-operated weapons testing site. Previously secret home of F-117 stealth fighter. Alleged UAP testing location.' },
-        { name: 'Wright-Patterson AFB (OH)', detail: 'Historical materials storage. Long-rumored "Hangar 18" and Foreign Technology Division connection to recovered materials.' },
-        { name: 'Dugway Proving Ground (UT)', detail: 'Called "the new Area 51." Witness testimony of non-human craft in the Dugway Avery Region.' },
+        { name: 'Area 51 / S4 (Papoose Mt, NV)', detail: 'Hangar doors into mountainside. Alleged reverse-engineering bays for recovered craft. Bob Lazar\'s testimony describes 9 craft in hangars.', lat: 37.235, lng: -115.811, zoom: 13, search: 'Area 51' },
+        { name: 'Tonopah Test Range (NV)', detail: 'Lockheed-operated weapons testing site. Previously secret home of F-117 stealth fighter. Alleged UAP testing location.', lat: 38.069, lng: -116.784, zoom: 12, search: 'Tonopah' },
+        { name: 'Wright-Patterson AFB (OH)', detail: 'Historical materials storage. Long-rumored "Hangar 18" and Foreign Technology Division connection to recovered materials.', lat: 39.826, lng: -84.048, zoom: 13, search: 'Wright-Patterson' },
+        { name: 'Dugway Proving Ground (UT)', detail: 'Called "the new Area 51." Witness testimony of non-human craft in the Dugway Avery Region.', lat: 40.199, lng: -112.936, zoom: 11, search: 'Dugway' },
       ],
     },
   ],
   personnel: [
-    { name: 'Mary Sturivant', role: 'Lockheed VP → CIA DS&T', detail: 'Moved from Lockheed Martin VP position to CIA Directorate of Science & Technology. Exemplifies the revolving door between contractor and intelligence agency.', connections: ['Lockheed Martin', 'CIA DS&T'] },
-    { name: 'Doug Wolf', role: 'NRO → CIA → Office of Global Access', detail: 'Career spanning NRO and CIA. Connected to the Office of Global Access, which coordinates foreign UAP material recovery.', connections: ['NRO', 'CIA', 'Office of Global Access'] },
-    { name: 'Donald Kerr', role: 'NRO Dir → CIA Deputy Dir → Los Alamos/Sandia', detail: 'Served as NRO Director, then CIA Deputy Director, with connections to both Los Alamos and Sandia national laboratories. Bridges all three layers.', connections: ['NRO', 'CIA', 'Los Alamos', 'Sandia'] },
-    { name: 'Paul Kaminsky', role: 'OUSD A&S → NRO, structured Black Budget', detail: 'Structured the Black Budget framework in the mid-1990s while at OUSD for Acquisition & Sustainment. Moved to NRO. Created the financial architecture that funds these programs.', connections: ['NRO', 'Pentagon', 'Black Budget'] },
-    { name: 'Sean Kirkpatrick', role: 'AARO Chief → Oak Ridge CTO', detail: 'Led the Pentagon\'s AARO office investigating UAP. Departed Dec 2023 to become CTO at Oak Ridge National Laboratory — the same lab that analyzed materials AARO sent for examination.', connections: ['AARO', 'Oak Ridge', 'Battelle'] },
-    { name: 'Dick Cheney', role: 'Alleged apex of the pyramid', detail: 'Per journalist Walter Kern and David Grusch, the former Vice President allegedly served as a "principal advocate" facilitating funding streams and heading the UAP program hierarchy for an extended period.', connections: ['DOE', 'Pentagon', 'Contractors'] },
+    { name: 'Mary Sturivant', role: 'Lockheed VP → CIA DS&T', detail: 'Moved from Lockheed Martin VP position to CIA Directorate of Science & Technology. Exemplifies the revolving door between contractor and intelligence agency.', connections: ['Lockheed Martin', 'CIA DS&T'], search: 'Sturivant' },
+    { name: 'Doug Wolf', role: 'NRO → CIA → Office of Global Access', detail: 'Career spanning NRO and CIA. Connected to the Office of Global Access, which coordinates foreign UAP material recovery.', connections: ['NRO', 'CIA', 'Office of Global Access'], search: 'Wolf' },
+    { name: 'Donald Kerr', role: 'NRO Dir → CIA Deputy Dir → Los Alamos/Sandia', detail: 'Served as NRO Director, then CIA Deputy Director, with connections to both Los Alamos and Sandia national laboratories. Bridges all three layers.', connections: ['NRO', 'CIA', 'Los Alamos', 'Sandia'], search: 'Kerr' },
+    { name: 'Paul Kaminsky', role: 'OUSD A&S → NRO, structured Black Budget', detail: 'Structured the Black Budget framework in the mid-1990s while at OUSD for Acquisition & Sustainment. Moved to NRO. Created the financial architecture that funds these programs.', connections: ['NRO', 'Pentagon', 'Black Budget'], search: 'Kaminsky' },
+    { name: 'Sean Kirkpatrick', role: 'AARO Chief → Oak Ridge CTO', detail: 'Led the Pentagon\'s AARO office investigating UAP. Departed Dec 2023 to become CTO at Oak Ridge National Laboratory — the same lab that analyzed materials AARO sent for examination.', connections: ['AARO', 'Oak Ridge', 'Battelle'], search: 'Kirkpatrick' },
+    { name: 'Dick Cheney', role: 'Alleged apex of the pyramid', detail: 'Per journalist Walter Kern and David Grusch, the former Vice President allegedly served as a "principal advocate" facilitating funding streams and heading the UAP program hierarchy for an extended period.', connections: ['DOE', 'Pentagon', 'Contractors'], search: 'Cheney' },
   ],
   process: [
     { name: 'Detection', detail: 'Sentient AI flags anomalous signature in global sensor data' },
