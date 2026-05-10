@@ -14,7 +14,7 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: 4173,
-    allowedHosts: ['enge'],
+    allowedHosts: ['enge', '100.111.185.11'],
     proxy: {
       '/api': 'http://localhost:3001',
     },
