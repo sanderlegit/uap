@@ -1,1 +1,74 @@
-{"id": 26, "filename": "dow-uap-d55-mission-report-syria-november-2016.pdf", "title": "DOW-UAP-D55, Mission Report, Syria, November 2016", "agency": "Department of War", "release_date": "5/8/26", "incident_date": "11/18/16", "incident_date_parsed": "2016-11-18T00:00:00", "incident_location": "Syria", "latitude": 35.0, "longitude": 38.0, "description": "This document is a mission briefing summarizing an observation of Unidentified Anomalous Phenomena (UAP) by a U.S. military platform near Latakia, Syria.\nA U.S. military pilot flying a P-8A aircraft reported observing an object via the aircraft’s EO/IR sensor, which they characterized as appearing to be in “sea skim mode,” traveling at approximately 500 knots (575 mph) on a southeasterly heading. The P-8A lost visual contact with the object after two minutes.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.", "file_type": "PDF", "has_redaction": 1, "total_pages": 1, "text_length": 1604, "extraction_method": "pymupdf", "decade": "2010s", "summary": "Hamson \nUSCENTCOM Chief of Staff \nDeclassified on: 20 M~ \n67.1 P-8A OBSERVES UNIDENTIFIED LOW-FLYING OBJECT 55 NM \nNORTHWEST OF LATAKIA, SYRIA \n18 NOV 2016 \nFLIGHT PATH \nJ!!Jlf: Whtie monitoring KCTG activity In the Ea•tem \nMediterranean, P-IA, obe•rved an unidentified low-ftylng \nobject 86 nm northweet of Latakla from an unknown \norigin, traveling at approx SOOK.TS on a •outheut•rly \nheading outbound from KCTG, for ~2 minutes. Timeline (Z): \n(D (°ell P'IEl!sto18/131 OZ: P-8 observed a possible missile launch \nIVQ \n1.4a \nIfrom an origin unknown detected via \nthe EO/IR sensor. was 26NM S of object detection at 16121 F~ \n1.4a \nf2' (911 P't!I!) 18/13122: - P-8 lost visual of the object IVO \n~ \n1.4a \nIapprox. The \nmissile was observed to pass between (RUS) INGUL ARS \nand 1 x U/1 vessel. VVhile this was the first observed occurrence of \npossible missile activity by P-8 aircraft in the Eastern Mediterranean it is assessed to be standard activity consistent with the assessed activity of \nfhe KCTG.", "ocr_applied": 0, "sensors": [{"sensor_type": "infrared/FLIR", "mention_count": 1}, {"sensor_type": "visual", "mention_count": 1}, {"sensor_type": "video", "mention_count": 2}, {"sensor_type": "electro-optical", "mention_count": 1}], "behaviors": [], "witnesses": ["Instrument Only", "Astronaut", "Military Pilot"], "entities": [{"entity_type": "organization", "entity_value": "AARO"}, {"entity_type": "speed_knots", "entity_value": "500"}, {"entity_type": "duration_minutes", "entity_value": "2"}], "shapes": [], "redaction": [{"redacted_pages": 1, "black_rect_count": 0, "black_area_pct": 0.0}], "cross_refs": [], "excerpt": "Declassified by MG Richard A. Hamson \nUSCENTCOM Chief of Staff \nDeclassified on: 20 M~ \n67.1 P-8A OBSERVES UNIDENTIFIED LOW-FLYING OBJECT 55 NM \nNORTHWEST OF LATAKIA, SYRIA \n18 NOV 2016 \nFLIGHT PATH \nJ!!Jlf: Whtie monitoring KCTG activity In the Ea•tem \nMediterranean, P-IA, obe•rved an unidentified low-ftylng \nobject 86 nm northweet of Latakla from an unknown \norigin, traveling at approx SOOK.TS on a •outheut•rly \nheading outbound from KCTG, for ~2 minutes. \nTimeline (Z): \n(D (°ell P'IEl!sto18/1", "full_text": "Declassified by MG Richard A. Hamson \nUSCENTCOM Chief of Staff \nDeclassified on: 20 M~ \n67.1 P-8A OBSERVES UNIDENTIFIED LOW-FLYING OBJECT 55 NM \nNORTHWEST OF LATAKIA, SYRIA \n18 NOV 2016 \nFLIGHT PATH \nJ!!Jlf: Whtie monitoring KCTG activity In the Ea•tem \nMediterranean, P-IA, obe•rved an unidentified low-ftylng \nobject 86 nm northweet of Latakla from an unknown \norigin, traveling at approx SOOK.TS on a •outheut•rly \nheading outbound from KCTG, for ~2 minutes. \nTimeline (Z): \n(D (°ell P'IEl!sto18/131 OZ: P-8 observed a possible missile launch \nIVQ \n1.4a \nIfrom an origin unknown detected via \nthe EO/IR sensor. The possible missile appeared to be in \nsea skim mode traveling at approximately 500KTS on a \nsoutheasterly heading outbound from KCTG. P-8 position \n. was 26NM S of object detection at 16121 F~ \n1.4a \nf2' (911 P't!I!) 18/13122: - P-8 lost visual of the object IVO \n~ \n1.4a \nIapprox. 40 NM northwest of Latakia. The \nmissile was observed to pass between (RUS) INGUL ARS \nand 1 x U/1 vessel. \nWeather: \nUf P-8 aircrew charactenzeavisioilfty as clear, no range \nlimitations . \n.~!~ \n(RUS) INGUL ARS \nUS P-8A Location \n13102:-­\nCTG 67.1 Comment§: The mission commander for P~8 characterized the interaction as safe. VVhile this was the first observed occurrence of \npossible missile activity by P-8 aircraft in the Eastern Mediterranean it is assessed to be standard activity consistent with the assessed activity of \nfhe KCTG. Video footage can be found at this link. \n(b)(6l \n81!8PU!!•1~1PU!L ,8 UOilt, UM8 \nUSCENTCOM MOR 26~038 to MOR 26~046 \nApproved for Release to AARO \n03/27/26 000001 \n"}
+{
+  "id": 26,
+  "filename": "dow-uap-d55-mission-report-syria-november-2016.pdf",
+  "title": "DOW-UAP-D55, Mission Report, Syria, November 2016",
+  "agency": "Department of War",
+  "release_date": "5/8/26",
+  "incident_date": "11/18/16",
+  "incident_date_parsed": "2016-11-18T00:00:00",
+  "incident_location": "Syria",
+  "latitude": 35.0,
+  "longitude": 38.0,
+  "description": "This document is a mission briefing summarizing an observation of Unidentified Anomalous Phenomena (UAP) by a U.S. military platform near Latakia, Syria.\nA U.S. military pilot flying a P-8A aircraft reported observing an object via the aircraft’s EO/IR sensor, which they characterized as appearing to be in “sea skim mode,” traveling at approximately 500 knots (575 mph) on a southeasterly heading. The P-8A lost visual contact with the object after two minutes.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "file_type": "PDF",
+  "has_redaction": 1,
+  "total_pages": 1,
+  "text_length": 1604,
+  "extraction_method": "pymupdf",
+  "decade": "2010s",
+  "summary": "Hamson \nUSCENTCOM Chief of Staff \nDeclassified on: 20 M~ \n67.1 P-8A OBSERVES UNIDENTIFIED LOW-FLYING OBJECT 55 NM \nNORTHWEST OF LATAKIA, SYRIA \n18 NOV 2016 \nFLIGHT PATH \nJ!!Jlf: Whtie monitoring KCTG activity In the Ea•tem \nMediterranean, P-IA, obe•rved an unidentified low-ftylng \nobject 86 nm northweet of Latakla from an unknown \norigin, traveling at approx SOOK.TS on a •outheut•rly \nheading outbound from KCTG, for ~2 minutes. Timeline (Z): \n(D (°ell P'IEl!sto18/131 OZ: P-8 observed a possible missile launch \nIVQ \n1.4a \nIfrom an origin unknown detected via \nthe EO/IR sensor. was 26NM S of object detection at 16121 F~ \n1.4a \nf2' (911 P't!I!) 18/13122: - P-8 lost visual of the object IVO \n~ \n1.4a \nIapprox. The \nmissile was observed to pass between (RUS) INGUL ARS \nand 1 x U/1 vessel. VVhile this was the first observed occurrence of \npossible missile activity by P-8 aircraft in the Eastern Mediterranean it is assessed to be standard activity consistent with the assessed activity of \nfhe KCTG.",
+  "ocr_applied": 0,
+  "sensors": [
+    {
+      "sensor_type": "infrared/FLIR",
+      "mention_count": 1
+    },
+    {
+      "sensor_type": "visual",
+      "mention_count": 1
+    },
+    {
+      "sensor_type": "video",
+      "mention_count": 2
+    },
+    {
+      "sensor_type": "electro-optical",
+      "mention_count": 1
+    }
+  ],
+  "behaviors": [],
+  "witnesses": [
+    "Instrument Only",
+    "Astronaut",
+    "Military Pilot"
+  ],
+  "entities": [
+    {
+      "entity_type": "organization",
+      "entity_value": "AARO"
+    },
+    {
+      "entity_type": "speed_knots",
+      "entity_value": "500"
+    },
+    {
+      "entity_type": "duration_minutes",
+      "entity_value": "2"
+    }
+  ],
+  "shapes": [],
+  "redaction": [
+    {
+      "redacted_pages": 1,
+      "black_rect_count": 0,
+      "black_area_pct": 0.0
+    }
+  ],
+  "cross_refs": [
+    "doc_0",
+    "doc_1",
+    "doc_2"
+  ],
+  "excerpt": "Declassified by MG Richard A. Hamson \nUSCENTCOM Chief of Staff \nDeclassified on: 20 M~ \n67.1 P-8A OBSERVES UNIDENTIFIED LOW-FLYING OBJECT 55 NM \nNORTHWEST OF LATAKIA, SYRIA \n18 NOV 2016 \nFLIGHT PATH \nJ!!Jlf: Whtie monitoring KCTG activity In the Ea•tem \nMediterranean, P-IA, obe•rved an unidentified low-ftylng \nobject 86 nm northweet of Latakla from an unknown \norigin, traveling at approx SOOK.TS on a •outheut•rly \nheading outbound from KCTG, for ~2 minutes. \nTimeline (Z): \n(D (°ell P'IEl!sto18/1",
+  "full_text": "Declassified by MG Richard A. Hamson \nUSCENTCOM Chief of Staff \nDeclassified on: 20 M~ \n67.1 P-8A OBSERVES UNIDENTIFIED LOW-FLYING OBJECT 55 NM \nNORTHWEST OF LATAKIA, SYRIA \n18 NOV 2016 \nFLIGHT PATH \nJ!!Jlf: Whtie monitoring KCTG activity In the Ea•tem \nMediterranean, P-IA, obe•rved an unidentified low-ftylng \nobject 86 nm northweet of Latakla from an unknown \norigin, traveling at approx SOOK.TS on a •outheut•rly \nheading outbound from KCTG, for ~2 minutes. \nTimeline (Z): \n(D (°ell P'IEl!sto18/131 OZ: P-8 observed a possible missile launch \nIVQ \n1.4a \nIfrom an origin unknown detected via \nthe EO/IR sensor. The possible missile appeared to be in \nsea skim mode traveling at approximately 500KTS on a \nsoutheasterly heading outbound from KCTG. P-8 position \n. was 26NM S of object detection at 16121 F~ \n1.4a \nf2' (911 P't!I!) 18/13122: - P-8 lost visual of the object IVO \n~ \n1.4a \nIapprox. 40 NM northwest of Latakia. The \nmissile was observed to pass between (RUS) INGUL ARS \nand 1 x U/1 vessel. \nWeather: \nUf P-8 aircrew charactenzeavisioilfty as clear, no range \nlimitations . \n.~!~ \n(RUS) INGUL ARS \nUS P-8A Location \n13102:-­\nCTG 67.1 Comment§: The mission commander for P~8 characterized the interaction as safe. VVhile this was the first observed occurrence of \npossible missile activity by P-8 aircraft in the Eastern Mediterranean it is assessed to be standard activity consistent with the assessed activity of \nfhe KCTG. Video footage can be found at this link. \n(b)(6l \n81!8PU!!•1~1PU!L ,8 UOilt, UM8 \nUSCENTCOM MOR 26~038 to MOR 26~046 \nApproved for Release to AARO \n03/27/26 000001 \n"
+}

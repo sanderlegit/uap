@@ -1,1 +1,58 @@
-{"id": 107, "filename": "serial 5 redacted_redacted.pdf", "title": "FBI September 2023 Sighting - Serial 3", "agency": "FBI", "release_date": "5/8/26", "incident_date": "9/1/23", "incident_date_parsed": "2023-09-01T00:00:00", "incident_location": "United States", "latitude": 39.0, "longitude": -98.0, "description": "This is an FBI 302 interview conducted with a US citizen regarding their first-hand account of a UAP encounter at a US test site.  USPER described an object \"metallic bronze in color.\"", "file_type": "PDF", "has_redaction": 1, "total_pages": 2, "text_length": 2086, "extraction_method": "ocrmypdf", "decade": "2020s", "summary": "5-8-10) \nFEDERAL BUREAU OF INVESTIGATION \nDate ofentry \n__1O/M/2023 \nME: soe 2, a \na 2: \nWE MMs \n2\"9- 81 Special Agent [J] PJ interviewed I \nI \nee ee ee \nee \nee ee eee 2 \nee \nin | \nat the time of the interview). After being advised of the \nidentity of the interviewing agents and the nature of the interview, \nprovided the following information: \nV2 oe \nEf Git Ff Er Fr Ey \nPd \n| fo \na Se ee es ee ee ee ee \nih \nOn September Hi 2023 at around 9:00 am, | | was at || || \ndriving east to a test site to acquire data for LiDAR testing with \nEE GE MR \n== MN M22 \n= Giving on F150. I \nvas \nbehind them, driving a GMC AT4 with J) IMJ es bis passenger. Investigationon 09/MMJ/2023 \nat I \nUnited States (Other (Facetime Video) \n) \nsiete \nDate drated LO /MI/2023 \nty i \nThis document contains neither recommendations nor conclusions of the FBI. 5-8-10) \n( \nSeptember \n2023 a \na \nUAP \nContinuation of FD-302 of \nOn \nO09 4 | {2023 \npage \n2 Of 2 \n(H/T MY cought the light might have been a meteor coming straight \ntoward them and burning up in the atmosphere.", "ocr_applied": 1, "sensors": [{"sensor_type": "video", "mention_count": 1}], "behaviors": ["hovering", "cloaking", "luminosity_change"], "witnesses": [], "entities": [{"entity_type": "organization", "entity_value": "FBI"}], "shapes": [{"shape": "light/orb", "mention_count": 1}], "redaction": [{"redacted_pages": 0, "black_rect_count": 0, "black_area_pct": 0.0}], "cross_refs": [], "excerpt": "», Orricia. Recorp \nFD-302 Rev. 5-8-10) \nFEDERAL BUREAU OF INVESTIGATION \nDate ofentry \n__1O/M/2023 \nME: soe 2, a \na 2: \nWE MMs \n2\"9- 81 Special Agent [J] PJ interviewed I \nI \nee ee ee \nee \nee ee eee 2 \nee \nin | \nat the time of the interview). After being advised of the \nidentity of the interviewing agents and the nature of the interview, \nprovided the following information: \nV2 oe \nEf Git Ff Er Fr Ey \nPd \n| fo \na Se ee es ee ee ee ee \nih \nOn September Hi 2023 at around 9:00 am, | | was at || ||", "full_text": "», Orricia. Recorp \nFD-302 Rev. 5-8-10) \nFEDERAL BUREAU OF INVESTIGATION \nDate ofentry \n__1O/M/2023 \nME: soe 2, a \na 2: \nWE MMs \n2\"9- 81 Special Agent [J] PJ interviewed I \nI \nee ee ee \nee \nee ee eee 2 \nee \nin | \nat the time of the interview). After being advised of the \nidentity of the interviewing agents and the nature of the interview, \nprovided the following information: \nV2 oe \nEf Git Ff Er Fr Ey \nPd \n| fo \na Se ee es ee ee ee ee \nih \nOn September Hi 2023 at around 9:00 am, | | was at || || \ndriving east to a test site to acquire data for LiDAR testing with \nEE GE MR \n== MN M22 \n= Giving on F150. I \nvas \nbehind them, driving a GMC AT4 with J) IMJ es bis passenger. \nMMM.«vass behind them driving a sprinter van. \n(MPM Ihe vehicles drove through a couple of gates and J \nsaw a bright \nlight over the horizon. The light was stationary in the air, then started \nmoving to the right and then disappeared. || could see the light through \nthe top right of the vehicle’s windshield. The light was bright white and \nwas visible for ten seconds before it disappeared. The light stayed the same \nsize throughout the incident. || thought the light was ten to twenty miles \naway. | | did not notice any interference with his vehicle. \n(HE HM ee inted the light out to J) but JJ looked in the wrong \ndirection. JJ was also tall and had his seat leaned back so he was not in \na good position to see the light. JJ was indifferent to the light until \nthey got to the first test site and J \n21d J \nseiq they saw \nit too. \nInvestigationon 09/MMJ/2023 \nat I \nUnited States (Other (Facetime Video) \n) \nsiete \nDate drated LO /MI/2023 \nty i \nThis document contains neither recommendations nor conclusions of the FBI. It is the property of the FBI and \nis loaned to your agency; it and its contents are not \nto be distributed outside your agency. \n\n\n--- PAGE BREAK ---\n\nFD-302a (Rev. 5-8-10) \n( \nSeptember \n2023 a \na \nUAP \nContinuation of FD-302 of \nOn \nO09 4 | {2023 \npage \n2 Of 2 \n(H/T MY cought the light might have been a meteor coming straight \ntoward them and burning up in the atmosphere.\n"}
+{
+  "id": 107,
+  "filename": "serial 5 redacted_redacted.pdf",
+  "title": "FBI September 2023 Sighting - Serial 3",
+  "agency": "FBI",
+  "release_date": "5/8/26",
+  "incident_date": "9/1/23",
+  "incident_date_parsed": "2023-09-01T00:00:00",
+  "incident_location": "United States",
+  "latitude": 39.0,
+  "longitude": -98.0,
+  "description": "This is an FBI 302 interview conducted with a US citizen regarding their first-hand account of a UAP encounter at a US test site.  USPER described an object \"metallic bronze in color.\"",
+  "file_type": "PDF",
+  "has_redaction": 1,
+  "total_pages": 2,
+  "text_length": 2086,
+  "extraction_method": "ocrmypdf",
+  "decade": "2020s",
+  "summary": "5-8-10) \nFEDERAL BUREAU OF INVESTIGATION \nDate ofentry \n__1O/M/2023 \nME: soe 2, a \na 2: \nWE MMs \n2\"9- 81 Special Agent [J] PJ interviewed I \nI \nee ee ee \nee \nee ee eee 2 \nee \nin | \nat the time of the interview). After being advised of the \nidentity of the interviewing agents and the nature of the interview, \nprovided the following information: \nV2 oe \nEf Git Ff Er Fr Ey \nPd \n| fo \na Se ee es ee ee ee ee \nih \nOn September Hi 2023 at around 9:00 am, | | was at || || \ndriving east to a test site to acquire data for LiDAR testing with \nEE GE MR \n== MN M22 \n= Giving on F150. I \nvas \nbehind them, driving a GMC AT4 with J) IMJ es bis passenger. Investigationon 09/MMJ/2023 \nat I \nUnited States (Other (Facetime Video) \n) \nsiete \nDate drated LO /MI/2023 \nty i \nThis document contains neither recommendations nor conclusions of the FBI. 5-8-10) \n( \nSeptember \n2023 a \na \nUAP \nContinuation of FD-302 of \nOn \nO09 4 | {2023 \npage \n2 Of 2 \n(H/T MY cought the light might have been a meteor coming straight \ntoward them and burning up in the atmosphere.",
+  "ocr_applied": 1,
+  "sensors": [
+    {
+      "sensor_type": "video",
+      "mention_count": 1
+    }
+  ],
+  "behaviors": [
+    "hovering",
+    "cloaking",
+    "luminosity_change"
+  ],
+  "witnesses": [],
+  "entities": [
+    {
+      "entity_type": "organization",
+      "entity_value": "FBI"
+    }
+  ],
+  "shapes": [
+    {
+      "shape": "light/orb",
+      "mention_count": 1
+    }
+  ],
+  "redaction": [
+    {
+      "redacted_pages": 0,
+      "black_rect_count": 0,
+      "black_area_pct": 0.0
+    }
+  ],
+  "cross_refs": [
+    "doc_110",
+    "doc_108"
+  ],
+  "excerpt": "», Orricia. Recorp \nFD-302 Rev. 5-8-10) \nFEDERAL BUREAU OF INVESTIGATION \nDate ofentry \n__1O/M/2023 \nME: soe 2, a \na 2: \nWE MMs \n2\"9- 81 Special Agent [J] PJ interviewed I \nI \nee ee ee \nee \nee ee eee 2 \nee \nin | \nat the time of the interview). After being advised of the \nidentity of the interviewing agents and the nature of the interview, \nprovided the following information: \nV2 oe \nEf Git Ff Er Fr Ey \nPd \n| fo \na Se ee es ee ee ee ee \nih \nOn September Hi 2023 at around 9:00 am, | | was at || ||",
+  "full_text": "», Orricia. Recorp \nFD-302 Rev. 5-8-10) \nFEDERAL BUREAU OF INVESTIGATION \nDate ofentry \n__1O/M/2023 \nME: soe 2, a \na 2: \nWE MMs \n2\"9- 81 Special Agent [J] PJ interviewed I \nI \nee ee ee \nee \nee ee eee 2 \nee \nin | \nat the time of the interview). After being advised of the \nidentity of the interviewing agents and the nature of the interview, \nprovided the following information: \nV2 oe \nEf Git Ff Er Fr Ey \nPd \n| fo \na Se ee es ee ee ee ee \nih \nOn September Hi 2023 at around 9:00 am, | | was at || || \ndriving east to a test site to acquire data for LiDAR testing with \nEE GE MR \n== MN M22 \n= Giving on F150. I \nvas \nbehind them, driving a GMC AT4 with J) IMJ es bis passenger. \nMMM.«vass behind them driving a sprinter van. \n(MPM Ihe vehicles drove through a couple of gates and J \nsaw a bright \nlight over the horizon. The light was stationary in the air, then started \nmoving to the right and then disappeared. || could see the light through \nthe top right of the vehicle’s windshield. The light was bright white and \nwas visible for ten seconds before it disappeared. The light stayed the same \nsize throughout the incident. || thought the light was ten to twenty miles \naway. | | did not notice any interference with his vehicle. \n(HE HM ee inted the light out to J) but JJ looked in the wrong \ndirection. JJ was also tall and had his seat leaned back so he was not in \na good position to see the light. JJ was indifferent to the light until \nthey got to the first test site and J \n21d J \nseiq they saw \nit too. \nInvestigationon 09/MMJ/2023 \nat I \nUnited States (Other (Facetime Video) \n) \nsiete \nDate drated LO /MI/2023 \nty i \nThis document contains neither recommendations nor conclusions of the FBI. It is the property of the FBI and \nis loaned to your agency; it and its contents are not \nto be distributed outside your agency. \n\n\n--- PAGE BREAK ---\n\nFD-302a (Rev. 5-8-10) \n( \nSeptember \n2023 a \na \nUAP \nContinuation of FD-302 of \nOn \nO09 4 | {2023 \npage \n2 Of 2 \n(H/T MY cought the light might have been a meteor coming straight \ntoward them and burning up in the atmosphere.\n"
+}

@@ -1,1 +1,78 @@
-{"id": 18, "filename": "dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf", "title": "DOW-UAP-D44, Range Fouler Reporting Form, Gulf of Aden, October 2020", "agency": "Department of War", "release_date": "5/8/26", "incident_date": "10/15/20", "incident_date_parsed": "2020-10-15T00:00:00", "incident_location": "Arabian Sea", "latitude": 15.0, "longitude": 65.0, "description": "This document is a Range Fouler Reporting Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active military operations or training. These reports contain a narrative description of the observer’s experiences. \nA U.S. military operator reported observing a “round, cold object” via infrared sensor, traveling at 319 degrees (northwest) at approximately 20 mph. The report describes the UAP making “abrupt directional changes” during the event.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.", "file_type": "PDF", "has_redaction": 1, "total_pages": 1, "text_length": 3374, "extraction_method": "pymupdf", "decade": "2020s", "summary": "E \nContact Wot1<ing Area\n(Ex: W-72 1A) \nContact Latltute \n(DD:MM:SS) \nN/S \nContact Longitude \nEIW \nContact Altitude \nAltitude \nW'indDlrat \nContact Alt \n(From) \nWind \nSpeed \n(DD:MM:SS) \n(Ex: 22000) \nConstant? Radar Equipped:\nStable Trackfile?: \n# of Contacts in \"Group':· 1 \nEA Indications (Check all that apply): \n□ □ \n£CM \nLetter \nArc \nIdentifier □ □ \nFalse \nTrac:kfiles \nOIJ1erl \nAmbiguous \nAIM-9x Self-Track: \nA TFLIR Autotrack: \nTally Achieved: \n□ □ □ \nWas the contact moving? Yes \nDirection/Speed \n261130 \n(Ex. 090115) \nPlease check all that apply: \nRound: IZ] \nSquare: D \nBalloon-shaped: D \nWings/Ai1frame:-O \nOther Shape:O \nApparent Propulsion:□ \nMoving Parts: D \nMetallic: D \nMarlcings: D \nTranslucent:-D \nOpaque:O \nReflective: D \nPlease use the field below to describe the contact and any inte'laction in your own words with as much \ndetail as possible. 1.4a \n1- While at 19,073 HAT o'1,er the Gulf of Aden we tracked a round, \ncold object in IR traveling 3,19 degrees at 20 mph.", "ocr_applied": 0, "sensors": [{"sensor_type": "infrared/FLIR", "mention_count": 2}, {"sensor_type": "radar", "mention_count": 1}], "behaviors": ["luminosity_change"], "witnesses": ["Instrument Only", "Military Pilot"], "entities": [{"entity_type": "speed_mph", "entity_value": "20"}, {"entity_type": "duration_minutes", "entity_value": "1"}], "shapes": [{"shape": "sphere/orb", "mention_count": 2}, {"shape": "rectangle/cube", "mention_count": 1}, {"shape": "metallic", "mention_count": 1}], "redaction": [{"redacted_pages": 0, "black_rect_count": 0, "black_area_pct": 0.0}], "cross_refs": [], "excerpt": "Decl\"'ss,fied bv Mt:, Ric1ard \nHar•,sori \n• \nsa::ar , SHI • , 1\nU..il.,fjfrfjlfħ'tfli C.O/i#,5&tt\\Ĩrple\nDecl;sĩRmWJlulpJ.Ī2fXtL§2rī·e and\nemairffie complete Tile manually \n{see below). \nRange Fouler Reportin\u0011 Form \nPlease complete this form to the best of your ability. If you do n:ot have the requested information, \nplease leave the field blank. If there was more than one \"group!\" please report each on a separate \nform for data collection purposes. You should receive a response within 5 business", "full_text": "Decl\"'ss,fied bv Mt:, Ric1ard \nHar•,sori \n• \nsa::ar , SHI • , 1\nU..il.,fjfrfjlfħ'tfli C.O/i#,5&tt\\Ĩrple\nDecl;sĩRmWJlulpJ.Ī2fXtL§2rī·e and\nemairffie complete Tile manually \n{see below). \nRange Fouler Reportin\u0011 Form \nPlease complete this form to the best of your ability. If you do n:ot have the requested information, \nplease leave the field blank. If there was more than one \"group!\" please report each on a separate \nform for data collection purposes. You should receive a response within 5 business days. \nLast N!tme, First Name \nRank \n0-2 \nSquadron \n1172 ATKS \nSIPR E:mail Address \nCrew Position \nOther \nThis information is for contact only. SPEAR sanitizes all r .ports of identifying information. \nAbsolutely no identifying information for aircrew or squadr:: n will be recorded for analysis. \n10/15/20 \n14:18:39 \nDay \nISR \nDate (mmlddlyy) \nTime of detection \nDay I Night \n(hh:mm:ss Z) \nSide No. \nN \nBuno \nMission Description (CAS, BFM. etc) \nLFE? \nE \nContact Wot1<ing Area\n(Ex: W-72 1A) \nContact Latltute \n(DD:MM:SS) \nN/S \nContact Longitude \nEIW \nContact Altitude \nAltitude \nW'indDlrat \nContact Alt \n(From) \nWind \nSpeed \n(DD:MM:SS) \n(Ex: 22000) \nConstant? \nPlease attempt to determine a Lat I Long for the contact at initial detection. We recommend \nusing JMPS to reference the sensor-derived beanng and range relative to the bullseye you had \nin use. If that method is not available, any reasonable derivation of location will worl<, but please \nbe as specfflc as possible and make a note in the comments section. These locations may be \nused to cue other means of tracking. \nRadar Equipped:\nStable Trackfile?: \n# of Contacts in \"Group':· 1 \nEA Indications (Check all that apply): \n□ □ \n£CM \nLetter \nArc \nIdentifier □ □ \nFalse \nTrac:kfiles \nOIJ1erl \nAmbiguous \nAIM-9x Self-Track: \nA TFLIR Autotrack: \nTally Achieved: \n□ □ □ \nWas the contact moving? Yes \nDirection/Speed \n261130 \n(Ex. 090115) \nPlease check all that apply: \nRound: IZ] \nSquare: D \nBalloon-shaped: D \nWings/Ai1frame:-O \nOther Shape:O \nApparent Propulsion:□ \nMoving Parts: D \nMetallic: D \nMarlcings: D \nTranslucent:-D \nOpaque:O \nReflective: D \nPlease use the field below to describe the contact and any inte'laction in your own words with as much \ndetail as possible. Please be sure to include any detail not included in questions above. \nContact at 14:18:392 to 14:19:522 on 15OCT2020. MGRS locat\\on 400 8D 6Ĭ1ĭ (estimated \nlat/long! \n1.4a \n1- While at 19,073 HAT o'1,er the Gulf of Aden we tracked a round, \ncold object in IR traveling 3,19 degrees at 20 mph. It made a fewiabrupt directional changes during the 1 \nminute contact. Our sensor was aimed -50 degrees below our altitude with a slant range of 4.06NM and \nground range of 4. 78KM. The IR sensor was set to black hot an\nĮ \nthe object in question was a bright white. \nI \n(b)(6) \n. \nDon't use the purple \"submit\" button! Save this form with filename \"Date_Squadron_RF.pdr' and email \nit tq \n(b)(6) \nI (Also in the global)) For troubleshooting, cal/I \n(bJ(6J \nI \nThank you for your time. Please ensure all display tapes are rip4ed for the entire time of interaction and \nsaved as a .wm:v (Example: 4 May VFA·106 HUD.wmv). Squadron intel personnel shall upload those files \nto the repository located at this link.\n1 \nI \n(b)(6) \nI \nIIIHif !Nib iii I iii I ii TI \nUSCENTCOM MOR 26-0038 to MOR 26-0046 \nApproved for Release to MR9 \n03/27/26 000001 \n"}
+{
+  "id": 18,
+  "filename": "dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf",
+  "title": "DOW-UAP-D44, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+  "agency": "Department of War",
+  "release_date": "5/8/26",
+  "incident_date": "10/15/20",
+  "incident_date_parsed": "2020-10-15T00:00:00",
+  "incident_location": "Arabian Sea",
+  "latitude": 15.0,
+  "longitude": 65.0,
+  "description": "This document is a Range Fouler Reporting Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active military operations or training. These reports contain a narrative description of the observer’s experiences. \nA U.S. military operator reported observing a “round, cold object” via infrared sensor, traveling at 319 degrees (northwest) at approximately 20 mph. The report describes the UAP making “abrupt directional changes” during the event.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "file_type": "PDF",
+  "has_redaction": 1,
+  "total_pages": 1,
+  "text_length": 3374,
+  "extraction_method": "pymupdf",
+  "decade": "2020s",
+  "summary": "E \nContact Wot1<ing Area\n(Ex: W-72 1A) \nContact Latltute \n(DD:MM:SS) \nN/S \nContact Longitude \nEIW \nContact Altitude \nAltitude \nW'indDlrat \nContact Alt \n(From) \nWind \nSpeed \n(DD:MM:SS) \n(Ex: 22000) \nConstant? Radar Equipped:\nStable Trackfile?: \n# of Contacts in \"Group':· 1 \nEA Indications (Check all that apply): \n□ □ \n£CM \nLetter \nArc \nIdentifier □ □ \nFalse \nTrac:kfiles \nOIJ1erl \nAmbiguous \nAIM-9x Self-Track: \nA TFLIR Autotrack: \nTally Achieved: \n□ □ □ \nWas the contact moving? Yes \nDirection/Speed \n261130 \n(Ex. 090115) \nPlease check all that apply: \nRound: IZ] \nSquare: D \nBalloon-shaped: D \nWings/Ai1frame:-O \nOther Shape:O \nApparent Propulsion:□ \nMoving Parts: D \nMetallic: D \nMarlcings: D \nTranslucent:-D \nOpaque:O \nReflective: D \nPlease use the field below to describe the contact and any inte'laction in your own words with as much \ndetail as possible. 1.4a \n1- While at 19,073 HAT o'1,er the Gulf of Aden we tracked a round, \ncold object in IR traveling 3,19 degrees at 20 mph.",
+  "ocr_applied": 0,
+  "sensors": [
+    {
+      "sensor_type": "infrared/FLIR",
+      "mention_count": 2
+    },
+    {
+      "sensor_type": "radar",
+      "mention_count": 1
+    }
+  ],
+  "behaviors": [
+    "luminosity_change"
+  ],
+  "witnesses": [
+    "Instrument Only",
+    "Military Pilot"
+  ],
+  "entities": [
+    {
+      "entity_type": "speed_mph",
+      "entity_value": "20"
+    },
+    {
+      "entity_type": "duration_minutes",
+      "entity_value": "1"
+    }
+  ],
+  "shapes": [
+    {
+      "shape": "sphere/orb",
+      "mention_count": 2
+    },
+    {
+      "shape": "rectangle/cube",
+      "mention_count": 1
+    },
+    {
+      "shape": "metallic",
+      "mention_count": 1
+    }
+  ],
+  "redaction": [
+    {
+      "redacted_pages": 0,
+      "black_rect_count": 0,
+      "black_area_pct": 0.0
+    }
+  ],
+  "cross_refs": [
+    "doc_28",
+    "doc_15",
+    "doc_29",
+    "doc_17",
+    "doc_27"
+  ],
+  "excerpt": "Decl\"'ss,fied bv Mt:, Ric1ard \nHar•,sori \n• \nsa::ar , SHI • , 1\nU..il.,fjfrfjlfħ'tfli C.O/i#,5&tt\\Ĩrple\nDecl;sĩRmWJlulpJ.Ī2fXtL§2rī·e and\nemairffie complete Tile manually \n{see below). \nRange Fouler Reportin\u0011 Form \nPlease complete this form to the best of your ability. If you do n:ot have the requested information, \nplease leave the field blank. If there was more than one \"group!\" please report each on a separate \nform for data collection purposes. You should receive a response within 5 business",
+  "full_text": "Decl\"'ss,fied bv Mt:, Ric1ard \nHar•,sori \n• \nsa::ar , SHI • , 1\nU..il.,fjfrfjlfħ'tfli C.O/i#,5&tt\\Ĩrple\nDecl;sĩRmWJlulpJ.Ī2fXtL§2rī·e and\nemairffie complete Tile manually \n{see below). \nRange Fouler Reportin\u0011 Form \nPlease complete this form to the best of your ability. If you do n:ot have the requested information, \nplease leave the field blank. If there was more than one \"group!\" please report each on a separate \nform for data collection purposes. You should receive a response within 5 business days. \nLast N!tme, First Name \nRank \n0-2 \nSquadron \n1172 ATKS \nSIPR E:mail Address \nCrew Position \nOther \nThis information is for contact only. SPEAR sanitizes all r .ports of identifying information. \nAbsolutely no identifying information for aircrew or squadr:: n will be recorded for analysis. \n10/15/20 \n14:18:39 \nDay \nISR \nDate (mmlddlyy) \nTime of detection \nDay I Night \n(hh:mm:ss Z) \nSide No. \nN \nBuno \nMission Description (CAS, BFM. etc) \nLFE? \nE \nContact Wot1<ing Area\n(Ex: W-72 1A) \nContact Latltute \n(DD:MM:SS) \nN/S \nContact Longitude \nEIW \nContact Altitude \nAltitude \nW'indDlrat \nContact Alt \n(From) \nWind \nSpeed \n(DD:MM:SS) \n(Ex: 22000) \nConstant? \nPlease attempt to determine a Lat I Long for the contact at initial detection. We recommend \nusing JMPS to reference the sensor-derived beanng and range relative to the bullseye you had \nin use. If that method is not available, any reasonable derivation of location will worl<, but please \nbe as specfflc as possible and make a note in the comments section. These locations may be \nused to cue other means of tracking. \nRadar Equipped:\nStable Trackfile?: \n# of Contacts in \"Group':· 1 \nEA Indications (Check all that apply): \n□ □ \n£CM \nLetter \nArc \nIdentifier □ □ \nFalse \nTrac:kfiles \nOIJ1erl \nAmbiguous \nAIM-9x Self-Track: \nA TFLIR Autotrack: \nTally Achieved: \n□ □ □ \nWas the contact moving? Yes \nDirection/Speed \n261130 \n(Ex. 090115) \nPlease check all that apply: \nRound: IZ] \nSquare: D \nBalloon-shaped: D \nWings/Ai1frame:-O \nOther Shape:O \nApparent Propulsion:□ \nMoving Parts: D \nMetallic: D \nMarlcings: D \nTranslucent:-D \nOpaque:O \nReflective: D \nPlease use the field below to describe the contact and any inte'laction in your own words with as much \ndetail as possible. Please be sure to include any detail not included in questions above. \nContact at 14:18:392 to 14:19:522 on 15OCT2020. MGRS locat\\on 400 8D 6Ĭ1ĭ (estimated \nlat/long! \n1.4a \n1- While at 19,073 HAT o'1,er the Gulf of Aden we tracked a round, \ncold object in IR traveling 3,19 degrees at 20 mph. It made a fewiabrupt directional changes during the 1 \nminute contact. Our sensor was aimed -50 degrees below our altitude with a slant range of 4.06NM and \nground range of 4. 78KM. The IR sensor was set to black hot an\nĮ \nthe object in question was a bright white. \nI \n(b)(6) \n. \nDon't use the purple \"submit\" button! Save this form with filename \"Date_Squadron_RF.pdr' and email \nit tq \n(b)(6) \nI (Also in the global)) For troubleshooting, cal/I \n(bJ(6J \nI \nThank you for your time. Please ensure all display tapes are rip4ed for the entire time of interaction and \nsaved as a .wm:v (Example: 4 May VFA·106 HUD.wmv). Squadron intel personnel shall upload those files \nto the repository located at this link.\n1 \nI \n(b)(6) \nI \nIIIHif !Nib iii I iii I ii TI \nUSCENTCOM MOR 26-0038 to MOR 26-0046 \nApproved for Release to MR9 \n03/27/26 000001 \n"
+}

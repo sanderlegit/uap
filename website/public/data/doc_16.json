@@ -1,1 +1,48 @@
-{"id": 16, "filename": "dow-uap-d4-mission-report-arabian-gulf-2020.pdf", "title": "DOW-UAP-D4, Mission Report, Arabian Gulf, 2020", "agency": "Department of War", "release_date": "5/8/26", "incident_date": "N/A", "incident_date_parsed": null, "incident_location": "N/A", "latitude": null, "longitude": null, "description": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing a UAP traveling at an estimated speed of 321 knots (369 mph). The observer reported that the UAP “increased speed and changed direction towards the east.”\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.", "file_type": "PDF", "has_redaction": 1, "total_pages": 5, "text_length": 332, "extraction_method": "ocrmypdf", "decade": "Unknown", "summary": "--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\nGENTEXT/UAP \n° Description: <6#Sk) AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044. BRIEF \nOBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES. VELOCITY ESTIMATED AT 321 \nKNOTS. UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST.", "ocr_applied": 1, "sensors": [], "behaviors": ["direction_change"], "witnesses": ["Military Pilot"], "entities": [{"entity_type": "speed_knots", "entity_value": "321"}], "shapes": [], "redaction": [{"redacted_pages": 0, "black_rect_count": 0, "black_area_pct": 0.0}], "cross_refs": [], "excerpt": "--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\nGENTEXT/UAP \n° Description: <6#Sk) AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044. BRIEF \nOBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES. VELOCITY ESTIMATED AT 321 \nKNOTS. UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST. \nPILOT:", "full_text": "\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\nGENTEXT/UAP \n° Description: <6#Sk) AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044. BRIEF \nOBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES. VELOCITY ESTIMATED AT 321 \nKNOTS. UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST. \nPILOT: \n"}
+{
+  "id": 16,
+  "filename": "dow-uap-d4-mission-report-arabian-gulf-2020.pdf",
+  "title": "DOW-UAP-D4, Mission Report, Arabian Gulf, 2020",
+  "agency": "Department of War",
+  "release_date": "5/8/26",
+  "incident_date": "N/A",
+  "incident_date_parsed": null,
+  "incident_location": "N/A",
+  "latitude": null,
+  "longitude": null,
+  "description": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing a UAP traveling at an estimated speed of 321 knots (369 mph). The observer reported that the UAP “increased speed and changed direction towards the east.”\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "file_type": "PDF",
+  "has_redaction": 1,
+  "total_pages": 5,
+  "text_length": 332,
+  "extraction_method": "ocrmypdf",
+  "decade": "Unknown",
+  "summary": "--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\nGENTEXT/UAP \n° Description: <6#Sk) AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044. BRIEF \nOBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES. VELOCITY ESTIMATED AT 321 \nKNOTS. UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST.",
+  "ocr_applied": 1,
+  "sensors": [],
+  "behaviors": [
+    "direction_change"
+  ],
+  "witnesses": [
+    "Military Pilot"
+  ],
+  "entities": [
+    {
+      "entity_type": "speed_knots",
+      "entity_value": "321"
+    }
+  ],
+  "shapes": [],
+  "redaction": [
+    {
+      "redacted_pages": 0,
+      "black_rect_count": 0,
+      "black_area_pct": 0.0
+    }
+  ],
+  "cross_refs": [
+    "doc_21",
+    "doc_37"
+  ],
+  "excerpt": "--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\nGENTEXT/UAP \n° Description: <6#Sk) AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044. BRIEF \nOBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES. VELOCITY ESTIMATED AT 321 \nKNOTS. UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST. \nPILOT:",
+  "full_text": "\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\n\n\n--- PAGE BREAK ---\n\nGENTEXT/UAP \n° Description: <6#Sk) AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044. BRIEF \nOBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES. VELOCITY ESTIMATED AT 321 \nKNOTS. UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST. \nPILOT: \n"
+}

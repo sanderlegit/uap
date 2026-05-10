@@ -1,1 +1,52 @@
-{"id": 72, "filename": "65_hs1-101634279_100-de-18221_serial_844.pdf", "title": "65_HS1-101634279_100-DE-18221_Serial_844", "agency": "FBI", "release_date": "5/8/26", "incident_date": "4/17/58", "incident_date_parsed": "1958-04-17T00:00:00", "incident_location": "Detroit, MI", "latitude": null, "longitude": null, "description": "An FBI memo from 1958 reporting a UFO sighting by a Detroit man who described a \"circular object with a crystal-type dome,\" and recommending that the information be forwarded to \"proper air force authorities.\"", "file_type": "PDF", "has_redaction": 0, "total_pages": 1, "text_length": 1333, "extraction_method": "ocrmypdf", "decade": "1950s", "summary": "64 \nOffice Memorandum * UNITED STATES GOVER \nTO \nFROM \n: \nSA ROBERT ROS \nDeclassification authority derived \nfrom FBI Automatic Declassification \nGuide, issued May 24, 2007. : \nSAC, DETROIT \nDATE: April 17, 1958 \nREYNOLDS \nSUBJECT: \nUNI DENTIFIYD FLYING OBJECTS \nNW 90288 \nBR. 15801 Decosta, Detroit, Michigan, Telephone \nNo. KEnwood \nf-751.6, telephonically advised this office at }):08 A.™., \ntoday, that dhe had just seen an object in the sky described as a \ncircular object with a crystal-type dome that reflected lights. JEAVER stated he was on his way home from \nhis employment in Detroit when he observed instant object.", "ocr_applied": 1, "sensors": [], "behaviors": [], "witnesses": [], "entities": [{"entity_type": "organization", "entity_value": "Air Force"}, {"entity_type": "organization", "entity_value": "air force"}, {"entity_type": "organization", "entity_value": "FBI"}], "shapes": [], "redaction": [], "cross_refs": [], "excerpt": "STANDARD FORM NO. 64 \nOffice Memorandum * UNITED STATES GOVER \nTO \nFROM \n: \nSA ROBERT ROS \nDeclassification authority derived \nfrom FBI Automatic Declassification \nGuide, issued May 24, 2007. \n: \nSAC, DETROIT \nDATE: April 17, 1958 \nREYNOLDS \nSUBJECT: \nUNI DENTIFIYD FLYING OBJECTS \nNW 90288 \nBR. \n15801 Decosta, Detroit, Michigan, Telephone \nNo. KEnwood \nf-751.6, telephonically advised this office at }):08 A.™., \ntoday, that dhe had just seen an object in the sky described as a \ncircular object wi", "full_text": "STANDARD FORM NO. 64 \nOffice Memorandum * UNITED STATES GOVER \nTO \nFROM \n: \nSA ROBERT ROS \nDeclassification authority derived \nfrom FBI Automatic Declassification \nGuide, issued May 24, 2007. \n: \nSAC, DETROIT \nDATE: April 17, 1958 \nREYNOLDS \nSUBJECT: \nUNI DENTIFIYD FLYING OBJECTS \nNW 90288 \nBR. \n15801 Decosta, Detroit, Michigan, Telephone \nNo. KEnwood \nf-751.6, telephonically advised this office at }):08 A.™., \ntoday, that dhe had just seen an object in the sky described as a \ncircular object with a crystal-type dome that reflected lights. \nHe said this object was passing in a northern direction from \nsouthwest and crossed the City three blocks south of Six Mile \nat Lamphere Street. \nWEAVER advised that he attempted to call Selfridge Pield \nto get in touch with the Air Force but his attempts were un- \nproductive. \nHe then called the office to furnish the above \ninformation. \nWEAVER said he was 23 years of age, was the son of a Detroit \npoliceman, and that he had previous experience with the Civil Air \nPatrol (CAP); however, he was not too familiar with the identi- \nfication of aircraft. \nJEAVER stated he was on his way home from \nhis employment in Detroit when he observed instant object. \nRECOMMENDATION \nAdvise proper air force authorities. \nLy \nie \nj \n¢ Caf( \nY \ne \nFBI - DETROIT \np—__1* \nDocld:34715588 Page \n1\n"}
+{
+  "id": 72,
+  "filename": "65_hs1-101634279_100-de-18221_serial_844.pdf",
+  "title": "65_HS1-101634279_100-DE-18221_Serial_844",
+  "agency": "FBI",
+  "release_date": "5/8/26",
+  "incident_date": "4/17/58",
+  "incident_date_parsed": "1958-04-17T00:00:00",
+  "incident_location": "Detroit, MI",
+  "latitude": null,
+  "longitude": null,
+  "description": "An FBI memo from 1958 reporting a UFO sighting by a Detroit man who described a \"circular object with a crystal-type dome,\" and recommending that the information be forwarded to \"proper air force authorities.\"",
+  "file_type": "PDF",
+  "has_redaction": 0,
+  "total_pages": 1,
+  "text_length": 1333,
+  "extraction_method": "ocrmypdf",
+  "decade": "1950s",
+  "summary": "64 \nOffice Memorandum * UNITED STATES GOVER \nTO \nFROM \n: \nSA ROBERT ROS \nDeclassification authority derived \nfrom FBI Automatic Declassification \nGuide, issued May 24, 2007. : \nSAC, DETROIT \nDATE: April 17, 1958 \nREYNOLDS \nSUBJECT: \nUNI DENTIFIYD FLYING OBJECTS \nNW 90288 \nBR. 15801 Decosta, Detroit, Michigan, Telephone \nNo. KEnwood \nf-751.6, telephonically advised this office at }):08 A.™., \ntoday, that dhe had just seen an object in the sky described as a \ncircular object with a crystal-type dome that reflected lights. JEAVER stated he was on his way home from \nhis employment in Detroit when he observed instant object.",
+  "ocr_applied": 1,
+  "sensors": [],
+  "behaviors": [],
+  "witnesses": [],
+  "entities": [
+    {
+      "entity_type": "organization",
+      "entity_value": "Air Force"
+    },
+    {
+      "entity_type": "organization",
+      "entity_value": "air force"
+    },
+    {
+      "entity_type": "organization",
+      "entity_value": "FBI"
+    }
+  ],
+  "shapes": [],
+  "redaction": [],
+  "cross_refs": [
+    "doc_110",
+    "doc_42",
+    "doc_43",
+    "doc_44",
+    "doc_45",
+    "doc_46",
+    "doc_47",
+    "doc_48"
+  ],
+  "excerpt": "STANDARD FORM NO. 64 \nOffice Memorandum * UNITED STATES GOVER \nTO \nFROM \n: \nSA ROBERT ROS \nDeclassification authority derived \nfrom FBI Automatic Declassification \nGuide, issued May 24, 2007. \n: \nSAC, DETROIT \nDATE: April 17, 1958 \nREYNOLDS \nSUBJECT: \nUNI DENTIFIYD FLYING OBJECTS \nNW 90288 \nBR. \n15801 Decosta, Detroit, Michigan, Telephone \nNo. KEnwood \nf-751.6, telephonically advised this office at }):08 A.™., \ntoday, that dhe had just seen an object in the sky described as a \ncircular object wi",
+  "full_text": "STANDARD FORM NO. 64 \nOffice Memorandum * UNITED STATES GOVER \nTO \nFROM \n: \nSA ROBERT ROS \nDeclassification authority derived \nfrom FBI Automatic Declassification \nGuide, issued May 24, 2007. \n: \nSAC, DETROIT \nDATE: April 17, 1958 \nREYNOLDS \nSUBJECT: \nUNI DENTIFIYD FLYING OBJECTS \nNW 90288 \nBR. \n15801 Decosta, Detroit, Michigan, Telephone \nNo. KEnwood \nf-751.6, telephonically advised this office at }):08 A.™., \ntoday, that dhe had just seen an object in the sky described as a \ncircular object with a crystal-type dome that reflected lights. \nHe said this object was passing in a northern direction from \nsouthwest and crossed the City three blocks south of Six Mile \nat Lamphere Street. \nWEAVER advised that he attempted to call Selfridge Pield \nto get in touch with the Air Force but his attempts were un- \nproductive. \nHe then called the office to furnish the above \ninformation. \nWEAVER said he was 23 years of age, was the son of a Detroit \npoliceman, and that he had previous experience with the Civil Air \nPatrol (CAP); however, he was not too familiar with the identi- \nfication of aircraft. \nJEAVER stated he was on his way home from \nhis employment in Detroit when he observed instant object. \nRECOMMENDATION \nAdvise proper air force authorities. \nLy \nie \nj \n¢ Caf( \nY \ne \nFBI - DETROIT \np—__1* \nDocld:34715588 Page \n1\n"
+}

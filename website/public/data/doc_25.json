@@ -1,1 +1,54 @@
-{"id": 25, "filename": "dow-uap-d54-mission-report-mediterranean-sea-na.pdf", "title": "DOW-UAP-D54, Mission Report, Mediterranean Sea, NA", "agency": "Department of War", "release_date": "5/8/26", "incident_date": "N/A", "incident_date_parsed": null, "incident_location": "Mediterranean Sea", "latitude": 35.0, "longitude": 18.0, "description": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing one UAP. The report describes the UAP as a “triangular and metallic UAP.” The reporter estimated the UAP’s altitude as 24,989 feet and speed as 168 knots (193mph).\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.", "file_type": "PDF", "has_redaction": 1, "total_pages": 7, "text_length": 646, "extraction_method": "pymupdf", "decade": "Unknown", "summary": "1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n \n \n \n \n \n \n \n \n1.4(a)\n1.4(a)\nGENTEXT/UAP \n• UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN) \n1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR \nAND METALLIC UAP. (SECRET//NOFORN) \n• Gentext (UAP Event Description): (SECRET//NOFORN) \nDURING RTB AT 1319Z, 1.4(a)\nOBSERVED 1X UAP WHILE TRANSITING OVER 363453N \n0255943E FLYING AT AN ALTITUDE OF 24,989FT MSL AND SPEED OF 168KTS.", "ocr_applied": 0, "sensors": [], "behaviors": [], "witnesses": [], "entities": [{"entity_type": "altitude_ft", "entity_value": "24989"}, {"entity_type": "speed_knots", "entity_value": "168"}], "shapes": [{"shape": "metallic", "mention_count": 1}], "redaction": [{"redacted_pages": 0, "black_rect_count": 0, "black_area_pct": 0.0}], "cross_refs": [], "excerpt": "1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n \n \n \n \n \n \n \n \n1.4(a)\n1.4(a)\nGENTEXT/UAP \n• UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN) \n1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR \nAND METALLIC UAP. \n(SECRET//NOFORN) \n• Gentext (UAP Event Description): (SECRET//NOFORN) \nDURING RTB AT 1319Z, 1.", "full_text": "1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n \n \n \n \n \n \n \n \n1.4(a)\n1.4(a)\nGENTEXT/UAP \n• UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN) \n1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR \nAND METALLIC UAP. \n(SECRET//NOFORN) \n• Gentext (UAP Event Description): (SECRET//NOFORN) \nDURING RTB AT 1319Z, 1.4(a)\nOBSERVED 1X UAP WHILE TRANSITING OVER 363453N \n0255943E FLYING AT AN ALTITUDE OF 24,989FT MSL AND SPEED OF 168KTS. \n(SECRET//NOFORN) \n1.4(a)\n"}
+{
+  "id": 25,
+  "filename": "dow-uap-d54-mission-report-mediterranean-sea-na.pdf",
+  "title": "DOW-UAP-D54, Mission Report, Mediterranean Sea, NA",
+  "agency": "Department of War",
+  "release_date": "5/8/26",
+  "incident_date": "N/A",
+  "incident_date_parsed": null,
+  "incident_location": "Mediterranean Sea",
+  "latitude": 35.0,
+  "longitude": 18.0,
+  "description": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing one UAP. The report describes the UAP as a “triangular and metallic UAP.” The reporter estimated the UAP’s altitude as 24,989 feet and speed as 168 knots (193mph).\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "file_type": "PDF",
+  "has_redaction": 1,
+  "total_pages": 7,
+  "text_length": 646,
+  "extraction_method": "pymupdf",
+  "decade": "Unknown",
+  "summary": "1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n \n \n \n \n \n \n \n \n1.4(a)\n1.4(a)\nGENTEXT/UAP \n• UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN) \n1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR \nAND METALLIC UAP. (SECRET//NOFORN) \n• Gentext (UAP Event Description): (SECRET//NOFORN) \nDURING RTB AT 1319Z, 1.4(a)\nOBSERVED 1X UAP WHILE TRANSITING OVER 363453N \n0255943E FLYING AT AN ALTITUDE OF 24,989FT MSL AND SPEED OF 168KTS.",
+  "ocr_applied": 0,
+  "sensors": [],
+  "behaviors": [],
+  "witnesses": [],
+  "entities": [
+    {
+      "entity_type": "altitude_ft",
+      "entity_value": "24989"
+    },
+    {
+      "entity_type": "speed_knots",
+      "entity_value": "168"
+    }
+  ],
+  "shapes": [
+    {
+      "shape": "metallic",
+      "mention_count": 1
+    }
+  ],
+  "redaction": [
+    {
+      "redacted_pages": 0,
+      "black_rect_count": 0,
+      "black_area_pct": 0.0
+    }
+  ],
+  "cross_refs": [
+    "doc_9",
+    "doc_37",
+    "doc_22"
+  ],
+  "excerpt": "1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n \n \n \n \n \n \n \n \n1.4(a)\n1.4(a)\nGENTEXT/UAP \n• UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN) \n1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR \nAND METALLIC UAP. \n(SECRET//NOFORN) \n• Gentext (UAP Event Description): (SECRET//NOFORN) \nDURING RTB AT 1319Z, 1.",
+  "full_text": "1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n1.4(a)\n\n\n--- PAGE BREAK ---\n\n \n \n \n \n \n \n \n \n1.4(a)\n1.4(a)\nGENTEXT/UAP \n• UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN) \n1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR \nAND METALLIC UAP. \n(SECRET//NOFORN) \n• Gentext (UAP Event Description): (SECRET//NOFORN) \nDURING RTB AT 1319Z, 1.4(a)\nOBSERVED 1X UAP WHILE TRANSITING OVER 363453N \n0255943E FLYING AT AN ALTITUDE OF 24,989FT MSL AND SPEED OF 168KTS. \n(SECRET//NOFORN) \n1.4(a)\n"
+}
