@@ -1,0 +1,343 @@
+{
+  "title": "The Legacy Program",
+  "subtitle": "Interactive Framework",
+  "attribution": "Based on UAP Gerb's research",
+  "description": "A three-layer, compartmentalized system operating outside normal congressional oversight. Materials classified under the Atomic Energy Act of 1954 ensure no single oversight body audits the entire chain.",
+  "sources": [
+    { "title": "UAP Gerb", "url": "https://www.youtube.com/@UAPGerb" },
+    { "title": "Three-Layer Analysis", "url": "https://medium.com/@BandGA/9-hours-of-uap-research-condensed-the-three-layer-secrecy-system-0b5d08289019" },
+    { "title": "Grusch Testimony", "url": "https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm" },
+    { "title": "AEA 1954", "url": "https://en.wikipedia.org/wiki/Atomic_Energy_Act_of_1954" },
+    { "title": "NRO FOIA C05136331", "url": "https://www.nro.gov/Portals/65/documents/foia/declass/ForAll/103122/F-2021-00154_C05136331.pdf" },
+    { "title": "Danny Jones Podcast #320", "url": "https://www.youtube.com/watch?v=QJiYc-6XcIU" },
+    { "title": "American Alchemy", "url": "https://www.youtube.com/watch?v=u7g5Sn1DJF4" }
+  ],
+  "layers": [
+    {
+      "name": "Surveillance Layer",
+      "lead": "National Reconnaissance Office (NRO)",
+      "agencies": [
+        {
+          "name": "NRO — Detection & Tracking",
+          "nodes": [
+            {
+              "name": "Sentient AI",
+              "role": "Autonomous detection system",
+              "detail": "AI program that continuously monitors global sensor data for anomalous signatures. Flags events for human review and satellite retasking. FOIA Document C05136331 confirms Sentient detected a 'tic-tac shaped' object that 'did not match the visual signature of typical aircraft detections.'",
+              "evidence": "NRO FOIA Document C05136331 (May 2021)",
+              "search": "NRO"
+            },
+            {
+              "name": "Immaculate Constellation",
+              "role": "Satellite retasking program",
+              "detail": "When Sentient flags an anomaly, this program retasks NRO satellites to track and characterize the object. Catalogs every kinetic engagement between military assets and UAP. First reported by Michael Shellenberger from whistleblower documents.",
+              "evidence": "DoD stated it has 'no record' of this program; whistleblowers insist it exists",
+              "search": "NRO"
+            }
+          ]
+        },
+        {
+          "name": "CIA — Coordination & Foreign Recovery",
+          "nodes": [
+            {
+              "name": "Office of Global Access",
+              "role": "Foreign retrieval coordination",
+              "detail": "CIA division that coordinates recovery of foreign technology and UAP materials outside U.S. territory. Works with JSOC for physical recovery operations.",
+              "connections": ["JSOC", "NRO", "DOE/OST"],
+              "search": "CIA"
+            },
+            {
+              "name": "DS&T",
+              "role": "Directorate of Science & Technology",
+              "detail": "CIA's technical division. In 2011, Glenn Gaffney (then CIA DS&T Director) blocked Lockheed VP James Ryder's attempt to transfer UAP hardware to DIA's AAWSAP program. Ryder proposed 'Kona Blue' as alternative via DHS, which DHS rejected.",
+              "evidence": "AARO historical record references Kona Blue proposal; Gaffney & Ryder names entered into Congressional Record by George Knapp",
+              "search": "CIA"
+            }
+          ]
+        },
+        {
+          "name": "AARO / Historical Programs",
+          "nodes": [
+            {
+              "name": "AARO / UAPTF",
+              "role": "Modern investigation office",
+              "detail": "All-domain Anomaly Resolution Office, successor to UAP Task Force. Pentagon's official investigation body. AARO Historical Report Vol. 1 (March 2024) found 'no evidence' of reverse-engineering programs, characterizing claims as 'circular reporting.'",
+              "evidence": "AARO Historical Record Report Vol. 1 (March 2024)",
+              "search": "AARO"
+            },
+            {
+              "name": "Project Blue Book / Sign / Grudge",
+              "role": "Historical USAF programs (1947-1969)",
+              "detail": "Air Force investigation programs spanning 1947-1969. Project Stork (Battelle) served as scientific consultant to Blue Book. Gerb identifies Battelle's involvement as an early instance of the contractor-government feedback loop.",
+              "search": "Blue Book"
+            }
+          ]
+        }
+      ],
+      "facilities": [
+        {
+          "name": "NRO HQ (Chantilly, VA)",
+          "detail": "Headquarters of the National Reconnaissance Office. Manages satellite constellation and Sentient AI system. In 1994, $3.7 billion in hidden NRO carryover funds were discovered, leading to creation of SAPOC oversight structure.",
+          "lat": 38.924,
+          "lng": -77.444,
+          "zoom": 14,
+          "search": "NRO"
+        }
+      ]
+    },
+    {
+      "name": "Custodial Layer",
+      "lead": "Department of Energy / National Labs",
+      "agencies": [
+        {
+          "name": "DOE — Storage & Classification",
+          "nodes": [
+            {
+              "name": "Office of Secure Transport",
+              "role": "Material transport teams",
+              "detail": "Teams identified by DOE rain jackets and black fatigues. Dispatched to recovery sites, sometimes in full MOPP gear (chemical/biological protection). The first responders to crash sites.",
+              "connections": ["NEST", "Sandia"],
+              "search": "DOE"
+            },
+            {
+              "name": "NEST Teams",
+              "role": "Nuclear Emergency Support Team",
+              "detail": "Founded under 1954 Atomic Energy Act authority. Teams with expertise in handling exotic materials. Authority overlaps with UAP material classification as 'transclassified foreign nuclear material.'",
+              "evidence": "Atomic Energy Act of 1954 (42 U.S.C. § 2011)",
+              "search": "nuclear"
+            }
+          ]
+        },
+        {
+          "name": "FFRDCs — Federally Funded Research Centers",
+          "nodes": [
+            {
+              "name": "Sandia National Labs",
+              "role": "Primary material storage hub",
+              "detail": "Operates as the main storage facility under FFRDC protection. Lockheed contractors access materials here without corporate inventory recording. FFRDC status provides additional legal shield.",
+              "connections": ["Lockheed Martin", "DOE"],
+              "search": "Sandia"
+            },
+            {
+              "name": "MITRE Corporation",
+              "role": "Program manager & oversight",
+              "detail": "Called 'the most overlooked entity in this entire subject' by UAP Gerb. Acts as program manager and consultant, providing oversight to contractors. Revolving door with NRO and CIA DS&T.",
+              "connections": ["NRO", "CIA DS&T", "All contractors"],
+              "search": "MITRE"
+            },
+            {
+              "name": "Oak Ridge / Battelle",
+              "role": "Analysis & examination",
+              "detail": "AARO contracted Oak Ridge for materials analysis in 2024. Former AARO chief Sean Kirkpatrick departed to become CTO at Oak Ridge (operated by UT-Battelle). Gerb identifies this as the 'Battelle job carousel' — the same corporate ecosystem controls both evidence analysis and oversight.",
+              "evidence": "Kirkpatrick appointment reported Dec 2023; Ronald Moultrie (AARO co-founder) allegedly scrubbed Battelle board position from biography",
+              "search": "Battelle"
+            }
+          ]
+        }
+      ],
+      "facilities": [
+        {
+          "name": "Sandia Labs (Albuquerque, NM)",
+          "detail": "Primary storage location for recovered materials under FFRDC nuclear facility protection.",
+          "lat": 35.042,
+          "lng": -106.545,
+          "zoom": 13,
+          "search": "Sandia"
+        },
+        {
+          "name": "Los Alamos (NM)",
+          "detail": "Nuclear weapons lab with historical ties to UAP material analysis since Manhattan Project era.",
+          "lat": 35.881,
+          "lng": -106.299,
+          "zoom": 13,
+          "search": "Los Alamos"
+        },
+        {
+          "name": "Oak Ridge (TN)",
+          "detail": "Analysis facility. Operated by UT-Battelle. Former AARO chief moved here after tenure. Ohio metallic specimen contracted here for analysis in 2024; AARO called it 'likely ordinary.'",
+          "lat": 35.931,
+          "lng": -84.31,
+          "zoom": 13,
+          "search": "Oak Ridge"
+        }
+      ]
+    },
+    {
+      "name": "Industrial Layer",
+      "lead": "Defense Contractors",
+      "agencies": [
+        {
+          "name": "Lockheed Martin — Skunk Works",
+          "nodes": [
+            {
+              "name": "Skunk Works",
+              "role": "Advanced Development Programs",
+              "detail": "Lockheed's secretive division responsible for U-2, SR-71, F-117, and allegedly UAP reverse-engineering. Known for operating outside normal procurement processes. Ben Rich (second Skunk Works director) made statements about 'Star Wars' platforms.",
+              "connections": ["Sandia", "Tonopah Test Range"],
+              "search": "Lockheed"
+            },
+            {
+              "name": "IRAD Billing",
+              "role": "Independent R&D funding",
+              "detail": "Lockheed uses Internal Research and Development billing for unmarked aerospace research. Money never appears in congressional appropriations. Provides plausible deniability for UAP programs.",
+              "evidence": "GAO Report NSIAD-86-191 found 1,400+ discrepancies in Lockheed Burbank programs (1986)",
+              "search": "Lockheed"
+            }
+          ]
+        },
+        {
+          "name": "Northrop Grumman",
+          "nodes": [
+            {
+              "name": "Advanced Programs",
+              "role": "Reverse engineering & prototyping",
+              "detail": "UAP Gerb's Northrop project analyzes decades of acquisitions (TRW in 2002, Teledyne Ryan, BDM), alleged program locations, and whistleblower testimony surrounding Northrop UAP operations.",
+              "connections": ["Sandia", "Area 51"],
+              "search": "Northrop"
+            }
+          ]
+        },
+        {
+          "name": "SAIC & Others",
+          "nodes": [
+            {
+              "name": "SAIC",
+              "role": "Technology exploitation",
+              "detail": "Science Applications International Corporation. Named alongside Lockheed and Northrop as engaging in Technologies of Unknown Origin (TUO) retrieval and exploitation programs.",
+              "search": "SAIC"
+            }
+          ]
+        }
+      ],
+      "facilities": [
+        {
+          "name": "Area 51 / S4 (Papoose Mt, NV)",
+          "detail": "Hangar doors into mountainside. Alleged reverse-engineering bays for recovered craft. Bob Lazar's testimony describes 9 craft in hangars. 'Offworld technology' division; metallic sphere levitation observed.",
+          "lat": 37.235,
+          "lng": -115.811,
+          "zoom": 13,
+          "search": "Area 51"
+        },
+        {
+          "name": "Tonopah Test Range (NV)",
+          "detail": "Lockheed-operated weapons testing site. Previously secret home of F-117 stealth fighter. Alleged UAP testing location.",
+          "lat": 38.069,
+          "lng": -116.784,
+          "zoom": 12,
+          "search": "Tonopah"
+        },
+        {
+          "name": "Plant 42 (Palmdale, CA)",
+          "detail": "Lockheed/Northrop aerospace production facility. Called 'birthplace of top secret tech' by Gerb. Houses Skunk Works production alongside Northrop advanced programs.",
+          "lat": 34.613,
+          "lng": -118.085,
+          "zoom": 13,
+          "search": "Palmdale"
+        },
+        {
+          "name": "Wright-Patterson AFB (OH)",
+          "detail": "Historical materials storage. Long-rumored 'Hangar 18' and Foreign Technology Division connection. Eric Henry Wang's exotic flight research conducted here. Called the 'real Area 51' for Roswell-era material.",
+          "lat": 39.826,
+          "lng": -84.048,
+          "zoom": 13,
+          "search": "Wright-Patterson"
+        },
+        {
+          "name": "Edwards AFB (CA)",
+          "detail": "Air Force Test Pilot School. Sourced pilots for alleged reverse-engineered vehicle test flights. Adjacent to classified testing ranges.",
+          "lat": 34.905,
+          "lng": -117.884,
+          "zoom": 12,
+          "search": "Edwards"
+        },
+        {
+          "name": "Dugway Proving Ground (UT)",
+          "detail": "Called 'the new Area 51.' Battelle involvement in operations. Witness testimony of non-human craft in the Dugway Avery Region. Alleged storage of biological materials.",
+          "lat": 40.199,
+          "lng": -112.936,
+          "zoom": 11,
+          "search": "Dugway"
+        },
+        {
+          "name": "Kirtland AFB (NM)",
+          "detail": "Air Force base adjacent to Sandia Labs. Paul Benowitz witnessed craft here. Strategic location near DOE custodial facilities.",
+          "lat": 35.049,
+          "lng": -106.567,
+          "zoom": 13,
+          "search": "Kirtland"
+        }
+      ]
+    }
+  ],
+  "personnel": [
+    {
+      "name": "Mary Sturivant",
+      "role": "Lockheed VP → CIA DS&T",
+      "detail": "Moved from Lockheed Martin VP position to CIA Directorate of Science & Technology. Exemplifies the revolving door between contractor and intelligence agency.",
+      "connections": ["Lockheed Martin", "CIA DS&T"],
+      "search": "Sturivant"
+    },
+    {
+      "name": "Doug Wolf",
+      "role": "NRO → CIA → Office of Global Access",
+      "detail": "Career spanning NRO and CIA. Connected to the Office of Global Access, which coordinates foreign UAP material recovery. Gerb identifies Wolf as the primary architect of crash retrieval logistics.",
+      "connections": ["NRO", "CIA", "Office of Global Access"],
+      "search": "Wolf"
+    },
+    {
+      "name": "Donald Kerr",
+      "role": "NRO Dir → CIA Deputy Dir → Los Alamos/Sandia",
+      "detail": "Served as NRO Director, then CIA Deputy Director, with connections to both Los Alamos and Sandia national laboratories. Bridges all three layers of the system.",
+      "connections": ["NRO", "CIA", "Los Alamos", "Sandia"],
+      "search": "Kerr"
+    },
+    {
+      "name": "Glenn Gaffney",
+      "role": "CIA DS&T Director",
+      "detail": "Former CIA Director of Science & Technology. Blocked the Lockheed-to-AAWSAP material transfer in 2011 (the 'Kona Blue' incident). Name entered into Congressional Record by George Knapp at 2025 House Oversight hearing.",
+      "connections": ["CIA DS&T", "Lockheed Martin"],
+      "search": "Gaffney"
+    },
+    {
+      "name": "Paul Kaminsky",
+      "role": "OUSD A&S → NRO, structured Black Budget",
+      "detail": "Structured the Black Budget framework in the mid-1990s while at OUSD for Acquisition & Sustainment. Moved to NRO. Created the financial architecture that funds these programs.",
+      "connections": ["NRO", "Pentagon", "Black Budget"],
+      "search": "Kaminsky"
+    },
+    {
+      "name": "Sean Kirkpatrick",
+      "role": "AARO Chief → Oak Ridge CTO",
+      "detail": "Led the Pentagon's AARO office investigating UAP. Departed Dec 2023 to become CTO at Oak Ridge National Laboratory — the same lab that analyzed materials AARO sent for examination. Gerb identifies this as a key node in the 'Battelle job carousel.'",
+      "connections": ["AARO", "Oak Ridge", "Battelle"],
+      "search": "Kirkpatrick"
+    },
+    {
+      "name": "Ronald Moultrie",
+      "role": "USD I&S → AARO co-founder",
+      "detail": "Former Undersecretary of Defense for Intelligence & Security. Co-founded AARO oversight structure. Allegedly deleted past Battelle board position from biography.",
+      "connections": ["Pentagon", "AARO", "Battelle"],
+      "search": "Moultrie"
+    },
+    {
+      "name": "Dick Cheney",
+      "role": "Alleged apex of the pyramid",
+      "detail": "Per journalist Walter Kern and David Grusch, the former Vice President allegedly served as a 'principal advocate' facilitating funding streams and heading the UAP program hierarchy for an extended period.",
+      "connections": ["DOE", "Pentagon", "Contractors"],
+      "search": "Cheney"
+    }
+  ],
+  "process": [
+    { "name": "Detection", "detail": "Sentient AI flags anomalous signature in global sensor data" },
+    { "name": "Tracking", "detail": "Immaculate Constellation retasks NRO satellites to characterize object" },
+    { "name": "Dispatch", "detail": "DOE/OST teams deployed; CIA Office of Global Access coordinates if foreign" },
+    { "name": "Recovery", "detail": "Crash site secured by unmarked operators; witnesses isolated and debriefed" },
+    { "name": "Classification", "detail": "Materials classified as Restricted Data under AEA 1954; placed outside FOIA" },
+    { "name": "Storage", "detail": "Materials transferred to FFRDC (Sandia) under nuclear facility protection" },
+    { "name": "Exploitation", "detail": "Contractors (Lockheed/Northrop) access materials at FFRDC for reverse engineering" }
+  ],
+  "classification_shield": {
+    "title": "Classification Shield",
+    "detail": "The Atomic Energy Act of 1954 classifies recovered materials as 'Restricted Data' or 'Transclassified Foreign Nuclear Information.' This places them under DOE authority — outside presidential Executive Order authority, exempt from FOIA, and beyond any single congressional committee's oversight. NRO reports to intelligence committees, DOE to energy committees, and contractors operate under private governance."
+  }
+}
