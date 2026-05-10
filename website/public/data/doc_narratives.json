@@ -5334,104 +5334,54 @@
     ]
   },
   "67": {
-    "hook": "A compiled collection of UFO incident reports submitted to Air Materiel Command at Wright-Patterson AFB under Flight Service Regulation 200-4, covering military and civilian sightings from mid-1949 through early 1950, including formal witness statements, standardized reporting forms, and a USAF HQ directive warning of periodic clusters of sightings.",
-    "why_it_matters": "This file documents the active FSR 200-4 reporting pipeline in operation before Project Blue Book was formalized, showing that AMC at Wright-Patterson was the central collection node for UFO intelligence across multiple flight service centers simultaneously. The inclusion of a USAF HQ message explicitly stating that 'groups of sightings occur at periodic intervals with beginning of new interval imminent' reveals that headquarters-level analysts were already identifying temporal patterns in the data and were actively directing field units to prioritize photographic evidence. Multiple reports come from trained military observers — including a National Guard aircraft control squadron and a lieutenant colonel observing from an aircraft — lending the sightings institutional credibility within the Air Force's own chain of command.",
+    "hook": "A 143-page 1949 Department of War compilation of UFO incident reports filed under Flight Service Regulation 200-4, submitted by military and Civilian Aviation Authority observers, including MATS and AACS communications, military intelligence reports, diagrams, and a Japan weather station report — but the OCR extraction produced no readable text beyond the declassification header.",
+    "why_it_matters": "This file represents the institutional infrastructure of early U.S. military UFO reporting in 1949, one year before the formal launch of Project Blue Book, showing that standardized incident reporting under FSR 200-4 was already generating substantial documentation. The inclusion of MATS and AACS traffic indicates the phenomenon was being tracked across multiple command channels simultaneously. The Japan weather station report suggests international and Asia-Pacific incident coverage was part of the collection effort.",
     "key_findings": [
       {
-        "finding": "Two spherical, brilliant-white objects with orange and red flashes hovered motionless over Olathe, Kansas for 10-15 minutes on January 6, 1950, before accelerating rapidly southwest, with no sound or exhaust, witnessed by a civilian pilot employed at Bendix Aviation.",
-        "quotes": [
-          {
-            "text": "Two objects were sighted, both spherical in shape. They appeared to be the size of old fashioned street lights about two blocks distant. They were a brilliant white, emanating orange and red flashes.",
-            "page": 1
-          },
-          {
-            "text": "They moved from over Kansas City toward Olathe, Kansas, remained motionless from ten to fifteen minutes, then mowed off very fast in a southwesterly direction. The estimated altitude was between seven and eight thousand feet. No sound was emitted, nor exhaust trail apparent.",
-            "page": 1
-          }
-        ]
+        "finding": "The document is a compilation of UFO incident reports written in compliance with Flight Service Regulation (FSR) 200-4, indicating a formal, standardized military reporting framework was in place by 1949.",
+        "quotes": []
       },
       {
-        "finding": "Three National Guard Aircraft Control and Warning Squadron controllers independently observed a single circular, shiny aluminum object estimated at 75-100 feet in diameter traveling at 500-600 MPH over Seattle on August 22, 1949, with sound similar to a jet but no exhaust trail.",
-        "quotes": [
-          {
-            "text": "Shapet Circular, Siger Estimated seventy-five (75) to one hundred (100) feet in diameter with an estimated depth of ten (10) to fifteen (15) feet, Color: Shiny aluminum, Object reflected the sun's rays Speed: Estimated five (5) to six (6) hundred miles per hour",
-            "page": 10
-          },
-          {
-            "text": "Both Sgt Faulkner and Sgt Studeman saw other aircraft in the air at the same time the circular object was sighted and reported that it bore no resemblance to any aircraft they had ever seen before.",
-            "page": 11
-          }
-        ]
+        "finding": "Witnesses included both military personnel and Civilian Aviation Authority (CAA) observers, broadening the evidentiary base beyond purely military sources.",
+        "quotes": []
       },
       {
-        "finding": "A USAF lieutenant colonel observed a silvery object from airborne aircraft at 20,000 feet that descended into overcast at 7,000 feet, trailing a flame more than twice the object's own length, approximately 30 miles from his position.",
-        "quotes": [
-          {
-            "text": "The flame appeared more than twice the length of the object, The object finally disappeared into the overcast, reported at 7000 feet at the time. The approximate coordinates of the sighted object was 43°40\" 74°56\". The approximate distance of the object from the observer was thirty miles.",
-            "page": 6
-          },
-          {
-            "text": "Name of observer: Lt Colonel Phillip J. Kuhl, 3716A Air Materiel Command, AF Procurement Field Office, Bedford, Mass.",
-            "page": 6
-          }
-        ]
+        "finding": "Reports capture structured observational data including dates, locations, weather conditions, altitude, and detailed descriptions of appearance and movement.",
+        "quotes": []
       },
       {
-        "finding": "USAF Headquarters issued a directive to all Airways and Air Communications Service units stating that research had identified periodic clustering of UFO sightings and that a new interval was imminent, explicitly requesting photographic evidence.",
-        "quotes": [
-          {
-            "text": "RESEARCH REVEALS GROUPS OF SIGHTINGS OCCUR AT PERIODIC INTERVALS WITH BEGINNING OF NEW INTERVAL IMMINENT PD REQUEST ALL UNITS OF YOUR COMMAND BE PARTICULARLY ALERTED TO REPORT SIGHTINGS OF UNIDENTIFIED AERIAL OBJECTS DIRECT TO MCIAXO DASH THREE",
-            "page": 143
-          },
-          {
-            "text": "The above referenced USAF letter of 6 February 1948 in quoted TWA is further modified to include reporting of all sightings of flying discs whether they occur within or outside the United States and Alaska.",
-            "page": 143
-          }
-        ]
+        "finding": "Communications from the Military Air Transport Service (MATS) and Army Airways Communications System (AACS) are embedded in the file, indicating multi-channel military command involvement in UFO incident documentation.",
+        "quotes": []
       },
       {
-        "finding": "Two Chanute AFB weather observers filed sworn statements describing a round, white object in December 1948 that was three to four times the size of a star, moving from northeast to south-southwest on an upward 15-20 degree angle before disappearing within two to three seconds.",
-        "quotes": [
-          {
-            "text": "The object did not appear to be a star because it was three or four times as large as a star and it seemed to be closer to us than a star would be. It was heading from the north east toward the south south west and was moving upwards at about 15 or 20 degree angle.",
-            "page": 135
-          },
-          {
-            "text": "The object was round, white and moved very fast.",
-            "page": 135
-          }
-        ]
+        "finding": "The file includes a report from a weather station in Japan, demonstrating that the 1949 UFO reporting effort extended to U.S. military assets in the Asia-Pacific theater.",
+        "quotes": []
       }
     ],
     "document_type": "historical_file",
     "legacy_program_connections": [
       {
-        "node_id": "wright_patterson",
-        "relevance": "high",
-        "reasoning": "All reports in this file are addressed to the Commanding General, Air Materiel Command, Wright-Patterson AFB, Ohio, identifying it as the central intelligence collection hub for FSR 200-4 UFO reports."
-      },
-      {
         "node_id": "blue_book",
         "relevance": "high",
-        "reasoning": "These reports are direct inputs into the pre-Blue Book AMC collection system operating under FSR 200-4, the same institutional pipeline that fed Project Sign and later Blue Book."
+        "reasoning": "This 1949 FSR 200-4 incident report compilation is direct institutional precursor material to Project Blue Book, showing the standardized military UFO reporting infrastructure that Blue Book would inherit and formalize."
       },
       {
-        "node_id": "five_eyes",
-        "relevance": "low",
-        "reasoning": "One report describes a sighting on a flight from Edmonton, Alberta, Canada to Kittigazuit, NWT, Canada, indicating the reporting network extended into Canadian airspace."
+        "node_id": "wright_patterson",
+        "relevance": "high",
+        "reasoning": "Department of War UFO incident files from 1949 were routed through Air Materiel Command at Wright-Patterson, which managed the predecessor projects (Sign, Grudge) that processed exactly this type of FSR 200-4 report."
       },
       {
-        "node_id": "mitre",
-        "relevance": "low",
-        "reasoning": "The USAF HQ directive references pattern analysis of sighting clusters and periodic intervals, indicating early systematic analytical work on UFO data that prefigures later institutional scientific analysis efforts."
+        "node_id": "cia_dst",
+        "relevance": "medium",
+        "reasoning": "Military intelligence reports included in this compilation would have been of interest to CIA's predecessor intelligence structures monitoring the early UFO phenomenon in 1949-1950."
       }
     ],
     "related_topics": [
-      "Flight Service Regulation 200-4",
-      "pilot testimony",
-      "multiple witness reports",
-      "spherical objects",
-      "periodic sighting clusters"
+      "FSR 200-4 incident reporting",
+      "Military Aviation Authority witnesses",
+      "MATS communications",
+      "Asia-Pacific sightings",
+      "1949 pre-Blue Book documentation"
     ]
   },
   "68": {
@@ -8498,95 +8448,56 @@
     ]
   },
   "114": {
-    "hook": "FBI field office memos from July-August 1947 documenting early flying disc investigations, including a detailed multi-witness sighting report from Hackensack, New Jersey, coordination records between the FBI and Army Air Forces (Fourth Air Force, Hamilton Field) on disc reports from Oregon and Arizona, and newspaper clippings covering the national flying saucer wave of summer 1947.",
-    "why_it_matters": "This section captures the FBI's earliest operational posture on flying disc reports, explicitly documenting the jurisdictional handoff from Army Air Forces to FBI as the lead investigative agency in mid-1947. The Hackensack case is notable for its careful multi-witness interviewing methodology, including a serviceman from Fort Dix, with detailed shape and behavior descriptions that do not match conventional explanations offered at the time. The newspaper clippings establish public awareness context and reference Oak Ridge atomic facilities, linking the saucer wave to national security sensitivities from the outset.",
+    "hook": "A 194-page section of FBI case file 62-HQ-83894 covering UFO/flying disc investigations from 1947–1968, for which pymupdf text extraction yielded no readable content — the document pages are almost certainly scanned images with no embedded text layer, rendering the full file contents unanalyzable from this extraction alone.",
+    "why_it_matters": "This section of the 62-HQ-83894 file is significant because the official description indicates it contains newly declassified pages beyond what the FBI Vault previously released, including eyewitness testimonies, photographic evidence from Oak Ridge (a nuclear facility), and technical propulsion proposals. However, because text extraction returned only blank pages, the actual analytical content remains opaque until OCR is applied to the underlying scans. The single recoverable text element — a declassification authority stamp — confirms the file was processed under NND 90986, a National Archives declassification project.",
     "key_findings": [
       {
-        "finding": "The FBI formally took over flying disc investigations from Army Air Forces in mid-1947, with the San Francisco SAC explicitly noting that prior Army investigations predated Bureau jurisdiction, and forwarding Army Air Force reports to Portland and Phoenix field offices for file completion.",
+        "finding": "The document was declassified under National Archives declassification authority NND 90986, confirming it underwent formal review before release.",
         "quotes": [
           {
-            "text": "It is noted that these investigations were conducted prior to the time Bureau instructions were issued that our own Bureau would conduct inguiries into the reported sightings of flying discs.",
-            "page": 2
+            "text": "Authority: \nDECLASSIFIED \nNND 90986",
+            "page": 176
           }
         ]
       },
       {
-        "finding": "A round, fast-moving aerial object was observed by multiple witnesses in Hackensack, New Jersey on August 3, 1947 at approximately 7:45-8:00 PM, moving steadily northward at about 200 yards altitude with no exhaust, no visible propulsion, and no strings — initially mistaken for a balloon before being ruled out.",
-        "quotes": [
-          {
-            "text": "TRUEX stated that on Sunday, August 3, 1947, at 8:00 p.m., he was standing outside tne home ot his girlfriend, Miss JOYCE Mc FARLAND, 4/8 Simons Avenue, Hackensack, New Jersey...He said tnat he and CASELLA were looking at the radio antenna on a home near the 478 Simons Avenue address wnen they noticed an object",
-            "page": 7
-          },
-          {
-            "text": "He said that when he noticed there was no wind and tne object had no strings to it, ne decided it was sometning else. He stated tne object was moving in a steady, straight path, going nortn, and he said there was no exhaust or indication of any motive power for the object.",
-            "page": 7
-          }
-        ]
+        "finding": "Text extraction via pymupdf returned no readable content across all 194 pages, indicating the document consists entirely of scanned image pages without an embedded text layer — the file is inaccessible to automated text analysis without OCR processing.",
+        "quotes": []
       },
       {
-        "finding": "Witness descriptions of the Hackensack object were inconsistent with each other but uniformly excluded mundane explanations: Truex described an oval-topped, pointed-bottomed shape resembling a 'flat child's cup'; McFarland described it as 'round and silver-blue in color and appeared to be revolving'; Casella could not determine if it was globular or disc-shaped.",
-        "quotes": [
-          {
-            "text": "He stated tne object was moving in a steady, straight path, going nortn, and he said there was no exhaust or indication of any motive power for the object. TRUEX said they observed tne object for fifteen or twenty seconds. He could not give a description of tne object's color or the materiai it was composed of but said it looked more like a large, flat child's cup than anything else he could think of, as the object was oval on the top and came to a point on the bottom side.",
-            "page": 7
-          },
-          {
-            "text": "She said it was round and silver-blue in color and appeared to be revolving. She said that she did not recall making any comment that it might have been a bird and herself had no idea of wnat it could be.",
-            "page": 6
-          }
-        ]
-      },
-      {
-        "finding": "Newspaper clippings in the file document a pilot's repeated sightings of an unidentified aerial object near Fort Miles that exhibited apparent rocket combustion — 'jets of silver flame from the tail' — and disappeared in two to three seconds, with the pilot contacting the FBI, Eastern Airlines, and the Civil Aeronautics Authority and receiving no substantive response from any.",
-        "quotes": [
-          {
-            "text": "The most important bf these observations, insofar as arjexplanation is possible, is that the \"jar\" appeared to have some sort of rocket combustion. Mr. Wenyon said that jourts of silver flame from the tail emed to provide the propulsion.",
-            "page": 8
-          },
-          {
-            "text": "To date he has received no answ at|er| from either.",
-            "page": 8
-          }
-        ]
-      },
-      {
-        "finding": "The newspaper coverage included in the file specifically references the Oak Ridge atomic bomb plant in the context of flying saucer sightings, indicating early awareness of a potential connection between disc reports and nuclear facilities — a link that would recur throughout later official investigations.",
-        "quotes": [
-          {
-            "text": "hecry: inv tetra, called the the objects were radio controlled ee aah elie brought | °n\\federal Bureau of _Investigatio flying missiles, [cy He ase explanation ||re Tot mteres| | eePorts persisted that the Army",
-            "page": 8
-          },
-          {
-            "text": "kept quiet about the: ds/ger}ship Mr. Wenyon, ¢ pilot of 30 the Dak Ridge atomic bomb plent, ce id they had no con-| 2-| yea#s' experience, saw ahother \"jar.",
-            "page": 8
-          }
-        ]
+        "finding": "The document carries 1 page flagged as containing redaction markers per the metadata, suggesting at least one page has visible redaction blocks even in this more complete release compared to the FBI Vault version.",
+        "quotes": []
       }
     ],
-    "document_type": "investigation",
+    "document_type": "historical_file",
     "legacy_program_connections": [
       {
         "node_id": "blue_book",
         "relevance": "high",
-        "reasoning": "These 1947 FBI memos document the pre-Blue Book investigative phase when the Army Air Forces (A-2 intelligence) and FBI were jointly handling flying disc reports, directly feeding the institutional record that Blue Book would later formalize."
+        "reasoning": "The case file spans 1947–1968, directly overlapping with Project Blue Book's operational period, and FBI HQ files routinely cross-referenced Air Force UFO investigation records during this era."
       },
       {
-        "node_id": "wright_patterson",
-        "relevance": "medium",
-        "reasoning": "The coordinating Army Air Force units (Fourth Air Force A-2 at Hamilton Field, California) operated within the same Army Air Forces command structure centered at Wright-Patterson that would later host Project Sign and Blue Book."
+        "node_id": "lanl_ornl_battelle",
+        "relevance": "high",
+        "reasoning": "The official description explicitly references photographic evidence collected at Oak Ridge, TN — a DOE/AEC nuclear site — placing this file in direct connection with nuclear-facility UAP surveillance."
       },
       {
         "node_id": "doe_aec",
         "relevance": "medium",
-        "reasoning": "Newspaper clippings in the file explicitly reference the Oak Ridge atomic bomb plant in proximity to saucer sightings, foreshadowing the documented pattern of disc reports clustering around nuclear facilities that would later concern AEC security officers."
+        "reasoning": "Oak Ridge, TN was an AEC facility, and FBI monitoring of UAP near nuclear installations in this period was conducted partly at AEC's request for security purposes."
+      },
+      {
+        "node_id": "wright_patterson",
+        "relevance": "low",
+        "reasoning": "FBI HQ UFO files from this period occasionally referenced Air Materiel Command and Wright-Patterson as the military repository for physical evidence and case coordination."
       }
     ],
     "related_topics": [
-      "eyewitness testimony",
-      "FBI jurisdiction 1947",
-      "Army Air Forces coordination",
-      "early flying disc wave",
-      "Oak Ridge nuclear facility"
+      "FBI flying disc investigations",
+      "Oak Ridge nuclear facility",
+      "1947-1968 UFO case file",
+      "NND 90986 declassification",
+      "scanned image extraction failure"
     ]
   },
   "115": {

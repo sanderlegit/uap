@@ -341,7 +341,8 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
     if (hasVocab && hasAnyText && !vocabInitRef.current) {
       vocabInitRef.current = true
       setVocabHighlight(true)
-      setViewMode('side')
+      const mobile = window.innerWidth < 768
+      setViewMode(mobile ? 'text' : 'side')
     }
   }, [hasVocab, hasAnyText])
 
@@ -389,23 +390,32 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
       return
     }
     if (hasAnyText) {
-      setViewMode(v => v === 'scan' ? 'side' : v)
+      const mobile = window.innerWidth < 768
+      setViewMode(v => v === 'scan' ? (mobile ? 'text' : 'side') : v)
     }
-    setTimeout(() => {
+    let cancelled = false
+    const activate = (attempt) => {
+      if (cancelled) return
       const marks = containerRef.current?.querySelectorAll('.search-highlight') || []
-      setMatchCount(marks.length)
-      setMatchIdx(0)
       if (marks.length > 0) {
+        setMatchCount(marks.length)
+        setMatchIdx(0)
         marks[0].classList.add('search-active')
         marks[0].scrollIntoView({ behavior: 'smooth', block: 'center' })
+      } else if (attempt < 3) {
+        setTimeout(() => activate(attempt + 1), 200)
       } else {
+        setMatchCount(0)
+        setMatchIdx(0)
         const targetPage = activeQuote.page || matchPages[0]
         if (targetPage) {
           const el = pageRefs.current[targetPage]
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
       }
-    }, 150)
+    }
+    setTimeout(() => activate(0), 200)
+    return () => { cancelled = true }
   }, [activeQuote, hasAnyText, matchPages])
 
   const navigateMatch = useCallback((dir) => {

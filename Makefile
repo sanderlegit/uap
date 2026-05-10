@@ -68,12 +68,14 @@ $(DATA)/pages/manifest.json: $(DATA)/documents.json build_page_images.py
 $(DATA)/legacy_web.json: $(DATA)/documents.json build_legacy_web.py
 	$(PYTHON) build_legacy_web.py
 	$(PYTHON) materialize_pipeline.py
+	@touch $(DATA)/legacy_web.json
 
 # ─── Layer 2: Annotation (Claude API — explicit target only) ─────────
 
 narratives: $(DATA)/documents.json annotate_documents.py
 	$(PYTHON) annotate_documents.py
 	$(PYTHON) materialize_pipeline.py
+	@touch $(DATA)/doc_narratives.json
 
 # ─── Layer 3: Pulse pipeline ─────────────────────────────────────────
 
