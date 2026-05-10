@@ -1,0 +1,36 @@
+{
+  "hook": "An archival Apollo 12 photograph of the lunar surface, released under the PURSUE disclosure initiative, in which an area near the right edge of the frame above the horizon has been digitally highlighted to draw attention to unidentified phenomena visible in the original image.",
+  "why_it_matters": "This is among the earliest chronological entries in the PURSUE release, predating the formal UAP investigative apparatus by decades, and suggests government interest in anomalous imagery from crewed lunar missions. The fact that the image was modified specifically to annotate an area of interest implies a deliberate, post-hoc analytical review of Apollo-era photographic archives. Its inclusion in a formal declassification release elevates it beyond incidental curiosity to an officially flagged data point.",
+  "key_findings": [
+    "The photograph originates from the Apollo 12 lunar landing site, placing the anomaly in the context of a crewed NASA mission to the Moon's surface in November 1969.",
+    "The area of interest is located near the right edge of the frame, above the lunar horizon — a spatial position that rules out surface artifacts and places it in the lunar sky or near-space environment.",
+    "The image has been digitally altered from its original state to highlight the area of interest, with the manifest explicitly noting this alteration does not constitute an analytical conclusion.",
+    "No redactions are present, and no sensor data, entity descriptions, behavioral characteristics, or shape classifications were recorded in the manifest metadata.",
+    "The document was released as part of the formal PURSUE disclosure initiative, meaning it passed a deliberate review and selection process before public release."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The post-hoc annotation and inclusion in the PURSUE release reflects AARO-era review and formal flagging of historical NASA imagery for UAP relevance."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "medium",
+      "reasoning": "Apollo 12 occurred during the final active year of Project Blue Book (closed December 1969), and lunar mission anomalies from this period would have fallen within its nominal mandate."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson AFB housed Blue Book files and foreign technology analysis; Apollo-era anomaly photographs may have passed through its analytical channels."
+    }
+  ],
+  "related_topics": [
+    "Apollo program anomalous imagery",
+    "lunar surface photography",
+    "NASA archival review",
+    "near-horizon unidentified phenomena",
+    "crewed spaceflight UAP"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "hook": "A Detroit man named Weaver called the FBI's Detroit field office at 9:08 AM on April 17, 1958, to report seeing a circular object with a crystal-type dome reflecting lights, traveling northward across the city near Six Mile Road and Lamphere Street.",
+  "why_it_matters": "This memo illustrates the FBI's role as a civilian reporting channel for UFO sightings when official Air Force lines were inaccessible — Weaver first tried Selfridge Field but could not get through. The document also demonstrates the bureau's standard practice of routing such reports to Air Force authorities rather than investigating independently, reflecting the interagency division of responsibility that characterized the late 1950s UFO reporting framework.",
+  "key_findings": [
+    "Witness Weaver described the object as circular with a 'crystal-type dome that reflected lights,' traveling southwest-to-north across Detroit, approximately three blocks south of Six Mile Road at Lamphere Street.",
+    "Weaver first attempted to contact Selfridge Field (an Air Force base) directly but was unable to reach them, leading him to call the FBI Detroit field office instead.",
+    "The FBI memo notes Weaver's credibility markers: age 23, son of a Detroit police officer, and prior Civil Air Patrol (CAP) experience — though the agent notes he was 'not too familiar with the identification of aircraft.'",
+    "The sighting occurred while Weaver was returning home from work, establishing it as an incidental, unplanned observation.",
+    "The memo's sole recommendation is 'Advise proper air force authorities,' indicating the FBI treated this as a pass-through reporting function with no independent investigative action."
+  ],
+  "document_type": "memo",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The memo explicitly recommends forwarding the sighting to Air Force authorities, which in 1958 meant Project Blue Book, the Air Force's active UFO investigation program at the time."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "As the home of Project Blue Book, Wright-Patterson AFB would have been the ultimate recipient of reports forwarded by the FBI to Air Force authorities in this period."
+    }
+  ],
+  "related_topics": [
+    "civilian UFO reporting",
+    "FBI field office referral",
+    "Air Force coordination",
+    "dome-shaped craft",
+    "Civil Air Patrol witness"
+  ]
+}

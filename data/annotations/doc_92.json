@@ -1,0 +1,31 @@
+{
+  "hook": "A grainy monochrome still image captured by a U.S. military system in 2025, submitted by the FBI to AARO, showing a single dark elongated object near the right edge of a crosshair reticle; the operator could not identify it and no mission report accompanied the submission.",
+  "why_it_matters": "This record represents the FBI acting as a conduit between a military sensor operator and AARO, illustrating the multi-agency reporting chain established under post-2022 UAP disclosure legislation. The absence of an accompanying mission report and the pre-submission redaction of imagery by the FBI before handing it to the nominally authoritative resolution office raises questions about information completeness reaching AARO. The corrupted timestamp due to an unconfigured system clock is a recurring data-quality problem in UAP reporting that complicates chronological analysis.",
+  "key_findings": [
+    "The image was captured by a U.S. military system and then redacted by the FBI before being forwarded to AARO, meaning AARO did not receive the original unaltered imagery.",
+    "No mission report was provided alongside the image, leaving sensor context, platform identity, altitude, speed, and environmental conditions undocumented.",
+    "The operator on record explicitly stated they were unable to positively identify the object, satisfying the threshold for UAP classification under current DoD definitions.",
+    "The embedded timestamp in the image is known to be incorrect because the system's date/time was not properly configured, undermining any chronological anchoring of the event.",
+    "The object appears as a single dark elongated shape positioned near the right edge of a targeting or optical reticle, consistent with imagery from a military optical or thermal sighting system."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "AARO is the direct recipient of this FBI-submitted image and is the designated resolution authority, making it the central institutional node for this record."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The military system origin of the imagery implies Air Force or DoD sensor infrastructure, loosely connecting to the historical military UAP collection lineage centered at Wright-Patterson."
+    }
+  ],
+  "related_topics": [
+    "military optical sensor imagery",
+    "AARO reporting pipeline",
+    "timestamp integrity in UAP evidence",
+    "FBI-AARO information sharing",
+    "unidentified elongated aerial object"
+  ]
+}

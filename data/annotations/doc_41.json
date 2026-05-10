@@ -1,0 +1,26 @@
+{
+  "hook": "A USCENTCOM declassification clearance page for a 2022 UAP still image from Kuwait, in which the original submitter drew a red circle on the imagery before sending it to AARO — the actual report content is described only in the war.gov manifest, not in the released text.",
+  "why_it_matters": "The document reveals that AARO's intake process included imagery that had already been manually annotated by the reporting operator prior to submission, raising questions about chain-of-custody integrity for sensor data. The accompanying mission report (DoW-UAP-D12) described the object as moving north to northeast and as unidentifiable, representing a formal unresolved case from an active theater command. The release was cleared by DoD's Office of Prepublication and Security Review in March 2026, making it one of the more recent declassifications in the PURSUE release.",
+  "key_findings": [
+    "The original reporter digitally altered the imagery by adding a red circle around an area of interest before submitting it to AARO, per the war.gov manifest description.",
+    "The USCENTCOM Chief of Staff, MG Richard A. Harrison, signed the declassification recommendation on 8 October 2025.",
+    "The document references MDR numbers 25-0094 through 25-0099, indicating this release was processed as part of a batch of six mandatory declassification review requests.",
+    "A companion document, DoW-UAP-D12, contains the actual mission report and describes the UAP as moving from north to northeast with no positive identification made.",
+    "The image shows an elongated area of contrast in the top-left quarter that increases in intensity along its length from top-left to bottom-right, per the official image description."
+  ],
+  "document_type": "memo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly a USCENTCOM recommendation to AARO and the still image was formally submitted to AARO as part of its UAP intake process."
+    }
+  ],
+  "related_topics": [
+    "imagery annotation",
+    "USCENTCOM theater reporting",
+    "AARO intake process",
+    "unresolved UAP cases",
+    "mandatory declassification review"
+  ]
+}

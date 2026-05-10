@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome, grainy still image captured by a U.S. military system in 2025 shows two small, dark circular objects near the center of the frame, submitted by the FBI to AARO after redactions were applied to the original imagery.",
+  "why_it_matters": "This document represents one of the few publicly released images from an active military sensor system submitted through the formal AARO reporting pipeline, establishing that anomalous aerial observations were still being collected and reported by military operators as recently as 2025. The operator's inability to positively identify the objects, combined with the FBI's role as submitting agency rather than the originating military unit, suggests an inter-agency handoff that is unexplained without the missing mission report. The incorrect system timestamp introduces an unresolvable chain-of-custody ambiguity about when the observation actually occurred.",
+  "key_findings": [
+    "Two small, dark, circular objects are visible near the center of the frame, which the operator was unable to positively identify.",
+    "The original imagery was redacted before submission to AARO, and a digital artifact or distortion is visible along the edge of the redaction box in the lower right quadrant, indicating post-capture manipulation.",
+    "No accompanying mission report was provided with the submission, leaving the operational context — platform type, altitude, speed, sensor mode — entirely unknown.",
+    "The date displayed in the image is incorrect due to the recording system's clock not being set, undermining the reliability of any timestamp-based analysis.",
+    "The FBI, not the originating military unit, submitted this image to AARO, indicating an inter-agency reporting chain that is not explained by the available metadata."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This image was formally submitted by the FBI directly to AARO as part of its UAP reporting pipeline, making AARO the explicit recipient and primary institutional connection."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The image originates from an unidentified U.S. military sensor system, and Wright-Patterson has historically served as a collection and analysis node for military-sourced UAP imagery, though no direct connection is stated."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "inter-agency UAP reporting",
+    "image redaction and chain of custody",
+    "unidentified circular objects",
+    "AARO submission pipeline"
+  ]
+}

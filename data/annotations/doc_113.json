@@ -1,0 +1,36 @@
+{
+  "hook": "A 184-page FBI case file section spanning 1966–1977, containing civilian correspondence about the Amalgamated Flying Saucer Clubs of America (AFSCA), the organization's 1966 Reno convention program, and a 1977 White House inquiry to the FBI about executive branch UFO coordination — revealing that Jody Powell's office and the Office of Science and Technology Policy directly questioned the FBI on whether any federal agency was still actively investigating UFO sightings.",
+  "why_it_matters": "The 1977 White House memo is the most significant item: it documents that Jimmy Carter's staff (via Jody Powell) prompted an inquiry into whether any executive branch coordination existed on UFOs, just as Project Blue Book had already been closed. The FBI's formal response — that it has no jurisdiction and routes all UFO information to the Air Force without action — reveals the institutional vacuum left after Blue Book's termination. The AFSCA materials, including a supposed alien radio transmission criticizing the U.S. government over Vietnam, illuminate why the FBI was monitoring civilian UFO organizations during the Cold War era.",
+  "key_findings": [
+    "In June 1977, Stanley Schneider of the White House Office of Science and Technology Policy called the FBI to ask about bureau procedures for UFO sightings, stating that Jody Powell of President Carter's staff had raised the question of whether any executive branch coordination existed on the subject.",
+    "The FBI formally stated it has 'no conceivable jurisdiction' to conduct inquiries on UFO sightings and that all such information is referred to the Department of the Air Force without any FBI action taken.",
+    "A 1966 civilian letter from Mrs. Florence C. Dow of Goffstown, NH, reported AFSCA to J. Edgar Hoover suspecting the organization of communist backing; Hoover's reply stated the FBI neither evaluates nor draws conclusions about organizations.",
+    "AFSCA's 1966 Reno convention program lists over 20 speakers claiming personal contact with extraterrestrials and advertises 'actual color movies of Flying Saucers' — the FBI retained this material in its investigative file.",
+    "The AFSCA journal included a purported alien radio transmission from 'Master Kalen-Li Retan of planet Korendor' criticizing the U.S. government as a 'military puppet' and the President as 'a pawn' — content that would have drawn FBI counterintelligence attention during the Cold War."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The 1977 White House memo explicitly states the Air Force had closed its UFO investigation (Project Blue Book) 'several years ago' and now only refers sightings to local authorities, framing the inquiry into whether any federal successor existed."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson is listed as an entity in the document metadata and was the home of Project Blue Book, which is referenced in the 1977 correspondence as the now-closed Air Force investigation."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The White House staff inquiry (from Jody Powell's office via the Office of Science and Technology Policy) represents executive branch-level policy interest in UFO oversight, touching on questions of inter-agency coordination that mirror congressional oversight concerns of the era."
+    }
+  ],
+  "related_topics": [
+    "civilian UFO organizations Cold War monitoring",
+    "Project Blue Book closure aftermath",
+    "White House executive branch UFO coordination 1977",
+    "AFSCA contactee movement",
+    "FBI no-jurisdiction UFO policy"
+  ]
+}

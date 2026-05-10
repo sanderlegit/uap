@@ -1,0 +1,38 @@
+{
+  "hook": "A collection of individual Army Air Forces UFO incident investigation files from October 1946 through January 1949, each built around a standardized 'Check-List - Unidentified Flying Objects' form, containing witness interviews and narrative summaries for sightings across Louisiana, New Mexico, California, and Mississippi.",
+  "why_it_matters": "These files document the U.S. military's early, systematic approach to UFO reporting before Project Blue Book was formally established, showing investigators already using structured checklists covering altitude, speed, sound, construction, and witness credibility. Multiple cases involve credentialed witnesses—experienced pilots and a retired Army colonel—whose testimony was formally evaluated for reliability, establishing a precedent for treating anomalous aerial encounters as legitimate intelligence matters. The contradictory accounts from two witnesses to the same Santa Fe incident (Incident 175/175a) also illustrate how investigators grappled with perceptual inconsistency in UAP reporting from the outset.",
+  "key_findings": [
+    "Incident 2 (1 Oct 1946, Ascension Parish, LA): Witness B.B. Williams, a student pilot, observed a white-hot ice cream cone-shaped object traveling east at approximately 300 MPH and 2500 ft altitude for ~10 seconds; it produced no noise, left no trail, did not illuminate the surrounding area, and appeared entirely composed of flame with no visible metal or control surfaces.",
+    "Incident 175 (23 Sept 1948, Santa Fe, NM): Experienced commercial pilot A. Ruble Angier observed a perfectly white, flat circular object at an estimated 30,000 ft altitude for 15–20 minutes; using a radio tower for perspective he estimated its size at 100–150 feet and ruled out weather balloon; companion John Fairchild saw a contradictory object—silvery, oblong, with a 'sunflower shape' at its tail and a bluish exhaust signature, traveling at 700–800 MPH.",
+    "Incident 176 (23 Sept 1948, Castro's Ranch, CA): Retired Army Colonel Horace S. Bakins observed a translucent, dirty-gray, amoeba-like object flying above an Army bomber, with oscillating appendages and a stable central globe-like mass; it emitted no light, made no sound, and disappeared from sight very rapidly.",
+    "Unnamed incident (1 Jan 1949, Jackson, MS): Commercial pilot Tom Rush and his wife (also a licensed pilot) observed a cigar-shaped, apparently wingless object from their aircraft at 1,800 ft; it crossed within 1,200 feet of their plane, accelerated from ~200 MPH to an estimated 400–600 MPH, executed a 50° turn toward the southwest, and disappeared; Rush's signed letter specifically confirmed the object had no wings when turning.",
+    "The file includes blank standardized UFO checklist forms with fields for radar data, schedule checks against military and commercial flight schedules, soil sampling instructions if an object landed, and explicit instructions to check Canadian military activity near borders—revealing the institutional scope of the early investigation framework."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "The standardized 'Check-List - Unidentified Flying Objects' forms and investigation protocols in these files are consistent with Air Technical Intelligence Center (ATIC) methodology at Wright-Patterson, which centralized early UFO analysis."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "These incident numbers and checklist formats directly precede and structurally mirror the Project Blue Book reporting system, indicating these files fed into or informed the bureaucratic framework Blue Book would formalize."
+    },
+    {
+      "node_id": "cia_dst",
+      "relevance": "low",
+      "reasoning": "The scope of systematic civilian witness interviews and the intelligence-style credibility assessments in these reports reflect the kind of collection methodology that would later interest CIA scientific intelligence analysts during the early 1950s UFO reviews."
+    }
+  ],
+  "related_topics": [
+    "pilot testimony",
+    "standardized UFO reporting",
+    "cone-shaped object",
+    "translucent anomalous object",
+    "rapid acceleration",
+    "pre-Blue Book Army investigation",
+    "multiple witness discrepancy"
+  ]
+}

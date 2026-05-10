@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome military sensor image submitted by the FBI to AARO in 2025 showing two dark, irregular-shaped objects in the upper right quadrant, with the operator unable to positively identify what was captured. The image's embedded timestamp is unreliable due to misconfigured system date/time.",
+  "why_it_matters": "This photo represents the FBI's formal reporting pipeline to AARO for unresolved aerial observations, demonstrating that law enforcement agencies—not just military services—are active contributors to the UAP reporting ecosystem. The pre-submission redaction of a military sensor image before AARO receipt raises questions about information flow and what was withheld from the resolution process. The absence of an accompanying mission report limits AARO's ability to contextualize the imagery, a documented gap in the formal UAP intake process.",
+  "key_findings": [
+    "The image originated from a U.S. military system and was submitted by the FBI, indicating interagency sharing of UAP-relevant sensor data from Western United States airspace.",
+    "The imagery was redacted before submission to AARO, meaning the oversight body received an altered version of the original military capture.",
+    "No mission report accompanied the submission, leaving the operational context—altitude, speed, sensor type, flight conditions—entirely unknown.",
+    "The operator formally reported inability to positively identify the UAP, satisfying the definitional threshold for an unresolved anomalous phenomenon.",
+    "The image's date/time metadata is known to be inaccurate due to an unconfigured system clock, undermining the evidentiary timestamp."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted to AARO through the FBI reporting channel, placing it directly within AARO's UAP intake and resolution workflow."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "Pre-submission redaction of a military sensor image before AARO receipt suggests involvement of another reviewing authority, though none is identified in the document."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "FBI UAP reporting",
+    "AARO intake process",
+    "image redaction before oversight submission",
+    "Western United States airspace"
+  ]
+}

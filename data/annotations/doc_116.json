@@ -1,0 +1,36 @@
+{
+  "hook": "FBI investigative memos from 1947–1949 documenting three distinct sighting cases: Portland police officers observing a fast-moving silvery object on September 11, 1947; an Alaska bush pilot and co-pilot nearly colliding with a wing-shaped object near Bethel; and the Phoenix Rhodes photographs case, in which Air Force Intelligence obtained photos from civilian William Albert Rhodes and later sought to suppress the paper trail when Rhodes demanded them back.",
+  "why_it_matters": "This file captures the FBI acting as a field investigative arm for Air Force Intelligence in the earliest months of the modern UFO era (summer–fall 1947), interviewing credible witnesses including law enforcement and commercial pilots. The Rhodes photographs case is particularly significant: it shows the Air Force acquiring physical evidence from a civilian witness, a representative later claiming 'hazy' recollection of the transaction, and OSI scrambling to reconstruct the record — a pattern of institutional evidence management visible in the document itself. The Walter Winchell memo illustrates concurrent FBI monitoring of media figures for UAP-related tips.",
+  "key_findings": [
+    "Portland Chief of Police Leon V. Jenkins and at least four other officers independently reported a round silver object on September 11, 1947; witnesses disagreed on speed (150–'extremely great'), altitude (5,000–10,000 ft), and shape (round, elliptical, egg-shaped as it turned), illustrating the perceptual challenges documented even among trained law enforcement observers.",
+    "Alaska pilot Jack Peck and co-pilot Vince Daly made evasive maneuvers in their DC-3 to avoid a dark, wing-shaped object at 1,000 ft near Bethel Airport; the object showed no propeller, jet exhaust, or vapor trail, was estimated at 300 mph, and the CAA station confirmed no known aircraft in the area.",
+    "William Albert Rhodes of Phoenix photographed an object in 1947; the photographs were obtained by Air Force Intelligence officer George Fugate Jr. and FBI SA J. Bailey Brower; by June 1949 Fugate's recollection was 'hazy,' Rhodes was requesting the photos back, and OSI was pressing the Phoenix FBI office for a blind memorandum to reconstruct the case record.",
+    "A July 1949 D.M. Ladd memo documents the FBI investigating a letter sent to Walter Winchell claiming a flying saucer landing in Los Angeles; the named author could not be located at the given address, suggesting fabrication — showing the Bureau was also tracking and vetting media-facing UAP claims.",
+    "Across all cases the FBI coordinated directly with Air Force Intelligence and OSI, forwarding interview summaries and witness statements upward, establishing the early inter-agency information flow that would later be formalized under Project Grudge and Blue Book."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The file documents FBI field investigations feeding Air Force Intelligence in mid-1947, the direct precursor activity to Project Sign and then Grudge/Blue Book, including the Rhodes photographic evidence case that appears in early Air Force UAP records."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "Air Force Intelligence personnel (Hamilton Field, OSI San Francisco) are coordinating receipt and custody of physical evidence (Rhodes photos) through channels that ran through Wright-Patterson's Air Materiel Command during this period."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The Walter Winchell memo and media-monitoring dimension reflects early inter-agency awareness management around public UAP narratives, a function that would later involve CIA's office of operations."
+    }
+  ],
+  "related_topics": [
+    "police witness testimony 1947",
+    "Rhodes UFO photographs Phoenix",
+    "pilot near-miss sighting Alaska",
+    "Air Force evidence custody chain",
+    "FBI media monitoring UAP"
+  ]
+}

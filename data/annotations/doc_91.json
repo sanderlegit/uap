@@ -1,0 +1,31 @@
+{
+  "hook": "A single-page monochrome military imagery still showing two small dark elongated objects near a central crosshair, submitted by the FBI to AARO in 2025 with redactions applied before submission and no accompanying mission report.",
+  "why_it_matters": "This document represents one of the rare instances where the FBI submitted imagery from a U.S. military sensor system directly to AARO, indicating inter-agency UAP reporting is active under the post-2022 disclosure framework. The operator's formal declaration of inability to positively identify the objects is significant as it meets the threshold for official UAP classification. The acknowledged system clock error undermines the document's temporal metadata, complicating any cross-referencing with other events.",
+  "key_findings": [
+    "Two small, dark, elongated objects are visible in the upper right quadrant near the image center, captured by a U.S. military system.",
+    "The FBI applied redactions to the original imagery before submitting to AARO, despite the metadata recording zero blacked-out area — suggesting the manifest and extraction method did not capture the redaction extent.",
+    "The image timestamp is explicitly noted as incorrect because the system date/time was not properly set, making the 2025-01-01 date unreliable as an event date.",
+    "No accompanying mission report was provided to AARO, leaving the operational context, platform type, and geographic specifics undocumented in the submission.",
+    "The operator on record formally reported inability to positively identify the UAP, satisfying the definitional criteria for UAP classification under AARO's intake process."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is a direct FBI-to-AARO submission under the formal UAP reporting pipeline established by the 2022 NDAA, making AARO the primary institutional recipient and handler."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "FBI submission of imagery from a U.S. military sensor system to AARO suggests possible inter-agency coordination channels, though no intelligence community involvement is explicitly stated."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "FBI UAP reporting",
+    "AARO intake process",
+    "operator non-identification",
+    "western United States sightings"
+  ]
+}

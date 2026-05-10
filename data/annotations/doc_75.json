@@ -1,0 +1,32 @@
+{
+  "hook": "A U.S. Embassy Port Moresby cable dated January 28, 1985 reports that Papua New Guinea's National Intelligence Organization asked the Embassy to explain high-altitude, high-speed aircraft seen over PNG on the night of January 24, including radar contact by an Air Niugini pilot and visual sightings of contrails from multiple points across the country.",
+  "why_it_matters": "This cable is notable because it shows a host-nation intelligence service formally approaching U.S. diplomatic personnel for an explanation of aerial phenomena — elevating the sightings beyond a civilian curiosity to an intergovernmental inquiry. The Embassy's response that it knew of no B-52 overflights and no U.S. aircraft in PNG airspace, verified via telephone with the 43rd Strategic Wing at Anderson AFB, leaves the observed aircraft unaccounted for. The sightings involved both radar tracking and multiple independent visual reports across a wide geographic area, lending the incident more evidentiary weight than a single observer account.",
+  "key_findings": [
+    "An Air Niugini pilot's aircraft radar detected aircraft flying south to north at high altitude and high speed over Angoram (approximately 4° S, 144° E) on the night of January 24, 1985.",
+    "Visual sightings reported from multiple points across PNG included: one aircraft traveling north to south at 1900 local time, and six to eight aircraft traveling south to north at 2200 local time, all with associated contrails.",
+    "The Embassy consulted its own records and called the 43rd Strategic Wing at Anderson AFB, Guam (43SW), and told the NIO there were no B-52 overflights and no known U.S. aircraft in PNG airspace on January 24.",
+    "The incident was significant enough politically that the provincial premier called a public meeting in Wewak attended by the Prime Minister of Papua New Guinea, who was in the area for the weekend.",
+    "The cable explicitly qualifies the sightings as 'very sketchy' and notes that witnesses were unsure of the directions aircraft were traveling, while simultaneously requesting USCINCPAC confirm the absence of U.S. aircraft and provide any additional explanation."
+  ],
+  "document_type": "cable",
+  "legacy_program_connections": [
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The cable was information-copied to the U.S. Embassy in Canberra, placing Australia — a Five Eyes partner with primary intelligence equities in the Pacific — within the dissemination chain for these PNG airspace sightings."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The State Department's Bureau of Intelligence and Research (INR) was listed as an information recipient, indicating the intelligence community was looped in on the host-nation inquiry despite the low classification level."
+    }
+  ],
+  "related_topics": [
+    "radar tracking",
+    "pilot testimony",
+    "diplomatic inquiry",
+    "Pacific airspace",
+    "contrail sightings",
+    "strategic bomber attribution"
+  ]
+}

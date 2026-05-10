@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Air Force ISR aircraft from the 482nd Attack Squadron observed two separate UAP via full-motion video over the Arabian Gulf region on November 2, 2020 — at 2143Z and again five minutes later at 2148Z — while conducting a 20-hour classified surveillance mission supporting NAVCENT operations near the Strait of Hormuz.",
+  "why_it_matters": "This MISREP documents UAP observations made during an active, ongoing military intelligence-collection mission in one of the world's most surveilled and contested airspaces, adding operational context rarely seen in declassified UAP records. The observations occurred within a five-minute window in the same grid area using the ANDAS4 targeting pod and FMV, providing sensor-specific provenance. Notably, weather haze was logged as having precluded conventional IMINT collection during the mission, yet FMV captured the UAP — a detail that constrains what environmental conditions prevailed at observation time.",
+  "key_findings": [
+    "Two UAP were observed five minutes apart (2143Z and 2148Z) in the same approximate grid area (39RWK) via FMV, with the aircraft at FL220 heading 110T; the first UAP's altitude was listed as unknown, and the second was observed traveling northwest.",
+    "The primary sensor listed is the ANDAS4 targeting pod, with AH/GMESH also available; weather haze was formally logged as having precluded IMINT collection during the mission, yet the FMV observations of UAP were still recorded.",
+    "The aircraft received a guardcall from Iranian Air Defense at 1012Z — roughly 11 hours before the UAP observations — at FL210 heading M068; the crew responded with a standard response and reported no mission impact.",
+    "The mission's stated purpose was ISR support for NAVCENT to characterize IRGCN vessels, UAS activity, activity outside ports, and establish pattern of life in the Arabian Gulf, Strait of Hormuz, and Gulf of Oman.",
+    "FMV footage from the mission was exploited by DOSI; the intel gap was formally recorded as 'not filled,' and the original classification was set to expire in 2045, indicating the material was considered sensitive for 25 years before early declassification in March 2026."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly described as a MISREP submitted to AARO as part of the standardized UAP reporting pipeline, and is released under the PURSUE declassification effort."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "The mission operated under USCENTCOM/NAVCENT in a region where allied ISR coordination is common, though no allied nations or shared-intelligence frameworks are explicitly named in the document."
+    }
+  ],
+  "related_topics": [
+    "FMV UAP observation",
+    "Arabian Gulf ISR",
+    "Iranian air defense interaction",
+    "NAVCENT surveillance operation",
+    "IRGCN maritime monitoring"
+  ]
+}

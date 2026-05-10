@@ -1,0 +1,31 @@
+{
+  "hook": "An FBI FD-302 interview record of a U.S. civilian who witnessed a bright white stationary light over the horizon at approximately 9:00 AM on September 2023, while driving in convoy to a test site for LiDAR data collection — the light moved right, held the same apparent size, and vanished after roughly ten seconds.",
+  "why_it_matters": "This report is notable because the sighting occurred at or near a U.S. government test site during an active LiDAR data acquisition mission, suggesting the witness and colleagues were technically literate observers in a controlled operational environment. The FBI's decision to conduct a formal FD-302 interview — the same form used in criminal investigations — reflects the bureau's post-2021 posture of treating credible UAP reports as warranting documented intake. The corroboration detail (colleagues at the first test site independently reporting they saw it too) elevates the account above a single-witness sighting.",
+  "key_findings": [
+    "The witness was traveling in a three-vehicle convoy — an F150, the witness's GMC AT4, and a sprinter van — driving east to a test site for LiDAR data collection.",
+    "The observed object appeared as a bright white stationary light above the horizon, visible through the vehicle windshield, estimated at 10–20 miles distance, and lasted approximately ten seconds before disappearing.",
+    "The light remained the same size throughout the sighting, moved laterally to the right, then vanished; no vehicle electronic interference was noted.",
+    "The witness's passenger failed to observe the object because he looked in the wrong direction and had his seat reclined, leaving the primary witness as the sole direct observer at that moment.",
+    "Upon arriving at the first test site, colleagues reported they also saw the light, providing independent corroboration; the witness speculated it may have been a meteor traveling directly toward them and burning up."
+  ],
+  "document_type": "investigation",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "medium",
+      "reasoning": "This 2023 FD-302 is the type of civilian-at-government-facility UAP report that AARO was mandated by Congress to centralize, and the FBI's formal documentation suggests an intent to feed it into the broader reporting framework."
+    },
+    {
+      "node_id": "area51",
+      "relevance": "low",
+      "reasoning": "The sighting occurred at a redacted U.S. test site during active LiDAR testing, placing it in the category of restricted-area encounters, though the specific facility is not identified in the document."
+    }
+  ],
+  "related_topics": [
+    "civilian witness testimony",
+    "test site UAP encounter",
+    "LiDAR operations",
+    "meteor misidentification",
+    "FBI FD-302 UAP intake"
+  ]
+}

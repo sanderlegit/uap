@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Air Force MISREP filed by the 389th Expeditionary Fighter Squadron documenting two separate UAP sightings by an F-15E two-ship during a Defensive Counter Air mission over northeastern Syria near Shaddadi: three unidentified objects with infrared signatures but no radar returns at FL240, and a possible balloon at FL210, both observed on February 21, 2023.",
+  "why_it_matters": "This report is notable because it captures two distinct sightings in a single sortie, with the first sighting of 3x objects explicitly producing no radar returns despite two of them showing IR significance — a sensor discrepancy that resists easy conventional explanation. The report also documents a concurrent MFT radar jamming event affecting the APG-82 radar at 8.8–9.9 GHz, though the crew's own working theory attributes that to a Turkish X-band jammer rather than the UAP. The declassification and release specifically to AARO places this within the post-NDAA institutional UAP reporting pipeline.",
+  "key_findings": [
+    "At 0025Z, the crew observed 3x possible UAP IVO Shaddadi at FL240; no radar returns were received from the objects, and no health effects were experienced by aircrew, but 2 of the objects were described as 'IR significant' (white objects with thermal signature); WSV was produced.",
+    "At 0135Z, a separate sighting of 1x possible balloon was recorded IVO Shaddadi at FL210; WSV was also produced for this event; weather at both sighting times was reported as cloudy.",
+    "Between 0021Z and 0024Z, the aircraft experienced 3 minutes of MFT (multifunction) radar jamming at FL270, partially affecting the APG-82 radar at 8.8–9.9 GHz; the crew's working theory attributes this to an 'ABRA of effect' from a Turkish X-band jammer near the SYR/TUR border — explicitly not attributed to the UAP.",
+    "The crew was cruising in CAP at FL270 during the UAP observations; the objects were approximately 3,000 feet below at FL240, and the absence of radar returns distinguishes this from standard aircraft tracking.",
+    "The report carries FVEY releasability markings ('REL TO USA, FVEY'), was filed by 389 EFS under 332 AEW/AFCENT/USCENTCOM, and was declassified by MG Richard A. Harrison (USCENTCOM Chief of Staff) on October 8, 2025 under MDR 25-0094 through 25-0099."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was explicitly declassified and approved for release to AARO, placing it within the formal post-NDAA UAP reporting and disclosure pipeline that AARO administers."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The document carries 'REL TO USA, FVEY' classification caveats, indicating the operational UAP sighting data was shared with Five Eyes intelligence partners."
+    }
+  ],
+  "related_topics": [
+    "radar jamming electromagnetic interference",
+    "infrared sensor UAP detection",
+    "F-15E pilot sighting Syria",
+    "Operation Inherent Resolve",
+    "no radar return anomalous object"
+  ]
+}

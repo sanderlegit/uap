@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome still image captured by a U.S. military sensor system, submitted by the FBI to AARO in 2025, showing a small dark circular object in the upper right quadrant of the frame against an indistinct mountain range, with a central crosshair reticle overlaid.",
+  "why_it_matters": "This submission represents a formal FBI-to-AARO referral of imagery from a military sensor platform, a chain of custody that reflects post-2022 institutional reporting norms under the UAP disclosure framework. The operator's inability to positively identify the object, combined with the absence of an accompanying mission report, leaves the event without analytic resolution. The pre-submission redaction of the original imagery raises questions about what information was withheld from AARO's review.",
+  "key_findings": [
+    "The image was captured by a U.S. military system and submitted by the FBI to AARO — an inter-agency referral indicating the event crossed institutional reporting thresholds.",
+    "The original imagery was altered with redactions before being submitted to AARO, meaning AARO reviewed a modified version of the source material.",
+    "No accompanying mission report was provided with the submission, limiting contextual analysis of the sensor geometry, platform altitude, or operational circumstances.",
+    "The operator on record explicitly reported an inability to positively identify the UAP, confirming the event remains unresolved at the collecting agency level.",
+    "The image timestamp (2025-01-01) is unreliable and does not reflect the actual date of capture due to the system clock not being properly set."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This image was formally submitted by the FBI to AARO as part of the post-NDAA UAP reporting pipeline, making AARO the direct recipient and nominal resolution authority for this case."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The image originated from an unspecified U.S. military system; Wright-Patterson's historical role as a military sensor and aerospace data repository provides loose institutional context, though no direct connection is stated."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "FBI-AARO referral",
+    "unresolved UAP sighting",
+    "pre-submission redaction",
+    "Western United States airspace"
+  ]
+}

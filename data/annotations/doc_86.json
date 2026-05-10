@@ -1,0 +1,26 @@
+{
+  "hook": "A grainy monochrome still image captured by a U.S. military system, submitted by the FBI to AARO in 2025, showing two small dark elongated objects near a central crosshair that the operator could not positively identify.",
+  "why_it_matters": "This submission represents the FBI acting as a conduit between military sensor operators and AARO, the designated UAP resolution body — a relatively new institutional arrangement formalized after the 2022 AARO establishment. The absence of an accompanying mission report, combined with the operator's inability to identify the objects, means AARO received imagery stripped of the operational context typically needed for analysis. The acknowledged incorrect timestamp further limits the evidentiary value of the image for correlating with other sensor data or events.",
+  "key_findings": [
+    "The image was captured by a U.S. military system and submitted by the FBI to AARO, indicating cross-agency UAP reporting protocols are active as of 2025.",
+    "The original imagery was redacted before submission to AARO, meaning AARO itself did not receive the unaltered source file.",
+    "No accompanying mission report was provided, leaving the image without operational context such as location, altitude, speed, or sensor parameters.",
+    "The system date/time was not properly set, rendering the embedded timestamp inaccurate and unusable for chronological correlation.",
+    "The operator formally reported an inability to positively identify the UAP, satisfying the definition of an unresolved anomaly under current reporting standards."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is a direct FBI submission to AARO under the post-2022 UAP reporting framework, making AARO the primary institutional recipient and intended analyst."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "FBI UAP reporting",
+    "AARO submission protocol",
+    "unidentified aerial objects",
+    "redacted imagery"
+  ]
+}

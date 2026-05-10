@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. military operator filed this standardized Mission Report documenting two round, white-hot UAPs observed at 1653Z moving south at approximately 240 knots near MGRS coordinate 35SQT3423692957, with the substantive content classified SECRET and releasable to a broad coalition of allies.",
+  "why_it_matters": "This report is notable for its wide coalition release authority — explicitly shared with Finland, Sweden, Five Eyes, and NATO — indicating allied militaries are being looped into UAP reporting at the operational level. The thermal characterization ('white hot') suggests the observation was made via infrared or FLIR sensor rather than naked eye. Six of seven pages are entirely withheld under EO 13526 section 1.4(a), meaning the operational context, platform identity, and full sensor data remain classified.",
+  "key_findings": [
+    "Two round ('2X ROUND') UAPs were observed simultaneously, consistent with the sphere/orb shape category noted in the metadata.",
+    "The objects were characterized as 'white hot,' indicating a significant infrared or thermal signature visible to sensor equipment.",
+    "Speed was estimated at approximately 240 nautical miles per hour (about 276 mph) on a southward heading.",
+    "The event location is encoded as MGRS grid 35SQT3423692957, placing it in the eastern Mediterranean or Red Sea region — consistent with a Djibouti-area operation.",
+    "The classification header (SECRET//REL TO USA, FIN, SWE, FVEY, NATO) shows this report was authorized for release to Finland, Sweden, Five Eyes partners, and NATO, reflecting a multilateral UAP information-sharing posture."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The manifest explicitly states this MISREP was submitted to AARO using the standardized military UAP reporting pipeline AARO administers."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "high",
+      "reasoning": "The classification header explicitly authorizes release to FVEY partners as well as Finland and Sweden, indicating active multilateral UAP intelligence sharing through established allied frameworks."
+    }
+  ],
+  "related_topics": [
+    "infrared thermal signature",
+    "MISREP standardized reporting",
+    "coalition intelligence sharing",
+    "speed estimation nautical miles per hour",
+    "MGRS coordinate localization"
+  ]
+}

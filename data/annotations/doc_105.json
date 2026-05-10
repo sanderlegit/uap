@@ -1,0 +1,31 @@
+{
+  "hook": "An excerpt from the January 4, 1973 Apollo 17 Technical Crew Debriefing in which astronauts Evans, Cernan, and Schmitt describe unusual visual phenomena observed during the mission, including a fireball with a tunnel-like afterimage seen through the rendezvous window and near-continuous light flashes experienced by Schmitt when dark-adapted throughout the flight.",
+  "why_it_matters": "The document provides firsthand astronaut testimony about anomalous light phenomena experienced during a lunar mission, including phenomena that were significant enough to be the subject of an onboard experiment (ALFMED). Schmitt's observation that the light flashes ceased entirely during the ALFMED blindfold interval — and resumed afterward — is notable because it suggests the experiment captured a real and controllable effect. The inclusion of this testimony in a formal technical debriefing indicates NASA treated these observations as scientifically relevant, not incidental.",
+  "key_findings": [
+    "Astronaut Evans described seeing a fireball through the rendezvous window, and after its brightness decreased, observed what he called 'a tunnel with a bright spot in the middle' with the fireball visible 'way down the tunnel, way back behind.'",
+    "Astronaut Schmitt reported light flashes 'just about continuously during the whole flight when we were dark adapted,' indicating the phenomenon persisted across the mission duration rather than occurring at one isolated moment.",
+    "Schmitt specifically reported one flash he believed originated from the lunar surface, distinguishing it from the other in-flight flashes.",
+    "During the ALFMED (Apollo Light Flash Moving Emulsion Detector) experiment — conducted with crew blindfolds — Schmitt reported no visible flashes, and stated the same was true for the other two crewmen.",
+    "After the ALFMED blindfold interval ended, Schmitt noticed the light flashes had resumed before he went to sleep that night, framing the suppression as specific to that one interval."
+  ],
+  "document_type": "technical",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "medium",
+      "reasoning": "This document was released as part of the PURSUE declassification effort and directly informs AARO's mandate to catalog historical anomalous phenomena observations by U.S. government personnel, in this case active astronauts on a crewed lunar mission."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "low",
+      "reasoning": "The light flash and fireball observations by Apollo 17 crew overlap temporally with Project Blue Book's final years and represent the kind of anomalous aerial/space phenomena that Blue Book was tasked with cataloging, though no direct Blue Book connection is stated in the document."
+    }
+  ],
+  "related_topics": [
+    "astronaut testimony",
+    "cosmic ray light flashes",
+    "ALFMED experiment",
+    "lunar mission anomalous observations",
+    "space-based luminosity phenomena"
+  ]
+}

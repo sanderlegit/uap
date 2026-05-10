@@ -1,87 +1,68 @@
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { agencyColor, agencyClass, thumbUrl } from '../hooks/useData'
-
-const LAYER_COLORS = {
-  center: '#f59e0b',
-  surveillance: '#3b82f6',
-  custodial: '#f59e0b',
-  industrial: '#ef4444',
-}
-
-const LAYER_LABELS = {
-  surveillance: 'Surveillance',
-  custodial: 'Custodial',
-  industrial: 'Industrial',
-}
+import LegacyTree from '../components/LegacyTree'
 
 const AGENCIES = [
-  { key: 'Department of War', label: 'Dept. of War', color: '#3b82f6' },
+  { key: 'Department of War', label: 'DoW', color: '#3b82f6' },
   { key: 'FBI', label: 'FBI', color: '#ef4444' },
   { key: 'NASA', label: 'NASA', color: '#8b5cf6' },
-  { key: 'Department of State', label: 'Dept. of State', color: '#10b981' },
+  { key: 'Department of State', label: 'DoS', color: '#10b981' },
 ]
 
 const DECADES = ['1940s', '1950s', '1960s', '1970s', '1980s', '2020s']
 
-function DetailPanel({ node, narratives, onClose }) {
+const EDGE_TYPE_STYLES = {
+  content_similarity: { color: '#60a5fa', style: 'solid', label: 'Content' },
+  same_case: { color: '#a78bfa', style: 'dashed', label: 'Same Case' },
+  media_pairing: { color: '#34d399', style: 'dotted', label: 'Media' },
+}
+
+function DetailPanel({ node, narratives, legacyConnections, onClose }) {
   if (!node) return null
 
-  const isDoc = node.type === 'document'
-  const color = isDoc ? agencyColor(node.agency) : (node.color || '#94a3b8')
-  const narrative = isDoc && narratives ? narratives[String(node.doc_id)] : null
+  const color = agencyColor(node.agency)
+  const narrative = narratives?.[String(node.doc_id)]
 
   return (
-    <div className="absolute inset-x-0 bottom-0 max-h-[70vh] sm:inset-x-auto sm:max-h-none sm:right-4 sm:top-4 sm:bottom-4 sm:w-80 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-t-xl sm:rounded-xl shadow-2xl z-20 flex flex-col overflow-hidden">
+    <div className="absolute inset-x-0 bottom-0 max-h-[70vh] sm:inset-x-auto sm:max-h-none sm:left-4 sm:top-4 sm:bottom-4 sm:w-80 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-t-xl sm:rounded-xl shadow-2xl z-20 flex flex-col overflow-hidden">
       <div className="flex items-center justify-between px-4 py-3 border-b border-slate-700/50">
         <span className="text-[11px] font-mono tracking-[0.15em] uppercase" style={{ color }}>
-          {node.layer === 'center' ? 'The Legacy Program' : isDoc ? node.agency : (LAYER_LABELS[node.layer] || node.type)}
+          {node.agency}
         </span>
         <button onClick={onClose} className="text-slate-500 hover:text-white w-10 h-10 flex items-center justify-center text-lg leading-none cursor-pointer shrink-0">&times;</button>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
-        {isDoc && (
-          <img
-            src={thumbUrl(node.doc_id)}
-            alt=""
-            className="w-full max-w-[200px] rounded mb-3 bg-slate-800"
-            onError={(e) => { e.target.style.display = 'none' }}
-          />
-        )}
+        <img
+          src={thumbUrl(node.doc_id)}
+          alt=""
+          className="w-full max-w-[200px] rounded mb-3 bg-slate-800"
+          onError={(e) => { e.target.style.display = 'none' }}
+        />
         <h3 className="text-base font-bold text-slate-100 mb-2 leading-snug">{node.label}</h3>
         {narrative?.hook && (
           <p className="text-xs text-slate-300 leading-relaxed mb-3">{narrative.hook}</p>
         )}
-        {!narrative?.hook && node.description && (
-          <p className="text-xs text-slate-400 leading-relaxed mb-3">{node.description}</p>
-        )}
-        {isDoc && (
-          <div className="space-y-2 mb-3">
-            {node.agency && (
-              <div className="text-xs text-slate-500">
-                <span className="text-slate-400">Agency:</span>{' '}
-                <span className={`agency-badge ${agencyClass(node.agency)}`}>{node.agency}</span>
-              </div>
-            )}
-            {node.decade && (
-              <div className="text-xs text-slate-500">
-                <span className="text-slate-400">Decade:</span> {node.decade}
-              </div>
-            )}
-            {node.pages > 0 && (
-              <div className="text-xs text-slate-500">
-                <span className="text-slate-400">Pages:</span> {node.pages}
-              </div>
-            )}
-            {node.has_redaction && (
-              <div className="text-xs text-red-400">Contains redactions</div>
-            )}
-          </div>
-        )}
+        <div className="space-y-2 mb-3">
+          {node.decade && (
+            <div className="text-xs text-slate-500">
+              <span className="text-slate-400">Decade:</span> {node.decade}
+            </div>
+          )}
+          {node.pages > 0 && (
+            <div className="text-xs text-slate-500">
+              <span className="text-slate-400">Pages:</span> {node.pages}
+            </div>
+          )}
+          {node.has_redaction && (
+            <div className="text-xs text-red-400">Contains redactions</div>
+          )}
+        </div>
+
         {node.connections && node.connections.length > 0 && (
           <div className="mb-3">
             <h4 className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-2">
-              Connections ({node.connections.length})
+              Related Documents ({node.connections.length})
             </h4>
             <div className="space-y-1.5 max-h-48 overflow-y-auto">
               {node.connections.map((c, i) => (
@@ -89,77 +70,52 @@ function DetailPanel({ node, narratives, onClose }) {
                   <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: c.color || '#94a3b8' }} />
                   <div>
                     <span className="text-slate-300">{c.label}</span>
-                    {c.reason && <span className="text-slate-500 block text-[11px]">{c.reason}</span>}
-                    {c.edgeType === 'xref' && <span className="text-cyan-500/70 block text-[10px]">Cross-reference</span>}
+                    <span className="text-slate-500 block text-[10px]">{EDGE_TYPE_STYLES[c.edgeType]?.label || c.edgeType}</span>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         )}
-        {isDoc && (
-          <div className="flex flex-col gap-2">
-            <Link
-              to={`/documents/${node.doc_id}`}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono tracking-wider hover:bg-amber-500/20 transition-colors"
-            >
-              View Document &rarr;
-            </Link>
-            <div className="flex items-center gap-3">
-              <Link
-                to={`/timeline?doc=${node.doc_id}${node.decade ? `&decade=${node.decade}` : ''}`}
-                className="text-[11px] text-indigo-400/70 hover:text-indigo-400 font-mono py-1"
-              >
-                Timeline &rarr;
-              </Link>
-              <Link
-                to={`/map?doc=${node.doc_id}`}
-                className="text-[11px] text-indigo-400/70 hover:text-indigo-400 font-mono py-1"
-              >
-                Map &rarr;
-              </Link>
+
+        {legacyConnections.length > 0 && (
+          <div className="mb-3">
+            <h4 className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-2">
+              Legacy Program
+            </h4>
+            <div className="space-y-1.5">
+              {legacyConnections.map((c, i) => (
+                <div key={i} className="text-xs text-slate-400 flex items-start gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: c.color }} />
+                  <span className="text-slate-300">{c.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         )}
-      </div>
-    </div>
-  )
-}
 
-function LayerLegend({ activeLayer, onToggle, showXref, onToggleXref, xrefCount }) {
-  return (
-    <div className="absolute left-3 bottom-20 md:bottom-4 z-20 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2.5">
-      <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-2">Program Layers</p>
-      {Object.entries(LAYER_LABELS).map(([key, label]) => (
-        <button
-          key={key}
-          onClick={() => onToggle(key)}
-          className={`flex items-center gap-2 w-full text-left py-1.5 transition-colors cursor-pointer ${
-            activeLayer === null || activeLayer === key ? 'opacity-100' : 'opacity-30'
-          }`}
-        >
-          <span className="w-3 h-3 rounded-full" style={{ backgroundColor: LAYER_COLORS[key] }} />
-          <span className="text-xs text-slate-300">{label}</span>
-        </button>
-      ))}
-      {activeLayer && (
-        <button onClick={() => onToggle(null)} className="text-[11px] text-slate-500 hover:text-slate-300 mt-1 py-1 cursor-pointer">
-          Show all
-        </button>
-      )}
-      <div className="border-t border-slate-700/50 mt-2 pt-2">
-        <button
-          onClick={onToggleXref}
-          className={`flex items-center gap-2 w-full text-left py-1.5 transition-colors cursor-pointer ${
-            showXref ? 'opacity-100' : 'opacity-40'
-          }`}
-        >
-          <span className={`w-3 h-0.5 ${showXref ? 'bg-cyan-400' : 'bg-slate-500'}`} />
-          <span className={`text-xs ${showXref ? 'text-cyan-300' : 'text-slate-400'}`}>
-            Cross-refs
-          </span>
-          <span className="text-[9px] text-slate-600 ml-auto">{xrefCount}</span>
-        </button>
+        <div className="flex flex-col gap-2">
+          <Link
+            to={`/documents/${node.doc_id}`}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono tracking-wider hover:bg-amber-500/20 transition-colors"
+          >
+            View Document &rarr;
+          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              to={`/timeline?doc=${node.doc_id}${node.decade ? `&decade=${node.decade}` : ''}`}
+              className="text-[11px] text-indigo-400/70 hover:text-indigo-400 font-mono py-1"
+            >
+              Timeline &rarr;
+            </Link>
+            <Link
+              to={`/map?doc=${node.doc_id}`}
+              className="text-[11px] text-indigo-400/70 hover:text-indigo-400 font-mono py-1"
+            >
+              Map &rarr;
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )
@@ -168,20 +124,25 @@ function LayerLegend({ activeLayer, onToggle, showXref, onToggleXref, xrefCount 
 export default function LegacyWeb() {
   const containerRef = useRef(null)
   const cyRef = useRef(null)
-  const [data, setData] = useState(null)
+  const [legacyData, setLegacyData] = useState(null)
   const [graphData, setGraphData] = useState(null)
   const [narratives, setNarratives] = useState(null)
   const [selectedNode, setSelectedNode] = useState(null)
+  const [hoveredDocId, setHoveredDocId] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [treePanelOpen, setTreePanelOpen] = useState(true)
 
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const activeLayer = searchParams.get('layer') || null
   const search = searchParams.get('q') || ''
-  const showXref = searchParams.get('xref') === '1'
   const activeDecade = searchParams.get('decade') || null
+  const selectedLayer = searchParams.get('layer') || null
   const hiddenAgencies = useMemo(() => {
     const v = searchParams.get('hide')
+    return v ? new Set(v.split(',')) : new Set()
+  }, [searchParams])
+  const selectedOrgs = useMemo(() => {
+    const v = searchParams.get('org')
     return v ? new Set(v.split(',')) : new Set()
   }, [searchParams])
 
@@ -201,30 +162,78 @@ export default function LegacyWeb() {
       fetch('/data/graph.json').then(r => r.json()),
       fetch('/data/doc_narratives.json').then(r => r.json()).catch(() => null),
     ]).then(([lw, g, n]) => {
-      setData(lw)
+      setLegacyData(lw)
       setGraphData(g)
       setNarratives(n)
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
 
-  const xrefEdges = useMemo(() => {
-    if (!graphData) return []
-    return graphData.edges.map((e, i) => ({
-      group: 'edges',
-      data: {
-        id: `xref_${i}`,
-        source: `doc_${e.source_id}`,
-        target: `doc_${e.target_id}`,
-        edgeType: 'xref',
-        weight: e.weight || 0.5,
-        xrefType: e.edge_type,
-      },
-    }))
-  }, [graphData])
+  // Map: orgId → Set<docId> (numeric) for filtering
+  const orgToDocIds = useMemo(() => {
+    if (!legacyData) return new Map()
+    const map = new Map()
+    legacyData.edges.filter(e => e.type === 'document').forEach(e => {
+      const docId = parseInt(e.source.replace('doc_', ''), 10)
+      if (!map.has(e.target)) map.set(e.target, new Set())
+      map.get(e.target).add(docId)
+    })
+    return map
+  }, [legacyData])
 
+  // Map: docId → Set<orgId> for tree highlighting
+  const docToOrgIds = useMemo(() => {
+    if (!legacyData) return new Map()
+    const map = new Map()
+    legacyData.edges.filter(e => e.type === 'document').forEach(e => {
+      const docId = parseInt(e.source.replace('doc_', ''), 10)
+      if (!map.has(docId)) map.set(docId, new Set())
+      map.get(docId).add(e.target)
+    })
+    return map
+  }, [legacyData])
+
+  // Which docs pass the org/layer filter?
+  const orgFilteredDocIds = useMemo(() => {
+    const activeOrgs = new Set(selectedOrgs)
+    if (selectedLayer && legacyData) {
+      legacyData.nodes
+        .filter(n => n.type === 'org' && n.layer === selectedLayer)
+        .forEach(n => activeOrgs.add(n.id))
+    }
+    if (activeOrgs.size === 0) return null
+    const result = new Set()
+    for (const orgId of activeOrgs) {
+      const docs = orgToDocIds.get(orgId)
+      if (docs) docs.forEach(d => result.add(d))
+    }
+    return result
+  }, [selectedOrgs, selectedLayer, orgToDocIds, legacyData])
+
+  // Which orgs should glow in the tree?
+  const highlightedOrgs = useMemo(() => {
+    const docId = hoveredDocId ?? selectedNode?.doc_id
+    if (docId == null) return new Set()
+    return docToOrgIds.get(docId) || new Set()
+  }, [hoveredDocId, selectedNode, docToOrgIds])
+
+  // Legacy connections for selected doc's detail panel
+  const selectedDocLegacyConns = useMemo(() => {
+    if (!selectedNode || !legacyData) return []
+    const docNodeId = `doc_${selectedNode.doc_id}`
+    const nodeMap = new Map(legacyData.nodes.map(n => [n.id, n]))
+    return legacyData.edges
+      .filter(e => e.source === docNodeId && e.type === 'document')
+      .map(e => {
+        const node = nodeMap.get(e.target)
+        return node ? { label: node.label, color: node.color, layer: node.layer } : null
+      })
+      .filter(Boolean)
+  }, [selectedNode, legacyData])
+
+  // Build Cytoscape graph — doc nodes + doc-to-doc edges only
   useEffect(() => {
-    if (!data || !containerRef.current) return
+    if (!graphData || !legacyData || !containerRef.current) return
 
     let cancelled = false
 
@@ -234,32 +243,42 @@ export default function LegacyWeb() {
 
       const elements = []
 
-      data.nodes.forEach(n => {
-        const isDoc = n.type === 'document'
+      // Doc nodes from legacyData (has agency, decade, pages, etc.)
+      const docNodes = legacyData.nodes.filter(n => n.type === 'document')
+      const connectionCounts = {}
+      graphData.edges.forEach(e => {
+        connectionCounts[e.source_id] = (connectionCounts[e.source_id] || 0) + 1
+        connectionCounts[e.target_id] = (connectionCounts[e.target_id] || 0) + 1
+      })
+
+      docNodes.forEach(n => {
+        const conns = connectionCounts[n.doc_id] || 0
         elements.push({
           group: 'nodes',
           data: {
-            id: n.id,
+            id: `doc_${n.doc_id}`,
             label: n.label,
-            nodeType: n.type,
-            layer: n.layer,
-            color: isDoc ? agencyColor(n.agency) : n.color,
-            nodeSize: n.size || 15,
+            nodeType: 'document',
+            color: agencyColor(n.agency),
+            nodeSize: Math.max(12, Math.min(30, 12 + conns * 2)),
             docId: n.doc_id,
             agency: n.agency || '',
             decade: n.decade || '',
+            pages: n.pages || 0,
+            has_redaction: n.has_redaction || false,
           },
         })
       })
 
-      data.edges.forEach((e, i) => {
+      // Doc-to-doc edges from graph.json
+      graphData.edges.forEach((e, i) => {
         elements.push({
           group: 'edges',
           data: {
-            id: `e${i}`,
-            source: e.source,
-            target: e.target,
-            edgeType: e.type,
+            id: `ge_${i}`,
+            source: `doc_${e.source_id}`,
+            target: `doc_${e.target_id}`,
+            edgeType: e.edge_type,
             weight: e.weight || 0.5,
           },
         })
@@ -270,116 +289,44 @@ export default function LegacyWeb() {
         elements,
         style: [
           {
-            selector: 'node[nodeType="hub"]',
-            style: {
-              'background-color': '#f59e0b',
-              'label': 'data(label)',
-              'color': '#fbbf24',
-              'text-valign': 'center',
-              'text-halign': 'center',
-              'font-size': '14px',
-              'font-weight': 'bold',
-              'text-wrap': 'wrap',
-              'text-max-width': '120px',
-              'width': 'data(nodeSize)',
-              'height': 'data(nodeSize)',
-              'border-width': 3,
-              'border-color': '#fbbf2440',
-              'text-outline-width': 2,
-              'text-outline-color': '#020617',
-            },
-          },
-          {
-            selector: 'node[nodeType="layer"]',
+            selector: 'node',
             style: {
               'background-color': 'data(color)',
-              'label': 'data(label)',
-              'color': '#e2e8f0',
-              'text-valign': 'bottom',
-              'text-margin-y': 8,
-              'font-size': '11px',
-              'font-weight': 'bold',
-              'text-wrap': 'wrap',
-              'text-max-width': '100px',
-              'width': 'data(nodeSize)',
-              'height': 'data(nodeSize)',
-              'border-width': 2,
-              'border-color': 'data(color)',
-              'border-opacity': 0.3,
-              'text-outline-width': 2,
-              'text-outline-color': '#020617',
-            },
-          },
-          {
-            selector: 'node[nodeType="org"]',
-            style: {
-              'background-color': 'data(color)',
-              'background-opacity': 0.7,
-              'label': 'data(label)',
-              'color': '#cbd5e1',
-              'text-valign': 'bottom',
-              'text-margin-y': 6,
-              'font-size': '9px',
-              'font-weight': '600',
-              'text-wrap': 'wrap',
-              'text-max-width': '80px',
-              'width': 'data(nodeSize)',
-              'height': 'data(nodeSize)',
-              'border-width': 1,
-              'border-color': 'data(color)',
-              'border-opacity': 0.4,
-              'text-outline-width': 1.5,
-              'text-outline-color': '#020617',
-            },
-          },
-          {
-            selector: 'node[nodeType="document"]',
-            style: {
-              'background-color': 'data(color)',
-              'background-opacity': 0.7,
+              'background-opacity': 0.8,
               'width': 'data(nodeSize)',
               'height': 'data(nodeSize)',
               'label': '',
               'border-width': 1.5,
               'border-color': 'data(color)',
-              'border-opacity': 0.4,
+              'border-opacity': 0.5,
             },
           },
           {
-            selector: 'edge[edgeType="structure"]',
+            selector: 'edge[edgeType="content_similarity"]',
             style: {
-              'line-color': '#475569',
-              'width': 2,
+              'line-color': '#60a5fa',
+              'width': 'mapData(weight, 0, 1, 0.5, 2.5)',
               'curve-style': 'bezier',
-              'opacity': 0.6,
+              'opacity': 0.2,
             },
           },
           {
-            selector: 'edge[edgeType="document"]',
+            selector: 'edge[edgeType="same_case"]',
             style: {
-              'line-color': '#334155',
-              'width': 1,
-              'curve-style': 'bezier',
-              'opacity': 0.15,
-            },
-          },
-          {
-            selector: 'edge[edgeType="cross_layer"]',
-            style: {
-              'line-color': '#6b7280',
-              'width': 1.5,
-              'line-style': 'dashed',
-              'curve-style': 'bezier',
-              'opacity': 0.3,
-            },
-          },
-          {
-            selector: 'edge[edgeType="xref"]',
-            style: {
-              'line-color': '#22d3ee',
+              'line-color': '#a78bfa',
               'width': 'mapData(weight, 0, 1, 0.5, 2.5)',
               'curve-style': 'bezier',
               'opacity': 0.25,
+              'line-style': 'dashed',
+            },
+          },
+          {
+            selector: 'edge[edgeType="media_pairing"]',
+            style: {
+              'line-color': '#34d399',
+              'width': 1.5,
+              'curve-style': 'bezier',
+              'opacity': 0.3,
               'line-style': 'dotted',
             },
           },
@@ -433,13 +380,19 @@ export default function LegacyWeb() {
             },
           },
           {
+            selector: '.filtered-out',
+            style: {
+              'opacity': 0.05,
+            },
+          },
+          {
             selector: '.agency-hidden',
             style: {
               'display': 'none',
             },
           },
           {
-            selector: 'node[nodeType="document"].show-label',
+            selector: 'node.show-label',
             style: {
               'label': 'data(label)',
               'color': '#e2e8f0',
@@ -449,25 +402,22 @@ export default function LegacyWeb() {
               'text-outline-width': 1.5,
               'text-outline-color': '#020617',
               'text-wrap': 'ellipsis',
-              'text-max-width': '60px',
+              'text-max-width': '80px',
             },
           },
         ],
         layout: {
-          name: 'concentric',
-          concentric: (node) => {
-            const t = node.data('nodeType')
-            if (t === 'hub') return 100
-            if (t === 'layer') return 70
-            if (t === 'org') return 40
-            return 10
-          },
-          levelWidth: () => 1,
-          minNodeSpacing: 20,
-          spacingFactor: 1.5,
+          name: 'cose',
+          idealEdgeLength: 100,
+          nodeOverlap: 10,
+          nodeRepulsion: 8000,
+          edgeElasticity: 80,
+          gravity: 0.25,
+          numIter: 1000,
           animate: true,
-          animationDuration: 1200,
+          animationDuration: 1500,
           animationEasing: 'ease-out-cubic',
+          randomize: true,
         },
         minZoom: 0.15,
         maxZoom: 4,
@@ -476,14 +426,15 @@ export default function LegacyWeb() {
 
       cy.on('tap', 'node', (evt) => {
         const node = evt.target
-        const nodeData = data.nodes.find(n => n.id === node.id())
+        const docId = node.data('docId')
+        const nodeData = legacyData.nodes.find(n => n.doc_id === docId)
         if (!nodeData) return
 
         cy.elements().removeClass('highlighted highlighted-edge dimmed show-label search-match search-dim')
 
         const neighborhood = node.neighborhood()
         cy.elements().addClass('dimmed')
-        node.removeClass('dimmed').addClass('highlighted')
+        node.removeClass('dimmed').addClass('highlighted show-label')
         neighborhood.removeClass('dimmed')
         neighborhood.edges().addClass('highlighted-edge')
         neighborhood.nodes().addClass('show-label')
@@ -491,34 +442,31 @@ export default function LegacyWeb() {
         const connections = []
         neighborhood.nodes().forEach(n => {
           if (n.id() === node.id()) return
-          const nData = data.nodes.find(nd => nd.id === n.id())
+          const nDocId = n.data('docId')
+          const nData = legacyData.nodes.find(nd => nd.doc_id === nDocId)
           const edge = cy.edges().filter(e =>
             (e.data('source') === node.id() && e.data('target') === n.id()) ||
             (e.data('target') === node.id() && e.data('source') === n.id())
           )
           const edgeData = edge.length > 0 ? edge[0].data() : null
-          const structEdge = data.edges.find(e =>
-            (e.source === node.id() && e.target === n.id()) ||
-            (e.target === node.id() && e.source === n.id())
-          )
           if (nData) {
             connections.push({
               label: nData.label,
-              color: nData.type === 'document' ? agencyColor(nData.agency) : nData.color,
-              reason: structEdge?.reason,
+              color: agencyColor(nData.agency),
               edgeType: edgeData?.edgeType,
             })
           }
         })
 
         setSelectedNode({ ...nodeData, connections })
-        updateParam('node', nodeData.id)
+        updateParam('node', `doc_${docId}`)
       })
 
       cy.on('tap', (evt) => {
         if (evt.target === cy) {
           cy.elements().removeClass('highlighted highlighted-edge dimmed show-label')
           setSelectedNode(null)
+          setHoveredDocId(null)
           updateParam('node', null)
         }
       })
@@ -526,17 +474,17 @@ export default function LegacyWeb() {
       cy.on('mouseover', 'node', (evt) => {
         containerRef.current.style.cursor = 'pointer'
         const node = evt.target
-        if (node.data('nodeType') === 'document') {
-          node.addClass('show-label')
-        }
+        node.addClass('show-label')
+        setHoveredDocId(node.data('docId'))
       })
 
       cy.on('mouseout', 'node', (evt) => {
         containerRef.current.style.cursor = 'default'
         const node = evt.target
-        if (!node.hasClass('highlighted') && node.data('nodeType') === 'document') {
+        if (!node.hasClass('highlighted')) {
           node.removeClass('show-label')
         }
+        setHoveredDocId(null)
       })
 
       cyRef.current = cy
@@ -548,54 +496,44 @@ export default function LegacyWeb() {
     })
 
     return () => { cancelled = true }
-  }, [data])
+  }, [graphData, legacyData])
 
-  // Cross-reference edge toggle
+  // Org filter from tree
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
-
-    const existing = cy.edges('[edgeType="xref"]')
-    if (showXref && existing.length === 0 && xrefEdges.length > 0) {
-      cy.add(xrefEdges)
-    } else if (!showXref && existing.length > 0) {
-      existing.remove()
-    }
-  }, [showXref, xrefEdges])
-
-  // Layer filter
-  useEffect(() => {
-    const cy = cyRef.current
-    if (!cy) return
-
-    cy.elements().removeClass('dimmed highlighted highlighted-edge show-label')
-    setSelectedNode(null)
-
-    if (activeLayer) {
-      cy.nodes().forEach(node => {
-        const layer = node.data('layer')
-        const type = node.data('nodeType')
-        if (type === 'hub') return
-        if (layer !== activeLayer) {
-          node.addClass('dimmed')
-        }
-      })
-      cy.edges().forEach(edge => {
-        const src = cy.getElementById(edge.data('source'))
-        const tgt = cy.getElementById(edge.data('target'))
-        if (src.hasClass('dimmed') || tgt.hasClass('dimmed')) {
-          edge.addClass('dimmed')
-        }
-      })
-    }
-  }, [activeLayer])
+    cy.batch(() => {
+      if (!orgFilteredDocIds) {
+        cy.nodes().removeClass('filtered-out')
+        cy.edges().removeClass('filtered-out')
+      } else {
+        cy.nodes().forEach(n => {
+          const docId = n.data('docId')
+          if (orgFilteredDocIds.has(docId)) {
+            n.removeClass('filtered-out')
+          } else {
+            n.addClass('filtered-out')
+          }
+        })
+        cy.edges().forEach(e => {
+          const src = cy.getElementById(e.data('source'))
+          const tgt = cy.getElementById(e.data('target'))
+          if (src.hasClass('filtered-out') || tgt.hasClass('filtered-out')) {
+            e.addClass('filtered-out')
+          } else {
+            e.removeClass('filtered-out')
+          }
+        })
+      }
+    })
+  }, [orgFilteredDocIds])
 
   // Agency filter
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
     cy.batch(() => {
-      cy.nodes('[nodeType="document"]').forEach(n => {
+      cy.nodes().forEach(n => {
         if (hiddenAgencies.has(n.data('agency'))) {
           n.addClass('agency-hidden')
         } else {
@@ -619,9 +557,8 @@ export default function LegacyWeb() {
     const cy = cyRef.current
     if (!cy) return
     cy.batch(() => {
-      cy.nodes('[nodeType="document"]').forEach(n => {
-        const decade = n.data('decade')
-        if (activeDecade && decade !== activeDecade) {
+      cy.nodes().forEach(n => {
+        if (activeDecade && n.data('decade') !== activeDecade) {
           n.style('display', 'none')
         } else {
           n.style('display', 'element')
@@ -652,9 +589,30 @@ export default function LegacyWeb() {
     })
   }, [search])
 
-  const handleLayerToggle = useCallback((layer) => {
-    updateParam('layer', activeLayer === layer ? null : layer)
-  }, [activeLayer, updateParam])
+  const handleToggleOrg = useCallback((orgId) => {
+    const next = new URLSearchParams(searchParamsRef.current)
+    const updated = new Set(selectedOrgs)
+    if (updated.has(orgId)) updated.delete(orgId)
+    else updated.add(orgId)
+    if (updated.size > 0) next.set('org', Array.from(updated).join(','))
+    else next.delete('org')
+    setSearchParams(next, { replace: true })
+  }, [selectedOrgs, setSearchParams])
+
+  const handleSelectLayer = useCallback((layerId) => {
+    updateParam('layer', layerId)
+  }, [updateParam])
+
+  const handleClearFilters = useCallback(() => {
+    const next = new URLSearchParams(searchParamsRef.current)
+    next.delete('org')
+    next.delete('layer')
+    setSearchParams(next, { replace: true })
+    cyRef.current?.batch(() => {
+      cyRef.current.nodes().removeClass('filtered-out')
+      cyRef.current.edges().removeClass('filtered-out')
+    })
+  }, [setSearchParams])
 
   const toggleAgency = useCallback((key) => {
     const next = new URLSearchParams(searchParamsRef.current)
@@ -691,13 +649,13 @@ export default function LegacyWeb() {
       <div className="flex items-center justify-center h-[calc(100dvh-7.5rem)]">
         <div className="flex flex-col items-center gap-4">
           <div className="w-10 h-10 border-2 border-amber-500/30 border-t-amber-500 rounded-full animate-spin" />
-          <p className="text-slate-500 text-sm font-mono tracking-wider">Mapping the web...</p>
+          <p className="text-slate-500 text-sm font-mono tracking-wider">Mapping the network...</p>
         </div>
       </div>
     )
   }
 
-  if (!data) {
+  if (!legacyData || !graphData) {
     return (
       <div className="flex items-center justify-center h-[calc(100dvh-7.5rem)]">
         <p className="text-slate-500">Failed to load data.</p>
@@ -706,119 +664,150 @@ export default function LegacyWeb() {
   }
 
   return (
-    <div className="relative h-[calc(100dvh-7.5rem-3.5rem)] md:h-[calc(100dvh-7.5rem)] bg-slate-950 overflow-hidden">
-      <div ref={containerRef} className="absolute inset-0 w-full h-full" />
+    <div className="relative h-[calc(100dvh-7.5rem-3.5rem)] md:h-[calc(100dvh-7.5rem)] bg-slate-950 overflow-hidden flex">
+      {/* Left: Document Network Graph */}
+      <div className="flex-1 relative">
+        <div ref={containerRef} className="absolute inset-0 w-full h-full" />
 
-      {/* Filter bar */}
-      <div className="absolute top-3 left-3 right-3 z-20 flex items-center gap-2 flex-wrap pointer-events-none">
-        <input
-          type="text"
-          value={search}
-          onChange={e => updateParam('q', e.target.value)}
-          placeholder="Search documents..."
-          className="pointer-events-auto bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2 text-sm text-slate-200 placeholder-slate-500 w-44 focus:outline-none focus:border-blue-500/50"
-        />
-        <div className="pointer-events-auto flex gap-1">
-          {AGENCIES.map(a => {
-            const hidden = hiddenAgencies.has(a.key)
-            return (
+        {/* Filter bar */}
+        <div className="absolute top-3 left-3 right-3 z-20 flex items-center gap-2 flex-wrap pointer-events-none">
+          <input
+            type="text"
+            value={search}
+            onChange={e => updateParam('q', e.target.value)}
+            placeholder="Search documents..."
+            className="pointer-events-auto bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2 text-sm text-slate-200 placeholder-slate-500 w-40 focus:outline-none focus:border-blue-500/50"
+          />
+          <div className="pointer-events-auto flex gap-1">
+            {AGENCIES.map(a => {
+              const hidden = hiddenAgencies.has(a.key)
+              return (
+                <button
+                  key={a.key}
+                  onClick={() => toggleAgency(a.key)}
+                  className={`flex items-center gap-1.5 px-2 py-1.5 rounded-md text-[11px] font-medium backdrop-blur border transition-all cursor-pointer ${
+                    hidden
+                      ? 'bg-slate-900/60 border-slate-700/30 text-slate-600 line-through'
+                      : 'bg-slate-900/90 border-slate-700/50 text-slate-300'
+                  }`}
+                >
+                  <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: hidden ? '#475569' : a.color }} />
+                  {a.label}
+                </button>
+              )
+            })}
+          </div>
+          <div className="pointer-events-auto flex gap-1 overflow-x-auto">
+            {DECADES.map(d => (
               <button
-                key={a.key}
-                onClick={() => toggleAgency(a.key)}
-                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-[11px] font-medium backdrop-blur border transition-all cursor-pointer ${
-                  hidden
-                    ? 'bg-slate-900/60 border-slate-700/30 text-slate-600 line-through'
-                    : 'bg-slate-900/90 border-slate-700/50 text-slate-300'
+                key={d}
+                onClick={() => updateParam('decade', activeDecade === d ? null : d)}
+                className={`px-2 py-1.5 rounded-md text-[11px] font-medium backdrop-blur border transition-all cursor-pointer shrink-0 ${
+                  activeDecade === d
+                    ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
+                    : 'bg-slate-900/60 border-slate-700/30 text-slate-500 hover:text-slate-300'
                 }`}
               >
-                <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: hidden ? '#475569' : a.color }} />
-                <span className="hidden sm:inline">{a.label}</span>
+                {d}
               </button>
-            )
-          })}
+            ))}
+            {activeDecade && (
+              <button
+                onClick={() => updateParam('decade', null)}
+                className="px-2 py-1.5 rounded-md text-[11px] text-slate-500 hover:text-slate-300 cursor-pointer shrink-0"
+              >
+                All
+              </button>
+            )}
+          </div>
         </div>
-        <div className="pointer-events-auto flex gap-1 overflow-x-auto">
-          {DECADES.map(d => (
-            <button
-              key={d}
-              onClick={() => updateParam('decade', activeDecade === d ? null : d)}
-              className={`px-2.5 py-1.5 rounded-md text-[11px] font-medium backdrop-blur border transition-all cursor-pointer shrink-0 ${
-                activeDecade === d
-                  ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
-                  : 'bg-slate-900/60 border-slate-700/30 text-slate-500 hover:text-slate-300'
-              }`}
-            >
-              {d}
-            </button>
+
+        {/* Edge legend */}
+        <div className="absolute left-3 bottom-20 md:bottom-4 z-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2">
+          <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1.5">Edge Types</p>
+          {Object.entries(EDGE_TYPE_STYLES).map(([type, cfg]) => (
+            <div key={type} className="flex items-center gap-2 py-0.5">
+              <span className="w-4 h-0.5 rounded" style={{ backgroundColor: cfg.color, borderStyle: cfg.style === 'dashed' ? 'dashed' : undefined }} />
+              <span className="text-[11px] text-slate-400">{cfg.label}</span>
+            </div>
           ))}
-          {activeDecade && (
-            <button
-              onClick={() => updateParam('decade', null)}
-              className="px-2.5 py-1.5 rounded-md text-[11px] text-slate-500 hover:text-slate-300 cursor-pointer shrink-0"
-            >
-              All
-            </button>
-          )}
-        </div>
-      </div>
-
-      {/* Stats */}
-      <div className="absolute top-16 sm:top-14 left-3 z-10">
-        <div className="bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2 flex items-center gap-3 sm:gap-4">
-          <div className="text-center">
-            <div className="text-base sm:text-lg font-bold text-amber-400 font-mono">{data.metadata?.total_documents || 0}</div>
-            <div className="text-[9px] text-slate-500 uppercase tracking-wider">Docs</div>
-          </div>
-          <div className="w-px h-8 bg-slate-700" />
-          <div className="text-center">
-            <div className="text-base sm:text-lg font-bold text-slate-200 font-mono">{data.nodes?.filter(n => n.type === 'org' || n.type === 'layer').length || 0}</div>
-            <div className="text-[9px] text-slate-500 uppercase tracking-wider">Nodes</div>
-          </div>
-          <div className="w-px h-8 bg-slate-700" />
-          <div className="text-center">
-            <div className="text-base sm:text-lg font-bold text-slate-200 font-mono">{data.metadata?.total_connections || 0}</div>
-            <div className="text-[9px] text-slate-500 uppercase tracking-wider">Links</div>
+          <div className="border-t border-slate-700/50 mt-1.5 pt-1.5">
+            <div className="flex items-center gap-3 text-[11px]">
+              <span className="text-slate-500">{graphData.nodes.length} docs</span>
+              <span className="text-slate-600">&middot;</span>
+              <span className="text-slate-500">{graphData.edges.length} links</span>
+            </div>
           </div>
         </div>
+
+        {/* Zoom controls */}
+        <div className="absolute bottom-20 md:bottom-6 right-3 z-10 flex flex-col gap-1.5">
+          <button onClick={handleFit} className="bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-xs font-medium flex items-center gap-1.5 px-3 py-2 cursor-pointer" title="Fit all">
+            <span className="text-sm">&oplus;</span>
+            <span className="hidden sm:inline">Reset</span>
+          </button>
+          <button onClick={handleZoomIn} className="w-10 h-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom in">+</button>
+          <button onClick={handleZoomOut} className="w-10 h-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom out">&minus;</button>
+        </div>
+
+        {/* Detail panel */}
+        <DetailPanel
+          node={selectedNode}
+          narratives={narratives}
+          legacyConnections={selectedDocLegacyConns}
+          onClose={() => {
+            setSelectedNode(null)
+            setHoveredDocId(null)
+            updateParam('node', null)
+            cyRef.current?.elements().removeClass('highlighted highlighted-edge dimmed show-label')
+          }}
+        />
+
+        {/* Instructions */}
+        {!selectedNode && (
+          <div className="hidden md:block absolute bottom-4 right-14 z-10 bg-slate-900/80 backdrop-blur border border-slate-700/40 rounded-lg px-3 py-2 max-w-[200px]">
+            <p className="text-[10px] text-slate-500 font-mono leading-relaxed">
+              Click a document to explore. Hover to see Legacy Program connections. Use the tree to filter by organization.
+            </p>
+          </div>
+        )}
       </div>
 
-      {/* Zoom controls */}
-      <div className="absolute bottom-20 md:bottom-6 right-3 z-10 flex flex-col gap-1.5">
-        <button onClick={handleFit} className="bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-xs font-medium flex items-center gap-1.5 px-3 py-2 cursor-pointer" title="Fit all">
-          <span className="text-sm">⊡</span>
-          <span className="hidden sm:inline">Reset</span>
-        </button>
-        <button onClick={handleZoomIn} className="w-10 h-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom in">+</button>
-        <button onClick={handleZoomOut} className="w-10 h-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom out">&minus;</button>
+      {/* Right: Legacy Program Tree Sidebar */}
+      <div className={`hidden md:flex flex-col border-l border-slate-800 bg-slate-950 transition-all ${treePanelOpen ? 'w-64 lg:w-72' : 'w-0'}`}>
+        {treePanelOpen && (
+          <LegacyTree
+            data={legacyData}
+            selectedOrgs={selectedOrgs}
+            onToggleOrg={handleToggleOrg}
+            onSelectLayer={handleSelectLayer}
+            selectedLayer={selectedLayer}
+            highlightedOrgs={highlightedOrgs}
+            onClear={handleClearFilters}
+          />
+        )}
       </div>
 
-      {/* Layer legend */}
-      <LayerLegend
-        activeLayer={activeLayer}
-        onToggle={handleLayerToggle}
-        showXref={showXref}
-        onToggleXref={() => updateParam('xref', showXref ? null : '1')}
-        xrefCount={graphData?.edges?.length || 0}
-      />
+      {/* Mobile: Tree toggle */}
+      <button
+        onClick={() => setTreePanelOpen(prev => !prev)}
+        className="md:hidden fixed bottom-16 right-3 z-30 bg-amber-500/20 border border-amber-500/40 text-amber-300 rounded-lg px-3 py-2 text-xs font-medium backdrop-blur cursor-pointer"
+      >
+        {treePanelOpen ? 'Hide Program' : 'Legacy Program'}
+      </button>
 
-      {/* Detail panel */}
-      <DetailPanel
-        node={selectedNode}
-        narratives={narratives}
-        onClose={() => {
-          setSelectedNode(null)
-          updateParam('node', null)
-          cyRef.current?.elements().removeClass('highlighted highlighted-edge dimmed show-label')
-        }}
-      />
-
-      {/* Instructions — hidden on mobile to reduce clutter */}
-      {!selectedNode && (
-        <div className="hidden sm:block absolute bottom-4 right-14 z-10 bg-slate-900/80 backdrop-blur border border-slate-700/40 rounded-lg px-3 py-2 max-w-[220px]">
-          <p className="text-[10px] text-slate-500 font-mono leading-relaxed">
-            Click any node to explore. Scroll to zoom. Drag to pan.
-            {!showXref && <span className="block mt-1 text-cyan-500/60">Toggle cross-refs in the legend to see document-to-document links.</span>}
-          </p>
+      {/* Mobile: Tree drawer */}
+      {treePanelOpen && (
+        <div className="md:hidden fixed inset-x-0 bottom-14 z-20 max-h-[50vh] bg-slate-950 border-t border-slate-800 overflow-hidden">
+          <LegacyTree
+            data={legacyData}
+            selectedOrgs={selectedOrgs}
+            onToggleOrg={handleToggleOrg}
+            onSelectLayer={handleSelectLayer}
+            selectedLayer={selectedLayer}
+            highlightedOrgs={highlightedOrgs}
+            onClear={handleClearFilters}
+          />
         </div>
       )}
     </div>

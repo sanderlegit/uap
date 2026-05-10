@@ -1,0 +1,31 @@
+{
+  "hook": "A 1996 final report by Research Triangle Institute (RTI) for Air Force Space Command, modeling the probability distribution of 'Mode-5' launch vehicle failures — rare but severe deviations from intended flight path — using a risk-analysis program called DAMP, with an appendix cataloguing Atlas, Delta, and Titan launch failures from the Eastern and Western Ranges through August 1996.",
+  "why_it_matters": "This document has no substantive connection to UAP phenomena; it is a technical aerospace safety report about rocket failure modeling for range safety offices at Patrick AFB and Vandenberg AFB. The UAP-related metadata tags (sensors, behaviors, shapes) applied to this document appear to be extraction artifacts and are not supported by any content in the text. Its inclusion in a UAP release may reflect over-broad declassification sweeps of Air Force Space Command records, or misclassification by the processing pipeline.",
+  "key_findings": [
+    "Mode-5 failures are defined as launch vehicle anomalies causing large angular deviations from the intended flight line — statistically rare compared to near-flight-line impacts but required for complete risk analysis.",
+    "RTI's risk program DAMP models Mode-5 impact distributions using a density function with two shaping constants, calibrated by trial-and-error against simulated malfunctions.",
+    "The report's appendix provides mission-by-mission failure narratives for Atlas, Delta, and Titan vehicles, including flight phase, vehicle configuration, and failure-response mode classification — e.g., Transit 3B (21 Feb 61) experienced second-stage ignition failure; Composite I (24 Jan 62) suffered a tumbling second stage from probable oxidizer manifold rupture.",
+    "Data sources include 45th Space Wing History Office launch chronologies, Lockheed Martin FAX transmissions of flight histories, and USAF Accident/Incident Reports — indicating multi-contractor, multi-archive assembly of historical failure data.",
+    "Distribution was restricted to US Government agencies and their contractors for administrative/operational use protection, with referrals to 30 SW/SE (Vandenberg) or 45 SW/SE (Patrick AFB)."
+  ],
+  "document_type": "technical",
+  "legacy_program_connections": [
+    {
+      "node_id": "lockheed",
+      "relevance": "medium",
+      "reasoning": "Lockheed Martin is cited multiple times as a primary data source, providing Atlas and Titan flight history records and failure summaries directly to RTI for this analysis."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Air Force Space Command (AFSPC) is the sponsoring agency, and the report feeds into range safety infrastructure that overlaps with Air Force materiel and test oversight functions, though no direct Wright-Patterson connection appears in the text."
+    }
+  ],
+  "related_topics": [
+    "launch vehicle range safety",
+    "Atlas Delta Titan failure history",
+    "ballistic trajectory modeling",
+    "Eastern Range Western Range",
+    "Air Force Space Command AFSPC"
+  ]
+}

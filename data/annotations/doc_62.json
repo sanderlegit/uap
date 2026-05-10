@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. government file containing the 1999 French COMETA report — an independent study commissioned through France's Institute of Higher Studies for National Defence — alongside a letter from Carol Rosin attesting to her role as spokesperson for Wernher von Braun in his final years.",
+  "why_it_matters": "The COMETA report represents one of the most substantive official-adjacent government studies of UAP produced by a Western nation, authored by senior French defense and intelligence officials and published in 1999 — predating U.S. Congressional UAP disclosure efforts by two decades. Its inclusion in a U.S. government file suggests American officials were tracking allied-nation UAP research. The Carol Rosin letter adds a separate thread connecting von Braun's late-career statements to the UAP policy conversation.",
+  "key_findings": [
+    "The document contains the COMETA report, produced by France's Institute of Higher Studies for National Defence (IHEDN), representing institutional French defense engagement with the UAP question.",
+    "The report was previously published in French magazine VDS (1999), indicating it reached public circulation before being incorporated into this U.S. government file.",
+    "A letter from Carol Rosin is included, in which she states she served as spokesperson for rocket pioneer Wernher von Braun during the last years of his life — connecting the file to NASA's founding-era leadership.",
+    "The document is filed under the NASA agency designation, suggesting institutional interest at the space agency level in allied-nation UAP assessments.",
+    "The document exists only as a photograph/image with no extractable text, and contains redactions, limiting direct analysis of its full contents."
+  ],
+  "document_type": "analysis",
+  "legacy_program_connections": [
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The COMETA report represents a formal allied-nation defense study of UAP, and its presence in a U.S. file reflects cross-national intelligence community interest in foreign government UAP assessments."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "medium",
+      "reasoning": "COMETA explicitly benchmarked its methodology against prior official UAP investigations including U.S. programs like Project Blue Book, making it a direct analytical successor in the Western government UAP study lineage."
+    },
+    {
+      "node_id": "aaro",
+      "relevance": "low",
+      "reasoning": "The COMETA report's institutional structure — senior defense officials conducting a formal UAP study — is a direct precursor model to what AARO was later designed to accomplish in the U.S. context."
+    }
+  ],
+  "related_topics": [
+    "French COMETA report",
+    "allied nation UAP studies",
+    "Wernher von Braun",
+    "Carol Rosin testimony",
+    "IHEDN defense research"
+  ]
+}

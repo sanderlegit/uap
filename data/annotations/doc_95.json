@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome still image captured by a U.S. military sensor system in 2025, submitted by the FBI to AARO, showing a small dark circular object near the center of frame against an indistinct landscape background — with no accompanying mission report and an operator-confirmed inability to identify the object.",
+  "why_it_matters": "This photograph represents a formal FBI submission into the AARO reporting pipeline, establishing that the bureau is actively channeling military-sourced UAP imagery to the All-domain Anomaly Resolution Office. The disclosure that the original imagery was redacted before submission raises questions about what was removed and by whom. The absence of a mission report leaves the operational context — altitude, platform type, time, and circumstances of capture — entirely unknown.",
+  "key_findings": [
+    "The image originated from a U.S. military sensor system, not a civilian or law enforcement platform, indicating FBI is routing military UAP imagery through civilian agency channels to AARO.",
+    "The FBI redacted the original imagery before submission to AARO, meaning AARO received an already-altered version of the military sensor output.",
+    "No mission report accompanied the submission, leaving platform type, altitude, speed, and operational context undocumented in this release.",
+    "The on-image timestamp is incorrect due to the sensor system's date/time not being configured, making chronological analysis of the capture impossible from the image alone.",
+    "The object appears as a small, dark, circular form in the center-right quadrant of a grainy monochrome frame with a crosshair reticle overlay, consistent with an electro-optical or infrared targeting or surveillance sensor."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "AARO is explicitly named as the direct recipient of this FBI submission, placing this image within the formal post-2022 UAP reporting architecture."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The image derives from an unspecified U.S. military sensor system; without platform identification, a connection to Wright-Patterson's aerospace intelligence functions is plausible but unconfirmed."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "FBI-AARO reporting pipeline",
+    "circular UAP morphology",
+    "Western United States sightings",
+    "redacted intelligence submissions"
+  ]
+}

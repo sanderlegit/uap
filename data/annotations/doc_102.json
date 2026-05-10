@@ -1,0 +1,31 @@
+{
+  "hook": "An excerpt from the Apollo 17 air-to-ground voice transcript documenting three discrete periods in which astronauts reported unexplained optical phenomena: tumbling bright fragments near the spacecraft after S-IVB separation on Day 1, intense interior light flashes and exterior strobing objects reported by CDR Cernan during sleep on Day 2, and a brief flash on the lunar surface north of Grimaldi crater observed by LMP Schmitt on Day 3.",
+  "why_it_matters": "This transcript provides verbatim firsthand testimony from NASA astronauts — including mission commander Eugene Cernan — describing phenomena they could not fully explain and in some cases explicitly characterized as physical objects rather than optical illusions. Cernan's Day 2 statement — 'no question in my mind but that they're there' — stands out as a direct assertion of reality from a credentialed observer in a controlled environment. The document is notable because the astronauts themselves proposed mundane explanations (S-IVB debris, cosmic ray interactions via ALFMED) while simultaneously acknowledging those explanations were uncertain or insufficient for all observed phenomena.",
+  "key_findings": [
+    "CMP Ronald Evans described tumbling, jagged, angular fragments near the spacecraft after S-IVB separation — some appearing curved — and speculated they were ice or paint from the rocket stage, explicitly calling it 'a wild guess'; CDR Cernan independently described them as flat, flakelike particles up to ~6 inches across, twinkling and moving away from the spacecraft.",
+    "CDR Cernan reported an intensely bright light that 'flashed right between my eyes like a very bright headlight — like a train coming at you, only with a flash' during his first sleep period, along with 'sets of streaks' and peripheral horizon-illuminating flashes he found 'imposing.'",
+    "Cernan stated with confidence — 'no question in my mind but that they're there' — and noted he had not observed such phenomena on a prior mission, suggesting this was anomalous relative to his baseline experience.",
+    "LMP Schmitt visually identified what he believed was the S-IVB through a monocular and assessed most Day 2 flashing objects as separated rocket hardware, providing a competing mundane explanation; Mission Control confirmed the S-IVB impact point calculation was an ongoing 'real difficult problem.'",
+    "At 03:15:38:09, Schmitt exclaimed observing a flash on the lunar surface north of Grimaldi crater, describing it as 'a bright little flash' and 'a thin streak of light,' and suggested Mission Control check seismometers for a possible small impact event."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This transcript was selected and excerpted for inclusion in the UAP disclosure release specifically because it contains astronaut-reported unexplained phenomena, making it directly relevant to AARO's mandate to catalog historical government UAP observations."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The document's inclusion in the war.gov PURSUE release reflects the congressional UAP disclosure framework that mandated declassification of historical government UAP-relevant records, of which this transcript is an identified example."
+    }
+  ],
+  "related_topics": [
+    "astronaut testimony",
+    "light flash phenomena",
+    "lunar surface impact flash",
+    "S-IVB debris field",
+    "ALFMED cosmic ray experiment"
+  ]
+}

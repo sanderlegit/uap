@@ -1,0 +1,31 @@
+{
+  "hook": "An FBI-submitted still image showing a dark circular object centered within a crosshair reticle, captured by a U.S. government imaging system and forwarded to AARO with both date and location withheld.",
+  "why_it_matters": "This submission represents the FBI's formal entry of a UAP case into the AARO reporting pipeline, notable because the FBI historically has not been a primary UAP reporting agency. The presence of a targeting or sensor reticle suggests the image originates from an instrumented government platform rather than incidental photography. The operator's inability to identify the object, combined with the withholding of all event metadata, limits any further contextual analysis.",
+  "key_findings": [
+    "The image is monochrome and shows a crosshair reticle centered on a dark circular object, indicating it was captured by a structured sensor or targeting system.",
+    "Both the date and location of the event were explicitly not provided to AARO by the FBI, an unusual omission that may reflect classification constraints or operational sensitivity.",
+    "The original imagery was altered with redactions prior to submission, meaning the released version is not the primary record.",
+    "No accompanying mission report was submitted alongside the image, leaving the operational context entirely undocumented in the public release.",
+    "The reporting operator could not positively identify the UAP, satisfying the definitional threshold for UAP classification under current AARO criteria."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted by the FBI to AARO as part of the UAP reporting process mandated by recent legislation."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The redaction of event metadata and the FBI's involvement in submitting imagery from a government platform may implicate interagency classification equities, though no direct connection is stated."
+    }
+  ],
+  "related_topics": [
+    "circular aerial object",
+    "sensor reticle imagery",
+    "FBI UAP reporting",
+    "redacted event metadata",
+    "AARO submission pipeline"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "hook": "A single still image captured by a U.S. military sensor system in 2025, submitted by the FBI to AARO, showing a small dark circular object above the center of a targeting reticle against a mountain range backdrop in the Western United States.",
+  "why_it_matters": "This submission represents the FBI acting as an intermediary between a military sensor operator and AARO, the designated UAP resolution body — illustrating the multi-agency reporting chain established under recent disclosure mandates. The operator's inability to positively identify the object, combined with the absence of a mission report and the presence of pre-submission redactions applied by the originating military system, limits what AARO can resolve from this case. The incorrect timestamp on the image further complicates any chronological analysis.",
+  "key_findings": [
+    "The image originated from a U.S. military system and was altered with redactions before FBI submitted it to AARO; no accompanying mission report was provided.",
+    "The sensor operator reported an inability to positively identify the UAP, placing this in the unresolved category within AARO's intake.",
+    "The image shows a monochrome, grainy frame with a central crosshair reticle and a small dark circular object in the upper-right quadrant of center, against an indistinct mountain range.",
+    "The date embedded in the image metadata is incorrect due to the system clock not being properly set, undermining independent temporal verification.",
+    "The reported location is the Western United States, consistent with areas of active military flight operations and test ranges."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted to AARO as part of its UAP intake process, making AARO the direct institutional recipient and investigative authority for this case."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The image originated from an unspecified U.S. military sensor system, which may involve Air Force technical infrastructure historically associated with Wright-Patterson, though no direct connection is stated."
+    },
+    {
+      "node_id": "area51",
+      "relevance": "low",
+      "reasoning": "The Western United States location places the event in a region that includes restricted military test ranges, though no specific facility is identified in the document."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "AARO intake process",
+    "unidentified circular object",
+    "Western US airspace",
+    "FBI UAP reporting"
+  ]
+}

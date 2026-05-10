@@ -1,0 +1,36 @@
+{
+  "hook": "A 1948 Air Force correspondence chain routing civilian and military flying disc sighting reports to Wright-Patterson's Air Materiel Command, including an FBI field report of a phosphorescent disc seen over Hobson, Ohio by four railroad workers.",
+  "why_it_matters": "This document is a concrete example of the inter-agency reporting infrastructure built around Project SIGN in early 1948, showing the FBI actively forwarding civilian UAP sightings to the Air Force within weeks of occurrence. The reference to interrogating the Horten Brothers about German flying wing designs reveals that the Air Force was simultaneously investigating both domestic sightings and foreign aerospace technology as potential explanations.",
+  "key_findings": [
+    "On the night of 8 May 1948, four New York Central railroad employees (two car inspectors, a yard clerk, and a patrolman) observed a round, phosphorescent object over Hobson, Ohio traveling at high speed on a 90-degree heading at 6-mile altitude, leaving a phosphorescent trail.",
+    "The report was filed by FBI Special Agent D.K. Brown of the Cleveland, Ohio field office and routed through Eleventh Air Force headquarters before being forwarded to USAF intelligence and Air Materiel Command at Wright-Patterson.",
+    "A February 1948 memo confirms that the Air Force made direct contact with the Horten Brothers (German flying wing designers) and that the Army's G2 European Command was instructed via telecon to use USAF Collection Memorandum No. 7 as the basis for interrogating them about potential connections to flying disc sightings.",
+    "The document references a classified T-2 report titled 'German Flying Wings Designed by Horten Brothers,' which was retained by the USAF Directorate of Intelligence office rather than forwarded to Wright-Patterson.",
+    "All correspondence is routed under Project SIGN, with forms indexed under categories '000.9 Phenomena' and '000.75 Clippings,' demonstrating a structured, bureaucratic collection system for UAP reports as early as February 1948."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "Every piece of correspondence in this file is addressed to the Commanding General, Air Materiel Command at Wright-Patterson Air Force Base, which served as the central repository for Project SIGN investigation materials."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "This file is explicitly routed under Project SIGN, the direct predecessor to Project Blue Book, with correspondence reference forms filed under '320 Project SIGN.'"
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The document references a military attaché report from Moscow dated June 1947 concerning 1,400 aircraft, indicating early intelligence community involvement in correlating foreign aerospace activity with domestic UAP sightings."
+    }
+  ],
+  "related_topics": [
+    "Project SIGN",
+    "Horten Brothers flying wing",
+    "FBI civilian sighting reports",
+    "phosphorescent UAP",
+    "inter-agency reporting chain"
+  ]
+}

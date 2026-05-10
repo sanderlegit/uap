@@ -1,0 +1,31 @@
+{
+  "hook": "A redacted FBI-submitted still image showing a dark circular object captured through what appears to be a targeting or surveillance reticle system, submitted to AARO with no date, location, or mission report.",
+  "why_it_matters": "This image represents one of the few FBI-sourced visual UAP submissions in the AARO disclosure corpus, indicating the Bureau has its own collection pipeline for anomalous phenomena distinct from DoD sensor systems. The deliberate withholding of date, location, and mission context — combined with redaction of the original imagery — significantly limits analytical utility while simultaneously confirming the government captured something it could not identify. The crosshair reticle suggests the object was observed through an active targeting or monitoring system, implying a deliberate observation rather than incidental detection.",
+  "key_findings": [
+    "The image was captured by a U.S. government system (FBI-affiliated) and shows a monochrome scene with a dense speckled background consistent with low-light, infrared, or similar sensor imagery.",
+    "A dark circular object appears in the bottom quadrant, right of center relative to the crosshair reticle, indicating it was actively framed or tracked by the sensor operator.",
+    "The operator formally reported inability to positively identify the UAP, meeting the definitional threshold for AARO submission.",
+    "Both the event date and location were withheld from AARO submission, an unusual omission that further limits provenance tracing.",
+    "The original imagery was altered with redactions prior to AARO submission, meaning even the declassified version does not represent the full sensor data collected."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is an FBI submission directly to AARO as part of the formal interagency UAP reporting pipeline established under the NDAA framework."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "FBI surveillance and collection assets that produced imagery of this type may overlap with broader intelligence community collection efforts, though no direct CIA connection is stated."
+    }
+  ],
+  "related_topics": [
+    "FBI surveillance imagery",
+    "circular UAP morphology",
+    "AARO submission pipeline",
+    "redacted government photography",
+    "unidentified aerial objects"
+  ]
+}

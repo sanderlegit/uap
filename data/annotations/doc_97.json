@@ -1,0 +1,31 @@
+{
+  "hook": "A single-frame monochrome still image captured by a U.S. military optical system over the Western United States, submitted by the FBI to AARO, showing two distinct dark objects — one structured with an appendage, one smaller and circular — centered on a crosshair reticle, with the operator unable to positively identify either object.",
+  "why_it_matters": "This image is notable because it was captured by a military system with a targeting reticle, indicating active sensor tracking rather than incidental observation, yet no mission report was provided and the operator could not identify the objects. The FBI's role as submitter — rather than the originating military branch — raises questions about the chain of custody and reporting pathway to AARO. The acknowledged timestamp corruption undermines precise temporal correlation with other events or sensor data.",
+  "key_findings": [
+    "The image was captured by a U.S. military system equipped with a crosshair reticle, suggesting an optical targeting or surveillance platform was actively tracking the area when the objects appeared.",
+    "Two separate objects are visible: a larger dark structured object with an appendage extending from its left side positioned near the top of the reticle, and a smaller dark circular object in the lower right quadrant.",
+    "The operator explicitly reported being unable to positively identify the UAP, meeting the threshold for AARO submission under current reporting protocols.",
+    "The embedded date of 2025-01-01 is confirmed unreliable — the manifest states the system clock was not properly configured, meaning the actual capture date is unknown.",
+    "The FBI submitted the image to AARO with redactions already applied to the original, and no accompanying mission report was provided, limiting contextual analysis of the encounter."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted by the FBI to AARO under current UAP reporting mandates, making AARO the direct recipient and investigative authority for this imagery."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The image originates from a U.S. military system — Wright-Patterson AFB has historically been the central repository and analysis hub for military-captured UAP imagery and physical evidence."
+    }
+  ],
+  "related_topics": [
+    "military optical targeting system",
+    "unidentified aerial objects",
+    "AARO submission pipeline",
+    "western United States UAP",
+    "corrupted sensor metadata"
+  ]
+}

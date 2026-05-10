@@ -1,0 +1,26 @@
+{
+  "hook": "A U.S. military armed reconnaissance mission report from Operation Inherent Resolve in Syria documents an incidental UAP sighting on July 31, 2022 at 0239Z, during an extensive ~21-hour ISR sortie over eastern Syria — the UAP moved north to south in under a minute while the platform flew at 19,359 feet and 116 knots.",
+  "why_it_matters": "This report represents formal, standardized UAP reporting integrated directly into a combat mission report submitted to AARO, demonstrating that USCENTCOM had operationalized UAP documentation procedures by mid-2022. The sighting occurred during an active armed reconnaissance mission tracking ground forces and vehicle convoys, meaning the sensor suite was actively tasked and calibrated at the time of observation. The explicit 'UAP Signatures: No' entry confirms no RF signal was detected, ruling out one category of conventional explanation.",
+  "key_findings": [
+    "UAP observed at 0239Z on July 31, 2022, in grid square 37SFU2[redacted], KP 9, Syria — the event lasted less than one minute and the object moved from north to south.",
+    "At the moment of UAP observation, the friendly aircraft was at 19,359 feet altitude traveling at 116 knots, providing precise platform state data for any subsequent analysis.",
+    "The UAP section explicitly records 'UAP Signatures: No,' indicating no RF frequency or duration was detected, and no effects on personnel were reported.",
+    "The mission platform had simultaneous IMINT and SIGINT capabilities active for 18+ hours; SIGINT collection ran from 301829Z to 311409Z — the UAP sighting at 310239Z fell within the active SIGINT collection window, yet no signals were associated with it.",
+    "The document was declassified by MG Richard A. Harrison, USCENTCOM Chief of Staff, on October 8, 2025 under MDR 25-0094, and was specifically approved for release to AARO — indicating institutional recognition of UAP reporting as a distinct reporting category within combat operations."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The mission report contains a dedicated UAP section formatted explicitly for AARO submission, and the declassification cover page states it was 'Approved for Release to AARO,' confirming AARO as the direct recipient and custodian of this sighting record."
+    }
+  ],
+  "related_topics": [
+    "armed reconnaissance",
+    "infrared/EO sensor",
+    "SIGINT collection",
+    "Operation Inherent Resolve",
+    "UAP reporting standardization"
+  ]
+}

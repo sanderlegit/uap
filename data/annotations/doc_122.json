@@ -1,0 +1,36 @@
+{
+  "hook": "An FBI case file section covering the June-July 1947 flying disc wave, containing Air Defense Command interview reports of credentialed civilian and military witnesses, Birmingham newspaper coverage with photographic claims, a physical artifact recovered from an Illinois farm field with ground burn evidence, and a Weather Bureau memorandum documenting three separate theodolite-instrument observations of a metallic elliptical disc by trained meteorologists.",
+  "why_it_matters": "This section is notable for the quality and diversity of its sources: a Pan American Airways captain with over 4,000 command hours, Weather Bureau technicians observing through calibrated theodolites during routine pibal operations, and a recovered physical object that burned vegetation on impact. The Weather Bureau report is especially significant because the observers were tracking the disc through a scientific instrument across multiple independent sightings spanning six months in 1947, predating the June 24 Kenneth Arnold sighting that triggered public awareness. The physical artifact from Danforth, Illinois — containing radio components and causing a localized burn pattern — represents rare physical evidence documented in an FBI chain of custody.",
+  "key_findings": [
+    "Pan Am Captain Alpheus O. Powell, flying a Constellation aircraft at 8,000 feet between Boston-area nav beacons on August 4, 1947, observed a bright orange cylindrical object (blunt at both ends, approximately P-40 fuselage length) at 7,800 feet for roughly 50 seconds; the object traveled at ~160 mph on a 200° magnetic heading and was independently noticed by navigator W. White from the co-pilot seat.",
+    "Weather Bureau meteorologists in Richmond, VA documented Mr. Minczewski observing a chrome-colored metallic elliptical disc (flat bottom, domed top) through a theodolite on three separate occasions during pibal operations over six months; Miss Baron independently confirmed one sighting when her balloon was at 27,000 feet, describing consistent shape with differing color (dull metallic luster vs. chrome).",
+    "A physical object recovered from a farm field in Danforth, Illinois, submitted by Sheriff Merle T. Wilmoth of Watseka, IL, burned weeds approximately 23 feet tall to fine ash in a 1.5-foot diameter area on impact; it contained a plaster of paris body, a Nathaniel Baldwin Inc. power microphone (patented 1910/1916), a Polymat filter condenser, and copper wire coils on bakelite cylinders — components the FBI's radio section assessed as outdated technology.",
+    "Birmingham, Alabama newspaper coverage from July 1947 included a photograph reportedly taken by Age-Herald copy reader Robert Crossland (15-second exposure, 8:37 PM at 20th Street and Highland Avenue) and reports flooding in from multiple city neighborhoods, representing contemporaneous media documentation of the 1947 wave at a specific geographic location.",
+    "The Air Defense Command routing chain — from BARTD Birmingham AAP through Fourteenth Air Force Orlando to ADC Mitchel Field to Army Air Forces Washington — demonstrates the institutional escalation path for UAP reports in mid-1947, with ADC explicitly interviewing Powell and evaluating source credibility before forwarding to AAF AC/AS-2 (Intelligence)."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The Air Defense Command / Army Air Forces intelligence routing chain documented here is the direct institutional precursor to Projects Sign and Blue Book; the Powell interview and Weather Bureau theodolite reports are exactly the type of credentialed-witness cases that formed the Blue Book intake corpus."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "Reports are routed to Army Air Forces Washington AC/AS-2 (Air Intelligence), the command structure centered at Wright-Patterson that would later formally manage aerial phenomena investigations."
+    },
+    {
+      "node_id": "aaro",
+      "relevance": "low",
+      "reasoning": "The multi-domain witness types (commercial aviation, meteorological instruments, physical artifact) documented here are directly analogous to the credentialed-observer categories AARO uses to assess historical UAP case quality."
+    }
+  ],
+  "related_topics": [
+    "pilot testimony",
+    "theodolite instrument observation",
+    "physical artifact recovery",
+    "1947 flying disc wave",
+    "Air Defense Command reporting chain"
+  ]
+}

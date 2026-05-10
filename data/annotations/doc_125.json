@@ -1,0 +1,31 @@
+{
+  "hook": "This document is the dust jacket text from Gray Barker's 1956 book 'They Knew Too Much About Flying Saucers,' published by University Books, Inc., filed in the FBI's 62-HQ-83894 case file under reference arpa #114994.",
+  "why_it_matters": "The FBI's retention of this book jacket indicates the Bureau was actively monitoring civilian UFO researchers and their publications during the 1950s. Barker's book is notable for its early documentation of the 'Men in Black' phenomenon — three dark-suited visitors who silenced saucer researchers — a concept that would become central to UFO subculture. The file's inclusion of promotional material suggests the FBI treated civilian researchers as subjects of interest, not merely as sources.",
+  "key_findings": [
+    "The jacket describes 'three men in dark suits' who visited leading UFO researchers and reduced them to silence, representing one of the earliest documented articulations of the Men in Black phenomenon.",
+    "Gray Barker is identified as a Clarksburg, West Virginia businessman running a film booking agency who began UFO investigations in 1952 following an alleged landing near his home.",
+    "H.G. Rhawn, publisher of the daily Clarksburg News, endorsed serious investigation of flying saucers in a letter authorized for publication, providing Barker mainstream local credibility.",
+    "Barker published 'The Saucerian,' a flying saucer periodical, and contributed to educational and motion picture technical journals, indicating his research had an organized distribution network.",
+    "The document is catalogued under arpa #114994, confirming it was formally indexed into the FBI's broader UAP case file system."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "medium",
+      "reasoning": "Barker's book directly engages the tension between civilian UFO researchers and government denial during the active Blue Book era, and the FBI's retention of it reflects institutional awareness of civilian research networks."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The book's framing — that researchers were silenced for challenging the government denial that saucers come from outer space — implies awareness of a policy posture, potentially relevant to congressional oversight discussions of the period."
+    }
+  ],
+  "related_topics": [
+    "Men in Black",
+    "civilian UFO researcher surveillance",
+    "Gray Barker",
+    "The Saucerian periodical",
+    "government denial narrative"
+  ]
+}

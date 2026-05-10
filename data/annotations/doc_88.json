@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome military sensor image submitted by the FBI to AARO in 2025 showing a small, dark, circular object in the upper right quadrant against an indistinct mountain or cloud background, with no accompanying mission report and an operator who could not identify the object.",
+  "why_it_matters": "This document represents one of the few publicly released military sensor images in the AARO submission pipeline, demonstrating the visual ambiguity that characterizes many UAP reports — a circular object captured by a system with an uncalibrated timestamp, already redacted before reaching AARO. The absence of a mission report is notable because it strips the image of the contextual data — altitude, heading, sensor mode — that analysts would need to characterize the object. The explicit acknowledgment that the imagery was altered prior to AARO submission raises questions about what chain-of-custody controls govern evidence integrity in the current reporting framework.",
+  "key_findings": [
+    "The image originated from a U.S. military system and was altered with redactions before being submitted to AARO, meaning AARO did not receive the original unmodified imagery.",
+    "No accompanying mission report was provided, leaving the image without supporting metadata such as sensor type, altitude, speed, or operator context.",
+    "The date embedded in the image is incorrect due to the system clock not being set, complicating any timeline reconstruction.",
+    "The operator who captured or reviewed the imagery explicitly reported an inability to positively identify the UAP.",
+    "The object appears as a small, dark, circular shape in the upper right quadrant of a grainy monochrome frame with a central crosshair reticle, consistent with an electro-optical or infrared targeting or surveillance sensor."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The FBI formally submitted this image to AARO as part of the mandated UAP reporting pipeline, making AARO the direct institutional recipient and custodian of this evidence."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The image derives from a U.S. military sensor system of unspecified type, loosely connecting it to the military's long-standing role in UAP sensor collection traced through Wright-Patterson's historical intelligence functions."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "AARO submission pipeline",
+    "circular UAP morphology",
+    "chain of custody redaction",
+    "Western United States sightings"
+  ]
+}

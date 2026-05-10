@@ -1,0 +1,36 @@
+{
+  "hook": "FBI Special Agent D. Arthur Byrnes Jr. personally investigated the April 24, 1964 Socorro, New Mexico landing incident, documenting physical ground traces and transcribing the firsthand account of Officer Lonnie Zamora, who witnessed an egg-shaped aluminum-white object land and depart one mile southwest of Socorro.",
+  "why_it_matters": "The Socorro incident is one of the most credible close-encounter cases in the historical UAP record because the primary witness was a law enforcement officer immediately vouched for by an FBI agent who knew him personally for five years. The document preserves both physical evidence measurements (four rectangular depressions, burned grass patches, circular marks in sandy earth) and Zamora's detailed flight behavior description — including a high-to-low acoustic signature transitioning to complete silence — making this a rare case combining witness testimony, physical trace evidence, and federal law enforcement documentation in a single contemporaneous report.",
+  "key_findings": [
+    "Four rectangular ground depressions measuring approximately 16 by 6 inches were found at the site, each about 2 inches deep and angled as if made by an object pressing into the earth from a center line, with displaced earth pushed to the far side.",
+    "Three burned grass patches were found inside the four depressions and one burned area was found outside them; Zamora also reported brush burning in multiple locations when he returned to the site.",
+    "Three smooth circular marks approximately 4 inches in diameter penetrated the sandy earth about one-eighth of an inch, described as resembling impressions from a jar lid.",
+    "Zamora described the object as aluminum-white, bearing an insignia approximately 2.5 feet tall and 2 feet wide; the object departed southwest at 10-15 feet altitude, cleared a dynamite shack by about 3 feet, and produced a roar followed by a sharp high-to-low whine before going completely silent.",
+    "Agent Byrnes explicitly characterized Zamora as 'a sober, industrious, and conscientious officer not given to fantasy,' noting he was perfectly sober but 'somewhat agitated'; Sergeant Chavez independently observed Zamora was sweating and 'very pale' upon arrival."
+  ],
+  "document_type": "investigation",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The Socorro/Zamora incident was one of Project Blue Book's most prominent unresolved cases, and this FBI field report is a contemporaneous parallel investigation documenting the same physical evidence Blue Book investigators examined."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "Project Blue Book, headquartered at Wright-Patterson AFB, actively investigated the Socorro landing site; this FBI report would have been shared with Air Force investigators per inter-agency cooperation protocols of the period."
+    },
+    {
+      "node_id": "sandia",
+      "relevance": "low",
+      "reasoning": "The incident occurred near Socorro, New Mexico, in close proximity to Sandia National Laboratories and White Sands Missile Range, and investigators at the time considered whether the object could relate to experimental military hardware from those facilities."
+    }
+  ],
+  "related_topics": [
+    "ground trace physical evidence",
+    "law enforcement witness testimony",
+    "acoustic UAP signature",
+    "Socorro 1964 landing incident",
+    "close encounter landing marks"
+  ]
+}

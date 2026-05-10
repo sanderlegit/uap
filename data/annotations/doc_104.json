@@ -1,0 +1,31 @@
+{
+  "hook": "Excerpt from the Apollo 17 Crew Debriefing for Science (January 8, 1973), in which UV experiment co-investigator Dick Henry reports detecting an anomalous ultraviolet spectrum at high galactic latitudes that resembles hot-star emission but with no hot stars in the field of view, and rules out ionized hydrogen as the binding mass of the Coma galaxy cluster.",
+  "why_it_matters": "The document captures a NASA scientist describing a real-time observational anomaly: a UV spectral signature with no known local source, for which even the most conservative explanation (galactic-plane starlight reflecting off interstellar dust) does not fully account. Inclusion in the PURSUE UAP disclosure release suggests the government is contextualizing unexplained observational phenomena — not just aircraft sightings — as part of the broader anomalous-phenomena record. Henry explicitly flags that the spectrum characteristics leave open the possibility of extragalactic radiation, an unresolved finding at the time of this debriefing.",
+  "key_findings": [
+    "UV detectors aboard Apollo 17 observed a spectrum at high galactic latitudes (both North and South Galactic Poles) that rises above the instrument's dark-count baseline, confirming the signal is real and not an artifact of abnormally high dark current.",
+    "The observed spectrum matches that of a hot star, but Henry explicitly states 'we know that there were no hot stars within our field of view,' making the source of the signal unexplained.",
+    "Henry's most conservative interpretation is scattered light from galactic-plane hot stars reflecting off interstellar dust, but he acknowledges 'certain characteristics of the spectrum don't fit that theory,' and calls extragalactic radiation a live possibility.",
+    "The team ruled out ionized hydrogen as the missing mass binding the Coma galaxy cluster by searching for redshifted Lyman-alpha radiation and finding none, which Henry says 'may leave a real mystery as to what is holding the thing together.'",
+    "Separate Lyman-alpha observations of solar-system hydrogen — believed by Gary Thomas (University of Colorado) to be interstellar hydrogen streaming through the solar system — yielded an 'enormous amount of data' from Apollo that was still awaiting detailed analysis at the time of debriefing."
+  ],
+  "document_type": "technical",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "medium",
+      "reasoning": "The document's inclusion in the PURSUE release positions NASA's anomalous UV spectral observations as part of the official UAP disclosure record that AARO and predecessor offices have been charged with consolidating."
+    },
+    {
+      "node_id": "lanl_ornl_battelle",
+      "relevance": "low",
+      "reasoning": "Henry references Dr. Trombka's gamma-ray background findings alongside the UV results, situating this work within a broader interagency scientific effort into unexpected background radiation phenomena that touched national-lab researchers."
+    }
+  ],
+  "related_topics": [
+    "anomalous UV radiation",
+    "extragalactic background light",
+    "Apollo science instruments",
+    "galactic dark matter (Coma cluster)",
+    "interstellar medium observations"
+  ]
+}

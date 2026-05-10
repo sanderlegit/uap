@@ -1,0 +1,31 @@
+{
+  "hook": "A single-frame monochrome still image, captured by a U.S. military sensor system and submitted by the FBI to AARO in 2025, showing two small dark circular objects near the center of a grainy, crosshair-overlaid frame. The image was redacted before submission and carries an unreliable timestamp due to an unconfigured system clock.",
+  "why_it_matters": "This photograph represents a formal FBI-to-AARO UAP submission under the post-2022 mandatory reporting framework, demonstrating that military sensor imagery is being funneled through law enforcement channels into the centralized resolution office. The admission that no mission report accompanied the image limits any attempt at contextualizing the sighting — altitude, speed, range, and operator platform are all unknown. The pre-submission redaction of a UAP image before it reached AARO raises questions about what information was withheld even within the disclosure pipeline.",
+  "key_findings": [
+    "The FBI submitted this still image to AARO as a formal UAP report, sourced from an unspecified U.S. military sensor system in 2025.",
+    "The original imagery was redacted before being forwarded to AARO — meaning AARO itself received an altered version of the source material.",
+    "No accompanying mission report was provided, leaving sensor type, platform, altitude, heading, and environmental conditions undocumented.",
+    "The embedded date/time in the image is acknowledged as incorrect due to the system clock not being configured, undermining any timestamp-based correlation.",
+    "The operator on the originating platform was unable to positively identify the two small, dark, circular objects visible in the upper-right quadrant of the frame."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly a formal FBI submission to AARO under the centralized UAP reporting structure, making AARO the direct institutional recipient and resolution authority for this case."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The document's release via the PURSUE disclosure is a product of congressional mandates requiring executive agencies to surface UAP records, placing it within that legislative accountability chain."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "FBI UAP reporting",
+    "image redaction prior to disclosure",
+    "unresolved aerial objects",
+    "AARO submission pipeline"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Navy pilot's standardized Range Fouler Debrief Form documenting a nighttime DCA mission encounter with two balloon-shaped, metallic, reflective objects at 26,000 feet on October 27, 2020, notable for their disappearance in 1/30th of a second and simultaneous noise jamming of the aircraft's systems.",
+  "why_it_matters": "This report documents three simultaneously anomalous characteristics in a single encounter: extreme disappearance speed ('in 1/30th of a second'), active electronic warfare effects (noise jamming indicated by two chevrons), and unusual flight behavior (one object circling the other). The combination of radar lock, FLIR/target pod confirmation of 2 IR-significant contacts, and active EA indications rules out simple misidentification of passive objects. The report was routed through USCENTCOM and formally released to AARO, placing it within the current official UAP collection and analysis pipeline.",
+  "key_findings": [
+    "The pilot obtained radar lock and target pod video but was unable to close within 16.9NM for a better visual ID, suggesting the objects maintained standoff distance or were operating at the edge of sensor range.",
+    "The target pod confirmed 2 IR-significant contacts, corroborating the visual tally of '2x red blinking strobes' and providing multi-sensor confirmation of the encounter.",
+    "One object was described as circling the other, after which both vanished in '1/30th of a second,' indicating either extreme acceleration or some form of instantaneous disappearance beyond normal aircraft performance.",
+    "Noise jamming was received during the encounter, indicated by two chevrons on the aircraft's systems — an Electronic Attack indication logged as 'Other/Ambiguous,' suggesting the jamming signature did not match known threat libraries.",
+    "The objects were characterized as balloon-shaped, metallic, opaque, and reflective with no visible wings, airframe, or apparent propulsion, yet exhibited active behavior including circling and rapid departure."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document bears an explicit release stamp 'Approved for Release to AARO' dated 03/27/26, and the SPEAR reporting system collecting these debriefs feeds directly into the official UAP analysis pipeline that AARO oversees."
+    },
+    {
+      "node_id": "nro",
+      "relevance": "low",
+      "reasoning": "The USCENTCOM MOR numbering (26-0038 to 26-0046) and the controlled airspace intrusion context suggest theater-level intelligence routing, but no NRO-specific connection is made in the text."
+    },
+    {
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "The SPEAR reporting infrastructure and standardized debrief form suggest an organized data collection architecture consistent with defense analytics contractor involvement, though MITRE is not named."
+    }
+  ],
+  "related_topics": [
+    "noise jamming / electronic warfare",
+    "pilot debrief / SPEAR reporting",
+    "IR-significant contacts",
+    "instantaneous disappearance",
+    "DCA mission airspace intrusion"
+  ]
+}

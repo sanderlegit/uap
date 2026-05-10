@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Navy ISR crew from the 1172 ATKS squadron filed this Range Fouler Reporting Form after tracking a round, thermally cold object via ATFLIR infrared sensor over the Gulf of Aden on October 15, 2020, for approximately 73 seconds before it made several abrupt directional changes and the contact ended.",
+  "why_it_matters": "This report is notable because the object's infrared signature is explicitly described as 'cold' — appearing bright white in 'black hot' IR mode, meaning it was cooler than ambient surroundings rather than radiating heat from propulsion. Combined with slow speed (~20 mph) and abrupt directional changes, it does not match the thermal profile of a conventional aircraft or drone. The use of SPEAR, the Navy's sanitized UAP reporting pipeline, confirms this falls within the post-2019 institutional framework for collecting pilot UAP data that feeds into AARO.",
+  "key_findings": [
+    "Object tracked from 14:18:39Z to 14:19:52Z — approximately 73 seconds of sensor contact — while the ISR aircraft flew at 19,073 feet HAT over the Gulf of Aden.",
+    "IR sensor was set to 'black hot' mode and the object appeared bright white, explicitly labeled a 'cold object,' indicating it emitted less infrared radiation than its background — inconsistent with a heat-producing engine.",
+    "Object traveled at heading 319 degrees (northwest) at approximately 20 mph, a speed well within the range of balloons but accompanied by 'a few abrupt directional changes' that complicate a simple balloon explanation.",
+    "Sensor geometry is documented precisely: ATFLIR aimed ~50 degrees below aircraft altitude, slant range 4.06NM, ground range 4.78KM — providing enough data for geometric reconstruction of the object's position.",
+    "Report filed through SPEAR, the Navy's sanitized UAP reporting system, with all crew and squadron identifying information removed prior to analysis, consistent with the post-UAPTF reporting protocols."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This is precisely the type of post-2019 standardized pilot UAP report that AARO was established to collect and analyze; the SPEAR sanitization pipeline referenced in the form is part of the reporting infrastructure feeding into AARO's database."
+    },
+    {
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "MITRE has provided analytical support to DoD UAP programs including UAPTF and AARO, and reports like this one — with documented sensor geometry and IR signature data — are the type of structured inputs MITRE-affiliated analysts would process."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson historically served as the repository for military UAP case files dating to Project Blue Book; modern reports from CENTCOM AOR like this one exist in a different institutional chain but share lineage with that archival function."
+    }
+  ],
+  "related_topics": [
+    "infrared cold signature",
+    "ATFLIR sensor tracking",
+    "Gulf of Aden",
+    "SPEAR reporting pipeline",
+    "abrupt directional change"
+  ]
+}

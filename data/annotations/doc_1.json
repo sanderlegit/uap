@@ -1,0 +1,31 @@
+{
+  "hook": "A May 2022 Air Force MISREP from the 196th Attack Squadron documenting an 18-hour-54-minute reconnaissance sortie over Iraq under Operation INHERENT RESOLVE, during which an ISR asset at 18,000 ft observed a single UAP flying north to northeast at 2043Z that the screener could not positively identify.",
+  "why_it_matters": "This document demonstrates that by mid-2022, UAP reporting had been formally integrated into standard military operational reporting formats — the MISREP includes a dedicated UAP section with standardized fields (contact DTG, asset location, trajectory, observer effects) submitted directly to AARO. The UAP encounter itself is minimally described: the observer followed the object as long as possible, all key parameters (altitude, velocity, type) are listed as unknown, and the screener could not obtain a positive ID, illustrating the limits of available ISR collection against the observed object. The SECRET//REL TO USA, FVEY classification indicates the report was shared across Five Eyes partners.",
+  "key_findings": [
+    "A single UAP was observed at 2043Z on May 20, 2022, flying north to northeast from grid 38SMC79[redacted]70[redacted]; the observing asset was at 18,000 ft and grid 38SMC85[redacted]77[redacted] at time of contact — all UAP parameters including altitude, velocity, and trajectory were recorded as unknown",
+    "The screener followed the UAP 'as long as possible' but could not obtain a positive identification; the UAP MDS type and tail number were both recorded as UNK",
+    "The 196th Attack Squadron flew an 18-hour-54-minute reconnaissance mission from OKAS (0542Z May 20 to 0036Z May 21), collecting SIGINT via AIRHANDLER Version 2 for approximately 21 hours while supporting Operation PHANTOM FLEX",
+    "FMV (Full Motion Video) was collected and exploited by DGS 1; the aircraft carried a TGT Pod (ANDAS4) and AIRHANDLER Version 2 avionics, operated under the 609th CAOC and Air Combat Command (ACC) within USCENTCOM",
+    "The ISR section supported a unit designated 'MAG' under a redacted operation name with 136 minutes of pre-coordination, assessed as satisfactory; the intel gap fill was confirmed as effective"
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The MISREP was formally approved for release to AARO and uses AARO's standardized UAP reporting fields, placing it directly within the AARO reporting chain established after 2022."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The document carries SECRET//REL TO USA, FVEY classification, indicating it was authorized for sharing with Five Eyes partners, extending UAP reporting visibility beyond U.S.-only channels."
+    }
+  ],
+  "related_topics": [
+    "ISR reconnaissance operations",
+    "SIGINT collection airborne",
+    "FMV exploitation",
+    "UAP standardized military reporting",
+    "Operation Inherent Resolve"
+  ]
+}

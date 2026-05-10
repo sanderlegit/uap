@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Embassy Dushanbe diplomatic cable reporting that three American pilots and one Tajik Air crew member observed an intensely luminous object for forty minutes while flying a Boeing 747SP at 41,000 feet over Kazakhstan on January 27, 1994, subsequently flying under the object's contrails — estimated at 100,000 feet — which traced its complex maneuver path.",
+  "why_it_matters": "This cable is notable because it routes a UAP report through formal State Department channels directly to CIA and DIA, establishing official intelligence-community receipt of the sighting. The physical evidence left behind — persistent contrails at an altitude Rhodes judged too high for ordinary aircraft propulsion — corroborated the crew's visual account independently of their testimony. Rhodes, a career Pan Am pilot serving as Tajik Air chief pilot, explicitly concluded the object was extraterrestrial and under intelligent control, a conclusion the Embassy neither endorsed nor contested, closing with 'we have no opinion and report the above for what it may be worth.'",
+  "key_findings": [
+    "The object was observed for approximately forty minutes performing circles, corkscrews, and 90-degree turns 'under very high G's' at a much higher altitude than the 747SP's 41,000-foot cruise level.",
+    "Because it was dark, the crew could not determine the object's shape; they described its light as having a 'bow wave' resembling a high-speed photograph of a bullet in flight, with a small core and a large trailing heat/light wake.",
+    "Approximately forty-five minutes after the initial sighting — as the sun rose — the aircraft flew under contrails left by the object, whose paths mapped its maneuvers (circles, corkscrews); Rhodes estimated those contrails at ~100,000 feet and noted ordinary propulsion systems could not produce contrails at that altitude.",
+    "Captain Ed Rhodes photographed the object with a pocket Olympus camera and stated he would send copies to the Embassy and the Tajikistan Desk (Lowry Taylor) at State 'if they come out,' indicating the photographic evidence was uncertain.",
+    "When the Embassy suggested a meteor explanation, the crew — citing Pan Am experience with atmospheric re-entries — were 'adamant' the object was nothing like a meteor, and Rhodes formally expressed the opinion it was extraterrestrial and under intelligent control."
+  ],
+  "document_type": "cable",
+  "legacy_program_connections": [
+    {
+      "node_id": "cia_oga",
+      "relevance": "high",
+      "reasoning": "The cable was distributed directly to CIA WASHDC (routing code 0224), making the CIA an official recipient of this aviation UAP report."
+    },
+    {
+      "node_id": "cia_dst",
+      "relevance": "medium",
+      "reasoning": "DIA WASHDC (0232) was also a direct distribution recipient alongside CIA, reflecting standard intelligence-community routing for anomalous airspace events."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "The sighting occurred over Kazakhstan near the former Soviet border and was distributed to multiple regional embassies (Moscow, Tashkent, Almaty, Bishkek, Beijing), touching allied intelligence-sharing geography though no Five Eyes partners are explicitly named."
+    }
+  ],
+  "related_topics": [
+    "pilot testimony",
+    "photographic evidence",
+    "contrail corroboration",
+    "high-altitude maneuvers",
+    "diplomatic intelligence reporting"
+  ]
+}

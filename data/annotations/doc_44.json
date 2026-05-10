@@ -1,0 +1,31 @@
+{
+  "hook": "A redacted FBI-submitted monochrome still image showing a dark circular object precisely centered on a crosshair reticle, captured by an unidentified U.S. government sensor system over what appears to be ground terrain — submitted to AARO without an accompanying mission report or event location.",
+  "why_it_matters": "This image represents one of the rare instances where the FBI formally submitted visual UAP evidence to AARO, indicating the object warranted inter-agency reporting despite the absence of contextual metadata. The deliberate redaction of date and location before submission limits any independent verification or corroboration with other sensor data. The operator's documented inability to positively identify the object gives this image a formal unresolved status within the AARO intake process.",
+  "key_findings": [
+    "The object is dark and circular, positioned exactly at the center of a crosshair reticle — suggesting it was actively tracked or targeted by the sensor system at the moment of capture.",
+    "The image is monochrome with a mottled, textured background consistent with aerial or overhead ground-facing imagery.",
+    "The FBI submitted this image to AARO as a UAP report, but provided no accompanying mission report — an unusual omission that limits AARO's ability to assess sensor type, altitude, or event circumstances.",
+    "Both the date and location of the event were explicitly withheld prior to submission, with redactions applied to the original imagery before it reached AARO.",
+    "The reporting operator formally declared they could not positively identify the object, satisfying the UAP reporting threshold requiring an anomalous and unresolved observation."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This image was formally submitted by the FBI directly to AARO as part of the UAP reporting pipeline, making AARO the primary receiving and assessment body for this case."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The use of a U.S. government sensor system with redacted provenance and no mission report is consistent with imagery originating from classified collection platforms, though no direct CIA connection is stated."
+    }
+  ],
+  "related_topics": [
+    "aerial imagery",
+    "circular UAP",
+    "FBI AARO reporting",
+    "sensor tracking",
+    "redacted provenance"
+  ]
+}

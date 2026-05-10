@@ -1,0 +1,31 @@
+{
+  "hook": "An internal email exchange between a 15th Air Force Detachment 1 PAROC Intel Data Analysis Technician and an Information Disclosure Analyst, coordinating the exact wording of an unclassified tear line for a UAP mission report — specifically haggling over whether the year of the incident can be disclosed alongside the already-approved month and day.",
+  "why_it_matters": "This document reveals the granular, bureaucratic machinery of UAP information disclosure: even the year an incident occurred requires separate approval from the month and day before it can appear in an unclassified summary. The underlying observation — a U.S. aircraft tracking a possible UAP for over two hours on October 31, 2024 — is notable for its duration, but the document's real value is showing how tightly controlled even basic temporal metadata is in UAP reporting.",
+  "key_findings": [
+    "On October 31, 2024, a U.S. aircraft observed a possible UAP described as oval/orb shaped, moving at likely low speed, for a sustained period of over two hours.",
+    "The UAP incident summary was being prepared as an UNCLASSIFIED tear line appended to a SECRET//NOFORN classified document, a standard practice for shareable summaries of classified reports.",
+    "An Information Disclosure Analyst had approved the month and day of the incident for release but had not yet approved inclusion of the year, prompting this email exchange to request that authorization.",
+    "The document originates from 15 AF / DET 1 (15th Air Force, Detachment 1), indicating the observation involved Air Force aviation assets and was processed through Air Force intelligence channels.",
+    "Both personal identifiers (names and contact details) are redacted under FOIA exemption b(6), protecting individual privacy, though roles — PAROC Intel Data Analysis Technician and Information Disclosure Analyst — are disclosed."
+  ],
+  "document_type": "memo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The structured UAP reporting format, unclassified tear line, and information disclosure review process are consistent with AARO-era DoD UAP standardized reporting and release procedures."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "15th Air Force is the operational Air Force command that would interface with legacy Air Force UAP processing infrastructure, though no direct Wright-Patterson connection is stated."
+    }
+  ],
+  "related_topics": [
+    "extended visual observation",
+    "oval/orb UAP shape",
+    "Air Force aviation surveillance",
+    "information disclosure review",
+    "unclassified tear line"
+  ]
+}

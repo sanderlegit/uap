@@ -1,0 +1,36 @@
+{
+  "hook": "A single-frame monochrome still image captured by a U.S. military sensor system in 2025, submitted by the FBI to AARO, showing an unidentified dark irregular-shaped object positioned just above a targeting reticle crosshair — with an operator-confirmed inability to identify it.",
+  "why_it_matters": "This document represents one of the rare instances of FBI-sourced imagery formally submitted through AARO's reporting pipeline, indicating institutional cross-agency cooperation in UAP documentation. The fact that the imagery was redacted before submission — and that no accompanying mission report was provided — limits analytical value but also suggests the underlying collection platform is considered sensitive. The operator's explicit inability to positively identify the object elevates it above noise: this is not a case of resolved ambiguity.",
+  "key_findings": [
+    "The image was captured by a U.S. military sensor system, not a civilian or commercial platform, indicating the UAP was observed within a military operational context in the Western United States.",
+    "The FBI submitted the imagery to AARO after applying redactions to the original, meaning the version in the public record is already a second-order product — the full unredacted image remains withheld.",
+    "No mission report accompanied the submission, leaving the operational context (flight profile, mission type, sensor mode) entirely undocumented in the public record.",
+    "The embedded timestamp in the image is known to be incorrect due to an unconfigured system clock, complicating any attempt to correlate this event with other sensor data or reports.",
+    "The object appears as a single dark irregular shape just above the center of a targeting reticle in a grainy monochrome frame — consistent with imagery from infrared or low-light electro-optical military sensors."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted by the FBI directly to AARO as part of its UAP reporting mandate, making AARO the primary institutional recipient and record-holder."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The image originates from a U.S. military sensor system, and Wright-Patterson has historically been the hub for military photographic and sensor analysis related to unidentified aerial phenomena."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The PURSUE release through which this image was disclosed is the product of congressional mandates for UAP transparency, placing this record within that legislative accountability framework."
+    }
+  ],
+  "related_topics": [
+    "military electro-optical sensor imagery",
+    "FBI AARO reporting pipeline",
+    "targeting reticle UAP capture",
+    "Western United States UAP observations",
+    "imagery redaction before disclosure"
+  ]
+}

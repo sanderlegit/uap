@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Air Force ISR asset from the 33rd Special Operations Squadron observed a diamond-shaped UAP traveling at approximately 434 knots over the Mediterranean on January 25, 2024, visible only on its Short-Wave Infrared (SWIR) sensor during a 2-minute window at 05:09Z.",
+  "why_it_matters": "This MISREP is notable because the UAP was invisible to all sensors except SWIR, raising questions about its thermal signature and why it would appear in infrared but not visually or on radar. The document is formally routed through USCENTCOM to AARO under the post-2022 mandatory UAP reporting framework, illustrating how the military's standardized reporting pipeline now captures and preserves such observations. The observer's assessment of 'benign' combined with 'UNK' for intelligent control and propulsion reflects the structured uncertainty these reports are designed to document.",
+  "key_findings": [
+    "The UAP was observed at 05:09Z on January 25, 2024, while the aircraft was in transit, before it reached its primary ISR tasking area — the sighting was incidental to the main mission.",
+    "The object was described as 'round diamond shape with straight, non-maneuverable tail' and appeared only on the SWIR camera, with no returns from other sensors including radar.",
+    "Speed was estimated at approximately 434 knots; altitude was FL200 (20,000 feet); the UAP maintained a westward trajectory without changing course over the ~2-minute event.",
+    "The UAP's anomalous characteristics are listed as: 'maintained steady flight path, increased and decreased altitude profile, did not change trajectory' — vertical motion was observed but lateral trajectory held constant.",
+    "The reporting observer was a Senior Airman (E-4) from the 56th Special Operations Intelligence Squadron, 27th Special Operations Wing, operating under USCENTCOM/AFSOC with the aircraft equipped with an AN/DAS-4 targeting pod and Link 16 datalink."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The MISREP is explicitly approved for release to AARO and includes a formal UAP Event Serial Number (250509ZJAN2024-CENTCOM 001), placing it directly within AARO's mandatory reporting intake pipeline."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "high",
+      "reasoning": "The document is classified SECRET//REL TO USA, FVEY, meaning it was authorized for release to Five Eyes partner nations, indicating the intelligence was shared within that alliance framework."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The mission involved SIGINT collection (8:27 SIGINT hours) under USCENTCOM authority in the Mediterranean, a theater with overlapping intelligence community equities, though no direct CIA connection is stated."
+    }
+  ],
+  "related_topics": [
+    "SWIR-only detection",
+    "ISR platform UAP observation",
+    "diamond-shaped UAP",
+    "USCENTCOM AARO reporting",
+    "infrared anomaly"
+  ]
+}

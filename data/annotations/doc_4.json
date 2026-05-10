@@ -1,0 +1,31 @@
+{
+  "hook": "A mission report (MISREP) filed by the 482nd Attack Squadron documenting a 19-hour ISR sortie over Iraq on December 1–2, 2022, during which the crew observed a single possible UAP/UAV flying west to east near Baghdad at FL180, captured on FMV and submitted to AARO.",
+  "why_it_matters": "This document is notable as a firsthand operational military report generated during an active combat ISR mission under Operation INHERENT RESOLVE, not a retrospective or investigative file. The UAP was logged with a precise grid reference near Baghdad and a specific contact time (1620Z), yet the crew recorded no detectable signatures and chose not to pursue it, illustrating standard operational protocol when UAP are encountered mid-mission. The accompanying ten-second infrared video — showing an area of contrast transiting the sensor field-of-view — provides rare visual documentation of a UAP contact in a combat zone.",
+  "key_findings": [
+    "At 1620Z on December 1, 2022, the crew observed one possible UAP/UAV flying west to east in the vicinity of grid 38SMB4[redacted]83[redacted] near Baghdad, Iraq, while operating at FL180 (18,000 feet).",
+    "The crew did not follow the UAP and continued the mission as tasked; no further UAP events were observed for the remainder of the sortie.",
+    "No UAP signatures were detected, no RF frequency or duration was recorded, and effects on persons were explicitly reported as 'NONE REPORTED.'",
+    "The mission was a 19-hour 17-minute ISR/TARGET DEV sortie with primary sensor FMV; the aircraft also collected SIGINT via AIRHANDLER, and FMV footage was exploited by DGS-AR.",
+    "The report was filed by the 482ATKS under USCENTCOM/Operation INHERENT RESOLVE and declassified by MG Richard A. Harrison, USCENTCOM Chief of Staff, on 8 October 2025 for release to AARO."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The MISREP was explicitly submitted to and declassified for release to AARO, making it a direct input into AARO's UAP reporting and resolution pipeline."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The document is part of the PURSUE public disclosure release, which reflects congressionally mandated UAP transparency efforts, and its declassification references multiple MDR numbers consistent with structured legislative-driven review."
+    }
+  ],
+  "related_topics": [
+    "infrared/FMV UAP observation",
+    "combat zone UAP contact",
+    "Operation INHERENT RESOLVE",
+    "AARO reporting pipeline",
+    "ISR mission UAP encounter"
+  ]
+}

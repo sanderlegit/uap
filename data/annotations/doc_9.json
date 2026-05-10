@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Air Force Special Operations aircrew returning to base from an ISR mission over the Gulf of Oman at 0457Z on June 7, 2024 detected a single UAP flying just over the water at 140 knots — described as a glowing hot spherical object with a vertical cylindrical pole or bar attached to its underside, possibly casting a reflection in the water below.",
+  "why_it_matters": "This MISREP is notable for the specificity of its physical description: the observer characterized the UAP as a solid, 'glowing hot' sphere with a structural appendage — a level of morphological detail that goes beyond the typical light or orb report. The event was captured during return-to-base from a routine maritime ISR patrol by a 3rd Special Operations Squadron aircrew operating under USCENTCOM, lending institutional credibility to the observation. The document was declassified and formally released to AARO, making it part of the official disclosure pipeline.",
+  "key_findings": [
+    "The UAP was described as a 'GLOWING HOT SPHERICAL UNIDENTIFIED OBJECT WITH A VERTICAL UNWAVERING CYLINDRICAL POLE/BAR ATTACHED ON THE BOTTOM' — a structurally specific description that includes a possible water reflection beneath it.",
+    "The UAP was traveling at 140 knots just over the water's surface while the observing aircraft was at 23,999 ft MSL and 163 knots on a 294-degree heading, establishing a clear geometry of the encounter.",
+    "The observer assessed the UAP as 'Benign,' reported no change in UAP behavior in response to the observation, no effects on personnel or equipment, and no sensor interrogation was attempted.",
+    "The mission was conducted under Operation ENDURING SENTINEL by the 3rd Special Operations Squadron (3 SOS), 27th Special Operations Wing (27 SOW), AFSOC, operating out of Al Minhad Air Base (OMAM) in the UAE under the 609th CAOC.",
+    "The UAP serial number is 060457ZJUN2024-CENTCOM, and the report was approved for release to AARO on October 28, 2025, declassified by USCENTCOM Chief of Staff MG Richard A. Harrison."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was explicitly approved for release to AARO and carries the UAP event serial number format CENTCOM uses for AARO reporting, confirming it is part of the formal UAP disclosure pipeline."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "Multiple sections of the report carry the classification caveat SECRET//REL TO USA, FVEY, indicating the underlying ISR mission intelligence was shared with Five Eyes partners."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The document was declassified under MDR (Mandatory Declassification Review) case USCENTCOM MDR 25-0100 through 25-0103, reflecting congressional and oversight pressure driving CENTCOM UAP disclosures."
+    }
+  ],
+  "related_topics": [
+    "spherical UAP morphology",
+    "maritime low-altitude UAP",
+    "AFSOC special operations ISR",
+    "Gulf of Oman UAP encounter",
+    "AARO mandatory disclosure pipeline"
+  ]
+}

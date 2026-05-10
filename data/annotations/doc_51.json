@@ -1,0 +1,36 @@
+{
+  "hook": "An archival Apollo 12 lunar surface photograph, officially released via the PURSUE program, in which two discrete areas above the lunar horizon have been annotated as containing unidentified phenomena visible in the original imagery.",
+  "why_it_matters": "This is among the earliest dated entries in the PURSUE release and represents a NASA mission context—meaning any anomalies were potentially observed or captured during an active crewed spaceflight program. The government's decision to annotate and release this specific image signals institutional acknowledgment that something in the frame warranted formal identification as unidentified phenomena. The 1969 date places it squarely within the era when UAP reporting within government was handled under Project Blue Book, which closed the same year.",
+  "key_findings": [
+    "The photograph originates from the Apollo 12 lunar landing site, placing the observational context on the Moon's surface in November 1969.",
+    "Two distinct areas of interest—labeled 'Area 1' and 'Area 2'—are identified slightly right of center and above the lunar horizon line.",
+    "The releasing agency (via war.gov) explicitly states that unidentified phenomena are visible in both annotated areas.",
+    "The image was modified from its original state to add highlights, with the manifest explicitly noting these alterations do not constitute analytical conclusions about the phenomena's nature.",
+    "No redactions are present, suggesting the document was released in a form the government deemed fully disclosable."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "Apollo 12 launched in November 1969, the same year Project Blue Book was closed—any UAP observed during NASA missions of this period fell within or immediately adjacent to Blue Book's operational window."
+    },
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document's inclusion in the PURSUE release on war.gov indicates it was processed and released under the current UAP disclosure framework overseen by AARO and the UAP Disclosure Act."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson AFB housed Project Blue Book records and served as the Air Force's primary UAP analysis hub during the era this photograph was taken."
+    }
+  ],
+  "related_topics": [
+    "lunar surface anomalies",
+    "Apollo program UAP",
+    "photographic evidence",
+    "NASA declassification",
+    "PURSUE release"
+  ]
+}

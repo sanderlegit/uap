@@ -1,0 +1,36 @@
+{
+  "hook": "Excerpts from three Skylab technical crew debriefings (1973–1974) in which astronauts from all three crewed missions describe anomalous visual phenomena: unexplained light flashes experienced with eyes closed in darkness, a bright reddish rotating object tracked for 10 minutes in a nearly identical orbit that was never officially identified, and exterior flashing lights with apparent motion relative to the station.",
+  "why_it_matters": "These are firsthand, contemporaneous accounts by NASA astronauts given in formal debriefing settings — not informal recollections — making them among the most credible observer reports in the UAP record. The Skylab 3 observation is particularly significant: the Garriott/Lousma sighting of a rotating reddish object in a nearly co-orbital trajectory was debriefed in detail, logged with timing data on channel A, and NASA never provided the crew an identification despite their explicit request. The document shows that even at the time, anomalous orbital sightings were acknowledged but left unresolved within the agency.",
+  "key_findings": [
+    "Skylab 2 Science Pilot Joseph Kerwin reported light flashes seen with eyes closed in darkness, occurring at rates of two or three per minute, described as spots, sunbursts, and streaks, predominantly peripheral. The crew discussed possible connection to the South Atlantic Anomaly and some attributed individual events to cosmic particle strikes ('entrance streak and exit streak'). Crew members explicitly stated 'they're not a hallucination.'",
+    "Skylab 3 astronauts Owen Garriott and Jack Lousma tracked a bright reddish object for approximately 10 minutes, roughly one week before splashdown. It exhibited a ~10-second brightness oscillation consistent with rotation, entered darkness 5–7 seconds after Skylab did (implying ~30–50 nautical miles separation), and drifted only 10–20 degrees in the wardroom window over the observation period — indicating a nearly identical orbital trajectory.",
+    "Garriott explicitly stated the object was 'much brighter than Jupiter or any of the other planets' and retained a reddish hue 'well above the horizon,' ruling out atmospheric reddening. The crew attempted to image it with monitors but could not resolve it beyond a bright light source. The object was never seen on subsequent orbits and its identification was never provided to the crew.",
+    "Skylab 4 Commander Gerald P. Carr reported 2–3 separate sightings of exterior flashing lights with 'very definite motion relative to ours,' logged on dump tapes as they occurred. The crew presumed they were Skylab debris or other satellites; tumbling behavior was inferred from oscillating flash patterns.",
+    "Across all three missions, the phenomena were reported through official channels (dump tapes, formal debriefings) rather than suppressed, yet no resolution or identification was furnished to the Skylab 3 crew despite their direct request — a gap explicitly noted in the debriefing transcript."
+  ],
+  "document_type": "technical",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "AARO's historical review mandate covers exactly this category of unresolved government UAP reports; the Skylab 3 co-orbital object, logged with precise timing on channel A and never officially identified, is a primary-source historical case within AARO's scope."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "low",
+      "reasoning": "Blue Book closed in 1969 before these 1973–74 observations, so there is no direct institutional connection, but these reports represent the kind of credible military/government observer cases Blue Book was designed to collect and that fell into a gap after its closure."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "Astronaut UAP testimony has featured in congressional UAP hearings; these debriefings constitute contemporaneous official documentation of exactly the kind of government-employee sightings that congressional oversight has sought to surface."
+    }
+  ],
+  "related_topics": [
+    "astronaut visual testimony",
+    "orbital UAP sightings",
+    "cosmic ray phosphenes",
+    "co-orbital unidentified object",
+    "South Atlantic Anomaly"
+  ]
+}

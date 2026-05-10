@@ -1,0 +1,36 @@
+{
+  "hook": "A declassified Apollo 17 photograph from December 1972 showing three unidentified dots in a triangular formation in the lower right quadrant of the lunar sky, now under active U.S. government investigation as a potential physical object captured on film.",
+  "why_it_matters": "This case is notable because the U.S. government has taken the extraordinary step of retrieving original Apollo 17 mission film for fresh analysis — suggesting existing digital copies were insufficient to resolve the anomaly. The preliminary finding that the triangular dot formation 'is potentially the result of a physical object in the scene' marks a shift from dismissal to active investigation of a decades-old image. The pending release of full NASA and DOW analysis means this document represents an open, unresolved case rather than a closed finding.",
+  "key_findings": [
+    "The Apollo 17 photograph contains three distinct dots arranged in a triangular formation, visible in the lower right quadrant of the lunar sky upon magnification.",
+    "This image was previously publicly released and noted by observers, but no official consensus on the anomaly's nature existed prior to this review.",
+    "New preliminary U.S. government analysis assesses the feature as 'potentially the result of a physical object in the scene' — a characterization stronger than lens artifact or film defect.",
+    "The original Apollo 17 mission film has been obtained by the government for this investigation, indicating the need to examine primary source material beyond existing released imagery.",
+    "The case is formally open under the PURSUE release framework with DOW leading investigation; full NASA and DOW findings have not yet been released."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This photograph is catalogued under the PURSUE UAP disclosure review, the framework through which AARO and affiliated offices are systematically re-examining historical government materials for UAP cases."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson has historically served as a repository for UAP-related materials and film analysis; retrieval of original Apollo film for government analysis fits this archival and technical examination role."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The PURSUE release framework under which this document was opened is a product of congressional UAP disclosure mandates, making this case part of the legislatively-driven declassification effort."
+    }
+  ],
+  "related_topics": [
+    "lunar photography anomaly",
+    "Apollo mission film analysis",
+    "triangular formation UAP",
+    "original film provenance",
+    "PURSUE declassification"
+  ]
+}

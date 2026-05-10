@@ -1,0 +1,31 @@
+{
+  "hook": "A USCENTCOM mission report from the 33rd Special Operations Squadron documenting a brief airborne infrared sensor observation of a seemingly circular UAP making multiple sharp 90-degree turns at approximately 80 MPH just above the ocean surface during an ISR mission on October 27, 2023, operating out of Larissa Air Base, Greece.",
+  "why_it_matters": "This document is a standardized DoD UAP incident report submitted directly to AARO and declassified by USCENTCOM's Chief of Staff in January 2026, representing the formalized military reporting pipeline AARO depends on. The encounter occurred as a secondary observation during an active counter-VEO ISR mission, meaning the crew had no prior tasking to observe UAP—their report reflects an incidental, real-time observation. The crew's simultaneous assessment of 'benign' and 'no intelligent control' despite observing aerodynamically anomalous 90-degree turns at speed illustrates the tension in how military observers classify these events.",
+  "key_findings": [
+    "The UAP was observed at 0035Z on October 27, 2023, flying just above the ocean surface and making multiple sharp 90-degree turns at an estimated velocity of 80 MPH; the crew lost the UAP from their sensor feed approximately three minutes later at 0038Z.",
+    "The object was described as 'seemingly circular, too small to make out details,' assessed as 'solid' in physical state, with propulsion means, RF frequency, and advanced capabilities all recorded as 'UNK.'",
+    "The observing crew formally assessed the UAP as 'benign' and specifically marked 'NO' to intelligent control, 'NONE' to signatures, and 'NONE' to effects on equipment—despite the documented sharp-turn maneuvers.",
+    "The reporting unit was the 33rd Special Operations Squadron, 27th Special Operations Wing, AFSOC, operating under USCENTCOM with primary sensors listed as FMV and SIGINT; the aircraft was equipped with an AN/DAS-4 targeting pod and AWGMESH datalink.",
+    "The mission was primarily a counter-violent-extremist-organization (VEO) ISR tasking; the UAP sighting occurred while the aircraft was en route to its assigned target, making this an incidental observation rather than a dedicated UAP investigation."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted to AARO and stamped 'Approved for Release to AARO 01/26/26,' making it a direct product of the DoD-to-AARO UAP reporting pipeline AARO was established to receive."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "AARO's collection of standardized military UAP reports like this one directly feeds the congressional UAP oversight and disclosure requirements mandated by successive NDAAs, giving this document downstream relevance to the legislative accountability framework."
+    }
+  ],
+  "related_topics": [
+    "90-degree turns",
+    "infrared sensor observation",
+    "low-altitude ocean surface UAP",
+    "AFSOC special operations ISR",
+    "AARO reporting pipeline"
+  ]
+}

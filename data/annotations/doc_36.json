@@ -1,0 +1,31 @@
+{
+  "hook": "MISREP 4472514, filed by the 482nd Attack Squadron (482 ATKS), documents three separate UAP encounters observed via Full Motion Video during a 21-hour armed reconnaissance mission over the Arabian Gulf and Strait of Hormuz on July 16, 2020, with all substantive UAP description redacted.",
+  "why_it_matters": "This report is one of the rare cases where a single mission log contains three formally-catalogued UAP events, each assigned its own standardized observation block with MGRS coordinates and aircraft state data—suggesting the crew treated each as a distinct, reportable incident rather than a recurring sensor artifact. The mission was simultaneously tracking Iranian naval vessels (probable NASER, SAFIR KISH, and HOUDONG fast-attack craft near Bushehr Port), placing the UAP sightings in an operationally sensitive context. The UAP-specific gentext fields are redacted under b)(1) exemptions and classified until March 1, 2045, meaning the actual descriptions of what was seen remain withheld from the public release.",
+  "key_findings": [
+    "Three discrete UAP observations were logged at 1830Z, 1920Z, and 2345Z—each formally recorded as a separate OBSERVATION block with MGRS grid coordinates and aircraft heading, altitude, and airspeed at time of sighting.",
+    "All three UAP observations cite FMV (Full Motion Video) as the sole method of observation; no radar or secondary sensor confirmation appears in the visible text.",
+    "Weather was recorded as 'NOT A FACTOR' for all three UAP sightings, ruling out atmospheric conditions as a contributing element per the crew's own assessment.",
+    "The aircraft was simultaneously conducting ISR on Iranian naval vessels—logging a probable NASER WAP at 0645Z, a probable SAFIR KISH at 1932Z, and a possible HOUDONG docked at Bushehr Port at 2140Z—in the same geographic grid squares where UAP were later observed.",
+    "The substantive gentext narratives for all three UAP events are redacted under classification exemptions, with a declassification date of March 1, 2045; only the UAP locations (MGRS grids in the 39RUN/39RVM areas) and the phrase 'OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON' survive in each block."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and is part of the USCENTCOM MDR 26-0028 release package, making it a direct output of the military UAP reporting pipeline AARO was established to receive."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "The mission operated under USCENTCOM in the Strait of Hormuz and Arabian Gulf—a coalition maritime patrol area—though no allied-nation involvement is mentioned in the visible text."
+    }
+  ],
+  "related_topics": [
+    "FMV surveillance UAP",
+    "Persian Gulf UAP",
+    "Iranian naval vessels",
+    "USCENTCOM UAP reporting",
+    "armed reconnaissance UAP encounter"
+  ]
+}

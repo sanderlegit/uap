@@ -21,6 +21,13 @@ const AGENCY_SHORT = {
   'Department of State': 'DoS',
 }
 
+const LAYER_LABELS = {
+  surveillance: 'Surveillance',
+  custodial: 'Custodial',
+  industrial: 'Industrial',
+  center: 'Core',
+}
+
 function Badge({ children, color }) {
   return (
     <span
@@ -82,6 +89,7 @@ export default function DocumentDetail() {
   const research = useResearch()
 
   const [narratives, setNarratives] = useState(null)
+  const [legacyWeb, setLegacyWeb] = useState(null)
 
   const { addToTrail } = useExplorationTrail()
 
@@ -99,6 +107,13 @@ export default function DocumentDetail() {
     fetch('/data/doc_narratives.json')
       .then(r => r.json())
       .then(setNarratives)
+      .catch(() => {})
+  }, [])
+
+  useEffect(() => {
+    fetch('/data/legacy_web.json')
+      .then(r => r.json())
+      .then(setLegacyWeb)
       .catch(() => {})
   }, [])
 
@@ -125,6 +140,29 @@ export default function DocumentDetail() {
       return refDoc ? { ...c, title: refDoc.title, agency: refDoc.agency } : null
     }).filter(Boolean)
   }, [graph, docs, numId])
+
+  const legacyConnections = useMemo(() => {
+    if (!legacyWeb) return []
+    const docNodeId = `doc_${numId}`
+    const nodeMap = new Map(legacyWeb.nodes.map(n => [n.id, n]))
+    return legacyWeb.edges
+      .filter(e => e.source === docNodeId && e.type === 'document')
+      .map(e => {
+        const node = nodeMap.get(e.target)
+        if (!node) return null
+        return {
+          nodeId: node.id,
+          label: node.label,
+          layer: node.layer,
+          color: node.color,
+          description: node.description,
+          weight: e.weight,
+          reasons: (e.reason || '').split(';').map(r => r.trim()).filter(Boolean),
+        }
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.weight - a.weight)
+  }, [legacyWeb, numId])
 
   const researchContext = useMemo(() => {
     if (!research || !doc) return []
@@ -234,6 +272,50 @@ export default function DocumentDetail() {
                   {i + 1}
                 </span>
                 <p className="text-sm text-slate-300 leading-relaxed">{finding}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* ── Legacy Program Context ─────────────────────────────────── */}
+      {legacyConnections.length > 0 && (
+        <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-4 mb-6">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-amber-400">Legacy Program Context</h2>
+            <Link to={`/graph?node=doc_${numId}`} className="text-[11px] text-amber-500/60 hover:text-amber-400 transition-colors">
+              View in graph &rarr;
+            </Link>
+          </div>
+          <div className="space-y-3">
+            {legacyConnections.map(conn => (
+              <div key={conn.nodeId} className="flex items-start gap-3">
+                {/* Weight bar */}
+                <div className="flex-shrink-0 w-24 mt-1.5">
+                  <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full rounded-full"
+                      style={{ width: `${conn.weight * 100}%`, backgroundColor: conn.color }}
+                    />
+                  </div>
+                  <div className="text-[9px] text-slate-500 mt-0.5 text-right font-mono">{conn.weight.toFixed(2)}</div>
+                </div>
+                {/* Label + reasons */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium text-slate-200">{conn.label}</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: `${conn.color}15`, color: conn.color }}>
+                      {LAYER_LABELS[conn.layer] || conn.layer}
+                    </span>
+                  </div>
+                  <div className="mt-1 space-y-0.5">
+                    {conn.reasons.map((r, i) => (
+                      <p key={i} className="text-xs text-slate-400 leading-relaxed">
+                        {r}
+                      </p>
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
           </div>

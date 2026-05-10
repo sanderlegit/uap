@@ -1,0 +1,36 @@
+{
+  "hook": "Internal email chain between AFOSI intelligence oversight staff and an OUSD(I&S) Information Disclosure Analyst, negotiating how to downgrade an IIR from SECRET//NOFORN to UNCLASSIFIED so it can be used in a product — with the UNCLASS summary of the underlying sighting embedded in the chain.",
+  "why_it_matters": "The document reveals the bureaucratic mechanics of UAP disclosure: rather than full declassification (which requires AFOSI Commander signature), officials found a faster path via 'derivative classification review,' suggesting institutional workarounds are being developed to release UAP material. The embedded IIR summary describes a large blue triangular object observed for eight minutes near a national security facility, recorded on a civilian's phone — the kind of near-facility sighting that triggers the most sensitive reporting channels. The fact that the original report was classified SECRET//NOFORN before this review underscores that even civilian UAP encounters near sensitive sites are treated as classified intelligence.",
+  "key_findings": [
+    "A civilian observer reported a large, blue, featureless triangular object hovering near a national security facility in the Pacific Time Zone at night in March 2023 for approximately eight minutes, captured on a personal cellular device.",
+    "The object's movement was described as 'backing up' in a 'jerking' or 'jumping' manner the reporter explicitly contrasted with 'smooth' jet propulsion — the reporter also stated they did not believe it was a drone.",
+    "The reporter specifically noted the absence of several expected features: no defined flight path, no vapor trail, no apparent cloaking capabilities, and no visible photo or data collection equipment — these negatives are preserved in the UNCLASS summary.",
+    "The underlying Intelligence Information Report (IIR) was originally classified SECRET//NOFORN; release required navigating AFOSI's formal process, which the OSI CI Collections and Operations PM acknowledged was a novel situation for them.",
+    "Approval was granted by the OSI CI Collections and Operations PM / Intelligence Oversight PM to use the UNCLASS summary in an unspecified product, with the IIR and a draft report noted as attachments to the originating email."
+  ],
+  "document_type": "memo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The disclosure pipeline — IIR processed through OUSD(I&S) for use in an unspecified 'product' — reflects the post-2022 AARO-era infrastructure for declassifying and publishing UAP reports."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "AFOSI (Air Force Office of Special Investigations), whose CI Collections and Operations PM is the approving authority here, has historically operated out of Wright-Patterson and remains the Air Force's primary UAP collection and counterintelligence arm."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The effort to convert a SECRET//NOFORN IIR into an UNCLASSIFIED summary suitable for external use aligns with congressional mandates for UAP transparency passed in the FY2023–2024 NDAAs."
+    }
+  ],
+  "related_topics": [
+    "civilian witness report",
+    "triangular craft",
+    "national security facility overflight",
+    "AFOSI intelligence reporting",
+    "derivative classification review"
+  ]
+}

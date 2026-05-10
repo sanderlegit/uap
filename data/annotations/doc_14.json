@@ -1,0 +1,31 @@
+{
+  "hook": "A USCENTCOM special operations mission report (Misrep 9337873) documenting a 20-hour, 1-minute ISR sortie over the Aegean Sea during which a redacted AFSOC crew observed an unidentified, seemingly circular solid object flying just above the ocean surface toward land at an estimated 30 MPH before losing it from their sensor feed.",
+  "why_it_matters": "This report shows the U.S. military's post-2023 UAP reporting pipeline functioning as designed: a combat ISR crew from 33 SOS filed a structured MISREP through USCENTCOM channels that was formally reviewed and released to AARO. Despite the object remaining unexplained — with propulsion, RF frequency, and advanced capabilities all logged as unknown — the crew's official assessment was 'benign,' illustrating how the institutional framework categorizes low-anomaly UAP encounters. The document's declassification under USCENTCOM MDR 26-0019 and release through the PURSUE program reflects the congressional mandate for systematic UAP disclosure from military archives.",
+  "key_findings": [
+    "UAP was observed at 0811Z on 29 October 2023 by a single AFSOC aircraft (33 SOS / 27 SOW) that was returning to base after a 9-hour-24-minute on-station ISR period; the crew was RTB when the sighting occurred.",
+    "The object was formally described in the report as 'seemingly circular, too small to make out details,' flying just above the ocean surface and moving straight toward land — consistent with the war.gov video description of a contrast area tracked by an infrared sensor that became indistinguishable as the background transitioned from water to land.",
+    "Estimated kinetic velocity recorded as 30 MPH; both first and last coordinate accuracy are listed as 'estimated,' within a 5-unit radius at grid 35SMV3[redacted], indicating the crew could not precisely fix the object's position.",
+    "All formal UAP assessment fields indicate a non-anomalous encounter: physical state = solid; propulsion = unknown; intelligent control = NO; maneuverability observations = none; signatures = none; effects on equipment and persons = none; objects/material recovered = no.",
+    "The aircraft carried AGM-114R9E and AGM-114R2 Hellfire missiles and an AN/DAS-4 targeting pod, confirming it was an armed special operations ISR platform; sensors available included G-MESH and FMV/SIGINT collection was the primary mission tasking, with 9:24 FMV hours logged."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and the UAP section follows AARO's standardized reporting schema, making AARO the direct institutional recipient and custodian of this report."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "Declassification under USCENTCOM MDR 26-0019 on 22 January 2026 and release through the PURSUE program reflects the congressional UAP transparency mandates that compelled DoD to systematically declassify and publish military UAP records."
+    }
+  ],
+  "related_topics": [
+    "infrared sensor UAP tracking",
+    "ocean surface UAP",
+    "AFSOC special operations ISR",
+    "AARO standardized reporting",
+    "USCENTCOM UAP pipeline"
+  ]
+}

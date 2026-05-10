@@ -1,0 +1,31 @@
+{
+  "hook": "A grainy monochrome still image from a U.S. military sensor system, submitted by the FBI to AARO in 2025, showing two small dark elongated objects near the center-right of the frame with a crosshair overlay — the operator reported an inability to positively identify the objects.",
+  "why_it_matters": "This submission represents the FBI's formal reporting mechanism to AARO under post-UAP disclosure frameworks, demonstrating inter-agency data sharing between law enforcement and the newly established resolution office. The document's chain-of-custody issues — incorrect system timestamp, redactions applied before AARO submission, and absent mission report — limit its analytical value while illustrating the practical challenges of UAP data collection from operational military systems. The two unidentified elongated objects remain uncharacterized due to both image quality and missing contextual documentation.",
+  "key_findings": [
+    "Two small, dark, elongated objects are visible in the bottom right quadrant of the frame near a central crosshair — the only observable UAP features.",
+    "The image timestamp is explicitly acknowledged as incorrect because the sensor system's date/time was never properly configured, undermining temporal correlation with other records.",
+    "The original imagery was redacted prior to submission to AARO, meaning the oversight office received an already-altered version of the sensor data.",
+    "No accompanying mission report was provided with the submission, leaving flight parameters, operator context, and engagement details undocumented.",
+    "The FBI-to-AARO reporting chain for this still image confirms operational military sensor data was routed through law enforcement before reaching the designated UAP resolution body."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This document was formally submitted by the FBI to AARO as part of the post-2022 UAP reporting mandate, making AARO the direct recipient and custodian of this imagery."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The pre-submission redaction of imagery before AARO receipt suggests a classification review process consistent with intelligence community handling, though no specific agency is named."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "AARO reporting pipeline",
+    "FBI UAP submissions",
+    "elongated UAP morphology",
+    "chain of custody documentation gaps"
+  ]
+}

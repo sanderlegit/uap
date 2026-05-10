@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Air Force ISR aircraft (50th Attack Squadron, 432nd AEW) flying a 20.5-hour reconnaissance mission over the Eastern Mediterranean on May 29-30, 2022 filed both a UAP report and conventional intelligence observations documenting extensive Russian military activity near the Syrian coast, including naval vessels, aircraft, and a separate SU-27/35 landing at the Latakia airfield area.",
+  "why_it_matters": "This document illustrates that the UAP sighting occurred in a heavily contested operational environment where Russian forces were actively present—including a likely SU-27/35 landing and takeoff roughly one hour before the UAP contact—yet the screener still could not obtain a positive identification on the 0117Z object. The report demonstrates AARO's intake of operationally-filed UAP events rather than dedicated UAP investigations, and the Five Eyes classification indicates allied intelligence sharing of this event. The co-presence of identified Russian aircraft and an unidentified object in the same airspace within the same mission window is the core ambiguity the document leaves unresolved.",
+  "key_findings": [
+    "At 0117Z on May 30, 2022, one UAP was observed flying north to northeast at FL240, 142 KIAS; the screener tracked it as long as possible but could not obtain a positive identification—no shape, size, color, or RF signatures are recorded in the unredacted text.",
+    "Approximately one hour earlier (0011Z), the same asset separately observed a 'probable SU-27/35' landing near grid 36SYE6 (consistent with Bassel al-Assad International Airport, Latakia), and at 0029Z observed a probable SU-27/35 taking off to the south—these are filed under OBSERVATION, not the UAP section.",
+    "The U.S. aircraft was intercepted at 2147Z by 1-3 Russian Air Force aircraft, including at least one possible SU-30, which approached from the Syrian coast, flew directly under the U.S. aircraft's orbit (FL190 vs FL240), flew south 10 NM, then returned west; there was no impact to the mission.",
+    "The mission surveilled 39 named targets across Syria and Lebanon including Tartus Naval Base, Latakia Naval HQ, multiple Syrian Navy coastal defense sites, and the Bassel al-Assad airfield, and observed Russian naval vessels including a Slava-class cruiser, a Gorshkov-class frigate, and two Udaloy I-class destroyers transiting east.",
+    "Russian aircraft parked at Latakia were identified as one A-50U Mainstay AEW aircraft and two IL-38 maritime patrol aircraft, plus a probable IL-76 transport active at 0006Z—placing the UAP sighting in an environment with confirmed, identified Russian military air activity minutes prior."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The mission report was explicitly submitted to AARO and declassified under MDR 25-0094 through 25-0099 for release to AARO, making this a primary AARO intake document."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "high",
+      "reasoning": "The document is classified SECRET//REL TO USA, FVEY throughout, indicating the UAP event and associated ISR intelligence were shared across the Five Eyes partnership."
+    },
+    {
+      "node_id": "nro",
+      "relevance": "low",
+      "reasoning": "The mission collected SIGINT via airhandler and IMINT (FMV exploited by DGS-1N and DGS4), suggesting coordination with national-level imagery and signals exploitation infrastructure, though no NRO entity is named directly."
+    }
+  ],
+  "related_topics": [
+    "Russian military presence Syria",
+    "Eastern Mediterranean ISR",
+    "airspace intercept RFAF",
+    "AARO operational reporting",
+    "infrared sensor UAP tracking"
+  ]
+}

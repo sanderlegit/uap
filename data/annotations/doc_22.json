@@ -1,0 +1,32 @@
+{
+  "hook": "Internal email chain between a 12th Air Force intelligence analyst and an Office of the Undersecretary of Defense for Intelligence and Security disclosure analyst, confirming the unclassified classification level of two brief UAP observation tearlines from INDOPACOM aircraft on April 10-11, 2025.",
+  "why_it_matters": "This document reveals the bureaucratic pipeline through which UAP sighting reports move from operational units to disclosure analysts, showing that even minimal sighting data (duration, lack of interference) requires explicit classification review before release. The involvement of the Office of the Undersecretary of Defense for Intelligence and Security as a gatekeeper for tearline approval indicates UAP reporting is treated as a formal intelligence disclosure matter. The two observations — one at 2353Z and one at 0007Z on consecutive nights — suggest possible recurring activity in the INDOPACOM AOR.",
+  "key_findings": [
+    "Two separate UAP observations by US aircraft were recorded in the INDOPACOM AOR: one on 10APR25 lasting 12 seconds at 2353Z, and one on 11APR25 lasting 23 seconds at 0007Z.",
+    "Both observations describe '1X POSS UAP' (one possible UAP) at unknown altitude and unknown speed, with no interference noted in either case.",
+    "The document is classified SECRET//NOFORN overall, but the specific UAP sighting tearlines were confirmed as releasable at the UNCLASSIFIED level by an Information Disclosure Analyst from the Office of the Undersecretary of Defense for Intelligence and Security.",
+    "The initiating analyst is identified as a PAROC Intel Data Analysis Technician Team Lead assigned to 12 AF / DET 3, indicating the sightings originated with an Air Force aviation unit.",
+    "The email exchange confirms that adding the AOR designation 'INDOPACOM' to the tearlines is also permissible at the unclassified level, suggesting some geographic context was initially in question."
+  ],
+  "document_type": "memo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The classification review and tearline approval process through the Office of the Undersecretary of Defense for Intelligence and Security is part of the modern UAP reporting and disclosure infrastructure that AARO operates within."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "The NOFORN caveat on the overall document and the INDOPACOM AOR context suggests sensitivity around allied partner visibility into this reporting."
+    }
+  ],
+  "related_topics": [
+    "INDOPACOM",
+    "pilot observation",
+    "tearline classification",
+    "information disclosure",
+    "12th Air Force",
+    "consecutive sightings"
+  ]
+}

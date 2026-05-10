@@ -1,0 +1,42 @@
+{
+  "hook": "Air Intelligence Requirements Memorandum Number 4, dated 15 February 1949, issued by the USAF Directorate of Intelligence under Major General C.P. Cabell, establishing a comprehensive standardized protocol for reporting 'unconventional aircraft and unidentified flying objects, including the so-called Flying Discs' — distributed to the FBI, CIA, Navy, Coast Guard, State Department, and all major Air Commands.",
+  "why_it_matters": "This memorandum reveals the formal, interagency infrastructure the U.S. government built around UFO reporting by early 1949 — less than two years after the Kenneth Arnold sighting. Wright-Patterson AFB (office MCIAXO-3) is explicitly designated as the central clearinghouse for all reports, foreshadowing its role as the hub of Project Blue Book. The distribution list — spanning CIA, FBI, State Department, Navy, Coast Guard, and overseas Air Attaches — demonstrates that UFO investigation was treated as a serious, whole-of-government intelligence priority, not a fringe concern.",
+  "key_findings": [
+    "Wright-Patterson AFB, Dayton, Ohio (Attn: MCIAXO-3) is designated the primary collection point for all UFO reports from both domestic and overseas commands, as well as non-Air Force agencies including the FBI.",
+    "The memo supersedes two earlier Army collection documents from 1948, confirming a formal transfer of UFO investigative primacy from the Army to the Air Force.",
+    "Physical evidence collection protocols explicitly require Geiger counter checks on surfaces near UAP contact points to test for radioactivity, and soil sample collection from landing sites — indicating awareness of potential physical trace phenomena.",
+    "Observer reliability was to be verified through FBI records, police departments, employers, and neighbors, with interrogators required to assess the 'intelligence and character' of witnesses — reflecting a structured credibility-vetting process.",
+    "Radar sighting protocols required tracking target separation (one object becoming multiple), turn radius, speed, and whether radio circuits experienced 'inductions or extra noise' — suggesting known anomalous radar signatures were already anticipated."
+  ],
+  "document_type": "memo",
+  "legacy_program_connections": [
+    {
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "Wright-Patterson AFB office MCIAXO-3 is explicitly named as the mandatory central collection point for all UAP reports from every U.S. command and non-Air Force agency."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "This memo is a direct institutional predecessor to Project Blue Book, establishing the Wright-Patterson-centered reporting and collection framework that Blue Book would inherit and formalize."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "medium",
+      "reasoning": "The Director of Central Intelligence is explicitly listed on the distribution, confirming CIA was a formal recipient of all UFO intelligence as of 1949."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "The memo directs overseas Air Attaches to report UAP data and specifically flags Canadian border activity as requiring cross-checks, indicating early international coordination awareness."
+    }
+  ],
+  "related_topics": [
+    "standardized reporting protocol",
+    "interagency coordination",
+    "physical trace evidence",
+    "radioactivity testing",
+    "observer reliability vetting",
+    "radar anomaly tracking"
+  ]
+}

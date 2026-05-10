@@ -1,0 +1,42 @@
+{
+  "hook": "The opening section of FBI's 62-HQ-83894 case file captures the first week of the 1947 flying disc wave through two lenses: Washington Post newspaper clippings from July 7, 1947 covering the national frenzy, and a CIC field memo from Portland, Oregon documenting credentialed law enforcement witnesses to five discs on July 4, 1947.",
+  "why_it_matters": "This section establishes the FBI's entry point into UAP investigation at the very moment the phenomenon entered public consciousness, showing institutional response across military, scientific, and law enforcement channels simultaneously. The Portland CIC memo is particularly notable because Agent Sorensen explicitly vouched for his witnesses as 'very dependable and trustworthy officers, not being afflicted with hallucinations' — an early attempt to establish witness credibility within official channels. The Army's public acknowledgment that it had been investigating for 10 days and still had 'not the slightest idea what they could be,' combined with confirmed radar non-detection nationwide, documents the government's genuine uncertainty rather than a cover-up posture at this early stage.",
+  "key_findings": [
+    "CIC Agent Keith A. Sorensen's July 7, 1947 memo documents Portland Police Officer Kenneth McDowell witnessing five large discs over Portland on July 4 — the sighting was preceded by pigeons becoming suddenly agitated, the discs made no sound, displayed an oscillating up-down motion, and disappeared before speed or altitude could be estimated.",
+    "Former Air Corps pilot and Portland City Police officer Earl E. Patterson independently confirmed seeing an aluminum-colored disc flying southwest over Portland at terrific speed — faster than any flying object he had ever seen — with no vapor trail or sound emitted.",
+    "Sergeant Claude Cross of the Oregon State Police observed three discs following each other in formation at 'terrific speed' traveling northwest, noting a whitish-brown glint as sunlight reflected off them.",
+    "A Catholic priest in Gratton, Wisconsin reported finding a physical metallic disc approximately 18 inches in diameter, 1/8 inch thick, weighing 4–5 pounds, with 'gadgets and wires' visible through a central hole — he notified the FBI, uncertain whether it was 'an elaborate practical joke.'",
+    "The Army Airways Communications Service confirmed that radar stations across the country had been unable to detect any strange objects in flight, while Army Capt. Brown publicly acknowledged the Air Forces had decided 'there's something to this' after 10 days of investigation but still had no explanation."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "Army Air Forces personnel and public relations staff (Capt. Brown) are named as actively investigating the discs for 10 days by July 7, 1947, with Army planes conducting aerial searches — this investigation was centered at Wright Field and directly preceded Project Sign."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "This CIC investigative memo and the Army Air Forces 10-day investigation described in the newspaper clippings are direct precursor material to the formal projects (Sign, Grudge, Blue Book) that institutionalized UAP investigation."
+    },
+    {
+      "node_id": "doe_aec",
+      "relevance": "medium",
+      "reasoning": "AEC Chairman David Lilienthal is specifically named in the newspaper clipping as publicly dismissing a report that the silvery discs 'resulted from experiments in the transmutation of atomic energy,' placing the AEC in the early response chain."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The VFW national commander is quoted expecting 'momentarily' an official Washington explanation for the discs, reflecting early pressure from veteran and civic organizations on government to account for the phenomenon."
+    }
+  ],
+  "related_topics": [
+    "1947 flying disc wave",
+    "police officer testimony",
+    "radar non-detection",
+    "Portland Oregon sightings July 1947",
+    "CIC field investigation",
+    "physical disc recovery"
+  ]
+}

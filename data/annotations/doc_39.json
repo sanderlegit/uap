@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Air Force ISR aircraft from the 124th Attack Squadron, operating under USCENTCOM in the Gulf of Aden, observed a single UAP on July 14, 2024 at 0517Z while conducting target development for NAVCENT. The object outpaced the observing aircraft on a straight northwest flight path before the crew lost tracking range.",
+  "why_it_matters": "This MISREP is notable because it was formally routed through USCENTCOM's mandatory declassification review and approved for release directly to AARO, illustrating the post-2022 institutional pipeline for military UAP reporting. The document captures a live ISR crew encounter during an active intelligence-collection mission, lending it operational context uncommon in historical UAP files. The observer's own assessment — 'benign' — and the structured AARO reporting fields (propulsion, intelligent control, advanced capabilities all marked 'UNKNOWN') reflect the standardized post-NDAA UAP data-collection framework in practice.",
+  "key_findings": [
+    "UAP was observed at 140517ZJUL24 with a straight flight path at the same altitude and a speed exceeding the observing aircraft; the crew followed it until it flew beyond tracking range.",
+    "The observer, a TSGT/E-5 from 124 ATKS (132 Wing, Air Force), assessed the UAP as 'benign'; no effects on persons or equipment were recorded, and no material was recovered.",
+    "UAP trajectory was northwest at low kinetic altitude; first and last coordinates are partially redacted but span grid squares 38P MT 53 and 38P MT 22, indicating measurable lateral displacement.",
+    "Full Motion Video (FMV) was the primary sensor and was exploited post-mission, but all descriptive fields for the UAP's physical appearance are redacted under exemption 1.4a/1.4g.",
+    "UAP propulsion means, intelligent control status, and advanced capabilities are all formally recorded as 'UNKNOWN,' consistent with AARO's standardized MISREP fields, and no RF signatures or interrogation returns were captured."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and uses AARO's standardized UAP reporting fields throughout the UAP section, making AARO the direct institutional recipient of this report."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "high",
+      "reasoning": "The document carries a SECRET//REL TO USA, FVEY classification caveat throughout all pages, meaning it was authorized for sharing across all Five Eyes partner nations."
+    }
+  ],
+  "related_topics": [
+    "ISR aerial surveillance",
+    "Gulf of Aden operations",
+    "USCENTCOM UAP reporting",
+    "AARO standardized MISREP",
+    "military pilot UAP assessment"
+  ]
+}

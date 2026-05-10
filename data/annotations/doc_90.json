@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome still image from a U.S. military sensor system, submitted by the FBI to AARO, showing one to two small dark objects positioned just above and to the right of a central crosshair reticle against a grainy background.",
+  "why_it_matters": "This image is notable because the original military imagery was redacted before reaching AARO, meaning the disclosure pipeline itself introduced information loss prior to government analysis — a chain-of-custody gap that limits independent assessment. The operator's documented inability to positively identify the objects, combined with a corrupted system timestamp, removes two of the most basic evidentiary anchors (identity and time) from what should be a controlled military observation. The absence of any accompanying mission report means sensor parameters, altitude, heading, and operational context are entirely unknown.",
+  "key_findings": [
+    "The image originated from a U.S. military system and was routed through the FBI to AARO as part of the formal UAP reporting pipeline.",
+    "Redactions were applied to the original imagery before submission to AARO, not after — meaning AARO itself received a pre-filtered version of the military sensor data.",
+    "The operator who captured the imagery reported being unable to positively identify the UAP, indicating the object did not match known signatures at time of observation.",
+    "The date displayed in the image is incorrect due to the system's date/time not being configured properly, making temporal correlation with other events or sensor logs unreliable.",
+    "No accompanying mission report was provided, leaving all operational context — including sensor type, platform, altitude, speed, and geographic precision — absent from the record."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The image was formally submitted to AARO through the FBI as part of the PURSUE disclosure process, placing it directly within AARO's UAP intake and resolution mission."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The imagery originates from an unspecified U.S. military system, suggesting a connection to military sensor infrastructure and the broader defense UAP data collection apparatus historically centered at Wright-Patterson."
+    }
+  ],
+  "related_topics": [
+    "military sensor imagery",
+    "AARO reporting pipeline",
+    "FBI-AARO coordination",
+    "chain of custody redaction",
+    "operator visual identification failure"
+  ]
+}

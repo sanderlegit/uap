@@ -1,0 +1,41 @@
+{
+  "hook": "A collection of 100 numbered UFO incident checklists compiled by the U.S. Army Air Forces in 1947–1948, capturing structured witness reports from military officers, test pilots, and civilians at Muroc Army Air Field and other locations, including two international sightings reported via the U.S. Military Attaché in Helsinki, Finland.",
+  "why_it_matters": "These standardized 'Check-List - Unidentified Flying Objects' forms represent some of the earliest systematic military documentation of UAP, predating Project Sign and Blue Book, and include witnesses who were test pilots and senior officers at one of the most classified flight test facilities in the United States. Several reports carry the official evaluation 'Confirmed by other sources,' indicating a rudimentary verification process was already in place by mid-1947. The inclusion of international incidents reported through military attaché channels shows the phenomenon was being tracked globally at the institutional level from the outset.",
+  "key_findings": [
+    "On July 8, 1947, at Muroc AAF, 1st Lt. McHenry and at least four corroborating witnesses observed two silver disc-like or spherical objects at ~8,000 ft traveling ~300 MPH against prevailing winds; a third object later performed circles 'too tight to be any type of known aircraft,' with official evaluation recorded as 'Confirmed by other sources.'",
+    "Major J.C. Wise, a test pilot at Muroc, witnessed a yellowish-white sphere 5–10 feet in diameter at 10,000–12,000 ft on July 7, 1947, oscillating in a forward whirling movement without losing altitude at 200–225 MPH—behavior he initially attributed to a weather balloon before ruling it out.",
+    "Major Richard R. Shoop observed an aluminum-colored object of unconventional shape at Muroc on July 8, 1947, that oscillated from intermediate altitude nearly to the ground and then climbed again over an 8-minute observation period at 5–8 miles distance.",
+    "Incident #99 and #100 (January 1948) are international reports sourced from the U.S. Military Attaché in Helsinki: a shining object with a long tail over Vaasa, Finland (30 seconds, west to east), and a shining object over Pietarsaari, Finland (10 seconds, north to south) that ejected flames and left grey streaks in the sky.",
+    "Incident #98 (November 2, 1947, Houston, Texas) describes a large spinning fireball ~26–30 inches in diameter with a ~20-foot tail that appeared to fall toward an adjacent field before suddenly extinguishing just before impact, with the male witness describing it as 'almost round, maybe a little oval or saucer-shaped.'"
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "These standardized 'Check-List - Unidentified Flying Objects' forms are the direct administrative precursors to Project Sign and Project Blue Book, using the same incident-number and checklist structure that would define those programs."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "Muroc AAF incidents dominate the early numbered reports and were collected and processed through Army Air Forces intelligence channels centered at Wright Field, the institutional home of UFO investigation in this era."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "Incidents #99 and #100 are sourced from the U.S. Military Attaché in Helsinki and reference Finnish press reports, demonstrating that allied military attaché networks were already being used to channel international UAP sightings into the U.S. Army reporting system."
+    },
+    {
+      "node_id": "area51",
+      "relevance": "low",
+      "reasoning": "Multiple incidents are sited at Muroc AAF (later Edwards AFB), an early classified flight test installation that shares the remote high-desert test-range lineage with later programs at Groom Lake."
+    }
+  ],
+  "related_topics": [
+    "pilot testimony",
+    "Muroc Army Air Field 1947",
+    "early UFO investigation forms",
+    "military attaché reporting",
+    "disc and sphere morphology"
+  ]
+}

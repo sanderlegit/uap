@@ -1,0 +1,41 @@
+{
+  "hook": "An FBI headquarters compilation spanning 1950-1952 containing internal memos, civilian correspondence, and inter-agency coordination records on anomalous aerial phenomena observed near sensitive New Mexico installations — including a detailed summary of Dr. Lincoln LaPaz's analysis of green fireballs and discs, and a Philadelphia police report of a physically anomalous object that disintegrated on the ground.",
+  "why_it_matters": "This section documents the FBI's active role as an inter-agency clearinghouse during the early Cold War UAP investigation period, showing direct coordination between Hoover's Bureau, Air Force OSI, and civilian scientists. The LaPaz analysis is significant because it explicitly raises the Soviet missile hypothesis — that objects could travel from the Ural region to New Mexico in under 15 minutes — framing UAP as a potential national security threat requiring urgent scientific study. The Philadelphia ground-landing incident, reported by police officers and involving physical trace evidence that fully disintegrated, represents one of the more unusual close-encounter reports in the file.",
+  "key_findings": [
+    "Dr. Lincoln LaPaz (University of New Mexico Institute of Meteoritics) concluded that approximately half of the ~150 recorded New Mexico phenomena since December 1948 were meteoric; the remainder — green fireballs and discs — he attributed to U.S. guided missiles, while explicitly flagging the Soviet Ural-launch hypothesis as requiring immediate systematic investigation if he was wrong.",
+    "Land-Air Inc. of Alamogordo, NM was contracted by the Air Force to establish observation posts near Vaughn, NM; on May 24, 1950, Land-Air personnel sighted 8 to 10 aerial phenomena objects during their watch.",
+    "Philadelphia police officers reported a six-foot diameter object descending slowly to treetop level, emitting a purplish, mist-like glow; it was so light it did not bend grass upon landing and completely disintegrated over approximately 25 minutes, leaving only a slight odorless residue.",
+    "John Edgar Hoover personally signed a September 8, 1950 letter transmitting civilian flying saucer correspondence (from Walter D. Jones, Toronto, Canada) to the Air Force Director of Special Investigations, establishing the FBI's formal referral protocol.",
+    "A 1952 letter from Mrs. Nellie T. Dull of Staunton, Virginia alleges her mailed theory about flying saucers was plagiarized by physicist Noel Scott, and speculates the phenomenon could enable man-made flying saucers usable in conjunction with atomic and hydrogen bombs — the FBI retained this letter in its central case file."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The Air Force observation program described — including Land-Air Inc. contracts, OSI coordination, and the classification of phenomena into typed categories — directly preceded and fed into the Air Force's formal UFO investigation program lineage."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The document is addressed to and coordinated through Air Force Headquarters and OSI (which operated through Wright-Patterson), with Hoover routing civilian and field correspondence there for official disposition."
+    },
+    {
+      "node_id": "lanl_ornl_battelle",
+      "relevance": "high",
+      "reasoning": "The phenomena were observed specifically near 'sensitive installations' in New Mexico — language consistent with Los Alamos and Sandia-adjacent nuclear facilities — making this file directly relevant to nuclear site UAP monitoring."
+    },
+    {
+      "node_id": "sandia",
+      "relevance": "medium",
+      "reasoning": "Vaughn, NM observation posts and Alamogordo-based Land-Air Inc. operations place the surveillance activity in the Sandia/White Sands corridor of sensitive military and nuclear infrastructure."
+    }
+  ],
+  "related_topics": [
+    "green fireballs New Mexico",
+    "Land-Air Inc. Project Twinkle",
+    "Soviet missile hypothesis",
+    "physical trace evidence ground landing",
+    "FBI OSI inter-agency coordination"
+  ]
+}

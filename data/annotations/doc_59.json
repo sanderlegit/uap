@@ -1,0 +1,41 @@
+{
+  "hook": "A collection of late-1947 internal memos between Air Materiel Command at Wright Field and USAF Headquarters establishing an institutional flying disc collection project, bookended by a pivotal August 1947 analytical memo in which Air Intelligence formally asked General Curtis LeMay to confirm no AAF research program matched observed saucer characteristics — and LeMay confirmed it did not.",
+  "why_it_matters": "This file documents the bureaucratic birth of what would become Project Sign: AMC Intelligence Chief Col. H.M. McCoy formally complaining to USAF HQ that his office's flying disc reports had gone unacknowledged, while simultaneously being directed to stand up a collection-and-analysis project with Priority 2A classification. The LeMay exchange is significant because it establishes on the record, at the highest level of R&D authority, that the observed objects were not American test aircraft — eliminating the most obvious domestic explanation and forcing serious institutional treatment of the phenomenon.",
+  "key_findings": [
+    "Lt. Col. Garrett's August 22, 1947 analytical memo distilled multiple credible sighting reports into a consistent physical profile: metallic, circular/elliptical, flat-bottomed and slightly domed, approximately C-54-sized, capable of speeds above 300 knots, flying in formations of 3–9, with a blue-brown exhaust trail suggesting a throttleable liquid rocket engine.",
+    "Major General Curtis E. LeMay, Deputy Chief of Air Staff for Research and Development, responded on August 29, 1947, that 'The Army Air Forces has no research project with the characteristics described' — a direct, unambiguous ruling-out of domestic origin at the R&D command level.",
+    "Col. McCoy's December 19, 1947 cover letter to USAF HQ notes that AMC had sent two prior letters on flying discs (September 2 and September 23, 1947) and received zero replies, framing continued sightings from 'qualified observers' as an ongoing intelligence concern.",
+    "A separate policy-directive fragment instructs AMC to establish a project to collect, collate, evaluate, and distribute to 'interested government agencies and contractors' all information on atmospheric sightings of national security concern, assigned Priority 2A with a 'Restricted' classification and a code name partially legible as 'Saucer'.",
+    "A Fourth Air Force memo about photographs taken near Jefferson, Oregon (November 5–12, 1946) by a Portland civilian was dismissed as camera defects, with USAF HQ directing 'no further investigation be made of this incident' — illustrating the contemporaneous bureaucratic spectrum from dismissal to serious investigation."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "The file originates from Air Materiel Command headquarters at Wright Field, Dayton, Ohio, and Col. McCoy's Intelligence Department there is the direct institutional author of the collection project being stood up."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The AMC project directed in this file — Priority 2A, code name 'Saucer,' tasked with collecting and analyzing atmospheric phenomena reports — is the direct organizational precursor to Project Sign (1948) and subsequently Project Blue Book."
+    },
+    {
+      "node_id": "cia_dst",
+      "relevance": "medium",
+      "reasoning": "The directive to distribute findings to 'interested government agencies and contractors' and the FBI background-investigation request on witnesses indicate early inter-agency intelligence coordination around the flying disc phenomenon."
+    },
+    {
+      "node_id": "aaro",
+      "relevance": "low",
+      "reasoning": "The mandate to collect, collate, evaluate, and distribute UAP sighting data across government agencies structurally prefigures the mission later assigned to AARO under the 2022 NDAA."
+    }
+  ],
+  "related_topics": [
+    "project sign origins",
+    "LeMay AAF research denial",
+    "metallic disc physical characteristics",
+    "formation flights above 300 knots",
+    "liquid rocket exhaust signature"
+  ]
+}

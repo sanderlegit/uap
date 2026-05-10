@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. military pilot filed a standardized Mission Report (MISREP) at 1258Z documenting a brief observation of a possible UAP near grid coordinate 34SDG9041417044 in the Arabian Gulf, estimating its velocity at 321 knots before it accelerated and turned east.",
+  "why_it_matters": "This MISREP represents the kind of operationally-generated UAP report that feeds into AARO's collection pipeline, as the official description explicitly states military services use this format to report to AARO. The document demonstrates that UAP observations are occurring in active U.S. military operational areas like the Arabian Gulf, not just training ranges. The brevity of the observation — explicitly noted as precluding altitude estimates — highlights a recurring limitation in UAP data collection: events are often too short for comprehensive sensor engagement.",
+  "key_findings": [
+    "The UAP was observed at 1258Z at grid coordinate 34SDG9041417044 in the Arabian Gulf in 2020.",
+    "The observation was brief enough that no altitude estimate could be made.",
+    "Velocity was estimated at 321 knots (approximately 369 mph) by the observing pilot.",
+    "The UAP exhibited dynamic behavior: it increased speed and changed direction toward the east during the observation.",
+    "The report was filed by a pilot, as indicated by the 'PILOT:' attribution line at the end of the GENTEXT — pages 1 through 4 of the 5-page document contain no recoverable text, suggesting they are standard MISREP form fields that were either blank or not captured by OCR."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The official war.gov description explicitly states that U.S. military services use MISREPs like this one to report UAP observations to AARO, placing this document directly in AARO's collection pipeline."
+    },
+    {
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "MITRE has supported DoD UAP data standardization efforts, and this MISREP format is an example of the standardized military reporting structure that feeds into those analytical frameworks."
+    }
+  ],
+  "related_topics": [
+    "pilot testimony",
+    "Arabian Gulf UAP",
+    "velocity estimation",
+    "direction change behavior",
+    "military MISREP reporting"
+  ]
+}

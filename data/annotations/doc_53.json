@@ -1,0 +1,36 @@
+{
+  "hook": "An archival NASA photograph taken at the Apollo 12 lunar landing site in 1969, officially released as part of the PURSUE disclosure, in which an area above the lunar horizon — slightly left of center — has been highlighted by AARO staff to mark visible unidentified phenomena.",
+  "why_it_matters": "This photograph is notable because it originates from a crewed NASA mission with extensive instrumentation and multiple witnesses, meaning any anomaly exists within a well-documented operational context. Its inclusion in the PURSUE release signals that government reviewers assessed it as warranting public attention rather than dismissal. The official disclaimer that the highlights are 'for contextual purposes only' and do not constitute an analytical conclusion reflects the careful evidentiary posture of the disclosure program.",
+  "key_findings": [
+    "The document is an archival photograph from the Apollo 12 mission (1969), captured at or near the lunar landing site on the Moon's surface.",
+    "An area of interest is explicitly identified in the manifest: slightly left of the vertical axis, above the horizon, where 'unidentified phenomena are visible.'",
+    "The image has been officially modified from its original state — highlights were added by releasing authorities — indicating active curation rather than raw archival release.",
+    "No redactions are detected, meaning the photograph was released in a form deemed fully appropriate for public disclosure.",
+    "No sensors, entities, shapes, or behavioral descriptors were logged in the structured metadata, leaving the nature of the phenomena undefined in official records."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The photograph was selected, annotated, and released as part of the PURSUE disclosure effort, directly indicating AARO's role in curating and presenting it to the public."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "medium",
+      "reasoning": "Apollo-era NASA imagery and contemporaneous aerial/space anomaly reports intersected with Project Blue Book's mandate, which was active until 1969 — the same year as this photograph."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson AFB housed UAP-related photographic analysis capabilities during this era and was involved in evaluating imagery from government aerospace programs including NASA missions."
+    }
+  ],
+  "related_topics": [
+    "lunar surface photography",
+    "Apollo program anomalies",
+    "NASA UAP imagery",
+    "PURSUE disclosure release",
+    "space-based unidentified phenomena"
+  ]
+}

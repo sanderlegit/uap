@@ -1,0 +1,31 @@
+{
+  "hook": "An FBI Laboratory composite rendering overlaid on an actual site photograph, depicting corroborating eyewitness accounts of an ellipsoid bronze metallic object observed in September 2023 appearing from a bright light and vanishing instantaneously.",
+  "why_it_matters": "This document represents a rare instance of the FBI Lab producing a formal forensic visual reconstruction of a UAP sighting using multiple corroborating witness accounts, indicating the Bureau treated the September 2023 event as a credible investigative matter warranting scientific rendering resources. The object's described behavior—materializing from light and disappearing instantaneously—aligns with a class of UAP reports characterized by non-ballistic appearance and departure, which has been a focus of AARO's cataloguing efforts. The 130-195 foot size estimate derived from eyewitness consensus places this object in the large-craft category consistent with other contemporaneous UAP reports.",
+  "key_findings": [
+    "The FBI Laboratory produced a rendered graphic overlay on an actual site photograph, indicating formal forensic reconstruction rather than a witness sketch alone.",
+    "Multiple independent eyewitness reports were corroborated sufficiently to produce a composite depiction, suggesting a multi-witness event.",
+    "The object is described as ellipsoid in shape and bronze metallic in color, with a size estimate of 130-195 feet in length derived from witness accounts.",
+    "The object reportedly materialized out of a bright light in the sky, suggesting an instantaneous or near-instantaneous appearance rather than conventional approach.",
+    "The object disappeared instantaneously, consistent with UAP behaviors categorized as lacking observable propulsion or deceleration signatures."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "A September 2023 multi-witness sighting formally investigated and rendered by the FBI Lab falls squarely within the post-NDAA 2022 era when AARO was the statutory repository for UAP reports, making FBI-to-AARO referral highly probable."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The FBI's production of a formal composite for a domestic sighting may intersect with intelligence community UAP sharing protocols, though no direct CIA connection is stated in the metadata."
+    }
+  ],
+  "related_topics": [
+    "eyewitness composite reconstruction",
+    "ellipsoid metallic UAP",
+    "instantaneous appearance and disappearance",
+    "FBI Laboratory forensic rendering",
+    "large-craft size estimation"
+  ]
+}

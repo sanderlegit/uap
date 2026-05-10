@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Air Force ISR asset operating over the Strait of Hormuz and Gulf of Oman on a 20-hour NAVCENT reconnaissance mission recorded a UAP via Full Motion Video (FMV) at 1732Z on September 16, 2020, while also logging two separate unexplained electromagnetic interference events and three Iranian Air Defense guard calls during the same sortie.",
+  "why_it_matters": "This MISREP is notable because the UAP observation occurred within a broader pattern of electromagnetic anomalies on the same mission: two distinct lost-link events of unknown type (11 and 27 minutes, both rated MEDIUM impact, both causing flight path deviations) preceded the UAP sighting by roughly two to four hours. The document is unusually sparse on UAP details — the observation GENTEXT contains only a grid coordinate with no shape, behavior, or descriptive characteristics — making it a data point about what was captured on FMV rather than a narrative account. It establishes that USCENTCOM ISR assets were formally logging UAP observations in the Strait of Hormuz operational environment as of late 2020.",
+  "key_findings": [
+    "The UAP was observed at 1732Z via FMV (Full Motion Video) while the aircraft was at FL180 (18,000 feet) and 90 KIAS, with the UAP located at grid 39RVM5[redacted]; the official manifest states an estimated UAP altitude of 1,800 feet, though this figure does not appear in the extracted GENTEXT.",
+    "Two electromagnetic interference events of UNKNOWN type occurred before the UAP sighting: the first from 1248–1259Z (11 minutes, FL180, 89 KIAS, grid 39RXK0[redacted]) and the second from 1414–1441Z (27 minutes, FL180, 120 KIAS, grid 39RVM9[redacted]); both caused complete system loss and flight path deviations with MEDIUM mission impact.",
+    "The mission was ISR tasked by NAVCENT to characterize IRGCN vessels, UAS activity, and port Pattern of Life; during the sortie the crew observed an IR-M-5 launcher on Abu Musa Island at 0930Z and two possible Houdong-class missile patrol boats at docked piersides at 1321Z.",
+    "The aircraft received three separate guard calls from Iranian Air Defense on 243.000 MHz — at 0408Z, 0421Z (both directive tone, FL180), and 1141Z (professional tone, FL040) — each resolved with a standard response and no mission impact.",
+    "The UAP observation GENTEXT is entirely devoid of descriptive content: it records only a grid location with no shape, color, behavior, speed, or altitude of the object itself documented in the narrative field."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The official war.gov manifest states this MISREP was submitted to AARO as part of its UAP reporting intake, and the document is formatted as a standardized USCENTCOM Military Operational Report for this purpose."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "The mission operated under USCENTCOM/NAVCENT in a region with allied maritime presence, and FMV was exploited by DGSI (likely a joint intelligence ground station), suggesting some multinational ISR infrastructure involvement, though no explicit partner-nation reporting appears."
+    }
+  ],
+  "related_topics": [
+    "electromagnetic interference near UAP",
+    "ISR drone reconnaissance",
+    "Strait of Hormuz",
+    "Iranian air defense interactions",
+    "FMV UAP observation"
+  ]
+}

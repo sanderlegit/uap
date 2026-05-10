@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. military pilot flying over the Arabian Gulf in 2020 acquired a 'weapons quality 1 track' on a balloon-like UAP at 31,000 ft and achieved a firing solution before visually confirming the object via targeting infrared sensor.",
+  "why_it_matters": "This report is notable because it documents a military crew reaching 'next to shoot' — a weapons-ready lock — on a UAP, meaning the object was tracked with sufficient precision to engage. The crew's note that it resembled UAP 'previously reported from 48FW' (48th Fighter Wing, RAF Lakenheath) suggests cross-unit pattern recognition of recurring unknowns, implying a category of balloon-like objects was being seen across multiple theaters and units. Five of six pages remain fully withheld under exemption 1.4(a), limiting what can be assessed about the full operational context.",
+  "key_findings": [
+    "The UAP was described as looking 'like a balloon' and was explicitly compared to previously reported UAP from the 48th Fighter Wing, indicating cross-unit awareness of similar objects.",
+    "A 'weapons quality 1 track' was established — the highest-confidence sensor lock used to support weapons employment — demonstrating the object was tracked with precision by onboard systems.",
+    "The crew executed a 'next to shoot' on the track, meaning they achieved a firing solution, though no engagement occurred.",
+    "The UAP was visually identified through the aircraft's TFLIR (Targeting Forward-Looking Infrared), providing sensor-confirmed observation at 31,000 ft MSL.",
+    "Five of six pages are entirely withheld under classification exemption 1.4(a) (military plans, weapons systems, or operations), leaving the majority of the report's content inaccessible."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The official description states U.S. military MISREPs of this type are submitted directly to AARO, placing this document within AARO's active UAP intake pipeline."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "As a military aeronautical UAP report involving sensor tracking and aircraft engagement systems, it fits the long-standing Air Force technical collection mission historically centered at Wright-Patterson, though no direct institutional link is named."
+    },
+    {
+      "node_id": "blue_book",
+      "relevance": "low",
+      "reasoning": "The balloon-like UAP description and military pilot visual/sensor report echo the format and object categories that Project Blue Book catalogued decades earlier, providing historical typological continuity."
+    }
+  ],
+  "related_topics": [
+    "balloon-type UAP",
+    "TFLIR sensor tracking",
+    "weapons quality track",
+    "Arabian Gulf airspace",
+    "48th Fighter Wing cross-reporting"
+  ]
+}

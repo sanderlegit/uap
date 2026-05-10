@@ -1,0 +1,31 @@
+{
+  "hook": "A 21-hour ISR mission by the 482nd Attack Squadron over the Arabian Gulf on August 26-27, 2020 produced a two-minute observation of a formation of unknown flying objects traveling northeast to northwest along the coast, lost in cloud cover before positive identification could be established.",
+  "why_it_matters": "This report documents a UAP encounter during an active intelligence-collection mission targeting Iranian naval vessels and UAS activity in the Strait of Hormuz — a high-sensitivity operational theater where misidentification carries real strategic risk. The observation was made by a long-endurance ISR platform equipped with advanced sensors (ANDAS4 targeting pod, SIGINT suite), lending operational credibility to the report. The document was originally classified until 2045 and declassified nearly two decades early by USCENTCOM, suggesting deliberate intent to release UAP-relevant operational records.",
+  "key_findings": [
+    "At 1527Z on August 27, 2020, the aircraft observed 'a formation of flying objects traveling NE-NW along the coast' at grid 39RVM8 in the Persian Gulf; tracking lasted approximately 2 minutes before positive identification (PID) was lost in cloud cover and could not be regained.",
+    "The weather section explicitly states 'LIGHT CLOUD COVERAGE PREVENTED CONTINUOUS TRACKING OF UAP EVENT,' using the term 'UAP' in the official report field — not just in post-hoc classification.",
+    "The observing aircraft was a long-endurance ISR platform (21-hour total mission time) operating under USCENTCOM/NAVCENT, equipped with an ANDAS4 targeting pod and SIGINT collection suite, conducting planned reconnaissance on Iranian naval and UAS activity.",
+    "Earlier in the mission (0532Z), Iranian Air Defense hailed the aircraft on guard frequency — a 'professional' standard call with no mission impact — establishing that the aircraft was operating in a monitored, contested airspace environment at the time of the UAP observation.",
+    "The document originated from the 482nd Attack Squadron (482ATKS) under the 432nd Air Expeditionary Wing and 609th Air Operations Center (CAOC), with FMV footage exploited by Distributed Ground Station 1 — indicating the observation may be captured on sensor record held by DGS-1."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The official war.gov manifest explicitly identifies this MISREP format as the standard mechanism by which U.S. military operators report UAP encounters to AARO, and the document was released through USCENTCOM MDR 26-0019 as part of the PURSUE disclosure process."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The document was originally classified until March 2045 but was declassified by USCENTCOM Chief of Staff in January 2026, consistent with the congressionally-mandated UAP disclosure frameworks that created AARO and required historical record releases."
+    }
+  ],
+  "related_topics": [
+    "formation sighting",
+    "ISR sensor platform",
+    "Persian Gulf operations",
+    "cloud cover tracking loss",
+    "Iranian air defense contact"
+  ]
+}

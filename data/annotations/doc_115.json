@@ -1,0 +1,36 @@
+{
+  "hook": "A collection of FBI and Army Air Forces memos from summer–fall 1947 documenting the earliest phase of interagency flying disc coordination, including eyewitness reports from June–August 1947, a formal division-of-labor agreement between the AAF and FBI, and the FBI's abrupt termination of its investigative role in October 1947.",
+  "why_it_matters": "This section captures the institutional mechanics of how the U.S. government initially organized its response to the 1947 flying disc wave — and then quietly shut it down. The explicit memo stating the FBI's role was to handle physical disc recoveries ('ash can covers, toilet seats and whatnot') while the AAF handled witness interviews reveals a deliberate triaging framework. The FBI's formal withdrawal from disc investigations in October 1947, just months after the Kenneth Arnold incident triggered public interest, marks the beginning of Air Force primacy over UAP investigation that would persist for decades.",
+  "key_findings": [
+    "F.M. Johnson reported a flying disc sighting on June 24, 1947 — the same date as the Kenneth Arnold incident — near Portland, Oregon, describing the object as moving 'on edge banking' into a cloud, likening it to a 'big magnet'; Lt. Col. Springer of Hamilton Field A-2 noted the similarity to Arnold's report but suspected possible newspaper influence.",
+    "Three American enlisted men at Harmon Field, Guam observed two crescent-shaped objects on August 14, 1947, traveling at twice the speed of a fighter plane on a zig-zag course at approximately 1,200 feet altitude, disappearing into clouds before one re-emerged heading west — reported via Air Transport Command Weekly Intelligence Summary.",
+    "A formal AAF policy memo established the division of investigative responsibility: Air Force A-2 units would interview credible witnesses, while the FBI was assigned to investigate physical disc recoveries on the ground — explicitly to relieve numbered Air Forces of pursuing hoaxes and mundane objects.",
+    "The FBI formally discontinued all flying disc investigative activities in October 1947, as stated in a terse bulletin: 'All future reports connected with flying discs should be referred to the Air Forces and no investigative action should be taken by Bureau Agents.'",
+    "Warden John Henry of Montana State Prison reported a May 5, 1947 sighting (predating Arnold) between Ellensburg and Seattle: a silver object at high speed went into a nose dive, then disintegrated leaving a stationary 'pillar of gas' in the sky that did not disperse while witnesses drove 20–30 miles — the Butte field office took no further action due to elapsed time."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "This section documents the direct precursor coordination framework — AAF A-2 and FBI division of labor on disc investigations — that was institutionalized and eventually formalized into Project Sign and later Blue Book."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "Wright Field is referenced in the entities list and was the hub of Army Air Forces intelligence analysis, which received and processed the disc reports coordinated through the memos in this file."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The interagency coordination framework established here — with the FBI withdrawing and the Air Force assuming primacy — laid groundwork for later CIA involvement in UAP oversight beginning in the early 1950s."
+    }
+  ],
+  "related_topics": [
+    "1947 flying disc wave",
+    "FBI-AAF interagency coordination",
+    "eyewitness testimony collection",
+    "Kenneth Arnold incident contemporaneous reports",
+    "early UAP reporting protocols"
+  ]
+}

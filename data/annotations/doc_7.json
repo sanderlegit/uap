@@ -1,0 +1,31 @@
+{
+  "hook": "A USCENTCOM mission report (MISREP) from the 50th Attack Squadron documenting two separate UAP sightings during a 20-hour, 43-minute Joint Surveillance Reconnaissance flight over the Persian Gulf on October 24, 2023, launched from Al Dhafra Air Base (OMAM) under Operation Spartan Shield.",
+  "why_it_matters": "This document is a rare, structured military UAP report submitted directly to AARO through formal USCENTCOM reporting channels, demonstrating the post-UAP Task Force institutional pipeline in action. The two sightings — occurring roughly 40 minutes apart at nearly identical altitudes and headings — are formally logged with quantified estimated velocities (320 MPH and 440 MPH) and a notable thermal cold signature on the first contact, yet both are assessed 'Benign' and 'not under intelligent control,' illustrating the tension between anomalous sensor data and conservative official assessments. The simultaneous Iranian Air Defense guard call warning the aircraft away from the border adds operational geopolitical context: the UAP observations happened during an active multi-INT (SIGINT + IMINT) collection mission in a contested airspace environment.",
+  "key_findings": [
+    "Two discrete UAP incidents were logged at 02:41Z and 03:22Z on October 24, 2023 — both at FL243 (approximately 24,300 feet), on a 280-degree westbound heading at 162 KTAS, suggesting consistent aircraft state across both observations.",
+    "UAP 1 (02:41Z) recorded a thermal cold signature ('THERMAL SHOWED COLD'), meaning the object appeared cooler than the background on infrared sensors — anomalous for a propelled object — with an estimated kinetic velocity of 320 MPH.",
+    "UAP 2 (03:22Z) had an estimated kinetic velocity of 440 MPH; no thermal signature data was recorded, and description, shape, and anomalous characteristics were all listed as unknown.",
+    "At 01:45Z, Iranian Air Defense issued a single professional guard call ordering the aircraft to 'MAINTAIN SAFE DISTANCE FROM BORDER'; the coalition aircraft identified itself as conducting routine operations in international airspace and the calls ceased — the UAP sightings followed roughly an hour later.",
+    "Both UAPs were formally assessed as 'Benign,' 'Solid' in physical state, 'not under intelligent control,' with no effects on persons or equipment and no engagement — all kinetic data (altitude, trajectory, velocity) was marked 'Estimated,' indicating no active sensor lock."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly a MISREP submitted to AARO ('Approved for Release to AARO') and the official description confirms USCENTCOM submitted the associated IR video footage to AARO, placing this directly within AARO's UAP intake pipeline."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "The document was declassified on 12 September 2025 by USCENTCOM Chief of Staff MG Richard A. Harrison and released to AARO, consistent with the congressional mandate requiring AARO to collect and disclose UAP records — the release is downstream of legislative UAP transparency requirements."
+    }
+  ],
+  "related_topics": [
+    "infrared thermal cold signature",
+    "Persian Gulf airspace operations",
+    "Operation Spartan Shield",
+    "Iranian Air Defense intercept",
+    "USCENTCOM UAP reporting pipeline"
+  ]
+}

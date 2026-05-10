@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. military MISREP documenting two separate UAP observations in a single operational period: one solitary object traveling at a steady 40 knots at FL160-170, and two possible UAPs clocked at an estimated 278 knots that subsequently accelerated and turned south.",
+  "why_it_matters": "This report is notable for capturing two distinct UAP events within the same reporting document, allowing direct comparison: one object exhibiting stable, slow flight at altitude and another pair exhibiting dynamic maneuvering. The Secret//REL classification indicates the observations were considered sensitive enough to restrict but shareable with allied partners. The heavy redaction of all five preceding pages under exemption 1.4(a) — protecting intelligence sources, methods, or military plans — means the operational context, unit identity, and sensor platform remain entirely concealed.",
+  "key_findings": [
+    "First observation at 1354Z recorded a single UAP near MGRS coordinate 34SCE7566990098 flying at 40 knots between FL160 and FL170, with speed described as remaining constant.",
+    "Second observation at 2243Z recorded two possible UAPs near MGRS coordinate 35TQK1580995057, with velocity estimated at 278 knots — roughly seven times faster than the first object.",
+    "The second pair of UAPs exhibited active maneuvering: they increased speed and changed direction toward the south, the only behavioral change documented in the report.",
+    "Five of the six pages are substantively redacted under exemption 1.4(a), leaving only the two GENTEXT UAP description bullets as readable content; observer identity is withheld throughout.",
+    "Both observations are marked (S//REL), indicating Secret classification with releasability to foreign partners, consistent with allied military information-sharing frameworks."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The official war.gov description explicitly states that MISREPs of this format are used to report UAP to AARO, making this document a direct product of the AARO reporting pipeline."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The S//REL classification on both GENTEXT observations indicates the data was designated releasable to allied partners, consistent with Five Eyes or similar coalition intelligence-sharing arrangements."
+    }
+  ],
+  "related_topics": [
+    "aerial velocity estimation",
+    "UAP maneuvering behavior",
+    "military grid reference coordinates",
+    "S//REL classification",
+    "MISREP reporting chain"
+  ]
+}

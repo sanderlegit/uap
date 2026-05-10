@@ -1,0 +1,36 @@
+{
+  "hook": "An FBI Detroit field office report documenting the November 7, 1957 interview of Wladyslaw Krasuski, a Polish ex-POW who witnessed a large circular craft rise vertically from a concealed enclosure near a German military installation at Gut Alt Golssen, approximately 30 miles east of Berlin, during 1944.",
+  "why_it_matters": "This document is notable because it represents the FBI actively following up on a civilian tip prompted by a contemporaneous 1957 UFO incident in Texas — suggesting cross-referencing of current events against historical accounts. The witness is assessed on-record as showing 'no indication of mental instability,' and his account includes specific, measurable physical details (craft dimensions, cable gauges, enclosure height) and a corroborating electromagnetic effect (repeated engine stalls) consistent with other mid-century UAP reports. The wartime German military context — a concealed enclosure, SS guards, and large-gauge electrical cables — implies the craft may have been an experimental vehicle under German development.",
+  "key_findings": [
+    "Krasuski described the craft as circular, 75 to 100 yards in diameter, approximately 14 feet high, with dark gray stationary top and bottom sections and a middle section rotating continuously in a blur extending the full circumference — observed from approximately 500 feet.",
+    "The craft was housed in a concealed circular enclosure approximately 50 feet high, screened by a tarpaulin, and was observed to rise vertically, clear the 50-foot wall, then move slowly horizontally until obscured by trees.",
+    "On at least two occasions — once when the noise was first heard and once during the visual observation — the tractor engine stalled and would not restart until the craft departed and the noise ceased, suggesting an electromagnetic effect on ignition systems.",
+    "Uninsulated metal cables, possibly copper, 1.5 to 2 inches in diameter, ran along or near the ground surface (in some places underwater) from a concrete column-like structure across the road to the enclosure, indicating a fixed power infrastructure associated with the craft.",
+    "The FBI Director's urgent cable to Detroit was triggered by Krasuski's letter to Robert Cutler, Special Assistant to President Eisenhower, referencing news coverage of a 1957 'rocket in Texas' causing engine stalls — the FBI explicitly linked the two incidents and ordered immediate interview."
+  ],
+  "document_type": "investigation",
+  "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "The FBI file is classified under 'Unidentified Flying Objects, IS-X' and was generated during the same period as Project Blue Book's active investigations, with the Bureau coordinating directly with the Director's office on civilian UAP reports."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The document was screened by MARA [AF], indicating Air Force involvement in reviewing this FBI file, consistent with Wright-Patterson's role as the repository for UAP-related military records during this era."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The letter was addressed to Robert Cutler, Special Assistant to President Eisenhower, who had documented involvement in NSC-level intelligence coordination, suggesting White House-level awareness of this report."
+    }
+  ],
+  "related_topics": [
+    "WWII German experimental craft",
+    "electromagnetic engine stall",
+    "POW eyewitness testimony",
+    "vertical takeoff vehicle",
+    "1957 Texas UFO incident"
+  ]
+}

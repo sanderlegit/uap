@@ -1,0 +1,26 @@
+{
+  "hook": "MISREP 4592219 documents a 20-hour Air Force ISR mission over the Arabian Gulf on August 8–9, 2020, during which an operator observed one UAP via Full Motion Video at 0726Z near grid 39RWL0; the UAP was described as 'transitting' with no impact to mission.",
+  "why_it_matters": "This report demonstrates the routine integration of UAP reporting into standard military ISR mission documentation — the UAP observation is logged as a single line item alongside Iranian Air Defense contact and SIGINT collection, suggesting operators treat such sightings as operationally noteworthy but not mission-disrupting. The FMV collection was intermittently degraded by dense cloud cover, which the document explicitly flags, raising a documented limitation on what the sensor evidence can establish. The report was cleared for AARO release in March 2026 under USCENTCOM MDR 26-0038 to MDR 26-0046.",
+  "key_findings": [
+    "One UAP was observed at 0726Z on August 8, 2020 via FMV (Full Motion Video), described only as 'transitting' with no further shape, size, speed, or altitude characterization recorded.",
+    "Dense cloud coverage intermittently impacted FMV collection effectiveness during the mission, which the weather section explicitly notes as a limiting factor on sensor data quality.",
+    "The aircraft was hailed on guard frequency by Iranian Air Defense at 1250Z — a separate event from the UAP observation — and the crew responded with a standard call; no mission impact recorded.",
+    "The ISR mission supported NAVCENT and tasked the crew to scan for Iranian vessels, establish pattern of life, monitor UAS activity, and characterize activity outside of ports in the Arabian Gulf, Strait of Hormuz, and Gulf of Oman.",
+    "The originating unit was 482 ATKS (Attack Squadron) under 432 AEW and USCENTCOM's 609th AOC, with the intel gap for the UAP observation marked as 'Not Filled.'"
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document header on every page explicitly states 'Approved for Release to AARO' under USCENTCOM MDR 26-0038 to MDR 26-0046, confirming this MISREP was processed through the AARO disclosure pipeline."
+    }
+  ],
+  "related_topics": [
+    "FMV observation",
+    "Arabian Gulf ISR",
+    "Iranian air defense interaction",
+    "UAP transit sighting",
+    "SIGINT collection"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Navy O-2 pilot from squadron 482ATKS filed this Range Fouler Debrief Form with the Navy's SPEAR reporting system on August 31, 2020 at dusk, documenting radar contact with up to three UAP operating at 118,000 feet altitude in the CENTCOM area of operations.",
+  "why_it_matters": "The reported contact altitude of 118,000 feet places these objects well into the stratosphere, far above the operational ceiling of virtually all conventional aircraft and commercial balloons, making the observation difficult to explain with known technology. The radar track showed one object being overtaken by a second object of the same apparent size and shape but at significantly higher speed, providing a relative performance comparison between distinct objects on the same sensor display. The document demonstrates the Navy's standardized SPEAR pipeline for sanitizing and routing UAP contact reports for centralized analysis, a process that predates and feeds into AARO.",
+  "key_findings": [
+    "Contact altitude recorded as 118,000 feet — well above conventional aircraft ceilings — with altitude described as constant throughout the observation.",
+    "The pilot observed an initial object fly through the radar screen, which was then overtaken by a second object of 'same size and shape but much higher speed,' indicating differential performance between two distinct radar contacts.",
+    "At one point, three separate objects appeared simultaneously on the radar display, described as 'moving amongst each other.'",
+    "Contact was moving on a heading of 150 degrees at 230 (knots, implied), and the 'Other Shape' checkbox was selected with no conventional shape category matching the contact.",
+    "The form was submitted to SPEAR, which explicitly sanitizes all identifying aircrew and squadron information before analysis, indicating an institutionalized anonymized reporting protocol was in use as of August 2020."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This standardized SPEAR debrief form is precisely the type of military UAP contact report that flows into AARO's centralized database, and the USCENTCOM MOR number (26-0028) indicates it was processed through official military reporting chains before public release."
+    },
+    {
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "MITRE has provided technical analytical support for UAP sensor data collected through military reporting pipelines like SPEAR, though the document contains no direct MITRE reference."
+    }
+  ],
+  "related_topics": [
+    "radar tracking",
+    "stratospheric altitude",
+    "multiple simultaneous contacts",
+    "Navy SPEAR reporting",
+    "CENTCOM UAP"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "hook": "An FBI-submitted monochrome still image, derived from a U.S. government imaging system, shows a dark circular object offset just below and right of a central crosshair reticle against a mottled background — submitted to AARO with the event date and location withheld.",
+  "why_it_matters": "This image represents one of the few cases in the PURSUE release where the FBI directly submitted sensor imagery to AARO, rather than a written report, indicating the bureau operates or has access to government imaging platforms capable of capturing UAP. The absence of an accompanying mission report and the withholding of both date and location are unusual even by redacted-disclosure standards, limiting any contextual analysis. The operator's explicit inability to positively identify the object satisfies the definitional threshold for UAP reporting under current AARO intake criteria.",
+  "key_findings": [
+    "The image originates from a U.S. government imaging system operated or accessed by the FBI, though the specific system type is not disclosed.",
+    "The object appears as a dark, circular shape positioned just below and to the right of a central crosshair reticle, suggesting the imaging system uses a targeting or tracking overlay.",
+    "The monochrome format and crosshair reticle are consistent with electro-optical or infrared sensor systems used in surveillance or aerial reconnaissance contexts.",
+    "Both the date and location of the event were deliberately not provided to AARO, representing a higher-than-usual degree of information restriction even relative to other redacted submissions.",
+    "No accompanying mission report was submitted, leaving the operational context — including altitude, platform, and circumstances — entirely unknown."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This image was formally submitted by the FBI to AARO as part of the PURSUE disclosure process, making AARO the direct recipient and cataloguing authority."
+    },
+    {
+      "node_id": "cia_dst",
+      "relevance": "low",
+      "reasoning": "The presence of a crosshair reticle on a government imaging system is consistent with intelligence community sensor platforms, though no agency beyond FBI is identified in the submission."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Circular object morphology in government sensor imagery has historical precedent in cases processed through Wright-Patterson's technical analysis infrastructure, though no direct connection is stated."
+    }
+  ],
+  "related_topics": [
+    "circular UAP morphology",
+    "government sensor imagery",
+    "FBI UAP reporting",
+    "crosshair reticle imaging systems",
+    "redacted event metadata"
+  ]
+}

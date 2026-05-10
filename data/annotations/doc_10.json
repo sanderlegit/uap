@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Air Force Special Operations gunship crew flying armed overwatch over Ayn al-Asad Airbase, Iraq, reported observing an unidentified object cross their MX-20 and MX-25 infrared sensor feeds at high speed immediately after releasing an AGM-176 Griffin missile — creating a lens flare consistent with a significant heat source.",
+  "why_it_matters": "This report is notable because it documents a UAP sighting that occurred during an active weapons employment event, with the object appearing between munition release and impact in a restricted military operating zone. The document explicitly notes that it is unknown whether a secondary object detached from the primary UAP before it left the sensor field of view — a formally recorded anomalous observation rather than a simple misidentification note. It also illustrates AARO's active intake pipeline from USCENTCOM operational units, with a signed declassification by the USCENTCOM Chief of Staff.",
+  "key_findings": [
+    "The UAP was observed at 202027Z SEP 2024 while the aircraft (flying at FL130, 170 KIAS, heading 096) had just fired an AGM-176 Griffin missile; the object flew through the sensor field of view between munition release and impact.",
+    "Both the MX-20 and MX-25 infrared sensors registered the object as a lens flare 'indicating a significant heat signature coming from the object,' and the UAP Physical State was formally recorded as 'Solid.'",
+    "The crew's reporting noted it is unknown whether a secondary object detached from the primary UAP immediately before it left the sensor field of view — an anomalous behavior recorded in the official UAP section.",
+    "No parties reported an additional aircraft in the restricted operating zone (ROZ RAINDROP), no interrogation of the UAP was conducted, and no effects on personnel or equipment were observed; the observer's overall assessment was 'Benign.'",
+    "The UAP's path of movement was assessed as 'predetermined and not in response to' the crew's detection, and the aircraft did not reobserve the UAP after it exited the sensor field."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly 'Approved for Release to AARO' and carries an AARO-assigned UAP Event Serial Number (202027ZSEP2024-CENTCOM), placing it directly within AARO's active UAP intake and reporting pipeline."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The document is classified SECRET//REL TO USA, FVEY, meaning it was authorized for sharing with all Five Eyes partner nations, indicating the sighting was considered significant enough for allied intelligence distribution."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "AARO, which received this report, has a statutory mandate to report UAP findings to Congress, making this document part of the evidentiary record that feeds legislative oversight of the UAP program."
+    }
+  ],
+  "related_topics": [
+    "infrared sensor artifact",
+    "weapons employment UAP sighting",
+    "AC-130 gunship",
+    "Operation Inherent Resolve",
+    "AARO intake pipeline"
+  ]
+}

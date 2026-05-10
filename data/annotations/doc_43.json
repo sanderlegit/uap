@@ -1,0 +1,31 @@
+{
+  "hook": "An FBI-submitted monochrome still image captured by a U.S. government system shows a dark, circular object centered within a crosshair reticle against a textured, mottled background — with the date, location, and mission context fully withheld.",
+  "why_it_matters": "This photograph represents one of the few publicly released UAP images formally submitted by the FBI to AARO under the PURSUE disclosure process, making it a rare artifact of the bureau's direct participation in the government's UAP reporting framework. The heavy suppression of context — no date, no location, no mission report, and imagery altered by redaction before submission — limits independent verification but confirms the FBI operates sensor platforms capable of capturing such imagery. The operator's inability to positively identify the object is the only on-record analytical judgment associated with this event.",
+  "key_findings": [
+    "The image originates from a U.S. government system operated by the FBI, though the specific platform type is not disclosed.",
+    "The object appears dark and circular, centered within a crosshair reticle, consistent with optically tracked or sensor-locked imagery.",
+    "The background texture suggests the image was captured looking down at a varied landscape or surface, indicating a possible airborne or elevated sensor position.",
+    "The image was redacted prior to submission to AARO, meaning the public version does not represent the original captured imagery.",
+    "No mission report, date, or location was provided alongside the submission, making independent context reconstruction impossible from available information."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This image was formally submitted by the FBI to AARO as part of the official UAP reporting process, making AARO the direct institutional recipient and custodian of this record."
+    },
+    {
+      "node_id": "cia_oga",
+      "relevance": "low",
+      "reasoning": "The unspecified 'U.S. government system' that captured the image could involve interagency sensor infrastructure, though no CIA connection is stated in the available metadata."
+    }
+  ],
+  "related_topics": [
+    "optical imagery UAP",
+    "FBI UAP reporting",
+    "crosshair reticle tracking",
+    "redacted government imagery",
+    "circular aerial object"
+  ]
+}

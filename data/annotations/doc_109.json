@@ -1,0 +1,31 @@
+{
+  "hook": "Page 2 of a 2-page FBI FD-302 interview report documenting a September 2023 UAP encounter at a U.S. test site, capturing witness observations of a constant-intensity bright light and the psychological aftermath experienced by the primary witness.",
+  "why_it_matters": "The FBI's use of its standard criminal interview form (FD-302) to document this sighting reflects the bureau's formal engagement with UAP reporting under the current disclosure framework. The test site setting is significant: a witness noted the airspace was restricted for drone operations at the time, yet the object's behavior — stationary, constant size, constant light intensity — was inconsistent with expected drone activity. The documented psychological effects on the witness, including disturbed sleep and anxiety, are consistent with patterns reported in other close-encounter accounts and suggest the sighting had measurable personal impact.",
+  "key_findings": [
+    "The object maintained constant size and constant light intensity throughout the entire observation period, with no change noted.",
+    "The object was not visible until the witnesses crossed a small bridge through the gate, suggesting a limited line-of-sight window or sudden appearance.",
+    "No electromagnetic interference with the witnesses' vehicles was detected.",
+    "A witness in a second vehicle attempted to direct another person's attention to the object but was unsuccessful.",
+    "The primary witness experienced a storm that knocked out hotel TV service that night, followed by disturbed sleep and 'weird dreams' for two nights after the sighting — and checked other hotel TVs to confirm the outage was not isolated to his room."
+  ],
+  "document_type": "investigation",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This FD-302 is part of FBI's formal UAP witness interview program, directly feeding into the post-2022 disclosure infrastructure that AARO coordinates across agencies."
+    },
+    {
+      "node_id": "area51",
+      "relevance": "medium",
+      "reasoning": "The sighting occurred at a U.S. test site with active drone testing and restricted airspace, consistent with the class of sensitive military test ranges where UAP encounters have historically been documented."
+    }
+  ],
+  "related_topics": [
+    "witness testimony",
+    "restricted airspace",
+    "drone test site",
+    "psychological effects",
+    "constant luminosity object"
+  ]
+}

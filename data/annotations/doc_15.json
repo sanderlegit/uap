@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Navy aircrewman's standardized Range Fouler Debrief Form documenting an ISR mission over the Persian Gulf on May 14, 2020, in which a solid white, round object flew through the ATFLIR sensor's field of view, made erratic movements above the water surface, and was intermittently tracked on radar before being lost due to poor track placement.",
+  "why_it_matters": "This form is the primary aircrew-generated source document underlying the widely-circulated USCENTCOM video submission to AARO, providing the first-person crew account that the official video description alone cannot. The form's SPEAR sanitization process—which strips all identifying aircrew and squadron information before analysis—illustrates the institutional chain from tactical observation to formal UAP disclosure. The intermittent radar trackfile and the crew's inability to achieve ATFLIR autotrack lock add sensor-corroboration context that the video footage alone does not convey.",
+  "key_findings": [
+    "The object was detected at approximately 20,000 ft altitude during a night ISR mission (ULTV/Black Hot/Lin sensor mode), with the aircraft at 22,000 ft, placing the contact roughly 2,000 ft below the observing platform.",
+    "The crew selected 'Round' as the object's shape on the standardized checklist; no boxes were checked for metallic, translucent, opaque, reflective, apparent propulsion, moving parts, or markings.",
+    "Radar was equipped and did detect the contact, but the trackfile was only 'Intermittent'—not a stable lock—and neither AIM-9X self-track nor ATFLIR autotrack was achieved.",
+    "The narrative states the crew temporarily lost the object and then re-acquired it, eventually obtaining 4x zoom before losing it again due to 'poor track placement,' with the sensor operator continuously maneuvering to maintain visual contact.",
+    "Contact coordinates (approx. 28°31'N, 49°52'E) place the event in the northern Persian Gulf near the Kuwait/Iran maritime border, within USCENTCOM's area of responsibility; the form was declassified by the USCENTCOM Chief of Staff and approved for release to AARO on January 26, 2026."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The form is explicitly stamped 'Approved for Release to AARO' and the official description confirms USCENTCOM submitted both this report and the associated video directly to AARO as part of the formal UAP reporting pipeline."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "USCENTCOM UAP submissions to AARO feed directly into the congressionally mandated UAP reporting framework established by the FY2022 NDAA, making this debrief form part of the disclosure record that Congress receives."
+    }
+  ],
+  "related_topics": [
+    "ATFLIR sensor tracking",
+    "pilot/aircrew testimony",
+    "infrared UAP observation",
+    "Persian Gulf incidents",
+    "radar intermittent trackfile"
+  ]
+}

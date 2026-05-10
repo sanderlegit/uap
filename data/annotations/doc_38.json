@@ -1,0 +1,36 @@
+{
+  "hook": "A U.S. Air Force ISR crew returning to base from an Operation INHERENT RESOLVE surveillance mission over Syria observed a solid, spherical UAP traveling at a consistent ~424 knots for at least 7 minutes before the object dropped altitude, passed their aircraft safely, and flew out of range — all with no emissions, no RF signature, and no effect on personnel or equipment.",
+  "why_it_matters": "This report is notable because the observer-reported speed of ~424 knots sustained over 7+ minutes without any detected propulsion signature or RF emissions is the primary anomalous data point — the document explicitly flags it under 'Advanced Capabilities And/Or Materials: YES.' The report was produced within the standardized AARO MISREP framework, demonstrating that the military's UAP reporting pipeline is capturing ISR crew observations in active combat theaters. The 'HC' qualifier in the GENTEXT (likely 'High Confidence') and the structured event serial number suggest this was treated as a reportable incident under existing protocols despite the benign observer assessment.",
+  "key_findings": [
+    "At 2153Z on November 9, 2023, while returning to base, the aircrews observed one probable UAP 'shaped as a bouncy ball' approaching from the south at near co-altitude before dropping altitude and passing their aircraft safely, consistently maintaining ~424 knots for at least 7 minutes.",
+    "The UAP section marks 'Advanced Capabilities And/Or Materials: YES' specifically citing the sustained ~424KN speed and spherical shape, while simultaneously recording UAP Maneuverability Observations as 'NONE' and UAP Under Intelligent Control as 'NO' — an internal tension in the form's characterizations.",
+    "No interrogation of the UAP was conducted (sensors not directed at it), no emissions were detected, RF frequency is listed as 'NONE,' and the object had no effects on the aircrew, aircraft, or equipment; the observer assessed it as 'Benign.'",
+    "The primary mission was multi-sortie ISR under Operation INHERENT RESOLVE targeting a VEO-associated vehicle and person of interest, with FMV and SIGINT collection; the UAP encounter occurred only during the RTB phase after ISR tasking was complete.",
+    "The document carries both SECRET//NOFORN and SECRET//REL TO USA, FVEY classification markings, indicating the mission narrative was shared with Five Eyes partners, while the UAP section itself is marked strictly NOFORN."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and uses AARO's standardized MISREP UAP reporting format, including the structured UAP event serial number 092153ZNOV2023-CENTCOM."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "The mission narrative sections carry 'REL TO USA, FVEY' classification, meaning the ISR operational content was shared with Five Eyes partners, though the UAP-specific section is restricted to NOFORN."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "This document was released as part of the PURSUE public disclosure initiative, placing it within the broader congressional transparency mandate for UAP records, though the document itself contains no direct congressional reference."
+    }
+  ],
+  "related_topics": [
+    "airborne UAP observation",
+    "spherical UAP morphology",
+    "Operation INHERENT RESOLVE",
+    "ISR platform encounter",
+    "Syria airspace"
+  ]
+}

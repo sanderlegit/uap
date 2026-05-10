@@ -1,0 +1,31 @@
+{
+  "hook": "A monochrome still image captured by a U.S. military optical system showing a small, dark, circular object in the upper right quadrant against an indistinct mountain or cloud background, submitted by the FBI to AARO as a UAP report with no accompanying mission report.",
+  "why_it_matters": "This submission represents the FBI acting as an intermediary between a military sensor operator and AARO, the designated UAP resolution body — illustrating the multi-agency reporting pipeline established under recent disclosure legislation. The operator's explicit inability to positively identify the object, combined with the absence of a mission report, limits resolution potential and leaves the sighting formally unresolved. The manifest's note that the image date is incorrect due to unconfigured system clock raises basic data integrity questions about military sensor metadata.",
+  "key_findings": [
+    "The image originated from an unspecified U.S. military system and was submitted to AARO by the FBI, indicating cross-agency UAP reporting is active as of 2025.",
+    "The original imagery was altered with redactions before submission to AARO, meaning the version in the public release is not the raw sensor output.",
+    "No accompanying mission report was provided, removing critical contextual data such as platform type, altitude, speed, and sensor settings.",
+    "The operator on record reported being unable to positively identify the UAP, making this an officially unresolved case.",
+    "The image timestamp is acknowledged as incorrect due to an unconfigured system clock, undermining the reliability of any time-based analysis."
+  ],
+  "document_type": "photo",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "The document was formally submitted by the FBI to AARO as part of the congressionally mandated UAP reporting and resolution process."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The submission to AARO reflects the reporting infrastructure created by recent congressional UAP disclosure legislation, and the public release via war.gov is a direct product of those mandates."
+    }
+  ],
+  "related_topics": [
+    "military optical sensor imagery",
+    "circular UAP morphology",
+    "AARO submission pipeline",
+    "FBI UAP reporting",
+    "sensor metadata integrity"
+  ]
+}

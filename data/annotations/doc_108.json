@@ -1,0 +1,36 @@
+{
+  "hook": "An FBI FD-302 documents a September 2023 interview with a US test-site worker who observed a cigar-shaped, metallic bronze, completely silent object hovering near a classified range while she and contractors were en route to conduct restricted tests — the witness had 15 years of military aircraft familiarity and immediately ruled out conventional aircraft or drones.",
+  "why_it_matters": "This report is notable because the witness is a credentialed defense professional with 15 years of exposure to US military aircraft and drones, giving her testimony unusual baseline credibility. The sighting occurred at a US test site with active airspace restrictions she herself had imposed, making misidentification of a military asset less plausible than in civilian cases. The gate malfunction immediately preceding the sighting — three failed attempts followed by full operation — is documented as anomalous and temporally proximate, though the agent records it without drawing a causal connection.",
+  "key_findings": [
+    "The object was described as 'metallic bronze in color' — notably, the war.gov manifest describes it as 'metallic/gray,' a discrepancy between the source document and its official summary.",
+    "The object was cigar-shaped, roughly 2–3 Blackhawk helicopters in length, with an intense diamond-white light with an apparent ring located on its eastern end; it was completely silent and left no contrails in a clear sky.",
+    "The witness observed the object for only 5–10 seconds before it 'just disappeared' — no fading, no departure trajectory, simply gone — consistent with the 'cloaking' behavior tag in the manifest.",
+    "A gate malfunction occurred immediately before the sighting: the electronic gate failed to open fully on three consecutive attempts before working on the fourth; no prior or subsequent operational issues were recorded with that gate.",
+    "The witness stated she would not have filed a report had she been the sole observer, and she subsequently faced mockery from co-workers — the report explicitly documents social deterrence as a factor in UAP underreporting."
+  ],
+  "document_type": "investigation",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This FBI FD-302 is a first-hand witness interview collected through official UAP reporting channels at a US government test site, the type of report AARO was established to centralize and assess."
+    },
+    {
+      "node_id": "area51",
+      "relevance": "medium",
+      "reasoning": "The sighting occurred at a classified US test range with active airspace restrictions and defense contractors conducting a special project — the operational profile matches restricted test site environments like those in the Nevada Test and Training Range complex."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson is historically the repository for UAP physical evidence and Air Force investigations; this FBI-collected report at a test site falls within that investigative lineage, though no direct institutional connection is stated in the document."
+    }
+  ],
+  "related_topics": [
+    "test site sighting",
+    "witness credibility",
+    "electromagnetic interference",
+    "cigar-shaped UAP",
+    "instantaneous disappearance"
+  ]
+}

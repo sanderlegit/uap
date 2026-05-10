@@ -1,0 +1,31 @@
+{
+  "hook": "A U.S. Navy O-3 aviator from HSM-73 filed this Range Fouler Debrief Form after observing three unidentified small air contacts during nighttime operations over the North Arabian Sea on August 24, 2020 — reporting no radar lock, no IFF response, and no electronic signatures on any of the objects.",
+  "why_it_matters": "The report is notable for the combination of negative sensor returns across multiple systems (radar, ES, IFF) with a positive visual observation, suggesting the contacts were not conventional aircraft operating transponders. The sudden appearance of two additional contacts to the east after the initial contact passed behind a cloud introduces an unresolved question of origin that the form's checkbox fields and free-text narrative cannot explain. This report was processed through the Navy's SPEAR sanitization system and released via USCENTCOM MOR, placing it within the formal institutional pipeline for UAP data collection active during the UAPTF-to-AARO transition period.",
+  "key_findings": [
+    "Three unidentified small air contacts were observed visually at night; all returned negative results for electronic support (ES), radar trackfile, and IFF — meaning no transponder and no stable radar return despite radar being aboard.",
+    "The observer initially tracked one contact before losing it behind a cloud; upon reacquiring, two additional contacts had appeared due east of the first contact's last known position.",
+    "All three contacts appeared to maintain consistent relative course, speed, and altitude throughout the observation, suggesting coordinated or stable flight behavior despite unknown propulsion.",
+    "Visual shape characteristics marked on the standardized form include 'Round' and 'Wings/Airframe' as checked, indicating the observer perceived structured form rather than a balloon or natural phenomenon.",
+    "The incident occurred during an LFE (Large Force Exercise), at approximately 00:04 Zulu, placing it in a controlled military operating area where airspace deconfliction would have been active — making an unauthorized manned aircraft incursion operationally significant."
+  ],
+  "document_type": "mission_report",
+  "legacy_program_connections": [
+    {
+      "node_id": "aaro",
+      "relevance": "high",
+      "reasoning": "This 2020 report was submitted through the Navy SPEAR system and released via USCENTCOM MOR, feeding directly into the DoD UAP reporting infrastructure that AARO inherited from UAPTF."
+    },
+    {
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "MITRE provides analytical support to DoD UAP data standardization efforts; the structured checkbox format of the Range Fouler Debrief Form reflects the kind of normalized data collection MITRE-affiliated work helped design."
+    }
+  ],
+  "related_topics": [
+    "radar negative return",
+    "IFF non-response",
+    "nighttime visual observation",
+    "Arabian Sea naval operations",
+    "multi-contact formation behavior"
+  ]
+}

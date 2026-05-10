@@ -1,0 +1,36 @@
+{
+  "hook": "The 30th Space Wing's official launch registry documents every major Vandenberg AFB launch operation from the first flight on December 16, 1958 through February 2000, compiled by historian Jeffrey Geiger as an administrative reference distributed to military commands, NASA, and defense contractors.",
+  "why_it_matters": "This document contains no UAP reports or anomaly investigations — it is a purely administrative historical record. Its inclusion in the PURSUE UAP release is most likely contextual: Vandenberg AFB has been a reported location of anomalous object observations in proximity to missile launches, and this registry establishes the complete operational timeline and infrastructure that would be needed to cross-reference any such incident reports against specific launch events. The document also reveals the full scope of classified and unclassified launch activity at the site across four decades.",
+  "key_findings": [
+    "The registry covers launches by program type across six major systems: Atlas ICBM, Minuteman ICBM, Titan ICBM/Space, Thor IRBM/Space, Peacekeeper, and Scout/Space Shuttle, with separate annual summary matrices organized by booster and by command.",
+    "As of February 3, 2000, the document records 12 silo sites as currently active and an unspecified number as decommissioned, stripped, or destroyed.",
+    "The distribution list spans military commands (HQ AFSPC, HQ USSPACECOM, 45th SW, SMC), NASA HQ, and major defense contractors including Boeing, TRW, Aerospace Corporation, Lockheed Martin, ITT Federal Services, and Jet Propulsion Laboratory.",
+    "The glossary documents over 80 program abbreviations, revealing the breadth of operations: from ballistic missile reentry test programs (ABRES, BMRS, RSLP) to science satellites (COBE, IRAS, SAMPEX) to operational military systems (DMSP, NAVSTAR, GLCM).",
+    "Launch facility types are formally defined as SOFT (exposed above-ground), SEMI-HARD (ground-level concrete housing), HARD (underground concrete housing), SILO, SILO-LIFT, and COFFIN-TYPE, providing technical context for infrastructure that was active during the full UAP reporting era."
+  ],
+  "document_type": "historical_file",
+  "legacy_program_connections": [
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "HQ AFMC/ORS appears in the distribution list; AFMC (Air Force Materiel Command) is headquartered at Wright-Patterson and oversaw the missile and space programs documented throughout this registry."
+    },
+    {
+      "node_id": "lockheed",
+      "relevance": "high",
+      "reasoning": "Lockheed Martin is explicitly named in the distribution list and in the glossary as the provider of the LLV-1/Athena launch vehicle, making it a primary contractor for launches documented in this registry."
+    },
+    {
+      "node_id": "nro",
+      "relevance": "low",
+      "reasoning": "Vandenberg's SLC-4E and SLC-4W Titan launch pads were the primary west coast launch sites for NRO reconnaissance satellites throughout this period, though the NRO is not named anywhere in the visible document text."
+    }
+  ],
+  "related_topics": [
+    "Vandenberg AFB launch history",
+    "ICBM test operations",
+    "space launch infrastructure",
+    "missile reentry programs",
+    "30th Space Wing"
+  ]
+}
