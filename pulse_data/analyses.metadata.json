@@ -1,0 +1,19 @@
+{
+    "name": "analyses",
+    "columns": [
+        "id",
+        "item_id",
+        "entities",
+        "theories",
+        "relationships",
+        "credibility_score",
+        "novelty_score",
+        "relevance_score",
+        "summary",
+        "topics",
+        "corpus_connections",
+        "analyzed_at",
+        "model"
+    ],
+    "schema": "CREATE TABLE analyses (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    item_id INTEGER NOT NULL UNIQUE,\n    entities TEXT DEFAULT '[]',\n    theories TEXT DEFAULT '[]',\n    relationships TEXT DEFAULT '[]',\n    credibility_score REAL,\n    novelty_score REAL,\n    relevance_score REAL,\n    summary TEXT,\n    topics TEXT DEFAULT '[]',\n    corpus_connections TEXT DEFAULT '[]',\n    analyzed_at TEXT DEFAULT (datetime('now')),\n    model TEXT,\n    FOREIGN KEY (item_id) REFERENCES items(id)\n)"
+}

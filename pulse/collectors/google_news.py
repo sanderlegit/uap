@@ -1,14 +1,38 @@
 """Google News RSS collector — free, no auth needed."""
 
+from __future__ import annotations
+
+import re
+import time
 import urllib.parse
 import feedparser
 from pulse.db import get_or_create_source, insert_item, start_run, complete_run
 from pulse.config import GOOGLE_NEWS_QUERIES
 
+try:
+    from newspaper import Article
+    HAS_NEWSPAPER = True
+except ImportError:
+    HAS_NEWSPAPER = False
 
-def build_google_news_url(query: str) -> str:
-    encoded = urllib.parse.quote(query)
-    return f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
+
+def extract_article_text(url: str) -> tuple[str | None, str | None]:
+    """Extract full text and author from article URL via newspaper4k."""
+    if not HAS_NEWSPAPER:
+        return None, None
+    try:
+        article = Article(url)
+        article.download()
+        article.parse()
+        authors = ", ".join(article.authors) if article.authors else None
+        return article.text, authors
+    except Exception:
+        return None, None
+
+
+def strip_html(text: str) -> str:
+    """Strip HTML tags from a string."""
+    return re.sub(r"<[^>]+>", "", text).strip()
 
 
 def collect_query(query: str) -> tuple[int, int]:
@@ -33,19 +57,35 @@ def collect_query(query: str) -> tuple[int, int]:
             summary = entry.get("summary", "")
             source_outlet = entry.get("source", {}).get("title", "")
 
+            # Try to extract full article text
+            full_text, author = extract_article_text(link)
+
+            if full_text:
+                content = full_text
+                content_quality = "full_text"
+            elif summary:
+                content = strip_html(summary)
+                content_quality = "extraction_failed" if HAS_NEWSPAPER else "summary_only"
+            else:
+                content = ""
+                content_quality = "summary_only"
+
             item_id = insert_item(
                 source_id=source_id,
                 external_id=link,
                 platform="google_news",
                 title=title,
-                author=source_outlet,
-                content=summary,
+                author=author or source_outlet,
+                content=content,
                 url=link,
                 published_at=published,
                 metadata={"query": query, "source_outlet": source_outlet},
+                content_quality=content_quality,
             )
             if item_id:
                 new_count += 1
+
+            time.sleep(1)
 
         complete_run(run_id, found, new_count)
         return found, new_count
@@ -53,6 +93,11 @@ def collect_query(query: str) -> tuple[int, int]:
     except Exception as e:
         complete_run(run_id, 0, 0, error=str(e))
         return 0, 0
+
+
+def build_google_news_url(query: str) -> str:
+    encoded = urllib.parse.quote(query)
+    return f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
 
 
 def collect_all():

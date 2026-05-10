@@ -4,20 +4,30 @@ Usage:
     python -m pulse collect          Collect from all sources once
     python -m pulse collect --rss    Collect from RSS feeds only
     python -m pulse analyze          Analyze unprocessed items
+    python -m pulse bridge           Build entity bridge (corpus cross-references)
     python -m pulse export           Export to website JSON
-    python -m pulse run              Collect + analyze + export (one shot)
+    python -m pulse run              Collect + analyze + bridge + export (one shot)
     python -m pulse serve            Run scheduler (collect every 6h, analyze every 1h)
     python -m pulse status           Show database stats
+    python -m pulse dump             Dump DB to NDJSON via sqlite-diffable
+    python -m pulse load             Load DB from NDJSON via sqlite-diffable
 """
+
+from __future__ import annotations
 
 import argparse
 import signal
+import subprocess
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
 
-from pulse.db import init_db, get_stats
+from pulse.db import init_db, get_stats, DB_PATH
 from pulse.config import COLLECTION_INTERVAL_HOURS, ANALYSIS_INTERVAL_HOURS
+
+SQLITE_DIFFABLE = "/Users/sander/Library/Python/3.9/bin/sqlite-diffable"
+PULSE_DATA_DIR = Path(__file__).parent.parent / "pulse_data"
 
 
 def cmd_collect(args):
@@ -38,11 +48,19 @@ def cmd_analyze(args):
     analyze_batch(limit=args.limit)
 
 
+def cmd_bridge(args):
+    """Build entity bridge (corpus cross-references)."""
+    init_db()
+    from pulse.entity_bridge import build_entity_bridge
+    build_entity_bridge()
+
+
 def cmd_export(args):
     """Export pulse data to website JSON."""
     init_db()
     from pulse.export import export_pulse_json
     export_pulse_json()
+    _auto_dump()
 
 
 def cmd_run(args):
@@ -65,9 +83,19 @@ def cmd_run(args):
     from pulse.analyzer import analyze_batch
     analyze_batch(limit=args.limit)
 
+    print("\n--- Entity Bridge ---")
+    from pulse.entity_bridge import build_entity_bridge
+    try:
+        build_entity_bridge()
+    except Exception as e:
+        print(f"[Entity Bridge] Error: {e}")
+
     print("\n--- Export ---")
     from pulse.export import export_pulse_json
     export_pulse_json()
+
+    print("\n--- Dump ---")
+    _auto_dump()
 
     print("\n" + "=" * 60)
     print("Pulse run complete")
@@ -148,6 +176,63 @@ def cmd_status(args):
               f"+{run['items_new'] or 0} new  {run['started_at'] or ''}{error_msg}")
 
 
+def _auto_dump():
+    """Auto-dump DB to NDJSON so the diffable export stays fresh."""
+    try:
+        result = subprocess.run(
+            [SQLITE_DIFFABLE, "dump", str(DB_PATH), str(PULSE_DATA_DIR), "--all"],
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+        if result.returncode == 0:
+            print("[dump] sqlite-diffable dump complete")
+        else:
+            print(f"[dump] sqlite-diffable error: {result.stderr.strip()}")
+    except FileNotFoundError:
+        print("[dump] sqlite-diffable not found, skipping auto-dump")
+    except Exception as e:
+        print(f"[dump] auto-dump failed: {e}")
+
+
+def cmd_dump(args):
+    """Dump pulse.db to NDJSON via sqlite-diffable."""
+    init_db()
+    print(f"Dumping {DB_PATH} -> {PULSE_DATA_DIR}/")
+    result = subprocess.run(
+        [SQLITE_DIFFABLE, "dump", str(DB_PATH), str(PULSE_DATA_DIR), "--all"],
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(f"Error: {result.stderr.strip()}", file=sys.stderr)
+        sys.exit(1)
+    print("Done.")
+
+
+def cmd_load(args):
+    """Load pulse.db from NDJSON via sqlite-diffable."""
+    if not PULSE_DATA_DIR.exists():
+        print(f"Error: {PULSE_DATA_DIR} does not exist", file=sys.stderr)
+        sys.exit(1)
+    print(f"Loading {PULSE_DATA_DIR}/ -> {DB_PATH}")
+    result = subprocess.run(
+        [SQLITE_DIFFABLE, "load", str(DB_PATH), str(PULSE_DATA_DIR), "--replace"],
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.returncode != 0:
+        print(f"Error: {result.stderr.strip()}", file=sys.stderr)
+        sys.exit(1)
+    print("Done.")
+
+
 def _get_collectors(args):
     """Build list of (name, fn) collectors based on CLI flags."""
     all_collectors = []
@@ -210,6 +295,9 @@ def main():
     p_analyze.add_argument("--limit", type=int, default=20, help="Max items to analyze")
     p_analyze.set_defaults(func=cmd_analyze)
 
+    p_bridge = subparsers.add_parser("bridge", help="Build entity bridge (corpus cross-refs)")
+    p_bridge.set_defaults(func=cmd_bridge)
+
     p_export = subparsers.add_parser("export", help="Export to website JSON")
     p_export.set_defaults(func=cmd_export)
 
@@ -225,6 +313,12 @@ def main():
 
     p_status = subparsers.add_parser("status", help="Show database stats")
     p_status.set_defaults(func=cmd_status)
+
+    p_dump = subparsers.add_parser("dump", help="Dump DB to NDJSON (sqlite-diffable)")
+    p_dump.set_defaults(func=cmd_dump)
+
+    p_load = subparsers.add_parser("load", help="Load DB from NDJSON (sqlite-diffable)")
+    p_load.set_defaults(func=cmd_load)
 
     args = parser.parse_args()
     if not args.command:

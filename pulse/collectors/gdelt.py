@@ -8,9 +8,29 @@ import requests
 from pulse.db import get_or_create_source, insert_item, start_run, complete_run
 from pulse.config import GDELT_QUERIES
 
+try:
+    from newspaper import Article
+    HAS_NEWSPAPER = True
+except ImportError:
+    HAS_NEWSPAPER = False
+
 GDELT_API = "https://api.gdeltproject.org/api/v2/doc/doc"
 HEADERS = {"User-Agent": "UAP-Pulse-Research/1.0"}
 REQUEST_DELAY = 8
+
+
+def extract_article_text(url: str) -> tuple[str | None, str | None]:
+    """Extract full text and author from article URL via newspaper4k."""
+    if not HAS_NEWSPAPER:
+        return None, None
+    try:
+        article = Article(url)
+        article.download()
+        article.parse()
+        authors = ", ".join(article.authors) if article.authors else None
+        return article.text, authors
+    except Exception:
+        return None, None
 
 
 def collect_query(query: str, max_records: int = 75) -> tuple[int, int]:
@@ -52,13 +72,23 @@ def collect_query(query: str, max_records: int = 75) -> tuple[int, int]:
             if not article_url:
                 continue
 
+            # Try to extract full article text from the news site
+            full_text, author = extract_article_text(article_url)
+
+            if full_text:
+                content = full_text
+                content_quality = "full_text"
+            else:
+                content = art.get("title", "")
+                content_quality = "extraction_failed" if HAS_NEWSPAPER else "title_only"
+
             item_id = insert_item(
                 source_id=source_id,
                 external_id=article_url,
                 platform="gdelt",
                 title=art.get("title"),
-                author=art.get("domain"),
-                content=art.get("title", ""),
+                author=author or art.get("domain"),
+                content=content,
                 url=article_url,
                 published_at=art.get("seendate"),
                 metadata={
@@ -67,9 +97,12 @@ def collect_query(query: str, max_records: int = 75) -> tuple[int, int]:
                     "source_country": art.get("sourcecountry"),
                     "social_image": art.get("socialimage"),
                 },
+                content_quality=content_quality,
             )
             if item_id:
                 new_count += 1
+
+            time.sleep(1)
 
         complete_run(run_id, found, new_count)
         return found, new_count

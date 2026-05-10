@@ -132,6 +132,18 @@ export function usePulse() {
   return data
 }
 
+export function useVocabulary() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/vocabulary.json').then(setData) }, [])
+  return data
+}
+
+export function useDocVocabScores() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/doc_vocab_scores.json').then(setData) }, [])
+  return data
+}
+
 export function agencyClass(agency) {
   if (!agency) return 'agency-dow'
   const lower = agency.toLowerCase()

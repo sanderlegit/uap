@@ -18,23 +18,26 @@ RSS_FEEDS = [
         "credibility": "high",
     },
     {
-        "name": "The War Zone",
-        "url": "https://www.twz.com/feed",
-        "credibility": "high",
-    },
-    {
         "name": "The Guardian — UFO",
         "url": "https://www.theguardian.com/world/ufos/rss",
         "credibility": "high",
     },
+    {
+        "name": "The Black Vault",
+        "url": "https://www.theblackvault.com/documentarchive/feed/",
+        "credibility": "high",
+    },
+    {
+        "name": "Ask a Pol — UAP",
+        "url": "https://www.askapol.com/feed",
+        "credibility": "medium",
+    },
 ]
 
 GOOGLE_NEWS_QUERIES = [
-    "UAP unidentified aerial phenomena",
-    "UFO disclosure Congress",
-    "AARO anomalous phenomena",
-    "Pentagon UFO",
-    "UAP hearing",
+    "UAP unidentified anomalous phenomena",
+    "UFO disclosure Congress hearing",
+    "AARO Pentagon UFO",
 ]
 
 REDDIT_CONFIG = {

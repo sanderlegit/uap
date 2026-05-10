@@ -44,3 +44,9 @@ server/dist/
 /audit/
 /package.json
 /package-lock.json
+
+# Pulse runtime data (regenerable)
+pulse.db
+pulse.db-shm
+pulse.db-wal
+data/pulse_lsh.pkl

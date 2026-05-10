@@ -1,0 +1,13 @@
+{
+    "name": "sources",
+    "columns": [
+        "id",
+        "name",
+        "type",
+        "config",
+        "enabled",
+        "last_collected_at",
+        "created_at"
+    ],
+    "schema": "CREATE TABLE sources (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    name TEXT NOT NULL UNIQUE,\n    type TEXT NOT NULL,\n    config TEXT NOT NULL DEFAULT '{}',\n    enabled INTEGER DEFAULT 1,\n    last_collected_at TEXT,\n    created_at TEXT DEFAULT (datetime('now'))\n)"
+}

@@ -5,7 +5,8 @@ from __future__ import annotations
 import json
 import sqlite3
 from contextlib import contextmanager
-from datetime import datetime
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Optional
 
@@ -33,7 +34,10 @@ CREATE TABLE IF NOT EXISTS items (
     published_at TEXT,
     collected_at TEXT DEFAULT (datetime('now')),
     platform TEXT NOT NULL,
+    content_quality TEXT DEFAULT 'unknown',
     metadata TEXT DEFAULT '{}',
+    duplicate_of INTEGER,
+    cluster_id INTEGER,
     FOREIGN KEY (source_id) REFERENCES sources(id),
     UNIQUE(platform, external_id)
 );
@@ -74,9 +78,68 @@ CREATE INDEX IF NOT EXISTS idx_analyses_item ON analyses(item_id);
 """
 
 
+def normalize_date(date_str: str | None) -> str | None:
+    """Normalize date strings to YYYY-MM-DDTHH:MM:SSZ (UTC).
+
+    Handles:
+    - RFC 2822: 'Fri, 08 May 2026 14:30:11 GMT'
+    - RFC 2822 with offset: 'Fri, 08 May 2026 15:29:23 +0000'
+    - GDELT format: '20260510T114500Z'
+    - ISO 8601 passthrough
+    Returns None if unparseable.
+    """
+    if not date_str or not date_str.strip():
+        return None
+    date_str = date_str.strip()
+
+    # Try RFC 2822 first (covers 'Fri, 08 May 2026 ...' variants)
+    try:
+        dt = parsedate_to_datetime(date_str)
+        dt = dt.astimezone(timezone.utc)
+        return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    except Exception:
+        pass
+
+    # Try GDELT format: 20260510T114500Z
+    try:
+        dt = datetime.strptime(date_str, "%Y%m%dT%H%M%SZ")
+        dt = dt.replace(tzinfo=timezone.utc)
+        return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    except ValueError:
+        pass
+
+    # Try ISO 8601 passthrough
+    try:
+        dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        dt = dt.astimezone(timezone.utc)
+        return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    except (ValueError, TypeError):
+        pass
+
+    return None
+
+
+def _migrate_content_quality(db: sqlite3.Connection):
+    """Add content_quality column if it doesn't exist."""
+    cols = {row[1] for row in db.execute("PRAGMA table_info(items)").fetchall()}
+    if "content_quality" not in cols:
+        db.execute("ALTER TABLE items ADD COLUMN content_quality TEXT DEFAULT 'unknown'")
+
+
+def _migrate_dedup_columns(db: sqlite3.Connection):
+    """Add duplicate_of and cluster_id columns if they don't exist."""
+    cols = {row[1] for row in db.execute("PRAGMA table_info(items)").fetchall()}
+    if "duplicate_of" not in cols:
+        db.execute("ALTER TABLE items ADD COLUMN duplicate_of INTEGER")
+    if "cluster_id" not in cols:
+        db.execute("ALTER TABLE items ADD COLUMN cluster_id INTEGER")
+
+
 def init_db():
     with get_db() as db:
         db.executescript(SCHEMA)
+        _migrate_content_quality(db)
+        _migrate_dedup_columns(db)
 
 
 @contextmanager
@@ -114,14 +177,29 @@ def insert_item(
     url: str = None,
     published_at: str = None,
     metadata: dict = None,
+    content_quality: str = "unknown",
 ) -> Optional[int]:
-    """Insert item, return ID. Returns None if duplicate."""
+    """Insert item, return ID. Returns None if duplicate (URL or content)."""
+    # MinHash near-duplicate check (optional — skipped if datasketch missing)
+    try:
+        from pulse.dedup import get_dedup
+
+        dedup = get_dedup()
+        if dedup is not None:
+            is_dup, existing_id = dedup.is_duplicate(title, content)
+            if is_dup:
+                return None
+    except Exception:
+        pass  # dedup failure should never block ingestion
+
+    normalized_date = normalize_date(published_at) if published_at else None
     with get_db() as db:
         try:
             cur = db.execute(
                 """INSERT INTO items
-                   (source_id, external_id, platform, title, author, content, url, published_at, metadata)
-                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                   (source_id, external_id, platform, title, author, content,
+                    url, published_at, content_quality, metadata)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
                 (
                     source_id,
                     external_id,
@@ -130,13 +208,26 @@ def insert_item(
                     author,
                     content,
                     url,
-                    published_at,
+                    normalized_date,
+                    content_quality,
                     json.dumps(metadata or {}),
                 ),
             )
-            return cur.lastrowid
+            new_id = cur.lastrowid
         except sqlite3.IntegrityError:
             return None
+
+    # Add to dedup index after successful insert
+    try:
+        from pulse.dedup import get_dedup
+
+        dedup = get_dedup()
+        if dedup is not None:
+            dedup.add_item(new_id, title, content)
+    except Exception:
+        pass  # dedup failure should never block ingestion
+
+    return new_id
 
 
 def insert_analysis(item_id: int, analysis: dict):
@@ -186,10 +277,29 @@ def complete_run(run_id: int, items_found: int, items_new: int, error: str = Non
 
 def get_unanalyzed_items(limit: int = 50) -> list[dict]:
     with get_db() as db:
-        rows = db.execute(
-            """SELECT i.* FROM items i
+        # Check which filter columns exist (may not be migrated yet)
+        cols = {row[1] for row in db.execute("PRAGMA table_info(items)").fetchall()}
+        has_quality = "content_quality" in cols
+        has_duplicate = "duplicate_of" in cols
+
+        quality_filter = ""
+        if has_quality:
+            quality_filter = (
+                " AND (i.content_quality IS NULL"
+                " OR i.content_quality NOT IN"
+                " ('title_only', 'html_garbage', 'extraction_failed'))"
+            )
+        duplicate_filter = ""
+        if has_duplicate:
+            duplicate_filter = " AND i.duplicate_of IS NULL"
+
+        query = f"""SELECT i.* FROM items i
                LEFT JOIN analyses a ON a.item_id = i.id
-               WHERE a.id IS NULL AND i.content IS NOT NULL AND length(i.content) > 50
+               WHERE a.id IS NULL
+                 AND i.content IS NOT NULL
+                 AND length(i.content) > 200
+                 {quality_filter}
+                 {duplicate_filter}
                ORDER BY
                  CASE i.platform
                    WHEN 'google_news' THEN 0
@@ -200,10 +310,10 @@ def get_unanalyzed_items(limit: int = 50) -> list[dict]:
                    WHEN 'scholar' THEN 5
                    ELSE 6
                  END,
+                 length(i.content) DESC,
                  i.published_at DESC NULLS LAST
-               LIMIT ?""",
-            (limit,),
-        ).fetchall()
+               LIMIT ?"""
+        rows = db.execute(query, (limit,)).fetchall()
         return [dict(r) for r in rows]
 
 

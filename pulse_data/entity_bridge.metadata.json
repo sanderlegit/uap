@@ -1,0 +1,13 @@
+{
+    "name": "entity_bridge",
+    "columns": [
+        "id",
+        "pulse_entity",
+        "corpus_entity",
+        "corpus_doc_ids",
+        "match_type",
+        "match_score",
+        "created_at"
+    ],
+    "schema": "CREATE TABLE entity_bridge (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    pulse_entity TEXT NOT NULL,\n    corpus_entity TEXT NOT NULL,\n    corpus_doc_ids TEXT NOT NULL,\n    match_type TEXT NOT NULL,\n    match_score REAL,\n    created_at TEXT DEFAULT (datetime('now'))\n)"
+}

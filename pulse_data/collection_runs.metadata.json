@@ -1,0 +1,15 @@
+{
+    "name": "collection_runs",
+    "columns": [
+        "id",
+        "source_name",
+        "collector_type",
+        "started_at",
+        "completed_at",
+        "items_found",
+        "items_new",
+        "error",
+        "status"
+    ],
+    "schema": "CREATE TABLE collection_runs (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    source_name TEXT,\n    collector_type TEXT,\n    started_at TEXT DEFAULT (datetime('now')),\n    completed_at TEXT,\n    items_found INTEGER DEFAULT 0,\n    items_new INTEGER DEFAULT 0,\n    error TEXT,\n    status TEXT DEFAULT 'running'\n)"
+}
