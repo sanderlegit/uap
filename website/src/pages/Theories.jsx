@@ -2,6 +2,69 @@ import { useState, useEffect, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import LegacyProgramChart from '../components/LegacyProgramChart'
 
+const SIDEBAR_SECTIONS = [
+  { id: 'framework', label: 'Interactive Framework', indent: 0 },
+  { id: 'layer-1', label: 'Surveillance Layer', indent: 1 },
+  { id: 'layer-2', label: 'Custodial Layer', indent: 1 },
+  { id: 'layer-3', label: 'Industrial Layer', indent: 1 },
+  { id: 'personnel', label: 'Personnel Network', indent: 1 },
+  { id: 'kill-chain', label: 'Kill Chain', indent: 1 },
+  { id: 'nav-hub', label: 'Navigation', indent: 0 },
+  { id: 'hypotheses', label: 'Competing Hypotheses', indent: 0 },
+  { id: 'researchers', label: 'Key Researchers', indent: 0 },
+  { id: 'community', label: 'Community Sources', indent: 0 },
+]
+
+function SectionSidebar() {
+  const [activeId, setActiveId] = useState('')
+
+  useEffect(() => {
+    const els = SIDEBAR_SECTIONS.map(s => document.getElementById(s.id)).filter(Boolean)
+    if (!els.length) return
+
+    const observer = new IntersectionObserver(
+      entries => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+        if (visible.length) setActiveId(visible[0].target.id)
+      },
+      { rootMargin: '-80px 0px -60% 0px', threshold: 0 }
+    )
+
+    els.forEach(el => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
+  function scrollTo(id) {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  return (
+    <nav className="hidden xl:block w-44 shrink-0">
+      <div className="sticky top-20 space-y-0.5">
+        <div className="text-[10px] font-bold text-slate-600 uppercase tracking-widest mb-2">On this page</div>
+        {SIDEBAR_SECTIONS.map(s => (
+          <button
+            key={s.id}
+            onClick={() => scrollTo(s.id)}
+            className={`block w-full text-left cursor-pointer transition-colors text-[11px] leading-relaxed py-0.5 ${
+              s.indent ? 'pl-3' : ''
+            } ${
+              activeId === s.id
+                ? 'text-indigo-400 font-medium'
+                : 'text-slate-500 hover:text-slate-300'
+            }`}
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+    </nav>
+  )
+}
+
 function useCountUp(target, duration = 1500) {
   const [value, setValue] = useState(0)
   useEffect(() => {
@@ -295,102 +358,106 @@ export default function Theories() {
 
   return (
     <div className="bg-slate-950 min-h-dvh pb-24">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12">
-        {/* Header */}
-        {fromCase && (
-          <Link
-            to={`/cases?case=${encodeURIComponent(fromCase)}`}
-            className="flex items-center gap-2 mb-4 px-3 py-2.5 rounded-lg bg-slate-800/60 border border-slate-700/40 text-sm text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors"
-          >
-            <span>&larr;</span>
-            <span>Back to Cases: {fromCase.replace(/_/g, ' ')}</span>
-          </Link>
-        )}
-        <h1 className="text-xl font-bold text-slate-100 mb-2">The Legacy Program</h1>
-        <p className="text-sm text-slate-400 leading-relaxed mb-1">{data.overview}</p>
-        <p className="text-xs text-slate-500 mb-6">
-          Last updated {data.last_updated}
-        </p>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 xl:flex xl:gap-6">
+        <SectionSidebar />
 
-        {/* Legacy Program Interactive Framework */}
-        <section>
-          <LegacyProgramChart />
-        </section>
-
-        {/* Navigation Hub */}
-        <nav className="mt-8 flex flex-wrap gap-1.5 sm:gap-2">
-          {[
-            { to: '/documents', icon: '◫', label: 'Documents', color: 'text-blue-400 hover:border-blue-500/40' },
-            { to: '/cases', icon: '◆', label: 'Cases', color: 'text-red-400 hover:border-red-500/40' },
-            { to: '/timeline', icon: '━', label: 'Timeline', color: 'text-amber-400 hover:border-amber-500/40' },
-            { to: '/graph', icon: '◈', label: 'Graph', color: 'text-indigo-400 hover:border-indigo-500/40' },
-            { to: '/map', icon: '◎', label: 'Map', color: 'text-emerald-400 hover:border-emerald-500/40' },
-            { to: '/entities', icon: '▣', label: 'Entities', color: 'text-amber-400 hover:border-amber-500/40' },
-            { to: '/disclosure', icon: '%', label: 'Disclosure', color: 'text-purple-400 hover:border-purple-500/40' },
-            { to: '/search', icon: '⌕', label: 'Search', color: 'text-slate-400 hover:border-slate-500/40' },
-          ].map(n => (
-            <Link key={n.to} to={n.to}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-md bg-slate-900 border border-slate-800 hover:bg-slate-800/60 transition-colors text-xs ${n.color}`}>
-              <span>{n.icon}</span>
-              <span className="text-slate-300">{n.label}</span>
-            </Link>
-          ))}
-        </nav>
-
-        {/* Theories Grid */}
-        <section className="mt-10">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-bold text-slate-200">Competing Hypotheses</h2>
-            <select
-              value={sortBy}
-              onChange={e => setSortBy(e.target.value)}
-              className="text-xs bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-slate-300"
+        <div className="min-w-0 flex-1 max-w-5xl">
+          {/* Header */}
+          {fromCase && (
+            <Link
+              to={`/cases?case=${encodeURIComponent(fromCase)}`}
+              className="flex items-center gap-2 mb-4 px-3 py-2.5 rounded-lg bg-slate-800/60 border border-slate-700/40 text-sm text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors"
             >
-              <option value="popularity">Sort: Popularity</option>
-              <option value="scientific">Sort: Scientific Support</option>
-              <option value="name">Sort: A–Z</option>
-            </select>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {sortedTheories.map(t => (
-              <div key={t.id} className={expandedTheories.has(t.id) ? 'sm:col-span-2 lg:col-span-3' : ''}>
-                <TheoryCard
-                  theory={t}
-                  isExpanded={expandedTheories.has(t.id)}
-                  onToggle={() => setExpandedTheories(prev => {
-                    const next = new Set(prev)
-                    if (next.has(t.id)) next.delete(t.id)
-                    else next.add(t.id)
-                    return next
-                  })}
-                />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Key Researchers */}
-        <section className="mt-10">
-          <h2 className="text-lg font-bold text-slate-200 mb-4">Key Researchers</h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {data.key_researchers.map((r, i) => (
-              <ResearcherCard key={i} r={r} />
-            ))}
-          </div>
-        </section>
-
-        {/* Community Sources */}
-        <section className="mt-10">
-          <h2 className="text-lg font-bold text-slate-200 mb-2">Community Sources</h2>
-          <p className="text-xs text-slate-500 mb-4 leading-relaxed">
-            Vetted independent researchers, journalists, and organizations providing ongoing UAP investigation and analysis.
+              <span>&larr;</span>
+              <span>Back to Cases: {fromCase.replace(/_/g, ' ')}</span>
+            </Link>
+          )}
+          <h1 className="text-xl font-bold text-slate-100 mb-2">The Legacy Program</h1>
+          <p className="text-sm text-slate-400 leading-relaxed mb-1">{data.overview}</p>
+          <p className="text-xs text-slate-500 mb-6">
+            Last updated {data.last_updated}
           </p>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {communitySources.map((s, i) => (
-              <CommunitySource key={i} source={s} />
+
+          {/* Legacy Program Interactive Framework */}
+          <section id="framework">
+            <LegacyProgramChart />
+          </section>
+
+          {/* Navigation Hub */}
+          <nav id="nav-hub" className="mt-8 flex flex-wrap gap-1.5 sm:gap-2">
+            {[
+              { to: '/documents', icon: '◫', label: 'Documents', color: 'text-blue-400 hover:border-blue-500/40' },
+              { to: '/cases', icon: '◆', label: 'Cases', color: 'text-red-400 hover:border-red-500/40' },
+              { to: '/timeline', icon: '━', label: 'Timeline', color: 'text-amber-400 hover:border-amber-500/40' },
+              { to: '/graph', icon: '◈', label: 'Graph', color: 'text-indigo-400 hover:border-indigo-500/40' },
+              { to: '/map', icon: '◎', label: 'Map', color: 'text-emerald-400 hover:border-emerald-500/40' },
+              { to: '/entities', icon: '▣', label: 'Entities', color: 'text-amber-400 hover:border-amber-500/40' },
+              { to: '/disclosure', icon: '%', label: 'Disclosure', color: 'text-purple-400 hover:border-purple-500/40' },
+              { to: '/search', icon: '⌕', label: 'Search', color: 'text-slate-400 hover:border-slate-500/40' },
+            ].map(n => (
+              <Link key={n.to} to={n.to}
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-md bg-slate-900 border border-slate-800 hover:bg-slate-800/60 transition-colors text-xs ${n.color}`}>
+                <span>{n.icon}</span>
+                <span className="text-slate-300">{n.label}</span>
+              </Link>
             ))}
-          </div>
-        </section>
+          </nav>
+
+          {/* Theories Grid */}
+          <section id="hypotheses" className="mt-10">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-bold text-slate-200">Competing Hypotheses</h2>
+              <select
+                value={sortBy}
+                onChange={e => setSortBy(e.target.value)}
+                className="text-xs bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-slate-300"
+              >
+                <option value="popularity">Sort: Popularity</option>
+                <option value="scientific">Sort: Scientific Support</option>
+                <option value="name">Sort: A–Z</option>
+              </select>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {sortedTheories.map(t => (
+                <div key={t.id} className={expandedTheories.has(t.id) ? 'sm:col-span-2 lg:col-span-3' : ''}>
+                  <TheoryCard
+                    theory={t}
+                    isExpanded={expandedTheories.has(t.id)}
+                    onToggle={() => setExpandedTheories(prev => {
+                      const next = new Set(prev)
+                      if (next.has(t.id)) next.delete(t.id)
+                      else next.add(t.id)
+                      return next
+                    })}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Key Researchers */}
+          <section id="researchers" className="mt-10">
+            <h2 className="text-lg font-bold text-slate-200 mb-4">Key Researchers</h2>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {data.key_researchers.map((r, i) => (
+                <ResearcherCard key={i} r={r} />
+              ))}
+            </div>
+          </section>
+
+          {/* Community Sources */}
+          <section id="community" className="mt-10">
+            <h2 className="text-lg font-bold text-slate-200 mb-2">Community Sources</h2>
+            <p className="text-xs text-slate-500 mb-4 leading-relaxed">
+              Vetted independent researchers, journalists, and organizations providing ongoing UAP investigation and analysis.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {communitySources.map((s, i) => (
+                <CommunitySource key={i} source={s} />
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   )

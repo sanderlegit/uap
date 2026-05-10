@@ -84,9 +84,10 @@ function ChartNode({ node, color, isExpanded, onToggle }) {
 
 function LayerSection({ layer, index, expanded, onToggle }) {
   const color = LAYER_COLORS[index]
+  const sectionId = `layer-${index + 1}`
 
   return (
-    <div>
+    <div id={sectionId}>
       <div className="flex items-center gap-2 mb-3">
         <div
           className="w-6 h-6 rounded flex items-center justify-center text-xs font-bold shrink-0"
@@ -154,7 +155,7 @@ function LayerSection({ layer, index, expanded, onToggle }) {
 
 function PersonnelNetwork({ personnel, expanded, onToggle }) {
   return (
-    <div className="mt-6 pt-4 border-t border-slate-800">
+    <div id="personnel" className="mt-6 pt-4 border-t border-slate-800">
       <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
         Personnel Network — The Revolving Door
       </h3>
@@ -193,7 +194,7 @@ function PersonnelNetwork({ personnel, expanded, onToggle }) {
 
 function ProcessFlow({ steps }) {
   return (
-    <div className="mt-6 pt-4 border-t border-slate-800">
+    <div id="kill-chain" className="mt-6 pt-4 border-t border-slate-800">
       <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
         Recovery Process — Kill Chain
       </h3>
