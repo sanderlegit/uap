@@ -1,31 +1,84 @@
 {
-  "hook": "An excerpt from the January 4, 1973 Apollo 17 Technical Crew Debriefing in which astronauts Evans, Cernan, and Schmitt describe unusual visual phenomena observed during the mission, including a fireball with a tunnel-like afterimage seen through the rendezvous window and near-continuous light flashes experienced by Schmitt when dark-adapted throughout the flight.",
-  "why_it_matters": "The document provides firsthand astronaut testimony about anomalous light phenomena experienced during a lunar mission, including phenomena that were significant enough to be the subject of an onboard experiment (ALFMED). Schmitt's observation that the light flashes ceased entirely during the ALFMED blindfold interval — and resumed afterward — is notable because it suggests the experiment captured a real and controllable effect. The inclusion of this testimony in a formal technical debriefing indicates NASA treated these observations as scientifically relevant, not incidental.",
+  "hook": "Excerpt from the Apollo 17 Technical Crew Debriefing (January 4, 1973) in which astronauts Evans, Cernan, and Schmitt describe unusual visual phenomena observed during the mission, including a fireball with a tunnel-like afterimage and persistent light flashes that correlated with the ALFMED cosmic radiation experiment.",
+  "why_it_matters": "This document establishes that all three Apollo 17 crewmembers independently observed recurring light flashes throughout the mission, with Schmitt attributing one to the lunar surface itself. The ALFMED experimental data adds a controlled dimension: flashes ceased during the blindfolded experiment interval and resumed after, suggesting the crew's perception was partially suppressible—a detail relevant to distinguishing internal (radiation-induced retinal stimulation) from external sources. Evans's description of a fireball followed by a tunnel-like visual with a receding bright spot is distinct from the flash phenomenon and documented in the same debriefing session.",
   "key_findings": [
-    "Astronaut Evans described seeing a fireball through the rendezvous window, and after its brightness decreased, observed what he called 'a tunnel with a bright spot in the middle' with the fireball visible 'way down the tunnel, way back behind.'",
-    "Astronaut Schmitt reported light flashes 'just about continuously during the whole flight when we were dark adapted,' indicating the phenomenon persisted across the mission duration rather than occurring at one isolated moment.",
-    "Schmitt specifically reported one flash he believed originated from the lunar surface, distinguishing it from the other in-flight flashes.",
-    "During the ALFMED (Apollo Light Flash Moving Emulsion Detector) experiment — conducted with crew blindfolds — Schmitt reported no visible flashes, and stated the same was true for the other two crewmen.",
-    "After the ALFMED blindfold interval ended, Schmitt noticed the light flashes had resumed before he went to sleep that night, framing the suppression as specific to that one interval."
+    {
+      "finding": "Astronaut Schmitt reported nearly continuous light flashes throughout the entire Apollo 17 flight whenever the crew was dark adapted.",
+      "quotes": [
+        {
+          "text": "We had light flashes just about continuously during the whole flight when we were dark adapted.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Schmitt believed one of the light flashes originated on the lunar surface, distinguishing it from the others.",
+      "quotes": [
+        {
+          "text": "I had one which I thought was a flash on the lunar surface.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "During the ALFMED experiment, when the crew wore blindfolds, the visible light flashes disappeared entirely, but resumed that same night after the blindfolds were removed—a pattern observed by all three crewmembers.",
+      "quotes": [
+        {
+          "text": "That one period of time when we had the blindfolds on for the ALFMED experiment there were just no visible flashes, although that evening, that night, before I went to sleep I noticed that I was seeing the light flashes again.",
+          "page": 2
+        },
+        {
+          "text": "So, it just seemed to be that one interval either side of it where the light flash was not visible to myself or to the other two crewmen.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Astronaut Evans reported seeing a fireball whose brightness decreased, after which he observed a tunnel-like formation with a bright spot at the center and the fireball receding into the distance.",
+      "quotes": [
+        {
+          "text": "after the brightness of the fireball decreased, I could look back up through the rendezvous window and see what to me was kind of like a tunnel with a bright spot in the middle of the tunnel. Way down the tunnel, way back behind, I could see the fireball.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Astronaut Cernan noted that the only unusual sighting he could recall from landing or recovery was seeing an aircraft carrier superstructure, which he described as unremarkable given foggy windows.",
+      "quotes": [
+        {
+          "text": "The only unusual sighting I can recall during landing or recovery is when the CMP looked out the window and saw the superstructure of an aircraft carrier and said, \"Oh, we've got a tin can with us.\"",
+          "page": 2
+        },
+        {
+          "text": "Well, it was kind of foggy on the windows.",
+          "page": 2
+        }
+      ]
+    }
   ],
   "document_type": "technical",
   "legacy_program_connections": [
     {
-      "node_id": "aaro",
+      "node_id": "wright_patterson",
       "relevance": "medium",
-      "reasoning": "This document was released as part of the PURSUE declassification effort and directly informs AARO's mandate to catalog historical anomalous phenomena observations by U.S. government personnel, in this case active astronauts on a crewed lunar mission."
+      "reasoning": "Wright-Patterson AFB hosted aerospace medical and unusual phenomena research; astronaut light flash observations during spaceflight were a subject of Air Force and NASA joint scientific interest in this era."
     },
     {
       "node_id": "blue_book",
       "relevance": "low",
-      "reasoning": "The light flash and fireball observations by Apollo 17 crew overlap temporally with Project Blue Book's final years and represent the kind of anomalous aerial/space phenomena that Blue Book was tasked with cataloging, though no direct Blue Book connection is stated in the document."
+      "reasoning": "Project Blue Book catalogued unusual aerial and luminous phenomena reported by military and government personnel; astronaut visual anomaly reports from this period were within its investigative scope, though this debriefing is a NASA document."
+    },
+    {
+      "node_id": "doe_aec",
+      "relevance": "medium",
+      "reasoning": "The ALFMED experiment directly measured cosmic radiation effects on crew vision; the Atomic Energy Commission had overlapping jurisdiction over radiation research relevant to interpreting whether the light flashes were radiation-induced retinal events."
     }
   ],
   "related_topics": [
-    "astronaut testimony",
-    "cosmic ray light flashes",
+    "astronaut visual anomalies",
+    "cosmic radiation retinal effects",
     "ALFMED experiment",
-    "lunar mission anomalous observations",
-    "space-based luminosity phenomena"
+    "lunar surface luminosity",
+    "Apollo crew debriefing"
   ]
 }

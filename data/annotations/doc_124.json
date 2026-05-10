@@ -1,36 +1,91 @@
 {
-  "hook": "A 1950 FBI case file section containing two distinct items from Mexico: a letter from Veracruz 'Ideographic Inventor' Miguel Angel Garcia Macias theorizing that the U.S. already possesses atomic-powered flying saucers, and a translated Mexican newspaper article reporting the first claimed photographs of a flying disc taken over Durango at approximately 9,000 feet altitude.",
-  "why_it_matters": "This file section illustrates how the FBI's flying saucer case file served as a catch-all for public correspondence and foreign press clippings during the 1947–1968 period, capturing civilian theories and international sighting reports that fed into the broader government awareness effort. The Durango photographic claim — with a named witness (engineering student German Horacio Robles Jr.) and technical sketches depicting a double truncated cone with jet-like propulsion — represents one of the earliest documented photo claims from Latin America to reach U.S. federal files. The Garcia Macias letter independently arrives at an atomic propulsion hypothesis, reflecting how widely that framework circulated among civilian inventors during the early atomic age.",
+  "hook": "A 1950 letter from Mexican 'Ideographic Inventor' Miguel Angel Garcia Macias to a U.S. scientific commission proposes that flying saucers are atomic-powered stratospheric aerostats of U.S. manufacture, accompanied by a translated Mexican newspaper account claiming the first photograph of a flying saucer was taken over Durango at 9,000 feet by engineering student German Horacio Robles Jr.",
+  "why_it_matters": "This document illustrates the FBI's practice of collecting unsolicited international civilian correspondence and foreign press clippings as part of its early UAP case file, capturing how the 1947–1950 flying saucer wave was perceived abroad — specifically, the assumption that the objects were secret American atomic technology. The Durango photograph claim, if the newspaper clipping is authentic, represents an early documented instance of photographic evidence submitted to U.S. authorities from a non-U.S. source. The inventor's detailed pseudoscientific propulsion proposals, submitted in good faith, show how the U.S. government was a magnet for public UAP speculation even from foreign nationals with no apparent official connection.",
   "key_findings": [
-    "Mexican inventor Miguel Angel Garcia Macias wrote to 'the President of the Commission of Scientific Investigation of the United States of North America' on March 19, 1950, asserting that the U.S. already possesses flying saucers powered by atomic force, which he calls 'Stratospheric Aerostats' combining global and semi-global stability principles.",
-    "Engineering student German Horacio Robles Jr. is named as the photographer of a 'flying saucer' over Durango, Mexico, described in the newspaper as a 'double truncated cone, joined at its bases' observed at 8,000–9,000 feet altitude that displaces itself by changing position to redirect its motive force.",
-    "Garcia Macias claims multiple prior inventions — including automatic shovels, optical measurement rooms, and a railway collision avoidance system — were stolen and patented by unknown parties, framing his flying saucer theory as part of a broader pattern of ignored contributions.",
-    "Technical diagrams accompanying the Durango newspaper article label propulsion components including 'Atomic Force,' 'Air-Seizing Force,' 'Oxygen Chamber,' and multi-level air current intakes and exits, representing an early public mechanical hypothesis for disc flight.",
-    "The file contains both the original Spanish text of the Garcia Macias letter and an English translation by Mrs. Sophia Saliba, indicating formal FBI translation processing of the correspondence."
+    {
+      "finding": "A Mexican civilian inventor wrote directly to the U.S. government asserting that flying saucers are atomic-powered aerostats already possessed by the United States, framing the disclosure as a civic duty.",
+      "quotes": [
+        {
+          "text": "This deals with stratospheric aerostats (?)* or Flying** saucers as people commonly call them, and which I believe your great Nation, making use of ATOMIC force, possesses.",
+          "page": 2
+        },
+        {
+          "text": "I hope that my idea is Studied and approved by the said Commission and may serve for the Progress of the Universe instead of its DESTRUCTION, and for the good of all of us human beings who inhabit the Earth.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "Garcia Macias proposed a 'Global-Conic' stability theory for the craft, claiming they could exceed the speed of light or sound depending on atomic material quantity, and could be launched from ground or water.",
+      "quotes": [
+        {
+          "text": "These apparatuses can be used in order to avoid Atomic Explosion on the Earth, since the velocity is Greater than that of Light or Sound in accordance with the quantity of Atomic Material which is used in their fabrication. These apparatuses can be thrown from the ground or from",
+          "page": 3
+        },
+        {
+          "text": "the Water since the Conic-Global or Global-Conic form permits it.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "A Mexican newspaper account (translated for the FBI file) claimed engineering student German Horacio Robles Jr. photographed a flying saucer over Durango at 8,000–9,000 feet and described the object as a double truncated cone moving via jet propulsion.",
+      "quotes": [
+        {
+          "text": "THE FIRST PHOTOGRAPHS OF A \"FLYING SAUCER\", OBTAINED IN DURANGO AT AN ALTITUDE OF 9000 FEET",
+          "page": 5
+        },
+        {
+          "text": "The apparatus seems to be a double truncated cone, joined at its bases which moves by something like jet propulsion and which displaces itself by changing position in order to use its motive force in the direction desired, for which reason it can be seen under apparently different forms.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The newspaper account identifies Robles Jr. as a student at the National School of Engineering and notes he sketched the craft's real form and handed over photographs to an editorial office, suggesting the images were submitted to a Mexican publication before reaching the FBI.",
+      "quotes": [
+        {
+          "text": "Mr. German Horacio)Robles Jr., student at the National School of Engineering, is one of the thgusands of persons who have seen \"with their own eyes\" the flying saucers or disks which have become the general topic of commentaries and have given rise to the most varied hypotheses.",
+          "page": 5
+        },
+        {
+          "text": "The future civil engineer, porenig eyes Jr. sketched in our editorial offices after having reported his obser ions on the flying disk and after having handed over the pictures of this apparatus which he had obtained.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The document includes a technical diagram page with labeled components — Oxygen Chamber, air current directions, propeller, and vacuum levels — consistent with the inventor's pseudoscientific propulsion theory, translated by Mrs. Sophia Saliba.",
+      "quotes": [
+        {
+          "text": "Air-Seizing Force\nDirection of the currents of air\nCatches\nCuts\nExpels\nDirection of the Wings\nAtomic Force\nVacuum\nThird Level\nOxygen Chamber\n2nd Level\nEntrance of the Air Currents\n1st Level\nPropeller\nAir Seizing Force\nExits of the Air Currents\nExpulsion of Air\nGLORAL-CONIC AND SEMI-GLOBAL STABILITY",
+          "page": 5
+        },
+        {
+          "text": "Translator: Mrs. Sophia Saliba",
+          "page": 4
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
-      "relevance": "high",
-      "reasoning": "This FBI case file section is a direct example of the public report and foreign press intake that the U.S. government's flying saucer investigation infrastructure — precursor to and contemporaneous with Project Blue Book — was designed to aggregate and assess."
+      "relevance": "medium",
+      "reasoning": "This civilian correspondence and foreign press clipping was collected as part of the FBI's early UAP case file (62-HQ-83894), representing the type of public reporting and unsolicited theory submissions that fed into the broader U.S. government UAP tracking effort of the late 1940s–1950s."
     },
     {
       "node_id": "doe_aec",
-      "relevance": "medium",
-      "reasoning": "Both the Garcia Macias letter and the Durango newspaper diagrams explicitly invoke atomic/nuclear force as the propulsion mechanism, reflecting the period's intersection of early atomic energy awareness with flying saucer speculation that the AEC-adjacent community would have monitored."
-    },
-    {
-      "node_id": "wright_patterson",
       "relevance": "low",
-      "reasoning": "As the central repository for military UFO reports during this era, Wright-Patterson would have been the downstream recipient of any FBI-routed foreign sighting reports with technical propulsion claims like those in this file."
+      "reasoning": "The inventor explicitly theorizes that flying saucers are propelled by nuclear-atomic force, referencing atomic material quantities as determining speed — a civilian echo of AEC-era atomic propulsion research discourse."
     }
   ],
   "related_topics": [
-    "Latin American civilian sighting reports",
-    "atomic propulsion hypothesis",
-    "1950 flying saucer photographs",
-    "citizen inventor correspondence",
-    "double truncated cone morphology"
+    "citizen correspondence",
+    "Mexican press coverage",
+    "atomic propulsion theory",
+    "photographic evidence",
+    "early saucer wave 1950"
   ]
 }

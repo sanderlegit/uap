@@ -1,31 +1,78 @@
 {
-  "hook": "An FBI FD-302 interview record of a U.S. civilian who witnessed a bright white stationary light over the horizon at approximately 9:00 AM on September 2023, while driving in convoy to a test site for LiDAR data collection — the light moved right, held the same apparent size, and vanished after roughly ten seconds.",
-  "why_it_matters": "This report is notable because the sighting occurred at or near a U.S. government test site during an active LiDAR data acquisition mission, suggesting the witness and colleagues were technically literate observers in a controlled operational environment. The FBI's decision to conduct a formal FD-302 interview — the same form used in criminal investigations — reflects the bureau's post-2021 posture of treating credible UAP reports as warranting documented intake. The corroboration detail (colleagues at the first test site independently reporting they saw it too) elevates the account above a single-witness sighting.",
+  "hook": "An FBI FD-302 documents a Special Agent's interview with a US citizen who witnessed a bright white stationary light that moved and vanished within ten seconds while traveling to a test site for LiDAR data collection in September 2023.",
+  "why_it_matters": "This report is notable because the sighting occurred within a secure, gated US test facility during an active data collection operation, giving the witness and colleagues credible, professional context. Multiple personnel in the convoy later confirmed seeing the same light at the test site, lending corroborative weight to the account. The witness's own explanation — a meteor burning up on approach — is included, illustrating the FBI's practice of recording the witness's own interpretations alongside the raw observation.",
   "key_findings": [
-    "The witness was traveling in a three-vehicle convoy — an F150, the witness's GMC AT4, and a sprinter van — driving east to a test site for LiDAR data collection.",
-    "The observed object appeared as a bright white stationary light above the horizon, visible through the vehicle windshield, estimated at 10–20 miles distance, and lasted approximately ten seconds before disappearing.",
-    "The light remained the same size throughout the sighting, moved laterally to the right, then vanished; no vehicle electronic interference was noted.",
-    "The witness's passenger failed to observe the object because he looked in the wrong direction and had his seat reclined, leaving the primary witness as the sole direct observer at that moment.",
-    "Upon arriving at the first test site, colleagues reported they also saw the light, providing independent corroboration; the witness speculated it may have been a meteor traveling directly toward them and burning up."
+    {
+      "finding": "The sighting occurred inside a secured test facility during a LiDAR data acquisition mission, with the witness part of a multi-vehicle convoy that had passed through several access gates.",
+      "quotes": [
+        {
+          "text": "driving east to a test site to acquire data for LiDAR testing with",
+          "page": 1
+        },
+        {
+          "text": "The vehicles drove through a couple of gates and",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The object appeared as a bright white light, initially stationary, then moved laterally before disappearing — the entire sighting lasted approximately ten seconds and the object's apparent size did not change.",
+      "quotes": [
+        {
+          "text": "saw a bright light over the horizon. The light was stationary in the air, then started moving to the right and then disappeared.",
+          "page": 1
+        },
+        {
+          "text": "The light was bright white and was visible for ten seconds before it disappeared. The light stayed the same size throughout the incident.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The witness estimated the object was ten to twenty miles distant and observed no electromagnetic or mechanical interference with the vehicle during the event.",
+      "quotes": [
+        {
+          "text": "|| thought the light was ten to twenty miles away. | | did not notice any interference with his vehicle.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The witness's attempt to alert a passenger in the same vehicle was unsuccessful due to the passenger's seating position, but other personnel at the first test site independently confirmed observing the same light.",
+      "quotes": [
+        {
+          "text": "pointed the light out to J) but JJ looked in the wrong direction. JJ was also tall and had his seat leaned back so he was not in a good position to see the light.",
+          "page": 1
+        },
+        {
+          "text": "they got to the first test site and J 21d J seiq they saw it too.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The witness offered a conventional explanation — a meteor on a direct approach trajectory burning up in the atmosphere — which the FBI recorded verbatim as part of the account.",
+      "quotes": [
+        {
+          "text": "thought the light might have been a meteor coming straight toward them and burning up in the atmosphere.",
+          "page": 2
+        }
+      ]
+    }
   ],
   "document_type": "investigation",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "medium",
-      "reasoning": "This 2023 FD-302 is the type of civilian-at-government-facility UAP report that AARO was mandated by Congress to centralize, and the FBI's formal documentation suggests an intent to feed it into the broader reporting framework."
-    },
-    {
-      "node_id": "area51",
-      "relevance": "low",
-      "reasoning": "The sighting occurred at a redacted U.S. test site during active LiDAR testing, placing it in the category of restricted-area encounters, though the specific facility is not identified in the document."
+      "reasoning": "The FBI's systematic collection of first-hand UAP witness accounts at defense-related test sites feeds into the broader post-2022 government UAP reporting architecture that AARO coordinates."
     }
   ],
   "related_topics": [
-    "civilian witness testimony",
-    "test site UAP encounter",
+    "test site sighting",
     "LiDAR operations",
-    "meteor misidentification",
-    "FBI FD-302 UAP intake"
+    "stationary light",
+    "corroborating witnesses",
+    "meteor hypothesis"
   ]
 }

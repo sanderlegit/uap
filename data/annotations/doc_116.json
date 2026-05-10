@@ -1,36 +1,108 @@
 {
-  "hook": "FBI investigative memos from 1947–1949 documenting three distinct sighting cases: Portland police officers observing a fast-moving silvery object on September 11, 1947; an Alaska bush pilot and co-pilot nearly colliding with a wing-shaped object near Bethel; and the Phoenix Rhodes photographs case, in which Air Force Intelligence obtained photos from civilian William Albert Rhodes and later sought to suppress the paper trail when Rhodes demanded them back.",
-  "why_it_matters": "This file captures the FBI acting as a field investigative arm for Air Force Intelligence in the earliest months of the modern UFO era (summer–fall 1947), interviewing credible witnesses including law enforcement and commercial pilots. The Rhodes photographs case is particularly significant: it shows the Air Force acquiring physical evidence from a civilian witness, a representative later claiming 'hazy' recollection of the transaction, and OSI scrambling to reconstruct the record — a pattern of institutional evidence management visible in the document itself. The Walter Winchell memo illustrates concurrent FBI monitoring of media figures for UAP-related tips.",
+  "hook": "A sampler of early FBI flying disc investigation memos from 1947–1949, covering police officer eyewitness reports in Portland, a commercial pilot near-miss in Alaska, the Air Force's retention of civilian photographs taken in Phoenix, and the Bureau's debunking of a Walter Winchell tip about a supposed extraterrestrial landing.",
+  "why_it_matters": "This section demonstrates that the FBI was functioning as a primary field collection arm for UAP reports in the months immediately following the 1947 wave, coordinating directly with Air Force OSI to share evidence — including physical photographs confiscated from civilian William Rhodes that Rhodes subsequently demanded back. The inter-agency friction over the Rhodes photographs is an early documented instance of the Air Force controlling UAP physical evidence while withholding it from both the original witness and, implicitly, from public view. The multi-witness Portland account is notable for its internal contradictions: a police officer concluded 'ordinary airplane,' while his partner estimated a speed 'much greater than a conventional airplane' and an egg-shape change during flight.",
   "key_findings": [
-    "Portland Chief of Police Leon V. Jenkins and at least four other officers independently reported a round silver object on September 11, 1947; witnesses disagreed on speed (150–'extremely great'), altitude (5,000–10,000 ft), and shape (round, elliptical, egg-shaped as it turned), illustrating the perceptual challenges documented even among trained law enforcement observers.",
-    "Alaska pilot Jack Peck and co-pilot Vince Daly made evasive maneuvers in their DC-3 to avoid a dark, wing-shaped object at 1,000 ft near Bethel Airport; the object showed no propeller, jet exhaust, or vapor trail, was estimated at 300 mph, and the CAA station confirmed no known aircraft in the area.",
-    "William Albert Rhodes of Phoenix photographed an object in 1947; the photographs were obtained by Air Force Intelligence officer George Fugate Jr. and FBI SA J. Bailey Brower; by June 1949 Fugate's recollection was 'hazy,' Rhodes was requesting the photos back, and OSI was pressing the Phoenix FBI office for a blind memorandum to reconstruct the case record.",
-    "A July 1949 D.M. Ladd memo documents the FBI investigating a letter sent to Walter Winchell claiming a flying saucer landing in Los Angeles; the named author could not be located at the given address, suggesting fabrication — showing the Bureau was also tracking and vetting media-facing UAP claims.",
-    "Across all cases the FBI coordinated directly with Air Force Intelligence and OSI, forwarding interview summaries and witness statements upward, establishing the early inter-agency information flow that would later be formalized under Project Grudge and Blue Book."
-  ],
-  "document_type": "historical_file",
-  "legacy_program_connections": [
     {
-      "node_id": "blue_book",
-      "relevance": "high",
-      "reasoning": "The file documents FBI field investigations feeding Air Force Intelligence in mid-1947, the direct precursor activity to Project Sign and then Grudge/Blue Book, including the Rhodes photographic evidence case that appears in early Air Force UAP records."
+      "finding": "Multiple Portland police officers, including the Chief of Police, reported a fast-moving silvery object on September 11, 1947 that changed apparent shape from round to egg-shaped as it turned, with witnesses disagreeing sharply on speed and explanation.",
+      "quotes": [
+        {
+          "text": "the very bright reflection of the sun on some object which was apparently made of silvery metal. The object was coming from the east and mace a wide turn over the city and disappeared to the south.",
+          "page": 1
+        },
+        {
+          "text": "JENKINS observed what appeared to be a round silver object, about 10,000 feet high, travelling northeast to southwest...Further observation convinced him that it could not be a balloon because of its speed which was extremely great. As JENKINS watched, it turned gradually until it was travelling due south, and as it did so, its shape seemed to change until it appeared to be egg-shaped. It disappeared in about 30 seconds.",
+          "page": 3
+        },
+        {
+          "text": "It appeared to him to be elliptical in shape, and inasmuch as it did not bank or tip he could not judge its thickness.",
+          "page": 1
+        }
+      ]
     },
+    {
+      "finding": "A commercial DC-3 pilot and co-pilot near Bethel, Alaska in July 1947 reported a 'flying wing' object with no propeller, no jet exhaust, and no vapor trails, estimated at 300 mph at 1,000 feet; they executed a 45-degree evasive turn and confirmed no aircraft were in the area via radio.",
+      "quotes": [
+        {
+          "text": "He described the object as appearing to be some flying wing and said that it appeared to be about the size of a 0-54 without any fuselage, He could not see any propellor or any exhaust from jet propulsion or any vapor trails and could not estimate the size due to his failure to be able to estimate the distance he was away from the object.",
+          "page": 4
+        },
+        {
+          "text": "They made a forty-five degree turn in order to get out of the way of the object and then noted that it appeared to be going away from them.",
+          "page": 4
+        },
+        {
+          "text": "He called on his radio to the Civil Aeronautics Administration station at Bethel, asking what aircraft was in the vicinity and they had no reports of any aircraft.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The Air Force retained photographs of an unidentified object taken by Phoenix civilian William Rhodes, and when Rhodes later requested their return, Air Force OSI coordinated with the FBI Phoenix field office to manage the evidentiary record — while the original Air Force interviewer claimed his recollection of the event was 'hazy.'",
+      "quotes": [
+        {
+          "text": "concerning his observation and photographing of an object which was considered by the Air Force of significance from a security standpoint.",
+          "page": 7
+        },
+        {
+          "text": "Mr. Rhodes has apparently now requested the Air Force to return the photographs, which were previously obtained from him.",
+          "page": 5
+        },
+        {
+          "text": "FUGATE, when questioned by his superiors concerning the matter, stated his recollection was \"hazy\" on the matter.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "FBI leadership investigated a Walter Winchell tip about a letter claiming a flying saucer had landed and departed in Los Angeles, theorized to be an extraterrestrial event; investigation found the letter's author, 'Peter Camerlon Jones,' did not exist at the address given.",
+      "quotes": [
+        {
+          "text": "a letter which Walter Winchell had received from an individual in Los Angeles indicaging that he had seen a flying saucer leave the ground within his view and in which letter he theorized that this might have been a landing, from another planet.",
+          "page": 9
+        },
+        {
+          "text": "The Los Angeles Office has now advised that the present owner and former manager at this address have no knowledge of any Peter Camerlonxdones and that other investigation to locate Jones was unproductive. It would appear, therefore, that this may have been a prank.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "Air Force OSI actively sought FBI field office cooperation to compile detailed blind memoranda about UAP witness interviews, revealing a coordinated inter-agency effort to centralize UAP evidence under Air Force control as early as 1949.",
+      "quotes": [
+        {
+          "text": "Mr. Lynn C. Aldrich, OSI representative at Phoenix, Arizona, has requested the Phoenix Office to furnish him complete facts relating to this interview, which are to be subsequently forwarded to the OSI Office at San Francisco.",
+          "page": 5
+        },
+        {
+          "text": "Mr. ALDRICH was furnished the substance of the interview...and he has now requested that he be furnished with a blind memorandum setting forth this information in detail in order that he may make it available to the OSI at San Francisco.",
+          "page": 7
+        }
+      ]
+    }
+  ],
+  "document_type": "investigation",
+  "legacy_program_connections": [
     {
       "node_id": "wright_patterson",
       "relevance": "medium",
-      "reasoning": "Air Force Intelligence personnel (Hamilton Field, OSI San Francisco) are coordinating receipt and custody of physical evidence (Rhodes photos) through channels that ran through Wright-Patterson's Air Materiel Command during this period."
+      "reasoning": "Wright Field and Wright-Patterson are listed among entities in the broader case file, and the Air Force intelligence coordination on the Rhodes photographs originates from Hamilton Field with OSI forwarding to San Francisco, consistent with Wright-Patterson's role as the central repository for UAP physical evidence in this period."
     },
     {
-      "node_id": "cia_oga",
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "Project Grudge is listed among entities, and these 1947–1949 FBI field reports represent the raw investigative material that directly fed into the predecessor programs to Project Blue Book, including multi-witness police cases and pilot encounters."
+    },
+    {
+      "node_id": "cia_dst",
       "relevance": "low",
-      "reasoning": "The Walter Winchell memo and media-monitoring dimension reflects early inter-agency awareness management around public UAP narratives, a function that would later involve CIA's office of operations."
+      "reasoning": "The FBI-OSI coordination pipeline for UAP evidence, including the request for 'blind memoranda,' reflects the intelligence community infrastructure that the CIA's later UAP collection efforts would build upon."
     }
   ],
   "related_topics": [
-    "police witness testimony 1947",
-    "Rhodes UFO photographs Phoenix",
-    "pilot near-miss sighting Alaska",
-    "Air Force evidence custody chain",
-    "FBI media monitoring UAP"
+    "police eyewitness testimony",
+    "photographic evidence retention",
+    "commercial pilot sighting",
+    "FBI-Air Force OSI coordination",
+    "early 1947 flying disc wave"
   ]
 }

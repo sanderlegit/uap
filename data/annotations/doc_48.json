@@ -1,36 +1,46 @@
 {
-  "hook": "An FBI-submitted monochrome still image showing a circular, light-colored object with a specular highlight positioned just below a crosshair reticle, captured by an unidentified U.S. government sensor system with date and location withheld.",
-  "why_it_matters": "This image represents the FBI's formal UAP reporting to AARO under the post-NDAA disclosure framework, establishing that the Bureau operates or has access to sensor systems capable of capturing anomalous aerial objects. The presence of a crosshair reticle indicates this was captured through an optical targeting or tracking system, not a consumer device, lending it institutional weight. The operator's inability to positively identify the object, combined with pre-submission redactions, suggests active sensitivity around the source system or event context.",
+  "hook": "An FBI-submitted still image from a U.S. government sensor system showing a circular, light-colored object with a specular highlight centered near a crosshair reticle in a monochrome frame. The operator could not positively identify the object, and neither the date nor location of the event was provided to AARO.",
+  "why_it_matters": "This image represents one of the rare cases where the FBI formally submitted visual UAP evidence directly to AARO, indicating the phenomenon was encountered by a U.S. government system operating under FBI purview. The absence of an accompanying mission report and the redaction of date and location strip the image of critical context needed for resolution. The operator's inability to identify the object, combined with the image's sensor-derived origin, places it in the category of unresolved government-recorded UAP.",
   "key_findings": [
-    "The image was submitted by the FBI to AARO as a formal UAP report, making it part of the official all-domain anomaly resolution pipeline.",
-    "The event date and location were deliberately not provided to AARO, an unusual omission that may indicate operational security concerns about the source system or incident.",
-    "The imagery was altered with redactions prior to submission, suggesting the original contained identifying information about the platform, location, or associated data.",
-    "The crosshair reticle visible in the image indicates the sensor is an optical sighting, targeting, or tracking system — not incidental photography.",
-    "No accompanying mission report was provided, leaving the object's behavior, altitude, speed, and engagement context entirely unknown."
+    {
+      "finding": "The image originates from a U.S. government system, indicating the UAP was captured by official sensor infrastructure rather than a civilian or commercial source.",
+      "quotes": []
+    },
+    {
+      "finding": "The UAP presents as a circular, light-colored object with a bright specular highlight, visible just below the center of a crosshair reticle in a monochrome frame — consistent with an optical or electro-optical sensor capture.",
+      "quotes": []
+    },
+    {
+      "finding": "No mission report was provided alongside the image, and both the date and location of the event have been withheld, making independent corroboration or geospatial analysis impossible.",
+      "quotes": []
+    },
+    {
+      "finding": "The original imagery was altered with redactions before submission to AARO, meaning even AARO received a modified version of the source material.",
+      "quotes": []
+    },
+    {
+      "finding": "The operator on scene was unable to positively identify the UAP, establishing this as an unresolved event from the perspective of the collecting agency.",
+      "quotes": []
+    }
   ],
   "document_type": "photo",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The FBI formally submitted this image to AARO as part of the mandated UAP reporting process, making AARO the direct recipient and custodian of this evidence."
-    },
-    {
-      "node_id": "nro",
-      "relevance": "medium",
-      "reasoning": "The crosshair reticle and monochrome sensor characteristics are consistent with imagery from reconnaissance or surveillance platforms, which fall within NRO's operational domain."
+      "reasoning": "The FBI formally submitted this image to AARO as part of the UAP reporting process, making AARO the direct recipient and nominal custodian of this evidence."
     },
     {
       "node_id": "mitre",
       "relevance": "low",
-      "reasoning": "MITRE supports AARO's technical analysis infrastructure; imagery submitted through AARO's pipeline may pass through MITRE-managed analytical systems."
+      "reasoning": "MITRE supports AARO's analytical and technical functions; imagery of this type submitted to AARO may pass through MITRE-supported analysis pipelines, though no direct connection is stated in the document."
     }
   ],
   "related_topics": [
-    "optical sensor imagery",
+    "electro-optical sensor imagery",
     "FBI UAP reporting",
-    "AARO submission",
-    "redacted government photograph",
-    "unidentified aerial object"
+    "unidentified circular object",
+    "redacted government imagery",
+    "AARO submission"
   ]
 }

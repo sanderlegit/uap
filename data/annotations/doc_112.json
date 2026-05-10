@@ -1,42 +1,96 @@
 {
-  "hook": "The opening section of FBI's 62-HQ-83894 case file captures the first week of the 1947 flying disc wave through two lenses: Washington Post newspaper clippings from July 7, 1947 covering the national frenzy, and a CIC field memo from Portland, Oregon documenting credentialed law enforcement witnesses to five discs on July 4, 1947.",
-  "why_it_matters": "This section establishes the FBI's entry point into UAP investigation at the very moment the phenomenon entered public consciousness, showing institutional response across military, scientific, and law enforcement channels simultaneously. The Portland CIC memo is particularly notable because Agent Sorensen explicitly vouched for his witnesses as 'very dependable and trustworthy officers, not being afflicted with hallucinations' — an early attempt to establish witness credibility within official channels. The Army's public acknowledgment that it had been investigating for 10 days and still had 'not the slightest idea what they could be,' combined with confirmed radar non-detection nationwide, documents the government's genuine uncertainty rather than a cover-up posture at this early stage.",
+  "hook": "This section of the FBI's 62-HQ-83894 case file opens with Washington Post newspaper clippings from July 7, 1947 covering the initial nationwide flying saucer wave, paired with a classified CIC Sixth Army memorandum documenting first-person law enforcement and military witness accounts of disc sightings over Portland, Oregon on July 4, 1947.",
+  "why_it_matters": "This file captures the FBI's real-time response to the 1947 flying saucer wave within days of the Kenneth Arnold sighting, documenting both media coverage and credible law enforcement witnesses simultaneously. The CIC agent explicitly vouches for witness reliability, elevating Portland police and Air Corps veteran testimony above civilian reports. The Army's admission that radar nationwide failed to detect the objects — combined with credible multi-witness accounts — establishes the anomalous pattern that drove the formation of formal Air Force investigation programs.",
   "key_findings": [
-    "CIC Agent Keith A. Sorensen's July 7, 1947 memo documents Portland Police Officer Kenneth McDowell witnessing five large discs over Portland on July 4 — the sighting was preceded by pigeons becoming suddenly agitated, the discs made no sound, displayed an oscillating up-down motion, and disappeared before speed or altitude could be estimated.",
-    "Former Air Corps pilot and Portland City Police officer Earl E. Patterson independently confirmed seeing an aluminum-colored disc flying southwest over Portland at terrific speed — faster than any flying object he had ever seen — with no vapor trail or sound emitted.",
-    "Sergeant Claude Cross of the Oregon State Police observed three discs following each other in formation at 'terrific speed' traveling northwest, noting a whitish-brown glint as sunlight reflected off them.",
-    "A Catholic priest in Gratton, Wisconsin reported finding a physical metallic disc approximately 18 inches in diameter, 1/8 inch thick, weighing 4–5 pounds, with 'gadgets and wires' visible through a central hole — he notified the FBI, uncertain whether it was 'an elaborate practical joke.'",
-    "The Army Airways Communications Service confirmed that radar stations across the country had been unable to detect any strange objects in flight, while Army Capt. Brown publicly acknowledged the Air Forces had decided 'there's something to this' after 10 days of investigation but still had no explanation."
+    {
+      "finding": "A priest near Gratton, Wisconsin recovered a physical sheet metal disc with internal components and reported it to the FBI, representing one of the earliest documented physical evidence cases in the 1947 wave.",
+      "quotes": [
+        {
+          "text": "a sheet metal dise about 18 inches in|diameter, resembling @ cirenlat saw blade.",
+          "page": 2
+        },
+        {
+          "text": "There was a hole about one inch in diameter in the middle of the disc, he said, and in the opening were \"gadgets and some wires.\"",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Multiple Portland, Oregon law enforcement officers — including a former WWII Air Corps pilot — independently witnessed five large discs on July 4, 1947, describing oscillating motion, aluminum coloring, no sound, and speeds exceeding any known aircraft.",
+      "quotes": [
+        {
+          "text": "he saw five lerge dises in the sir to the Fast of Portland two dises flying South and three flying in en Fasterly direction. Officer MeDowell stated he could determine no color to the dises, but advised they were dipping in an up and down oscillating motion and were traveling st a greet speed.",
+          "page": 7
+        },
+        {
+          "text": "this dise was aluminum in color, left no vapor trail or smoke trail and wes traveling at a terrific speed, faster than he has ever seen any flying object before.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The CIC Sixth Army investigating agent explicitly vouched for all witnesses' credibility and noted clear weather conditions, formally elevating the Portland sightings beyond anecdotal status.",
+      "quotes": [
+        {
+          "text": "All informants mentioned herein are known to this agent as very dependable and trustworthy officers, not being afflicted with halluei~ nationse 'The woather in the Portlend erea at this time was clear with little or no cloud formations being visable from the ground. Ground temperature at this time was 82 degrees Fehronheit.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "Army radar systems nationwide failed to detect any of the objects despite hardware capable of tracking targets 200 miles away, and Army aircraft searching the Pacific Northwest returned empty-handed.",
+      "quotes": [
+        {
+          "text": "the Army Airways Communi- eationt Service had reported late yesterday that so far its radar}, sane scopes throughout the country have been unable to pick up any, strange objects in flight.",
+          "page": 4
+        },
+        {
+          "text": "Army planes scoured the north-west Pacific skies for them without success today",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "An Idaho witness described a formation of eight disc-shaped objects landing on a mountainside near St. Maries, approaching at extreme speed before slowing and descending, then becoming invisible on the ground — an early documented account of apparent concealment after landing.",
+      "quotes": [
+        {
+          "text": "she and others in her party had seen the saucers land on a moun tainside near St. Maries, Idaho.",
+          "page": 4
+        },
+        {
+          "text": "they came into view at aifextreme speed, suddenly slowed, aid then \"fluttered like leaves to tife ground.\"",
+          "page": 4
+        },
+        {
+          "text": "The mysterious part was th: we couldn't see them after the Janded,\" she said, \"We could [them flutter down! into the tim: yet we couldn't see that they did anything to the trees.\"",
+          "page": 4
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
-      "node_id": "wright_patterson",
-      "relevance": "high",
-      "reasoning": "Army Air Forces personnel and public relations staff (Capt. Brown) are named as actively investigating the discs for 10 days by July 7, 1947, with Army planes conducting aerial searches — this investigation was centered at Wright Field and directly preceded Project Sign."
-    },
-    {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "This CIC investigative memo and the Army Air Forces 10-day investigation described in the newspaper clippings are direct precursor material to the formal projects (Sign, Grudge, Blue Book) that institutionalized UAP investigation."
+      "reasoning": "These July 1947 sightings are the founding incidents that prompted the Army Air Forces to launch Project Sign (direct predecessor of Blue Book), making this FBI case file part of the foundational evidence base for the entire Air Force UAP investigation program."
     },
     {
-      "node_id": "doe_aec",
+      "node_id": "wright_patterson",
       "relevance": "medium",
-      "reasoning": "AEC Chairman David Lilienthal is specifically named in the newspaper clipping as publicly dismissing a report that the silvery discs 'resulted from experiments in the transmutation of atomic energy,' placing the AEC in the early response chain."
+      "reasoning": "Wright Field is listed among the document entities and Army Air Forces public relations officers are quoted making official statements about ongoing investigations, connecting to the Air Materiel Command at Wright-Patterson that handled physical evidence and technical analysis."
     },
     {
       "node_id": "congressional",
       "relevance": "low",
-      "reasoning": "The VFW national commander is quoted expecting 'momentarily' an official Washington explanation for the discs, reflecting early pressure from veteran and civic organizations on government to account for the phenomenon."
+      "reasoning": "Congress is listed among the document entities and the VFW national commander is quoted claiming he was expecting 'momentarily' information from Washington to explain the discs, reflecting early congressional-level awareness and public pressure."
     }
   ],
   "related_topics": [
-    "1947 flying disc wave",
-    "police officer testimony",
+    "1947 flying saucer wave",
+    "police witness testimony",
     "radar non-detection",
-    "Portland Oregon sightings July 1947",
-    "CIC field investigation",
-    "physical disc recovery"
+    "physical disc recovery",
+    "CIC military investigation"
   ]
 }

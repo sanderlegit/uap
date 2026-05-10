@@ -1,31 +1,100 @@
 {
-  "hook": "An excerpt from the Apollo 17 air-to-ground voice transcript documenting three discrete periods in which astronauts reported unexplained optical phenomena: tumbling bright fragments near the spacecraft after S-IVB separation on Day 1, intense interior light flashes and exterior strobing objects reported by CDR Cernan during sleep on Day 2, and a brief flash on the lunar surface north of Grimaldi crater observed by LMP Schmitt on Day 3.",
-  "why_it_matters": "This transcript provides verbatim firsthand testimony from NASA astronauts — including mission commander Eugene Cernan — describing phenomena they could not fully explain and in some cases explicitly characterized as physical objects rather than optical illusions. Cernan's Day 2 statement — 'no question in my mind but that they're there' — stands out as a direct assertion of reality from a credentialed observer in a controlled environment. The document is notable because the astronauts themselves proposed mundane explanations (S-IVB debris, cosmic ray interactions via ALFMED) while simultaneously acknowledging those explanations were uncertain or insufficient for all observed phenomena.",
+  "hook": "An excerpt from the Apollo 17 Air-to-Ground Voice Transcription capturing three discrete episodes in which astronauts Eugene Cernan, Ronald Evans, and Harrison Schmitt reported observing unexplained luminous phenomena—bright tumbling particles near the spacecraft on launch day, intense flashing lights during Cernan's sleep period in transit, and a brief flash on the lunar surface north of Grimaldi crater.",
+  "why_it_matters": "This is primary-source astronaut testimony from a crewed lunar mission, recorded in real time with Mission Control, giving it unusually high evidentiary weight compared to post-hoc reports. Cernan's Day 02 account is notable because he explicitly distinguished the phenomena from known optical artifacts, stating 'no question in my mind but that they're there,' while simultaneously acknowledging mundane candidate explanations—a rare combination of conviction and epistemic humility from a mission commander. The Day 03 lunar surface flash, reported mid-scientific-observation by a trained geologist, prompted Mission Control to check seismometers, indicating the report was taken seriously as a potential impact or anomalous event.",
   "key_findings": [
-    "CMP Ronald Evans described tumbling, jagged, angular fragments near the spacecraft after S-IVB separation — some appearing curved — and speculated they were ice or paint from the rocket stage, explicitly calling it 'a wild guess'; CDR Cernan independently described them as flat, flakelike particles up to ~6 inches across, twinkling and moving away from the spacecraft.",
-    "CDR Cernan reported an intensely bright light that 'flashed right between my eyes like a very bright headlight — like a train coming at you, only with a flash' during his first sleep period, along with 'sets of streaks' and peripheral horizon-illuminating flashes he found 'imposing.'",
-    "Cernan stated with confidence — 'no question in my mind but that they're there' — and noted he had not observed such phenomena on a prior mission, suggesting this was anomalous relative to his baseline experience.",
-    "LMP Schmitt visually identified what he believed was the S-IVB through a monocular and assessed most Day 2 flashing objects as separated rocket hardware, providing a competing mundane explanation; Mission Control confirmed the S-IVB impact point calculation was an ongoing 'real difficult problem.'",
-    "At 03:15:38:09, Schmitt exclaimed observing a flash on the lunar surface north of Grimaldi crater, describing it as 'a bright little flash' and 'a thin streak of light,' and suggested Mission Control check seismometers for a possible small impact event."
+    {
+      "finding": "On Day 00, CMP Ronald Evans reported bright, tumbling fragments drifting past the spacecraft during a maneuver. Astronauts offered mundane explanations (S-IVB debris, ice, paint) but explicitly characterized these as speculative.",
+      "quotes": [
+        {
+          "text": "Now we've got a few very bright particles or frag­ments or something that go drifting by as we maneuver.",
+          "page": 1
+        },
+        {
+          "text": "There's a whole bunce of big ones on my window down there - just bright. It looks like the Fourth of July out of Ron's window.",
+          "page": 1
+        },
+        {
+          "text": "I got the impression maybe they were curved a little bit, as if they might be - off the side of the S-IVB. And that's a wild guess",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "CDR Cernan described the tumbling fragments as flat, flakelike, approximately 6 inches across, twinkling, and moving away from the spacecraft—a more detailed morphological characterization than a simple debris field would typically warrant.",
+      "quotes": [
+        {
+          "text": "they are - flat, flakelike particles. Some may be 6 inches across. And, although there's no relative motion between the two, most of them seem to be twinkling. And I think, for the most part, they're all moving away from us.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "During his sleep period on Day 02, CDR Cernan reported intense flashing streaks and a single extremely bright flash between his eyes, which he described as comparable to a train headlight. He subsequently asserted with certainty that the phenomena were real, noting he had never observed them on a prior mission.",
+      "quotes": [
+        {
+          "text": "the one most imposing thing I remember is - and the last one I remember before falling asleep - was the fact that there was a very bright spot that flashed right between my eyes like a very bright headlight - like a train coming at you, only with a flash.",
+          "page": 5
+        },
+        {
+          "text": "I will say one thing, though; no question in my mind but that they're there. Last trip I took, I guess I just wasn't looking for them or paying any attention to them.",
+          "page": 6
+        },
+        {
+          "text": "It might be interesting to know I've never seen it before today.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Mission Control's response to Cernan's Day 02 observations suggests an ongoing structured data-collection effort, with controllers acknowledging the data while noting difficulty fitting it to an existing model—implying a pre-existing analytical framework for these reports.",
+      "quotes": [
+        {
+          "text": "Hey, Gene, we appreciate all the data. We were just trying to make the data fit the curve; you know the old trick.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "On Day 03, LMP Schmitt, while conducting geological observations of the lunar surface near Grimaldi crater, reported a sudden brief flash of light on the surface and immediately suggested checking seismometers, proposing a small impact as a possible cause.",
+      "quotes": [
+        {
+          "text": "Hey, I just saw a flash on the lunar surface!",
+          "page": 10
+        },
+        {
+          "text": "It was just out there north of Grimaldi. Just north of Grimaldi. You might see if you got anything on your seismometers, although a small impact probably would give a fair amount of visible light.",
+          "page": 10
+        },
+        {
+          "text": "It was a bright little flash right out there near that crater. See the crater right at the edge of Grimaldi. Then there is another one north of it. Fairly sharp one north of it is where there was just a thin streak of light.",
+          "page": 10
+        }
+      ]
+    }
   ],
-  "document_type": "mission_report",
+  "document_type": "technical",
   "legacy_program_connections": [
+    {
+      "node_id": "blue_book",
+      "relevance": "medium",
+      "reasoning": "Project Blue Book closed in 1969, but Apollo 17's 1972 astronaut UAP observations represent exactly the category of military/government-affiliated anomalous sightings Blue Book was chartered to investigate, and contemporaneous successor programs would have had interest in these transcripts."
+    },
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "This transcript was selected and excerpted for inclusion in the UAP disclosure release specifically because it contains astronaut-reported unexplained phenomena, making it directly relevant to AARO's mandate to catalog historical government UAP observations."
+      "reasoning": "AARO, as the current U.S. government UAP investigation office, has specifically cited historical astronaut reports as part of its mandate; this transcript is a primary-source record of in-mission observations by credentialed military astronauts."
     },
     {
-      "node_id": "congressional",
-      "relevance": "medium",
-      "reasoning": "The document's inclusion in the war.gov PURSUE release reflects the congressional UAP disclosure framework that mandated declassification of historical government UAP-relevant records, of which this transcript is an identified example."
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "Wright-Patterson Air Force Base historically coordinated Air Force UAP analysis with NASA, and anomalous phenomena reported during Apollo missions would have been within the scope of that coordination."
     }
   ],
   "related_topics": [
     "astronaut testimony",
-    "light flash phenomena",
-    "lunar surface impact flash",
-    "S-IVB debris field",
-    "ALFMED cosmic ray experiment"
+    "luminous phenomena in space",
+    "lunar surface anomaly",
+    "cosmic ray visual phenomena",
+    "in-situ spacecraft observation"
   ]
 }

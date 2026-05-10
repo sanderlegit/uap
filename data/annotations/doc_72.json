@@ -1,31 +1,71 @@
 {
-  "hook": "A Detroit man named Weaver called the FBI's Detroit field office at 9:08 AM on April 17, 1958, to report seeing a circular object with a crystal-type dome reflecting lights, traveling northward across the city near Six Mile Road and Lamphere Street.",
-  "why_it_matters": "This memo illustrates the FBI's role as a civilian reporting channel for UFO sightings when official Air Force lines were inaccessible — Weaver first tried Selfridge Field but could not get through. The document also demonstrates the bureau's standard practice of routing such reports to Air Force authorities rather than investigating independently, reflecting the interagency division of responsibility that characterized the late 1950s UFO reporting framework.",
+  "hook": "A 1958 FBI internal memo from the Detroit field office documenting a civilian's phone report of a circular, dome-topped aerial object crossing Detroit, and recommending the information be passed to Air Force authorities.",
+  "why_it_matters": "This memo illustrates the FBI's role as a secondary intake channel for UAP reports when witnesses could not reach military contacts directly — in this case, the witness first attempted to call Selfridge Field but failed and turned to the FBI instead. The document's recommendation to 'advise proper air force authorities' reflects the established interagency handoff procedure for UAP reports in the late 1950s. It also captures a credibility-framing practice common in this era: the memo notes the witness's age, family background, and Civil Air Patrol experience, suggesting the reporting agent considered these relevant to evaluating the account.",
   "key_findings": [
-    "Witness Weaver described the object as circular with a 'crystal-type dome that reflected lights,' traveling southwest-to-north across Detroit, approximately three blocks south of Six Mile Road at Lamphere Street.",
-    "Weaver first attempted to contact Selfridge Field (an Air Force base) directly but was unable to reach them, leading him to call the FBI Detroit field office instead.",
-    "The FBI memo notes Weaver's credibility markers: age 23, son of a Detroit police officer, and prior Civil Air Patrol (CAP) experience — though the agent notes he was 'not too familiar with the identification of aircraft.'",
-    "The sighting occurred while Weaver was returning home from work, establishing it as an incidental, unplanned observation.",
-    "The memo's sole recommendation is 'Advise proper air force authorities,' indicating the FBI treated this as a pass-through reporting function with no independent investigative action."
+    {
+      "finding": "The witness described the object as circular with a light-reflecting dome, providing a specific and distinctive shape that differs from common aircraft of the period.",
+      "quotes": [
+        {
+          "text": "dhe had just seen an object in the sky described as a circular object with a crystal-type dome that reflected lights.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The object's flight path was described with street-level precision, tracking southwest to north across Detroit near Six Mile Road and Lamphere Street.",
+      "quotes": [
+        {
+          "text": "this object was passing in a northern direction from southwest and crossed the City three blocks south of Six Mile at Lamphere Street.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The witness first tried to report the sighting to the Air Force at Selfridge Field, consistent with public awareness that the military handled UFO reports, but was unable to get through.",
+      "quotes": [
+        {
+          "text": "WEAVER advised that he attempted to call Selfridge Pield to get in touch with the Air Force but his attempts were unproductive.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The memo explicitly establishes witness credibility markers — age, law enforcement family connection, and Civil Air Patrol background — while also noting his limited aircraft identification experience.",
+      "quotes": [
+        {
+          "text": "WEAVER said he was 23 years of age, was the son of a Detroit policeman, and that he had previous experience with the Civil Air Patrol (CAP); however, he was not too familiar with the identification of aircraft.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The FBI's sole recommended action was to forward the report to the Air Force, indicating the Bureau viewed this as outside its own investigative mandate and within the Air Force's purview.",
+      "quotes": [
+        {
+          "text": "Advise proper air force authorities.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "memo",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "The memo explicitly recommends forwarding the sighting to Air Force authorities, which in 1958 meant Project Blue Book, the Air Force's active UFO investigation program at the time."
+      "reasoning": "The memo's recommendation to forward to 'proper air force authorities' aligns directly with the Project Blue Book intake pipeline, which was the Air Force's active UFO collection program in 1958."
     },
     {
       "node_id": "wright_patterson",
-      "relevance": "low",
-      "reasoning": "As the home of Project Blue Book, Wright-Patterson AFB would have been the ultimate recipient of reports forwarded by the FBI to Air Force authorities in this period."
+      "relevance": "medium",
+      "reasoning": "Wright-Patterson AFB was the home of Project Blue Book and the Air Technical Intelligence Center, making it the likely destination for any Air Force referral of this report."
     }
   ],
   "related_topics": [
-    "civilian UFO reporting",
-    "FBI field office referral",
-    "Air Force coordination",
-    "dome-shaped craft",
-    "Civil Air Patrol witness"
+    "civilian sighting report",
+    "Air Force referral protocol",
+    "Civil Air Patrol witness",
+    "dome-shaped object",
+    "Selfridge Field"
   ]
 }

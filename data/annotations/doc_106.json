@@ -1,36 +1,91 @@
 {
-  "hook": "Excerpts from three Skylab technical crew debriefings (1973–1974) in which astronauts from all three crewed missions describe anomalous visual phenomena: unexplained light flashes experienced with eyes closed in darkness, a bright reddish rotating object tracked for 10 minutes in a nearly identical orbit that was never officially identified, and exterior flashing lights with apparent motion relative to the station.",
-  "why_it_matters": "These are firsthand, contemporaneous accounts by NASA astronauts given in formal debriefing settings — not informal recollections — making them among the most credible observer reports in the UAP record. The Skylab 3 observation is particularly significant: the Garriott/Lousma sighting of a rotating reddish object in a nearly co-orbital trajectory was debriefed in detail, logged with timing data on channel A, and NASA never provided the crew an identification despite their explicit request. The document shows that even at the time, anomalous orbital sightings were acknowledged but left unresolved within the agency.",
+  "hook": "Excerpts from three Skylab mission technical debriefings (1973–1974) in which astronaut crews describe unusual visual phenomena: retinal light flashes possibly linked to cosmic rays, an unidentified bright reddish satellite in near-identical orbit to Skylab, and external flashing lights with relative motion.",
+  "why_it_matters": "These are firsthand accounts from NASA astronauts describing unidentified objects in low Earth orbit that were never officially explained to the crews. The Skylab 3 observation is particularly notable: a bright reddish object held a near-identical orbit for 10 minutes, exhibited a measurable 10-second rotation period, and allowed the crew to estimate its range at 30–50 nautical miles — yet they explicitly stated no identification was ever provided. The document shows NASA crews were observing and formally reporting anomalous orbital objects and requesting answers through official debriefing channels.",
   "key_findings": [
-    "Skylab 2 Science Pilot Joseph Kerwin reported light flashes seen with eyes closed in darkness, occurring at rates of two or three per minute, described as spots, sunbursts, and streaks, predominantly peripheral. The crew discussed possible connection to the South Atlantic Anomaly and some attributed individual events to cosmic particle strikes ('entrance streak and exit streak'). Crew members explicitly stated 'they're not a hallucination.'",
-    "Skylab 3 astronauts Owen Garriott and Jack Lousma tracked a bright reddish object for approximately 10 minutes, roughly one week before splashdown. It exhibited a ~10-second brightness oscillation consistent with rotation, entered darkness 5–7 seconds after Skylab did (implying ~30–50 nautical miles separation), and drifted only 10–20 degrees in the wardroom window over the observation period — indicating a nearly identical orbital trajectory.",
-    "Garriott explicitly stated the object was 'much brighter than Jupiter or any of the other planets' and retained a reddish hue 'well above the horizon,' ruling out atmospheric reddening. The crew attempted to image it with monitors but could not resolve it beyond a bright light source. The object was never seen on subsequent orbits and its identification was never provided to the crew.",
-    "Skylab 4 Commander Gerald P. Carr reported 2–3 separate sightings of exterior flashing lights with 'very definite motion relative to ours,' logged on dump tapes as they occurred. The crew presumed they were Skylab debris or other satellites; tumbling behavior was inferred from oscillating flash patterns.",
-    "Across all three missions, the phenomena were reported through official channels (dump tapes, formal debriefings) rather than suppressed, yet no resolution or identification was furnished to the Skylab 3 crew despite their direct request — a gap explicitly noted in the debriefing transcript."
+    {
+      "finding": "Skylab 2 Science Pilot Joseph Kerwin reported light flashes seen with eyes closed, occurring at up to two or three per minute, appearing as spots, sunbursts, or streaks — primarily in peripheral vision. The crew discussed whether these correlated with the South Atlantic Anomaly and whether some were cosmic particle interactions.",
+      "quotes": [
+        {
+          "text": "We saw light flashes. I think all of us saw them. I saw them most often when I was in the sack at night with my eyes closed but awake naturally. They tended to wax and wane in frequency.",
+          "page": 2
+        },
+        {
+          "text": "They were numerous at times - two or three per minute. Some of them to me were a spot or sunbursts. Some were streaks. The streaks, in my case, were less frequent than the bursts. Most of them were in my peripheral visual field.",
+          "page": 2
+        },
+        {
+          "text": "I had a couple that I thought were cosmic particles. I saw an entrance streak and an exit streak.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The Skylab 2 crew explicitly affirmed the light flashes were not hallucinations, distinguishing them from a known fire sensor indicator aboard the station.",
+      "quotes": [
+        {
+          "text": "And you'd have to be careful that you weren't confusing that with the fire flash. Once you've seen a few of each, there is question of which is which. They're not an hallucination.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The Skylab 3 crew observed a bright reddish object in a near-identical orbit to Skylab for approximately 10 minutes, exhibiting a measurable 10-second brightness variation consistent with rotation. From the 5–7 second delay in its entry into darkness relative to Skylab, the crew estimated it was no more than 30–50 nautical miles away. It was never seen again and its identity was never explained to the crew.",
+      "quotes": [
+        {
+          "text": "This bright reddish object was out there and we tracked it for about 5 or 10 minutes. It was obviously a satellite in a very Similar orbit to our own. It was rotating and had a period of almost exactly 10 seconds because you could see the brightness vary with that period. We followed it until sunset and it went out of sunlight just about 5 to 7 seconds after we did.",
+          "page": 5
+        },
+        {
+          "text": "From the 5- to 10-second delay in it's disappearance we surmised that it was not more than 30 to 50 nautical miles from our location. From it's original position in the wardroom window, it did not move more than 10 or 20 degrees over the 10 minutes or so that we watched it. It's orbit was very close to that of our own. We never saw it on any - earlier or succeeding orbits and we'd be quite interested in having its identification established.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The Skylab 3 crew attempted to image the reddish object using onboard monitors but could not resolve it beyond a bright light, and noted it was significantly brighter than any star or planet including Jupiter.",
+      "quotes": [
+        {
+          "text": "You might point out that it never did take the shape of an object but it was always brighter than any other star or planet in the night sky. It was much brighter.",
+          "page": 6
+        },
+        {
+          "text": "We tried monitors and everything on it but we could never make it into anything other than a bright light.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Skylab 4 Commander Gerald Carr reported multiple sightings of external lights with definite motion relative to the station, some appearing to tumble, which the crew reported via dump tapes as soon as they occurred. They presumed — but did not confirm — these were Skylab debris or other satellites.",
+      "quotes": [
+        {
+          "text": "One other area of unusual events that we reported on the dump tapes was that on occasion we saw some lights flashing outside with very a definite motion relative to ours. We presumed that they were other pieces of Skylab, or possibly other satellites.",
+          "page": 10
+        },
+        {
+          "text": "The fact that one or two of them appeared to be tumbling was apparently due to the oscillation of the light flashes that we were getting from them.",
+          "page": 11
+        }
+      ]
+    }
   ],
   "document_type": "technical",
   "legacy_program_connections": [
     {
-      "node_id": "aaro",
-      "relevance": "high",
-      "reasoning": "AARO's historical review mandate covers exactly this category of unresolved government UAP reports; the Skylab 3 co-orbital object, logged with precise timing on channel A and never officially identified, is a primary-source historical case within AARO's scope."
-    },
-    {
       "node_id": "blue_book",
-      "relevance": "low",
-      "reasoning": "Blue Book closed in 1969 before these 1973–74 observations, so there is no direct institutional connection, but these reports represent the kind of credible military/government observer cases Blue Book was designed to collect and that fell into a gap after its closure."
+      "relevance": "medium",
+      "reasoning": "The Skylab 3 unidentified orbital object observation (1973) occurred after Project Blue Book's closure in 1969, representing the gap in formal UAP investigation where astronaut reports of anomalous objects had no established military reporting channel."
     },
     {
-      "node_id": "congressional",
+      "node_id": "aaro",
       "relevance": "medium",
-      "reasoning": "Astronaut UAP testimony has featured in congressional UAP hearings; these debriefings constitute contemporaneous official documentation of exactly the kind of government-employee sightings that congressional oversight has sought to surface."
+      "reasoning": "This document was included in the PURSUE release on war.gov, making it part of the corpus AARO is responsible for reviewing; the Skylab 3 reddish satellite observation is precisely the type of credentialed, instrumented orbital UAP report AARO now investigates."
     }
   ],
   "related_topics": [
-    "astronaut visual testimony",
-    "orbital UAP sightings",
-    "cosmic ray phosphenes",
-    "co-orbital unidentified object",
-    "South Atlantic Anomaly"
+    "astronaut testimony",
+    "orbital UAP",
+    "cosmic ray retinal effects",
+    "low Earth orbit sightings",
+    "unidentified satellite"
   ]
 }

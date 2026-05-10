@@ -1,31 +1,102 @@
 {
-  "hook": "MISREP 4472514, filed by the 482nd Attack Squadron (482 ATKS), documents three separate UAP encounters observed via Full Motion Video during a 21-hour armed reconnaissance mission over the Arabian Gulf and Strait of Hormuz on July 16, 2020, with all substantive UAP description redacted.",
-  "why_it_matters": "This report is one of the rare cases where a single mission log contains three formally-catalogued UAP events, each assigned its own standardized observation block with MGRS coordinates and aircraft state data—suggesting the crew treated each as a distinct, reportable incident rather than a recurring sensor artifact. The mission was simultaneously tracking Iranian naval vessels (probable NASER, SAFIR KISH, and HOUDONG fast-attack craft near Bushehr Port), placing the UAP sightings in an operationally sensitive context. The UAP-specific gentext fields are redacted under b)(1) exemptions and classified until March 1, 2045, meaning the actual descriptions of what was seen remain withheld from the public release.",
+  "hook": "MISREP 4472514 is a U.S. Air Force mission report documenting three separate UAP observations made by a single long-endurance ISR aircraft (482 ATKS, 432 AEW) over the Arabian Gulf, Strait of Hormuz, and Gulf of Oman on July 16–17, 2020, across a ~21-hour mission supporting NAVCENT.",
+  "why_it_matters": "This report is notable for logging three distinct UAP encounters within a single ISR mission, each at different grid locations and times, all recorded via Full Motion Video (FMV). The observations occur during an active intelligence-gathering mission already tracking Iranian naval vessels, establishing that the UAP sightings were incidental to a structured surveillance operation rather than a dedicated UAP hunt. The document was processed through the formal MISREP reporting chain and approved for release to AARO, illustrating the modern institutional pathway for military UAP reporting.",
   "key_findings": [
-    "Three discrete UAP observations were logged at 1830Z, 1920Z, and 2345Z—each formally recorded as a separate OBSERVATION block with MGRS grid coordinates and aircraft heading, altitude, and airspeed at time of sighting.",
-    "All three UAP observations cite FMV (Full Motion Video) as the sole method of observation; no radar or secondary sensor confirmation appears in the visible text.",
-    "Weather was recorded as 'NOT A FACTOR' for all three UAP sightings, ruling out atmospheric conditions as a contributing element per the crew's own assessment.",
-    "The aircraft was simultaneously conducting ISR on Iranian naval vessels—logging a probable NASER WAP at 0645Z, a probable SAFIR KISH at 1932Z, and a possible HOUDONG docked at Bushehr Port at 2140Z—in the same geographic grid squares where UAP were later observed.",
-    "The substantive gentext narratives for all three UAP events are redacted under classification exemptions, with a declassification date of March 1, 2045; only the UAP locations (MGRS grids in the 39RUN/39RVM areas) and the phrase 'OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON' survive in each block."
+    {
+      "finding": "Three separate UAP were observed during a single mission at 1830Z, 1920Z, and 2345Z on July 16, 2020, all via Full Motion Video (FMV) sensor.",
+      "quotes": [
+        {
+          "text": "AT 1830} (OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON. SEE OBS LINE |. AT 19202, 44a BSERVED AN UNIDENTIFIED AERIAL PHENOMENON. SEE OBS LINE 2. AT 2345Z] BSERVED AN UNIDENTIFIED AERIAL PHENOMENON. SEE OBS LINE 3.",
+          "page": 1
+        },
+        {
+          "text": "* Method of Observation: FMV",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "All three UAP observations were made at flight levels between FL190 and FL200, at varying headings and airspeeds, across different grid locations within the Arabian Gulf/Strait of Hormuz area.",
+      "quotes": [
+        {
+          "text": "* Aircraft Altitude: FL 200\n* Aircraft Airspeed: 98 KLAS\n...* Observed Activity Description: UAP",
+          "page": 6
+        },
+        {
+          "text": "« Aircraft Altitude: FL 190\n¢ Aircraft Airspeed: 90 KIAS\n...* Observed Activity Description: UAP",
+          "page": 6
+        },
+        {
+          "text": "+ Aircraft Altitude: FL 191\n» Aircraft Airspeed: 115 KIAS\n...* Observed Activity Description: UAP",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Weather was explicitly documented as not a factor for all three UAP observations, ruling out atmospheric interference as an explanation.",
+      "quotes": [
+        {
+          "text": "* Weather: WEATHER WAS NOT A FACTOR",
+          "page": 6
+        },
+        {
+          "text": "* Weather: WEATHER WAS NOT A FACTOR",
+          "page": 7
+        },
+        {
+          "text": "* Weather: WEATHER WAS NOT A FACTOR",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The mission was a ~21-hour long-endurance ISR sortie (AREC type) operated by 482 ATKS out of OKAS, supporting NAVCENT with 24-hour pre-coordination, and was simultaneously tracking probable Iranian naval vessels including NASER, SAFIR KISH, and HOUDONG-class craft.",
+      "quotes": [
+        {
+          "text": "Total Mission Time: 21 hours 17 minutes",
+          "page": 7
+        },
+        {
+          "text": "AT 0645Z[ 4.49 PBSERVED 1X PROB NASER WAP. AT 1932Z,| 14a |OBSERVED 1X PROB SAFIR KISH IVO 39RUN@#{qp kaif MEACING EAST. AT 21402) 44a PBSERVED 1X POSS HOUDONG AND 1X POSS NASER DOCKED AT BUSHEHR",
+          "page": 4
+        },
+        {
+          "text": "* Precoord Time: 24 HOURS\n»* Precoord Effectiveness: SATISFACTORY",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The GENTEXT narrative sections for all three UAP observations are heavily redacted beyond the bare confirmation that an unidentified aerial phenomenon was observed at a specific grid coordinate, providing no descriptive detail about shape, size, speed, or behavior.",
+      "quotes": [
+        {
+          "text": "* Gentext: EB AT 18302, 1VO 9RVM S(T Maia",
+          "page": 6
+        },
+        {
+          "text": "* Gentext: (EM AT 19202] 14a (OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON TVO 39RUN Wiebe",
+          "page": 6
+        },
+        {
+          "text": "* Gentext: EE AT 2345Z) 14° OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON TVG 39RUN6234236874",
+          "page": 7
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and is part of the USCENTCOM MDR 26-0028 release package, making it a direct output of the military UAP reporting pipeline AARO was established to receive."
-    },
-    {
-      "node_id": "five_eyes",
-      "relevance": "low",
-      "reasoning": "The mission operated under USCENTCOM in the Strait of Hormuz and Arabian Gulf—a coalition maritime patrol area—though no allied-nation involvement is mentioned in the visible text."
+      "reasoning": "The document header on every page reads 'Approved for Release to AARO - FOUO+/PA applies,' directly placing it in the modern AARO UAP disclosure pipeline."
     }
   ],
   "related_topics": [
-    "FMV surveillance UAP",
-    "Persian Gulf UAP",
-    "Iranian naval vessels",
-    "USCENTCOM UAP reporting",
-    "armed reconnaissance UAP encounter"
+    "FMV/FLIR UAP observation",
+    "Persian Gulf ISR operations",
+    "long-endurance drone surveillance",
+    "Iranian naval vessel tracking",
+    "multiple UAP single mission"
   ]
 }

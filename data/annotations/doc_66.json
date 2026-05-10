@@ -1,41 +1,62 @@
 {
-  "hook": "An Air Intelligence Information Report dated October 14, 1955, documenting an eyewitness account of the ascent and flight of an 'unconventional aircraft' observed in the trans-Caucasus region of the USSR (Azerbaijan). The document body is almost entirely illegible due to OCR failure — only fragmented character strings were extracted across 10 pages.",
-  "why_it_matters": "This report represents Cold War-era U.S. air intelligence collection on anomalous aerial phenomena observed inside Soviet territory, a category of reporting that fed directly into both Project Blue Book and broader technical intelligence assessments of Soviet aerospace capabilities. The trans-Caucasus location is strategically significant — Azerbaijan bordered Soviet military-industrial infrastructure and was a known area of interest for U.S. reconnaissance efforts in the mid-1950s. Because the document text could not be recovered by OCR, the actual witness account, aircraft description, and analytical conclusions remain inaccessible without the original scanned images.",
+  "hook": "An Air Intelligence Information Report dated October 14, 1955, documenting an eyewitness account of an unconventional aircraft observed ascending and flying in the trans-Caucasus region of the Soviet Union (Azerbaijan area). The document text is almost entirely illegible due to OCR failure, with only an authority citation and scattered character fragments recovered.",
+  "why_it_matters": "A 1955 intelligence report of an unconventional aircraft sighting inside Soviet territory would be significant as Cold War aerial intelligence — distinguishing experimental Soviet craft from other phenomena was a core mission of Air Intelligence during this period. Unfortunately, the document body failed OCR extraction almost completely, leaving only fragments that cannot be meaningfully analyzed. The metadata classification authority (NND 857013) confirms this is a formally declassified record, but its actual evidentiary value cannot be assessed from the extracted text alone.",
   "key_findings": [
-    "The document is formally classified as an Air Intelligence Information Report (AIIR), a standardized U.S. military intelligence reporting format used to capture raw field observations for further analysis.",
-    "The subject is an eyewitness account — not radar or photographic data — of an unidentified aircraft performing an observable ascent and flight over the trans-Caucasus USSR, suggesting a ground-level human intelligence (HUMINT) source.",
-    "The date of October 14, 1955 places this report within the active Project Blue Book era and concurrent with heightened U.S. interest in Soviet aerospace developments following early jet and missile programs.",
-    "Declassification authority NND 857013 indicates this was processed under a systematic declassification review, not a targeted FOIA release.",
-    "The OCR extraction yielded only illegible character fragments across all 10 pages — the substantive content of the witness account, aircraft description, and any analytical conclusions cannot be determined from the extracted text alone."
+    {
+      "finding": "The document carries a formal declassification authority citation, confirming it is part of an officially processed records release.",
+      "quotes": [
+        {
+          "text": "Authority: \nNND 857013",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The OCR extraction failed almost entirely across all ten pages — the recovered text consists exclusively of isolated character fragments and OCR noise, with no coherent sentences or substantive content recoverable from the document body.",
+      "quotes": [
+        {
+          "text": "ican: \nein \nat \nfic \nhc \ncnn \nie \nae \nsuinnnn \nhon",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Multiple pages returned completely blank extraction results, indicating dense handwriting, poor scan quality, or a document format (e.g., carbon copy, typed on onion-skin paper) that defeated the OCR engine.",
+      "quotes": [
+        {
+          "text": ". \nC \n_",
+          "page": 4
+        },
+        {
+          "text": "| ",
+          "page": 5
+        }
+      ]
+    }
   ],
-  "document_type": "investigation",
+  "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "A 1955 Air Intelligence Information Report on an unconventional aircraft sighting falls squarely within the type of raw reporting that was aggregated and evaluated by Project Blue Book during this period."
+      "reasoning": "A 1955 USAF Air Intelligence report on an unconventional aircraft sighting directly parallels the mission scope of Project Blue Book, which was the active USAF program collecting and evaluating exactly this category of report during this period."
     },
     {
       "node_id": "wright_patterson",
-      "relevance": "high",
-      "reasoning": "Air Intelligence Information Reports of this type were routed through the Air Technical Intelligence Center (ATIC) at Wright-Patterson AFB, which was the institutional home for Blue Book and related aerial phenomenon analysis."
-    },
-    {
-      "node_id": "cia_oga",
       "relevance": "medium",
-      "reasoning": "A HUMINT-sourced sighting of unconventional aircraft inside Soviet territory in 1955 would have been of direct interest to CIA's Office of Scientific Intelligence, which was actively tracking Soviet aerospace capabilities during this period."
+      "reasoning": "Air Intelligence Information Reports of this era were routed through Air Technical Intelligence Center at Wright-Patterson, the institutional home of aerial phenomena investigation for the USAF."
     },
     {
-      "node_id": "five_eyes",
-      "relevance": "low",
-      "reasoning": "Intelligence on anomalous aircraft observed within the USSR's Caucasus region may have been shared with allied signals and human intelligence partners under existing exchange arrangements."
+      "node_id": "cia_dst",
+      "relevance": "medium",
+      "reasoning": "A 1955 eyewitness report of unconventional aircraft inside Soviet territory falls squarely within CIA Directorate of Science and Technology interest in monitoring Soviet aerospace capabilities during the Cold War."
     }
   ],
   "related_topics": [
-    "eyewitness account",
     "Soviet airspace",
-    "trans-Caucasus intelligence",
-    "unconventional aircraft 1955",
-    "Cold War aerial reconnaissance"
+    "trans-Caucasus surveillance",
+    "Cold War aerial intelligence",
+    "eyewitness aircraft report",
+    "unconventional aircraft 1955"
   ]
 }

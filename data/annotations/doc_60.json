@@ -1,36 +1,113 @@
 {
-  "hook": "A 1948 Air Force correspondence chain routing civilian and military flying disc sighting reports to Wright-Patterson's Air Materiel Command, including an FBI field report of a phosphorescent disc seen over Hobson, Ohio by four railroad workers.",
-  "why_it_matters": "This document is a concrete example of the inter-agency reporting infrastructure built around Project SIGN in early 1948, showing the FBI actively forwarding civilian UAP sightings to the Air Force within weeks of occurrence. The reference to interrogating the Horten Brothers about German flying wing designs reveals that the Air Force was simultaneously investigating both domestic sightings and foreign aerospace technology as potential explanations.",
+  "hook": "A 1948 administrative compilation from USAF Intelligence Directorate routing flying disc sighting reports and Horten Brothers aircraft investigation memos to Air Materiel Command at Wright-Patterson, spanning January through June 1948 under Project SIGN.",
+  "why_it_matters": "This file captures the early bureaucratic machinery of Project SIGN in operation, showing how flying disc reports from FBI field agents, foreign military attachés, and Air Force field commands were centrally collected by USAF Intelligence and forwarded to Wright-Patterson for technical analysis. The explicit investigation of German Horten Brothers flying wing designs as a possible explanation for disc sightings — including direct military interrogation of the Horten Brothers themselves — reveals one of the primary conventional hypotheses being actively pursued in 1948. The multi-agency scope, spanning domestic witnesses, FBI, Canadian and Soviet military attachés, demonstrates that SIGN was drawing on the full intelligence apparatus.",
   "key_findings": [
-    "On the night of 8 May 1948, four New York Central railroad employees (two car inspectors, a yard clerk, and a patrolman) observed a round, phosphorescent object over Hobson, Ohio traveling at high speed on a 90-degree heading at 6-mile altitude, leaving a phosphorescent trail.",
-    "The report was filed by FBI Special Agent D.K. Brown of the Cleveland, Ohio field office and routed through Eleventh Air Force headquarters before being forwarded to USAF intelligence and Air Materiel Command at Wright-Patterson.",
-    "A February 1948 memo confirms that the Air Force made direct contact with the Horten Brothers (German flying wing designers) and that the Army's G2 European Command was instructed via telecon to use USAF Collection Memorandum No. 7 as the basis for interrogating them about potential connections to flying disc sightings.",
-    "The document references a classified T-2 report titled 'German Flying Wings Designed by Horten Brothers,' which was retained by the USAF Directorate of Intelligence office rather than forwarded to Wright-Patterson.",
-    "All correspondence is routed under Project SIGN, with forms indexed under categories '000.9 Phenomena' and '000.75 Clippings,' demonstrating a structured, bureaucratic collection system for UAP reports as early as February 1948."
+    {
+      "finding": "Railway workers in Hobson, Ohio on the night of 8 May 1948 reported a round, phosphorescent object approximately nine inches in apparent diameter from ground level, traveling at great speed at altitude of 5–6 miles on a 90-degree heading and leaving a phosphorescent trail. The report reached USAF via FBI Special Agent D.K. Brown of Cleveland.",
+      "quotes": [
+        {
+          "text": "The attached report wes. received this Headquarters 27 May 1948, fron Special Agent, D.K, Brown, Federal Bureau of investigati on, Cleveland, Chic.",
+          "page": 2
+        },
+        {
+          "text": "(3) Size - abiearade to be nine inches dn diameter -fron \" ground level,",
+          "page": 2
+        },
+        {
+          "text": "(4)> Color fs phosphorescent (5) speed ¢ Great) amount. of speed (6) Heading - 90° (7) idanueverability - not known (8) Altitude - 6 to 6 miles (9) Sound - unknown to this Hq. (10) Exhaust \"trail or not. - Phosphorescent trail in the sky",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The Air Force was actively investigating whether German Horten Brothers flying wing designs explained flying disc sightings. A classified T-2 technical report on the subject was retained by USAF Intelligence, and the European Command's G2 was directed via telecon to interrogate the Horten Brothers directly using Collection Memorandum Number 7 as the basis.",
+      "quotes": [
+        {
+          "text": "T-2 Report \"German Flying Wings Designed by Horten Brothers\" has\né\nbeen retained by this office.",
+          "page": 4
+        },
+        {
+          "text": "This Directorate has been advised that contact has been made with the Horton Brothers, and the Assistant Ghief of Staff, G2, of Buropean Cousiand has accordingly been advised by Telecon to use this Menorandum as the basis for interrogation.",
+          "page": 14
+        },
+        {
+          "text": "The results of this interrogation will be forwarded to your — Headquarters as soon as received.",
+          "page": 14
+        }
+      ]
+    },
+    {
+      "finding": "Project SIGN served as the explicit administrative and filing framework for all flying disc correspondence routed through USAF Intelligence to Wright-Patterson, with multiple routing forms directly naming it.",
+      "quotes": [
+        {
+          "text": "SUMMARY: Clippings Service for Project \"SIGN\"",
+          "page": 8
+        },
+        {
+          "text": "SUMMARY: \"Project SIGN\" \"Flying Discs\"",
+          "page": 15
+        },
+        {
+          "text": "SUMMARY: project \"SIGH\",",
+          "page": 16
+        }
+      ]
+    },
+    {
+      "finding": "Flying disc reporting was governed by a formal USAF directive dated 6 February 1948 requiring all commands to forward sighting information to Washington and AMC, with distribution copies to Air Defense Command — establishing a mandatory multi-echelon reporting chain from field units to Wright-Patterson.",
+      "quotes": [
+        {
+          "text": "The attached information is forwarded in compliance with USAF Letter, subj: \"Reporting of Information on \"flying Discs\", dtd 6 February 1948,",
+          "page": 10
+        },
+        {
+          "text": "Copies of repdrt have been forwarded to Hq. Air Materiel Command and Hq. Air Defense Command as directed in above mentioned directive.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Foreign military intelligence was integrated into the flying disc investigation: a U.S. Military Attaché report from Moscow referenced 1400 aircraft, and a Canadian Military Air Attaché report was used to formally close a specific incident involving individuals named Johnson and Harrison.",
+      "quotes": [
+        {
+          "text": "A recent report fromthe U, So Nilitary attache, Moscow, USSR dated 9 June 1917, indicates that 1400 aireratt, dirsatly or",
+          "page": 6
+        },
+        {
+          "text": "Attached report fron Military Air Attache, Canada, closes the incident reported by Johnson and Harrison.",
+          "page": 13
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
-      "node_id": "wright_patterson",
-      "relevance": "high",
-      "reasoning": "Every piece of correspondence in this file is addressed to the Commanding General, Air Materiel Command at Wright-Patterson Air Force Base, which served as the central repository for Project SIGN investigation materials."
-    },
-    {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "This file is explicitly routed under Project SIGN, the direct predecessor to Project Blue Book, with correspondence reference forms filed under '320 Project SIGN.'"
+      "reasoning": "Multiple routing forms and correspondence reference forms explicitly name Project SIGN as the filing framework, making this a direct administrative record of SIGN's operation — the immediate predecessor to Project Blue Book."
     },
     {
-      "node_id": "cia_oga",
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "Air Materiel Command at Wright-Patterson Air Force Base is the designated recipient of every forwarded flying disc report and investigation memo in this file, identified by office symbol TSDIN/MCI."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "medium",
+      "reasoning": "A Canadian Military Air Attaché report was formally incorporated into the investigation to close the Johnson-Harrison incident, indicating allied intelligence sharing on flying disc cases in early 1948."
+    },
+    {
+      "node_id": "cia_dst",
       "relevance": "low",
-      "reasoning": "The document references a military attaché report from Moscow dated June 1947 concerning 1,400 aircraft, indicating early intelligence community involvement in correlating foreign aerospace activity with domestic UAP sightings."
+      "reasoning": "Collection Memorandum Number 7 and the Moscow military attaché report indicate active foreign intelligence collection on the flying disc question running parallel to domestic SIGN operations."
     }
   ],
   "related_topics": [
     "Project SIGN",
-    "Horten Brothers flying wing",
-    "FBI civilian sighting reports",
-    "phosphorescent UAP",
-    "inter-agency reporting chain"
+    "Horten Brothers flying wings",
+    "FBI sighting collection",
+    "multi-command reporting chain",
+    "foreign military attaché intelligence"
   ]
 }

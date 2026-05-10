@@ -1,41 +1,53 @@
 {
-  "hook": "A 194-page section of the FBI's long-running 62-HQ-83894 flying disc case file, spanning June 1947 to July 1968, but text extraction via pymupdf yielded no readable content — the pages are almost certainly scanned photographic images rather than digitized text, with only a single declassification stamp recoverable: 'Authority: DECLASSIFIED NND 90986'.",
-  "why_it_matters": "This section is notable primarily for what the official description claims it contains rather than what could be extracted: Oak Ridge, TN photographic evidence (a sensitive nuclear site), technical proposals on potential UAP propulsion systems, and eyewitness testimonies spanning the entire early UFO era. The fact that the FBI maintained a two-decade active case file — and that this release includes pages not on the FBI Vault with fewer redactions — makes it a potentially significant primary source, if the images can be OCR'd or reviewed manually.",
+  "hook": "A 194-page section of FBI case file 62-HQ-83894 covering UFO/flying disc investigations from 1947–1968, for which pymupdf text extraction yielded no readable content — the document pages are almost certainly scanned images with no embedded text layer, rendering the full file contents unanalyzable from this extraction alone.",
+  "why_it_matters": "This section of the 62-HQ-83894 file is significant because the official description indicates it contains newly declassified pages beyond what the FBI Vault previously released, including eyewitness testimonies, photographic evidence from Oak Ridge (a nuclear facility), and technical propulsion proposals. However, because text extraction returned only blank pages, the actual analytical content remains opaque until OCR is applied to the underlying scans. The single recoverable text element — a declassification authority stamp — confirms the file was processed under NND 90986, a National Archives declassification project.",
   "key_findings": [
-    "Text extraction produced no readable document content across all 194 pages; the only recoverable text is the declassification authority stamp 'NND 90986', indicating the document was processed through the National Declassification Center.",
-    "Per official description, the case file includes photographic evidence from Oak Ridge, TN — a highly sensitive Atomic Energy Commission nuclear facility — suggesting the FBI was tracking UAP incidents near nuclear infrastructure.",
-    "The case file's date range (June 1947–July 1968) covers the full arc of the classic UFO era, from the Kenneth Arnold sighting through the height of Project Blue Book.",
-    "Official description notes this release contains 'several newly declassified pages' and 'only minor redactions' compared to the FBI Vault version, implying substantive new content not previously public.",
-    "The document includes a single page with redaction markers (per metadata: 1 page, 0.0% blacked-out area), suggesting redactions are minimal or symbolic rather than substantive."
+    {
+      "finding": "The document was declassified under National Archives declassification authority NND 90986, confirming it underwent formal review before release.",
+      "quotes": [
+        {
+          "text": "Authority: \nDECLASSIFIED \nNND 90986",
+          "page": 176
+        }
+      ]
+    },
+    {
+      "finding": "Text extraction via pymupdf returned no readable content across all 194 pages, indicating the document consists entirely of scanned image pages without an embedded text layer — the file is inaccessible to automated text analysis without OCR processing.",
+      "quotes": []
+    },
+    {
+      "finding": "The document carries 1 page flagged as containing redaction markers per the metadata, suggesting at least one page has visible redaction blocks even in this more complete release compared to the FBI Vault version.",
+      "quotes": []
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "The case file spans 1947–1968, the exact operational period of Project Blue Book, and FBI flying disc case files were coordinated with Air Force intelligence during this era."
-    },
-    {
-      "node_id": "doe_aec",
-      "relevance": "high",
-      "reasoning": "Official description explicitly cites photographic evidence from Oak Ridge, TN, which was a core Atomic Energy Commission facility, placing UAP activity at a nuclear site."
-    },
-    {
-      "node_id": "wright_patterson",
-      "relevance": "medium",
-      "reasoning": "FBI UFO case files from this period were routinely shared with Air Force intelligence at Wright-Patterson, which hosted Project Blue Book and maintained the official military UAP investigation."
+      "reasoning": "The case file spans 1947–1968, directly overlapping with Project Blue Book's operational period, and FBI HQ files routinely cross-referenced Air Force UFO investigation records during this era."
     },
     {
       "node_id": "lanl_ornl_battelle",
+      "relevance": "high",
+      "reasoning": "The official description explicitly references photographic evidence collected at Oak Ridge, TN — a DOE/AEC nuclear site — placing this file in direct connection with nuclear-facility UAP surveillance."
+    },
+    {
+      "node_id": "doe_aec",
       "relevance": "medium",
-      "reasoning": "Oak Ridge National Laboratory (ORNL) is explicitly named in connection with photographic evidence in this file, directly linking the document to DOE/AEC nuclear laboratory UAP incidents."
+      "reasoning": "Oak Ridge, TN was an AEC facility, and FBI monitoring of UAP near nuclear installations in this period was conducted partly at AEC's request for security purposes."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "FBI HQ UFO files from this period occasionally referenced Air Materiel Command and Wright-Patterson as the military repository for physical evidence and case coordination."
     }
   ],
   "related_topics": [
-    "nuclear facility UAP sightings",
-    "FBI flying disc investigation",
-    "Oak Ridge photographic evidence",
-    "propulsion system analysis",
-    "1947-1968 UFO case file"
+    "FBI flying disc investigations",
+    "Oak Ridge nuclear facility",
+    "1947-1968 UFO case file",
+    "NND 90986 declassification",
+    "scanned image extraction failure"
   ]
 }

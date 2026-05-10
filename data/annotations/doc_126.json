@@ -1,36 +1,107 @@
 {
-  "hook": "FBI Special Agent D. Arthur Byrnes Jr. personally investigated the April 24, 1964 Socorro, New Mexico landing incident, documenting physical ground traces and transcribing the firsthand account of Officer Lonnie Zamora, who witnessed an egg-shaped aluminum-white object land and depart one mile southwest of Socorro.",
-  "why_it_matters": "The Socorro incident is one of the most credible close-encounter cases in the historical UAP record because the primary witness was a law enforcement officer immediately vouched for by an FBI agent who knew him personally for five years. The document preserves both physical evidence measurements (four rectangular depressions, burned grass patches, circular marks in sandy earth) and Zamora's detailed flight behavior description — including a high-to-low acoustic signature transitioning to complete silence — making this a rare case combining witness testimony, physical trace evidence, and federal law enforcement documentation in a single contemporaneous report.",
+  "hook": "FBI Special Agent D. Arthur Byrnes Jr.'s May 8, 1964 field report on the Socorro, New Mexico landing incident, combined with Officer Lonnie Zamora's own first-person written statement, documenting physical ground evidence and a detailed eyewitness account of an unidentified object that landed and departed approximately one mile southwest of Socorro on April 24, 1964.",
+  "why_it_matters": "The Socorro incident is among the most physically evidenced UAP cases in the historical record, and this file captures the FBI's contemporaneous on-scene investigation. The document is notable because the FBI agent who wrote the report had a five-year personal acquaintance with the primary witness and explicitly vouched for his credibility. The combination of Zamora's detailed first-person account and the physical trace evidence — measured ground impressions, burned vegetation, circular marks — makes this a rare case where multiple independent data points corroborate a single sighting.",
   "key_findings": [
-    "Four rectangular ground depressions measuring approximately 16 by 6 inches were found at the site, each about 2 inches deep and angled as if made by an object pressing into the earth from a center line, with displaced earth pushed to the far side.",
-    "Three burned grass patches were found inside the four depressions and one burned area was found outside them; Zamora also reported brush burning in multiple locations when he returned to the site.",
-    "Three smooth circular marks approximately 4 inches in diameter penetrated the sandy earth about one-eighth of an inch, described as resembling impressions from a jar lid.",
-    "Zamora described the object as aluminum-white, bearing an insignia approximately 2.5 feet tall and 2 feet wide; the object departed southwest at 10-15 feet altitude, cleared a dynamite shack by about 3 feet, and produced a roar followed by a sharp high-to-low whine before going completely silent.",
-    "Agent Byrnes explicitly characterized Zamora as 'a sober, industrious, and conscientious officer not given to fantasy,' noting he was perfectly sober but 'somewhat agitated'; Sergeant Chavez independently observed Zamora was sweating and 'very pale' upon arrival."
+    {
+      "finding": "FBI Special Agent Byrnes personally vouched for witness Officer Zamora's credibility, explicitly characterizing him as reliable and not prone to fabrication, and noted he was visibly shaken but sober at the scene.",
+      "quotes": [
+        {
+          "text": "Officer Zamora, known intimately for approximately five years, is well regarded as a sober, industrious, and conscientious officer and not given to fantasy.",
+          "page": 1
+        },
+        {
+          "text": "Officer Zamora was noted to be perfectly sober and somewhat agitated over his experience.",
+          "page": 1
+        },
+        {
+          "text": "Sergeant Chavez came up, asked me what the trouble was, because I was sweating and he told me I was white, very pale.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "Physical trace evidence at the landing site included four rectangular ground indentations, three burned grass patches inside the depression pattern, one burned area outside, and three additional smooth circular marks in the sandy earth.",
+      "quotes": [
+        {
+          "text": "Special Agent Byrnes noted four indentations in the rough ground at the \"site\" of the object described",
+          "page": 1
+        },
+        {
+          "text": "These depressions appeared regular in shape, approximately sixteen by six inches rectangular. Each depression seemed to have been made by an object going into the earth at an angle from a center line. Each depression was approximately two inches deep and pushed some earth to the far side.",
+          "page": 2
+        },
+        {
+          "text": "Inside the four depressions were three burned patches of clumps of grass. Other clumps of grass in the same area appeared not to be disturbed. One burned area was outside the four depressions.",
+          "page": 2
+        },
+        {
+          "text": "There were three circular marks in the earth which were smooth, approximately four inches in diameter and penetrated in the sandy earth approximately one-eighth of an inch as if a jar lid had gently been pushed into the sand.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Zamora's first-person statement describes the object bearing a visible insignia approximately 2.5 by 2 feet, positioned centrally on the object, observed while the craft was on the ground.",
+      "quotes": [
+        {
+          "text": "Insignia was about two and one-half feet high and about two feet wide, guess. Was in middle of object, like",
+          "page": 7
+        },
+        {
+          "text": "Object still like alumim-white.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The object's departure sequence involved a roar, a rapid ascent to 20–25 feet, followed by a distinctive high-to-low-tone whine lasting approximately one second, then complete silence as it traveled southwest at low altitude and high speed.",
+      "quotes": [
+        {
+          "text": "When the roar stopped, heard a sharp tone whine from high tone to low tone. At end of roar was this whine and the",
+          "page": 8
+        },
+        {
+          "text": "whine lasted maybe a second. Then there was complete Silence about the object. That's when I lifted up my head and saw the object going away from me.",
+          "page": 8
+        },
+        {
+          "text": "It had no flame whatsoever as it was traveling over the ground, and no smoke or noise.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "Zamora's statement details the object clearing an 8-foot dynamite shack by approximately three feet while traveling fast in a southwest direction at an estimated 10–15 feet above ground, rising only after leaving the immediate site.",
+      "quotes": [
+        {
+          "text": "It appeared to go in a straight line and at same height--possibly ten to fifteen feet from ground, and it cleared the dynamite shack by about three feet. Shack about eight feet high. Object was traveling very fast.",
+          "page": 8
+        },
+        {
+          "text": "The Object seemed to lift up slowly, and to \"get small\" in the distance very fast. It seemed to just clear the Box Canyon or Six Mile Canyon Mountain. it disappeared as it",
+          "page": 8
+        }
+      ]
+    }
   ],
   "document_type": "investigation",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "The Socorro/Zamora incident was one of Project Blue Book's most prominent unresolved cases, and this FBI field report is a contemporaneous parallel investigation documenting the same physical evidence Blue Book investigators examined."
+      "reasoning": "The Socorro/Zamora incident of April 24, 1964 was one of Project Blue Book's most significant and unresolved cases; the FBI field report and Zamora's statement are core primary source records from that investigation."
     },
     {
       "node_id": "wright_patterson",
       "relevance": "medium",
-      "reasoning": "Project Blue Book, headquartered at Wright-Patterson AFB, actively investigated the Socorro landing site; this FBI report would have been shared with Air Force investigators per inter-agency cooperation protocols of the period."
-    },
-    {
-      "node_id": "sandia",
-      "relevance": "low",
-      "reasoning": "The incident occurred near Socorro, New Mexico, in close proximity to Sandia National Laboratories and White Sands Missile Range, and investigators at the time considered whether the object could relate to experimental military hardware from those facilities."
+      "reasoning": "Project Blue Book, headquartered at Wright-Patterson AFB, had jurisdiction over the Socorro investigation and would have received copies of the FBI's field findings documented in this file."
     }
   ],
   "related_topics": [
-    "ground trace physical evidence",
-    "law enforcement witness testimony",
-    "acoustic UAP signature",
-    "Socorro 1964 landing incident",
-    "close encounter landing marks"
+    "ground trace evidence",
+    "landing marks",
+    "eyewitness testimony",
+    "Socorro 1964",
+    "acoustic signature"
   ]
 }

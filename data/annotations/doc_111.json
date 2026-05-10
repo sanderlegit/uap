@@ -1,36 +1,94 @@
 {
-  "hook": "A summary of statements from seven federal law enforcement special agents who reported four distinct UAP encounters in the Western United States over two consecutive days in 2023, including orbs launching orbs, a silent hovering fiery orb near a rock formation, and two separate kite-shaped objects one of which appeared transparent.",
-  "why_it_matters": "AARO itself characterizes this report as 'among the most compelling within AARO's current holdings,' citing witness credibility, cross-corroboration across independent teams, and behavioral features (silent hovering, apparent transparency, light emission) that resist conventional explanation. The document is notable for the layered nature of the sightings — multiple independent teams observed the same phenomena from different vantage points, and AARO's own post-event measurements revised witness distance estimates significantly (500-600m reported vs. ~1050m measured), implying the 'Large, Fiery Orb' was 12-18 meters in diameter. The appearance of a seemingly transparent, semi-solid object that blocked a spotlight beam without being visually acquired represents a physically anomalous claim made by credentialed federal agents.",
+  "hook": "A summary report of four distinct UAP encounters in the western United States, witnessed by seven federal law enforcement special agents across two days in 2023, including orange 'mother' orbs launching red orbs, a large hovering glowing orb, and two variants of a flat kite-shaped object—one of which appeared semi-transparent.",
+  "why_it_matters": "This document is notable for the number of independent corroborating witnesses (six agents across three separate teams, each from different vantage points) who reported the same 'orbs launching orbs' behavior without coordination. AARO conducted follow-up measurements that revised witness distance and size estimates significantly, suggesting the objects were substantially larger and farther than perceived. The four distinct encounter categories within a single two-day period in a restricted zone, including an object that appeared to interact with a spotlight beam while invisible, represent a concentration of anomalous behaviors rarely documented in a single report.",
   "key_findings": [
-    "Three independent two-person teams of federal law enforcement agents separately witnessed orange 'mother' orbs launch groups of 2-4 smaller red orbs at least five times over two dusk periods, with red orbs exhibiting variable trajectories including horizontal, angled upward, and swooping downward.",
-    "USPER5 and USPER6 observed a glowing orange orb hovering silently near a rock pinnacle for approximately one minute; AARO's post-event measurements placed it ~1050 meters away and estimated its diameter at 12-18 meters, significantly larger than witnesses initially gauged.",
-    "A pre-dawn encounter with a 'Dark Kite' object — initially mistaken for a vehicle — showed it moving laterally off a road over desert terrain at 15-20mph with no change in height or apparent resistance; USPER6 using night vision goggles described it as a 'very thin line' approximately 4 feet wide, and the object subsequently turned off its lights and disappeared.",
-    "Approximately 30 minutes after the Dark Kite encounter, USPER5 observed a kite-shaped object about 6 meters off the ground through NVGs and reported seeing stars faintly through it, suggesting partial transparency; USPER7, present at the same location, did not see the object at all.",
-    "During the Transparent Kite encounter, USPER5's spotlight beam appeared to terminate abruptly at approximately 50 yards on an invisible obstruction, then resumed projecting normally when re-aimed — suggesting a physical but visually undetectable presence in that location."
+    {
+      "finding": "Six federal agents in three independent two-person teams observed orange orbs emit groups of smaller red orbs at least five separate times, with the orange 'mother' orb visible for only one to two seconds before disappearing each time.",
+      "quotes": [
+        {
+          "text": "Three teams of two federal law enforcement special agents each (USPER1 through USPER6) independently describe seeing orange \"orbs\" in the sky emit/launch smaller red \"orbs\" in groups of two to four, with three being the general consensus. This is stated to have occurred at least five times. Each time, the orange orb would appear, launch red orbs, then disappear. The orange orb was only visible for one or two seconds.",
+          "page": 1
+        },
+        {
+          "text": "Due to the sequential nature of the events, it is not known whether there was a single orange \"mother\" orb that released the groups of red orbs or whether there were multiple orange orbs at play.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "AARO's post-hoc measurements substantially revised witness estimates for the 'Large, Fiery Orb': agents estimated 500–600 meters distance and helicopter-cockpit size, while AARO measured approximately 1050 meters distance and 12–18 meters diameter.",
+      "quotes": [
+        {
+          "text": "Two federal law enforcement special agents (USPER5 and USPER6) witness a glowing orange orb at a distance of \"approximately 500-600 meters,\"* where it was perched close to a rock pinnacle. Size was difficult to determine, but it appeared to be similar in size to a \"small helicopter cockpit.\"**",
+          "page": 2
+        },
+        {
+          "text": "* Measurements later gathered by AARO assess the object to have been ~1050 meters away from the observers.\n** Measurements later gathered by AARO assess the object to have been between 12-18 meters in diameter.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The 'Dark Kite' object was initially mistaken for a car in a restricted zone but abruptly moved laterally off a road over open desert without changing its orientation or height, at an estimated 15–20 mph, before stopping and extinguishing its lights.",
+      "quotes": [
+        {
+          "text": "Two federal law enforcement special agents (USPER5 and USPER6) observed what is initially thought to be a car traveling along a road in a restricted zone. The \"car\" had two lights (one red and one white) that are about 2 to 3 feet off the ground. Agents pursued the \"car\" and as they got to within a few hundred feet of it, the object suddenly moved off the road over the desert without changing its orientation with respect to the observers, i.e., it appeared to move laterally, at an estimated speed of 15-20mph.",
+          "page": 3
+        },
+        {
+          "text": "The object stopped about 100 meters off the side of the road and turned off its lights. USPER6 described the object as a \"thin line,\" from the back whereas the other agent (USPER5) stated that \"it almost looked like an ill defined, dark kite shape that had some rounded width to the sides.\"",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The 'Transparent Kite' object, observed approximately 30 minutes after the Dark Kite and near the same location, appeared semi-transparent through night vision goggles—stars were faintly visible through it—and appeared to block a spotlight beam while remaining visually undetectable to the naked eye of a third agent.",
+      "quotes": [
+        {
+          "text": "USPER5 stated that in the night vision goggles, they could \"vaguely see a bright star or two in the distance through the object, though somewhat more faint,\" leading them to believe the object was somewhat transparent.",
+          "page": 4
+        },
+        {
+          "text": "The witness noted that when shining the light around, \"at one point my beam went from shining far into the distance to stopping about 50 yards away on nothing in particular, it just was not projecting into the distance and then it was.\"",
+          "page": 4
+        },
+        {
+          "text": "USPER7 did not see the object.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The 'Large, Fiery Orb' hovered motionlessly without sound near a rock pinnacle for approximately one minute and was compared by witnesses to the Eye of Sauron, with one agent noting a possible structural connection to the rock formation beneath it.",
+      "quotes": [
+        {
+          "text": "The object was described as being \"similar to the Eye or [sic] Sauron from Lord of the Rings, except without the pupil, or maybe an orange Storm Electrify bowling ball.\"",
+          "page": 2
+        },
+        {
+          "text": "USPER6 stated the object \"seemed to be hovering with zero resistance or movement, or to be suspended…\" The sighting lasted \"about a minute.\"",
+          "page": 2
+        },
+        {
+          "text": "USPER6 noted that the object \"did almost appear it might have had a small spindle or something connecting it from underneath to the rock formation.\"",
+          "page": 2
+        }
+      ]
+    }
   ],
   "document_type": "investigation",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "AARO is directly named as the office that collected follow-up measurements, holds this report in its active holdings, and explicitly assessed this case as 'among the most compelling' in its current portfolio."
-    },
-    {
-      "node_id": "blue_book",
-      "relevance": "low",
-      "reasoning": "The multi-witness, multi-team corroboration methodology and behavioral categorization (orbs, structured craft, luminous hovering objects) echoes Project Blue Book investigative frameworks, though the document does not reference it."
-    },
-    {
-      "node_id": "five_eyes",
-      "relevance": "low",
-      "reasoning": "The use of federal law enforcement agents operating in a restricted zone with night vision equipment in a structured multi-team configuration suggests an intelligence-adjacent operational context, though no foreign partner involvement is stated."
+      "reasoning": "AARO is explicitly named as the receiving office for this report and conducted independent follow-up measurements that revised witness distance and size estimates for the 'Large, Fiery Orb' encounter."
     }
   ],
   "related_topics": [
-    "orb phenomena",
-    "law enforcement witness testimony",
+    "multiple witness corroboration",
+    "orb spawning behavior",
+    "restricted zone incursion",
     "night vision observation",
-    "transparent or semi-solid UAP",
-    "restricted zone incursion"
+    "federal law enforcement testimony"
   ]
 }

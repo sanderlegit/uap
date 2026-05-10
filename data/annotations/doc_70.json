@@ -1,38 +1,96 @@
 {
-  "hook": "A collection of individual Army Air Forces UFO incident investigation files from October 1946 through January 1949, each built around a standardized 'Check-List - Unidentified Flying Objects' form, containing witness interviews and narrative summaries for sightings across Louisiana, New Mexico, California, and Mississippi.",
-  "why_it_matters": "These files document the U.S. military's early, systematic approach to UFO reporting before Project Blue Book was formally established, showing investigators already using structured checklists covering altitude, speed, sound, construction, and witness credibility. Multiple cases involve credentialed witnesses—experienced pilots and a retired Army colonel—whose testimony was formally evaluated for reliability, establishing a precedent for treating anomalous aerial encounters as legitimate intelligence matters. The contradictory accounts from two witnesses to the same Santa Fe incident (Incident 175/175a) also illustrate how investigators grappled with perceptual inconsistency in UAP reporting from the outset.",
+  "hook": "A collection of early U.S. Air Force UFO incident summaries using standardized 'Check-List - Unidentified Flying Objects' forms, covering individual sightings from October 1946 through January 1949 across Louisiana, New Mexico, California, and Mississippi, with attached witness narratives and investigator credibility assessments.",
+  "why_it_matters": "These summaries document the nascent institutional infrastructure for UAP reporting — standardized checklists, witness credibility ratings, and cross-referencing of multiple observers — predating Project Blue Book's formal structure. The September 23, 1948 sightings near Los Alamos are especially significant: two independent witnesses near an active nuclear weapons facility described objects with contradictory characteristics, and neither could be explained by known aircraft. The recurring emphasis on witnesses' pilot credentials and investigator character assessments reveals a systematic effort to establish evidentiary standards for UAP reports.",
   "key_findings": [
-    "Incident 2 (1 Oct 1946, Ascension Parish, LA): Witness B.B. Williams, a student pilot, observed a white-hot ice cream cone-shaped object traveling east at approximately 300 MPH and 2500 ft altitude for ~10 seconds; it produced no noise, left no trail, did not illuminate the surrounding area, and appeared entirely composed of flame with no visible metal or control surfaces.",
-    "Incident 175 (23 Sept 1948, Santa Fe, NM): Experienced commercial pilot A. Ruble Angier observed a perfectly white, flat circular object at an estimated 30,000 ft altitude for 15–20 minutes; using a radio tower for perspective he estimated its size at 100–150 feet and ruled out weather balloon; companion John Fairchild saw a contradictory object—silvery, oblong, with a 'sunflower shape' at its tail and a bluish exhaust signature, traveling at 700–800 MPH.",
-    "Incident 176 (23 Sept 1948, Castro's Ranch, CA): Retired Army Colonel Horace S. Bakins observed a translucent, dirty-gray, amoeba-like object flying above an Army bomber, with oscillating appendages and a stable central globe-like mass; it emitted no light, made no sound, and disappeared from sight very rapidly.",
-    "Unnamed incident (1 Jan 1949, Jackson, MS): Commercial pilot Tom Rush and his wife (also a licensed pilot) observed a cigar-shaped, apparently wingless object from their aircraft at 1,800 ft; it crossed within 1,200 feet of their plane, accelerated from ~200 MPH to an estimated 400–600 MPH, executed a 50° turn toward the southwest, and disappeared; Rush's signed letter specifically confirmed the object had no wings when turning.",
-    "The file includes blank standardized UFO checklist forms with fields for radar data, schedule checks against military and commercial flight schedules, soil sampling instructions if an object landed, and explicit instructions to check Canadian military activity near borders—revealing the institutional scope of the early investigation framework."
+    {
+      "finding": "Investigators conducted formal credibility assessments of witnesses, recording professional background, pilot experience, and character judgments alongside each sighting report.",
+      "quotes": [
+        {
+          "text": "Investigative personnel stated thot Mr williens see@mad a reliable level headed person. lie sppesred Conscientious and desired no publicity stating that he (id not desire bie friends and business agquaintances to josh him concerning the matter,",
+          "page": 4
+        },
+        {
+          "text": "Mr Angier is soroximately SO years of a a ais owm bucine sc. de is an experience' pilot, comes ani nes facily, icv a Little above average in intelligence « is a good conversetionalist, ie told a straight-for d story and not contradict himself.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Two independent witnesses at the September 23, 1948 Los Alamos sighting provided contradictory descriptions — one seeing a stationary flat white disk at 30,000 feet, the other a moving silvery egg-shaped object at 700-800 MPH — suggesting either two separate objects or extreme perceptual divergence.",
+      "quotes": [
+        {
+          "text": "It wow perfectly circu- lar, the side visible to hin being flat - mci » coin would aypear when observed from a distance. It a-pexred mo lerger than a dime. Lining it up in relation to tne tip of the radio tower he backed off to the north.",
+          "page": 7
+        },
+        {
+          "text": "Statement of Mr John C. Pairehild does not t lly with that of A. Ruble Angier, See Incident 175 Mr Fairchild saw o bright silvery oblong or egg-shaped object which ane red to have a speed of 700 to 80 MPHand which seemed to have a sovt of cumflowr shape t the end of it but apart from the object and close on ite tail.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "Incident 176 on September 23, 1948 near San Pablo, California involved a retired Army colonel describing a translucent, amoeba-like object with oscillating appendages flying above an Army bomber, making it one of the most anomalous shape descriptions in the collection.",
+      "quotes": [
+        {
+          "text": "Main pert bf body translucent and of « dirty gray color oe ana) te ities wnéalating with center portion appearing mbertod peviae the shape and depth similar to a globe - like amoeba",
+          "page": 10
+        },
+        {
+          "text": "Appendages seemed to flap or oscillate while center vesPap) remained stable",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "finding": "The January 1, 1949 Jackson, Mississippi sighting by an experienced commercial pilot and his wife reported a wingless cigar-shaped object that executed a sharp 50-degree turn and accelerated from approximately 200 MPH to 400-600 MPH, passing within 1,200 feet of their aircraft.",
+      "quotes": [
+        {
+          "text": "Mr Rush specifically ste in a signed letter \"as the object made its turn, it wes then tha I the object didn't have wings.\"",
+          "page": 120
+        },
+        {
+          "text": "Odjeots Aporox 200 NPE when first sighted, then socelerating to approximately 400 to 500 MP: Time in Sig 10 to 12 meconds Tactics: Made 50° turn and increased speed ae it headed southwest",
+          "page": 119
+        }
+      ]
+    },
+    {
+      "finding": "The October 1946 Louisiana sighting near New Orleans described a cone-shaped object appearing 'white-hot' at the front transitioning to dark red at the rear, with no visible structure, no exhaust trail, and no means of support — consistent with combustion or plasma phenomena rather than conventional aircraft.",
+      "quotes": [
+        {
+          "text": "front eni anveared white hot (like the mantels in a @o0line lantern) Toward the reer it et gradually darker red. There wae no vieible metal or other m teriel and no projections of any kind, only fire,",
+          "page": 4
+        },
+        {
+          "text": "There was mo visible moans of support and no contro) surfaces, There were no oloure and the wind wae fairly calm,",
+          "page": 4
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
-      "node_id": "wright_patterson",
-      "relevance": "high",
-      "reasoning": "The standardized 'Check-List - Unidentified Flying Objects' forms and investigation protocols in these files are consistent with Air Technical Intelligence Center (ATIC) methodology at Wright-Patterson, which centralized early UFO analysis."
-    },
-    {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "These incident numbers and checklist formats directly precede and structurally mirror the Project Blue Book reporting system, indicating these files fed into or informed the bureaucratic framework Blue Book would formalize."
+      "reasoning": "The standardized 'Check-List - Unidentified Flying Objects' forms and numbered incident system are direct precursors to Project Blue Book's formal UFO investigation methodology, with reports spanning 1946-1949 during the transition from Sign to Grudge to Blue Book."
     },
     {
-      "node_id": "cia_dst",
-      "relevance": "low",
-      "reasoning": "The scope of systematic civilian witness interviews and the intelligence-style credibility assessments in these reports reflect the kind of collection methodology that would later interest CIA scientific intelligence analysts during the early 1950s UFO reviews."
+      "node_id": "wright_patterson",
+      "relevance": "high",
+      "reasoning": "Wright-Patterson is listed among the document's named entities and was the home base for Air Force UFO investigation programs that processed and archived reports like these incident summaries."
+    },
+    {
+      "node_id": "lanl_ornl_battelle",
+      "relevance": "medium",
+      "reasoning": "Incident 175 explicitly places the sighting at Los Alamos ('While watching a government plane come in for a landing at los Alamos'), with the witness noting the estimated object size of 100-150 feet at 30,000 feet altitude near an active nuclear weapons facility."
     }
   ],
   "related_topics": [
     "pilot testimony",
-    "standardized UFO reporting",
-    "cone-shaped object",
-    "translucent anomalous object",
-    "rapid acceleration",
-    "pre-Blue Book Army investigation",
-    "multiple witness discrepancy"
+    "witness credibility assessment",
+    "nuclear facility proximity",
+    "object acceleration and maneuverability",
+    "standardized UAP reporting forms"
   ]
 }

@@ -1,36 +1,51 @@
 {
-  "hook": "A 143-page Department of War compilation file dated January 9, 1950, collecting incident reports on 'Flying Discs' observed during 1949, filed by military and Civilian Aviation Authority witnesses under Flight Service Regulation 200-4. The pymupdf extraction captured no readable text — only a declassification header — indicating the pages are scanned images that were not OCR-processed.",
-  "why_it_matters": "This file represents early institutionalized UFO reporting within the military bureaucracy, predating Project Blue Book and operating under the Department of War designation (which was being reorganized into the DoD during this period). The inclusion of MATS and AACS message traffic alongside a Japanese weather station report suggests multi-theater data collection at a time when the Air Force was actively debating whether 'flying discs' were Soviet technology, natural phenomena, or something else. The FSR 200-4 compliance framework indicates this was part of a structured, mandatory reporting chain — not ad hoc collection.",
+  "hook": "A 143-page 1949 Department of War compilation of UFO incident reports filed under Flight Service Regulation 200-4, submitted by military and Civilian Aviation Authority observers, including MATS and AACS communications, military intelligence reports, diagrams, and a Japan weather station report — but the OCR extraction produced no readable text beyond the declassification header.",
+  "why_it_matters": "This file represents the institutional infrastructure of early U.S. military UFO reporting in 1949, one year before the formal launch of Project Blue Book, showing that standardized incident reporting under FSR 200-4 was already generating substantial documentation. The inclusion of MATS and AACS traffic indicates the phenomenon was being tracked across multiple command channels simultaneously. The Japan weather station report suggests international and Asia-Pacific incident coverage was part of the collection effort.",
   "key_findings": [
-    "The document was compiled under FSR 200-4 (1948 Flight Service Regulation), establishing that UFO reporting was a codified military requirement by 1948, not voluntary.",
-    "Witness sources include both military personnel and Civilian Aviation Authority (CAA) observers, indicating the reporting net extended to civil aviation infrastructure.",
-    "Military Air Transport Service (MATS) and Army Airways Communications System (AACS) message traffic is included, suggesting real-time radio intercepts or dispatches were folded into the incident file.",
-    "A report from a weather station in Japan is included, placing at least one incident in the Pacific theater during the early occupation period.",
-    "The file contains diagrams, which — given the era and subject — likely depict observed object shapes or flight paths, though the text extraction was entirely unsuccessful and no diagram content is recoverable from this extraction."
+    {
+      "finding": "The document is a compilation of UFO incident reports written in compliance with Flight Service Regulation (FSR) 200-4, indicating a formal, standardized military reporting framework was in place by 1949.",
+      "quotes": []
+    },
+    {
+      "finding": "Witnesses included both military personnel and Civilian Aviation Authority (CAA) observers, broadening the evidentiary base beyond purely military sources.",
+      "quotes": []
+    },
+    {
+      "finding": "Reports capture structured observational data including dates, locations, weather conditions, altitude, and detailed descriptions of appearance and movement.",
+      "quotes": []
+    },
+    {
+      "finding": "Communications from the Military Air Transport Service (MATS) and Army Airways Communications System (AACS) are embedded in the file, indicating multi-channel military command involvement in UFO incident documentation.",
+      "quotes": []
+    },
+    {
+      "finding": "The file includes a report from a weather station in Japan, demonstrating that the 1949 UFO reporting effort extended to U.S. military assets in the Asia-Pacific theater.",
+      "quotes": []
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "This 1949 'Flying Discs' compilation is a direct predecessor to Project Blue Book, operating under the same FSR 200-4 reporting framework that fed into the formal Blue Book investigation structure."
+      "reasoning": "This 1949 FSR 200-4 incident report compilation is direct institutional precursor material to Project Blue Book, showing the standardized military UFO reporting infrastructure that Blue Book would inherit and formalize."
     },
     {
       "node_id": "wright_patterson",
       "relevance": "high",
-      "reasoning": "Wright-Patterson AFB was the institutional home for Air Force UFO investigation files in this period; MATS and military intelligence reports of this type were processed through commands headquartered there."
+      "reasoning": "Department of War UFO incident files from 1949 were routed through Air Materiel Command at Wright-Patterson, which managed the predecessor projects (Sign, Grudge) that processed exactly this type of FSR 200-4 report."
     },
     {
       "node_id": "cia_dst",
       "relevance": "medium",
-      "reasoning": "Multi-theater incident reports with military intelligence content from 1949-1950 were the type of material that fed into CIA's early UAP assessments, including the 1952 Robertson Panel inputs."
+      "reasoning": "Military intelligence reports included in this compilation would have been of interest to CIA's predecessor intelligence structures monitoring the early UFO phenomenon in 1949-1950."
     }
   ],
   "related_topics": [
-    "FSR 200-4 reporting",
-    "flying disc sightings 1949",
-    "MATS incident reports",
-    "Pacific theater UAP",
-    "CAA pilot testimony"
+    "FSR 200-4 incident reporting",
+    "Military Aviation Authority witnesses",
+    "MATS communications",
+    "Asia-Pacific sightings",
+    "1949 pre-Blue Book documentation"
   ]
 }

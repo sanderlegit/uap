@@ -1,31 +1,107 @@
 {
-  "hook": "A U.S. Air Force ISR asset operating over the Strait of Hormuz and Gulf of Oman on a 20-hour NAVCENT reconnaissance mission recorded a UAP via Full Motion Video (FMV) at 1732Z on September 16, 2020, while also logging two separate unexplained electromagnetic interference events and three Iranian Air Defense guard calls during the same sortie.",
-  "why_it_matters": "This MISREP is notable because the UAP observation occurred within a broader pattern of electromagnetic anomalies on the same mission: two distinct lost-link events of unknown type (11 and 27 minutes, both rated MEDIUM impact, both causing flight path deviations) preceded the UAP sighting by roughly two to four hours. The document is unusually sparse on UAP details — the observation GENTEXT contains only a grid coordinate with no shape, behavior, or descriptive characteristics — making it a data point about what was captured on FMV rather than a narrative account. It establishes that USCENTCOM ISR assets were formally logging UAP observations in the Strait of Hormuz operational environment as of late 2020.",
+  "hook": "A U.S. Air Force ISR aircraft from the 482nd Attack Squadron logged a UAP observation via Full Motion Video at 1732Z on September 16, 2020, during a 20-hour-56-minute surveillance mission over the Arabian Gulf, Strait of Hormuz, and Gulf of Oman in support of NAVCENT.",
+  "why_it_matters": "This MISREP is significant because it documents a UAP observation embedded within an otherwise routine military ISR mission, with the observation formally recorded through standardized military reporting channels and later submitted to AARO. The mission also recorded two separate electromagnetic interference events of unknown origin causing complete lost-link and flight path deviations, which occurred in the same operational area as the UAP. The combination of an anomalous observation, unexplained EMI events, and repeated Iranian Air Defense intercepts in a single mission log provides unusually dense context around the UAP sighting.",
   "key_findings": [
-    "The UAP was observed at 1732Z via FMV (Full Motion Video) while the aircraft was at FL180 (18,000 feet) and 90 KIAS, with the UAP located at grid 39RVM5[redacted]; the official manifest states an estimated UAP altitude of 1,800 feet, though this figure does not appear in the extracted GENTEXT.",
-    "Two electromagnetic interference events of UNKNOWN type occurred before the UAP sighting: the first from 1248–1259Z (11 minutes, FL180, 89 KIAS, grid 39RXK0[redacted]) and the second from 1414–1441Z (27 minutes, FL180, 120 KIAS, grid 39RVM9[redacted]); both caused complete system loss and flight path deviations with MEDIUM mission impact.",
-    "The mission was ISR tasked by NAVCENT to characterize IRGCN vessels, UAS activity, and port Pattern of Life; during the sortie the crew observed an IR-M-5 launcher on Abu Musa Island at 0930Z and two possible Houdong-class missile patrol boats at docked piersides at 1321Z.",
-    "The aircraft received three separate guard calls from Iranian Air Defense on 243.000 MHz — at 0408Z, 0421Z (both directive tone, FL180), and 1141Z (professional tone, FL040) — each resolved with a standard response and no mission impact.",
-    "The UAP observation GENTEXT is entirely devoid of descriptive content: it records only a grid location with no shape, color, behavior, speed, or altitude of the object itself documented in the narrative field."
+    {
+      "finding": "A UAP was observed via Full Motion Video (FMV) at 1732Z on September 16, 2020, in the vicinity of grid reference 39RVM5 in the Strait of Hormuz region. The observing aircraft was at FL180 traveling at 90 KIAS at the time.",
+      "quotes": [
+        {
+          "text": "AT 17322,~OBSERVED A UAP rvo 39RVM51~",
+          "page": 8
+        },
+        {
+          "text": "AT 1732Z,~ OBSERVED A UAP. SE'E OBS LINE L",
+          "page": 1
+        },
+        {
+          "text": "• Method of Observation: FMV",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The aircraft experienced two separate complete electromagnetic interference events of unknown type during the mission, each causing lost-link and flight path deviations with medium mission impact. The first lasted 11 minutes (1248Z–1259Z) and the second lasted 27 minutes (1414Z–1441Z), both while the aircraft was at FL180.",
+      "quotes": [
+        {
+          "text": "AT 12482,w;JEXPERIENCED LOST L TO POSSIBLE! 1.4g 1.4a REGAINED LINK AT 12592. THIS RESULTED IN A MEDIUM IMPACT TO TIIE MISSION",
+          "page": 7
+        },
+        {
+          "text": "AT 1414Z,~EXPERIENCED LOST LINK TO POSSIBL~L____:1.::..;..49=----_,_-1.4_a­ REGAINED 14412. THIS RESULTED IN A MEDIUM IMPACT TO THE MISSION",
+          "page": 8
+        },
+        {
+          "text": "• Type of EMI: UNKNO\\VN\n• EMI Duration: 27 minutes\n• Mission Changed: Flight Path Deviation\n• EMI Impact to System: Complete",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "Iranian Air Defense hailed the aircraft on guard frequency three times during the mission — twice with a directive tone (0408Z and 0421Z at FL180) and once with a professional tone (1141Z at FL040). The aircraft responded with standard responses each time, with no mission impact reported.",
+      "quotes": [
+        {
+          "text": "AT 0408Z,~WAS HAILED ON GU~REQ BY IRANlAN AIR DEFENSE. STANDARD ORDERS GIVEN.~RESPONDED WITH THE STANDARD RESPONSE. NO IMPACT TO MISSION",
+          "page": 6
+        },
+        {
+          "text": "• Guardcall Tone: DIRECTIVE",
+          "page": 6
+        },
+        {
+          "text": "• Guardcall Tone: PROFESSIONAL",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The aircraft's primary ISR mission for NAVCENT focused on characterizing IRGCN vessels and UAS activity; during the mission it observed an IR-14-5 launcher near Abu Musa Island and two possible Houdong missile boats at a pier.",
+      "quotes": [
+        {
+          "text": "TO CH.AR1CTERIZE IRIN\\IRGCN VESSELS, UAS ACTIVITY, ACTIVITY OUTSIDE OF PORTS, AND TO E~TABLISH PATTERN OF LIFE.",
+          "page": 5
+        },
+        {
+          "text": "AT 0930Z~OBSERVED AN IR-!t-5 LAUNCHER IVO 40RCPo:rn~oN ABU MUSA ISLAND. AT 1321Z,! 1.4a !BS;ERVED 2X POSSIBLE HOUDONG WPTG IVO (39RXL6~~ DOCKED PIERSI E.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The mission was an exceptionally long-duration operation of 20 hours 56 minutes total, accumulating 20.9 mission hours, 19.3 SIGINT hours, and 15.2 IMINT hours, with FMV subsequently exploited by DGSI.",
+      "quotes": [
+        {
+          "text": "20.9 MlSSION 1-IO~S. 15.2 IMlNT HOURS. I JMTNT TASKING PROSECUTED, 19.3 S1GTNT HOURS, 1 SIGINT TAS ING PROSECUTED. 2 TOTAL TASK1NGS PROSECUTED",
+          "page": 1
+        },
+        {
+          "text": "• Total Mission Time: 20 hours 56 minutes",
+          "page": 4
+        },
+        {
+          "text": "FMV WAS EXPLOITtD BY DGSI.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The official war.gov manifest states this MISREP was submitted to AARO as part of its UAP reporting intake, and the document is formatted as a standardized USCENTCOM Military Operational Report for this purpose."
+      "reasoning": "This MISREP was formally submitted through standardized UAP reporting channels to AARO, as explicitly described in the document's official manifest, making it a direct example of the military-to-AARO reporting pipeline."
     },
     {
-      "node_id": "five_eyes",
-      "relevance": "low",
-      "reasoning": "The mission operated under USCENTCOM/NAVCENT in a region with allied maritime presence, and FMV was exploited by DGSI (likely a joint intelligence ground station), suggesting some multinational ISR infrastructure involvement, though no explicit partner-nation reporting appears."
+      "node_id": "congressional",
+      "relevance": "medium",
+      "reasoning": "The document was declassified and released as part of USCENTCOM MOR 26-0019 in January 2026 under the PURSUE UAP disclosure initiative, which is driven by congressional UAP transparency legislation."
     }
   ],
   "related_topics": [
-    "electromagnetic interference near UAP",
-    "ISR drone reconnaissance",
+    "ISR mission",
     "Strait of Hormuz",
-    "Iranian air defense interactions",
-    "FMV UAP observation"
+    "electromagnetic interference",
+    "IRGCN naval activity",
+    "FMV observation"
   ]
 }

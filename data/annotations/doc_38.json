@@ -1,36 +1,111 @@
 {
-  "hook": "A U.S. Air Force ISR crew returning to base from an Operation INHERENT RESOLVE surveillance mission over Syria observed a solid, spherical UAP traveling at a consistent ~424 knots for at least 7 minutes before the object dropped altitude, passed their aircraft safely, and flew out of range — all with no emissions, no RF signature, and no effect on personnel or equipment.",
-  "why_it_matters": "This report is notable because the observer-reported speed of ~424 knots sustained over 7+ minutes without any detected propulsion signature or RF emissions is the primary anomalous data point — the document explicitly flags it under 'Advanced Capabilities And/Or Materials: YES.' The report was produced within the standardized AARO MISREP framework, demonstrating that the military's UAP reporting pipeline is capturing ISR crew observations in active combat theaters. The 'HC' qualifier in the GENTEXT (likely 'High Confidence') and the structured event serial number suggest this was treated as a reportable incident under existing protocols despite the benign observer assessment.",
+  "hook": "A U.S. Air Force ISR aircrew returning to base from an 11-hour Operation Inherent Resolve surveillance mission over Syria observed a solid, spherical UAP traveling at approximately 424 knots for at least 7 minutes before it passed their aircraft and flew out of range.",
+  "why_it_matters": "This MISREP is notable because it originates from an operational combat ISR platform — not a training environment — during active counterterrorism surveillance under CENTCOM, lending institutional weight to the observation. The report simultaneously checks 'YES' to advanced capabilities (sustained 424-knot flight by a sphere) while checking 'NO' or 'NONE' to maneuverability, intelligent control, emissions, and equipment effects, illustrating the tension in AARO's standardized reporting taxonomy when applied to anomalous objects. The document's classification level (SECRET//NOFORN, declassification date 2048) and explicit release to AARO confirm it as part of the formal military-to-AARO reporting pipeline established after the UAP disclosure legislation.",
   "key_findings": [
-    "At 2153Z on November 9, 2023, while returning to base, the aircrews observed one probable UAP 'shaped as a bouncy ball' approaching from the south at near co-altitude before dropping altitude and passing their aircraft safely, consistently maintaining ~424 knots for at least 7 minutes.",
-    "The UAP section marks 'Advanced Capabilities And/Or Materials: YES' specifically citing the sustained ~424KN speed and spherical shape, while simultaneously recording UAP Maneuverability Observations as 'NONE' and UAP Under Intelligent Control as 'NO' — an internal tension in the form's characterizations.",
-    "No interrogation of the UAP was conducted (sensors not directed at it), no emissions were detected, RF frequency is listed as 'NONE,' and the object had no effects on the aircrew, aircraft, or equipment; the observer assessed it as 'Benign.'",
-    "The primary mission was multi-sortie ISR under Operation INHERENT RESOLVE targeting a VEO-associated vehicle and person of interest, with FMV and SIGINT collection; the UAP encounter occurred only during the RTB phase after ISR tasking was complete.",
-    "The document carries both SECRET//NOFORN and SECRET//REL TO USA, FVEY classification markings, indicating the mission narrative was shared with Five Eyes partners, while the UAP section itself is marked strictly NOFORN."
+    {
+      "finding": "The UAP was described as solid and spherical ('bouncy ball' shaped), approached from the south at near co-altitude, then dropped altitude and safely passed the aircraft while maintaining approximately 424 knots — a speed sustained consistently for at least 7 minutes.",
+      "quotes": [
+        {
+          "text": "WHILE RTB AT 2153Z, 1.4a OBSERVED 1X PROB HC UAP SHAPED AS A BOUNCY BALL COME FROM THE SOUTH AT NEAR CO-ALT. 1.4a OBSERVED THE PROB UAP DROP ALTITUDE AND SAFELY PASS THEIR AIRCRAFT WHILE CONSISTANTLY MAINTAINING ~424KN. AFTER 7MIN OF WATCHING, THE PROB UAP BECAME OUT OF RANGE AND 1.4a CARRIED ON THEIR RTB.",
+          "page": 10
+        },
+        {
+          "text": "UAP Advanced Capabilities And/Or Materials  (yes/no; if yes, describe): YES, TRAVELED ~424KN CONSISTANTLY FOR AT LEAST 7MINS IN THE SHAPE OF A BOUNCY BALL.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "Despite marking 'YES' to advanced capabilities, the AARO reporting form records no maneuverability observations, no intelligent control, unknown propulsion, and no RF emissions — an internally contradictory data profile.",
+      "quotes": [
+        {
+          "text": "UAP Maneuverability Observations: NONE",
+          "page": 9
+        },
+        {
+          "text": "UAP Under Intelligent Control (yes/no; if yes, describe): NO",
+          "page": 9
+        },
+        {
+          "text": "UAP Propulsion Means: UNK",
+          "page": 9
+        },
+        {
+          "text": "UAP RF Frequency: NONE",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "The observer assessed the UAP as benign, with no emissions detected, no threat to the aircraft or public safety, and no effects on the aircrew or equipment.",
+      "quotes": [
+        {
+          "text": "NO EMISSIONS CAME FROM THE PROB UAP, UAP WAS NOT CONSIDERED A THREAT TO THE AIRCRAFT OR PUBLIC SAFETY, AND THE UAP HAD NO EFFECTS ON THE AIRCREW.",
+          "page": 10
+        },
+        {
+          "text": "Observer Assessment of UAP: Benign",
+          "page": 9
+        },
+        {
+          "text": "UAP Effects on Equipment: NONE",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "The UAP encounter occurred at the end of a long operational ISR mission — the platform had been on station for 11 hours and 28 minutes conducting target development surveillance of a violent extremist organization before the sighting happened during the return-to-base leg.",
+      "quotes": [
+        {
+          "text": "Total Time On Station: 11 hours 28 minutes",
+          "page": 7
+        },
+        {
+          "text": "AT 2153Z, 1.4a OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON AT 37D ST 69 1.4a 07 1.4a (SEE UAP 1).",
+          "page": 1
+        },
+        {
+          "text": "Global Campaign Plan: GCP - VEO (violent extremist group)",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The report was formally approved for release to AARO and carries a FVEY releasability caveat, indicating the sighting entered the official allied-shareable UAP reporting pipeline under Operation Inherent Resolve.",
+      "quotes": [
+        {
+          "text": "Approved for Release to AARO - FOUO/PA",
+          "page": 9
+        },
+        {
+          "text": "(S/RELIDO) Mission Narrative\n(SECRET//REL TO USA, FVEY)",
+          "page": 1
+        },
+        {
+          "text": "Supported Operation: INHERENT RESOLVE",
+          "page": 8
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and uses AARO's standardized MISREP UAP reporting format, including the structured UAP event serial number 092153ZNOV2023-CENTCOM."
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' on every page and carries the AARO UAP Incident event serial number 092153ZNOV2023-CENTCOM, confirming it was processed through AARO's formal military reporting system."
     },
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The mission narrative sections carry 'REL TO USA, FVEY' classification, meaning the ISR operational content was shared with Five Eyes partners, though the UAP-specific section is restricted to NOFORN."
-    },
-    {
-      "node_id": "congressional",
-      "relevance": "low",
-      "reasoning": "This document was released as part of the PURSUE public disclosure initiative, placing it within the broader congressional transparency mandate for UAP records, though the document itself contains no direct congressional reference."
+      "reasoning": "The Mission Narrative section is classified SECRET//REL TO USA, FVEY, indicating the operational ISR data — including the UAP encounter context — was releasable to Five Eyes partners."
     }
   ],
   "related_topics": [
-    "airborne UAP observation",
-    "spherical UAP morphology",
-    "Operation INHERENT RESOLVE",
-    "ISR platform encounter",
-    "Syria airspace"
+    "spherical UAP",
+    "ISR platform observation",
+    "Operation Inherent Resolve",
+    "CENTCOM UAP reporting",
+    "sustained high-speed flight"
   ]
 }

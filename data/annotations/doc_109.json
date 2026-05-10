@@ -1,31 +1,75 @@
 {
-  "hook": "Page 2 of a 2-page FBI FD-302 interview report documenting a September 2023 UAP encounter at a U.S. test site, capturing witness observations of a constant-intensity bright light and the psychological aftermath experienced by the primary witness.",
-  "why_it_matters": "The FBI's use of its standard criminal interview form (FD-302) to document this sighting reflects the bureau's formal engagement with UAP reporting under the current disclosure framework. The test site setting is significant: a witness noted the airspace was restricted for drone operations at the time, yet the object's behavior — stationary, constant size, constant light intensity — was inconsistent with expected drone activity. The documented psychological effects on the witness, including disturbed sleep and anxiety, are consistent with patterns reported in other close-encounter accounts and suggest the sighting had measurable personal impact.",
+  "hook": "This is page 2 of a 2-page FBI FD-302 interview summary documenting a September 2023 UAP encounter by multiple witnesses at a U.S. test site, describing a steady bright light observed near a restricted-airspace drone test facility and the psychological aftermath experienced by at least one witness.",
+  "why_it_matters": "The sighting occurred at a U.S. test site with actively restricted airspace for drone operations, making misidentification as a routine drone more complicated to dismiss outright. The presence of multiple witnesses in at least two vehicles, one of whom attempted but failed to direct a colleague's attention to the object, adds a corroboration dimension to the account. The witness's documented psychological response — disrupted sleep, disturbing dreams, and anxiety-checking behavior — is consistent with patterns noted in other close-encounter reports submitted through official government channels.",
   "key_findings": [
-    "The object maintained constant size and constant light intensity throughout the entire observation period, with no change noted.",
-    "The object was not visible until the witnesses crossed a small bridge through the gate, suggesting a limited line-of-sight window or sudden appearance.",
-    "No electromagnetic interference with the witnesses' vehicles was detected.",
-    "A witness in a second vehicle attempted to direct another person's attention to the object but was unsuccessful.",
-    "The primary witness experienced a storm that knocked out hotel TV service that night, followed by disturbed sleep and 'weird dreams' for two nights after the sighting — and checked other hotel TVs to confirm the outage was not isolated to his room."
+    {
+      "finding": "The object maintained constant apparent size and light intensity throughout the entire observation, suggesting it was not approaching, receding, or pulsing.",
+      "quotes": [
+        {
+          "text": "The object stayed the same size and kept the same light intensity during the time  observed it.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The witness's view of the object was obstructed until the moment of passing through a gate over a small bridge, indicating a specific geometry of the sighting.",
+      "quotes": [
+        {
+          "text": "He did not see the object as they were coming over the small bridge at the gate until they were going through the gate.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "No electromagnetic or mechanical interference with the witnesses' vehicles was observed.",
+      "quotes": [
+        {
+          "text": "did not notice any interference with their vehicles .",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The airspace over the test site had been restricted at the time of the sighting for drone testing, and at least one witness's initial reaction to the object was annoyance rather than alarm, framing it initially as a potential drone incursion.",
+      "quotes": [
+        {
+          "text": "was annoyed when she first saw the object because the air space had been restricted for the drone tests they were going to conduct.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The primary witness experienced significant psychological aftereffects including disturbed sleep, unusual dreams, and anxiety-driven verification behavior at his hotel following the sighting.",
+      "quotes": [
+        {
+          "text": "That night a storm came through and the TV went out in  hotel room. He was still freaked out and went downstairs to make sure all the TVs were out in the hotel and not just his.",
+          "page": 2
+        },
+        {
+          "text": "had weird dreams and had trouble sleeping for the first two nights after he saw the object.",
+          "page": 2
+        }
+      ]
+    }
   ],
   "document_type": "investigation",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "This FD-302 is part of FBI's formal UAP witness interview program, directly feeding into the post-2022 disclosure infrastructure that AARO coordinates across agencies."
+      "reasoning": "This FBI 302 interview is part of the current-era UAP reporting pipeline that feeds into AARO's mandate to collect and analyze UAP encounters by U.S. personnel at government facilities."
     },
     {
       "node_id": "area51",
-      "relevance": "medium",
-      "reasoning": "The sighting occurred at a U.S. test site with active drone testing and restricted airspace, consistent with the class of sensitive military test ranges where UAP encounters have historically been documented."
+      "relevance": "low",
+      "reasoning": "The sighting occurred at a U.S. test site with restricted airspace for drone operations, broadly consistent with the category of restricted test ranges, though no specific facility is identified in the available text."
     }
   ],
   "related_topics": [
     "witness testimony",
+    "test site sighting",
     "restricted airspace",
-    "drone test site",
-    "psychological effects",
-    "constant luminosity object"
+    "psychological aftereffects",
+    "drone operations"
   ]
 }

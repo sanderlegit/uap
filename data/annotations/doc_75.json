@@ -1,32 +1,71 @@
 {
-  "hook": "A U.S. Embassy Port Moresby cable dated January 28, 1985 reports that Papua New Guinea's National Intelligence Organization asked the Embassy to explain high-altitude, high-speed aircraft seen over PNG on the night of January 24, including radar contact by an Air Niugini pilot and visual sightings of contrails from multiple points across the country.",
-  "why_it_matters": "This cable is notable because it shows a host-nation intelligence service formally approaching U.S. diplomatic personnel for an explanation of aerial phenomena — elevating the sightings beyond a civilian curiosity to an intergovernmental inquiry. The Embassy's response that it knew of no B-52 overflights and no U.S. aircraft in PNG airspace, verified via telephone with the 43rd Strategic Wing at Anderson AFB, leaves the observed aircraft unaccounted for. The sightings involved both radar tracking and multiple independent visual reports across a wide geographic area, lending the incident more evidentiary weight than a single observer account.",
+  "hook": "A January 28, 1985 diplomatic cable from the U.S. Embassy in Port Moresby reports that Papua New Guinea's National Intelligence Organization formally inquired about multiple unidentified high-altitude, high-speed aircraft tracked by radar and observed visually over PNG airspace on the night of January 24, 1985, with the Embassy explicitly denying any known U.S. aircraft presence.",
+  "why_it_matters": "This cable documents a formal government-to-government intelligence exchange over unidentified aerial phenomena, with PNG's NIO treating the sightings seriously enough to seek U.S. clarification at the diplomatic level. The reports include both radar confirmation from a commercial airline pilot and multiple independent visual sightings of contrails, with six to eight objects observed simultaneously — yet the U.S. explicitly disclaimed any B-52 or other U.S. military aircraft in that airspace. The incident was significant enough to prompt a public meeting attended by Papua New Guinea's Prime Minister, reflecting real political consequences from the overflights.",
   "key_findings": [
-    "An Air Niugini pilot's aircraft radar detected aircraft flying south to north at high altitude and high speed over Angoram (approximately 4° S, 144° E) on the night of January 24, 1985.",
-    "Visual sightings reported from multiple points across PNG included: one aircraft traveling north to south at 1900 local time, and six to eight aircraft traveling south to north at 2200 local time, all with associated contrails.",
-    "The Embassy consulted its own records and called the 43rd Strategic Wing at Anderson AFB, Guam (43SW), and told the NIO there were no B-52 overflights and no known U.S. aircraft in PNG airspace on January 24.",
-    "The incident was significant enough politically that the provincial premier called a public meeting in Wewak attended by the Prime Minister of Papua New Guinea, who was in the area for the weekend.",
-    "The cable explicitly qualifies the sightings as 'very sketchy' and notes that witnesses were unsure of the directions aircraft were traveling, while simultaneously requesting USCINCPAC confirm the absence of U.S. aircraft and provide any additional explanation."
+    {
+      "finding": "PNG's National Intelligence Organization reported multiple categories of UAP observation on January 24, 1985, combining sensor and witness accounts.",
+      "quotes": [
+        {
+          "text": "NIO SAID THERE HAVE BEEN VARIOUS REPORTS OF UNIDENTIFIED AERIAL PHENOMENA THE NIGHT OF JANUARY 24, INCLUDING FAST-MOVING OBJECTS WITH LIGHTS, CONTRAILS, AND NOISE.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "A commercial Air Niugini pilot provided the most technically credible report: radar contact with aircraft at high altitude and high speed near a specific geographic fix.",
+      "quotes": [
+        {
+          "text": "THE REPORT IN WHICH NIO PLACES SOME CREDENCE ORIGINATED WITH AN AIR NIUGINI PILOT WHO HAD JUST TAKEN OFF FROM WEWAK ENROUTE PORT MORESBY. PILOT SAID HIS RADAR PICKED UP AIRCRAFT FL YING SOUTH TO NORTH AT HIGH ALTITUDE AND HIGH SPEED WHEN HE WAS OVER ANGORAM (VIC 4 DEG S, 144 DEG E).",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Multiple visual sightings reported contrails at two distinct times — 1900 and 2200 local — with one aircraft tracked north-to-south and a formation of six to eight aircraft tracked south-to-north, suggesting more than one pass or multiple platforms.",
+      "quotes": [
+        {
+          "text": "SEVERAL VISUAL SIGHTINGS OF CONTRAILS WERE ALSO REPORTED FROM VARIOUS POINTS AROUND PNG, OF ONE AIRCRAFT MOVING NORTH TO SOUTH AT 1900 LOCAL AND OF SIX-EIGHT AIRCRAFT TRAVELING SOUTH TO NORTH AT 2200 LOCAL.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The U.S. Embassy, after consulting records and contacting the 43rd Strategic Wing at Andersen AFB, Guam, formally told the PNG NIO that no U.S. aircraft — including B-52s — were in PNG airspace on January 24.",
+      "quotes": [
+        {
+          "text": "BASED ON OUR RECORDS AND TELCON WITH 43SW, WE HAVE TOLD NIO WE KNEW OF NO B-52 OVERFLIGHTS AND NO U.S. AIRCRAFT IN PNG AIRSPACE ON JANUARY 24.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The overflights caused sufficient public alarm to trigger a political response at the national level, with Papua New Guinea's Prime Minister attending a public meeting on the subject.",
+      "quotes": [
+        {
+          "text": "LOCAL RESIDENTS HAD BEEN FRIGHTENED BY OVERFLIGHTS, WHICH LED TO THE PROVINCIAL PREMIER'S CALLING OF A PUBLIC MEETING ON THE SUBJECT ATTENDED BY THE PRIME MINISTER WHO WAS WEEKENDING IN HIS ELECTORAL DISTRICT.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "cable",
   "legacy_program_connections": [
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The cable was information-copied to the U.S. Embassy in Canberra, placing Australia — a Five Eyes partner with primary intelligence equities in the Pacific — within the dissemination chain for these PNG airspace sightings."
+      "reasoning": "PNG falls within Australia's immediate regional sphere and the cable routing through USCINCPAC and 43rd Strategic Wing Andersen AFB reflects the Pacific military-intelligence architecture shared with Five Eyes partners, making Australian intelligence likely aware of these reports."
     },
     {
-      "node_id": "cia_oga",
+      "node_id": "nro",
       "relevance": "low",
-      "reasoning": "The State Department's Bureau of Intelligence and Research (INR) was listed as an information recipient, indicating the intelligence community was looped in on the host-nation inquiry despite the low classification level."
+      "reasoning": "The high-altitude, high-speed profile of the unidentified aircraft — with no U.S. military acknowledgment — is consistent with reconnaissance platforms that would fall under NRO oversight, though no direct NRO connection is stated in the document."
     }
   ],
   "related_topics": [
     "radar tracking",
     "pilot testimony",
-    "diplomatic inquiry",
-    "Pacific airspace",
-    "contrail sightings",
-    "strategic bomber attribution"
+    "airspace incursion",
+    "Pacific theater",
+    "diplomatic intelligence exchange"
   ]
 }

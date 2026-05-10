@@ -1,31 +1,71 @@
 {
-  "hook": "A 1996 final report by Research Triangle Institute (RTI) for Air Force Space Command, modeling the probability distribution of 'Mode-5' launch vehicle failures — rare but severe deviations from intended flight path — using a risk-analysis program called DAMP, with an appendix cataloguing Atlas, Delta, and Titan launch failures from the Eastern and Western Ranges through August 1996.",
-  "why_it_matters": "This document has no substantive connection to UAP phenomena; it is a technical aerospace safety report about rocket failure modeling for range safety offices at Patrick AFB and Vandenberg AFB. The UAP-related metadata tags (sensors, behaviors, shapes) applied to this document appear to be extraction artifacts and are not supported by any content in the text. Its inclusion in a UAP release may reflect over-broad declassification sweeps of Air Force Space Command records, or misclassification by the processing pipeline.",
+  "hook": "A 1996 final technical report by Research Triangle Institute (RTI) for the Air Force's 30th and 45th Space Wings, detailing how 'Mode-5' unlikely failure modes—where rocket debris deviates far from the intended flight line—are modeled in the DAMP risk-analysis program, supplemented by a comprehensive launch failure history for Atlas, Delta, and Titan vehicles through August 1996.",
+  "why_it_matters": "This document has no substantive UAP content; it is an aerospace safety engineering report focused entirely on statistical modeling of rocket booster failures. Its appearance in the PURSUE UAP release likely reflects the broad scope of that declassification sweep rather than any UAP-specific relevance. The behavioral metadata tags (hovering, cloaking, luminosity change) and shape descriptors attached to this document appear to be automated extraction artifacts—the document text describes only mechanical rocket malfunctions and probabilistic risk calculations.",
   "key_findings": [
-    "Mode-5 failures are defined as launch vehicle anomalies causing large angular deviations from the intended flight line — statistically rare compared to near-flight-line impacts but required for complete risk analysis.",
-    "RTI's risk program DAMP models Mode-5 impact distributions using a density function with two shaping constants, calibrated by trial-and-error against simulated malfunctions.",
-    "The report's appendix provides mission-by-mission failure narratives for Atlas, Delta, and Titan vehicles, including flight phase, vehicle configuration, and failure-response mode classification — e.g., Transit 3B (21 Feb 61) experienced second-stage ignition failure; Composite I (24 Jan 62) suffered a tumbling second stage from probable oxidizer manifold rupture.",
-    "Data sources include 45th Space Wing History Office launch chronologies, Lockheed Martin FAX transmissions of flight histories, and USAF Accident/Incident Reports — indicating multi-contractor, multi-archive assembly of historical failure data.",
-    "Distribution was restricted to US Government agencies and their contractors for administrative/operational use protection, with referrals to 30 SW/SE (Vandenberg) or 45 SW/SE (Patrick AFB)."
+    {
+      "finding": "The report introduces 'Mode-5 failure responses' as the category of low-probability but wide-deviation rocket failures that must be modeled for complete risk analysis, and explains that the DAMP program is RTI's tool for this purpose.",
+      "quotes": [
+        {
+          "text": "In RTl's risk-analysis program, DAMP, such failures are referred to as Mode-5 failure responses. Although Mode--5 failure responses are much less likely to occur than those that result in impacts near the flight line, risk-analysis studies are incomplete without them.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The core modeling method relies on an impact density function governed by two shaping constants, calibrated by trial-and-error against simulated malfunctions to match theoretical predictions.",
+      "quotes": [
+        {
+          "text": "The impact density function used for this purpose contains two shaping constants that control the rate at which the density function drops In value as the angular deviation from the flight line and the impact range increase. Certain Mode--5 •malfunctions are simulated, and the two shaping constants then chosen by trial and error so that impacts from the simulated malfunctions and the theoretical density function are in close agreement.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The report includes an appendix cataloging every Atlas, Delta, and Titan launch failure from the Eastern and Western Ranges from program inception through August 1996, classifying each by failure response mode and flight phase.",
+      "quotes": [
+        {
+          "text": "An appendix to the report contains a listing and brief narrative failure history of the Atlas, Delta, and Titan missile and space-vehicle launches from the Eastern and Western Ranges from the beginning of each program through August 1996. Each entry gives the vehicle configuration, whether the flight was a success, the flight phase in which any anomalous behavior occurred, and a classification of vehicle behavior in accordance with defined failure-response modes.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "A specific catalogued failure (Composite I, 24 Jan 1962) documents a Mode-5 response in which probable rupture of the lower oxidizer manifold caused the second stage to tumble with a ~29-second period, depleting propellant far short of nominal burn duration.",
+      "quotes": [
+        {
+          "text": "Flight was within acceptable limits until second-stage ignition. Probably because of rupture of the lower oxidizer manifold, normal thrust levels never developed. About 50 milliseconds after ignition, severe thrust chamber motion developed and the second stage began to tumble. Telemetry indicated that the first tumble period was about 29 seconds. Propellant depletion occurred at MECO plus 212 seconds. The nominal first-bum duration was 378 seconds.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Empirical failure data is filtered and weighted to produce two specific outputs: failure probability estimates for Atlas, Delta, and Titan, and predicted percentages of future failures falling into Mode-5 and other failure response categories.",
+      "quotes": [
+        {
+          "text": "Various filtering or data weighting techniques are described. The empirical data are then filtered to estimate (1) failure probabilities for Atlas, Delta, and Titan, and (2) percentages of future failures that will result in Mode-5 (and other Mode) responses.",
+          "page": 4
+        }
+      ]
+    }
   ],
   "document_type": "technical",
   "legacy_program_connections": [
     {
       "node_id": "lockheed",
       "relevance": "medium",
-      "reasoning": "Lockheed Martin is cited multiple times as a primary data source, providing Atlas and Titan flight history records and failure summaries directly to RTI for this analysis."
+      "reasoning": "Lockheed Martin is cited multiple times as a primary data source, supplying Titan IV flight history, Atlas flight program summaries, and Titan flight anomaly/failure records used to build the empirical dataset."
     },
     {
       "node_id": "wright_patterson",
       "relevance": "low",
-      "reasoning": "Air Force Space Command (AFSPC) is the sponsoring agency, and the report feeds into range safety infrastructure that overlaps with Air Force materiel and test oversight functions, though no direct Wright-Patterson connection appears in the text."
+      "reasoning": "The sponsoring organizations are Air Force Space Command's 30th and 45th Space Wings, placing this within the USAF institutional network, though Wright-Patterson is not directly named."
     }
   ],
   "related_topics": [
-    "launch vehicle range safety",
-    "Atlas Delta Titan failure history",
-    "ballistic trajectory modeling",
-    "Eastern Range Western Range",
-    "Air Force Space Command AFSPC"
+    "launch vehicle failure modes",
+    "booster risk modeling",
+    "Atlas Delta Titan flight history",
+    "space range safety",
+    "Mode-5 failure classification"
   ]
 }

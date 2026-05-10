@@ -1,31 +1,79 @@
 {
-  "hook": "An excerpt from the Apollo 12 Air-to-Ground Voice Transcription capturing two real-time crew reports of anomalous visual phenomena: LM Pilot Alan Bean's description of luminous particles 'escaping the Moon' observed through the Alignment Optical Telescope on Day 5, and Commander Pete Conrad's report of floating debris illuminated by the module's tracking light on Day 6 — followed by a discrepancy between crew visual observation and Houston's electrical telemetry.",
-  "why_it_matters": "These are unscripted, contemporaneous observations by trained NASA astronauts during an active lunar mission, not post-flight recollections — Bean's account in particular includes real-time reasoning as he rejected his own initial hypothesis (water boiler droplets) because the objects appeared to be moving too fast and escaping lunar gravity entirely. The Day 6 segment adds an instrumentation anomaly: Houston's electrical monitors indicated the tracking light was on while Conrad and orbiting astronaut Gordon could not visually detect it, creating an unresolved sensor-versus-observation discrepancy in the transcript itself. Taken together, the two episodes document NASA crew members encountering phenomena they could not immediately explain, in the contemporaneous record.",
+  "hook": "An excerpt from the Apollo 12 Technical Air-to-Ground Voice Transcription capturing two distinct anomalous observation events: Astronaut Alan Bean's real-time account of luminous particles seen through the lunar module's Alignment Optical Telescope on Day 5, and Commander Pete Conrad's Day 6 report of floating debris near the module that he linked to the module's tracking light burning out.",
+  "why_it_matters": "This document provides unedited, contemporaneous crew testimony from a crewed lunar mission in which astronauts described phenomena they could not immediately explain, recorded in real time with Mission Control listening. Bean's observation is notable because he attempted and then openly questioned a mundane explanation—water boiler discharge—before concluding some particles appeared to be 'escaping the Moon.' The Day 6 tracking light discrepancy is independently significant: ground telemetry indicated the tracking light was electrically on, while Conrad reported it was not illuminating the debris floating alongside the spacecraft, leaving an unresolved technical contradiction in the transcript.",
   "key_findings": [
-    "At 05:19:27:25, Bean reported observing 'particles of light, flashes of light' in the dark quadrant (quadrant 1) through the AOT, describing them as 'sailing off in space' and 'coming from behind me, the left' — he explicitly considered and then rejected the water boiler as an explanation because some objects appeared to be 'escaping the Moon' at high velocity toward the stars.",
-    "A secondary anomaly on Day 5 (around 05:20:09) involved Bean's AGS display showing an 'all 8's flash' on both address and information registers at about one-fifth normal brilliance, pulsing every second — Mission Control attributed this to EMI, citing the same phenomenon seen during ground testing at Bethpage on 'most all the spacecrafts.'",
-    "On Day 6 (06:00:21:42), Conrad reported that during a prior nightside pass, 'bits and pieces' were floating alongside the module and were visibly illuminated by the tracking light; on the subsequent pass nothing was flashing, leading him to conclude the tracking light had burned out.",
-    "Houston's electrical monitors contradicted Conrad's conclusion, indicating the tracking light current showed it was 'on' — Conrad's response was to turn it off and question how that was possible since neither he nor Gordon could see it, leaving the discrepancy unresolved in the transcript.",
-    "Conrad confirmed he was oriented toward Yankee Clipper using both attitude indicator ('my ball') and radar, establishing that the failure to visually detect the tracking light was not a pointing error — the sensor-versus-visual discrepancy stands in the record."
+    {
+      "finding": "Astronaut Alan Bean (LMP-LM) observed luminous particles and flashes of light through the Alignment Optical Telescope (AOT) while looking in dark quadrant 1, describing them as moving rapidly away from the lunar surface.",
+      "quotes": [
+        {
+          "text": "When you look out the AOT in the dark quadrant? You can see these lights - particles of light. flash~s of light just seem to come from - in this case, I'm looking in quadrant 1 which is the left one. It's coming :from behind me, the left, and they're just sailing off in space.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Bean initially hypothesized the particles originated from the water boiler but then expressed uncertainty, concluding that some appeared to be leaving the Moon entirely at high velocity.",
+      "quotes": [
+        {
+          "text": "I was thinking they're dropping from my water boiler. but it looks like some of those things are escaping the Moon. They really haul out of here and just press off at the stars.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "A separate instrument anomaly was reported on Day 5: the Abort Guidance System (AGS) registers displayed an unexplained pulsing flash at reduced brilliance, later assessed by Mission Control as probable electromagnetic interference (EMI).",
+      "quotes": [
+        {
+          "text": "I'm getting an all 81 s flash on both the address and the information registers at about one-fifth the brilliance of the normal numbers. And a - It's pulsing every second.",
+          "page": 3
+        },
+        {
+          "text": "Fredo is here. He and I have both seen that phenomena on your DEDA during t estin:', of most a.11 the spacecrafts up at Bethpage, and it's probably an EMI.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "On Day 6, Commander Conrad reported that debris had been visible floating alongside the spacecraft on the nightside pass, visible only because the tracking light illuminated it, and he concluded the light had burned out when the debris was no longer illuminated.",
+      "quotes": [
+        {
+          "text": "Hey, Houston. It looks like our tracking llght's burned out. Dick hasn't been able to find us in this sextant. And on the first nightside pass we had little bits and pieces floating along vith us and we could tell that the tracking light va.; flashing on them. And we still have, I've presumed to think, bits and pieces floating along and nothing' s flashing on them, so I'm pretty sure it burned out.",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "Ground control's electrical telemetry contradicted Conrad's visual assessment: Mission Control reported the tracking light's current draw indicated it was still on, while Conrad and CMP Richard Gordon could not visually confirm it was functioning.",
+      "quotes": [
+        {
+          "text": "Roger, Pete. Our electrical watchers say that the current indicates that your tracking light is on.",
+          "page": 4
+        },
+        {
+          "text": "It - It sure does, Pete. You're - they're - You're flying thr0ugh the air b~ckward3, then, Pete, because I don't see it.",
+          "page": 4
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "This transcript is released under the PURSUE UAP disclosure initiative and represents exactly the category of historical government-recorded astronaut UAP observations that AARO's mandate covers."
+      "reasoning": "This transcript was selected and released as part of UAP disclosure efforts, with AARO-era framing identifying these crew observations as UAP-relevant historical records."
     },
     {
       "node_id": "blue_book",
       "relevance": "low",
-      "reasoning": "Project Blue Book was the active U.S. government UAP investigation program in November 1969 when these observations occurred, making it the contemporaneous institutional framework — though the transcript does not reference Blue Book directly."
+      "reasoning": "The events occurred in November 1969, the same year Project Blue Book was terminated, and represent a class of aerial/space anomaly observation that Blue Book nominally covered, though there is no direct institutional connection in the document text."
     }
   ],
   "related_topics": [
     "astronaut testimony",
     "lunar orbit observation",
     "optical telescope anomaly",
-    "spacecraft debris tracking",
-    "electromagnetic interference"
+    "space debris",
+    "luminous phenomena"
   ]
 }

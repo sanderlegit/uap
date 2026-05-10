@@ -1,41 +1,88 @@
 {
-  "hook": "FBI Headquarters case file serials 186-245, covering July 1949 to August 1950, documenting civilian flying saucer reports routed through Walter Winchell's press network to the FBI, including a close-encounter account from the mountains near Los Angeles, a 35-minute aerial sighting over a Toronto farm, and a planned national convention of saucer witnesses in Louisiana — each triggering background checks on the witnesses.",
-  "why_it_matters": "This section reveals the FBI's dual-track response to civilian UAP reports: simultaneously collecting witness accounts and vetting witnesses for subversive associations, as seen in the background investigation of Canadian witness Walter D. Jones that turned up his ties to a Soviet-friendship organization. The Walter Winchell intermediary (Cuneo) episode shows the press and FBI were negotiating in real time over what could be published, with Cuneo explicitly dismissing Air Force involvement ('To hell with the Air Force'). This illustrates how civilian UAP intelligence flowed through informal media channels while the Air Force nominally held primary jurisdiction.",
+  "hook": "FBI internal correspondence and teletype messages from July 1949 through August 1950 documenting the Bureau's handling of civilian flying saucer reports: a California hiker who claimed a metallic top-shaped craft knocked him to the ground in August 1947, a Louisiana convention of saucer witnesses flagged by Army G-2, and a Toronto farmer's 35-minute observation of a high-speed luminous object—each accompanied by background checks on the witnesses.",
+  "why_it_matters": "This section reveals the FBI operating as an informal clearinghouse for civilian UAP reports during the height of the 1947–1950 saucer wave, conducting witness background investigations that explicitly linked UFO reporting to Cold War political vetting. The 'To hell with the Air Force' exchange between FBI official Ladd and a Winchell associate exposes friction between the Bureau and the Air Force over jurisdictional control of the UFO narrative and press management. The political screening of the Toronto witness—flagged for past Canadian-Soviet Friendship Council ties—shows the FBI treating UAP witnesses as potential security subjects rather than purely scientific informants.",
   "key_findings": [
-    "Peter Cameron Jones reported observing in August 1947 a large silver-green metallic object shaped like a child's top with two windows and apparent transparent sections near Los Angeles; when he stood and waved, the object departed instantly, knocking him to the ground — the FBI ordered a discreet background check before interviewing him.",
-    "Walter Winchell's associate Ernest Cuneo made multiple calls to FBI Director Hoover's office in July 1949 seeking clearance to publish Jones' letter as a newspaper column; an FBI official told him it was his decision but suggested the Air Corps, which Cuneo rejected.",
-    "Walter D. Jones of Toronto reported a 35-minute sighting on July 19 (year not explicit in letter, postmarked August 29, 1950) of a luminous object that approached his farm at incredible speed, circled at variable speeds changing direction, stayed above a cloud layer obscuring its shape, and had a corroborating witness (his houseman).",
-    "A July 1949 Army G-2 Fourth Army tip informed the FBI that the Young Men's Business Club of Alexandria, Louisiana was organizing a national convention for flying saucer witnesses to 'compare notes,' with local disc sightings reported twice in the preceding week.",
-    "FBI background check on Walter D. Jones revealed RCMP records showing he was treasurer of the National Council for Canadian-Soviet Friendship in 1944 — his sighting report was forwarded to an unspecified Department rather than treated as a standalone intelligence matter."
+    {
+      "finding": "A California hiker, Peter Cameron Jones, described to Walter Winchell a August 1947 encounter with a silver-green metallic object shaped like a child's top that became airborne in under a second and knocked him to the ground; FBI Director Hoover ordered a discreet background check followed by a full interview.",
+      "quotes": [
+        {
+          "text": "large silver metal, greenish in color, shaped like a child's top and about the size of the balloons used at County Fairs. He stated that there appeared to be two windows in the object and portions of metal appeared transparent and that he gained the impression that there was some life within this object although he saw no persons.",
+          "page": 21
+        },
+        {
+          "text": "He stood up and waved towards the object AWD WITHIN A SECOND IT TOOK OFF, KNOCKING HIM TO THE GROUND. DISCREETLY CHECK BACKGROUND OF JONES, THEREAFTER, INTERVIEW HIM FOR THE PURPOSE OF DETERMINING ANY FACTS IN HIS POSSESSION CONCERWING THE STATEMENTS SET OUT HEREIN.",
+          "page": 17
+        }
+      ]
+    },
+    {
+      "finding": "FBI official Ladd told Winchell associate Cuneo that the Air Force, not the FBI, had primary jurisdiction over flying saucer matters; Cuneo's dismissal of this referral—'To hell with the Air Force'—documents civilian press resistance to military control of the UAP narrative.",
+      "quotes": [
+        {
+          "text": "I suggested that he might desire to check with the Air Corps inasmuch as the handling of flying saucers was a matter of prin interest to them. He stated, \"To hell with the Air Force. He just didn't want to release the information if it would @pf the Bureau\".",
+          "page": 19
+        }
+      ]
+    },
+    {
+      "finding": "Army G-2, Fourth Army flagged a planned flying saucer witness convention in Alexandria, Louisiana to the FBI Director under the Internal Security heading, treating civilian saucer enthusiasts as a potential security matter.",
+      "quotes": [
+        {
+          "text": "On July 15, 1949, the Office of the Assistant Chief of Staff, G-2, Fourth Army, advised that a small article which had appeared in the Galveston (Texas) News on July 10, 1949, advertised the fact that the Young Men's Business Club of Alexandria, Louisiana, announced that it was planning a convention for persons from all over the nation who have seen flying saucers.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "A Toronto farmer, Walter D. Jones, reported a 35-minute observation on July 19, 1950 of a luminous object moving at 'incredible speed' that circled his farmhouse and reversed direction; the FBI's response letter noted his 1944 role as treasurer of the National Council for Canadian-Soviet Friendship.",
+      "quotes": [
+        {
+          "text": "I saw through the clouds a hazy object of light coming towards the farmhouse with incredible speed, It circled before reaching the farmhouse and continued to do so, neither the height or the orbit of which I could determine. I could not distinguish its shape, as it was above the clouds and I could only see a filter of light.",
+          "page": 36
+        },
+        {
+          "text": "Walter D. Jones in 1944 was the urer of the National Council for Canadian-Soviet Friendship located at 80 Ki ng Street, Toronto, Ontario.",
+          "page": 35
+        }
+      ]
+    },
+    {
+      "finding": "The witness Jones speculated that the craft was connected to extraterrestrial interest in Earth's atomic bomb tests, and raised the possibility that its occupants had 'solved the theory of negative gravity'—language the FBI noted indicated 'a very good knowledge of physics.'",
+      "quotes": [
+        {
+          "text": "He raised the question as to whether this was a global landing on our planet. He thought that it might be a device to land in our planet because the occupants of another planet had become curious as to the reaction caused by the explosion of the atomic bomb causing trouble in an expanded universe.",
+          "page": 21
+        },
+        {
+          "text": "He raised the question as to whether it was possible that the occupants of another planet might have solved the theory of negative gravity.",
+          "page": 21
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
-      "relevance": "high",
-      "reasoning": "These 1947-1950 civilian sighting reports and the FBI's deference to Air Force primary jurisdiction over flying saucers directly fed the investigative environment from which Project Blue Book emerged."
+      "relevance": "medium",
+      "reasoning": "The file predates Project Blue Book but documents the same civilian saucer-report collection process that Blue Book would formally systematize; the FBI explicitly deferred press and investigation jurisdiction to the Air Corps."
     },
     {
       "node_id": "wright_patterson",
-      "relevance": "medium",
-      "reasoning": "The document explicitly references Air Corps/Air Force as holding primary interest in flying saucers, the institutional home that would become Wright-Patterson's Foreign Technology Division and Blue Book."
+      "relevance": "low",
+      "reasoning": "Air Force jurisdiction over flying saucer reports is referenced, and Wright-Patterson was the hub of early Air Force UFO investigation during this exact 1947–1950 period."
     },
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The RCMP conducted background checks on Canadian witness Walter D. Jones and shared results with the FBI, demonstrating active intelligence-sharing on UAP-related individuals between U.S. and Canadian agencies."
-    },
-    {
-      "node_id": "cia_oga",
-      "relevance": "low",
-      "reasoning": "The involvement of Ernest Cuneo — a political operative with intelligence community ties who acted as intermediary between Winchell and the FBI — suggests informal coordination channels that overlapped with early CIA-era intelligence networks."
+      "reasoning": "The Canadian witness Walter D. Jones and his RCMP-provided file on Canadian-Soviet Friendship Council ties indicate intelligence sharing with Canadian counterparts on UAP-related witness vetting."
     }
   ],
   "related_topics": [
-    "civilian eyewitness testimony",
-    "press and media coordination",
-    "FBI background investigations",
-    "Canadian-Soviet intelligence crossover",
-    "close encounter ground effect"
+    "civilian witness vetting",
+    "Cold War security screening",
+    "press management",
+    "atomic bomb extraterrestrial hypothesis",
+    "Army G-2 coordination"
   ]
 }

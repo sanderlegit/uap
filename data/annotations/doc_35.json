@@ -1,31 +1,87 @@
 {
-  "hook": "A U.S. Air Force ISR aircraft from the 482nd Attack Squadron observed two separate UAP via full-motion video over the Arabian Gulf region on November 2, 2020 — at 2143Z and again five minutes later at 2148Z — while conducting a 20-hour classified surveillance mission supporting NAVCENT operations near the Strait of Hormuz.",
-  "why_it_matters": "This MISREP documents UAP observations made during an active, ongoing military intelligence-collection mission in one of the world's most surveilled and contested airspaces, adding operational context rarely seen in declassified UAP records. The observations occurred within a five-minute window in the same grid area using the ANDAS4 targeting pod and FMV, providing sensor-specific provenance. Notably, weather haze was logged as having precluded conventional IMINT collection during the mission, yet FMV captured the UAP — a detail that constrains what environmental conditions prevailed at observation time.",
+  "hook": "A U.S. military ISR aircraft operating over the Arabian Gulf observed two separate UAPs five minutes apart on November 2, 2020, both recorded via Full Motion Video (FMV) during a 20-hour-42-minute NAVCENT-supported reconnaissance mission monitoring Iranian naval and UAS activity.",
+  "why_it_matters": "This document is notable for producing two distinct UAP observations within a single mission window, each independently logged as separate OBSERVATION entries with precise DTG, aircraft position, and heading data. The mission context — active surveillance of Iranian military vessels and drone activity in a contested maritime zone — adds operational weight to the sightings, as the crew was specifically trained and equipped to identify and characterize airborne and maritime objects. The FMV footage was subsequently exploited by DOSI, indicating the observations were treated as operationally significant beyond the initial report.",
   "key_findings": [
-    "Two UAP were observed five minutes apart (2143Z and 2148Z) in the same approximate grid area (39RWK) via FMV, with the aircraft at FL220 heading 110T; the first UAP's altitude was listed as unknown, and the second was observed traveling northwest.",
-    "The primary sensor listed is the ANDAS4 targeting pod, with AH/GMESH also available; weather haze was formally logged as having precluded IMINT collection during the mission, yet the FMV observations of UAP were still recorded.",
-    "The aircraft received a guardcall from Iranian Air Defense at 1012Z — roughly 11 hours before the UAP observations — at FL210 heading M068; the crew responded with a standard response and reported no mission impact.",
-    "The mission's stated purpose was ISR support for NAVCENT to characterize IRGCN vessels, UAS activity, activity outside ports, and establish pattern of life in the Arabian Gulf, Strait of Hormuz, and Gulf of Oman.",
-    "FMV footage from the mission was exploited by DOSI; the intel gap was formally recorded as 'not filled,' and the original classification was set to expire in 2045, indicating the material was considered sensitive for 25 years before early declassification in March 2026."
+    {
+      "finding": "Two UAPs were observed five minutes apart at 2143Z and 2148Z via Full Motion Video (FMV), with the second UAP observed traveling northwest. Both observations were made from the same aircraft at FL220.",
+      "quotes": [
+        {
+          "text": "AT 2143Z~OBSERVED A UAP. SEE OBS LINE 1. AT 2148Z~SERVED A UAP. SEE OBS LINE 2.",
+          "page": 1
+        },
+        {
+          "text": "AT 2143Z~ 1.4a pBSERVED IX UNIDENTIFIED AERIAL PHENOMENON lVO 39RWK~~TITUDE UNKNOWN WITH A BEARING OF 080 T.",
+          "page": 6
+        },
+        {
+          "text": "AT 2148Z,Ef BSERVED AN ADDITI NAL UAP TRAVELING NW lVO 39RWK~~a",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The aircraft was conducting a planned, 20+ hour ISR mission tasked to characterize Iranian naval vessels, UAS activity, port activity, and establish pattern of life — providing clear operational context for what sensors were active and what the crew was trained to identify.",
+      "quotes": [
+        {
+          "text": "tlO CHAR'4CTERlZE TRTN\\IRGCN VESSELS, UAS ACTIVITY, ACTIVITY OUTSIDE OF PORTS, AND TO ESTABLISH PATTERN OF LIFE.",
+          "page": 5
+        },
+        {
+          "text": "20.42 MISSION HOURS, 18.55 IMINT HOURS, 1 IMINT TASKING PROSECUTED",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The FMV footage from the mission was exploited by DOSI, indicating that the UAP observations were reviewed and processed by an external imagery analysis entity beyond the reporting crew.",
+      "quotes": [
+        {
+          "text": "FMV WAS EXPLOITED BY DOSI.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The aircraft was hailed on GUARD frequency by Iranian Air Defense at 1012Z during the mission and responded with standard protocols, confirming the aircraft was operating in or near Iranian-monitored airspace at the time of the UAP observations later that same mission.",
+      "quotes": [
+        {
+          "text": "AT 1012ZJ 1.4a ~AS HAILED ON GUARI) ilb}<1>J 4a!f REQ BY IRANIAN AIR DEFENSE. ORDERS GIVEN: STANDARD CALL~RESPONDED WITH STANDARD RESPONSE l. NO IMPACT TO THE MISSION",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Haze conditions formally precluded effective IMINT collection for the mission, yet both UAP observations were still captured via FMV, and the intel gap was recorded as unfilled — suggesting the UAPs did not resolve the mission's primary collection objectives.",
+      "quotes": [
+        {
+          "text": "• Weather: (U) HAZE PRECLUDED !MINT COLLECTION",
+          "page": 5
+        },
+        {
+          "text": "• Intel Gap Filled?: No",
+          "page": 5
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly described as a MISREP submitted to AARO as part of the standardized UAP reporting pipeline, and is released under the PURSUE declassification effort."
+      "reasoning": "This MISREP is an explicit UAP report filed through USCENTCOM to AARO via the standardized military UAP reporting chain, as described in the war.gov manifest."
     },
     {
-      "node_id": "five_eyes",
+      "node_id": "nro",
       "relevance": "low",
-      "reasoning": "The mission operated under USCENTCOM/NAVCENT in a region where allied ISR coordination is common, though no allied nations or shared-intelligence frameworks are explicitly named in the document."
+      "reasoning": "The mission employed IMINT collection assets with FMV exploitation by DOSI, indicating involvement of imagery intelligence infrastructure that may intersect with national reconnaissance capabilities."
     }
   ],
   "related_topics": [
     "FMV UAP observation",
     "Arabian Gulf ISR",
     "Iranian air defense interaction",
-    "NAVCENT surveillance operation",
-    "IRGCN maritime monitoring"
+    "dual sighting same mission",
+    "IMINT collection"
   ]
 }

@@ -1,31 +1,51 @@
 {
-  "hook": "A single-frame monochrome still image, captured by a U.S. military sensor system and submitted by the FBI to AARO in 2025, showing two small dark circular objects near the center of a grainy, crosshair-overlaid frame. The image was redacted before submission and carries an unreliable timestamp due to an unconfigured system clock.",
-  "why_it_matters": "This photograph represents a formal FBI-to-AARO UAP submission under the post-2022 mandatory reporting framework, demonstrating that military sensor imagery is being funneled through law enforcement channels into the centralized resolution office. The admission that no mission report accompanied the image limits any attempt at contextualizing the sighting — altitude, speed, range, and operator platform are all unknown. The pre-submission redaction of a UAP image before it reached AARO raises questions about what information was withheld even within the disclosure pipeline.",
+  "hook": "A monochrome still image captured by a U.S. military system in 2025, submitted by the FBI to AARO, showing two small dark circular objects near a central crosshair in the upper right quadrant of the frame. The operator was unable to positively identify the objects.",
+  "why_it_matters": "This image represents one of the rare instances where the FBI formally submitted sensor-derived imagery to AARO, indicating inter-agency UAP reporting is functioning. The presence of two distinct circular objects in a military imaging system's field of view — combined with the operator's inability to identify them — places this squarely within the unresolved UAP case pool. The unreliable timestamp complicates any attempt to correlate this sighting with other events or sensor data from the Western United States.",
   "key_findings": [
-    "The FBI submitted this still image to AARO as a formal UAP report, sourced from an unspecified U.S. military sensor system in 2025.",
-    "The original imagery was redacted before being forwarded to AARO — meaning AARO itself received an altered version of the source material.",
-    "No accompanying mission report was provided, leaving sensor type, platform, altitude, heading, and environmental conditions undocumented.",
-    "The embedded date/time in the image is acknowledged as incorrect due to the system clock not being configured, undermining any timestamp-based correlation.",
-    "The operator on the originating platform was unable to positively identify the two small, dark, circular objects visible in the upper-right quadrant of the frame."
+    {
+      "finding": "Two small, dark, circular objects were captured near the center of the frame by a U.S. military imaging system, and the operator could not positively identify them.",
+      "quotes": []
+    },
+    {
+      "finding": "The image timestamp is known to be incorrect because the imaging system's date/time was not properly configured, making temporal correlation with other data sources unreliable.",
+      "quotes": []
+    },
+    {
+      "finding": "The original imagery was altered with redactions prior to submission to AARO, meaning the publicly available image does not represent the full unmodified capture.",
+      "quotes": []
+    },
+    {
+      "finding": "No accompanying mission report was provided with the submission, leaving operational context — platform type, altitude, heading, and mission purpose — unknown.",
+      "quotes": []
+    },
+    {
+      "finding": "The event is localized to the Western United States, a region with a historically elevated density of military airspace, test ranges, and UAP reporting.",
+      "quotes": []
+    }
   ],
   "document_type": "photo",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly a formal FBI submission to AARO under the centralized UAP reporting structure, making AARO the direct institutional recipient and resolution authority for this case."
+      "reasoning": "The FBI formally submitted this imagery to AARO as part of the inter-agency UAP reporting process described in the manifest."
     },
     {
-      "node_id": "congressional",
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The image was derived from a U.S. military system, connecting it to the broader military sensor and imagery infrastructure historically associated with UAP collection."
+    },
+    {
+      "node_id": "blue_book",
       "relevance": "low",
-      "reasoning": "The document's release via the PURSUE disclosure is a product of congressional mandates requiring executive agencies to surface UAP records, placing it within that legislative accountability chain."
+      "reasoning": "The two circular objects in a military imaging frame recall the morphology of unresolved cases historically catalogued under Project Blue Book, though no direct lineage is stated."
     }
   ],
   "related_topics": [
     "military sensor imagery",
-    "FBI UAP reporting",
-    "image redaction prior to disclosure",
-    "unresolved aerial objects",
-    "AARO submission pipeline"
+    "circular UAP morphology",
+    "AARO inter-agency reporting",
+    "timestamp anomaly",
+    "Western United States sightings"
   ]
 }

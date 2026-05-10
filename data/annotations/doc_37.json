@@ -1,36 +1,71 @@
 {
-  "hook": "A U.S. military pilot flying over the Arabian Gulf in 2020 acquired a 'weapons quality 1 track' on a balloon-like UAP at 31,000 ft and achieved a firing solution before visually confirming the object via targeting infrared sensor.",
-  "why_it_matters": "This report is notable because it documents a military crew reaching 'next to shoot' — a weapons-ready lock — on a UAP, meaning the object was tracked with sufficient precision to engage. The crew's note that it resembled UAP 'previously reported from 48FW' (48th Fighter Wing, RAF Lakenheath) suggests cross-unit pattern recognition of recurring unknowns, implying a category of balloon-like objects was being seen across multiple theaters and units. Five of six pages remain fully withheld under exemption 1.4(a), limiting what can be assessed about the full operational context.",
+  "hook": "A U.S. military aircrew in the Arabian Gulf in 2020 locked onto a UAP with a weapons-quality targeting track and visually identified it via infrared sensor, describing it as balloon-like and consistent with a previously reported UAP from the 48th Fighter Wing.",
+  "why_it_matters": "This report is notable because the crew achieved a 'weapons quality 1 track' on the object, meaning it was tracked with sufficient fidelity to generate a fire-control solution — a higher standard of sensor confirmation than a casual sighting. The explicit cross-reference to a prior 48FW report suggests military units were accumulating a pattern-of-life on balloon-like UAP in different theaters, which has implications for how the military was categorizing and comparing recurring UAP encounters.",
   "key_findings": [
-    "The UAP was described as looking 'like a balloon' and was explicitly compared to previously reported UAP from the 48th Fighter Wing, indicating cross-unit awareness of similar objects.",
-    "A 'weapons quality 1 track' was established — the highest-confidence sensor lock used to support weapons employment — demonstrating the object was tracked with precision by onboard systems.",
-    "The crew executed a 'next to shoot' on the track, meaning they achieved a firing solution, though no engagement occurred.",
-    "The UAP was visually identified through the aircraft's TFLIR (Targeting Forward-Looking Infrared), providing sensor-confirmed observation at 31,000 ft MSL.",
-    "Five of six pages are entirely withheld under classification exemption 1.4(a) (military plans, weapons systems, or operations), leaving the majority of the report's content inaccessible."
+    {
+      "finding": "The UAP was described as balloon-like and explicitly cross-referenced to a previously reported UAP from the 48th Fighter Wing, suggesting a recognized recurring type.",
+      "quotes": [
+        {
+          "text": "LOOKS LIKE A BALLOON, SIMILAR TO PREVIOUSLY REPORTED UAP FROM 48FW.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The crew tracked the object as a 'weapons quality 1' track — the highest standard of tracking quality, sufficient for weapons employment — while it traveled with the winds at 31,000 feet MSL.",
+      "quotes": [
+        {
+          "text": "OBSERVED A WEAPONS QUALITY 1 TRACK  OF A UAP TRAVELING WITH THE WINDS AT 31,000 FT MSL IVO 323'S.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The crew generated a targeting solution ('next to shoot') on the UAP, indicating it was trackable enough for fire-control purposes.",
+      "quotes": [
+        {
+          "text": "WAS ABLE TO MAKE A NEXT TO SHOOT ON THE TRACK AND VISUALLY ID THE UAP IN THE TFLIR.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The UAP was visually confirmed using the aircraft's Targeting Forward Looking Infrared (TFLIR) sensor, making this both an infrared and visual-quality confirmation.",
+      "quotes": [
+        {
+          "text": "VISUALLY ID THE UAP IN THE TFLIR.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Five of the six pages are entirely withheld under FOIA exemption 1.4(a), meaning the operational details, crew identities, aircraft information, and likely imagery are classified and not disclosed in this release.",
+      "quotes": [
+        {
+          "text": "1.4(a)",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The official description states U.S. military MISREPs of this type are submitted directly to AARO, placing this document within AARO's active UAP intake pipeline."
+      "reasoning": "This MISREP is the type of standardized military UAP report submitted to AARO, and the official description explicitly states military services use MISREPs to report UAP to AARO."
     },
     {
       "node_id": "wright_patterson",
       "relevance": "low",
-      "reasoning": "As a military aeronautical UAP report involving sensor tracking and aircraft engagement systems, it fits the long-standing Air Force technical collection mission historically centered at Wright-Patterson, though no direct institutional link is named."
-    },
-    {
-      "node_id": "blue_book",
-      "relevance": "low",
-      "reasoning": "The balloon-like UAP description and military pilot visual/sensor report echo the format and object categories that Project Blue Book catalogued decades earlier, providing historical typological continuity."
+      "reasoning": "As a military aviation UAP report involving targeting sensors and tracking data, it feeds into the broader Air Force UAP reporting chain historically associated with Wright-Patterson, though no direct connection is stated."
     }
   ],
   "related_topics": [
+    "infrared sensor tracking",
     "balloon-type UAP",
-    "TFLIR sensor tracking",
-    "weapons quality track",
-    "Arabian Gulf airspace",
-    "48th Fighter Wing cross-reporting"
+    "pilot testimony",
+    "Arabian Gulf",
+    "fire control track"
   ]
 }

@@ -1,26 +1,99 @@
 {
-  "hook": "MISREP 4592219 documents a 20-hour Air Force ISR mission over the Arabian Gulf on August 8–9, 2020, during which an operator observed one UAP via Full Motion Video at 0726Z near grid 39RWL0; the UAP was described as 'transitting' with no impact to mission.",
-  "why_it_matters": "This report demonstrates the routine integration of UAP reporting into standard military ISR mission documentation — the UAP observation is logged as a single line item alongside Iranian Air Defense contact and SIGINT collection, suggesting operators treat such sightings as operationally noteworthy but not mission-disrupting. The FMV collection was intermittently degraded by dense cloud cover, which the document explicitly flags, raising a documented limitation on what the sensor evidence can establish. The report was cleared for AARO release in March 2026 under USCENTCOM MDR 26-0038 to MDR 26-0046.",
+  "hook": "A U.S. Air Force MISREP filed by the 482nd Attack Squadron (482ATKS) documenting a 20-hour armed reconnaissance mission over the Arabian Gulf, Strait of Hormuz, and Gulf of Oman on August 8–9, 2020, during which a single UAP was observed via Full Motion Video (FMV) at 0726Z while the aircraft conducted pattern-of-life ISR tasked by NAVCENT.",
+  "why_it_matters": "This report illustrates how UAP encounters are embedded within routine military ISR operations and reported through standardized MISREP bureaucratic channels — the UAP sighting is one line item among Iranian vessel surveillance, SIGINT collection, and an Iranian Air Defense radio contact. The observation method (FMV only, with weather noted as intermittently degrading collection) raises questions about sensor corroboration, as no radar or additional sensor data is recorded for the UAP event itself. The document was approved for release to AARO in March 2026 under a batch declassification action covering MDR 26-0038 through 26-0046, indicating systematic rather than event-driven disclosure.",
   "key_findings": [
-    "One UAP was observed at 0726Z on August 8, 2020 via FMV (Full Motion Video), described only as 'transitting' with no further shape, size, speed, or altitude characterization recorded.",
-    "Dense cloud coverage intermittently impacted FMV collection effectiveness during the mission, which the weather section explicitly notes as a limiting factor on sensor data quality.",
-    "The aircraft was hailed on guard frequency by Iranian Air Defense at 1250Z — a separate event from the UAP observation — and the crew responded with a standard call; no mission impact recorded.",
-    "The ISR mission supported NAVCENT and tasked the crew to scan for Iranian vessels, establish pattern of life, monitor UAS activity, and characterize activity outside of ports in the Arabian Gulf, Strait of Hormuz, and Gulf of Oman.",
-    "The originating unit was 482 ATKS (Attack Squadron) under 432 AEW and USCENTCOM's 609th AOC, with the intel gap for the UAP observation marked as 'Not Filled.'"
+    {
+      "finding": "A single UAP was observed via FMV at 0726Z on August 8, 2020, described only as 'TRANSITTING' with no impact to mission. No additional sensor modalities (radar, SIGINT) are recorded for the UAP event.",
+      "quotes": [
+        {
+          "text": "OBSERVED NOTEWORTHY ACTIVITY. SEE OBS LINE 1.",
+          "page": 1
+        },
+        {
+          "text": "» Observed Activity Description: TRANSITTING\n* Method of Observation: FMV",
+          "page": 5
+        },
+        {
+          "text": "AT 07262,\nTO MISSION.\nOBSERVED 1X UAP IVO 39RWLO&fidab\nAaa] NO IMPACT",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "Dense cloud coverage intermittently degraded FMV collection effectiveness during the mission, which is the sole sensor modality listed for the UAP observation, potentially limiting the quality of any imagery captured of the event.",
+      "quotes": [
+        {
+          "text": "WEATHER: DENSE CLOUD COVERAGE INTERMITTANTLY IMPACTED FMV COLLECTION",
+          "page": 6
+        },
+        {
+          "text": "WEATHER: WEATHER WAS NOT A FACTOR.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The mission's primary purpose was ISR pattern-of-life collection against Iranian/IRGC vessels in the Arabian Gulf, Strait of Hormuz, and Gulf of Oman — not UAP investigation — and the intel gap was recorded as not filled despite the UAP observation.",
+      "quotes": [
+        {
+          "text": "SCANS IAW THE TARGET DECK IN THE ARABIAN GULF (AG).",
+          "page": 6
+        },
+        {
+          "text": "TO CONDUCT SCANS FOR IDENTIFIED\nIRINURGCN VESSELS TO ESTABLISH PATTERN OF LIFE, UAS ACTIVITY AND\nCHARACTERIZE ACTIVITY OUTSIDE OF PORTS",
+          "page": 6
+        },
+        {
+          "text": "Intel Gap Filled?: No",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The aircraft was hailed on GUARD frequency by Iranian Air Defense at 1250Z — a separate, unrelated military contact event — and responded with a standard call, also with no impact to mission.",
+      "quotes": [
+        {
+          "text": "AT 1250Z,[1.4a\nWAS HAILED ONGUARD[___1.4a__\nBY IRANIAN AIR\nDEFENSE. ORDERS GIVEN: STANDARD CALL,\n[RESPONDED STANDARD RESPONSE.\nNO IMPACT TO THE MISSION",
+          "page": 4
+        },
+        {
+          "text": "+ Ground Station Callsign; IRANIAN AIR DEFENSE GUARD",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The mission logged 20.3 hours total with 17.7 IMINT hours and 18.4 SIGINT hours, reflecting a long-endurance multi-INT armed reconnaissance platform; the primary sensor listed is ANDAS4 (a targeting pod) with AH_GMESH as additional avionics.",
+      "quotes": [
+        {
+          "text": "20.3 MISSION HOURS, 17.7 IMINT HOURS, 1 IMINT TASKING\nPROSECUTED, 18.4 SIGINT HOURS, 1 SIGINT TASKING PROSECUTED, 2 TOTAL TASKINGS\nPROSECUTED",
+          "page": 1
+        },
+        {
+          "text": "Primary Sensor: ANDAS4\nSensors Available: AH\\GMESH",
+          "page": 5
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document header on every page explicitly states 'Approved for Release to AARO' under USCENTCOM MDR 26-0038 to MDR 26-0046, confirming this MISREP was processed through the AARO disclosure pipeline."
+      "reasoning": "The document was explicitly approved for release to AARO on 03/27/26 under USCENTCOM MDR 26-0038 to MDR 26-0046, making AARO the direct institutional recipient and custodian of this UAP report."
+    },
+    {
+      "node_id": "congressional",
+      "relevance": "low",
+      "reasoning": "Batch declassification under a USCENTCOM MDR series approved in March 2026 suggests a disclosure process likely tied to congressional oversight mandates for UAP reporting, though no direct congressional reference appears in the document."
     }
   ],
   "related_topics": [
-    "FMV observation",
-    "Arabian Gulf ISR",
-    "Iranian air defense interaction",
-    "UAP transit sighting",
-    "SIGINT collection"
+    "FMV sensor limitations",
+    "Persian Gulf ISR operations",
+    "Iranian Air Defense intercept",
+    "AARO reporting pipeline",
+    "armed reconnaissance UAP encounter"
   ]
 }

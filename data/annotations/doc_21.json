@@ -1,31 +1,83 @@
 {
-  "hook": "A U.S. military MISREP documenting two separate UAP observations in a single operational period: one solitary object traveling at a steady 40 knots at FL160-170, and two possible UAPs clocked at an estimated 278 knots that subsequently accelerated and turned south.",
-  "why_it_matters": "This report is notable for capturing two distinct UAP events within the same reporting document, allowing direct comparison: one object exhibiting stable, slow flight at altitude and another pair exhibiting dynamic maneuvering. The Secret//REL classification indicates the observations were considered sensitive enough to restrict but shareable with allied partners. The heavy redaction of all five preceding pages under exemption 1.4(a) — protecting intelligence sources, methods, or military plans — means the operational context, unit identity, and sensor platform remain entirely concealed.",
+  "hook": "A U.S. military Mission Report documenting two separate UAP sightings within a single operational period, one involving a lone object at constant low speed and a second involving two objects that accelerated and changed direction.",
+  "why_it_matters": "This MISREP captures two distinct UAP events with specific grid coordinates, altitudes, and velocities, providing the kind of structured, quantitative military reporting that forms the evidentiary backbone of AARO's case database. The second event's combination of speed estimation (278 knots) and apparent maneuvering (acceleration and southward direction change) puts it in the category of objects exhibiting non-passive flight behavior as observed by a military operator. The heavy 1.4(a) redactions across four of six pages mean the operator identity, platform, and broader tactical context remain classified, limiting independent analysis.",
   "key_findings": [
-    "First observation at 1354Z recorded a single UAP near MGRS coordinate 34SCE7566990098 flying at 40 knots between FL160 and FL170, with speed described as remaining constant.",
-    "Second observation at 2243Z recorded two possible UAPs near MGRS coordinate 35TQK1580995057, with velocity estimated at 278 knots — roughly seven times faster than the first object.",
-    "The second pair of UAPs exhibited active maneuvering: they increased speed and changed direction toward the south, the only behavioral change documented in the report.",
-    "Five of the six pages are substantively redacted under exemption 1.4(a), leaving only the two GENTEXT UAP description bullets as readable content; observer identity is withheld throughout.",
-    "Both observations are marked (S//REL), indicating Secret classification with releasability to foreign partners, consistent with allied military information-sharing frameworks."
+    {
+      "finding": "A single UAP was observed at 1354Z traveling at 40 knots between FL160 and FL170 with constant velocity, with a precise MGRS grid coordinate recorded.",
+      "quotes": [
+        {
+          "text": "AT 1354Z, 1.4(a)OBSERVED 1X UAP IVO 34SCE7566990098. VELOCITY WAS 40 KNOTS AT FL160 TO FL170. UAP SPEED REMAINED CONSTANT.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "A second event, nearly nine hours later, involved two possible UAPs estimated at 278 knots that actively accelerated and changed direction to the south.",
+      "quotes": [
+        {
+          "text": "AT 2243Z, 1.4(a) OBSERVED 2X POSS UAPS IVO 35TQK1580995087. VELOCITY WAS ESTIMATED AT 278 KNOTS. UAPS INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE SOUTH.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Both GENTEXT entries are classified SECRET/RELEASABLE (S//REL), indicating the observations were deemed sensitive enough for a classified report but cleared for release to allied partners.",
+      "quotes": [
+        {
+          "text": "(S//REL) AT 1354Z, 1.4(a)OBSERVED 1X UAP IVO 34SCE7566990098.",
+          "page": 5
+        },
+        {
+          "text": "(S//REL) AT 2243Z, 1.4(a) OBSERVED 2X POSS UAPS IVO 35TQK1580995087.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Four of six pages are entirely redacted under the 1.4(a) national security exemption, withholding the operator identity, platform type, and all contextual mission information.",
+      "quotes": [
+        {
+          "text": "1.4(a)",
+          "page": 1
+        },
+        {
+          "text": "1.4(a)",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The two sightings differ markedly in speed — 40 knots vs. an estimated 278 knots — suggesting either two distinct object types or the same object class operating at very different regimes across the two events.",
+      "quotes": [
+        {
+          "text": "VELOCITY WAS 40 KNOTS AT FL160 TO FL170. UAP SPEED REMAINED CONSTANT.",
+          "page": 5
+        },
+        {
+          "text": "VELOCITY WAS ESTIMATED AT 278 KNOTS. UAPS INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE SOUTH.",
+          "page": 6
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The official war.gov description explicitly states that MISREPs of this format are used to report UAP to AARO, making this document a direct product of the AARO reporting pipeline."
+      "reasoning": "The official description explicitly states U.S. military services use MISREPs to report UAP to AARO, making this document a direct AARO intake record."
     },
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The S//REL classification on both GENTEXT observations indicates the data was designated releasable to allied partners, consistent with Five Eyes or similar coalition intelligence-sharing arrangements."
+      "reasoning": "The S//REL classification marks the report as releasable to allied intelligence partners, indicating the observations were shared within a coalition intelligence framework."
     }
   ],
   "related_topics": [
+    "military UAP reporting",
     "aerial velocity estimation",
-    "UAP maneuvering behavior",
-    "military grid reference coordinates",
-    "S//REL classification",
-    "MISREP reporting chain"
+    "MGRS grid coordinates",
+    "direction change maneuver",
+    "classified redaction 1.4(a)"
   ]
 }

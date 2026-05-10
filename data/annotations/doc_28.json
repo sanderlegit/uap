@@ -1,36 +1,100 @@
 {
-  "hook": "A U.S. Navy ISR crew aboard an aircraft designated BUNO 23819, flying at 23,819 feet over the Gulf of Aden on September 4, 2020, tracked a single round object for eight minutes via IR sensor; the object registered as thermally cold against the background, appeared bright white in black-hot IR mode, traveled at 277 mph on a 168-degree heading, and executed several abrupt directional changes before contact was lost.",
-  "why_it_matters": "This report is significant because it documents an operationally credible sensor-based UAP encounter in an active theater (USCENTCOM AOR) rather than a training range, filed through the Navy's SPEAR reporting pipeline at a time when the UAP Task Force was being stood up in 2020. The thermal signature is analytically notable: a 'round, cold object' appearing bright white in black-hot IR indicates the object was colder than the ambient background at altitude, which is atypical of conventional aircraft, balloons with engines, or exhaust-producing drones. The abrupt directional changes, if accurate, further distinguish this from a passive aerostatic object.",
+  "hook": "A U.S. military ISR crew from 1172 ATKS filed this Range Fouler Reporting Form after tracking a single round, thermally cold object via infrared sensor for eight minutes over the Gulf of Aden on the night of September 4, 2020, noting abrupt directional changes at 277 mph.",
+  "why_it_matters": "This report documents a UAP exhibiting two simultaneously anomalous characteristics: it was radiometrically cold yet performed abrupt directional changes at 277 mph — behaviors difficult to reconcile with known balloons, drones, or debris. The precise sensor geometry data (slant range, ground range, sensor depression angle) makes this one of the more technically grounded raw pilot reports in the PURSUE release, providing enough parameters to partially reconstruct the object's position and size. Filed under USCENTCOM authority, it reflects that UAP encounters were occurring in operationally sensitive airspace — the Gulf of Aden — not only in U.S. domestic training ranges.",
   "key_findings": [
-    "The object was tracked from 21:09Z to 21:17Z on 04 SEP 2020, a continuous eight-minute contact window from an O-3 crew of squadron 1172 ATKS on an ISR mission.",
-    "IR sensor was set to 'black hot,' and the object appeared bright white, meaning it was thermally colder than the surrounding atmosphere at 23,819 feet HAT — inconsistent with propulsion-based aircraft signatures.",
-    "Reported speed and heading were 277 mph at 168 degrees (roughly south-southeast), with the object making 'a few abrupt directional changes' during the contact.",
-    "Sensor geometry: the ATFLIR or equivalent IR pod was depressed -39 degrees below the aircraft's altitude, with a slant range of 6.17 NM and a ground range of 8.81 KM, indicating the object was well below the aircraft and at a calculable position.",
-    "Only the 'Round' shape checkbox was marked; Metallic, Balloon-shaped, Wings/Airframe, Apparent Propulsion, and all EA indication boxes were left unchecked, and neither Radar Equipped nor AIM-9x Self-Track were confirmed."
+    {
+      "finding": "The object was radiometrically cold yet appeared bright white in 'black hot' IR mode, indicating it was colder than the ambient thermal background — atypical of aircraft, missiles, or engine-powered drones, which generate heat signatures.",
+      "quotes": [
+        {
+          "text": "we tracked a round, cold object in IR traveling 168 degrees at 277 mph",
+          "page": 1
+        },
+        {
+          "text": "The IR sensor was set to black hot and the obj ct in question was a bright white.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "Despite a sustained eight-minute track, the object made abrupt directional changes inconsistent with the straight-line flight profile of balloons or unpowered debris.",
+      "quotes": [
+        {
+          "text": "It made a few abrupt dir~ctional changes during the 8 minute contact.",
+          "page": 1
+        },
+        {
+          "text": "Contact at 21 :09z to 21 :17z 04SEP2020.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The reporting crew provided precise sensor geometry: the IR sensor was depressed 39 degrees below aircraft altitude with a slant range of approximately 6.17 nautical miles and a ground range of 8.81 kilometers, allowing partial reconstruction of the object's position relative to the aircraft at 23,819 feet HAT.",
+      "quotes": [
+        {
+          "text": "Our sensor was aimed -39 degrees below our altitude w th a slant range of 6.1 ?NM and ground range of 8.81 KM.",
+          "page": 1
+        },
+        {
+          "text": "While at 23,819 HAT over the ~ulf of Aden",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "None of the active tracking systems — radar, AIM-9x self-track, or ATFLIR autotrack — are checked as engaged, suggesting the contact was observed solely via manual IR sensor without corroborating radar or weapons-system lock.",
+      "quotes": [
+        {
+          "text": "Radar Equipped: AIM-9x Self-Track: Please check all that apply: □",
+          "page": 1
+        },
+        {
+          "text": "Stable Trackfile?: A TFLIR Autotrack: □",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The form was filed by an O-3 ranked crew member from 1172 ATKS during a night ISR mission, and the report was processed under USCENTCOM authority — placing the encounter firmly within active theater ISR operations rather than training.",
+      "quotes": [
+        {
+          "text": "0-3 \n1172 ATKS",
+          "page": 1
+        },
+        {
+          "text": "Night \nISR",
+          "page": 1
+        },
+        {
+          "text": "USCENTCOM 26.0028",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "This report was submitted through the Navy's SPEAR (Standardized UAP Reporting) pipeline — the field reporting infrastructure that directly fed the UAP Task Force established in August 2020 and subsequently AARO, making it a primary-source data point in the modern UAP disclosure chain."
+      "reasoning": "This Range Fouler Reporting Form is precisely the type of standardized military UAP encounter report that AARO was established to collect, process, and analyze from active-duty crews."
     },
     {
-      "node_id": "nro",
+      "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The crew was on an ISR mission in the USCENTCOM AOR over the Gulf of Aden, a theater where NRO-supported ISR assets routinely operate, raising questions about whether corroborating overhead collection exists for this event."
+      "reasoning": "The Gulf of Aden is a shared operational theater for U.S. and allied naval and air forces; USCENTCOM operations in this region routinely involve Five Eyes partner coordination and intelligence sharing."
     },
     {
-      "node_id": "congressional",
-      "relevance": "medium",
-      "reasoning": "Filed in September 2020, this report is precisely the type of active-theater sensor encounter that congressional staff cited when mandating the UAP Task Force in the FY2021 NDAA intelligence annex, and it remains within the corpus of cases subject to ongoing congressional UAP oversight."
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "MITRE supports USCENTCOM and DoD sensor analysis programs; the precise IR sensor geometry data in this report is the type of technical parameter MITRE-affiliated analysts would process for signature characterization."
     }
   ],
   "related_topics": [
     "infrared thermal signature",
+    "pilot testimony",
     "Gulf of Aden encounter",
-    "SPEAR reporting pipeline",
-    "abrupt directional change",
-    "ISR mission UAP contact"
+    "abrupt maneuvering",
+    "ISR mission UAP"
   ]
 }

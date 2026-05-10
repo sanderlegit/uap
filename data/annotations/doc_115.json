@@ -1,36 +1,91 @@
 {
-  "hook": "A collection of FBI and Army Air Forces memos from summer–fall 1947 documenting the earliest phase of interagency flying disc coordination, including eyewitness reports from June–August 1947, a formal division-of-labor agreement between the AAF and FBI, and the FBI's abrupt termination of its investigative role in October 1947.",
-  "why_it_matters": "This section captures the institutional mechanics of how the U.S. government initially organized its response to the 1947 flying disc wave — and then quietly shut it down. The explicit memo stating the FBI's role was to handle physical disc recoveries ('ash can covers, toilet seats and whatnot') while the AAF handled witness interviews reveals a deliberate triaging framework. The FBI's formal withdrawal from disc investigations in October 1947, just months after the Kenneth Arnold incident triggered public interest, marks the beginning of Air Force primacy over UAP investigation that would persist for decades.",
+  "hook": "FBI case file 62-HQ-83894 opens with 1947 inter-agency correspondence between the FBI and Army Air Force A-2 Intelligence at Hamilton Field, California, documenting early flying disc sightings — including the F.M. Johnson sighting on June 24, 1947 (the same date as Kenneth Arnold's famous report), crescent-shaped objects over Guam, and a silver disintegrating object observed by a Montana prison warden — alongside the FBI's formal withdrawal from flying disc investigations.",
+  "why_it_matters": "These records document the original institutional machinery for UFO investigation in 1947: the Army Air Force's A-2 intelligence units coordinating with FBI field offices, then abruptly cutting the Bureau out entirely. The explicit memo stating the FBI was enlisted to handle 'ash can covers, toilet seats and whatnot' while the AAF retained 'responsible observer' interviews reveals that the division of labor was designed to minimize Bureau access to credible reports. The FBI's formal discontinuation notice, issued October 1947, marks a clear bureaucratic boundary that shaped who controlled UAP information for the next two decades.",
   "key_findings": [
-    "F.M. Johnson reported a flying disc sighting on June 24, 1947 — the same date as the Kenneth Arnold incident — near Portland, Oregon, describing the object as moving 'on edge banking' into a cloud, likening it to a 'big magnet'; Lt. Col. Springer of Hamilton Field A-2 noted the similarity to Arnold's report but suspected possible newspaper influence.",
-    "Three American enlisted men at Harmon Field, Guam observed two crescent-shaped objects on August 14, 1947, traveling at twice the speed of a fighter plane on a zig-zag course at approximately 1,200 feet altitude, disappearing into clouds before one re-emerged heading west — reported via Air Transport Command Weekly Intelligence Summary.",
-    "A formal AAF policy memo established the division of investigative responsibility: Air Force A-2 units would interview credible witnesses, while the FBI was assigned to investigate physical disc recoveries on the ground — explicitly to relieve numbered Air Forces of pursuing hoaxes and mundane objects.",
-    "The FBI formally discontinued all flying disc investigative activities in October 1947, as stated in a terse bulletin: 'All future reports connected with flying discs should be referred to the Air Forces and no investigative action should be taken by Bureau Agents.'",
-    "Warden John Henry of Montana State Prison reported a May 5, 1947 sighting (predating Arnold) between Ellensburg and Seattle: a silver object at high speed went into a nose dive, then disintegrated leaving a stationary 'pillar of gas' in the sky that did not disperse while witnesses drove 20–30 miles — the Butte field office took no further action due to elapsed time."
+    {
+      "finding": "The Army Air Force explicitly defined the FBI's role in flying disc investigations as handling frivolous or groundless reports, while AAF A-2 intelligence retained interviews with 'responsible observers' — a deliberate gatekeeping structure.",
+      "quotes": [
+        {
+          "text": "The services of the FBI were enlisted in order to relieve the numbered Air Forces of the task of tracking down all the many instances which turned out to be ash can covers, toilet seats and whatnot,",
+          "page": 26
+        },
+        {
+          "text": "It was the original intent of the AC/AS=2, Headquarters, Army Air Forces that whereas the ADC Air Forces would interview responsible observers whose names would be furnished by AAF, the FB would investigate incidents of so called \"discs\" being found on the grourd.",
+          "page": 26
+        }
+      ]
+    },
+    {
+      "finding": "The FBI formally and immediately discontinued all flying disc investigative activities in October 1947, directing all future reports to the Air Force with no further Bureau action.",
+      "quotes": [
+        {
+          "text": "DISCS --Effective inmedi ately, the Bureau has disco: gative activities ag outlined in Section B of Bureau Bulletin No. 42, Series 1947, ntinued its investi-",
+          "page": 27
+        },
+        {
+          "text": "All future veports connect the Air Fo ted with flying dises should be referred to rees and no investigative action should be taken by Bureau Agents,",
+          "page": 27
+        }
+      ]
+    },
+    {
+      "finding": "Three U.S. Army enlisted men at Harmon Field, Guam reported two crescent-shaped objects on August 14, 1947, traveling at twice fighter plane speed on a zig-zag course at approximately 1,200 feet, disappearing into clouds before one re-emerged.",
+      "quotes": [
+        {
+          "text": "\"PLYING OBJECTS IN GUAM: Unidentified flying objects have boon Observed by three American enlisted men of the 147th Air= ways and Air Communications Service Squadron at Harmon Field, Guem, The men report that at 1040 hours on 14 August 1947 the 'two objects, which they describe as small, crescent shaped and traveling at a speed twice that of a fighter plane, passed over them on a zig-zag course in a westerly direction at an proxi= mate altitude of twelve hundred feet. The objects disappeared 'into clouds and a few seconds later a similar object possibly one of those previously observed, emerged from the clouds and proceeded west.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "F.M. Johnson, a prospector, reported seeing a flying disc on June 24, 1947 — the same date as Kenneth Arnold's famous sighting — and Army A-2 intelligence at Hamilton Field forwarded the report to FBI Portland for interview, noting the similarity to Arnold's account.",
+      "quotes": [
+        {
+          "text": "Your attention is invited to the similerity between Arnold's early report and this gentleman's report, A possibility exists that Mrs Johnson might have read some of this in the newspapers when Arnold was publicized re this mattere",
+          "page": 3
+        },
+        {
+          "text": "I say 8 on June 24th the day ation of flyin",
+          "page": 4
+        },
+        {
+          "text": "Portland is requested to exhaustively interview Mr. F. M. JOHNSON, 106 N.W. First Ave., Portland, Oregon, regarding his alleged sighting of a \"flying disc\" on June 24, 1947.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Montana State Prison Warden John Henry, his wife, and a convict chauffeur observed a silver object traveling at high speed on May 5, 1947, that 'disintegrated' leaving a gaseous pillar hanging stationary in the sky visible over a 20-30 mile drive.",
+      "quotes": [
+        {
+          "text": "he sighted a silver object streaking across the sky. This was also seen by MELBOURNE Me\"HILL, convict chauffeur, and Mrs, HENRY, This object went into a nose dive and they thought it would erash, However, before reaching the earth it disintegrated, leaving a long pillar of \"gas\" hanging in the sky. It was particularly odd because this re- mainsd in form and did not blow away. It was observed by these three people while they drove from twenty to thirty miles,",
+          "page": 29
+        },
+        {
+          "text": "Warden HENRY said that this silver object was traveling at an //' excessively high rate of speed and when it disintegrated it was still a long sy from the earth.",
+          "page": 29
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "This section documents the direct precursor coordination framework — AAF A-2 and FBI division of labor on disc investigations — that was institutionalized and eventually formalized into Project Sign and later Blue Book."
+      "reasoning": "This file documents the direct institutional predecessor to Project Sign and Project Blue Book — the 1947 AAF A-2 intelligence coordination with FBI field offices for flying disc investigation, including the formal interagency division of labor that shaped all subsequent Air Force UAP programs."
     },
     {
       "node_id": "wright_patterson",
       "relevance": "medium",
-      "reasoning": "Wright Field is referenced in the entities list and was the hub of Army Air Forces intelligence analysis, which received and processed the disc reports coordinated through the memos in this file."
-    },
-    {
-      "node_id": "cia_oga",
-      "relevance": "low",
-      "reasoning": "The interagency coordination framework established here — with the FBI withdrawing and the Air Force assuming primacy — laid groundwork for later CIA involvement in UAP oversight beginning in the early 1950s."
+      "reasoning": "Wright Field is listed as a named entity and Army Air Force A-2 Intelligence — headquartered at Wright Field — is the coordinating authority directing the FBI field offices throughout this correspondence."
     }
   ],
   "related_topics": [
-    "1947 flying disc wave",
     "FBI-AAF interagency coordination",
-    "eyewitness testimony collection",
-    "Kenneth Arnold incident contemporaneous reports",
-    "early UAP reporting protocols"
+    "1947 flying disc wave",
+    "Kenneth Arnold contemporaneous reports",
+    "crescent-shaped objects",
+    "investigative jurisdiction withdrawal"
   ]
 }

@@ -1,42 +1,93 @@
 {
-  "hook": "Air Intelligence Requirements Memorandum Number 4, dated 15 February 1949, issued by the USAF Directorate of Intelligence under Major General C.P. Cabell, establishing a comprehensive standardized protocol for reporting 'unconventional aircraft and unidentified flying objects, including the so-called Flying Discs' — distributed to the FBI, CIA, Navy, Coast Guard, State Department, and all major Air Commands.",
-  "why_it_matters": "This memorandum reveals the formal, interagency infrastructure the U.S. government built around UFO reporting by early 1949 — less than two years after the Kenneth Arnold sighting. Wright-Patterson AFB (office MCIAXO-3) is explicitly designated as the central clearinghouse for all reports, foreshadowing its role as the hub of Project Blue Book. The distribution list — spanning CIA, FBI, State Department, Navy, Coast Guard, and overseas Air Attaches — demonstrates that UFO investigation was treated as a serious, whole-of-government intelligence priority, not a fringe concern.",
+  "hook": "Air Intelligence Requirements Memorandum Number 4, dated 15 February 1949, is a classified U.S. Air Force standardized protocol establishing exactly how military personnel and allied agencies should observe, document, and report sightings of 'unconventional aircraft and unidentified flying objects, including the so-called Flying Discs.' It was distributed to the FBI, CIA, State Department, Navy, and Coast Guard, explaining its presence in this case file.",
+  "why_it_matters": "This memorandum reveals the formal, bureaucratically institutionalized infrastructure for UAP reporting that existed by early 1949—less than two years after the 1947 wave—with Wright-Patterson AFB designated as the central collection node for all reports. The document's distribution list, which includes the Director of the FBI, Director of Central Intelligence, and Special Assistant for Research and Intelligence at the State Department, confirms that UAP data collection was treated as a multi-agency intelligence priority, not a marginal Air Force curiosity. Notably, the protocol includes requirements for Geiger counter checks and soil sample collection, indicating that physical trace evidence and radiation were considered serious investigative categories from the outset.",
   "key_findings": [
-    "Wright-Patterson AFB, Dayton, Ohio (Attn: MCIAXO-3) is designated the primary collection point for all UFO reports from both domestic and overseas commands, as well as non-Air Force agencies including the FBI.",
-    "The memo supersedes two earlier Army collection documents from 1948, confirming a formal transfer of UFO investigative primacy from the Army to the Air Force.",
-    "Physical evidence collection protocols explicitly require Geiger counter checks on surfaces near UAP contact points to test for radioactivity, and soil sample collection from landing sites — indicating awareness of potential physical trace phenomena.",
-    "Observer reliability was to be verified through FBI records, police departments, employers, and neighbors, with interrogators required to assess the 'intelligence and character' of witnesses — reflecting a structured credibility-vetting process.",
-    "Radar sighting protocols required tracking target separation (one object becoming multiple), turn radius, speed, and whether radio circuits experienced 'inductions or extra noise' — suggesting known anomalous radar signatures were already anticipated."
+    {
+      "finding": "Wright-Patterson Air Force Base was designated the mandatory central clearinghouse for all UAP sighting reports from both domestic and overseas commands, with the Commanding General of Air Materiel Command holding authority for direct contact with all reporting organizations.",
+      "quotes": [
+        {
+          "text": "Reports will be forwarded direct to the Commanding General, Air Materiel Command, Wright-Patterson Air Force Base, Dayton, Ohio, Attn: MCIAXO-3 by installations receiv- ing information pertaining to the requirements enunciated in Part II.",
+          "page": 3
+        },
+        {
+          "text": "Commanding General, Air Materiel Command is authorized direct contact with major Air Commands (ZI) and organizations under their control in connection with the develop- ment of information on this subject.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The Air Force formally superseded Army-era UAP collection directives with this memo, consolidating investigative authority and establishing new standardized procedures, signaling an institutional transfer of responsibility in the early post-1947 period.",
+      "quotes": [
+        {
+          "text": "Department of the Army Collection Memorandum Number 7, dated 21 January 1948, and letter, CSGID 425.1, dated 25 March 1948, both subject as above, which have been transferred to Air Force agencies for action, are herewith superseded.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The protocol explicitly required investigators to check aircraft surfaces and landing sites with Geiger counters for radioactivity and to collect soil samples from any location where an object contacted the earth, indicating radiation was an anticipated physical signature from early in the investigation program.",
+      "quotes": [
+        {
+          "text": "If object came sufficiently near other aircraft or known objects check surfaces with Geiger counters for possible radioactivity. Make comparisons with other unaffected aircraft objects, etc.",
+          "page": 10
+        },
+        {
+          "text": "If object contacted earth, obtain soil samples within and without depression or spot where object landed (and then presumably departed) for purpose of making comparison of soils.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "finding": "The memorandum's distribution list placed UAP reporting within a broad inter-agency intelligence framework, explicitly routing information to the FBI, CIA, State Department, Navy, and Coast Guard—not solely Air Force channels.",
+      "quotes": [
+        {
+          "text": "Director of Central Intelligence\nSpecial Assistant for Research and Intelligence,\nDepartment of State\nDirector of Intelligence, GSUSA\nChief of Naval Intelligence\nCommandant (INT), United States Coast Guard\nDirector, Federal Bureau of Investigation",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "finding": "Observer reliability assessment was a formal, structured requirement: investigators were directed to cross-reference FBI records, police departments, employers, and neighbors to vet witness credibility, and to note observer fatigue, hobbies (e.g., amateur astronomer, pilot), and ability to estimate speed and size.",
+      "quotes": [
+        {
+          "text": "Reliability of observer.\na. Sources.\n(1) Neighbors.\n(2) Police Dept.\n(8) FBI records.\n(4) Employer.",
+          "page": 7
+        },
+        {
+          "text": "Pertinent hobbies.\na. Is observer amateur astronomer, pilot, engineer, etc.\nb. Length of time engaged in hobby (experience).",
+          "page": 6
+        }
+      ]
+    }
   ],
   "document_type": "memo",
   "legacy_program_connections": [
     {
       "node_id": "wright_patterson",
       "relevance": "high",
-      "reasoning": "Wright-Patterson AFB office MCIAXO-3 is explicitly named as the mandatory central collection point for all UAP reports from every U.S. command and non-Air Force agency."
+      "reasoning": "The memo designates Wright-Patterson AFB (Air Materiel Command, MCIAXO-3) as the mandatory destination for all UAP sighting reports from every command, making it the institutional center of early UAP data collection."
     },
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "This memo is a direct institutional predecessor to Project Blue Book, establishing the Wright-Patterson-centered reporting and collection framework that Blue Book would inherit and formalize."
+      "reasoning": "This 1949 Air Intelligence Requirements Memorandum establishes the standardized reporting framework and data categories (observer reliability, radar data, physical evidence) that directly prefigure the Project Blue Book investigative methodology formalized in 1952."
     },
     {
       "node_id": "cia_oga",
       "relevance": "medium",
-      "reasoning": "The Director of Central Intelligence is explicitly listed on the distribution, confirming CIA was a formal recipient of all UFO intelligence as of 1949."
+      "reasoning": "The Director of Central Intelligence appears on the formal distribution list, confirming CIA was a designated recipient of UAP sighting reports from the earliest institutionalized period."
     },
     {
       "node_id": "five_eyes",
       "relevance": "low",
-      "reasoning": "The memo directs overseas Air Attaches to report UAP data and specifically flags Canadian border activity as requiring cross-checks, indicating early international coordination awareness."
+      "reasoning": "The memo notes that investigators should 'Check Canadian activity if close to that border,' indicating awareness of cross-border UAP activity and coordination with neighboring allied territory."
     }
   ],
   "related_topics": [
-    "standardized reporting protocol",
-    "interagency coordination",
-    "physical trace evidence",
-    "radioactivity testing",
-    "observer reliability vetting",
-    "radar anomaly tracking"
+    "inter-agency reporting protocol",
+    "physical evidence collection",
+    "observer reliability assessment",
+    "radar tracking requirements",
+    "radioactivity testing"
   ]
 }

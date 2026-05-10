@@ -1,31 +1,70 @@
 {
-  "hook": "A U.S. military operator filed a one-sentence MISREP logging a single probable UAP observation at 12:46 UTC, at grid coordinate 3SKT4255899519, with no mission impact and no deviation from original tasking.",
-  "why_it_matters": "This document represents the minimal-documentation end of UAP reporting: a standardized MISREP reduced to a single substantive sentence across what appears to be a 7-page form, with six pages containing no recoverable text. Its significance lies in demonstrating that UAP observations are being captured in routine military reporting workflows and forwarded to AARO, even when operators judge them operationally irrelevant. The continued-original-tasking notation suggests the phenomenon was not assessed as a threat in real time.",
+  "hook": "A U.S. military operator's MISREP from the Arabian Gulf in 2020 records a brief, single-sentence UAP observation at 12:46Z, noting one probable UAP at a specific military grid coordinate with no impact on the ongoing mission.",
+  "why_it_matters": "This document illustrates the minimalist nature of field-level UAP reporting: the entire substantive content is a single sentence in the GENTEXT section, with the operator's identity partially redacted and no sensor data, description of appearance, or follow-up action recorded. It demonstrates that UAP encounters were logged and routed through standard military reporting channels (MISREP to AARO) even when operationally inconsequential. The brevity and 'PROB' qualifier suggest the observer was uncertain whether the object was a true UAP.",
   "key_findings": [
-    "A single probable UAP ('1X PROB UAP') was observed at 12:46 Zulu time by a platform with a partially obscured identifier ('[RAB').",
-    "The observation was geolocated using a military grid reference: 3SKT4255899519, consistent with MGRS coordinate format at meter-level precision.",
-    "The operator assessed 'NO MISSION IMPACT' and '[QJ CONTINUED ORIGINAL TASKING,' indicating no evasive action, no pursuit, and no operational disruption.",
-    "The classification marker '(6B)' precedes the description field, suggesting an exemption category applied to the specific observation details.",
-    "Six of the seven pages in this document contain no recoverable text, making this one of the most content-sparse MISREPs in the release despite its page count."
+    {
+      "finding": "A single probable UAP was observed at 12:46 Zulu time at a specific military grid location in the Arabian Gulf.",
+      "quotes": [
+        {
+          "text": "AT 1246Z, [RAB OBSERVED 1X PROB UAP IVO 3SKT4255899519. NO MISSION IMPACT, [QJ CONTINUED ORIGINAL TASKING.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The observer classified the object as a 'probable' UAP, not a confirmed one, indicating uncertainty at the time of observation.",
+      "quotes": [
+        {
+          "text": "1X PROB UAP",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The UAP had no impact on the mission and the operator continued their original tasking without interruption.",
+      "quotes": [
+        {
+          "text": "NO MISSION IMPACT, [QJ CONTINUED ORIGINAL TASKING.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The observer's callsign or unit designation is redacted, and the report section is classified at the (6B) exemption level.",
+      "quotes": [
+        {
+          "text": "¢ Description: (6B)",
+          "page": 7
+        },
+        {
+          "text": "[RAB OBSERVED",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Six of the document's seven pages contain no extractable text, meaning all structured MISREP fields (time on target, coordinates in standard fields, sensor data, etc.) are either blank, redacted, or did not survive OCR extraction.",
+      "quotes": [
+        {
+          "text": "AT 1246Z, [RAB OBSERVED 1X PROB UAP IVO 3SKT4255899519. NO MISSION IMPACT, [QJ CONTINUED ORIGINAL TASKING.",
+          "page": 7
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The official manifest explicitly states U.S. military services use MISREPs to report UAP to AARO, placing this document squarely in AARO's intake pipeline."
-    },
-    {
-      "node_id": "five_eyes",
-      "relevance": "low",
-      "reasoning": "The Arabian Gulf operational area and DoW provenance could involve coalition operations, but no partner nation data or shared-reporting indicators appear in the text."
+      "reasoning": "The war.gov manifest explicitly states this MISREP was submitted to AARO as part of the military UAP reporting pipeline."
     }
   ],
   "related_topics": [
-    "military grid reference system (MGRS)",
-    "MISREP standardized reporting",
-    "operator visual observation",
-    "Arabian Gulf operations",
-    "AARO intake process"
+    "Arabian Gulf",
+    "military grid coordinates",
+    "MISREP format",
+    "probable UAP classification",
+    "mission continuity"
   ]
 }

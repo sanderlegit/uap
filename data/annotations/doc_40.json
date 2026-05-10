@@ -1,31 +1,75 @@
 {
-  "hook": "A U.S. military operator filed this standardized Mission Report documenting two round, white-hot UAPs observed at 1653Z moving south at approximately 240 knots near MGRS coordinate 35SQT3423692957, with the substantive content classified SECRET and releasable to a broad coalition of allies.",
-  "why_it_matters": "This report is notable for its wide coalition release authority — explicitly shared with Finland, Sweden, Five Eyes, and NATO — indicating allied militaries are being looped into UAP reporting at the operational level. The thermal characterization ('white hot') suggests the observation was made via infrared or FLIR sensor rather than naked eye. Six of seven pages are entirely withheld under EO 13526 section 1.4(a), meaning the operational context, platform identity, and full sensor data remain classified.",
+  "hook": "A U.S. military MISREP filed from the Djibouti operational area documents two 'round white hot' UAPs traveling south at approximately 240 nautical miles per hour, observed at 1653Z at a precise MGRS grid coordinate. Six of the report's seven pages are fully redacted under FOIA exemption 1.4(a).",
+  "why_it_matters": "This report represents a recent (2025) military UAP sighting formally channeled to AARO via the standardized MISREP process, demonstrating that the reporting pipeline established under the UAP disclosure framework is actively being used in operational theater settings. The SECRET//REL TO USA, FIN, SWE, FVEY, NATO classification caveat indicates the incident was shared across the Five Eyes intelligence community as well as Finland and Sweden — both recent NATO additions — suggesting UAP data is being integrated into allied intelligence sharing arrangements. The near-total redaction of six pages limits independent assessment of sensor data, reporting chain, and follow-on actions.",
   "key_findings": [
-    "Two round ('2X ROUND') UAPs were observed simultaneously, consistent with the sphere/orb shape category noted in the metadata.",
-    "The objects were characterized as 'white hot,' indicating a significant infrared or thermal signature visible to sensor equipment.",
-    "Speed was estimated at approximately 240 nautical miles per hour (about 276 mph) on a southward heading.",
-    "The event location is encoded as MGRS grid 35SQT3423692957, placing it in the eastern Mediterranean or Red Sea region — consistent with a Djibouti-area operation.",
-    "The classification header (SECRET//REL TO USA, FIN, SWE, FVEY, NATO) shows this report was authorized for release to Finland, Sweden, Five Eyes partners, and NATO, reflecting a multilateral UAP information-sharing posture."
+    {
+      "finding": "Two UAPs described as round and 'white hot' were observed moving south at approximately 240 nautical miles per hour (roughly 276 mph) at a specific MGRS grid location.",
+      "quotes": [
+        {
+          "text": "OBS 2X ROUND WHITE HOT UAPS DYNAMIC SOUTH AT APPROX 240NM/HOUR IVO 35SQT3423692957.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The GENTEXT section repeats the UAP observation in a second bullet with slightly less descriptive detail, suggesting the MISREP format separates the physical description from the event narrative.",
+      "quotes": [
+        {
+          "text": "OBS 2X UAPS DYNAMIC SOUTH AT APPROX 240NM/HOUR IVO 35SQT3423692957.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The report is classified SECRET and explicitly shared with Finland, Sweden, Five Eyes, and NATO — a broad allied distribution unusual for a single-incident operational sighting.",
+      "quotes": [
+        {
+          "text": "(SECRET//REL TO USA, FIN, SWE, FVEY, NATO) AT 1653Z, 1.4(a)\nOBS 2X ROUND WHITE HOT UAPS DYNAMIC SOUTH AT APPROX 240NM/HOUR IVO 35SQT3423692957.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Six of the report's seven pages are entirely withheld under FOIA exemption 1.4(a), which covers properly classified national security information, leaving sensor type, platform identity, follow-on actions, and reporting chain unknown.",
+      "quotes": [
+        {
+          "text": "1.4(a)",
+          "page": 1
+        },
+        {
+          "text": "1.4(a)",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The observation time is recorded to the minute in Zulu time, and the location is given as a 10-digit MGRS coordinate (35SQT3423692957), indicating high-precision geolocation consistent with military sensor or operator positioning capability.",
+      "quotes": [
+        {
+          "text": "AT 1653Z, 1.4(a)\nOBS 2X ROUND WHITE HOT UAPS DYNAMIC SOUTH AT APPROX 240NM/HOUR IVO 35SQT3423692957.",
+          "page": 7
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The manifest explicitly states this MISREP was submitted to AARO using the standardized military UAP reporting pipeline AARO administers."
+      "reasoning": "The official war.gov description explicitly states the MISREP format is used to report UAP sightings to AARO, making this a direct example of the active AARO reporting pipeline."
     },
     {
       "node_id": "five_eyes",
       "relevance": "high",
-      "reasoning": "The classification header explicitly authorizes release to FVEY partners as well as Finland and Sweden, indicating active multilateral UAP intelligence sharing through established allied frameworks."
+      "reasoning": "The classification caveat 'REL TO USA, FIN, SWE, FVEY, NATO' shows this UAP report was formally shared with the Five Eyes intelligence community and allied NATO partners including Finland and Sweden."
     }
   ],
   "related_topics": [
-    "infrared thermal signature",
-    "MISREP standardized reporting",
-    "coalition intelligence sharing",
-    "speed estimation nautical miles per hour",
-    "MGRS coordinate localization"
+    "military observer report",
+    "infrared signature",
+    "MGRS geolocation",
+    "allied intelligence sharing",
+    "speed estimation"
   ]
 }

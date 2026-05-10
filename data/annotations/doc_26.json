@@ -1,36 +1,86 @@
 {
-  "hook": "A U.S. Navy P-8A Poseidon, while monitoring carrier task group (KCTG) activity in the Eastern Mediterranean on November 18, 2016, detected an unidentified low-flying object approximately 86 NM northwest of Latakia, Syria via EO/IR sensor — initially logged as a possible missile launch — traveling at ~500 knots on a southeasterly heading before losing visual contact after roughly two minutes.",
-  "why_it_matters": "This report illustrates how ambiguous fast-moving objects near known military activity (here, a Russian carrier task group) enter the UAP pipeline even when the mission commander assesses the interaction as 'safe' and 'consistent with KCTG activity.' The document was formally approved for release to AARO in March 2026, placing a decade-old tactical sensor report directly within the modern UAP disclosure framework. The presence of the Russian auxiliary vessel INGUL ARS in the observation area adds a foreign military dimension that likely influenced the cautious non-attribution language used throughout.",
+  "hook": "A U.S. Navy P-8A maritime patrol aircraft observed a low-flying object near Latakia, Syria in November 2016, which the crew initially characterized as a possible missile in 'sea skim mode' traveling at approximately 500 knots — the first such observation by a P-8 in the Eastern Mediterranean.",
+  "why_it_matters": "This report illustrates the blurred line between UAP reporting and conventional threat assessment: the P-8 crew filed what became a UAP disclosure document while simultaneously assessing the object as consistent with known KCTG activity. The presence of a Russian vessel (INGUL ARS) and the object's proximity to it adds a geopolitical layer to an otherwise ambiguous sensor detection. Its release to AARO in 2026 reflects the ongoing effort to retroactively capture military sensor encounters in the UAP disclosure pipeline.",
   "key_findings": [
-    "The P-8A crew initially characterized the object as 'a possible missile launch from an origin unknown,' detected via the aircraft's EO/IR sensor at approximately 1310Z on November 18, 2016.",
-    "The object appeared to be in 'sea skim mode' traveling at approximately 500 knots on a southeasterly heading outbound from KCTG — the same heading and speed cited in the official war.gov manifest.",
-    "Visual contact was lost at approximately 40 NM northwest of Latakia at 1312Z, confirming the roughly two-minute observation window; the P-8A was positioned 26 NM south of the object's detection point.",
-    "The object was observed to pass between the Russian auxiliary ship (RUS) INGUL ARS and one additional unidentified vessel, placing the trajectory in close proximity to Russian naval assets.",
-    "The mission commander assessed the interaction as 'safe' and attributed the activity to the KCTG, noting this was 'the first observed occurrence of possible missile activity by P-8 aircraft in the Eastern Mediterranean' — yet the report was still forwarded and ultimately released to AARO."
+    {
+      "finding": "The P-8A crew initially characterized the object as a possible missile, not an unknown craft — it appeared to be in 'sea skim mode' at approximately 500 knots on a southeasterly heading outbound from the KCTG.",
+      "quotes": [
+        {
+          "text": "The possible missile appeared to be in sea skim mode traveling at approximately 500KTS on a southeasterly heading outbound from KCTG.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The object was detected via EO/IR sensor from 26 nautical miles away, with clear weather and no range limitations reported by the aircrew.",
+      "quotes": [
+        {
+          "text": "detected via the EO/IR sensor.",
+          "page": 1
+        },
+        {
+          "text": "P-8 position . was 26NM S of object detection at 16121",
+          "page": 1
+        },
+        {
+          "text": "Uf P-8 aircrew charactenzeavisioilfty as clear, no range limitations .",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The object's origin was unknown, and the P-8 lost visual contact after approximately two minutes, with the object last observed roughly 40 nautical miles northwest of Latakia.",
+      "quotes": [
+        {
+          "text": "observed an unidentified low-ftylng object 86 nm northweet of Latakla from an unknown origin",
+          "page": 1
+        },
+        {
+          "text": "P-8 lost visual of the object IVO",
+          "page": 1
+        },
+        {
+          "text": "approx. 40 NM northwest of Latakia.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The object passed between a Russian vessel (INGUL ARS) and one additional unidentified vessel, placing it in close proximity to foreign naval assets.",
+      "quotes": [
+        {
+          "text": "The missile was observed to pass between (RUS) INGUL ARS and 1 x U/1 vessel.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The mission commander assessed the interaction as safe and consistent with known KCTG activity, though the origin of the object remained unresolved; video footage was referenced but the link is redacted.",
+      "quotes": [
+        {
+          "text": "The mission commander for P~8 characterized the interaction as safe. VVhile this was the first observed occurrence of possible missile activity by P-8 aircraft in the Eastern Mediterranean it is assessed to be standard activity consistent with the assessed activity of fhe KCTG.",
+          "page": 1
+        },
+        {
+          "text": "Video footage can be found at this link.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO 03/27/26,' making AARO the direct recipient and custodian of this report within the modern UAP disclosure architecture."
-    },
-    {
-      "node_id": "five_eyes",
-      "relevance": "medium",
-      "reasoning": "The Eastern Mediterranean operating environment, proximity to Russian naval assets (INGUL ARS), and USCENTCOM chain of command suggest allied intelligence sharing contexts typical of Five Eyes coordination in the region."
-    },
-    {
-      "node_id": "wright_patterson",
-      "relevance": "low",
-      "reasoning": "As a DoW/military aviation sensor report routed through USCENTCOM, this document follows the institutional chain that historically ran through Air Force technical analysis nodes, though no direct connection to Wright-Patterson is stated in the text."
+      "reasoning": "The document was formally released to AARO on 03/27/26 as part of the UAP disclosure pipeline, explicitly noted at the bottom of the report."
     }
   ],
   "related_topics": [
     "EO/IR sensor detection",
     "sea-skimming object",
-    "Eastern Mediterranean naval operations",
-    "Russian carrier task group proximity",
-    "pilot/crew sensor characterization"
+    "Eastern Mediterranean",
+    "Russian naval proximity",
+    "pilot characterization as missile"
   ]
 }

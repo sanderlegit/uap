@@ -1,31 +1,75 @@
 {
-  "hook": "An internal email exchange between a 15th Air Force Detachment 1 PAROC Intel Data Analysis Technician and an Information Disclosure Analyst, coordinating the exact wording of an unclassified tear line for a UAP mission report — specifically haggling over whether the year of the incident can be disclosed alongside the already-approved month and day.",
-  "why_it_matters": "This document reveals the granular, bureaucratic machinery of UAP information disclosure: even the year an incident occurred requires separate approval from the month and day before it can appear in an unclassified summary. The underlying observation — a U.S. aircraft tracking a possible UAP for over two hours on October 31, 2024 — is notable for its duration, but the document's real value is showing how tightly controlled even basic temporal metadata is in UAP reporting.",
+  "hook": "An internal email exchange between a PAROC Intel Data Analysis Technician at 15 AF / DET 1 and an Information Disclosure Analyst, negotiating what date information can appear in an unclassified summary of a UAP observation by a U.S. aircraft on October 31, 2024.",
+  "why_it_matters": "This document reveals an active bureaucratic disclosure process for UAP reports, where even granular details like the year of an incident require separate approval layers before appearing in unclassified tear lines. The observation itself — an oval/orb-shaped object tracked by a U.S. aircraft for over two hours at low speed — is notable for its duration. The classification at SECRET//NOFORN for what amounts to an administrative approval request suggests the underlying mission report contains additional sensitive details not visible here.",
   "key_findings": [
-    "On October 31, 2024, a U.S. aircraft observed a possible UAP described as oval/orb shaped, moving at likely low speed, for a sustained period of over two hours.",
-    "The UAP incident summary was being prepared as an UNCLASSIFIED tear line appended to a SECRET//NOFORN classified document, a standard practice for shareable summaries of classified reports.",
-    "An Information Disclosure Analyst had approved the month and day of the incident for release but had not yet approved inclusion of the year, prompting this email exchange to request that authorization.",
-    "The document originates from 15 AF / DET 1 (15th Air Force, Detachment 1), indicating the observation involved Air Force aviation assets and was processed through Air Force intelligence channels.",
-    "Both personal identifiers (names and contact details) are redacted under FOIA exemption b(6), protecting individual privacy, though roles — PAROC Intel Data Analysis Technician and Information Disclosure Analyst — are disclosed."
+    {
+      "finding": "A U.S. aircraft observed a possible UAP on October 31, 2024, described as oval or orb shaped.",
+      "quotes": [
+        {
+          "text": "31 OCT 24, U.S Aircraft observed a possible UAP. It appeared to be oval/orb",
+          "page": 1
+        },
+        {
+          "text": "shaped, likely moving at a low speed.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The U.S. aircraft maintained visual contact with the possible UAP for over two hours, an unusually long observation window.",
+      "quotes": [
+        {
+          "text": "The U.S Aircraft had eyes on the poss UAP for over 2 hours.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The correspondence originates from 15th Air Force, Detachment 1, from a PAROC Intel Data Analysis Technician, indicating the Air Force's intelligence analysis structure is processing UAP reports.",
+      "quotes": [
+        {
+          "text": "PAROC Intel Data Analysis Technician \n15 AF / DET 1",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The disclosure approval process is granular enough that the month and day of an incident can be approved for release while the year requires separate authorization.",
+      "quotes": [
+        {
+          "text": "Could you please approve the use of the year this incident took place? \nCurrently you have approved the month and the day, we request it includes \nthe year.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The email chain is structured around providing additional detail to an unclassified tear line attached to a classified mission report, indicating a standardized dual-classification format is in use.",
+      "quotes": [
+        {
+          "text": "Below is the requested additional information (include the year) to the \nUNCLASS tear line.",
+          "page": 1
+        }
+      ]
+    }
   ],
-  "document_type": "memo",
+  "document_type": "other",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The structured UAP reporting format, unclassified tear line, and information disclosure review process are consistent with AARO-era DoD UAP standardized reporting and release procedures."
+      "reasoning": "This is a 2024 UAP report processed through Air Force intelligence channels, directly within AARO's reporting era and mandate for military UAP incident documentation."
     },
     {
       "node_id": "wright_patterson",
       "relevance": "low",
-      "reasoning": "15th Air Force is the operational Air Force command that would interface with legacy Air Force UAP processing infrastructure, though no direct Wright-Patterson connection is stated."
+      "reasoning": "15 AF / DET 1 is an Air Force unit involved in UAP data processing, loosely connected to the broader Air Force institutional history of UAP handling centered at Wright-Patterson."
     }
   ],
   "related_topics": [
-    "extended visual observation",
-    "oval/orb UAP shape",
-    "Air Force aviation surveillance",
-    "information disclosure review",
-    "unclassified tear line"
+    "aerial observation",
+    "disclosure approval process",
+    "unclassified tear line",
+    "Air Force intelligence",
+    "oval/orb UAP shape"
   ]
 }

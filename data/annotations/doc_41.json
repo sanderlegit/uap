@@ -1,26 +1,74 @@
 {
-  "hook": "A USCENTCOM declassification clearance page for a 2022 UAP still image from Kuwait, in which the original submitter drew a red circle on the imagery before sending it to AARO — the actual report content is described only in the war.gov manifest, not in the released text.",
-  "why_it_matters": "The document reveals that AARO's intake process included imagery that had already been manually annotated by the reporting operator prior to submission, raising questions about chain-of-custody integrity for sensor data. The accompanying mission report (DoW-UAP-D12) described the object as moving north to northeast and as unidentifiable, representing a formal unresolved case from an active theater command. The release was cleared by DoD's Office of Prepublication and Security Review in March 2026, making it one of the more recent declassifications in the PURSUE release.",
+  "hook": "This is the USCENTCOM declassification cover sheet recommending public release of a May 2022 Kuwait UAP still-image report, cleared by the DoD Office of Prepublication and Security Review in March 2026.",
+  "why_it_matters": "The document reveals the formal military chain-of-command pathway by which a UAP observation from a U.S. military system in Kuwait was officially routed to AARO and subsequently cleared for public release. A Major General at the USCENTCOM Chief of Staff level personally endorsed the recommendation, indicating the case was processed at a senior command level rather than quietly suppressed. The batch MDR reference range (25-0094 through 25-0099) suggests this release is part of a coordinated multi-document declassification package rather than a standalone disclosure.",
   "key_findings": [
-    "The original reporter digitally altered the imagery by adding a red circle around an area of interest before submitting it to AARO, per the war.gov manifest description.",
-    "The USCENTCOM Chief of Staff, MG Richard A. Harrison, signed the declassification recommendation on 8 October 2025.",
-    "The document references MDR numbers 25-0094 through 25-0099, indicating this release was processed as part of a batch of six mandatory declassification review requests.",
-    "A companion document, DoW-UAP-D12, contains the actual mission report and describes the UAP as moving from north to northeast with no positive identification made.",
-    "The image shows an elongated area of contrast in the top-left quarter that increases in intensity along its length from top-left to bottom-right, per the official image description."
+    {
+      "finding": "USCENTCOM formally recommended this UAP case to AARO through an official military recommendation process, establishing a documented chain of custody from the field to the oversight body.",
+      "quotes": [
+        {
+          "text": "USCENTCOM Recommendation to AARO",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "A Major General serving as USCENTCOM Chief of Staff personally endorsed the recommendation, placing the UAP referral at a senior flag-officer level within the command structure.",
+      "quotes": [
+        {
+          "text": "Recommendation by MG Richard A. Harrison \nUSCENTCOM Chief of Staff  \nRecommended on: 8 Oct 25",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The declassification spans a block of six consecutive MDR reference numbers, indicating this UAP document is part of a batch release rather than a single isolated record.",
+      "quotes": [
+        {
+          "text": "USCENTCOM MDR 25-0094 thru MDR 25-0099 / JS-250710-TM8S",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The DoD Office of Prepublication and Security Review formally cleared the document for open publication, completing the declassification process approximately five months after the USCENTCOM recommendation.",
+      "quotes": [
+        {
+          "text": "CLEARED \nFor Open Publication",
+          "page": 1
+        },
+        {
+          "text": "Department of Defense \nOFFICE OF PREPUBLICATION AND SECURITY REVIEW \nMar 10, 2026",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The roughly five-month gap between the USCENTCOM recommendation (October 2025) and the DoD security review clearance (March 2026) reflects a multi-stage review process before public release.",
+      "quotes": [
+        {
+          "text": "Recommended on: 8 Oct 25",
+          "page": 1
+        },
+        {
+          "text": "Mar 10, 2026",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "memo",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly a USCENTCOM recommendation to AARO and the still image was formally submitted to AARO as part of its UAP intake process."
+      "reasoning": "AARO is the named recipient of the USCENTCOM recommendation; this document is the formal referral mechanism routing the 2022 Kuwait UAP case to AARO's oversight process."
     }
   ],
   "related_topics": [
-    "imagery annotation",
-    "USCENTCOM theater reporting",
-    "AARO intake process",
-    "unresolved UAP cases",
-    "mandatory declassification review"
+    "USCENTCOM UAP reporting",
+    "AARO submission pipeline",
+    "military declassification process",
+    "Kuwait Middle East UAP",
+    "DoD prepublication review"
   ]
 }

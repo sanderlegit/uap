@@ -1,31 +1,91 @@
 {
-  "hook": "A U.S. Air Force MISREP filed by the 389th Expeditionary Fighter Squadron documenting two separate UAP sightings by an F-15E two-ship during a Defensive Counter Air mission over northeastern Syria near Shaddadi: three unidentified objects with infrared signatures but no radar returns at FL240, and a possible balloon at FL210, both observed on February 21, 2023.",
-  "why_it_matters": "This report is notable because it captures two distinct sightings in a single sortie, with the first sighting of 3x objects explicitly producing no radar returns despite two of them showing IR significance — a sensor discrepancy that resists easy conventional explanation. The report also documents a concurrent MFT radar jamming event affecting the APG-82 radar at 8.8–9.9 GHz, though the crew's own working theory attributes that to a Turkish X-band jammer rather than the UAP. The declassification and release specifically to AARO places this within the post-NDAA institutional UAP reporting pipeline.",
+  "hook": "A declassified U.S. Air Force MISREP documents two separate UAP sightings by F-15E aircrew during a Defensive Counter Air mission over northeastern Syria on February 21, 2023: three unidentified objects at FL240 with no radar returns and IR-significant signatures, and one possible balloon at FL210, both observed in the vicinity of Shaddadi.",
+  "why_it_matters": "This report is notable because it pairs a radar jamming event (attributed tentatively to a Turkish X-band jammer) with back-to-back UAP observations within the same mission window, raising the question of whether electromagnetic interference and unidentified objects are correlated phenomena in this operational area. The explicit notation that the APG-82 radar produced no returns from the three objects—while two were IR-significant—distinguishes this from misidentified conventional aircraft. Wide-area surveillance video (WSV) was reportedly produced for both sightings, suggesting sensor data beyond crew testimony may exist.",
   "key_findings": [
-    "At 0025Z, the crew observed 3x possible UAP IVO Shaddadi at FL240; no radar returns were received from the objects, and no health effects were experienced by aircrew, but 2 of the objects were described as 'IR significant' (white objects with thermal signature); WSV was produced.",
-    "At 0135Z, a separate sighting of 1x possible balloon was recorded IVO Shaddadi at FL210; WSV was also produced for this event; weather at both sighting times was reported as cloudy.",
-    "Between 0021Z and 0024Z, the aircraft experienced 3 minutes of MFT (multifunction) radar jamming at FL270, partially affecting the APG-82 radar at 8.8–9.9 GHz; the crew's working theory attributes this to an 'ABRA of effect' from a Turkish X-band jammer near the SYR/TUR border — explicitly not attributed to the UAP.",
-    "The crew was cruising in CAP at FL270 during the UAP observations; the objects were approximately 3,000 feet below at FL240, and the absence of radar returns distinguishes this from standard aircraft tracking.",
-    "The report carries FVEY releasability markings ('REL TO USA, FVEY'), was filed by 389 EFS under 332 AEW/AFCENT/USCENTCOM, and was declassified by MG Richard A. Harrison (USCENTCOM Chief of Staff) on October 8, 2025 under MDR 25-0094 through 25-0099."
+    {
+      "finding": "Three possible UAPs were observed visually at FL240 near Shaddadi, Syria, with no radar returns on the APG-82 and two objects described as IR-significant. No health effects were reported.",
+      "quotes": [
+        {
+          "text": "OBS 3X POSS UAP IVO SHADDADI .... I ___ 1_.4a __ ___,!AT FL240. WSV PRODUCED. NFTR.",
+          "page": 1
+        },
+        {
+          "text": "AS CRUSING IN CAP AT FL270. NO RADAR RETURNS RECEIVED FROM UAP. NO HEALTH EFFECTS EXPERIENCED BY AIRCREW. 2 WHITE OBJECTS IR SIGNIFICANT. NFTR.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "A second UAP sighting occurred approximately 70 minutes after the first: one possible balloon observed at FL210 near Shaddadi, also with WSV produced.",
+      "quotes": [
+        {
+          "text": "OBS IX POSS BALLOON IVO SHADDADI .... I _....._1.4=a _ _. | 1.4a | AT FL210. WSV PRODUCED. NFTR.",
+          "page": 1
+        },
+        {
+          "text": "Gentext: S//REL TO USA, FVEY) 0135Z~ 1.4a pBS lX POSS BALLOON IVO SHADDADil1.4al 1.4a AT FL210. WSV PRODUCED. NFTR.",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "finding": "A radar jamming event lasting 3 minutes struck the F-15E's APG-82 radar (8.8–9.9 GHz band) at FL270 near Shaddadi roughly four minutes before the first UAP observation. The aircrew's working theory attributed it to a Turkish X-band jammer near the Syrian-Turkish border.",
+      "quotes": [
+        {
+          "text": "~&~~W~ 90212-00242 -~RECEIVED MFT RADAR JAMMING IVO SHADDADI d 1.4a | 1.4a | AT FL270. NTFR.",
+          "page": 1
+        },
+        {
+          "text": "OUR WORKING THEORY IS THAT IT IS AN ABRA OF EFFECT TURKISH X-BAND JAMMER ON OR ACROSS THE SYR/TUR BORDER INTO TURKEY.",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "finding": "The mission was a 2-ship of F-15Es from the 389th Expeditionary Fighter Squadron (332 AEW), operating under USCENTCOM/AFCENT as part of Operation INHERENT RESOLVE. The mission was amended in flight and did not fly as originally fragged.",
+      "quotes": [
+        {
+          "text": "!FLT, A 2-SHIP OF F-15E, TOOK OFF FROM MUWAFFAQ SALTI AIR BASE (OJMS) ISO OPERATION INHERENT RESOLVE TO CONDUCT DCA IVO ESSA. MISSION WAS NOT FLOWN AS FRAGGED D2 MSN AMENDS.",
+          "page": 1
+        },
+        {
+          "text": "• Originator (Unit or Squadron): 389 EFS",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Both UAP airsight events list no country of origin and no identified aircraft type beyond the observer's notation 'POSS UAP' or 'BALLOON', and the JSIR report for the EMI event (ID 340377) was filed separately, indicating parallel reporting chains for the jamming and the visual sightings.",
+      "quotes": [
+        {
+          "text": "• Aircraft Type: 3x POSS UAP • Aircraft Number: • Country of Origin:",
+          "page": 9
+        },
+        {
+          "text": "• JSIR Report ID: 340377",
+          "page": 9
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document was explicitly declassified and approved for release to AARO, placing it within the formal post-NDAA UAP reporting and disclosure pipeline that AARO administers."
+      "reasoning": "The document was formally declassified and released to AARO, and the MISREP format with UAP airsight entries is explicitly described as a mechanism for reporting UAP to AARO."
     },
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The document carries 'REL TO USA, FVEY' classification caveats, indicating the operational UAP sighting data was shared with Five Eyes intelligence partners."
+      "reasoning": "Classification markings throughout the document carry 'REL TO USA, FVEY' caveats, indicating the report was handled under Five Eyes sharing protocols."
     }
   ],
   "related_topics": [
-    "radar jamming electromagnetic interference",
-    "infrared sensor UAP detection",
-    "F-15E pilot sighting Syria",
+    "radar jamming EMI",
+    "IR-significant objects",
+    "no radar return UAP",
     "Operation Inherent Resolve",
-    "no radar return anomalous object"
+    "F-15E pilot observation"
   ]
 }

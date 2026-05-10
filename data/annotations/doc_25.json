@@ -1,31 +1,74 @@
 {
-  "hook": "A U.S. military operator filed this MISREP after observing a triangular, metallic UAP at coordinates 36°34'53\"N 02°55'43\"E in the Mediterranean Sea while returning to base, estimating the object at 24,989 ft MSL and 168 knots. Six of the seven pages are entirely redacted under FOIA exemption 1.4(a).",
-  "why_it_matters": "This document demonstrates the standardized MISREP pipeline through which military aircrew UAP observations are now formally routed to AARO, representing an institutional shift from ad hoc reporting. The near-total redaction of six pages under 1.4(a) — protecting military plans, weapons systems, and operations — suggests the operational context (unit, platform, mission type) remains classified even as the bare UAP observation detail is released. The surviving GENTEXT confirms first-person aircrew observation with specific navigational and performance estimates, establishing it as a primary-source sighting record rather than a secondhand summary.",
+  "hook": "A U.S. military operator returning to base over the Mediterranean Sea reported observing a triangular, metallic UAP at 24,989 feet MSL and 168 knots, recorded in a standardized MISREP form. Six of seven pages are fully withheld under 1.4(a), leaving only the GENTEXT section available.",
+  "why_it_matters": "This MISREP represents the formal, standardized channel through which U.S. military personnel report UAP observations to AARO, demonstrating that triangular metallic UAP sightings are being captured in official military reporting infrastructure. The specific coordinates (363453N 0255943E) place the event over the eastern Mediterranean near the Turkish coast, a strategically sensitive airspace. The near-total 1.4(a) redaction of six pages means the operational context, platform, sensor data, and unit identity remain entirely classified.",
   "key_findings": [
-    "The operator reported observing one UAP described explicitly as 'triangular and metallic' — a shape and material descriptor recorded verbatim in the GENTEXT section.",
-    "The sighting occurred during RTB (Return to Base) at 1319Z at coordinates 363453N 0255943E, placing it over the western Mediterranean near the Spanish/Algerian coastline.",
-    "The reporter estimated UAP altitude at 24,989 ft MSL and speed at 168 knots — specific figures suggesting the observer had instrumented reference points (own-ship altitude and airspeed) for comparison.",
-    "Pages 1 through 6 are entirely withheld under FOIA exemption 1.4(a), concealing unit identification, platform type, mission context, and any sensor data fields in the structured MISREP form.",
-    "The report is classified SECRET//NOFORN, restricting it from foreign nationals, which is notable given the Mediterranean operational theater and potential allied-nation visibility of the event."
+    {
+      "finding": "The UAP was described as triangular and metallic — a specific shape designation entered into the official UAP description field of the MISREP form.",
+      "quotes": [
+        {
+          "text": "1X UAP DETECTED WITH DESCRIPTIVE INFORMATION SUCH AS BEING A TRIANGLUAR AND METALLIC UAP.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The observation occurred during a return-to-base transit at 1319Z, with the UAP recorded at a precise altitude of 24,989 feet MSL and speed of 168 knots.",
+      "quotes": [
+        {
+          "text": "DURING RTB AT 1319Z, 1.4(a) OBSERVED 1X UAP WHILE TRANSITING OVER 363453N 0255943E FLYING AT AN ALTITUDE OF 24,989FT MSL AND SPEED OF 168KTS.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The UAP was observed at a specific geographic coordinate in the Mediterranean — 363453N 0255943E — placing the event over the eastern Mediterranean Sea.",
+      "quotes": [
+        {
+          "text": "OBSERVED 1X UAP WHILE TRANSITING OVER 363453N 0255943E FLYING AT AN ALTITUDE OF 24,989FT MSL AND SPEED OF 168KTS.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Six of the document's seven pages are entirely withheld under the 1.4(a) classification exemption, concealing all operational context beyond the GENTEXT narrative field.",
+      "quotes": [
+        {
+          "text": "1.4(a)",
+          "page": 1
+        },
+        {
+          "text": "1.4(a)",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The report follows the MISREP format with a dedicated UAP Description field and a Gentext UAP Event Description field, reflecting a standardized military reporting structure for anomalous observations.",
+      "quotes": [
+        {
+          "text": "UAP Description (e.g., size, shape, color, markings, recognizable features): (SECRET//NOFORN)",
+          "page": 7
+        },
+        {
+          "text": "Gentext (UAP Event Description): (SECRET//NOFORN)",
+          "page": 7
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The war.gov manifest explicitly identifies this MISREP as part of AARO's standardized military UAP reporting pipeline, making AARO the direct institutional recipient and custodian of this record."
-    },
-    {
-      "node_id": "five_eyes",
-      "relevance": "low",
-      "reasoning": "The SECRET//NOFORN classification and Mediterranean theater raise the possibility of allied-nation operational proximity, but no Five Eyes entity or foreign liaison is referenced in the surviving text."
+      "reasoning": "This MISREP is explicitly the standardized reporting mechanism U.S. military services use to submit UAP observations to AARO, making AARO the direct institutional recipient of this report."
     }
   ],
   "related_topics": [
     "triangular UAP",
-    "military aircrew observation",
-    "Mediterranean Sea",
-    "MISREP standardized reporting",
-    "1.4(a) operational redaction"
+    "pilot observation",
+    "Mediterranean airspace",
+    "MISREP format",
+    "military aviation"
   ]
 }

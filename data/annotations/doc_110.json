@@ -1,36 +1,100 @@
 {
-  "hook": "An FBI 302 interview report documenting a multi-hour, multi-sensor UAP encounter at a classified US military facility in 2025, in which helicopter crews and ground observation posts simultaneously tracked orbs — including one described as 'super-hot' under FLIR — that split into two objects and outran helicopter pursuit over an estimated 20-mile distance.",
-  "why_it_matters": "This document is notable for the depth of corroboration: sightings were confirmed across multiple sensors (FLIR, NVGs, naked eye) by multiple credentialed witnesses including senior US intelligence officials, military pilots, and ground-based LP/OP personnel — substantially reducing the likelihood of individual misidentification. The document records a consistent behavioral pattern of orbs sequentially flaring up and down over approximately 70 minutes and across multiple geographic locations, and the witnessing senior official explicitly states the orbs appeared to 'break off and pursue' military aircraft in the same airspace. As a formally recorded FBI 302, it carries the evidentiary weight of an official US government witness statement.",
+  "hook": "An FBI 302 field report documenting a multi-hour aerial search mission at a classified U.S. military facility in 2025, during which a senior U.S. intelligence official and helicopter crews using FLIR, night-vision goggles, and the naked eye directly observed a 'super-hot' orb, a swarm of lights, and repeated formations of orbs flaring up and down in sequence over approximately 90 minutes.",
+  "why_it_matters": "This document is significant because it is a contemporaneous, timestamped law enforcement interview of a senior U.S. intelligence official describing a UAP encounter corroborated simultaneously by multiple sensor modalities (FLIR, NVG, naked eye), ground-based LP/OP personnel, and military aircraft crews. The observed behaviors—an object outpacing a helicopter over 20 miles, breaking into sub-objects, and orb formations appearing to actively pursue military aircraft—are documented by credentialed government witnesses in an official FBI evidentiary format. The SECRET//NOFORN classification and the breadth of federal and state partners involved indicate this was treated as a serious operational security matter, not a routine anomaly report.",
   "key_findings": [
-    "An orb described as 'super-hot' under FLIR was observed hovering at ground level before splitting into two distinct objects and accelerating to a speed that helicopter CALL SIGN 1 could not match, traveling an estimated 20 miles before pursuit was abandoned.",
-    "The co-pilot observed under NVGs something emerge from the two split objects and travel in a separate direction at high rate of speed — corroborating the ground-based LP/OP account through an independent sensor.",
-    "Between approximately 2227 and 2257 hours, at least six distinct orb formation events were recorded across different compass bearings, each following the same behavior: orbs appearing oval-shaped and orange with white/yellow centers, flaring up one at a time in horizontal or triangle formations, then extinguishing in reverse sequential order.",
-    "The orbs closed to within ten feet of the helicopter (CALL SIGN 1), and Witness 1's closing comments state the orbs appeared to 'break off and pursue' military aircraft that were simultaneously operating in the airspace.",
-    "Pilots acknowledged they were recording but noted that most sightings were above the helicopter's rotor disk and outside the FLIR camera's angle of coverage, meaning the primary electro-optical sensor likely did not capture the most significant events."
+    {
+      "finding": "A 'super-hot' orb detected on FLIR at ground level accelerated to a speed exceeding the helicopter's pursuit capability, covering an estimated 20 miles before the crew broke off the intercept.",
+      "quotes": [
+        {
+          "text": "LP/OP confirmed the sighting then relayed they spotted an orb under FUR and described as \"super-hot\" hovering at ground level before heading bearing-from LP/OP.",
+          "page": 1
+        },
+        {
+          "text": "[CALL SIGN 1], unable to match speed, broke off pursuit, however the co-pilot reported seeing under NVG something emerge from the two objects and then travel in a different direction and a high rate of speed.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The initial single orb split into two distinct objects, and a secondary sub-object was subsequently observed emerging from those two and departing in a different direction—all confirmed under night-vision.",
+      "quotes": [
+        {
+          "text": "LP/OP reported the orb was heading east and then south at a high rate of speed and then broke into two objects.",
+          "page": 1
+        },
+        {
+          "text": "the co-pilot reported seeing under NVG something emerge from the two objects and then travel in a different direction and a high rate of speed.",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Multiple sequential orb formations were observed flaring up one at a time in horizontal configurations and then extinguishing in reverse order, a pattern that repeated across different compass bearings over roughly 30 minutes.",
+      "quotes": [
+        {
+          "text": "From the naked eye perspective, the two orbs appeared to flare up and remain stationary side by side. They appeared to be oval shaped, orange in color with a white or yellow center and emitting light in all directions. After a few seconds, a third orb flared up below the two, and then another one below that one until there were four or five in total below the original two. After a few seconds the orbs began to flare down in reverse order while appearing to be stationary until visual was lost.",
+          "page": 2
+        },
+        {
+          "text": "The orbs flared up one at a time in a horizontal formation and after approximately ten - fifteen seconds, flared down in the opposite order.",
+          "page": 2
+        },
+        {
+          "text": "spotted a swarm of lights moving in all directions west of-with three distinct orbs in a triangle formation. After several seconds the orbs flared down and lost visual.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The primary witness noted that the FLIR camera on the helicopter failed to capture many sightings because the objects were positioned above the aircraft, outside the camera's angular range, leaving the record dependent on NVG and naked-eye accounts.",
+      "quotes": [
+        {
+          "text": "Pilots indicated they were recording however many sIg Ings were a ove e e ,cop er which was outside of the helicopters FLIR camera angle.",
+          "page": 3
+        },
+        {
+          "text": "Some things I could not see with the naked eye, but I recall the pilots calling out sightings.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "After the helicopter crew observed the swarm of lights, the orbs were reported to disengage from the helicopter and actively pursue the military aircraft that were operating in the same airspace.",
+      "quotes": [
+        {
+          "text": "The orbs appeared to break off from [CALL SIGN 1] and pursue the [MILITARY AIRCRAFT].",
+          "page": 3
+        },
+        {
+          "text": "JOC relayed they contacted the [MILITARY AIRCRAFT] who were enroute to assist, eta two minutes.",
+          "page": 2
+        }
+      ]
+    }
   ],
   "document_type": "investigation",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "This 2025 incident at a US military facility involving senior intelligence officials, multi-sensor tracking, and FBI documentation is precisely the category of event AARO was established to collect; it was released through the PURSUE initiative directly tied to congressional UAP reporting mandates."
+      "reasoning": "This is a 2025 multi-sensor UAP incident report involving a senior U.S. intelligence official at a classified military facility, precisely the category of contemporaneous, credentialed-witness case that AARO was established to collect and assess."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The incident occurred at a classified military site with LP/OP personnel, coordinated through a Joint Operations Center, reflecting the kind of military installation infrastructure historically associated with sensitive UAP-adjacent programs."
     },
     {
       "node_id": "congressional",
-      "relevance": "high",
-      "reasoning": "The document was declassified and published on war.gov as part of the PURSUE release, which was a direct product of congressional UAP disclosure legislation requiring the government to publish UAP records."
-    },
-    {
-      "node_id": "nro",
-      "relevance": "low",
-      "reasoning": "The presence of a Listening Post/Observation Post equipped with FLIR and NVGs at a classified military facility, along with senior intelligence community witnesses, is consistent with NRO-adjacent sensor infrastructure, though the specific agencies are fully redacted."
+      "relevance": "medium",
+      "reasoning": "The FBI 302 format and 'USPER' (U.S. Person) designation, combined with a senior intelligence official as the primary witness, suggests this report was generated as part of formal disclosure or investigative processes that interface with congressional oversight."
     }
   ],
   "related_topics": [
+    "orb formation behavior",
     "FLIR thermal detection",
-    "orb UAP behavior",
-    "military facility incursion",
-    "FBI 302 witness testimony",
-    "multi-sensor corroboration"
+    "military airspace incursion",
+    "multi-sensor corroboration",
+    "FBI 302 witness interview"
   ]
 }

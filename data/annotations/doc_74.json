@@ -1,41 +1,56 @@
 {
-  "hook": "Serial 153 from FBI Headquarters case file 62-HQ-83894 is an image-only document — a photograph or scanned page with no machine-readable text — filed within the Bureau's primary flying disc investigative record spanning June 1947 to July 1968.",
-  "why_it_matters": "The 62-HQ-83894 case file is the FBI's central repository for UFO/flying disc reporting across more than two decades of the early Cold War period, and Serial 153 represents one discrete item within that accumulation. The PURSUE release version of this file is notable because it includes newly declassified pages and fewer redactions than the publicly available FBI Vault version, meaning this serial may contain content previously withheld. As an image document, its specific contribution to the record — whether photograph, handwritten memo, press clipping, or form — cannot be determined without visual inspection.",
+  "hook": "Serial 153 of the FBI's 62-HQ-83894 UFO case file is a photographic or image-format document for which no text could be extracted, forming part of a sweeping investigative record spanning June 1947 to July 1968.",
+  "why_it_matters": "The 62-HQ-83894 file is the FBI's primary headquarters case file on flying disc reports and represents one of the most extensive federal law enforcement records on UAP from the early Cold War era. Serial 153 falls within a file that the manifest describes as containing newly declassified pages not previously available on the FBI Vault, suggesting this image may be among the newly released materials. Because the document is an image with no extractable text, its specific contribution to the record cannot be assessed without visual review.",
   "key_findings": [
-    "The document is image-only with no extractable text, indicating it is either a photograph, a handwritten record, or a scanned page that was not OCR-processed.",
-    "It is filed as Serial 153 in case 62-HQ-83894, placing it late in the sequential accumulation of this multi-decade FBI headquarters file.",
-    "The parent case file is described as containing photographic evidence from Oak Ridge, TN — a nuclear research facility — suggesting this serial could relate to nuclear-site UAP observations.",
-    "The parent file also encompasses technical proposals on propulsion systems, eyewitness testimonies, and media coverage, any of which this serial could represent.",
-    "This version of the file originates from the PURSUE release on war.gov and is described as more complete than the FBI Vault version, with only minor redactions."
+    {
+      "finding": "This document is an image or photograph within the FBI's 62-HQ-83894 case file; no textual content was recoverable for analysis.",
+      "quotes": []
+    },
+    {
+      "finding": "The parent case file (62-HQ-83894) includes photographic evidence associated with Oak Ridge, Tennessee, a sensitive Atomic Energy Commission site where UAP sightings were reported in the late 1940s and early 1950s.",
+      "quotes": []
+    },
+    {
+      "finding": "The manifest indicates this file contains newly declassified pages beyond what is posted on the FBI Vault, meaning Serial 153 may represent previously withheld investigative material.",
+      "quotes": []
+    },
+    {
+      "finding": "The broader case file encompasses technical proposals on potential UAP propulsion systems, eyewitness testimonies, and extensive contemporaneous media coverage — indicating the FBI tracked both physical and public-discourse dimensions of the UAP phenomenon.",
+      "quotes": []
+    },
+    {
+      "finding": "The file's 21-year span (1947–1968) covers the entire Project Blue Book era, suggesting ongoing FBI involvement in UAP matters that paralleled Air Force investigations.",
+      "quotes": []
+    }
   ],
   "document_type": "photo",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
-      "relevance": "medium",
-      "reasoning": "The parent case file overlaps temporally and topically with Project Blue Book (1952–1969), and FBI HQ files from this era frequently cross-reference Air Force investigative findings on flying disc reports."
-    },
-    {
-      "node_id": "doe_aec",
       "relevance": "high",
-      "reasoning": "The manifest explicitly cites photographic evidence from Oak Ridge, TN, an Atomic Energy Commission facility, directly linking this case file to nuclear-site UAP documentation."
+      "reasoning": "The 62-HQ-83894 file covers 1947–1968, directly overlapping with Project Blue Book, and FBI HQ files from this period routinely involved coordination and information-sharing with Air Force UFO investigations."
     },
     {
       "node_id": "lanl_ornl_battelle",
+      "relevance": "high",
+      "reasoning": "The manifest explicitly references photographic evidence from Oak Ridge, TN, an AEC national laboratory site where UAP overflights were a documented security concern."
+    },
+    {
+      "node_id": "doe_aec",
       "relevance": "medium",
-      "reasoning": "Oak Ridge National Laboratory is one of the named sites associated with photographic evidence in this case file, making ORNL a direct institutional connection."
+      "reasoning": "Oak Ridge was operated under the Atomic Energy Commission, and FBI monitoring of UAP near nuclear facilities fell within AEC-FBI joint security responsibilities."
     },
     {
       "node_id": "wright_patterson",
-      "relevance": "low",
-      "reasoning": "FBI headquarters files from 1947–1968 on flying discs routinely involved coordination with Wright-Patterson's Air Technical Intelligence Center, though no direct reference appears in this serial's metadata."
+      "relevance": "medium",
+      "reasoning": "FBI HQ UFO files from this era frequently reference Air Materiel Command and later ATIC at Wright-Patterson as the coordinating body for physical evidence and technical analysis of UAP reports."
     }
   ],
   "related_topics": [
-    "FBI headquarters case file",
+    "Oak Ridge nuclear facility overflights",
+    "FBI UFO case file",
     "photographic evidence",
-    "Oak Ridge nuclear facility",
-    "flying disc reports 1947-1968",
-    "PURSUE declassification release"
+    "Cold War aerial security",
+    "flying disc investigations"
   ]
 }

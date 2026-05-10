@@ -1,31 +1,51 @@
 {
-  "hook": "A single-page monochrome still image captured by a U.S. military sensor system, submitted by the FBI to AARO as a UAP report, showing a central crosshair reticle over an indistinct background that may be a mountain range in the Western United States.",
-  "why_it_matters": "This image represents the FBI's formal UAP reporting pipeline to AARO, demonstrating interagency coordination on anomaly documentation as mandated by recent disclosure requirements. The operator's explicit inability to positively identify the object, combined with the image's pre-submission redaction and absence of an accompanying mission report, limits what AARO could assess. The incorrect system timestamp further undermines the evidentiary value of the record.",
+  "hook": "A grainy monochrome still image captured by a U.S. military system over the Western United States, submitted by the FBI to AARO as part of the PURSUE release, showing a crosshair reticle against an indistinct background that may include a mountain range — with the operator unable to positively identify the object.",
+  "why_it_matters": "This image is notable for what it reveals about the chain of custody and limitations of UAP evidence collection: the FBI submitted imagery originating from a military system, but stripped it of an accompanying mission report and applied redactions before forwarding to AARO, limiting analytical resolution. The manifest's explicit acknowledgment that the embedded date is wrong due to an unconfigured system clock underscores a recurring challenge in UAP documentation — corrupted or absent metadata makes temporal and geographic correlation difficult. The operator's inability to positively identify the phenomenon, combined with the absence of supporting contextual data, leaves this case unresolved.",
   "key_findings": [
-    "The image was captured by a U.S. military system and submitted by the FBI to AARO, indicating cross-agency UAP reporting channels are active as of 2025.",
-    "The original imagery was altered with redactions before submission to AARO, meaning AARO received an incomplete version of the source material.",
-    "No accompanying mission report was provided, leaving the operational context — flight path, sensor parameters, crew observations — unrecorded in this file.",
-    "The embedded date in the image is acknowledged to be incorrect due to system clock misconfiguration, removing timestamp reliability as an analytical anchor.",
-    "The operator on record explicitly could not positively identify the UAP, establishing this as an unresolved case with no official attribution."
+    {
+      "finding": "The image was captured by a U.S. military system and submitted by the FBI to AARO, but no accompanying mission report was provided, significantly limiting the analytical value of the submission.",
+      "quotes": []
+    },
+    {
+      "finding": "The original imagery was altered with redactions before being submitted to AARO, meaning the version in the public release is not the complete image as captured.",
+      "quotes": []
+    },
+    {
+      "finding": "The embedded date of 2025-01-01 is explicitly flagged as incorrect in the manifest, attributed to the source system's date/time not being properly configured — a metadata reliability failure.",
+      "quotes": []
+    },
+    {
+      "finding": "The image displays a central crosshair reticle consistent with a targeting, tracking, or surveillance optical system, suggesting the UAP was observed through a weapons or ISR platform.",
+      "quotes": []
+    },
+    {
+      "finding": "The operator who captured the image reported they were unable to positively identify the UAP, making this an unresolved case even at the point of collection.",
+      "quotes": []
+    }
   ],
   "document_type": "photo",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document was formally submitted by the FBI to AARO as part of the mandated UAP reporting process, making AARO the direct recipient and intended resolver of this case."
+      "reasoning": "The FBI explicitly submitted this still image to AARO as a UAP report, making AARO the direct receiving and archiving body for this case."
     },
     {
-      "node_id": "cia_oga",
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The image originates from a U.S. military system with a targeting reticle, implicating military aviation or ISR infrastructure historically associated with UAP collection programs."
+    },
+    {
+      "node_id": "nro",
       "relevance": "low",
-      "reasoning": "The image originated from a U.S. military system and was routed through the FBI rather than intelligence collection channels, but the redaction of the source imagery before submission suggests some access-control or classification consideration."
+      "reasoning": "The use of a military optical or sensor system with a crosshair reticle over the Western United States is loosely consistent with NRO-adjacent imagery collection platforms, though no direct connection is stated."
     }
   ],
   "related_topics": [
-    "military sensor imagery",
-    "FBI UAP reporting",
-    "AARO submission",
-    "unresolved UAP cases",
-    "Western United States sightings"
+    "military optical sensor",
+    "FBI AARO submission",
+    "Western US UAP",
+    "metadata corruption",
+    "unresolved UAP case"
   ]
 }

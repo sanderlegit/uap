@@ -1,36 +1,84 @@
 {
-  "hook": "A U.S. Embassy Mexico City diplomatic cable — one section of a routine weekly political blotter — reports that the Mexican Congress held a September 12, 2023 hearing on UAP as part of debate over an Aerial Space Protection Law, featuring testimony from journalist Jaime Maussan and former U.S. Navy pilot Ryan Graves, along with the presentation of two alleged alien corpses.",
-  "why_it_matters": "This cable documents the moment Mexico's Congress formally considered legislation that would make it the first country to officially acknowledge alien life on Earth — a significant step in international UAP policy discourse. It also captures the credibility fracture within the hearing itself: Ryan Graves, a key U.S. Congressional UAP witness, publicly distanced himself from Maussan's corpse presentation, calling it an 'unsubstantiated stunt,' a detail the Embassy chose to include. The document demonstrates that U.S. diplomatic channels were actively monitoring and reporting foreign legislative UAP activity to the NSC, White House, CIA, and DIA.",
+  "hook": "A U.S. Embassy Mexico cable (weekly political blotter for September 11-15, 2023) reports on the Mexican Congress hearing UAP testimony from journalist Jaime Maussan and former U.S. Navy pilot Ryan Graves, including the presentation of two alleged alien corpses, as part of debate over an Aerial Space Protection Law that would make Mexico the first country to formally acknowledge alien life on Earth.",
+  "why_it_matters": "This cable documents the first instance of a national legislature formally considering legislation to acknowledge alien life, situating it within the broader post-2023 UAP disclosure environment where U.S. Congressional witnesses like Ryan Graves carried their testimony to foreign governments. Graves's public distancing from Maussan's 'unsubstantiated stunt' is diplomatically significant: it shows U.S. government-adjacent witnesses actively distinguishing credible pilot encounter evidence from sensationalized physical specimen claims on an international stage. The State Department's inclusion of this item in a routine political blotter—alongside MORENA election disputes and cartel violence—reflects how UAP disclosure had entered mainstream geopolitical reporting by late 2023.",
   "key_findings": [
-    "The Mexican Congress heard UAP testimony on September 12, 2023, specifically to debate language in an Aerial Space Protection Law that, if passed, would make Mexico the first country to formally acknowledge alien life on Earth.",
-    "Former U.S. Navy pilot Ryan Graves — who had previously testified before the U.S. Congress on UAP — testified at the Mexican hearing, then publicly lamented that Maussan's corpse display 'took away' from pilots' genuine UAP experiences and called it an 'unsubstantiated stunt.'",
-    "Jaime Maussan presented two alleged alien corpses to Congress; the cable notes scientists had previously discredited earlier alleged alien corpses Maussan presented as evidence of alien life.",
-    "Experts presented videos of Mexican pilots' encounters with fast-moving flying objects during flight, alongside the physical remains.",
-    "The cable was distributed in full — with no redactions — to the National Security Council, White House, DNI, CIA, DIA, USNORTHCOM, DHS, DOJ, and USSOUTHCOM, indicating routine but broad senior-level visibility into foreign UAP legislative developments."
+    {
+      "finding": "The Mexican Congress debated the Aerial Space Protection Law, which if passed would make Mexico the first country to formally acknowledge the presence of alien life on Earth.",
+      "quotes": [
+        {
+          "text": "The hearing was to debate language on UAP in the Aerial Space Protection Law which, if approved, would make Mexico the first country to formally acknowledge the presence of alien life on Earth.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "Former U.S. Navy pilot Ryan Graves, who had previously testified before the U.S. Congress, testified at the Mexican hearing but publicly condemned Maussan's presentation of alleged alien corpses as an 'unsubstantiated stunt' that undermined pilots' credible UAP experiences.",
+      "quotes": [
+        {
+          "text": "Congress heard testimony on unidentified aerial phenomenon (UAP) September 12, from experts including from Mexican journalist Jaime Maussan and former U.S. Navy pilot Ryan Graves, who previously testified before the U.S. Congress.",
+          "page": 5
+        },
+        {
+          "text": "After the hearing, Graves lamented the display took away from his and other pilots' experiences with UAP and expressed disappointment with Maussan's \"unsubstantiated stunt.\"",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "Jaime Maussan presented two alleged alien corpses to the Mexican Congress; the document notes scientists had previously discredited similar corpses Maussan presented as evidence of alien life.",
+      "quotes": [
+        {
+          "text": "Experts also presented to Congress two alleged alien corpses and videos of Mexican pilots' encounters with fast-moving flying objects during flight.",
+          "page": 5
+        },
+        {
+          "text": "Scientists have discredited previous alleged alien corpses Maussan presented as evidence of alien life.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "Experts asked legislators to recognize UAP, guarantee airspace security, and allow UAP to be studied — framing UAP as a matter of national security and scientific inquiry rather than purely a defense issue.",
+      "quotes": [
+        {
+          "text": "Experts asked legislators to recognize UAP, guarantee airspace securit y, and allow UAP to be studied.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The cable was distributed routinely to the National Security Council, White House, DNI, CIA, DIA, USNORTHCOM, USSOUTHCOM, and DHS, indicating the U.S. government treated the Mexican UAP hearing as information warranting broad interagency awareness.",
+      "quotes": [
+        {
+          "text": "NATIONAL SECURITY COUNCIL WASHINGTON DC Routine; WHITE HOUSE OFC OF THE VICE PRESIDENT WASHINGTON DC Routine; DNI WASHINGTON DC Routine; CIA WASHINGTON DC Routine; DIA WASHINGTON DC Routine; HQ USNORTHCOM Routine; DEPT OF HOMELAND SECURITY WASHINGTON DC Routine",
+          "page": 7
+        }
+      ]
+    }
   ],
   "document_type": "cable",
   "legacy_program_connections": [
     {
       "node_id": "congressional",
       "relevance": "high",
-      "reasoning": "The document's UAP section centers entirely on a foreign congressional UAP hearing and explicitly references Graves' prior U.S. Congressional testimony, placing it squarely within the modern legislative UAP disclosure arc."
+      "reasoning": "Ryan Graves, a key U.S. Congressional UAP witness, testified at the Mexican hearing; the cable explicitly notes his prior U.S. Congressional testimony, linking the Mexican proceeding directly to the U.S. congressional UAP disclosure track."
     },
     {
       "node_id": "aaro",
       "relevance": "medium",
-      "reasoning": "Ryan Graves is directly linked to the 2023 U.S. Congressional UAP hearings and the broader modern disclosure effort in which AARO operates, and his credibility split with Maussan is a notable data point in that ecosystem."
+      "reasoning": "Ryan Graves's participation as a former Navy pilot who testified before U.S. Congress places this event squarely in the post-2022 AARO-era UAP disclosure ecosystem that AARO was established to coordinate."
     },
     {
       "node_id": "cia_oga",
       "relevance": "low",
-      "reasoning": "CIA Washington DC is listed as a routine recipient of this cable, indicating the agency received Embassy reporting on foreign UAP legislative activity."
+      "reasoning": "CIA is listed as a routine recipient of this cable, indicating the intelligence community received this diplomatic reporting on a foreign government's UAP legislative activity."
     }
   ],
   "related_topics": [
     "pilot testimony",
-    "foreign UAP legislation",
-    "alleged non-human remains",
-    "international UAP disclosure",
-    "diplomatic reporting on UAP"
+    "congressional hearing",
+    "alien corpse claim",
+    "Mexico UAP legislation",
+    "Ryan Graves"
   ]
 }
