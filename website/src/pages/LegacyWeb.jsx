@@ -18,14 +18,26 @@ const EDGE_TYPE_STYLES = {
   media_pairing: { color: '#34d399', style: 'dotted', label: 'Media' },
 }
 
-function DetailPanel({ node, narratives, legacyConnections, onClose }) {
+// Mobile bottom tabs for the graph page
+const MOBILE_TABS = {
+  graph: 'Network',
+  tree: 'Program',
+  filters: 'Filters',
+}
+
+function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc, onSelectOrg }) {
   if (!node) return null
 
   const color = agencyColor(node.agency)
   const narrative = narratives?.[String(node.doc_id)]
 
   return (
-    <div className="absolute inset-x-0 bottom-0 max-h-[70vh] sm:inset-x-auto sm:max-h-none sm:left-4 sm:top-4 sm:bottom-4 sm:w-80 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-t-xl sm:rounded-xl shadow-2xl z-20 flex flex-col overflow-hidden">
+    <div className="absolute inset-x-0 bottom-0 max-h-[80vh] sm:inset-x-auto sm:max-h-none sm:left-4 sm:top-4 sm:bottom-4 sm:w-96 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-t-xl sm:rounded-xl shadow-2xl z-30 flex flex-col overflow-hidden">
+      {/* Mobile drag indicator + close hint */}
+      <button onClick={onClose} className="sm:hidden flex flex-col items-center pt-2 pb-1 cursor-pointer w-full shrink-0">
+        <div className="w-10 h-1 rounded-full bg-slate-600" />
+        <span className="text-[10px] text-slate-600 mt-1">tap to close</span>
+      </button>
       <div className="flex items-center justify-between px-4 py-3 border-b border-slate-700/50">
         <span className="text-[11px] font-mono tracking-[0.15em] uppercase" style={{ color }}>
           {node.agency}
@@ -64,31 +76,54 @@ function DetailPanel({ node, narratives, legacyConnections, onClose }) {
             <h4 className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-2">
               Related Documents ({node.connections.length})
             </h4>
-            <div className="space-y-1.5 max-h-48 overflow-y-auto">
-              {node.connections.map((c, i) => (
-                <div key={i} className="text-xs text-slate-400 flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: c.color || '#94a3b8' }} />
-                  <div>
-                    <span className="text-slate-300">{c.label}</span>
-                    <span className="text-slate-500 block text-[10px]">{EDGE_TYPE_STYLES[c.edgeType]?.label || c.edgeType}</span>
-                  </div>
-                </div>
-              ))}
+            <div className="space-y-2 max-h-64 overflow-y-auto">
+              {node.connections.map((c, i) => {
+                const style = EDGE_TYPE_STYLES[c.edgeType] || {}
+                return (
+                  <button
+                    key={i}
+                    onClick={() => onSelectDoc?.(c.docId)}
+                    className="w-full text-left text-xs rounded-md px-2 py-1.5 -mx-2 hover:bg-slate-800/60 transition-colors cursor-pointer group"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: c.color || '#94a3b8' }} />
+                      <span className="text-slate-300 group-hover:text-slate-100 flex-1 truncate">{c.label}</span>
+                      {c.weight != null && (
+                        <span className="text-slate-600 text-[10px] font-mono shrink-0">{(c.weight * 100).toFixed(0)}%</span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-1.5 mt-0.5 ml-4">
+                      <span className="w-3 h-0.5 rounded shrink-0" style={{ backgroundColor: style.color || '#64748b' }} />
+                      <span className="text-[10px]" style={{ color: style.color || '#64748b' }}>{style.label || c.edgeType}</span>
+                    </div>
+                  </button>
+                )
+              })}
             </div>
           </div>
         )}
 
         {legacyConnections.length > 0 && (
           <div className="mb-3">
-            <h4 className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-2">
-              Legacy Program
+            <h4 className="text-[10px] font-mono tracking-wider uppercase text-amber-500/70 mb-2">
+              Legacy Program Connections
             </h4>
-            <div className="space-y-1.5">
+            <div className="space-y-2.5">
               {legacyConnections.map((c, i) => (
-                <div key={i} className="text-xs text-slate-400 flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: c.color }} />
-                  <span className="text-slate-300">{c.label}</span>
-                </div>
+                <button
+                  key={i}
+                  onClick={() => onSelectOrg?.(c.nodeId)}
+                  className="w-full text-left text-xs rounded-md px-2 py-1.5 -mx-2 hover:bg-slate-800/60 transition-colors cursor-pointer group"
+                >
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: c.color }} />
+                    <span className="text-slate-200 font-medium group-hover:text-white">{c.label}</span>
+                    <span className="text-slate-600 text-[10px] ml-auto font-mono">{c.weight?.toFixed(2)}</span>
+                  </div>
+                  {c.reasoning && (
+                    <p className="text-[11px] text-slate-400 leading-relaxed ml-4">{c.reasoning}</p>
+                  )}
+                </button>
               ))}
             </div>
           </div>
@@ -122,7 +157,8 @@ function DetailPanel({ node, narratives, legacyConnections, onClose }) {
 }
 
 export default function LegacyWeb() {
-  const containerRef = useRef(null)
+  const desktopContainerRef = useRef(null)
+  const mobileContainerRef = useRef(null)
   const cyRef = useRef(null)
   const [legacyData, setLegacyData] = useState(null)
   const [graphData, setGraphData] = useState(null)
@@ -130,7 +166,7 @@ export default function LegacyWeb() {
   const [selectedNode, setSelectedNode] = useState(null)
   const [hoveredDocId, setHoveredDocId] = useState(null)
   const [loading, setLoading] = useState(true)
-  const [treePanelOpen, setTreePanelOpen] = useState(true)
+  const [mobileTab, setMobileTab] = useState('graph')
 
   const [searchParams, setSearchParams] = useSearchParams()
 
@@ -169,7 +205,6 @@ export default function LegacyWeb() {
     }).catch(() => setLoading(false))
   }, [])
 
-  // Map: orgId → Set<docId> (numeric) for filtering
   const orgToDocIds = useMemo(() => {
     if (!legacyData) return new Map()
     const map = new Map()
@@ -181,7 +216,6 @@ export default function LegacyWeb() {
     return map
   }, [legacyData])
 
-  // Map: docId → Set<orgId> for tree highlighting
   const docToOrgIds = useMemo(() => {
     if (!legacyData) return new Map()
     const map = new Map()
@@ -193,7 +227,6 @@ export default function LegacyWeb() {
     return map
   }, [legacyData])
 
-  // Which docs pass the org/layer filter?
   const orgFilteredDocIds = useMemo(() => {
     const activeOrgs = new Set(selectedOrgs)
     if (selectedLayer && legacyData) {
@@ -210,30 +243,50 @@ export default function LegacyWeb() {
     return result
   }, [selectedOrgs, selectedLayer, orgToDocIds, legacyData])
 
-  // Which orgs should glow in the tree?
   const highlightedOrgs = useMemo(() => {
     const docId = hoveredDocId ?? selectedNode?.doc_id
     if (docId == null) return new Set()
     return docToOrgIds.get(docId) || new Set()
   }, [hoveredDocId, selectedNode, docToOrgIds])
 
-  // Legacy connections for selected doc's detail panel
   const selectedDocLegacyConns = useMemo(() => {
     if (!selectedNode || !legacyData) return []
     const docNodeId = `doc_${selectedNode.doc_id}`
     const nodeMap = new Map(legacyData.nodes.map(n => [n.id, n]))
+    const narrative = narratives?.[String(selectedNode.doc_id)]
+    const narrativeConns = narrative?.legacy_program_connections || []
     return legacyData.edges
       .filter(e => e.source === docNodeId && e.type === 'document')
       .map(e => {
         const node = nodeMap.get(e.target)
-        return node ? { label: node.label, color: node.color, layer: node.layer } : null
+        if (!node) return null
+        const nc = narrativeConns.find(c => c.node_id === node.id)
+        return {
+          nodeId: node.id,
+          label: node.label,
+          color: node.color,
+          layer: node.layer,
+          weight: e.weight,
+          reasoning: nc?.reasoning || (e.reason || '').split(';').map(r => r.trim()).filter(Boolean).join('. '),
+        }
       })
       .filter(Boolean)
-  }, [selectedNode, legacyData])
+      .sort((a, b) => b.weight - a.weight)
+  }, [selectedNode, legacyData, narratives])
 
-  // Build Cytoscape graph — doc nodes + doc-to-doc edges only
+  // Resize Cytoscape when switching to graph tab on mobile
   useEffect(() => {
-    if (!graphData || !legacyData || !containerRef.current) return
+    if (mobileTab === 'graph' && cyRef.current) {
+      cyRef.current.resize()
+      cyRef.current.fit(undefined, 40)
+    }
+  }, [mobileTab])
+
+  // Build Cytoscape graph
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768
+    const container = isMobile ? mobileContainerRef.current : desktopContainerRef.current
+    if (!graphData || !legacyData || !container) return
 
     let cancelled = false
 
@@ -243,7 +296,6 @@ export default function LegacyWeb() {
 
       const elements = []
 
-      // Doc nodes from legacyData (has agency, decade, pages, etc.)
       const docNodes = legacyData.nodes.filter(n => n.type === 'document')
       const connectionCounts = {}
       graphData.edges.forEach(e => {
@@ -270,7 +322,6 @@ export default function LegacyWeb() {
         })
       })
 
-      // Doc-to-doc edges from graph.json
       graphData.edges.forEach((e, i) => {
         elements.push({
           group: 'edges',
@@ -285,7 +336,7 @@ export default function LegacyWeb() {
       })
 
       const cy = cytoscape({
-        container: containerRef.current,
+        container,
         elements,
         style: [
           {
@@ -396,13 +447,13 @@ export default function LegacyWeb() {
             style: {
               'label': 'data(label)',
               'color': '#e2e8f0',
-              'font-size': '7px',
+              'font-size': '11px',
               'text-valign': 'bottom',
-              'text-margin-y': 5,
-              'text-outline-width': 1.5,
+              'text-margin-y': 6,
+              'text-outline-width': 2,
               'text-outline-color': '#020617',
-              'text-wrap': 'ellipsis',
-              'text-max-width': '80px',
+              'text-wrap': 'wrap',
+              'text-max-width': '140px',
             },
           },
         ],
@@ -419,6 +470,7 @@ export default function LegacyWeb() {
           animationEasing: 'ease-out-cubic',
           randomize: true,
         },
+        autoungrabify: true,
         minZoom: 0.15,
         maxZoom: 4,
         wheelSensitivity: 0.3,
@@ -451,9 +503,11 @@ export default function LegacyWeb() {
           const edgeData = edge.length > 0 ? edge[0].data() : null
           if (nData) {
             connections.push({
+              docId: nDocId,
               label: nData.label,
               color: agencyColor(nData.agency),
               edgeType: edgeData?.edgeType,
+              weight: edgeData?.weight,
             })
           }
         })
@@ -472,14 +526,14 @@ export default function LegacyWeb() {
       })
 
       cy.on('mouseover', 'node', (evt) => {
-        containerRef.current.style.cursor = 'pointer'
+        container.style.cursor = 'pointer'
         const node = evt.target
         node.addClass('show-label')
         setHoveredDocId(node.data('docId'))
       })
 
       cy.on('mouseout', 'node', (evt) => {
-        containerRef.current.style.cursor = 'default'
+        container.style.cursor = 'default'
         const node = evt.target
         if (!node.hasClass('highlighted')) {
           node.removeClass('show-label')
@@ -488,17 +542,18 @@ export default function LegacyWeb() {
       })
 
       cyRef.current = cy
-
-      return () => {
-        cy.destroy()
-        cyRef.current = null
-      }
     })
 
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+      if (cyRef.current) {
+        cyRef.current.destroy()
+        cyRef.current = null
+      }
+    }
   }, [graphData, legacyData])
 
-  // Org filter from tree
+  // Org/layer filter
   useEffect(() => {
     const cy = cyRef.current
     if (!cy) return
@@ -508,8 +563,7 @@ export default function LegacyWeb() {
         cy.edges().removeClass('filtered-out')
       } else {
         cy.nodes().forEach(n => {
-          const docId = n.data('docId')
-          if (orgFilteredDocIds.has(docId)) {
+          if (orgFilteredDocIds.has(n.data('docId'))) {
             n.removeClass('filtered-out')
           } else {
             n.addClass('filtered-out')
@@ -631,18 +685,33 @@ export default function LegacyWeb() {
   const handleZoomIn = useCallback(() => {
     const cy = cyRef.current
     if (!cy) return
+    const el = cy.container()
     cy.animate({
-      zoom: { level: cy.zoom() * 1.4, renderedPosition: { x: containerRef.current.clientWidth / 2, y: containerRef.current.clientHeight / 2 } },
+      zoom: { level: cy.zoom() * 1.4, renderedPosition: { x: el.clientWidth / 2, y: el.clientHeight / 2 } },
     }, { duration: 200 })
   }, [])
 
   const handleZoomOut = useCallback(() => {
     const cy = cyRef.current
     if (!cy) return
+    const el = cy.container()
     cy.animate({
-      zoom: { level: cy.zoom() / 1.4, renderedPosition: { x: containerRef.current.clientWidth / 2, y: containerRef.current.clientHeight / 2 } },
+      zoom: { level: cy.zoom() / 1.4, renderedPosition: { x: el.clientWidth / 2, y: el.clientHeight / 2 } },
     }, { duration: 200 })
   }, [])
+
+  const handleSelectDoc = useCallback((docId) => {
+    const cy = cyRef.current
+    if (!cy) return
+    const target = cy.getElementById(`doc_${docId}`)
+    if (target.length > 0) {
+      target.emit('tap')
+      cy.animate({ center: { eles: target }, zoom: cy.zoom() }, { duration: 300 })
+    }
+    setMobileTab('graph')
+  }, [])
+
+  const activeFilterCount = hiddenAgencies.size + (activeDecade ? 1 : 0) + selectedOrgs.size + (selectedLayer ? 1 : 0) + (search ? 1 : 0)
 
   if (loading) {
     return (
@@ -664,12 +733,15 @@ export default function LegacyWeb() {
   }
 
   return (
-    <div className="relative h-[calc(100dvh-7.5rem-3.5rem)] md:h-[calc(100dvh-7.5rem)] bg-slate-950 overflow-hidden flex">
-      {/* Left: Document Network Graph */}
-      <div className="flex-1 relative">
-        <div ref={containerRef} className="absolute inset-0 w-full h-full" />
+    <div className="relative h-[calc(100dvh-7.5rem-3.5rem)] md:h-[calc(100dvh-7.5rem)] bg-slate-950 overflow-hidden flex flex-col md:flex-row">
 
-        {/* Filter bar */}
+      {/* ═══ DESKTOP LAYOUT ═══ */}
+
+      {/* Left: Document Network Graph (desktop: always visible) */}
+      <div className="hidden md:block flex-1 relative">
+        <div ref={desktopContainerRef} className="absolute inset-0 w-full h-full" />
+
+        {/* Desktop filter bar */}
         <div className="absolute top-3 left-3 right-3 z-20 flex items-center gap-2 flex-wrap pointer-events-none">
           <input
             type="text"
@@ -723,11 +795,11 @@ export default function LegacyWeb() {
         </div>
 
         {/* Edge legend */}
-        <div className="absolute left-3 bottom-20 md:bottom-4 z-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2">
+        <div className="absolute left-3 bottom-4 z-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2">
           <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1.5">Edge Types</p>
           {Object.entries(EDGE_TYPE_STYLES).map(([type, cfg]) => (
             <div key={type} className="flex items-center gap-2 py-0.5">
-              <span className="w-4 h-0.5 rounded" style={{ backgroundColor: cfg.color, borderStyle: cfg.style === 'dashed' ? 'dashed' : undefined }} />
+              <span className="w-4 h-0.5 rounded" style={{ backgroundColor: cfg.color }} />
               <span className="text-[11px] text-slate-400">{cfg.label}</span>
             </div>
           ))}
@@ -741,16 +813,15 @@ export default function LegacyWeb() {
         </div>
 
         {/* Zoom controls */}
-        <div className="absolute bottom-20 md:bottom-6 right-3 z-10 flex flex-col gap-1.5">
+        <div className="absolute bottom-6 right-3 z-10 flex flex-col gap-1.5">
           <button onClick={handleFit} className="bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-xs font-medium flex items-center gap-1.5 px-3 py-2 cursor-pointer" title="Fit all">
-            <span className="text-sm">&oplus;</span>
-            <span className="hidden sm:inline">Reset</span>
+            <span className="text-sm">&oplus;</span> Reset
           </button>
           <button onClick={handleZoomIn} className="w-10 h-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom in">+</button>
           <button onClick={handleZoomOut} className="w-10 h-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 hover:text-white hover:border-slate-600 transition-colors text-sm font-bold flex items-center justify-center cursor-pointer" title="Zoom out">&minus;</button>
         </div>
 
-        {/* Detail panel */}
+        {/* Desktop detail panel */}
         <DetailPanel
           node={selectedNode}
           narratives={narratives}
@@ -761,11 +832,13 @@ export default function LegacyWeb() {
             updateParam('node', null)
             cyRef.current?.elements().removeClass('highlighted highlighted-edge dimmed show-label')
           }}
+          onSelectDoc={handleSelectDoc}
+          onSelectOrg={handleToggleOrg}
         />
 
         {/* Instructions */}
         {!selectedNode && (
-          <div className="hidden md:block absolute bottom-4 right-14 z-10 bg-slate-900/80 backdrop-blur border border-slate-700/40 rounded-lg px-3 py-2 max-w-[200px]">
+          <div className="absolute bottom-4 right-14 z-10 bg-slate-900/80 backdrop-blur border border-slate-700/40 rounded-lg px-3 py-2 max-w-[200px]">
             <p className="text-[10px] text-slate-500 font-mono leading-relaxed">
               Click a document to explore. Hover to see Legacy Program connections. Use the tree to filter by organization.
             </p>
@@ -773,32 +846,61 @@ export default function LegacyWeb() {
         )}
       </div>
 
-      {/* Right: Legacy Program Tree Sidebar */}
-      <div className={`hidden md:flex flex-col border-l border-slate-800 bg-slate-950 transition-all ${treePanelOpen ? 'w-64 lg:w-72' : 'w-0'}`}>
-        {treePanelOpen && (
-          <LegacyTree
-            data={legacyData}
-            selectedOrgs={selectedOrgs}
-            onToggleOrg={handleToggleOrg}
-            onSelectLayer={handleSelectLayer}
-            selectedLayer={selectedLayer}
-            highlightedOrgs={highlightedOrgs}
-            onClear={handleClearFilters}
-          />
-        )}
+      {/* Right: Legacy Program Tree Sidebar (desktop) */}
+      <div className="hidden md:flex flex-col border-l border-slate-800 bg-slate-950 w-64 lg:w-72">
+        <LegacyTree
+          data={legacyData}
+          selectedOrgs={selectedOrgs}
+          onToggleOrg={handleToggleOrg}
+          onSelectLayer={handleSelectLayer}
+          selectedLayer={selectedLayer}
+          highlightedOrgs={highlightedOrgs}
+          onClear={handleClearFilters}
+        />
       </div>
 
-      {/* Mobile: Tree toggle */}
-      <button
-        onClick={() => setTreePanelOpen(prev => !prev)}
-        className="md:hidden fixed bottom-16 right-3 z-30 bg-amber-500/20 border border-amber-500/40 text-amber-300 rounded-lg px-3 py-2 text-xs font-medium backdrop-blur cursor-pointer"
-      >
-        {treePanelOpen ? 'Hide Program' : 'Legacy Program'}
-      </button>
+      {/* ═══ MOBILE LAYOUT ═══ */}
 
-      {/* Mobile: Tree drawer */}
-      {treePanelOpen && (
-        <div className="md:hidden fixed inset-x-0 bottom-14 z-20 max-h-[50vh] bg-slate-950 border-t border-slate-800 overflow-hidden">
+      {/* Mobile: content area — all tabs stacked */}
+      <div className="md:hidden flex-1 relative overflow-hidden">
+        {/* Graph — always in DOM so Cytoscape can init and measure */}
+        <div className={`absolute inset-0 ${mobileTab === 'graph' ? 'z-10' : 'z-0 pointer-events-none'}`}>
+          <div ref={mobileContainerRef} className="absolute inset-0 w-full h-full" />
+
+          {mobileTab === 'graph' && (
+            <>
+              <div className="absolute top-2 right-2 z-20 flex gap-1">
+                <button onClick={handleFit} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 text-xs font-bold flex items-center justify-center cursor-pointer">&oplus;</button>
+                <button onClick={handleZoomIn} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 text-sm font-bold flex items-center justify-center cursor-pointer">+</button>
+                <button onClick={handleZoomOut} className="w-9 h-9 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg text-slate-300 text-sm font-bold flex items-center justify-center cursor-pointer">&minus;</button>
+              </div>
+
+              <div className="absolute top-2 left-2 z-20 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-2.5 py-1.5">
+                <span className="text-[11px] text-slate-400 font-mono">{graphData.nodes.length} docs &middot; {graphData.edges.length} links</span>
+              </div>
+
+              <DetailPanel
+                node={selectedNode}
+                narratives={narratives}
+                legacyConnections={selectedDocLegacyConns}
+                onClose={() => {
+                  setSelectedNode(null)
+                  setHoveredDocId(null)
+                  updateParam('node', null)
+                  cyRef.current?.elements().removeClass('highlighted highlighted-edge dimmed show-label')
+                }}
+                onSelectDoc={handleSelectDoc}
+                onSelectOrg={(orgId) => {
+                  handleToggleOrg(orgId)
+                  setMobileTab('tree')
+                }}
+              />
+            </>
+          )}
+        </div>
+
+        {/* Program tree tab */}
+        <div className={`absolute inset-0 overflow-y-auto ${mobileTab === 'tree' ? 'z-10' : 'z-0 pointer-events-none hidden'}`}>
           <LegacyTree
             data={legacyData}
             selectedOrgs={selectedOrgs}
@@ -809,7 +911,126 @@ export default function LegacyWeb() {
             onClear={handleClearFilters}
           />
         </div>
-      )}
+
+        {/* Filters tab */}
+        <div className={`absolute inset-0 overflow-y-auto ${mobileTab === 'filters' ? 'z-10' : 'z-0 pointer-events-none hidden'}`}>
+          <div className="p-4 space-y-5">
+            <div>
+              <label className="text-[10px] font-mono uppercase tracking-wider text-slate-500 block mb-2">Search</label>
+              <input
+                type="text"
+                value={search}
+                onChange={e => updateParam('q', e.target.value)}
+                placeholder="Search documents..."
+                className="w-full bg-slate-900 border border-slate-700/50 rounded-lg px-3 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500/50"
+              />
+            </div>
+
+            <div>
+              <label className="text-[10px] font-mono uppercase tracking-wider text-slate-500 block mb-2">Agencies</label>
+              <div className="flex flex-wrap gap-2">
+                {AGENCIES.map(a => {
+                  const hidden = hiddenAgencies.has(a.key)
+                  return (
+                    <button
+                      key={a.key}
+                      onClick={() => toggleAgency(a.key)}
+                      className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium border transition-all cursor-pointer ${
+                        hidden
+                          ? 'bg-slate-900 border-slate-700/30 text-slate-600 line-through'
+                          : 'bg-slate-800/60 border-slate-700/50 text-slate-300'
+                      }`}
+                    >
+                      <span className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: hidden ? '#475569' : a.color }} />
+                      {a.label}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+
+            <div>
+              <label className="text-[10px] font-mono uppercase tracking-wider text-slate-500 block mb-2">Decade</label>
+              <div className="flex flex-wrap gap-2">
+                {DECADES.map(d => (
+                  <button
+                    key={d}
+                    onClick={() => updateParam('decade', activeDecade === d ? null : d)}
+                    className={`px-3 py-2 rounded-lg text-xs font-medium border transition-all cursor-pointer ${
+                      activeDecade === d
+                        ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
+                        : 'bg-slate-900 border-slate-700/30 text-slate-500'
+                    }`}
+                  >
+                    {d}
+                  </button>
+                ))}
+                {activeDecade && (
+                  <button
+                    onClick={() => updateParam('decade', null)}
+                    className="px-3 py-2 rounded-lg text-xs text-slate-500 border border-slate-700/30 cursor-pointer"
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+            </div>
+
+            <div>
+              <label className="text-[10px] font-mono uppercase tracking-wider text-slate-500 block mb-2">Edge Types</label>
+              <div className="flex flex-wrap gap-3">
+                {Object.entries(EDGE_TYPE_STYLES).map(([type, cfg]) => (
+                  <div key={type} className="flex items-center gap-2">
+                    <span className="w-5 h-0.5 rounded" style={{ backgroundColor: cfg.color }} />
+                    <span className="text-xs text-slate-400">{cfg.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {activeFilterCount > 0 && (
+              <button
+                onClick={() => {
+                  handleClearFilters()
+                  const next = new URLSearchParams(searchParamsRef.current)
+                  next.delete('hide')
+                  next.delete('q')
+                  next.delete('decade')
+                  next.delete('org')
+                  next.delete('layer')
+                  setSearchParams(next, { replace: true })
+                }}
+                className="w-full text-xs text-slate-500 hover:text-slate-300 border border-slate-700 hover:border-slate-600 rounded-lg px-3 py-2.5 transition-colors cursor-pointer"
+              >
+                Clear all filters
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile: Bottom tab bar */}
+      <div className="md:hidden flex border-t border-slate-800 bg-slate-900/95 backdrop-blur shrink-0">
+        {Object.entries(MOBILE_TABS).map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => setMobileTab(key)}
+            className={`flex-1 py-3 text-xs font-medium text-center transition-colors cursor-pointer relative ${
+              mobileTab === key ? 'text-amber-400' : 'text-slate-500'
+            }`}
+          >
+            {label}
+            {key === 'filters' && activeFilterCount > 0 && (
+              <span className="absolute top-1.5 right-1/4 w-4 h-4 rounded-full bg-amber-500/80 text-[9px] text-slate-950 font-bold flex items-center justify-center">
+                {activeFilterCount}
+              </span>
+            )}
+            {mobileTab === key && (
+              <span className="absolute bottom-0 inset-x-4 h-0.5 bg-amber-400 rounded-full" />
+            )}
+          </button>
+        ))}
+      </div>
     </div>
   )
 }

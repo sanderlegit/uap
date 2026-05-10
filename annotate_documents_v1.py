@@ -167,13 +167,7 @@ Respond with a JSON object (no markdown, no code fences, just raw JSON):
 {{
   "hook": "1-2 sentence factual summary of what this document IS (not interpretation). Be specific about content.",
   "why_it_matters": "2-3 sentences on the document's significance in the context of UAP disclosure. Ground every claim in the actual content. Never cite page counts unless you counted them from the text. Never generalize across documents you haven't seen.",
-  "key_findings": [
-    {{
-      "finding": "A specific factual finding from the document. Ground it in the text.",
-      "quote": "The exact verbatim quote from the document text that supports this finding. Copy it character-for-character — do not paraphrase or clean up OCR artifacts. If no single quote captures it, use the most relevant passage.",
-      "page": 1
-    }}
-  ],
+  "key_findings": ["3-5 specific findings from the document text. Each must reference something actually in the document. For photos with no text, describe what metadata tells us."],
   "document_type": "one of: mission_report, investigation, memo, photo, cable, analysis, congressional, technical, historical_file, other",
   "legacy_program_connections": [
     {{
@@ -186,12 +180,10 @@ Respond with a JSON object (no markdown, no code fences, just raw JSON):
 }}
 
 Important:
-- Produce 3-5 key_findings. Each MUST include a verbatim "quote" copied exactly from the document text and a 1-indexed "page" number. Pages are separated by "--- PAGE BREAK ---" markers. Count from 1.
 - For "legacy_program_connections": only include nodes that the document content actually relates to. Most documents connect to 2-4 nodes.
 - The "hook" should be unique to THIS document. Never use template language like "This is Section X of...".
 - For FBI HQ files (62-HQ-83894 sections): each section contains different reports and memos. Describe what THIS section specifically contains.
-- Ground everything in the text. If the text is heavily redacted, say so. If it's a photo, describe what we know from metadata.
-- For photos/images with no extractable text: set quote to null and page to null."""
+- Ground everything in the text. If the text is heavily redacted, say so. If it's a photo, describe what we know from metadata."""
 
     return prompt
 

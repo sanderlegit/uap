@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import {
   useDocument,
@@ -13,6 +13,23 @@ import {
 import { useExplorationTrail } from '../hooks/useExplorationTrail'
 import DocThumbnail from '../components/DocThumbnail'
 import PageReader from '../components/PageReader'
+
+function QuoteBlock({ quote, page, onQuoteClick }) {
+  if (!quote) return null
+  return (
+    <button
+      onClick={() => onQuoteClick({ quote, page })}
+      className="mt-1.5 block w-full text-left border-l-2 border-amber-500/40 pl-3 py-1 bg-amber-500/5 rounded-r cursor-pointer hover:bg-amber-500/10 hover:border-amber-400/60 transition-colors group"
+    >
+      <span className="text-xs text-amber-200/70 italic leading-relaxed line-clamp-2 group-hover:text-amber-200/90">
+        &ldquo;{quote}&rdquo;
+      </span>
+      {page != null && (
+        <span className="text-[10px] text-amber-500/50 ml-2 group-hover:text-amber-400/70">p.{page} &rarr;</span>
+      )}
+    </button>
+  )
+}
 
 const AGENCY_SHORT = {
   'Department of War': 'DoW',
@@ -90,6 +107,8 @@ export default function DocumentDetail() {
 
   const [narratives, setNarratives] = useState(null)
   const [legacyWeb, setLegacyWeb] = useState(null)
+  const [activeQuote, setActiveQuote] = useState(null)
+  const pageReaderRef = useRef(null)
 
   const { addToTrail } = useExplorationTrail()
 
@@ -174,6 +193,13 @@ export default function DocumentDetail() {
       })
     )
   }, [research, doc])
+
+  const handleQuoteClick = useCallback(({ quote, page }) => {
+    setActiveQuote({ quote, page })
+    if (pageReaderRef.current) {
+      pageReaderRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }, [])
 
   const prevId = numId > 0 ? numId - 1 : null
   const nextId = docs && numId < docs.length - 1 ? numId + 1 : null
@@ -261,19 +287,78 @@ export default function DocumentDetail() {
         </div>
       )}
 
+      {/* ── Document Evidence (sensors, behaviors, shapes, witnesses) ── */}
+      {(hasSensors || hasBehaviors || hasShapes || hasWitnesses) && (
+        <div className="flex flex-wrap gap-x-6 gap-y-3 mb-6 py-3 px-4 bg-slate-800/30 border border-slate-700/40 rounded-lg">
+          {hasSensors && (
+            <div>
+              <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-blue-400/70 mb-1.5">Sensors</div>
+              <div className="flex flex-wrap gap-1.5">
+                {doc.sensors.map((s, i) => (
+                  <Badge key={i} color="#3b82f6">
+                    {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          )}
+          {hasBehaviors && (
+            <div>
+              <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-amber-400/70 mb-1.5">Behaviors</div>
+              <div className="flex flex-wrap gap-1.5">
+                {doc.behaviors.map((b, i) => (
+                  <Badge key={i} color="#f59e0b">{b}</Badge>
+                ))}
+              </div>
+            </div>
+          )}
+          {hasShapes && (
+            <div>
+              <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-purple-400/70 mb-1.5">Shapes</div>
+              <div className="flex flex-wrap gap-1.5">
+                {doc.shapes.map((s, i) => (
+                  <Badge key={i} color="#8b5cf6">
+                    {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          )}
+          {hasWitnesses && (
+            <div>
+              <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-emerald-400/70 mb-1.5">Witnesses</div>
+              <div className="flex flex-wrap gap-1.5">
+                {doc.witnesses.map((w, i) => (
+                  <Badge key={i} color="#10b981">{w}</Badge>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* ── Key Findings ───────────────────────────────────────────── */}
       {narrative?.key_findings?.length > 0 && (
         <div className="mb-6">
           <h2 className="text-sm font-semibold text-slate-300 mb-3">Key Findings</h2>
-          <div className="space-y-2">
-            {narrative.key_findings.map((finding, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-[10px] font-bold mt-0.5">
-                  {i + 1}
-                </span>
-                <p className="text-sm text-slate-300 leading-relaxed">{finding}</p>
-              </div>
-            ))}
+          <div className="space-y-3">
+            {narrative.key_findings.map((finding, i) => {
+              const isV2 = typeof finding === 'object' && finding !== null
+              const text = isV2 ? finding.finding : finding
+              const quote = isV2 ? finding.quote : null
+              const page = isV2 ? finding.page : null
+              return (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-[10px] font-bold mt-0.5">
+                    {i + 1}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm text-slate-300 leading-relaxed">{text}</p>
+                    <QuoteBlock quote={quote} page={page} onQuoteClick={handleQuoteClick} />
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       )}
@@ -290,7 +375,6 @@ export default function DocumentDetail() {
           <div className="space-y-3">
             {legacyConnections.map(conn => (
               <div key={conn.nodeId} className="flex items-start gap-3">
-                {/* Weight bar */}
                 <div className="flex-shrink-0 w-24 mt-1.5">
                   <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
                     <div
@@ -300,7 +384,6 @@ export default function DocumentDetail() {
                   </div>
                   <div className="text-[9px] text-slate-500 mt-0.5 text-right font-mono">{conn.weight.toFixed(2)}</div>
                 </div>
-                {/* Label + reasons */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-medium text-slate-200">{conn.label}</span>
@@ -323,84 +406,46 @@ export default function DocumentDetail() {
       )}
 
       {/* ── Page-by-Page Document Reader ─────────────────────────────── */}
-      {doc.total_pages > 0 && (
-        <PageReader
-          docId={numId}
-          pageCount={doc.total_pages}
-          pages={pages}
-          redactedPages={doc.redaction?.flatMap(r => {
-            const count = r.redacted_pages || 0
-            return count > 0 ? Array.from({ length: count }, (_, i) => i + 1) : []
-          })}
-          originalUrl={manifestEntry?.url}
-        />
-      )}
+      <div ref={pageReaderRef}>
+        {doc.total_pages > 0 && (
+          <PageReader
+            docId={numId}
+            pageCount={doc.total_pages}
+            pages={pages}
+            redactedPages={doc.redaction?.flatMap(r => {
+              const count = r.redacted_pages || 0
+              return count > 0 ? Array.from({ length: count }, (_, i) => i + 1) : []
+            })}
+            originalUrl={manifestEntry?.url}
+            activeQuote={activeQuote}
+            onClearQuote={() => setActiveQuote(null)}
+          />
+        )}
+      </div>
 
       {/* ── Official Description ───────────────────────────────────── */}
       {manifestEntry?.description && (
         <div className="mb-4">
-          <Section title="Official Pentagon Description" defaultOpen>
+          <Section title="Official Pentagon Description" defaultOpen={false}>
             <p className="text-sm text-slate-400 leading-relaxed">{manifestEntry.description}</p>
           </Section>
         </div>
       )}
 
-      {/* ── Metadata Panel ─────────────────────────────────────────── */}
-      {hasMetadata && (
+      {/* ── Entities Mentioned ─────────────────────────────────────── */}
+      {hasEntities && (
         <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-4 mb-4">
-          {hasSensors && (
-            <Section title="Sensors" count={doc.sensors.length} defaultOpen>
-              <div className="flex flex-wrap gap-1.5">
-                {doc.sensors.map((s, i) => (
-                  <Badge key={i} color="#3b82f6">
-                    {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
+          <Section title="Entities Mentioned" count={doc.entities.length} defaultOpen>
+            <div className="flex flex-wrap gap-1.5">
+              {doc.entities.map((e, i) => (
+                <Link key={i} to={`/entities?q=${encodeURIComponent(e.entity_value)}`} className="hover:brightness-125 transition-all">
+                  <Badge color={e.entity_type === 'organization' ? '#3b82f6' : e.entity_type === 'person' ? '#ec4899' : '#6b7280'}>
+                    <span className="opacity-60 mr-1">{e.entity_type}:</span>{e.entity_value}
                   </Badge>
-                ))}
-              </div>
-            </Section>
-          )}
-          {hasBehaviors && (
-            <Section title="Observed Behaviors" count={doc.behaviors.length} defaultOpen>
-              <div className="flex flex-wrap gap-1.5">
-                {doc.behaviors.map((b, i) => (
-                  <Badge key={i} color="#f59e0b">{b}</Badge>
-                ))}
-              </div>
-            </Section>
-          )}
-          {hasShapes && (
-            <Section title="Reported Shapes" count={doc.shapes.length} defaultOpen>
-              <div className="flex flex-wrap gap-1.5">
-                {doc.shapes.map((s, i) => (
-                  <Badge key={i} color="#8b5cf6">
-                    {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}
-                  </Badge>
-                ))}
-              </div>
-            </Section>
-          )}
-          {hasWitnesses && (
-            <Section title="Witnesses" count={doc.witnesses.length} defaultOpen>
-              <div className="flex flex-wrap gap-1.5">
-                {doc.witnesses.map((w, i) => (
-                  <Badge key={i} color="#10b981">{w}</Badge>
-                ))}
-              </div>
-            </Section>
-          )}
-          {hasEntities && (
-            <Section title="Entities Mentioned" count={doc.entities.length} defaultOpen>
-              <div className="flex flex-wrap gap-1.5">
-                {doc.entities.map((e, i) => (
-                  <Link key={i} to={`/entities?q=${encodeURIComponent(e.entity_value)}`} className="hover:brightness-125 transition-all">
-                    <Badge color={e.entity_type === 'organization' ? '#3b82f6' : e.entity_type === 'person' ? '#ec4899' : '#6b7280'}>
-                      <span className="opacity-60 mr-1">{e.entity_type}:</span>{e.entity_value}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            </Section>
-          )}
+                </Link>
+              ))}
+            </div>
+          </Section>
         </div>
       )}
 

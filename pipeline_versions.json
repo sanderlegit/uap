@@ -1,0 +1,37 @@
+{
+  "active": {
+    "narratives": "v1",
+    "legacy_web": "v1"
+  },
+  "versions": {
+    "narratives": {
+      "v1": {
+        "script": "annotate_documents_v1.py",
+        "output": "doc_narratives_v1.json",
+        "description": "Plain-text key findings, no quote grounding",
+        "created": "2026-05-10"
+      },
+      "v2": {
+        "script": "annotate_documents.py",
+        "output": "doc_narratives_v2.json",
+        "description": "Quote-grounded key findings with page references",
+        "created": null
+      }
+    },
+    "legacy_web": {
+      "v1": {
+        "script": "build_legacy_web_v1.py",
+        "output": "legacy_web_v1.json",
+        "description": "Keyword-frequency scoring with log scaling",
+        "created": "2026-05-10"
+      },
+      "v2": {
+        "script": "build_legacy_web.py",
+        "output": "legacy_web_v2.json",
+        "description": "Improved connection scoring (pending)",
+        "created": null
+      }
+    }
+  },
+  "notes": "To swap active version: update 'active' and copy versioned output to canonical filename (e.g. doc_narratives_v2.json -> doc_narratives.json). Frontend always reads the canonical files."
+}
