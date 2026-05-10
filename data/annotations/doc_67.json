@@ -1,51 +1,101 @@
 {
-  "hook": "A 143-page 1949 Department of War compilation of UFO incident reports filed under Flight Service Regulation 200-4, submitted by military and Civilian Aviation Authority observers, including MATS and AACS communications, military intelligence reports, diagrams, and a Japan weather station report — but the OCR extraction produced no readable text beyond the declassification header.",
-  "why_it_matters": "This file represents the institutional infrastructure of early U.S. military UFO reporting in 1949, one year before the formal launch of Project Blue Book, showing that standardized incident reporting under FSR 200-4 was already generating substantial documentation. The inclusion of MATS and AACS traffic indicates the phenomenon was being tracked across multiple command channels simultaneously. The Japan weather station report suggests international and Asia-Pacific incident coverage was part of the collection effort.",
+  "hook": "A compiled collection of UFO incident reports submitted to Air Materiel Command at Wright-Patterson AFB under Flight Service Regulation 200-4, covering military and civilian sightings from mid-1949 through early 1950, including formal witness statements, standardized reporting forms, and a USAF HQ directive warning of periodic clusters of sightings.",
+  "why_it_matters": "This file documents the active FSR 200-4 reporting pipeline in operation before Project Blue Book was formalized, showing that AMC at Wright-Patterson was the central collection node for UFO intelligence across multiple flight service centers simultaneously. The inclusion of a USAF HQ message explicitly stating that 'groups of sightings occur at periodic intervals with beginning of new interval imminent' reveals that headquarters-level analysts were already identifying temporal patterns in the data and were actively directing field units to prioritize photographic evidence. Multiple reports come from trained military observers — including a National Guard aircraft control squadron and a lieutenant colonel observing from an aircraft — lending the sightings institutional credibility within the Air Force's own chain of command.",
   "key_findings": [
     {
-      "finding": "The document is a compilation of UFO incident reports written in compliance with Flight Service Regulation (FSR) 200-4, indicating a formal, standardized military reporting framework was in place by 1949.",
-      "quotes": []
+      "finding": "Two spherical, brilliant-white objects with orange and red flashes hovered motionless over Olathe, Kansas for 10-15 minutes on January 6, 1950, before accelerating rapidly southwest, with no sound or exhaust, witnessed by a civilian pilot employed at Bendix Aviation.",
+      "quotes": [
+        {
+          "text": "Two objects were sighted, both spherical in shape. They appeared to be the size of old fashioned street lights about two blocks distant. They were a brilliant white, emanating orange and red flashes.",
+          "page": 1
+        },
+        {
+          "text": "They moved from over Kansas City toward Olathe, Kansas, remained motionless from ten to fifteen minutes, then mowed off very fast in a southwesterly direction. The estimated altitude was between seven and eight thousand feet. No sound was emitted, nor exhaust trail apparent.",
+          "page": 1
+        }
+      ]
     },
     {
-      "finding": "Witnesses included both military personnel and Civilian Aviation Authority (CAA) observers, broadening the evidentiary base beyond purely military sources.",
-      "quotes": []
+      "finding": "Three National Guard Aircraft Control and Warning Squadron controllers independently observed a single circular, shiny aluminum object estimated at 75-100 feet in diameter traveling at 500-600 MPH over Seattle on August 22, 1949, with sound similar to a jet but no exhaust trail.",
+      "quotes": [
+        {
+          "text": "Shapet Circular, Siger Estimated seventy-five (75) to one hundred (100) feet in diameter with an estimated depth of ten (10) to fifteen (15) feet, Color: Shiny aluminum, Object reflected the sun's rays Speed: Estimated five (5) to six (6) hundred miles per hour",
+          "page": 10
+        },
+        {
+          "text": "Both Sgt Faulkner and Sgt Studeman saw other aircraft in the air at the same time the circular object was sighted and reported that it bore no resemblance to any aircraft they had ever seen before.",
+          "page": 11
+        }
+      ]
     },
     {
-      "finding": "Reports capture structured observational data including dates, locations, weather conditions, altitude, and detailed descriptions of appearance and movement.",
-      "quotes": []
+      "finding": "A USAF lieutenant colonel observed a silvery object from airborne aircraft at 20,000 feet that descended into overcast at 7,000 feet, trailing a flame more than twice the object's own length, approximately 30 miles from his position.",
+      "quotes": [
+        {
+          "text": "The flame appeared more than twice the length of the object, The object finally disappeared into the overcast, reported at 7000 feet at the time. The approximate coordinates of the sighted object was 43°40\" 74°56\". The approximate distance of the object from the observer was thirty miles.",
+          "page": 6
+        },
+        {
+          "text": "Name of observer: Lt Colonel Phillip J. Kuhl, 3716A Air Materiel Command, AF Procurement Field Office, Bedford, Mass.",
+          "page": 6
+        }
+      ]
     },
     {
-      "finding": "Communications from the Military Air Transport Service (MATS) and Army Airways Communications System (AACS) are embedded in the file, indicating multi-channel military command involvement in UFO incident documentation.",
-      "quotes": []
+      "finding": "USAF Headquarters issued a directive to all Airways and Air Communications Service units stating that research had identified periodic clustering of UFO sightings and that a new interval was imminent, explicitly requesting photographic evidence.",
+      "quotes": [
+        {
+          "text": "RESEARCH REVEALS GROUPS OF SIGHTINGS OCCUR AT PERIODIC INTERVALS WITH BEGINNING OF NEW INTERVAL IMMINENT PD REQUEST ALL UNITS OF YOUR COMMAND BE PARTICULARLY ALERTED TO REPORT SIGHTINGS OF UNIDENTIFIED AERIAL OBJECTS DIRECT TO MCIAXO DASH THREE",
+          "page": 143
+        },
+        {
+          "text": "The above referenced USAF letter of 6 February 1948 in quoted TWA is further modified to include reporting of all sightings of flying discs whether they occur within or outside the United States and Alaska.",
+          "page": 143
+        }
+      ]
     },
     {
-      "finding": "The file includes a report from a weather station in Japan, demonstrating that the 1949 UFO reporting effort extended to U.S. military assets in the Asia-Pacific theater.",
-      "quotes": []
+      "finding": "Two Chanute AFB weather observers filed sworn statements describing a round, white object in December 1948 that was three to four times the size of a star, moving from northeast to south-southwest on an upward 15-20 degree angle before disappearing within two to three seconds.",
+      "quotes": [
+        {
+          "text": "The object did not appear to be a star because it was three or four times as large as a star and it seemed to be closer to us than a star would be. It was heading from the north east toward the south south west and was moving upwards at about 15 or 20 degree angle.",
+          "page": 135
+        },
+        {
+          "text": "The object was round, white and moved very fast.",
+          "page": 135
+        }
+      ]
     }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
-      "node_id": "blue_book",
-      "relevance": "high",
-      "reasoning": "This 1949 FSR 200-4 incident report compilation is direct institutional precursor material to Project Blue Book, showing the standardized military UFO reporting infrastructure that Blue Book would inherit and formalize."
-    },
-    {
       "node_id": "wright_patterson",
       "relevance": "high",
-      "reasoning": "Department of War UFO incident files from 1949 were routed through Air Materiel Command at Wright-Patterson, which managed the predecessor projects (Sign, Grudge) that processed exactly this type of FSR 200-4 report."
+      "reasoning": "All reports in this file are addressed to the Commanding General, Air Materiel Command, Wright-Patterson AFB, Ohio, identifying it as the central intelligence collection hub for FSR 200-4 UFO reports."
     },
     {
-      "node_id": "cia_dst",
-      "relevance": "medium",
-      "reasoning": "Military intelligence reports included in this compilation would have been of interest to CIA's predecessor intelligence structures monitoring the early UFO phenomenon in 1949-1950."
+      "node_id": "blue_book",
+      "relevance": "high",
+      "reasoning": "These reports are direct inputs into the pre-Blue Book AMC collection system operating under FSR 200-4, the same institutional pipeline that fed Project Sign and later Blue Book."
+    },
+    {
+      "node_id": "five_eyes",
+      "relevance": "low",
+      "reasoning": "One report describes a sighting on a flight from Edmonton, Alberta, Canada to Kittigazuit, NWT, Canada, indicating the reporting network extended into Canadian airspace."
+    },
+    {
+      "node_id": "mitre",
+      "relevance": "low",
+      "reasoning": "The USAF HQ directive references pattern analysis of sighting clusters and periodic intervals, indicating early systematic analytical work on UFO data that prefigures later institutional scientific analysis efforts."
     }
   ],
   "related_topics": [
-    "FSR 200-4 incident reporting",
-    "Military Aviation Authority witnesses",
-    "MATS communications",
-    "Asia-Pacific sightings",
-    "1949 pre-Blue Book documentation"
+    "Flight Service Regulation 200-4",
+    "pilot testimony",
+    "multiple witness reports",
+    "spherical objects",
+    "periodic sighting clusters"
   ]
 }

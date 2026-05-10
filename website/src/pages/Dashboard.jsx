@@ -154,6 +154,11 @@ const briefingCards = [
     description: 'Dense concentration of UAP encounters across CENTCOM AOR — Iraq, Syria, the Persian Gulf, and surrounding airspace.',
     expanded: 'All 26 documents originate from USCENTCOM mission reports declassified by Chief of Staff MG Richard A. Harrison between October 2025 and January 2026. The encounters span 2021–2024 across Iraq, Syria, Greece, the Mediterranean, the Persian Gulf, and the United Arab Emirates. Sensor suites include FLIR, radar, photographic, video, and SIGINT. Several reports are classified SECRET//REL TO USA, FVEY — meaning Five Eyes allies also received the data. UAP were observed during combat operations, aerial reconnaissance, and patrol missions, often by MQ-9 Reaper and manned fighter crews simultaneously. The geographic clustering around active conflict zones raises questions about whether UAP activity correlates with military operations, advanced adversary technology, or something else entirely.',
     color: 'border-t-amber-500',
+    links: [
+      { label: 'View on Map', path: '/map' },
+      { label: 'Browse Documents', path: '/documents?agency=Department+of+War' },
+      { label: 'Full Analysis', path: '/analysis/report' },
+    ],
   },
   {
     tag: 'FINDING 02',
@@ -164,6 +169,11 @@ const briefingCards = [
     description: 'FBI\'s primary UAP investigation spanning 1947–1968 across 17 sections.',
     expanded: 'File 62-HQ-83894 is the FBI\'s central headquarters file on unidentified flying objects, maintained by the Domestic Intelligence Division. It spans 17 numbered sections plus sub-files and serials, totaling over 2,600 pages. The file documents field office reports from every major FBI division, coordination with the Air Force\'s Project Blue Book, and direct communications with J. Edgar Hoover\'s office. Notable contents include: radar-confirmed sightings over nuclear installations (Oak Ridge, Hanford, Los Alamos), photographic evidence from multiple field offices, the "green fireball" incidents over New Mexico that prompted Dr. Lincoln LaPaz\'s investigation, and the 1952 Washington D.C. wave where objects were tracked on radar over the Capitol. The file reveals the FBI was far more involved in UAP investigation than publicly acknowledged — Hoover personally annotated several reports with requests for more information.',
     color: 'border-t-red-500',
+    links: [
+      { label: 'FBI Deep Dive', path: '/analysis/fbi' },
+      { label: 'Browse FBI Files', path: '/documents?agency=FBI' },
+      { label: 'Open Case File', path: '/documents/112' },
+    ],
   },
   {
     tag: 'FINDING 03',
@@ -174,6 +184,11 @@ const briefingCards = [
     description: 'Apollo 11, 12, and 17 crew debriefings plus Skylab III encounter report.',
     expanded: 'The NASA documents include official crew debriefing transcripts from Apollo 11 (Armstrong, Aldrin, Collins), Apollo 12 (Conrad, Gordon, Bean), and Apollo 17 (Cernan, Evans, Schmitt), plus the Skylab III crew observation report. During the Apollo 11 transit, the crew observed a luminous object that tracked alongside the spacecraft. Apollo 12 documented unexplained light phenomena during lunar orbit. Apollo 17 visual monitoring photographs (VM3, VM5, VM6) captured anomalous objects that NASA catalogued but could not identify. The Skylab III crew reported a triangular formation of red lights during an observation session — the sighting was formally logged in the mission report. These are not secondhand accounts — they are official transcripts from the most trained observers humanity has ever sent into space, reporting through official NASA channels to debriefers with security clearances.',
     color: 'border-t-purple-500',
+    links: [
+      { label: 'Apollo Deep Dive', path: '/analysis/apollo' },
+      { label: 'Browse NASA Docs', path: '/documents?agency=NASA' },
+      { label: 'View on Timeline', path: '/timeline?doc=103' },
+    ],
   },
   {
     tag: 'FINDING 04',
@@ -184,6 +199,11 @@ const briefingCards = [
     description: 'Documented behaviors: hovering, cloaking, luminosity changes, formation flight, splitting, merging, instant acceleration, EM interference.',
     expanded: 'Across the entire corpus, 147 instances of anomalous behavior are catalogued across 8 distinct categories. Hovering (sustained stationary flight with no visible means of propulsion) appears in 42 documents. Luminosity changes (objects shifting brightness, color, or emitting sudden flashes) appear in 67. Formation flight (multiple objects maintaining geometric patterns) appears in 38. The most concerning behaviors include: splitting (a single object dividing into multiple), merging (multiple objects combining into one), and EM interference (disruption of radar, radio, or electrical systems during observation). These behaviors are reported by FBI agents, military pilots, radar operators, and astronauts independently across eight decades — from 1944 WWII "foo fighter" reports through 2024 CENTCOM mission reports. The consistency of behavioral descriptions across time, geography, and observer background is one of the strongest arguments against conventional explanations.',
     color: 'border-t-cyan-500',
+    links: [
+      { label: 'High Interest Cases', path: '/analysis/high_interest' },
+      { label: 'Explore Network', path: '/graph' },
+      { label: 'Full Report', path: '/analysis/report' },
+    ],
   },
   {
     tag: 'FINDING 05',
@@ -194,6 +214,11 @@ const briefingCards = [
     description: 'Corroborated across radar, IR/FLIR, photographic, satellite, SIGINT, and electro-optical systems.',
     expanded: '56 documents contain observations confirmed by two or more independent sensor systems. This is the gold standard in intelligence analysis — a single observer can be mistaken, but when radar, infrared, visual, photographic, and SIGINT all register the same event, conventional explanations become difficult to maintain. The strongest multi-sensor cases include: DOW mission reports where FLIR and radar simultaneously tracked objects; FBI files from the 1952 Washington wave where ground radar, airborne radar, and visual observers all confirmed the same objects; and NASA documents where photographic evidence corroborates crew visual observations. The sensor types represented span the full electromagnetic spectrum: radar (microwave), FLIR (thermal infrared), electro-optical (visible/near-IR), photographic (visible), video (visible), satellite (multi-spectral), SIGINT (radio frequency), and acoustic. No known natural phenomenon or conventional aircraft produces signatures across all these modalities simultaneously.',
     color: 'border-t-blue-500',
+    links: [
+      { label: 'Browse All Documents', path: '/documents' },
+      { label: 'Full Report', path: '/analysis/report' },
+      { label: 'View on Map', path: '/map' },
+    ],
   },
   {
     tag: 'FINDING 06',
@@ -204,6 +229,11 @@ const briefingCards = [
     description: 'Over 60% of files contain redactions even in this "declassified" release.',
     expanded: '78 of the 129 documents — over 60% — contain visible redactions ranging from single words to entire pages blacked out. Redactions are applied under FOIA exemptions including (b)(1)1.4a (classified national defense information), (b)(1)1.4g (vulnerabilities of systems), (b)(6) (personal privacy), and 3.5c (intelligence sources and methods). The Pentagon has stated that redactions "do not concern the nature or existence of any encounter" — a carefully worded assertion that raises more questions than it answers. If the encounters themselves are fully disclosed, what requires classification? Possible answers include: specific military unit identities and capabilities, sensor system specifications, operational locations of intelligence assets, and the identities of witnesses who may still be active duty. The pattern of redaction is itself analytically significant — the most heavily redacted documents tend to be the most recent (2022–2024) CENTCOM reports, while older FBI files from the 1940s–1960s are more completely released.',
     color: 'border-t-amber-600',
+    links: [
+      { label: 'Redaction Analysis', path: '/analysis/redactions' },
+      { label: 'Disclosure Index', path: '/disclosure' },
+      { label: 'Browse All Documents', path: '/documents' },
+    ],
   },
 ]
 
@@ -460,12 +490,17 @@ export default function Dashboard() {
                       {inv.related_doc_ids.length + 1} docs
                     </span>
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-white mb-2 transition-colors">
-                    {inv.title}
-                  </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed mb-3 line-clamp-2">
-                    {inv.hook}
-                  </p>
+                  <div className="flex gap-4 mb-3">
+                    <DocThumbnail docId={inv.entry_doc_id} size="md" className="rounded-md shadow-lg shadow-black/30 border border-slate-700/50" />
+                    <div className="min-w-0 flex-1">
+                      <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-white mb-2 transition-colors">
+                        {inv.title}
+                      </h3>
+                      <p className="text-xs text-slate-400 leading-relaxed line-clamp-3">
+                        {inv.hook}
+                      </p>
+                    </div>
+                  </div>
                   <p className="text-[11px] text-slate-500 leading-relaxed mb-4 line-clamp-3 group-hover:text-slate-400 transition-colors">
                     {inv.description}
                   </p>
@@ -576,7 +611,7 @@ export default function Dashboard() {
           {briefingCards.map((card, i) => {
             const isOpen = expandedBriefing === card.tag
             return (
-              <button
+              <div
                 key={card.tag}
                 onClick={() => setExpandedBriefing(isOpen ? null : card.tag)}
                 className={`dash-card text-left bg-slate-900/80 border rounded-lg overflow-hidden border-t-2 ${card.color} cursor-pointer transition-all hover:translate-y-[-1px] hover:shadow-lg ${
@@ -599,11 +634,23 @@ export default function Dashboard() {
                   <p className={`text-xs sm:text-sm text-slate-400 leading-relaxed ${isOpen ? '' : 'line-clamp-3'}`}>{card.description}</p>
                   {isOpen && (
                     <div className="mt-4 pt-4 border-t border-slate-800/60">
-                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">{card.expanded}</p>
+                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">{card.expanded}</p>
+                      <div className="flex flex-wrap gap-x-4 gap-y-1">
+                        {card.links.map((lnk, li) => (
+                          <Link
+                            key={li}
+                            to={lnk.path}
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-[10px] font-mono text-amber-500/70 hover:text-amber-300 transition-colors"
+                          >
+                            {lnk.label} &rarr;
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
-              </button>
+              </div>
             )
           })}
         </div>

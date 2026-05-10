@@ -11,12 +11,13 @@ const AGENCIES = [
 ]
 
 const SPACE_ENCOUNTERS = [
-  { name: 'Gemini IV Object', year: 1965, body: 'orbit', detail: 'Astronaut James McDivitt photographed a cylindrical object with a protrusion during orbital EVA preparations.', icon: '🛰' },
-  { name: 'Apollo 11 Translunar Object', year: 1969, body: 'moon', detail: 'Crew observed an L-shaped object through the window en route to the Moon, initially thought to be the S-IVB booster.', icon: '🌙' },
-  { name: 'Apollo 12 Lightning Events', year: 1969, body: 'moon', detail: 'Unusual double lightning strike during launch plus anomalous objects observed in lunar orbit.', icon: '🌙' },
-  { name: 'STS-48 Maneuver Objects', year: 1991, body: 'orbit', detail: 'Space Shuttle Discovery footage captured objects making apparent sharp directional changes near the spacecraft.', icon: '🛰' },
-  { name: 'STS-75 Tether Swarm', year: 1996, body: 'orbit', detail: 'Hundreds of luminous pulsing objects observed near the broken TSS-1R tether during shuttle mission.', icon: '🛰' },
-  { name: 'ISS Multiple Sightings', year: 2005, body: 'orbit', detail: 'Multiple ISS crew members across several expeditions reported unidentified objects near the station, some captured on external cameras.', icon: '🛰' },
+  { name: 'Gemini IV Object', year: 1965, body: 'orbit', detail: 'Astronaut James McDivitt photographed a cylindrical object with a protrusion during orbital EVA preparations.', icon: '🛰', docIds: [] },
+  { name: 'Apollo 11 Translunar Object', year: 1969, body: 'moon', detail: 'Crew observed an L-shaped object through the window en route to the Moon, initially thought to be the S-IVB booster.', icon: '🌙', docIds: [103] },
+  { name: 'Apollo 12 Lightning Events', year: 1969, body: 'moon', detail: 'Unusual double lightning strike during launch plus anomalous objects observed in lunar orbit.', icon: '🌙', docIds: [50, 51, 52, 53, 54, 101] },
+  { name: 'STS-48 Maneuver Objects', year: 1991, body: 'orbit', detail: 'Space Shuttle Discovery footage captured objects making apparent sharp directional changes near the spacecraft.', icon: '🛰', docIds: [] },
+  { name: 'STS-75 Tether Swarm', year: 1996, body: 'orbit', detail: 'Hundreds of luminous pulsing objects observed near the broken TSS-1R tether during shuttle mission.', icon: '🛰', docIds: [] },
+  { name: 'ISS Multiple Sightings', year: 2005, body: 'orbit', detail: 'Multiple ISS crew members across several expeditions reported unidentified objects near the station, some captured on external cameras.', icon: '🛰', docIds: [] },
+  { name: 'Apollo 17 Lunar Anomalies', year: 1972, body: 'moon', detail: 'Crew debriefing transcripts reference anomalous light phenomena observed during lunar surface EVAs.', icon: '🌙', docIds: [55, 102, 104, 105] },
 ]
 
 function Spinner() {
@@ -67,7 +68,7 @@ function OrbitGraphic({ count }) {
   )
 }
 
-function SpaceSidebar({ expandedEncounter, setExpandedEncounter }) {
+function SpaceSidebar({ expandedEncounter, setExpandedEncounter, docs }) {
   const moonEncounters = SPACE_ENCOUNTERS.filter(e => e.body === 'moon')
   const orbitEncounters = SPACE_ENCOUNTERS.filter(e => e.body === 'orbit')
 
@@ -119,7 +120,22 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter }) {
                   <div className="text-[11px] font-medium text-slate-200">{enc.name}</div>
                   <div className="text-[10px] text-slate-500">{enc.year}</div>
                   {expandedEncounter === idx && (
-                    <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
+                    <div>
+                      <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
+                      {enc.docIds?.length > 0 && (
+                        <div className="mt-2 space-y-1">
+                          {enc.docIds.map(docId => {
+                            const d = docs?.find(x => x.id === docId)
+                            return d ? (
+                              <Link key={docId} to={`/documents/${docId}`} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-purple-500/10 transition-colors group">
+                                <img src={thumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
+                                <span className="text-[10px] text-slate-400 group-hover:text-slate-200 line-clamp-1">{d.title}</span>
+                              </Link>
+                            ) : null
+                          })}
+                        </div>
+                      )}
+                    </div>
                   )}
                 </button>
               )
@@ -150,7 +166,22 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter }) {
                   <div className="text-[11px] font-medium text-slate-200">{enc.name}</div>
                   <div className="text-[10px] text-slate-500">{enc.year}</div>
                   {expandedEncounter === idx && (
-                    <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
+                    <div>
+                      <p className="text-[11px] text-slate-400 mt-1.5 leading-relaxed">{enc.detail}</p>
+                      {enc.docIds?.length > 0 && (
+                        <div className="mt-2 space-y-1">
+                          {enc.docIds.map(docId => {
+                            const d = docs?.find(x => x.id === docId)
+                            return d ? (
+                              <Link key={docId} to={`/documents/${docId}`} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-cyan-500/10 transition-colors group">
+                                <img src={thumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
+                                <span className="text-[10px] text-slate-400 group-hover:text-slate-200 line-clamp-1">{d.title}</span>
+                              </Link>
+                            ) : null
+                          })}
+                        </div>
+                      )}
+                    </div>
                   )}
                 </button>
               )
@@ -189,11 +220,13 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter }) {
   )
 }
 
-function MapSync({ searchParams, setSearchParams }) {
+function MapSync({ searchParams, setSearchParams, mapRef }) {
   const map = useMap()
   const timerRef = useRef(null)
   const searchParamsRef = useRef(searchParams)
   searchParamsRef.current = searchParams
+
+  useEffect(() => { mapRef.current = map }, [map, mapRef])
 
   useEffect(() => {
     function onMoveEnd() {
@@ -223,6 +256,8 @@ export default function MapView() {
   const [searchParams, setSearchParams] = useSearchParams()
   const [expandedEncounter, setExpandedEncounter] = useState(null)
   const [mobileSpaceOpen, setMobileSpaceOpen] = useState(false)
+  const [docListOpen, setDocListOpen] = useState(false)
+  const mapRef = useRef(null)
 
   const initialLat = parseFloat(searchParams.get('lat')) || 20
   const initialLng = parseFloat(searchParams.get('lng')) || 0
@@ -247,7 +282,7 @@ export default function MapView() {
           scrollWheelZoom={true}
           zoomControl={true}
         >
-          <MapSync searchParams={searchParams} setSearchParams={setSearchParams} />
+          <MapSync searchParams={searchParams} setSearchParams={setSearchParams} mapRef={mapRef} />
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
@@ -313,6 +348,67 @@ export default function MapView() {
           </div>
         </div>
 
+        {/* Document list panel */}
+        <div className="absolute top-3 left-3 z-[1000]">
+          <button
+            onClick={() => setDocListOpen(!docListOpen)}
+            className={`bg-slate-900/90 backdrop-blur border rounded-lg px-3 py-2 flex items-center gap-2 cursor-pointer transition-colors ${
+              docListOpen ? 'border-amber-500/50 bg-slate-900/95' : 'border-slate-700/50 hover:border-slate-600'
+            }`}
+          >
+            <span className="text-xs font-medium text-slate-300">Documents</span>
+            <span className="text-[10px] text-amber-400 bg-amber-500/20 rounded px-1.5 py-0.5 tabular-nums">{geolocated.length}</span>
+          </button>
+
+          {docListOpen && (
+            <div className="mt-1.5 bg-slate-900/95 backdrop-blur border border-slate-700/50 rounded-lg w-72 max-h-[60vh] overflow-hidden flex flex-col">
+              <div className="px-3 py-2 border-b border-slate-700/40 flex items-center justify-between">
+                <span className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold">Mapped Documents</span>
+                <button onClick={() => setDocListOpen(false)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-sm leading-none">&times;</button>
+              </div>
+              <div className="overflow-y-auto flex-1" style={{ scrollbarWidth: 'thin', scrollbarColor: '#1e293b transparent' }}>
+                {geolocated.map(doc => (
+                  <button
+                    key={doc.id}
+                    onClick={() => {
+                      const next = new URLSearchParams(searchParams)
+                      next.set('doc', String(doc.id))
+                      setSearchParams(next, { replace: true })
+                      mapRef.current?.flyTo([doc.latitude, doc.longitude], Math.max(mapRef.current.getZoom(), 6), { duration: 0.8 })
+                    }}
+                    className={`w-full text-left flex items-center gap-2.5 px-3 py-2 transition-colors cursor-pointer border-b border-slate-800/30 hover:bg-slate-800/50 ${
+                      String(doc.id) === selectedDocId ? 'bg-amber-500/10' : ''
+                    }`}
+                  >
+                    <img
+                      src={thumbUrl(doc.id)}
+                      alt=""
+                      className="w-8 h-10 object-cover rounded flex-shrink-0 bg-slate-800"
+                      onError={e => { e.target.style.display = 'none' }}
+                    />
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[11px] text-slate-200 line-clamp-1 leading-snug">{doc.title}</div>
+                      <div className="flex items-center gap-2 mt-0.5">
+                        {doc.agency && (
+                          <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: agencyColor(doc.agency) }} />
+                        )}
+                        <span className="text-[10px] text-slate-500 line-clamp-1">{doc.incident_location || 'Location unknown'}</span>
+                      </div>
+                    </div>
+                    <Link
+                      to={`/documents/${doc.id}`}
+                      onClick={e => e.stopPropagation()}
+                      className="text-[10px] text-indigo-400/70 hover:text-indigo-400 flex-shrink-0"
+                    >
+                      →
+                    </Link>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* Mobile space toggle */}
         <button
           onClick={() => setMobileSpaceOpen(!mobileSpaceOpen)}
@@ -326,7 +422,7 @@ export default function MapView() {
 
       {/* Desktop: persistent space sidebar */}
       <div className="hidden md:block w-64 lg:w-72 relative shrink-0">
-        <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} />
+        <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} docs={docs} />
       </div>
 
       {/* Mobile: slide-up panel */}
@@ -336,7 +432,7 @@ export default function MapView() {
             <span className="text-xs font-semibold text-purple-400">Space Encounters</span>
             <button onClick={() => setMobileSpaceOpen(false)} className="text-slate-500 hover:text-slate-300 cursor-pointer text-lg leading-none w-10 h-10 flex items-center justify-center">&times;</button>
           </div>
-          <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} />
+          <SpaceSidebar expandedEncounter={expandedEncounter} setExpandedEncounter={setExpandedEncounter} docs={docs} />
         </div>
       )}
     </div>

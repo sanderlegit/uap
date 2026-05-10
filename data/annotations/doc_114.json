@@ -1,53 +1,92 @@
 {
-  "hook": "A 194-page section of FBI case file 62-HQ-83894 covering UFO/flying disc investigations from 1947–1968, for which pymupdf text extraction yielded no readable content — the document pages are almost certainly scanned images with no embedded text layer, rendering the full file contents unanalyzable from this extraction alone.",
-  "why_it_matters": "This section of the 62-HQ-83894 file is significant because the official description indicates it contains newly declassified pages beyond what the FBI Vault previously released, including eyewitness testimonies, photographic evidence from Oak Ridge (a nuclear facility), and technical propulsion proposals. However, because text extraction returned only blank pages, the actual analytical content remains opaque until OCR is applied to the underlying scans. The single recoverable text element — a declassification authority stamp — confirms the file was processed under NND 90986, a National Archives declassification project.",
+  "hook": "FBI field office memos from July-August 1947 documenting early flying disc investigations, including a detailed multi-witness sighting report from Hackensack, New Jersey, coordination records between the FBI and Army Air Forces (Fourth Air Force, Hamilton Field) on disc reports from Oregon and Arizona, and newspaper clippings covering the national flying saucer wave of summer 1947.",
+  "why_it_matters": "This section captures the FBI's earliest operational posture on flying disc reports, explicitly documenting the jurisdictional handoff from Army Air Forces to FBI as the lead investigative agency in mid-1947. The Hackensack case is notable for its careful multi-witness interviewing methodology, including a serviceman from Fort Dix, with detailed shape and behavior descriptions that do not match conventional explanations offered at the time. The newspaper clippings establish public awareness context and reference Oak Ridge atomic facilities, linking the saucer wave to national security sensitivities from the outset.",
   "key_findings": [
     {
-      "finding": "The document was declassified under National Archives declassification authority NND 90986, confirming it underwent formal review before release.",
+      "finding": "The FBI formally took over flying disc investigations from Army Air Forces in mid-1947, with the San Francisco SAC explicitly noting that prior Army investigations predated Bureau jurisdiction, and forwarding Army Air Force reports to Portland and Phoenix field offices for file completion.",
       "quotes": [
         {
-          "text": "Authority: \nDECLASSIFIED \nNND 90986",
-          "page": 176
+          "text": "It is noted that these investigations were conducted prior to the time Bureau instructions were issued that our own Bureau would conduct inguiries into the reported sightings of flying discs.",
+          "page": 2
         }
       ]
     },
     {
-      "finding": "Text extraction via pymupdf returned no readable content across all 194 pages, indicating the document consists entirely of scanned image pages without an embedded text layer — the file is inaccessible to automated text analysis without OCR processing.",
-      "quotes": []
+      "finding": "A round, fast-moving aerial object was observed by multiple witnesses in Hackensack, New Jersey on August 3, 1947 at approximately 7:45-8:00 PM, moving steadily northward at about 200 yards altitude with no exhaust, no visible propulsion, and no strings — initially mistaken for a balloon before being ruled out.",
+      "quotes": [
+        {
+          "text": "TRUEX stated that on Sunday, August 3, 1947, at 8:00 p.m., he was standing outside tne home ot his girlfriend, Miss JOYCE Mc FARLAND, 4/8 Simons Avenue, Hackensack, New Jersey...He said tnat he and CASELLA were looking at the radio antenna on a home near the 478 Simons Avenue address wnen they noticed an object",
+          "page": 7
+        },
+        {
+          "text": "He said that when he noticed there was no wind and tne object had no strings to it, ne decided it was sometning else. He stated tne object was moving in a steady, straight path, going nortn, and he said there was no exhaust or indication of any motive power for the object.",
+          "page": 7
+        }
+      ]
     },
     {
-      "finding": "The document carries 1 page flagged as containing redaction markers per the metadata, suggesting at least one page has visible redaction blocks even in this more complete release compared to the FBI Vault version.",
-      "quotes": []
+      "finding": "Witness descriptions of the Hackensack object were inconsistent with each other but uniformly excluded mundane explanations: Truex described an oval-topped, pointed-bottomed shape resembling a 'flat child's cup'; McFarland described it as 'round and silver-blue in color and appeared to be revolving'; Casella could not determine if it was globular or disc-shaped.",
+      "quotes": [
+        {
+          "text": "He stated tne object was moving in a steady, straight path, going nortn, and he said there was no exhaust or indication of any motive power for the object. TRUEX said they observed tne object for fifteen or twenty seconds. He could not give a description of tne object's color or the materiai it was composed of but said it looked more like a large, flat child's cup than anything else he could think of, as the object was oval on the top and came to a point on the bottom side.",
+          "page": 7
+        },
+        {
+          "text": "She said it was round and silver-blue in color and appeared to be revolving. She said that she did not recall making any comment that it might have been a bird and herself had no idea of wnat it could be.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Newspaper clippings in the file document a pilot's repeated sightings of an unidentified aerial object near Fort Miles that exhibited apparent rocket combustion — 'jets of silver flame from the tail' — and disappeared in two to three seconds, with the pilot contacting the FBI, Eastern Airlines, and the Civil Aeronautics Authority and receiving no substantive response from any.",
+      "quotes": [
+        {
+          "text": "The most important bf these observations, insofar as arjexplanation is possible, is that the \"jar\" appeared to have some sort of rocket combustion. Mr. Wenyon said that jourts of silver flame from the tail emed to provide the propulsion.",
+          "page": 8
+        },
+        {
+          "text": "To date he has received no answ at|er| from either.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The newspaper coverage included in the file specifically references the Oak Ridge atomic bomb plant in the context of flying saucer sightings, indicating early awareness of a potential connection between disc reports and nuclear facilities — a link that would recur throughout later official investigations.",
+      "quotes": [
+        {
+          "text": "hecry: inv tetra, called the the objects were radio controlled ee aah elie brought | °n\\federal Bureau of _Investigatio flying missiles, [cy He ase explanation ||re Tot mteres| | eePorts persisted that the Army",
+          "page": 8
+        },
+        {
+          "text": "kept quiet about the: ds/ger}ship Mr. Wenyon, ¢ pilot of 30 the Dak Ridge atomic bomb plent, ce id they had no con-| 2-| yea#s' experience, saw ahother \"jar.",
+          "page": 8
+        }
+      ]
     }
   ],
-  "document_type": "historical_file",
+  "document_type": "investigation",
   "legacy_program_connections": [
     {
       "node_id": "blue_book",
       "relevance": "high",
-      "reasoning": "The case file spans 1947–1968, directly overlapping with Project Blue Book's operational period, and FBI HQ files routinely cross-referenced Air Force UFO investigation records during this era."
+      "reasoning": "These 1947 FBI memos document the pre-Blue Book investigative phase when the Army Air Forces (A-2 intelligence) and FBI were jointly handling flying disc reports, directly feeding the institutional record that Blue Book would later formalize."
     },
     {
-      "node_id": "lanl_ornl_battelle",
-      "relevance": "high",
-      "reasoning": "The official description explicitly references photographic evidence collected at Oak Ridge, TN — a DOE/AEC nuclear site — placing this file in direct connection with nuclear-facility UAP surveillance."
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "The coordinating Army Air Force units (Fourth Air Force A-2 at Hamilton Field, California) operated within the same Army Air Forces command structure centered at Wright-Patterson that would later host Project Sign and Blue Book."
     },
     {
       "node_id": "doe_aec",
       "relevance": "medium",
-      "reasoning": "Oak Ridge, TN was an AEC facility, and FBI monitoring of UAP near nuclear installations in this period was conducted partly at AEC's request for security purposes."
-    },
-    {
-      "node_id": "wright_patterson",
-      "relevance": "low",
-      "reasoning": "FBI HQ UFO files from this period occasionally referenced Air Materiel Command and Wright-Patterson as the military repository for physical evidence and case coordination."
+      "reasoning": "Newspaper clippings in the file explicitly reference the Oak Ridge atomic bomb plant in proximity to saucer sightings, foreshadowing the documented pattern of disc reports clustering around nuclear facilities that would later concern AEC security officers."
     }
   ],
   "related_topics": [
-    "FBI flying disc investigations",
-    "Oak Ridge nuclear facility",
-    "1947-1968 UFO case file",
-    "NND 90986 declassification",
-    "scanned image extraction failure"
+    "eyewitness testimony",
+    "FBI jurisdiction 1947",
+    "Army Air Forces coordination",
+    "early flying disc wave",
+    "Oak Ridge nuclear facility"
   ]
 }

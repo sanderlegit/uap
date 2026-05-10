@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { useReport } from '../hooks/useData'
 
 const tabs = [
@@ -219,7 +220,7 @@ export default function Analysis() {
           <>
             <TOC headings={headings} />
             <div className="min-w-0">
-              <ReactMarkdown components={mdComponents}>
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>
                 {content}
               </ReactMarkdown>
             </div>
