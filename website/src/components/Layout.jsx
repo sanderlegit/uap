@@ -212,9 +212,16 @@ export default function Layout() {
               Analysis
             </NavLink>
           </nav>
-          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2 text-slate-400">
-            {menuOpen ? '✕' : '☰'}
-          </button>
+          <div className="md:hidden flex items-center gap-1">
+            <NavLink to="/" end className={({isActive}) => `p-2 ${isActive ? 'text-amber-400' : 'text-slate-400'}`}>
+              <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
+            </NavLink>
+            <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 text-slate-400 cursor-pointer">
+              {menuOpen ? '✕' : '☰'}
+            </button>
+          </div>
         </div>
         {menuOpen && (
           <nav className="md:hidden border-t border-slate-800 bg-slate-900 px-4 pb-3 pt-2 flex flex-col gap-1">
@@ -257,31 +264,34 @@ export default function Layout() {
         <Outlet />
       </main>
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 safe-area-pb">
-        <div className="flex justify-around items-center h-14 px-2">
-          <NavLink to="/" end
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-3 py-2 min-w-[44px] ${isActive ? 'text-amber-400' : 'text-slate-500'}`}>
-            <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-            </svg>
-            <span className="text-[10px]">Home</span>
-          </NavLink>
+        <div className="flex justify-around items-center h-14 px-1">
           <NavLink to="/theories"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-3 py-2 min-w-[44px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
             <span className="text-base">◈</span>
             <span className="text-[10px]">Briefing</span>
           </NavLink>
           <NavLink to="/documents"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-3 py-2 min-w-[44px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
             <span className="text-base">◫</span>
             <span className="text-[10px]">Docs</span>
           </NavLink>
+          <NavLink to="/graph"
+            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+            <span className="text-base">◈</span>
+            <span className="text-[10px]">Graph</span>
+          </NavLink>
           <NavLink to="/map"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-3 py-2 min-w-[44px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
             <span className="text-base">◎</span>
             <span className="text-[10px]">Map</span>
           </NavLink>
+          <NavLink to="/timeline"
+            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+            <span className="text-base">━</span>
+            <span className="text-[10px]">Timeline</span>
+          </NavLink>
           <NavLink to="/search"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-3 py-2 min-w-[44px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
             <span className="text-base">⌕</span>
             <span className="text-[10px]">Search</span>
           </NavLink>
