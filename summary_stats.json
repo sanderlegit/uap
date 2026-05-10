@@ -1,0 +1,74 @@
+{
+  "total_files": 145,
+  "by_agency": {
+    "Department of War": 67,
+    "FBI": 57,
+    "NASA": 14,
+    "Department of State": 7
+  },
+  "by_type": {
+    "PDF": 131,
+    "IMG": 14
+  },
+  "by_decade": {
+    "2020s": 84,
+    "Unknown": 30,
+    "1990s": 2,
+    "2000s": 4,
+    "2010s": 1,
+    "1960s": 9,
+    "1970s": 5,
+    "1940s": 4,
+    "1950s": 5,
+    "1980s": 1
+  },
+  "by_location": {
+    "Iraq": 8,
+    "Syria": 13,
+    "Persian Gulf": 9,
+    "Mediterranean Sea": 4,
+    "Gulf of Oman": 1,
+    "Aegean Sea": 4,
+    "Arabian Gulf": 1,
+    "Arabian Sea": 2,
+    "Pacific Time Zone": 1,
+    "Gulf of Aden": 2,
+    "Pacific Ocean": 1,
+    "Strait of Hormuz": 2,
+    "Iran": 1,
+    "Moon": 8,
+    "Georgia": 1,
+    "Turkmenistan": 1,
+    "Mexico": 1,
+    "United States": 5,
+    "Low Earth Orbit": 1,
+    "Germany": 2,
+    "Netherlands": 1,
+    "Azerbaijan": 1,
+    "Detroit, MI": 1,
+    "Papua New Guinea": 1,
+    "Kazakhstan": 1,
+    "Western United States": 25
+  },
+  "redaction_count": 93,
+  "total_pages": 4170,
+  "total_text_chars": 1135284,
+  "sensor_types": {
+    "radar": 43,
+    "infrared": 39,
+    "photographic": 32,
+    "video": 27,
+    "electro-optical": 6,
+    "visual": 5,
+    "satellite": 3,
+    "acoustic": 1
+  },
+  "witness_types": {
+    "instrument_only": 38,
+    "military_other": 8,
+    "military_pilot": 24,
+    "scientist": 5,
+    "civilian": 6,
+    "law_enforcement": 3
+  }
+}

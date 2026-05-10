@@ -1,0 +1,273 @@
+# DATA_MANIFEST.yaml — Single source of truth for all data products.
+#
+# Every JSON file the frontend consumes is listed here with its lineage:
+#   source:      script or "manual" if hand-curated
+#   depends_on:  upstream files that must exist / be fresh first
+#   type:        generated | curated | versioned
+#   outputs:     files this step produces (defaults to the key itself)
+#   schedule:    how/when this runs (if automated)
+#   stale_days:  warn if curated file is older than this many days
+#
+# Run `python check_data.py` to validate everything is present and fresh.
+# Run `make all` to rebuild generated products in dependency order.
+
+products:
+
+  # ─── Layer 0: Source databases ──────────────────────────────────────
+
+  incidents_v2.db:
+    source: manual
+    type: curated
+    description: Core corpus of 129 declassified UAP documents
+    stale_days: 90
+
+  summary_stats_v2.json:
+    source: manual
+    type: curated
+    description: Pre-computed summary statistics
+    stale_days: 90
+
+  ufo-files/manifest.json:
+    source: manual
+    type: curated
+    description: Source URLs and metadata for each document
+
+  # ─── Layer 1: Core export (incidents_v2.db → JSON) ─────────────────
+
+  documents.json:
+    source: export_data.py
+    depends_on: [incidents_v2.db, ufo-files/manifest.json]
+    type: generated
+    description: Lightweight index of all 129 documents
+
+  doc_N.json:
+    source: export_data.py
+    depends_on: [incidents_v2.db, ufo-files/corpus/]
+    type: generated
+    description: Per-document detail with full text (doc_0.json through doc_128.json)
+    outputs: doc_0.json through doc_128.json
+
+  graph.json:
+    source: export_data.py
+    depends_on: [incidents_v2.db]
+    type: generated
+    description: Network nodes and edges for document graph
+
+  stats.json:
+    source: export_data.py
+    depends_on: [summary_stats_v2.json]
+    type: generated
+    description: Summary statistics for dashboard counters
+
+  manifest.json:
+    source: export_data.py
+    depends_on: [ufo-files/manifest.json]
+    type: generated
+    description: Document source URLs and metadata (frontend copy)
+
+  search_index.json:
+    source: export_data.py
+    depends_on: [incidents_v2.db, ufo-files/corpus/]
+    type: generated
+    description: First 10K chars per document for FlexSearch
+
+  # ─── Layer 1: Deep-dive reports (markdown → JSON) ──────────────────
+
+  report.json:
+    source: export_data.py
+    depends_on: [analysis_report_v2.md]
+    type: generated
+    description: General analysis report
+
+  fbi.json:
+    source: export_data.py
+    depends_on: [fbi_deep_dive.md]
+    type: generated
+    description: FBI involvement deep-dive
+
+  apollo.json:
+    source: export_data.py
+    depends_on: [apollo_deep_dive.md]
+    type: generated
+    description: Apollo astronaut sightings report
+
+  redactions.json:
+    source: export_data.py
+    depends_on: [redaction_analysis.md]
+    type: generated
+    description: Redaction pattern analysis
+
+  high_interest.json:
+    source: export_data.py
+    depends_on: [high_interest_cases.md]
+    type: generated
+    description: High-interest case analysis
+
+  # ─── Layer 2: Derived from documents.json ──────────────────────────
+
+  entities.json:
+    source: build_entities.py
+    depends_on: [documents.json]
+    type: generated
+    description: Cross-referenced entities appearing in 2+ documents
+
+  thumbnails/:
+    source: build_thumbnails.py
+    depends_on: [documents.json, ufo-files/pdfs/, ufo-files/images/]
+    type: generated
+    description: Thumbnail/cover/micro images + manifest.json
+    outputs: thumbnails/manifest.json, thumbnails/*_thumb.jpg, thumbnails/*_cover.jpg, thumbnails/*_micro.webp
+
+  pages/:
+    source: build_page_images.py
+    depends_on: [documents.json, ufo-files/pdfs/]
+    type: generated
+    description: Page-level JPEG images for inline reader
+    outputs: pages/manifest.json, pages/*_p*.jpg
+
+  legacy_web.json:
+    source: build_legacy_web.py
+    depends_on: [documents.json, doc_N.json]
+    type: versioned
+    description: Legacy program connection scoring
+    version_key: legacy_web
+    active_version: v1
+
+  # ─── Layer 2: Annotation (requires Claude API) ─────────────────────
+
+  doc_narratives.json:
+    source: annotate_documents.py
+    depends_on: [documents.json]
+    type: versioned
+    description: Grounded key findings per document (via Claude)
+    version_key: narratives
+    active_version: v2
+    note: Costs ~$0.50 for full corpus via Claude Haiku
+
+  ocr_quality.json:
+    source: analyze_ocr_quality.py
+    depends_on: [documents.json, pages/]
+    type: generated
+    description: Per-page OCR quality classification (via Claude vision)
+    note: Costs ~$2.00 for full corpus via Claude Haiku
+
+  # ─── Layer 3: Pulse pipeline (real-time) ───────────────────────────
+
+  pulse.json:
+    source: python -m pulse export
+    depends_on: [pulse.db, entities.json, documents.json]
+    type: generated
+    description: Real-time UAP content feed with trending topics
+    schedule: hourly via "python -m pulse serve"
+
+  pulse.db:
+    source: python -m pulse collect
+    depends_on: []
+    type: generated
+    description: SQLite database of collected news/social content
+    schedule: every 6h via "python -m pulse serve"
+
+  # ─── Manually curated data (no generation script) ──────────────────
+
+  theories.json:
+    source: manual
+    type: curated
+    description: UAP theories, key researchers, community sources
+    stale_days: 30
+    last_known_update: 2026-05-08
+
+  cases.json:
+    source: manual
+    type: curated
+    description: Notable UAP cases with categories and evidence
+    stale_days: 30
+    last_known_update: 2026-05-08
+
+  international.json:
+    source: manual
+    type: curated
+    description: Global UAP programs by country
+    stale_days: 60
+    last_known_update: 2026-05-08
+
+  disclosure_index.json:
+    source: manual
+    type: curated
+    description: Disclosure progress scoring and dimensions
+    stale_days: 60
+    last_known_update: 2026-05-08
+
+  vocabulary.json:
+    source: manual
+    type: curated
+    description: UAP/UFO terminology with loading scale
+    stale_days: 60
+    last_known_update: 2026-05-10
+
+  doc_vocab_scores.json:
+    source: manual
+    type: curated
+    description: Per-document vocabulary term usage scores
+    stale_days: 60
+    last_known_update: 2026-05-10
+
+  research.json:
+    source: manual
+    type: curated
+    description: Research context and resources
+    stale_days: 60
+    last_known_update: 2026-05-08
+
+  investigations.json:
+    source: manual
+    type: curated
+    description: Featured investigation pathways for dashboard
+    stale_days: 30
+    last_known_update: 2026-05-09
+
+  legacy_program.json:
+    source: manual
+    type: curated
+    description: Legacy UAP program data
+    stale_days: 60
+    last_known_update: 2026-05-11
+
+  # ─── Versioned variants (not consumed directly by frontend) ────────
+
+  doc_narratives_v1.json:
+    source: annotate_documents_v1.py
+    type: versioned
+    description: Plain-text narratives (legacy, v1)
+
+  doc_narratives_v2.json:
+    source: annotate_documents.py
+    type: versioned
+    description: Quote-grounded narratives (v2)
+
+  legacy_web_v1.json:
+    source: build_legacy_web_v1.py
+    type: versioned
+    description: Legacy web keyword-frequency scoring (v1)
+
+
+# ─── Frontend page → data file mapping ────────────────────────────────
+#
+# This section documents which pages break if a file is missing.
+# Not used by the Makefile — purely for human reference.
+
+pages:
+  Dashboard:       [stats.json, documents.json, investigations.json]
+  Documents:       [documents.json, doc_narratives.json, thumbnails/]
+  DocumentDetail:  [doc_N.json, documents.json, manifest.json, graph.json, research.json, vocabulary.json, doc_vocab_scores.json, doc_narratives.json, legacy_web.json, pages/]
+  Search:          [search_index.json, doc_narratives.json]
+  Analysis:        [report.json, fbi.json, apollo.json, redactions.json, high_interest.json]
+  Cases:           [cases.json]
+  Timeline:        [documents.json]
+  Entities:        [entities.json, documents.json]
+  Theories:        [theories.json]
+  MapView:         [documents.json]
+  DisclosureIndex: [disclosure_index.json]
+  International:   [international.json]
+  Vocabulary:      [vocabulary.json, documents.json]
+  Pulse:           [pulse.json]
+  LegacyWeb:       [legacy_web.json, graph.json, doc_narratives.json]

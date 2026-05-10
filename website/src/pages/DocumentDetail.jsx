@@ -175,6 +175,7 @@ export default function DocumentDetail() {
   const [activeQuote, setActiveQuote] = useState(null)
   const [mobileTab, setMobileTab] = useState('analysis')
   const pageReaderRef = useRef(null)
+  const docTopRef = useRef(null)
 
   const { addToTrail } = useExplorationTrail()
   const { markRead, isStarred, toggleStar, isSuggested } = useDocPrefs()
@@ -201,7 +202,11 @@ export default function DocumentDetail() {
   }, [doc, numId, addToTrail])
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    if (docTopRef.current) {
+      docTopRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      window.scrollTo(0, 0)
+    }
   }, [numId])
 
   useEffect(() => {
@@ -285,7 +290,7 @@ export default function DocumentDetail() {
 
   const handleQuoteClick = useCallback(({ quote, page }) => {
     setMobileTab('document')
-    setActiveQuote({ quote, page })
+    setActiveQuote({ quote, page, category: 'quote' })
     setTimeout(() => {
       if (pageReaderRef.current) {
         pageReaderRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -293,19 +298,19 @@ export default function DocumentDetail() {
     }, 50)
   }, [])
 
-  const handleBadgeClick = useCallback((term) => {
+  const handleBadgeClick = useCallback((term, category) => {
     setMobileTab('document')
     const fullText = doc?.full_text || ''
     const found = findBestSearchTerm(term, fullText)
     if (found) {
-      setActiveQuote({ searchTerm: found })
+      setActiveQuote({ searchTerm: found, category })
     } else {
       const fallback = term
         .replace(/[/_-]/g, ' ')
         .split(/\s+/)
         .filter(w => w.length > 2)
         .sort((a, b) => b.length - a.length)[0] || term
-      setActiveQuote({ searchTerm: fallback })
+      setActiveQuote({ searchTerm: fallback, category })
     }
     setTimeout(() => {
       if (pageReaderRef.current) {
@@ -363,7 +368,7 @@ export default function DocumentDetail() {
                   {doc.sensors.map((s, i) => {
                     const match = findBestSearchTerm(s.sensor_type, doc.full_text)
                     return (
-                      <button key={i} onClick={() => handleBadgeClick(s.sensor_type)} className="cursor-pointer hover:brightness-125 transition-all"
+                      <button key={i} onClick={() => handleBadgeClick(s.sensor_type, 'sensor')} className="cursor-pointer hover:brightness-125 transition-all"
                         title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[s.sensor_type] || s.sensor_type).replace(/\|/g, ', ')}`}>
                         <Badge color="#3b82f6">
                           {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}{!match && ' *'}
@@ -381,7 +386,7 @@ export default function DocumentDetail() {
                   {doc.behaviors.map((b, i) => {
                     const match = findBestSearchTerm(b, doc.full_text)
                     return (
-                      <button key={i} onClick={() => handleBadgeClick(b)} className="cursor-pointer hover:brightness-125 transition-all"
+                      <button key={i} onClick={() => handleBadgeClick(b, 'behavior')} className="cursor-pointer hover:brightness-125 transition-all"
                         title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[b] || b).replace(/\|/g, ', ')}`}>
                         <Badge color="#f59e0b">{b.replace(/_/g, ' ')}{!match && ' *'}</Badge>
                       </button>
@@ -397,7 +402,7 @@ export default function DocumentDetail() {
                   {doc.shapes.map((s, i) => {
                     const match = findBestSearchTerm(s.shape, doc.full_text)
                     return (
-                      <button key={i} onClick={() => handleBadgeClick(s.shape)} className="cursor-pointer hover:brightness-125 transition-all"
+                      <button key={i} onClick={() => handleBadgeClick(s.shape, 'shape')} className="cursor-pointer hover:brightness-125 transition-all"
                         title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[s.shape] || s.shape).replace(/\|/g, ', ')}`}>
                         <Badge color="#8b5cf6">
                           {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}{!match && ' *'}
@@ -413,7 +418,7 @@ export default function DocumentDetail() {
                 <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-emerald-400/70 mb-1.5">Witnesses</div>
                 <div className="flex flex-wrap gap-1.5">
                   {doc.witnesses.map((w, i) => (
-                    <button key={i} onClick={() => handleBadgeClick(w)} className="cursor-pointer hover:brightness-125 transition-all"
+                    <button key={i} onClick={() => handleBadgeClick(w, 'witness')} className="cursor-pointer hover:brightness-125 transition-all"
                       title={`Click to find "${w}" in text`}>
                       <Badge color="#10b981">{w}</Badge>
                     </button>
@@ -519,7 +524,7 @@ export default function DocumentDetail() {
               return (
                 <button
                   key={t.term}
-                  onClick={() => handleBadgeClick(t.term)}
+                  onClick={() => handleBadgeClick(t.term, 'vocab')}
                   className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded text-[11px] font-medium cursor-pointer hover:brightness-125 transition-all"
                   style={{ backgroundColor: `${c}15`, color: c }}
                   title={`${t.term} [${labels[t.loading]}] — ${t.definition || t.category}\n${t.count} occurrence${t.count !== 1 ? 's' : ''} in this document`}
@@ -669,6 +674,7 @@ export default function DocumentDetail() {
           activeQuote={activeQuote}
           onClearQuote={() => setActiveQuote(null)}
           vocabTerms={docVocabTerms}
+          findings={narrative?.key_findings}
         />
       )}
     </div>
@@ -677,7 +683,7 @@ export default function DocumentDetail() {
   return (
     <div className="pb-20">
       {/* ── Shared header ─────────────────────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 py-6">
+      <div ref={docTopRef} className="max-w-7xl mx-auto px-4 py-6">
         {fromGraph && (
           <Link
             to={`/graph${graphNodeId ? `?node=${graphNodeId}` : ''}`}

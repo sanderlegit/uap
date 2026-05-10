@@ -3,30 +3,11 @@ ufo-files/pdfs/
 ufo-files/videos/
 ufo-files/images/
 
-# Large corpus JSON (5MB, regenerable from PDFs)
-ufo-files/corpus.json
-
-# v1 outputs (superseded by v2)
-analysis_report.md
-incidents.db
-timeline.html
-map.html
-cross_reference_graph.html
-summary_stats.json
-
-# Failed/unused scripts from Round 1
-scrape_war_gov.py
-fetch_page.py
-fetch_stealth.py
-parse_and_download.py
-download_server.py
-
 # Python
 __pycache__/
 *.pyc
 
-# Generated media assets (regenerable from source PDFs)
-website/public/data/thumbnails/
+# Generated page images (487MB, regenerable from PDFs via build_page_images.py)
 website/public/data/pages/
 website/public/data/pdfs/
 
@@ -40,15 +21,11 @@ website/dist/
 server/node_modules/
 server/dist/
 
-# Root-level tooling (Playwright audit scripts)
-/audit/
-/package.json
-/package-lock.json
-
-# Pulse runtime data (regenerable)
-pulse.db
+# Pulse WAL files (transient SQLite state)
 pulse.db-shm
 pulse.db-wal
+
+# Regenerable caches
 data/pulse_lsh.pkl
 uap_documents.db
 
