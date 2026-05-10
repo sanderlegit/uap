@@ -13,10 +13,27 @@ const AGENCIES = [
 const DECADES = ['1940s', '1950s', '1960s', '1970s', '1980s', '2020s']
 
 const EDGE_TYPE_STYLES = {
-  content_similarity: { color: '#60a5fa', style: 'solid', label: 'Content' },
+  content_similarity: { color: '#60a5fa', style: 'solid', label: 'Content Similarity' },
   same_case: { color: '#a78bfa', style: 'dashed', label: 'Same Case' },
-  media_pairing: { color: '#34d399', style: 'dotted', label: 'Media' },
+  same_series: { color: '#a78bfa', style: 'dashed', label: 'Same Case' },
+  related_investigation: { color: '#a78bfa', style: 'dashed', label: 'Same Case' },
+  same_agency_release: { color: '#94a3b8', style: 'dotted', label: 'Same Collection' },
+  same_agency: { color: '#94a3b8', style: 'dotted', label: 'Same Collection' },
+  same_document_type: { color: '#94a3b8', style: 'dotted', label: 'Same Collection' },
+  same_era: { color: '#fbbf24', style: 'dashed', label: 'Same Era' },
+  same_mission: { color: '#34d399', style: 'solid', label: 'Same Mission' },
+  same_program: { color: '#34d399', style: 'solid', label: 'Same Mission' },
+  visual_evidence: { color: '#34d399', style: 'solid', label: 'Same Mission' },
+  media_pairing: { color: '#34d399', style: 'solid', label: 'Same Mission' },
 }
+
+const EDGE_LEGEND = [
+  { color: '#60a5fa', label: 'Content Similarity' },
+  { color: '#a78bfa', label: 'Same Case' },
+  { color: '#94a3b8', label: 'Same Collection' },
+  { color: '#fbbf24', label: 'Same Era' },
+  { color: '#34d399', label: 'Same Mission' },
+]
 
 function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc, onSelectOrg }) {
   if (!node) return null
@@ -347,27 +364,46 @@ export default function LegacyWeb() {
               'line-color': '#60a5fa',
               'width': 'mapData(weight, 0, 1, 0.5, 2.5)',
               'curve-style': 'bezier',
-              'opacity': 0.2,
+              'opacity': 0.25,
             },
           },
           {
-            selector: 'edge[edgeType="same_case"]',
+            selector: 'edge[edgeType="same_case"], edge[edgeType="same_series"], edge[edgeType="related_investigation"]',
             style: {
               'line-color': '#a78bfa',
               'width': 'mapData(weight, 0, 1, 0.5, 2.5)',
               'curve-style': 'bezier',
-              'opacity': 0.25,
+              'opacity': 0.3,
               'line-style': 'dashed',
             },
           },
           {
-            selector: 'edge[edgeType="media_pairing"]',
+            selector: 'edge[edgeType="same_agency_release"], edge[edgeType="same_agency"], edge[edgeType="same_document_type"]',
+            style: {
+              'line-color': '#94a3b8',
+              'width': 'mapData(weight, 0, 1, 0.3, 1.5)',
+              'curve-style': 'bezier',
+              'opacity': 0.15,
+              'line-style': 'dotted',
+            },
+          },
+          {
+            selector: 'edge[edgeType="same_era"]',
+            style: {
+              'line-color': '#fbbf24',
+              'width': 'mapData(weight, 0, 1, 0.3, 1.5)',
+              'curve-style': 'bezier',
+              'opacity': 0.2,
+              'line-style': 'dashed',
+            },
+          },
+          {
+            selector: 'edge[edgeType="same_mission"], edge[edgeType="same_program"], edge[edgeType="visual_evidence"], edge[edgeType="media_pairing"]',
             style: {
               'line-color': '#34d399',
-              'width': 1.5,
+              'width': 'mapData(weight, 0, 1, 0.8, 2.5)',
               'curve-style': 'bezier',
-              'opacity': 0.3,
-              'line-style': 'dotted',
+              'opacity': 0.35,
             },
           },
           {
@@ -786,8 +822,8 @@ export default function LegacyWeb() {
         {/* Edge legend */}
         <div className="absolute left-3 bottom-4 z-10 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-3 py-2">
           <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1.5">Edge Types</p>
-          {Object.entries(EDGE_TYPE_STYLES).map(([type, cfg]) => (
-            <div key={type} className="flex items-center gap-2 py-0.5">
+          {EDGE_LEGEND.map(cfg => (
+            <div key={cfg.label} className="flex items-center gap-2 py-0.5">
               <span className="w-4 h-0.5 rounded" style={{ backgroundColor: cfg.color }} />
               <span className="text-[11px] text-slate-400">{cfg.label}</span>
             </div>
@@ -951,8 +987,8 @@ export default function LegacyWeb() {
             <div>
               <label className="text-[10px] font-mono uppercase tracking-wider text-slate-500 block mb-2">Edge Types</label>
               <div className="flex flex-wrap gap-3">
-                {Object.entries(EDGE_TYPE_STYLES).map(([type, cfg]) => (
-                  <div key={type} className="flex items-center gap-2">
+                {EDGE_LEGEND.map(cfg => (
+                  <div key={cfg.label} className="flex items-center gap-2">
                     <span className="w-5 h-0.5 rounded" style={{ backgroundColor: cfg.color }} />
                     <span className="text-xs text-slate-400">{cfg.label}</span>
                   </div>
