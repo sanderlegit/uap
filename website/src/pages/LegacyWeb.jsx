@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { agencyColor, agencyClass, thumbUrl, microThumbUrl } from '../hooks/useData'
 import LegacyTree from '../components/LegacyTree'
+import useDocPrefs from '../hooks/useDocPrefs'
 
 const AGENCIES = [
   { key: 'Department of War', label: 'DoW', color: '#3b82f6' },
@@ -35,19 +36,42 @@ const EDGE_LEGEND = [
   { color: '#34d399', label: 'Same Mission' },
 ]
 
-function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc, onSelectOrg }) {
+function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc, onSelectOrg, isStarred, isRead, onToggleStar }) {
   if (!node) return null
 
   const color = agencyColor(node.agency)
   const narrative = narratives?.[String(node.doc_id)]
+  const starred = isStarred?.(node.doc_id)
+  const read = isRead?.(node.doc_id)
 
   return (
     <div className="absolute left-4 top-4 bottom-4 w-96 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-2xl z-30 flex flex-col overflow-hidden">
       <div className="flex items-center justify-between px-4 py-2 border-b border-slate-700/50">
-        <span className="text-[11px] font-mono tracking-[0.15em] uppercase" style={{ color }}>
-          {node.agency}
-        </span>
-        <button onClick={onClose} className="text-slate-500 hover:text-white w-10 h-10 flex items-center justify-center text-lg leading-none cursor-pointer shrink-0">&times;</button>
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="text-[11px] font-mono tracking-[0.15em] uppercase" style={{ color }}>
+            {node.agency}
+          </span>
+          {read && (
+            <span className="flex items-center gap-0.5 text-[10px] text-emerald-500/60">
+              <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+              Read
+            </span>
+          )}
+        </div>
+        <div className="flex items-center shrink-0">
+          <button
+            onClick={() => onToggleStar?.(node.doc_id)}
+            className="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-800/60 transition-colors cursor-pointer group/star"
+            title={starred ? 'Remove from starred' : 'Star this document'}
+          >
+            {starred ? (
+              <svg className="w-4 h-4 text-amber-400" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            ) : (
+              <svg className="w-4 h-4 text-slate-600 group-hover/star:text-amber-400/60 transition-colors" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            )}
+          </button>
+          <button onClick={onClose} className="text-slate-500 hover:text-white w-9 h-9 flex items-center justify-center text-lg leading-none cursor-pointer">&times;</button>
+        </div>
       </div>
       <div className="flex-1 overflow-y-auto p-4">
         <img
@@ -168,9 +192,12 @@ export default function LegacyWeb() {
   const cyRef = useRef(null)
   const [legacyData, setLegacyData] = useState(null)
   const [graphData, setGraphData] = useState(null)
+  const { isRead, isStarred, isSuggested, toggleStar, readIds, starredIds, suggestedIds } = useDocPrefs()
   const [narratives, setNarratives] = useState(null)
   const [selectedNode, setSelectedNode] = useState(null)
   const [hoveredDocId, setHoveredDocId] = useState(null)
+  const [edgeTooltip, setEdgeTooltip] = useState(null)
+  const [nodeTooltip, setNodeTooltip] = useState(null)
   const [loading, setLoading] = useState(true)
   const [mobileTab, setMobileTab] = useState('graph')
 
@@ -249,6 +276,21 @@ export default function LegacyWeb() {
     return result
   }, [selectedOrgs, selectedLayer, orgToDocIds, legacyData])
 
+  const docToOrgInfo = useMemo(() => {
+    if (!legacyData) return new Map()
+    const nodeMap = new Map(legacyData.nodes.map(n => [n.id, n]))
+    const map = new Map()
+    legacyData.edges.filter(e => e.type === 'document').forEach(e => {
+      const docId = parseInt(e.source.replace('doc_', ''), 10)
+      const org = nodeMap.get(e.target)
+      if (!org) return
+      if (!map.has(docId)) map.set(docId, [])
+      map.get(docId).push({ label: org.label, color: org.color, weight: e.weight })
+    })
+    for (const [, arr] of map) arr.sort((a, b) => b.weight - a.weight)
+    return map
+  }, [legacyData])
+
   const highlightedOrgs = useMemo(() => {
     const docId = hoveredDocId ?? selectedNode?.doc_id
     if (docId == null) return new Set()
@@ -300,6 +342,12 @@ export default function LegacyWeb() {
       if (cancelled) return
       const cytoscape = mod.default || mod
 
+      const hashStr = (s) => {
+        let h = 5381
+        for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0
+        return h >>> 0
+      }
+
       const elements = []
 
       const docNodes = legacyData.nodes.filter(n => n.type === 'document')
@@ -309,10 +357,14 @@ export default function LegacyWeb() {
         connectionCounts[e.target_id] = (connectionCounts[e.target_id] || 0) + 1
       })
 
+      const spread = Math.max(600, docNodes.length * 8)
       docNodes.forEach(n => {
         const conns = connectionCounts[n.doc_id] || 0
         const size = Math.max(20, Math.min(44, 20 + conns * 2.5))
         const shortLabel = (n.label || '').split(',')[0].replace(/^(DOW|FBI|NASA|DoS)-?(UAP-?)?/i, '').trim().slice(0, 28)
+        const h = hashStr(`doc_${n.doc_id}`)
+        const angle = (h % 6283) / 1000
+        const radius = (((h >>> 8) % 1000) / 1000) * spread * 0.5
         elements.push({
           group: 'nodes',
           data: {
@@ -329,6 +381,7 @@ export default function LegacyWeb() {
             pages: n.pages || 0,
             has_redaction: n.has_redaction || false,
           },
+          position: { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius },
         })
       })
 
@@ -451,6 +504,14 @@ export default function LegacyWeb() {
             },
           },
           {
+            selector: '.hovered-edge',
+            style: {
+              'opacity': 0.85,
+              'width': 3,
+              'z-index': 90,
+            },
+          },
+          {
             selector: '.dimmed',
             style: {
               'opacity': 0.08,
@@ -513,6 +574,32 @@ export default function LegacyWeb() {
               'text-wrap': 'ellipsis',
             },
           },
+          {
+            selector: '.starred-node',
+            style: {
+              'border-width': 3,
+              'border-color': '#fbbf24',
+              'border-opacity': 1,
+              'background-opacity': 0.9,
+              'z-index': 15,
+            },
+          },
+          {
+            selector: '.suggested-node',
+            style: {
+              'border-width': 2.5,
+              'border-color': '#f59e0b',
+              'border-opacity': 0.6,
+              'background-opacity': 0.9,
+              'z-index': 10,
+            },
+          },
+          {
+            selector: '.read-node',
+            style: {
+              'opacity': 0.5,
+            },
+          },
         ],
         layout: {
           name: 'cose',
@@ -525,7 +612,7 @@ export default function LegacyWeb() {
           animate: true,
           animationDuration: 1500,
           animationEasing: 'ease-out-cubic',
-          randomize: true,
+          randomize: false,
         },
         autoungrabify: true,
         minZoom: 0.15,
@@ -598,7 +685,19 @@ export default function LegacyWeb() {
         container.style.cursor = 'pointer'
         const node = evt.target
         node.addClass('show-label')
-        setHoveredDocId(node.data('docId'))
+        const docId = node.data('docId')
+        setHoveredDocId(docId)
+        const orgs = docToOrgInfo.get(docId)
+        if (orgs && orgs.length > 0) {
+          const pos = evt.renderedPosition || evt.position
+          setNodeTooltip({
+            x: pos.x,
+            y: pos.y,
+            label: node.data('fullLabel') || node.data('label'),
+            agency: node.data('agency'),
+            orgs: orgs.slice(0, 5),
+          })
+        }
       })
 
       cy.on('mouseout', 'node', (evt) => {
@@ -608,6 +707,39 @@ export default function LegacyWeb() {
           node.removeClass('show-label')
         }
         setHoveredDocId(null)
+        setNodeTooltip(null)
+      })
+
+      cy.on('mouseover', 'edge', (evt) => {
+        const edge = evt.target
+        edge.addClass('hovered-edge')
+        edge.source().addClass('show-label')
+        edge.target().addClass('show-label')
+        container.style.cursor = 'pointer'
+        const style = EDGE_TYPE_STYLES[edge.data('edgeType')] || {}
+        const pos = evt.renderedPosition || evt.position
+        setEdgeTooltip({
+          x: pos.x,
+          y: pos.y,
+          type: style.label || edge.data('edgeType'),
+          color: style.color || '#94a3b8',
+          weight: edge.data('weight'),
+          source: edge.source().data('fullLabel') || edge.source().data('label'),
+          target: edge.target().data('fullLabel') || edge.target().data('label'),
+        })
+      })
+
+      cy.on('mouseout', 'edge', (evt) => {
+        const edge = evt.target
+        edge.removeClass('hovered-edge')
+        if (!edge.source().hasClass('highlighted') && !edge.source().hasClass('zoom-label')) {
+          edge.source().removeClass('show-label')
+        }
+        if (!edge.target().hasClass('highlighted') && !edge.target().hasClass('zoom-label')) {
+          edge.target().removeClass('show-label')
+        }
+        container.style.cursor = 'default'
+        setEdgeTooltip(null)
       })
 
       cy.ready(() => {
@@ -720,6 +852,71 @@ export default function LegacyWeb() {
     })
   }, [search])
 
+  // Apply starred/read/suggested visual classes to graph nodes
+  useEffect(() => {
+    const cy = cyRef.current
+    if (!cy) return
+    cy.batch(() => {
+      cy.nodes().forEach(n => {
+        const docId = n.data('docId')
+        n.toggleClass('starred-node', starredIds.has(docId))
+        n.toggleClass('suggested-node', suggestedIds.has(docId) && !starredIds.has(docId))
+        n.toggleClass('read-node', readIds.has(docId) && !starredIds.has(docId) && !suggestedIds.has(docId))
+      })
+    })
+  }, [readIds, starredIds, suggestedIds])
+
+  // Auto-select node from URL param (e.g. ?node=doc_5)
+  const initialNodeHandled = useRef(false)
+  useEffect(() => {
+    const cy = cyRef.current
+    const nodeParam = searchParams.get('node')
+    if (!cy || !nodeParam || !legacyData || initialNodeHandled.current) return
+    initialNodeHandled.current = true
+
+    const trySelect = () => {
+      const cyNode = cy.getElementById(nodeParam)
+      if (!cyNode || cyNode.empty()) return
+      const docId = cyNode.data('docId')
+      const nodeData = legacyData.nodes.find(n => n.doc_id === docId)
+      if (!nodeData) return
+
+      cy.elements().removeClass('highlighted highlighted-edge dimmed show-label search-match search-dim')
+      const neighborhood = cyNode.neighborhood()
+      cy.elements().addClass('dimmed')
+      cyNode.removeClass('dimmed').addClass('highlighted show-label')
+      neighborhood.removeClass('dimmed')
+      neighborhood.edges().addClass('highlighted-edge')
+      neighborhood.nodes().addClass('show-label')
+
+      const connections = []
+      neighborhood.nodes().forEach(n => {
+        if (n.id() === cyNode.id()) return
+        const nDocId = n.data('docId')
+        const nData = legacyData.nodes.find(nd => nd.doc_id === nDocId)
+        const edge = cy.edges().filter(e =>
+          (e.data('source') === cyNode.id() && e.data('target') === n.id()) ||
+          (e.data('target') === cyNode.id() && e.data('source') === n.id())
+        )
+        const edgeData = edge.length > 0 ? edge[0].data() : null
+        if (nData) {
+          connections.push({
+            docId: nDocId,
+            label: nData.label,
+            color: agencyColor(nData.agency),
+            edgeType: edgeData?.edgeType,
+            weight: edgeData?.weight,
+          })
+        }
+      })
+
+      setSelectedNode({ ...nodeData, connections })
+      cy.animate({ center: { eles: cyNode }, zoom: Math.max(cy.zoom(), 1.5) }, { duration: 600 })
+    }
+
+    setTimeout(trySelect, 1800)
+  }, [legacyData, searchParams])
+
   const handleToggleOrg = useCallback((orgId) => {
     const next = new URLSearchParams(searchParamsRef.current)
     const updated = new Set(selectedOrgs)
@@ -791,7 +988,7 @@ export default function LegacyWeb() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-[calc(100dvh-7.5rem)]">
+      <div className="absolute inset-0 pb-16 md:pb-0 flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <div className="w-10 h-10 border-2 border-amber-500/30 border-t-amber-500 rounded-full animate-spin" />
           <p className="text-slate-500 text-sm font-mono tracking-wider">Mapping the network...</p>
@@ -802,14 +999,14 @@ export default function LegacyWeb() {
 
   if (!legacyData || !graphData) {
     return (
-      <div className="flex items-center justify-center h-[calc(100dvh-7.5rem)]">
+      <div className="absolute inset-0 pb-16 md:pb-0 flex items-center justify-center">
         <p className="text-slate-500">Failed to load data.</p>
       </div>
     )
   }
 
   return (
-    <div className="relative h-[calc(100dvh-7.5rem-3.5rem)] md:h-[calc(100dvh-7.5rem)] bg-slate-950 overflow-hidden flex flex-col md:flex-row">
+    <div className="absolute inset-0 pb-16 md:pb-0 bg-slate-950 overflow-hidden flex flex-col md:flex-row">
 
       {/* ═══ DESKTOP LAYOUT ═══ */}
 
@@ -880,6 +1077,21 @@ export default function LegacyWeb() {
             </div>
           ))}
           <div className="border-t border-slate-700/50 mt-1.5 pt-1.5">
+            <p className="text-[10px] uppercase tracking-wider text-slate-500 font-semibold mb-1">Nodes</p>
+            <div className="flex items-center gap-2 py-0.5">
+              <span className="w-3 h-3 rounded border-2 border-amber-400" />
+              <span className="text-[11px] text-slate-400">Starred</span>
+            </div>
+            <div className="flex items-center gap-2 py-0.5">
+              <span className="w-3 h-3 rounded border-2 border-amber-500/60" />
+              <span className="text-[11px] text-slate-400">Featured</span>
+            </div>
+            <div className="flex items-center gap-2 py-0.5">
+              <span className="w-3 h-3 rounded border-2 border-slate-600 opacity-50" />
+              <span className="text-[11px] text-slate-400">Read</span>
+            </div>
+          </div>
+          <div className="border-t border-slate-700/50 mt-1.5 pt-1.5">
             <div className="flex items-center gap-3 text-[11px]">
               <span className="text-slate-500">{graphData.nodes.length} docs</span>
               <span className="text-slate-600">&middot;</span>
@@ -910,7 +1122,51 @@ export default function LegacyWeb() {
           }}
           onSelectDoc={handleSelectDoc}
           onSelectOrg={handleToggleOrg}
+          isStarred={isStarred}
+          isRead={isRead}
+          onToggleStar={toggleStar}
         />
+
+        {/* Edge hover tooltip */}
+        {edgeTooltip && (
+          <div
+            className="absolute z-40 pointer-events-none bg-slate-900/95 backdrop-blur-md border border-slate-600/60 rounded-lg shadow-xl px-3 py-2.5 max-w-[280px]"
+            style={{ left: edgeTooltip.x + 12, top: edgeTooltip.y - 8, transform: 'translateY(-100%)' }}
+          >
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="w-5 h-0.5 rounded" style={{ backgroundColor: edgeTooltip.color }} />
+              <span className="text-[11px] font-semibold" style={{ color: edgeTooltip.color }}>{edgeTooltip.type}</span>
+              {edgeTooltip.weight != null && (
+                <span className="text-[10px] text-slate-500 font-mono ml-auto">{(edgeTooltip.weight * 100).toFixed(0)}%</span>
+              )}
+            </div>
+            <div className="text-[11px] text-slate-400 leading-relaxed">
+              <span className="text-slate-300">{edgeTooltip.source}</span>
+              <span className="text-slate-600 mx-1.5">&harr;</span>
+              <span className="text-slate-300">{edgeTooltip.target}</span>
+            </div>
+          </div>
+        )}
+
+        {/* Node hover tooltip — legacy program connections */}
+        {nodeTooltip && !selectedNode && (
+          <div
+            className="absolute z-40 pointer-events-none bg-slate-900/95 backdrop-blur-md border border-slate-600/60 rounded-lg shadow-xl px-3 py-2.5 max-w-[260px]"
+            style={{ left: nodeTooltip.x + 16, top: nodeTooltip.y - 8, transform: 'translateY(-100%)' }}
+          >
+            <div className="text-[11px] font-semibold text-slate-200 mb-1.5 leading-snug line-clamp-2">{nodeTooltip.label}</div>
+            <div className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-1">Legacy Program</div>
+            <div className="space-y-1">
+              {nodeTooltip.orgs.map((org, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: org.color }} />
+                  <span className="text-[11px] text-slate-300 flex-1 truncate">{org.label}</span>
+                  <span className="text-[10px] text-slate-600 font-mono">{(org.weight * 100).toFixed(0)}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Instructions */}
         {!selectedNode && (
@@ -1086,15 +1342,33 @@ export default function LegacyWeb() {
                   className="w-20 h-auto rounded bg-slate-800 shrink-0"
                   onError={(e) => { e.target.style.display = 'none' }}
                 />
-                <div className="min-w-0">
-                  <span className="text-[10px] font-mono tracking-[0.15em] uppercase block mb-1" style={{ color: agencyColor(selectedNode.agency) }}>
-                    {selectedNode.agency}
-                  </span>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] font-mono tracking-[0.15em] uppercase" style={{ color: agencyColor(selectedNode.agency) }}>
+                      {selectedNode.agency}
+                    </span>
+                    <button
+                      onClick={() => toggleStar(selectedNode.doc_id)}
+                      className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-slate-800/60 transition-colors cursor-pointer group/star"
+                    >
+                      {isStarred(selectedNode.doc_id) ? (
+                        <svg className="w-4 h-4 text-amber-400" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                      ) : (
+                        <svg className="w-4 h-4 text-slate-600 group-hover/star:text-amber-400/60 transition-colors" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                      )}
+                    </button>
+                  </div>
                   <h3 className="text-sm font-bold text-slate-100 leading-snug mb-1">{selectedNode.label}</h3>
                   <div className="flex flex-wrap gap-2 text-[11px] text-slate-500">
                     {selectedNode.decade && <span>{selectedNode.decade}</span>}
                     {selectedNode.pages > 0 && <span>{selectedNode.pages} pg</span>}
                     {selectedNode.has_redaction && <span className="text-red-400">Redacted</span>}
+                    {isRead(selectedNode.doc_id) && (
+                      <span className="flex items-center gap-0.5 text-emerald-500/60">
+                        <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                        Read
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -1178,12 +1452,42 @@ export default function LegacyWeb() {
               </div>
             </div>
           ) : (
-            <div className="flex flex-col items-center justify-center h-full text-center px-6">
-              <div className="w-12 h-12 rounded-full border-2 border-slate-700 flex items-center justify-center mb-3">
-                <span className="text-slate-600 text-lg">?</span>
+            <div className="flex flex-col h-full px-4 py-6">
+              <div className="text-center mb-6">
+                <div className="w-12 h-12 rounded-full border-2 border-slate-700 flex items-center justify-center mb-3 mx-auto">
+                  <span className="text-slate-600 text-lg">?</span>
+                </div>
+                <p className="text-sm text-slate-500 mb-1">No document selected</p>
+                <p className="text-xs text-slate-600">Tap a node on the Network tab, or start with one below.</p>
               </div>
-              <p className="text-sm text-slate-500 mb-1">No document selected</p>
-              <p className="text-xs text-slate-600">Tap a node on the Network tab to inspect it here.</p>
+              {legacyData && (
+                <div>
+                  <h4 className="text-[10px] font-mono tracking-wider uppercase text-amber-500/60 mb-3">Start Here</h4>
+                  <div className="space-y-2">
+                    {legacyData.nodes
+                      .filter(n => n.type === 'document' && suggestedIds.has(n.doc_id))
+                      .slice(0, 5)
+                      .map(n => (
+                        <button
+                          key={n.doc_id}
+                          onClick={() => { handleSelectDoc(n.doc_id); setMobileTab('graph') }}
+                          className="w-full text-left flex items-center gap-3 rounded-lg px-3 py-2.5 bg-slate-800/40 border border-slate-700/30 hover:border-amber-500/30 transition-colors cursor-pointer group"
+                        >
+                          <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: agencyColor(n.agency) }} />
+                          <div className="min-w-0 flex-1">
+                            <p className="text-xs text-slate-300 group-hover:text-slate-100 truncate">{n.label}</p>
+                            <p className="text-[10px] text-slate-600">{n.decade}{n.pages > 0 ? ` · ${n.pages} pg` : ''}</p>
+                          </div>
+                          {isRead(n.doc_id) ? (
+                            <svg className="w-3 h-3 text-emerald-500/50 shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                          ) : (
+                            <span className="text-[10px] text-amber-500/50 font-mono shrink-0">NEW</span>
+                          )}
+                        </button>
+                      ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

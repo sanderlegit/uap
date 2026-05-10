@@ -146,6 +146,7 @@ export default function Timeline() {
   }, [docs, selectedAgencies])
 
   const initialDecadeRef = useRef(searchParams.get('decade'))
+  const initialDocHandled = useRef(false)
   useEffect(() => {
     if (initialDecadeRef.current && grouped.length > 0) {
       const startYear = parseInt(initialDecadeRef.current)
@@ -157,6 +158,18 @@ export default function Timeline() {
       initialDecadeRef.current = null
     }
   }, [grouped])
+
+  useEffect(() => {
+    if (!selectedDoc || !grouped.length || initialDocHandled.current) return
+    if (initialDecadeRef.current) return
+    initialDocHandled.current = true
+    const date = selectedDoc.incident_date_parsed
+    if (!date) return
+    const year = new Date(date).getFullYear()
+    if (yearRefs.current[year]) {
+      yearRefs.current[year].scrollIntoView({ inline: 'start', block: 'nearest' })
+    }
+  }, [selectedDoc, grouped])
 
   if (!docs) return <Skeleton />
 

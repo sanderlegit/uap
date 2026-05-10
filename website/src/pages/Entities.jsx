@@ -108,7 +108,7 @@ function EntityCard({ entity, docs }) {
         <div className="border-t border-slate-700/50 px-4 pb-4 pt-3">
           <div className="flex flex-wrap gap-2 mb-3 text-xs">
             <Link
-              to={`/graph?search=${encodeURIComponent(entity.name)}`}
+              to={`/graph?q=${encodeURIComponent(entity.name)}`}
               className="px-3 py-1.5 rounded bg-slate-700/50 text-slate-400 hover:text-slate-200 hover:bg-slate-700 transition-colors"
             >
               View on Graph
@@ -136,7 +136,8 @@ function EntityCard({ entity, docs }) {
               {linkedDocs.map(doc => (
                 <Link
                   key={doc.id}
-                  to={`/documents/${doc.id}`}
+                  to={`/documents/${doc.id}?search=${encodeURIComponent(entity.name)}`}
+                  state={{ fromEntities: true, entityName: entity.name }}
                   className="flex items-center gap-2 py-1.5 px-2 -mx-2 rounded hover:bg-slate-700/30 transition-colors group"
                 >
                   <span

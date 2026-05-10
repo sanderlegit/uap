@@ -19,6 +19,7 @@ const Cases = lazy(() => import('./pages/Cases'))
 const International = lazy(() => import('./pages/International'))
 const Entities = lazy(() => import('./pages/Entities'))
 const Pulse = lazy(() => import('./pages/Pulse'))
+const Vocabulary = lazy(() => import('./pages/Vocabulary'))
 
 function Loading() {
   return (
@@ -50,6 +51,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path="entities" element={<Entities />} />
               <Route path="international" element={<International />} />
               <Route path="pulse" element={<Pulse />} />
+              <Route path="vocabulary" element={<Vocabulary />} />
             </Route>
           </Routes>
         </Suspense>

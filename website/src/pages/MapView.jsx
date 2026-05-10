@@ -127,7 +127,7 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter, docs }) {
                           {enc.docIds.map(docId => {
                             const d = docs?.find(x => x.id === docId)
                             return d ? (
-                              <Link key={docId} to={`/documents/${docId}`} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-purple-500/10 transition-colors group">
+                              <Link key={docId} to={`/documents/${docId}`} state={{ fromMap: true }} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-purple-500/10 transition-colors group">
                                 <img src={microThumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
                                 <span className="text-[10px] text-slate-400 group-hover:text-slate-200 line-clamp-1">{d.title}</span>
                               </Link>
@@ -173,7 +173,7 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter, docs }) {
                           {enc.docIds.map(docId => {
                             const d = docs?.find(x => x.id === docId)
                             return d ? (
-                              <Link key={docId} to={`/documents/${docId}`} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-cyan-500/10 transition-colors group">
+                              <Link key={docId} to={`/documents/${docId}`} state={{ fromMap: true }} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-cyan-500/10 transition-colors group">
                                 <img src={microThumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
                                 <span className="text-[10px] text-slate-400 group-hover:text-slate-200 line-clamp-1">{d.title}</span>
                               </Link>
@@ -251,6 +251,26 @@ function MapSync({ searchParams, setSearchParams, mapRef }) {
   return null
 }
 
+function FlyToDoc({ geolocated, docId, markerRefs }) {
+  const map = useMap()
+  const prevDocId = useRef(null)
+
+  useEffect(() => {
+    if (!docId || docId === prevDocId.current) return
+    prevDocId.current = docId
+    const doc = geolocated.find(d => String(d.id) === docId)
+    if (doc) {
+      map.flyTo([doc.latitude, doc.longitude], Math.max(map.getZoom(), 8), { duration: 1 })
+      setTimeout(() => {
+        const marker = markerRefs.current.get(String(doc.id))
+        if (marker) marker.openPopup()
+      }, 1100)
+    }
+  }, [map, geolocated, docId, markerRefs])
+
+  return null
+}
+
 export default function MapView() {
   const docs = useDocuments()
   const [searchParams, setSearchParams] = useSearchParams()
@@ -258,6 +278,7 @@ export default function MapView() {
   const [mobileSpaceOpen, setMobileSpaceOpen] = useState(false)
   const [docListOpen, setDocListOpen] = useState(false)
   const mapRef = useRef(null)
+  const markerRefs = useRef(new Map())
 
   const initialLat = parseFloat(searchParams.get('lat')) || 20
   const initialLng = parseFloat(searchParams.get('lng')) || 0
@@ -268,6 +289,19 @@ export default function MapView() {
     if (!docs) return []
     return docs.filter(d => d.latitude != null && d.longitude != null)
   }, [docs])
+
+  useEffect(() => {
+    if (!selectedDocId || !docs) return
+    const isGeolocated = geolocated.some(d => String(d.id) === selectedDocId)
+    if (isGeolocated) return
+    const idx = SPACE_ENCOUNTERS.findIndex(enc =>
+      enc.docIds.includes(Number(selectedDocId))
+    )
+    if (idx !== -1) {
+      setExpandedEncounter(idx)
+      setMobileSpaceOpen(true)
+    }
+  }, [selectedDocId, docs, geolocated])
 
   if (!docs) return <Spinner />
 
@@ -283,6 +317,7 @@ export default function MapView() {
           zoomControl={true}
         >
           <MapSync searchParams={searchParams} setSearchParams={setSearchParams} mapRef={mapRef} />
+          <FlyToDoc geolocated={geolocated} docId={selectedDocId} markerRefs={markerRefs} />
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
@@ -292,6 +327,10 @@ export default function MapView() {
             return (
               <CircleMarker
                 key={doc.id}
+                ref={el => {
+                  if (el) markerRefs.current.set(String(doc.id), el)
+                  else markerRefs.current.delete(String(doc.id))
+                }}
                 center={[doc.latitude, doc.longitude]}
                 radius={isSelected ? 12 : 8}
                 pathOptions={{
@@ -321,7 +360,7 @@ export default function MapView() {
                     </div>
                     {doc.incident_date_parsed && <p className="text-xs text-slate-400 mb-0.5">{formatDate(doc.incident_date_parsed)}</p>}
                     {doc.incident_location && <p className="text-xs text-slate-400 mb-2">{doc.incident_location}</p>}
-                    <Link to={`/documents/${doc.id}`} className="text-xs text-blue-400 hover:text-blue-300 font-medium">View Document &rarr;</Link>
+                    <Link to={`/documents/${doc.id}`} state={{ fromMap: true }} className="text-xs text-blue-400 hover:text-blue-300 font-medium">View Document &rarr;</Link>
                   </div>
                 </Popup>
               </CircleMarker>
@@ -343,7 +382,7 @@ export default function MapView() {
           <p className="text-[10px] text-slate-500 mt-2">{geolocated.length} of {docs.length} mapped</p>
           <div className="flex gap-2 mt-2 pt-2 border-t border-slate-700/40">
             <Link to={`/timeline${selectedDocId ? `?doc=${selectedDocId}` : ''}`} className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">Timeline</Link>
-            <Link to={`/graph${selectedDocId ? `?node=${selectedDocId}` : ''}`} className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">Graph</Link>
+            <Link to={`/graph${selectedDocId ? `?node=doc_${selectedDocId}` : ''}`} className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">Graph</Link>
             <Link to="/documents" className="text-[11px] text-indigo-400/70 hover:text-indigo-400 py-1">All Docs</Link>
           </div>
         </div>
@@ -397,6 +436,7 @@ export default function MapView() {
                     </div>
                     <Link
                       to={`/documents/${doc.id}`}
+                      state={{ fromMap: true }}
                       onClick={e => e.stopPropagation()}
                       className="text-[10px] text-indigo-400/70 hover:text-indigo-400 flex-shrink-0"
                     >

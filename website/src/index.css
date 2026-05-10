@@ -47,6 +47,7 @@ body { min-height: 100dvh; }
 .leaflet-popup-tip { background: #1e293b !important; }
 
 .doc-text { white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, monospace; font-size: 0.8rem; line-height: 1.5; }
+.search-active { outline: 2px solid #f59e0b; outline-offset: 1px; background-color: rgba(245, 158, 11, 0.4) !important; }
 .page-break { border-top: 2px dashed #475569; margin: 1.5rem 0; padding-top: 0.5rem; }
 .page-break::before { content: 'PAGE BREAK'; font-size: 0.65rem; color: #64748b; letter-spacing: 0.1em; }
 
@@ -101,3 +102,7 @@ body { min-height: 100dvh; }
   -ms-overflow-style: none;
 }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

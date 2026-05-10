@@ -85,30 +85,75 @@ function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate }) {
   )
 }
 
-function HighlightedText({ text, quote, searchTerm }) {
-  const base = <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">{text}</pre>
-  const term = quote || searchTerm
-  if (!term || !text) return base
+const VOCAB_COLORS = {
+  1: { bg: 'rgba(34,197,94,0.18)', text: '#86efac' },
+  2: { bg: 'rgba(234,179,8,0.18)', text: '#fde047' },
+  3: { bg: 'rgba(249,115,22,0.18)', text: '#fdba74' },
+  4: { bg: 'rgba(239,68,68,0.18)', text: '#fca5a5' },
+}
 
-  const escQ = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  const flexWs = escQ.replace(/\s+/g, '\\s+')
-  const pattern = new RegExp(flexWs, 'gi')
+const VOCAB_LABELS = { 1: 'Neutral', 2: 'Mildly loaded', 3: 'Loaded', 4: 'Shibboleth' }
+
+function HighlightedText({ text, quote, searchTerm, vocabTerms }) {
+  const base = <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">{text}</pre>
+  if (!text) return base
+
+  const searchActive = quote || searchTerm
+  const vocabActive = vocabTerms && vocabTerms.length > 0
+
+  if (!searchActive && !vocabActive) return base
+
+  const highlights = []
+
+  if (searchActive) {
+    const escQ = (quote || searchTerm).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    const flexWs = escQ.replace(/\s+/g, '\\s+')
+    const pattern = new RegExp(flexWs, 'gi')
+    let match
+    while ((match = pattern.exec(text)) !== null) {
+      highlights.push({ start: match.index, end: match.index + match[0].length, type: 'search' })
+      if (!searchTerm) break
+    }
+  }
+
+  if (vocabActive) {
+    const sorted = [...vocabTerms].sort((a, b) => b.term.length - a.term.length)
+    const escaped = sorted.map(t => t.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    const pattern = new RegExp('\\b(' + escaped.join('|') + ')\\b', 'gi')
+    const termMap = {}
+    sorted.forEach(t => { termMap[t.term.toLowerCase()] = t })
+    let match
+    while ((match = pattern.exec(text)) !== null) {
+      const info = termMap[match[0].toLowerCase()]
+      if (info) highlights.push({ start: match.index, end: match.index + match[0].length, type: 'vocab', info })
+    }
+  }
+
+  if (highlights.length === 0) return base
+
+  highlights.sort((a, b) => a.start - b.start || (a.type === 'search' ? -1 : 1))
 
   const parts = []
-  let lastIndex = 0
-  let match
-  while ((match = pattern.exec(text)) !== null) {
-    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index))
-    parts.push(<mark key={match.index} className="bg-amber-500/30 text-amber-100 rounded px-0.5">{match[0]}</mark>)
-    lastIndex = match.index + match[0].length
-    if (!searchTerm) break
+  let pos = 0
+  for (const h of highlights) {
+    if (h.start < pos) continue
+    if (h.start > pos) parts.push(text.slice(pos, h.start))
+    const matched = text.slice(h.start, h.end)
+    if (h.type === 'search') {
+      parts.push(<mark key={`s${h.start}`} className="bg-amber-500/30 text-amber-100 rounded px-0.5 search-highlight">{matched}</mark>)
+    } else {
+      const c = VOCAB_COLORS[h.info.loading] || VOCAB_COLORS[1]
+      parts.push(
+        <mark key={`v${h.start}`} className="rounded px-0.5 cursor-help" style={{ backgroundColor: c.bg, color: c.text }}
+          title={`${h.info.term} [${VOCAB_LABELS[h.info.loading]}] — ${h.info.definition?.slice(0, 120) || h.info.category}`}
+        >{matched}</mark>
+      )
+    }
+    pos = h.end
   }
-  if (parts.length === 0) return base
-  if (lastIndex < text.length) parts.push(text.slice(lastIndex))
+  if (pos < text.length) parts.push(text.slice(pos))
 
-  return (
-    <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">{parts}</pre>
-  )
+  return <pre className="doc-text text-slate-300 text-xs leading-relaxed whitespace-pre-wrap font-mono">{parts}</pre>
 }
 
 const VIEW_MODES = {
@@ -117,16 +162,30 @@ const VIEW_MODES = {
   text: { label: 'Text', title: 'Transcript only' },
 }
 
-export default function PageReader({ docId, pageCount, pages, redactedPages, originalUrl, activeQuote, onClearQuote }) {
+export default function PageReader({ docId, pageCount, pages, redactedPages, originalUrl, activeQuote, onClearQuote, vocabTerms }) {
   const [lightboxPage, setLightboxPage] = useState(null)
   const [currentPage, setCurrentPage] = useState(1)
   const [imageFailed, setImageFailed] = useState(new Set())
+  const hasVocab = vocabTerms && vocabTerms.length > 0
   const [viewMode, setViewMode] = useState('scan')
+  const [vocabHighlight, setVocabHighlight] = useState(false)
+  const [matchIdx, setMatchIdx] = useState(0)
+  const [matchCount, setMatchCount] = useState(0)
+  const vocabInitRef = useRef(false)
   const pageRefs = useRef({})
   const stickyRef = useRef(null)
+  const containerRef = useRef(null)
 
   const hasAnyText = pages?.some(p => p?.trim())
   const redactedSet = new Set(redactedPages || [])
+
+  useEffect(() => {
+    if (hasVocab && hasAnyText && !vocabInitRef.current) {
+      vocabInitRef.current = true
+      setVocabHighlight(true)
+      setViewMode('side')
+    }
+  }, [hasVocab, hasAnyText])
 
   useEffect(() => {
     const observers = []
@@ -165,53 +224,73 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
   }, [activeQuote, pages])
 
   useEffect(() => {
-    if (!activeQuote) return
-    if (hasAnyText) setViewMode('side')
-    const targetPage = activeQuote.page || matchPages[0]
-    if (targetPage) {
-      const el = pageRefs.current[targetPage]
-      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100)
+    if (!activeQuote) {
+      setMatchCount(0)
+      setMatchIdx(0)
+      return
     }
+    if (hasAnyText) {
+      setViewMode(v => v === 'scan' ? 'side' : v)
+    }
+    setTimeout(() => {
+      const marks = containerRef.current?.querySelectorAll('.search-highlight') || []
+      setMatchCount(marks.length)
+      setMatchIdx(0)
+      if (marks.length > 0) {
+        marks[0].classList.add('search-active')
+        marks[0].scrollIntoView({ behavior: 'smooth', block: 'center' })
+      } else {
+        const targetPage = activeQuote.page || matchPages[0]
+        if (targetPage) {
+          const el = pageRefs.current[targetPage]
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }
+    }, 150)
   }, [activeQuote, hasAnyText, matchPages])
+
+  const navigateMatch = useCallback((dir) => {
+    const marks = containerRef.current?.querySelectorAll('.search-highlight')
+    if (!marks || marks.length === 0) return
+    marks.forEach(m => m.classList.remove('search-active'))
+    const next = (matchIdx + dir + marks.length) % marks.length
+    setMatchIdx(next)
+    marks[next].classList.add('search-active')
+    marks[next].scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }, [matchIdx])
 
   const effectivePageCount = pageCount || pages?.length || 0
   if (effectivePageCount === 0) return null
 
   return (
-    <div className="mb-6">
-      {/* Highlight banner */}
+    <div ref={containerRef} className="mb-6">
+      {/* Search match nav bar */}
       {activeQuote && (
-        <div className="flex items-center justify-between gap-3 px-3 py-2 mb-2 bg-amber-500/10 border border-amber-500/20 rounded-lg">
-          <div className="flex items-center gap-2 min-w-0">
-            {activeQuote.searchTerm ? (
-              <>
-                <span className="text-xs text-amber-300 font-medium shrink-0">{activeQuote.searchTerm}</span>
-                {matchPages.length > 0 && (
-                  <span className="text-[10px] text-amber-500/60 shrink-0">
-                    {matchPages.length} page{matchPages.length !== 1 ? 's' : ''}
-                  </span>
-                )}
-                {matchPages.length > 1 && (
-                  <div className="flex items-center gap-1 shrink-0">
-                    {matchPages.map(p => (
-                      <button
-                        key={p}
-                        onClick={() => pageRefs.current[p]?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                        className="text-[10px] text-amber-500/50 hover:text-amber-400 cursor-pointer px-1 py-0.5 rounded hover:bg-amber-500/10"
-                      >
-                        p.{p}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </>
-            ) : (
-              <span className="text-xs text-amber-300 truncate italic">
-                &ldquo;{activeQuote.quote?.slice(0, 80)}{activeQuote.quote?.length > 80 ? '...' : ''}&rdquo;
+        <div className="sticky top-0 z-30 bg-amber-950/95 backdrop-blur-sm border-b border-amber-500/20 px-3 py-2 mb-2 flex items-center gap-3">
+          <span className="text-xs text-amber-300 font-medium shrink-0 truncate max-w-[200px]">
+            {activeQuote.searchTerm || (activeQuote.quote ? `"${activeQuote.quote.slice(0, 40)}${activeQuote.quote.length > 40 ? '...' : ''}"` : '')}
+          </span>
+          {matchCount > 0 && (
+            <>
+              <span className="text-[11px] text-amber-500/70 font-mono shrink-0">
+                {matchIdx + 1}/{matchCount}
               </span>
-            )}
-          </div>
-          <button onClick={onClearQuote} className="text-xs text-amber-500/60 hover:text-amber-400 shrink-0 cursor-pointer">dismiss</button>
+              <button
+                onClick={() => navigateMatch(-1)}
+                className="w-7 h-7 flex items-center justify-center rounded bg-amber-500/10 border border-amber-500/20 text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer text-sm"
+                title="Previous match"
+              >&uarr;</button>
+              <button
+                onClick={() => navigateMatch(1)}
+                className="w-7 h-7 flex items-center justify-center rounded bg-amber-500/10 border border-amber-500/20 text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer text-sm"
+                title="Next match"
+              >&darr;</button>
+            </>
+          )}
+          {matchCount === 0 && activeQuote.searchTerm && (
+            <span className="text-[11px] text-amber-500/50">no matches in text</span>
+          )}
+          <button onClick={onClearQuote} className="ml-auto text-xs text-amber-500/60 hover:text-amber-400 shrink-0 cursor-pointer">&times;</button>
         </div>
       )}
 
@@ -240,6 +319,22 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                 </button>
               ))}
             </div>
+          )}
+          {vocabTerms && vocabTerms.length > 0 && hasAnyText && (
+            <button
+              onClick={() => {
+                setVocabHighlight(v => !v)
+                if (viewMode === 'scan') setViewMode('side')
+              }}
+              title="Highlight loaded vocabulary terms"
+              className={`text-[11px] px-2.5 py-1 rounded border transition-colors cursor-pointer ${
+                vocabHighlight
+                  ? 'bg-teal-500/20 text-teal-300 border-teal-500/30'
+                  : 'text-slate-500 hover:text-slate-300 border-slate-700/50 hover:border-slate-600'
+              }`}
+            >
+              Vocab
+            </button>
           )}
           {originalUrl && (
             <a
@@ -319,6 +414,7 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                       text={pageText}
                       quote={activeQuote?.page === num ? activeQuote.quote : null}
                       searchTerm={activeQuote?.searchTerm || null}
+                      vocabTerms={vocabHighlight ? vocabTerms : null}
                     />
                   </div>
                 )}

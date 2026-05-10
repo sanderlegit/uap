@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { usePulse, formatDate } from '../hooks/useData'
 import InfoTooltip from '../components/InfoTooltip'
 
@@ -329,9 +329,11 @@ function FeedItem({ item }) {
               <span className="text-[10px] text-slate-500 uppercase tracking-wider">Entities</span>
               <div className="flex flex-wrap gap-1 mt-1">
                 {item.entities.map((e, i) => (
-                  <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700/40">
+                  <Link key={i} to={`/entities?q=${encodeURIComponent(e.name)}`}
+                    onClick={ev => ev.stopPropagation()}
+                    className="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700/40 hover:bg-slate-700/50 hover:text-slate-200 transition-colors">
                     {e.name} <span className="text-slate-500">({e.type})</span>
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -428,6 +430,7 @@ function FeedTab({ pulse, platformFilter, setPlatformFilter }) {
     let items = pulse.items || []
     if (platformFilter !== 'all') items = items.filter(i => i.platform === platformFilter)
     if (showAnalyzedOnly) items = items.filter(i => i.analyzed)
+    items = [...items].sort((a, b) => new Date(b.published_at || 0) - new Date(a.published_at || 0))
     return items
   }, [pulse, platformFilter, showAnalyzedOnly])
 
@@ -494,11 +497,12 @@ function TrendsTab({ pulse }) {
         ) : (
           <div className="space-y-1">
             {topics.slice(0, 25).map((t, i) => (
-              <div key={i} className="flex items-center gap-3 bg-slate-900 border border-slate-700/50 rounded-lg px-3 py-2">
+              <Link key={i} to={`/search?q=${encodeURIComponent(t.topic)}`}
+                className="flex items-center gap-3 bg-slate-900 border border-slate-700/50 rounded-lg px-3 py-2 hover:bg-slate-800/50 transition-colors">
                 <span className="text-xs text-slate-300 flex-1 min-w-0 truncate">{t.topic}</span>
                 <Sparkline data={t.sparkline} width={72} height={18} color="#818cf8" />
                 <span className="text-[10px] text-slate-500 tabular-nums w-6 text-right shrink-0">{t.count}</span>
-              </div>
+              </Link>
             ))}
           </div>
         )}
@@ -544,7 +548,7 @@ function EntitiesTab({ pulse }) {
           return (
             <div key={i} className="bg-slate-900 border border-slate-700/50 rounded-lg p-3">
               <div className="flex items-center gap-2 mb-1.5">
-                <span className="text-sm font-semibold text-slate-200 truncate">{ent.name}</span>
+                <Link to={`/entities?q=${encodeURIComponent(ent.name)}`} className="text-sm font-semibold text-slate-200 truncate hover:text-blue-300 transition-colors">{ent.name}</Link>
                 <span className={`text-[9px] px-1.5 py-0.5 rounded border ${typeClass} shrink-0`}>
                   {ent.type}
                 </span>
@@ -671,8 +675,24 @@ function SourcesTab({ pulse }) {
 
 export default function Pulse() {
   const pulse = usePulse()
-  const [activeTab, setActiveTab] = useState('feed')
-  const [platformFilter, setPlatformFilter] = useState('all')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const activeTab = searchParams.get('tab') || 'feed'
+  const platformFilter = searchParams.get('platform') || 'all'
+
+  const setActiveTab = (tab) => {
+    const next = new URLSearchParams(searchParams)
+    if (tab && tab !== 'feed') next.set('tab', tab)
+    else next.delete('tab')
+    next.delete('platform')
+    setSearchParams(next, { replace: true })
+  }
+
+  const setPlatformFilter = (platform) => {
+    const next = new URLSearchParams(searchParams)
+    if (platform && platform !== 'all') next.set('platform', platform)
+    else next.delete('platform')
+    setSearchParams(next, { replace: true })
+  }
 
   return (
     <div className="bg-slate-950 min-h-dvh pb-24">

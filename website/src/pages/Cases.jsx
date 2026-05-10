@@ -22,7 +22,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
   const color = CATEGORY_COLORS[c.category] || '#6b7280'
 
   return (
-    <div className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all">
+    <div id={`case-${c.id}`} className="bg-slate-900 border border-slate-700/50 rounded-lg overflow-hidden hover:border-slate-600/80 hover:translate-y-[-1px] hover:shadow-lg transition-all">
       <button
         onClick={onToggle}
         className="w-full text-left p-4 cursor-pointer hover:bg-slate-800/40 transition-colors"
@@ -92,6 +92,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
                   <Link
                     key={docId}
                     to={`/documents/${docId}`}
+                    state={{ fromCases: true, caseId: c.id, caseName: c.name }}
                     className="text-[11px] px-2.5 py-1.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:border-blue-500/30 transition-colors"
                   >
                     Doc #{docId} →
@@ -126,7 +127,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
           <div className="pt-2 border-t border-slate-800">
             <div className="flex flex-wrap gap-3">
               <Link
-                to={`/graph?search=${encodeURIComponent(c.name.split(/[\s:,]+/).find(w => w.length > 3 && !/^(the|and|over|from|with|near)$/i.test(w)) || c.name.split(/\s+/)[0])}`}
+                to={`/graph?q=${encodeURIComponent(c.name.split(/[\s:,]+/).find(w => w.length > 3 && !/^(the|and|over|from|with|near)$/i.test(w)) || c.name.split(/\s+/)[0])}`}
                 className="text-blue-400 hover:text-blue-300 text-sm"
               >
                 View on Graph →
@@ -138,7 +139,7 @@ function CaseCard({ c, categories, isExpanded, onToggle }) {
                 View on Timeline →
               </Link>
               <Link
-                to="/theories"
+                to={`/theories?fromCase=${encodeURIComponent(c.id)}`}
                 className="text-blue-400 hover:text-blue-300 text-sm"
               >
                 Related Theories →
@@ -174,6 +175,7 @@ export default function Cases() {
 
   const filter = searchParams.get('category') || 'all'
   const sortBy = searchParams.get('sort') || 'year_desc'
+  const caseParam = searchParams.get('case')
 
   const setFilter = (value) => {
     const next = new URLSearchParams(searchParams)
@@ -195,6 +197,16 @@ export default function Cases() {
       .then(setData)
       .catch(err => console.error('Failed to load cases:', err))
   }, [])
+
+  useEffect(() => {
+    if (caseParam && data) {
+      setExpandedCase(caseParam)
+      setTimeout(() => {
+        const el = document.getElementById(`case-${caseParam}`)
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 100)
+    }
+  }, [caseParam, data])
 
   const filtered = useMemo(() => {
     if (!data) return []

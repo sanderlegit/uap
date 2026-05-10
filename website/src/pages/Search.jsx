@@ -214,7 +214,8 @@ export default function Search() {
                   return (
                     <Link
                       key={r.id}
-                      to={`/documents/${r.id}`}
+                      to={`/documents/${r.id}?search=${encodeURIComponent(debouncedQuery.trim())}`}
+                      state={{ fromSearch: true, searchQuery: debouncedQuery.trim() }}
                       className="flex gap-4 bg-slate-900 border border-slate-700/50 rounded-lg p-4 hover:border-blue-500/40 hover:bg-slate-800/80 transition-colors"
                     >
                       <DocThumbnail docId={r.id} size="sm" />

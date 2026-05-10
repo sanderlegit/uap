@@ -1,46 +1,23 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 
 const LAYER_COLORS = ['#3b82f6', '#f59e0b', '#ef4444']
-const LAYER_BG = ['rgba(59,130,246,0.08)', 'rgba(245,158,11,0.08)', 'rgba(239,68,68,0.08)']
 
-function Tooltip({ node, position, onClose }) {
-  const ref = useRef(null)
-
-  useEffect(() => {
-    function handleClick(e) {
-      if (ref.current && !ref.current.contains(e.target)) onClose()
-    }
-    document.addEventListener('mousedown', handleClick)
-    return () => document.removeEventListener('mousedown', handleClick)
-  }, [onClose])
-
-  if (!node) return null
-
+function NodeDetail({ node, color }) {
   return (
-    <div
-      ref={ref}
-      className="absolute z-50 w-72 bg-slate-800 border border-slate-600/50 rounded-lg shadow-2xl shadow-black/40 p-4"
-      style={{ left: position.x, top: position.y, transform: 'translate(-50%, 8px)' }}
-    >
-      <div className="flex items-start justify-between gap-2 mb-2">
-        <h4 className="text-sm font-bold text-slate-100">{node.name}</h4>
-        <button onClick={onClose} className="text-slate-500 hover:text-slate-300 text-xs cursor-pointer">✕</button>
-      </div>
-      {node.role && <p className="text-[11px] text-indigo-400 mb-1.5">{node.role}</p>}
-      {node.agency && <p className="text-[11px] text-slate-400 mb-1.5">{node.agency}</p>}
+    <div className="px-3 pb-3 space-y-2">
       <p className="text-xs text-slate-400 leading-relaxed">{node.detail}</p>
       {node.evidence && (
-        <div className="mt-2 pt-2 border-t border-slate-700">
-          <span className="text-[10px] text-slate-500 uppercase tracking-wider">Evidence</span>
-          <p className="text-[11px] text-slate-400 mt-0.5">{node.evidence}</p>
+        <div>
+          <span className="text-[11px] text-slate-500 uppercase tracking-wider">Evidence</span>
+          <p className="text-xs text-slate-400 mt-0.5">{node.evidence}</p>
         </div>
       )}
       {node.connections && node.connections.length > 0 && (
-        <div className="mt-2 pt-2 border-t border-slate-700">
-          <span className="text-[10px] text-slate-500 uppercase tracking-wider">Connections</span>
+        <div>
+          <span className="text-[11px] text-slate-500 uppercase tracking-wider">Connections</span>
           <div className="flex flex-wrap gap-1 mt-1">
             {node.connections.map((c, i) => (
-              <span key={i} className="text-[10px] text-indigo-400 bg-indigo-500/10 rounded px-1.5 py-0.5">{c}</span>
+              <span key={i} className="text-[11px] text-indigo-400 bg-indigo-500/10 rounded px-1.5 py-0.5">{c}</span>
             ))}
           </div>
         </div>
@@ -49,92 +26,91 @@ function Tooltip({ node, position, onClose }) {
   )
 }
 
-function ChartNode({ node, color, bg, onClick, isActive }) {
+function ChartNode({ node, color, isExpanded, onToggle }) {
   return (
-    <button
-      onClick={onClick}
-      className={`relative text-left px-3 py-2 rounded-lg border transition-all cursor-pointer group ${
-        isActive
-          ? 'border-indigo-400/60 bg-indigo-500/10 ring-1 ring-indigo-500/30'
-          : 'border-slate-700/50 hover:border-slate-600 bg-slate-900/80 hover:bg-slate-800/60'
+    <div
+      className={`rounded-lg border overflow-hidden transition-colors ${
+        isExpanded
+          ? 'border-slate-600/60 bg-slate-800/40'
+          : 'border-slate-700/50 bg-slate-900/80 hover:border-slate-600 hover:bg-slate-800/60'
       }`}
-      style={isActive ? {} : { borderLeftColor: color, borderLeftWidth: 3 }}
+      style={{ borderLeftColor: color, borderLeftWidth: 3 }}
     >
-      <div className="text-xs font-semibold text-slate-200 group-hover:text-white transition-colors leading-snug">
-        {node.name}
-      </div>
-      {node.role && (
-        <div className="text-[10px] text-slate-500 mt-0.5 leading-snug">{node.role}</div>
-      )}
-    </button>
+      <button
+        onClick={onToggle}
+        className="w-full text-left px-3 py-2.5 cursor-pointer flex items-center justify-between gap-2"
+      >
+        <div className="min-w-0">
+          <div className="text-xs font-semibold text-slate-200 leading-snug">{node.name}</div>
+          {node.role && <div className="text-[11px] text-slate-500 mt-0.5 leading-snug">{node.role}</div>}
+        </div>
+        <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${isExpanded ? 'rotate-180' : ''}`}>&#9662;</span>
+      </button>
+      {isExpanded && <NodeDetail node={node} color={color} />}
+    </div>
   )
 }
 
-function LayerSection({ layer, index, activeNode, onNodeClick }) {
+function LayerSection({ layer, index, expandedNode, onToggle }) {
   const color = LAYER_COLORS[index]
-  const bg = LAYER_BG[index]
 
   return (
-    <div className="relative">
-      {/* Layer header */}
+    <div>
       <div className="flex items-center gap-2 mb-3">
         <div
-          className="w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0"
+          className="w-6 h-6 rounded flex items-center justify-center text-xs font-bold shrink-0"
           style={{ backgroundColor: `${color}20`, color }}
         >
           {index + 1}
         </div>
-        <div className="min-w-0">
-          <h3 className="text-sm font-bold text-slate-200">{layer.name}</h3>
-          <p className="text-[10px] text-slate-500">{layer.lead}</p>
-        </div>
+        <h3 className="text-sm font-bold text-slate-200">{layer.name}</h3>
+        <span className="text-xs text-slate-500">{layer.lead}</span>
       </div>
 
-      {/* Agencies */}
-      <div className="ml-4 pl-4 border-l-2 space-y-4" style={{ borderColor: `${color}30` }}>
+      <div className="space-y-3">
         {layer.agencies.map((agency, ai) => (
           <div key={ai}>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
-              <span className="text-xs font-semibold text-slate-300">{agency.name}</span>
-            </div>
-
-            {/* Nodes grid */}
-            <div className="grid gap-1.5 sm:grid-cols-2 ml-4">
+            <div className="text-xs font-semibold text-slate-400 mb-1.5">{agency.name}</div>
+            <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3 items-start">
               {agency.nodes.map((node, ni) => (
-                <ChartNode
-                  key={ni}
-                  node={node}
-                  color={color}
-                  bg={bg}
-                  isActive={activeNode?.name === node.name}
-                  onClick={(e) => onNodeClick(node, e)}
-                />
+                <div key={ni} className={expandedNode === node.name ? 'sm:col-span-2 lg:col-span-3' : ''}>
+                  <ChartNode
+                    node={node}
+                    color={color}
+                    isExpanded={expandedNode === node.name}
+                    onToggle={() => onToggle(node.name)}
+                  />
+                </div>
               ))}
             </div>
           </div>
         ))}
 
-        {/* Facilities */}
         {layer.facilities && layer.facilities.length > 0 && (
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-2 h-2 rounded-sm" style={{ backgroundColor: color, opacity: 0.5 }} />
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Facilities</span>
-            </div>
-            <div className="flex flex-wrap gap-1.5 ml-4">
+            <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1.5">Facilities</div>
+            <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3 items-start">
               {layer.facilities.map((f, fi) => (
-                <button
-                  key={fi}
-                  onClick={(e) => onNodeClick(f, e)}
-                  className={`text-[10px] px-2 py-1 rounded border transition-all cursor-pointer ${
-                    activeNode?.name === f.name
-                      ? 'border-indigo-400/60 bg-indigo-500/10 text-indigo-300'
-                      : 'border-slate-700/40 bg-slate-900/60 text-slate-400 hover:border-slate-600 hover:text-slate-300'
-                  }`}
-                >
-                  {f.name}
-                </button>
+                <div key={fi} className={`rounded border overflow-hidden transition-colors ${
+                  expandedNode === f.name
+                    ? 'border-slate-600/60 bg-slate-800/40 sm:col-span-2 lg:col-span-3'
+                    : 'border-slate-700/40 bg-slate-900/60 hover:border-slate-600'
+                }`}>
+                  <button
+                    onClick={() => onToggle(f.name)}
+                    className="w-full text-left px-2.5 py-1.5 cursor-pointer flex items-center justify-between gap-2"
+                  >
+                    <span className={`text-[11px] ${expandedNode === f.name ? 'text-slate-200' : 'text-slate-400 hover:text-slate-300'}`}>
+                      {f.name}
+                    </span>
+                    <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expandedNode === f.name ? 'rotate-180' : ''}`}>&#9662;</span>
+                  </button>
+                  {expandedNode === f.name && (
+                    <div className="px-2.5 pb-2">
+                      <p className="text-xs text-slate-400 leading-relaxed">{f.detail}</p>
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
@@ -144,33 +120,39 @@ function LayerSection({ layer, index, activeNode, onNodeClick }) {
   )
 }
 
-function PersonnelNetwork({ personnel, activeNode, onNodeClick }) {
+function PersonnelNetwork({ personnel, expandedNode, onToggle }) {
   return (
     <div className="mt-6 pt-4 border-t border-slate-800">
       <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
         Personnel Network — The Revolving Door
       </h3>
-      <div className="grid gap-2 sm:grid-cols-2">
+      <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 items-start">
         {personnel.map((p, i) => (
-          <button
+          <div
             key={i}
-            onClick={(e) => onNodeClick(p, e)}
-            className={`text-left p-2.5 rounded-lg border transition-all cursor-pointer group ${
-              activeNode?.name === p.name
-                ? 'border-indigo-400/60 bg-indigo-500/10'
+            className={`rounded-lg border overflow-hidden transition-colors ${
+              expandedNode === p.name
+                ? 'border-slate-600/60 bg-slate-800/40 sm:col-span-2 lg:col-span-3'
                 : 'border-slate-700/40 bg-slate-900/60 hover:border-slate-600'
             }`}
           >
-            <div className="flex items-center gap-2">
-              <span className="w-6 h-6 rounded-full bg-indigo-500/15 text-indigo-400 flex items-center justify-center text-[10px] font-bold shrink-0">
-                {p.name.split(' ').map(w => w[0]).join('')}
-              </span>
-              <div className="min-w-0">
-                <div className="text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate">{p.name}</div>
-                <div className="text-[10px] text-slate-500 truncate">{p.role}</div>
+            <button
+              onClick={() => onToggle(p.name)}
+              className="w-full text-left p-2.5 cursor-pointer flex items-center justify-between gap-2"
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <span className="w-6 h-6 rounded-full bg-indigo-500/15 text-indigo-400 flex items-center justify-center text-[10px] font-bold shrink-0">
+                  {p.name.split(' ').map(w => w[0]).join('')}
+                </span>
+                <div className="min-w-0">
+                  <div className="text-xs font-semibold text-slate-200 truncate">{p.name}</div>
+                  <div className="text-[11px] text-slate-500 truncate">{p.role}</div>
+                </div>
               </div>
-            </div>
-          </button>
+              <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expandedNode === p.name ? 'rotate-180' : ''}`}>&#9662;</span>
+            </button>
+            {expandedNode === p.name && <NodeDetail node={p} />}
+          </div>
         ))}
       </div>
     </div>
@@ -183,23 +165,16 @@ function ProcessFlow({ steps }) {
       <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
         Recovery Process — Kill Chain
       </h3>
-      <div className="flex flex-col sm:flex-row gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2">
         {steps.map((step, i) => (
-          <div key={i} className="flex-1 relative">
-            <div className="bg-slate-900/80 border border-slate-700/50 rounded-lg p-3">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-[10px] font-bold">
-                  {i + 1}
-                </span>
-                <span className="text-[11px] font-semibold text-slate-300">{step.name}</span>
-              </div>
-              <p className="text-[10px] text-slate-500 leading-relaxed">{step.detail}</p>
+          <div key={i} className="bg-slate-900/80 border border-slate-700/50 rounded-lg p-3 h-full">
+            <div className="flex items-center gap-1.5 mb-1">
+              <span className="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-[10px] font-bold shrink-0">
+                {i + 1}
+              </span>
+              <span className="text-xs font-semibold text-slate-300">{step.name}</span>
             </div>
-            {i < steps.length - 1 && (
-              <div className="hidden sm:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 text-slate-600 text-xs">
-                →
-              </div>
-            )}
+            <p className="text-[11px] text-slate-500 leading-relaxed">{step.detail}</p>
           </div>
         ))}
       </div>
@@ -310,29 +285,16 @@ const CHART_DATA = {
 }
 
 export default function LegacyProgramChart() {
-  const [activeNode, setActiveNode] = useState(null)
-  const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 })
-  const containerRef = useRef(null)
+  const [expandedNode, setExpandedNode] = useState(null)
 
-  function handleNodeClick(node, e) {
-    if (activeNode?.name === node.name) {
-      setActiveNode(null)
-      return
-    }
-    const rect = containerRef.current.getBoundingClientRect()
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
-    setTooltipPos({ x: Math.min(Math.max(x, 140), rect.width - 140), y })
-    setActiveNode(node)
+  function toggle(name) {
+    setExpandedNode(prev => prev === name ? null : name)
   }
 
   return (
-    <div ref={containerRef} className="relative bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/20 border border-indigo-500/20 rounded-lg overflow-hidden">
+    <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/20 border border-indigo-500/20 rounded-lg overflow-hidden">
       <div className="p-4 sm:p-6">
-        {/* Header */}
-        <div className="flex items-center gap-2 mb-1">
-          <span className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-indigo-400">Interactive Framework</span>
-        </div>
+        <div className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-indigo-400 mb-1">Interactive Framework</div>
         <h2 className="text-lg font-bold text-slate-100 mb-1">The Legacy Program</h2>
         <p className="text-xs text-slate-500 mb-1">Based on UAP Gerb's research — click any element for details</p>
         <p className="text-xs text-slate-400 leading-relaxed mb-6">
@@ -340,34 +302,30 @@ export default function LegacyProgramChart() {
           Materials classified under the Atomic Energy Act of 1954 ensure no single oversight body audits the entire chain.
         </p>
 
-        {/* Three Layers */}
         <div className="space-y-6">
           {CHART_DATA.layers.map((layer, i) => (
             <LayerSection
               key={i}
               layer={layer}
               index={i}
-              activeNode={activeNode}
-              onNodeClick={handleNodeClick}
+              expandedNode={expandedNode}
+              onToggle={toggle}
             />
           ))}
         </div>
 
-        {/* Personnel Network */}
         <PersonnelNetwork
           personnel={CHART_DATA.personnel}
-          activeNode={activeNode}
-          onNodeClick={handleNodeClick}
+          expandedNode={expandedNode}
+          onToggle={toggle}
         />
 
-        {/* Process Flow */}
         <ProcessFlow steps={CHART_DATA.process} />
 
-        {/* Classification note */}
         <div className="mt-6 pt-4 border-t border-slate-800">
           <div className="bg-amber-500/5 border border-amber-500/20 rounded-lg p-3">
-            <h4 className="text-[11px] font-bold text-amber-400 uppercase tracking-wider mb-1">Classification Shield</h4>
-            <p className="text-[11px] text-slate-400 leading-relaxed">
+            <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">Classification Shield</h4>
+            <p className="text-xs text-slate-400 leading-relaxed">
               The Atomic Energy Act of 1954 classifies recovered materials as "Restricted Data" or "Transclassified Foreign Nuclear Information."
               This places them under DOE authority — outside presidential Executive Order authority, exempt from FOIA,
               and beyond any single congressional committee's oversight. NRO reports to intelligence committees,
@@ -376,30 +334,20 @@ export default function LegacyProgramChart() {
           </div>
         </div>
 
-        {/* Sources */}
-        <div className="mt-4 flex flex-wrap gap-x-3 gap-y-1">
-          <span className="text-[10px] text-slate-600">Sources:</span>
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span className="text-[11px] text-slate-600">Sources:</span>
           {[
             { t: 'UAP Gerb', u: 'https://www.youtube.com/@UAPGerb' },
             { t: 'Three-Layer Analysis', u: 'https://medium.com/@BandGA/9-hours-of-uap-research-condensed-the-three-layer-secrecy-system-0b5d08289019' },
             { t: 'Grusch Testimony', u: 'https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm' },
             { t: 'AEA 1954', u: 'https://en.wikipedia.org/wiki/Atomic_Energy_Act_of_1954' },
           ].map((s, i) => (
-            <a key={i} href={s.u} target="_blank" rel="noopener noreferrer" className="text-[10px] text-indigo-400/60 hover:text-indigo-400 underline underline-offset-2">
+            <a key={i} href={s.u} target="_blank" rel="noopener noreferrer" className="text-[11px] text-indigo-400/60 hover:text-indigo-400 underline underline-offset-2">
               {s.t}
             </a>
           ))}
         </div>
       </div>
-
-      {/* Tooltip overlay */}
-      {activeNode && (
-        <Tooltip
-          node={activeNode}
-          position={tooltipPos}
-          onClose={() => setActiveNode(null)}
-        />
-      )}
     </div>
   )
 }
