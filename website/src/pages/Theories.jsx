@@ -2,24 +2,45 @@ import { useState, useEffect, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import LegacyProgramChart from '../components/LegacyProgramChart'
 
-const SIDEBAR_SECTIONS = [
-  { id: 'framework', label: 'Interactive Framework', indent: 0 },
-  { id: 'layer-1', label: 'Surveillance Layer', indent: 1 },
-  { id: 'layer-2', label: 'Custodial Layer', indent: 1 },
-  { id: 'layer-3', label: 'Industrial Layer', indent: 1 },
-  { id: 'personnel', label: 'Personnel Network', indent: 1 },
-  { id: 'kill-chain', label: 'Kill Chain', indent: 1 },
-  { id: 'nav-hub', label: 'Navigation', indent: 0 },
-  { id: 'hypotheses', label: 'Competing Hypotheses', indent: 0 },
-  { id: 'researchers', label: 'Key Researchers', indent: 0 },
-  { id: 'community', label: 'Community Sources', indent: 0 },
+const SIDEBAR_STATIC = [
+  { id: 'framework', label: 'Interactive Framework', depth: 0 },
+  { id: 'layer-1', label: 'Surveillance Layer', depth: 1 },
+  { id: 'layer-1-nro', label: 'NRO — Detection', depth: 2 },
+  { id: 'layer-1-cia', label: 'CIA — Recovery', depth: 2 },
+  { id: 'layer-1-aaro', label: 'AARO / Historical', depth: 2 },
+  { id: 'layer-2', label: 'Custodial Layer', depth: 1 },
+  { id: 'layer-2-doe', label: 'DOE — Classification', depth: 2 },
+  { id: 'layer-2-ffrdcs', label: 'FFRDCs', depth: 2 },
+  { id: 'layer-3', label: 'Industrial Layer', depth: 1 },
+  { id: 'layer-3-lockheed', label: 'Lockheed Skunk Works', depth: 2 },
+  { id: 'layer-3-northrop', label: 'Northrop Grumman', depth: 2 },
+  { id: 'layer-3-saic', label: 'SAIC & Others', depth: 2 },
+  { id: 'personnel', label: 'Personnel Network', depth: 1 },
+  { id: 'kill-chain', label: 'Kill Chain', depth: 1 },
+  { id: 'nav-hub', label: 'Navigation', depth: 0 },
+  { id: 'hypotheses', label: 'Competing Hypotheses', depth: 0 },
 ]
 
-function SectionSidebar() {
+function buildSidebarSections(theories) {
+  const theoryItems = (theories || []).map(t => ({
+    id: `theory-${t.id}`, label: t.name.replace(/ \(.*\)$/, ''), depth: 1,
+  }))
+  return [
+    ...SIDEBAR_STATIC,
+    ...theoryItems,
+    { id: 'researchers', label: 'Key Researchers', depth: 0 },
+    { id: 'community', label: 'Community Sources', depth: 0 },
+  ]
+}
+
+const DEPTH_PL = ['pl-0', 'pl-3', 'pl-6']
+
+function SectionSidebar({ theories }) {
   const [activeId, setActiveId] = useState('')
+  const sections = useMemo(() => buildSidebarSections(theories), [theories])
 
   useEffect(() => {
-    const els = SIDEBAR_SECTIONS.map(s => document.getElementById(s.id)).filter(Boolean)
+    const els = sections.map(s => document.getElementById(s.id)).filter(Boolean)
     if (!els.length) return
 
     const observer = new IntersectionObserver(
@@ -34,32 +55,51 @@ function SectionSidebar() {
 
     els.forEach(el => observer.observe(el))
     return () => observer.disconnect()
-  }, [])
+  }, [sections])
 
   function scrollTo(id) {
     const el = document.getElementById(id)
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+  const ancestors = useMemo(() => {
+    const set = new Set()
+    const idx = sections.findIndex(s => s.id === activeId)
+    if (idx < 0) return set
+    const activeDepth = sections[idx].depth
+    for (let d = activeDepth - 1; d >= 0; d--) {
+      for (let i = idx - 1; i >= 0; i--) {
+        if (sections[i].depth === d) { set.add(sections[i].id); break }
+      }
+    }
+    return set
+  }, [activeId, sections])
+
   return (
-    <nav className="hidden xl:block w-44 shrink-0">
-      <div className="sticky top-20 space-y-0.5">
-        <div className="text-[10px] font-bold text-slate-600 uppercase tracking-widest mb-2">On this page</div>
-        {SIDEBAR_SECTIONS.map(s => (
-          <button
-            key={s.id}
-            onClick={() => scrollTo(s.id)}
-            className={`block w-full text-left cursor-pointer transition-colors text-[11px] leading-relaxed py-0.5 ${
-              s.indent ? 'pl-3' : ''
-            } ${
-              activeId === s.id
-                ? 'text-indigo-400 font-medium'
-                : 'text-slate-500 hover:text-slate-300'
-            }`}
-          >
-            {s.label}
-          </button>
-        ))}
+    <nav className="hidden 2xl:block fixed top-20 w-48" style={{ left: 'max(1rem, calc((100vw - 72rem) / 2 - 13rem))' }}>
+      <div className="space-y-px">
+        <div className="text-[10px] font-bold text-slate-600 uppercase tracking-widest mb-2.5">On this page</div>
+        {sections.map(s => {
+          const isActive = activeId === s.id
+          const isAncestor = ancestors.has(s.id)
+          return (
+            <button
+              key={s.id}
+              onClick={() => scrollTo(s.id)}
+              className={`block w-full text-left cursor-pointer transition-all text-[11px] leading-snug py-1 rounded-r-sm ${
+                DEPTH_PL[s.depth] || 'pl-0'
+              } ${
+                isActive
+                  ? 'text-indigo-300 font-semibold bg-indigo-500/10 border-l-2 border-indigo-400'
+                  : isAncestor
+                    ? 'text-slate-300 border-l-2 border-slate-600'
+                    : 'text-slate-500 hover:text-slate-300 border-l-2 border-transparent'
+              }`}
+            >
+              {s.label}
+            </button>
+          )
+        })}
       </div>
     </nav>
   )
@@ -358,10 +398,8 @@ export default function Theories() {
 
   return (
     <div className="bg-slate-950 min-h-dvh pb-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 xl:flex xl:gap-6">
-        <SectionSidebar />
-
-        <div className="min-w-0 flex-1 max-w-5xl">
+      <SectionSidebar theories={sortedTheories} />
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12">
           {/* Header */}
           {fromCase && (
             <Link
@@ -457,7 +495,6 @@ export default function Theories() {
               ))}
             </div>
           </section>
-        </div>
       </div>
     </div>
   )

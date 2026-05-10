@@ -100,8 +100,10 @@ function LayerSection({ layer, index, expanded, onToggle }) {
       </div>
 
       <div className="space-y-3">
-        {layer.agencies.map((agency, ai) => (
-          <div key={ai}>
+        {layer.agencies.map((agency, ai) => {
+          const agencySlug = agency.name.split(/[\s—]/)[0].toLowerCase().replace(/[^a-z]/g, '')
+          return (
+          <div key={ai} id={`${sectionId}-${agencySlug}`}>
             <div className="text-xs font-semibold text-slate-400 mb-1.5">{agency.name}</div>
             <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3 items-start">
               {agency.nodes.map((node, ni) => (
@@ -116,7 +118,7 @@ function LayerSection({ layer, index, expanded, onToggle }) {
               ))}
             </div>
           </div>
-        ))}
+          )})}
 
         {layer.facilities && layer.facilities.length > 0 && (
           <div>
