@@ -244,7 +244,8 @@ function Skeleton() {
 export default function Theories() {
   const [data, setData] = useState(null)
   const [searchParams, setSearchParams] = useSearchParams()
-  const [expandedTheory, setExpandedTheory] = useState(null)
+  const [expandedTheories, setExpandedTheories] = useState(() => new Set())
+  const isDesktop = typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches
 
   const sortBy = searchParams.get('sort') || 'popularity'
   const theoryParam = searchParams.get('theory')
@@ -260,13 +261,18 @@ export default function Theories() {
   useEffect(() => {
     fetch('/data/theories.json')
       .then(r => r.json())
-      .then(setData)
+      .then(d => {
+        setData(d)
+        if (isDesktop && !theoryParam) {
+          setExpandedTheories(new Set(d.theories.map(t => t.id)))
+        }
+      })
       .catch(err => console.error('Failed to load theories:', err))
   }, [])
 
   useEffect(() => {
     if (theoryParam && data) {
-      setExpandedTheory(theoryParam)
+      setExpandedTheories(new Set([theoryParam]))
       setTimeout(() => {
         const el = document.getElementById(`theory-${theoryParam}`)
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -347,11 +353,16 @@ export default function Theories() {
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {sortedTheories.map(t => (
-              <div key={t.id} className={expandedTheory === t.id ? 'sm:col-span-2 lg:col-span-3' : ''}>
+              <div key={t.id} className={expandedTheories.has(t.id) ? 'sm:col-span-2 lg:col-span-3' : ''}>
                 <TheoryCard
                   theory={t}
-                  isExpanded={expandedTheory === t.id}
-                  onToggle={() => setExpandedTheory(expandedTheory === t.id ? null : t.id)}
+                  isExpanded={expandedTheories.has(t.id)}
+                  onToggle={() => setExpandedTheories(prev => {
+                    const next = new Set(prev)
+                    if (next.has(t.id)) next.delete(t.id)
+                    else next.add(t.id)
+                    return next
+                  })}
                 />
               </div>
             ))}

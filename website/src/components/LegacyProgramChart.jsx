@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const LAYER_COLORS = ['#3b82f6', '#f59e0b', '#ef4444']
 
@@ -51,7 +52,7 @@ function ChartNode({ node, color, isExpanded, onToggle }) {
   )
 }
 
-function LayerSection({ layer, index, expandedNode, onToggle }) {
+function LayerSection({ layer, index, expanded, onToggle }) {
   const color = LAYER_COLORS[index]
 
   return (
@@ -73,11 +74,11 @@ function LayerSection({ layer, index, expandedNode, onToggle }) {
             <div className="text-xs font-semibold text-slate-400 mb-1.5">{agency.name}</div>
             <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3 items-start">
               {agency.nodes.map((node, ni) => (
-                <div key={ni} className={expandedNode === node.name ? 'sm:col-span-2 lg:col-span-3' : ''}>
+                <div key={ni} className={expanded.has(node.name) ? 'sm:col-span-2 lg:col-span-3' : ''}>
                   <ChartNode
                     node={node}
                     color={color}
-                    isExpanded={expandedNode === node.name}
+                    isExpanded={expanded.has(node.name)}
                     onToggle={() => onToggle(node.name)}
                   />
                 </div>
@@ -92,7 +93,7 @@ function LayerSection({ layer, index, expandedNode, onToggle }) {
             <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3 items-start">
               {layer.facilities.map((f, fi) => (
                 <div key={fi} className={`rounded border overflow-hidden transition-colors ${
-                  expandedNode === f.name
+                  expanded.has(f.name)
                     ? 'border-slate-600/60 bg-slate-800/40 sm:col-span-2 lg:col-span-3'
                     : 'border-slate-700/40 bg-slate-900/60 hover:border-slate-600'
                 }`}>
@@ -100,12 +101,12 @@ function LayerSection({ layer, index, expandedNode, onToggle }) {
                     onClick={() => onToggle(f.name)}
                     className="w-full text-left px-2.5 py-1.5 cursor-pointer flex items-center justify-between gap-2"
                   >
-                    <span className={`text-[11px] ${expandedNode === f.name ? 'text-slate-200' : 'text-slate-400 hover:text-slate-300'}`}>
+                    <span className={`text-[11px] ${expanded.has(f.name) ? 'text-slate-200' : 'text-slate-400 hover:text-slate-300'}`}>
                       {f.name}
                     </span>
-                    <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expandedNode === f.name ? 'rotate-180' : ''}`}>&#9662;</span>
+                    <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expanded.has(f.name) ? 'rotate-180' : ''}`}>&#9662;</span>
                   </button>
-                  {expandedNode === f.name && (
+                  {expanded.has(f.name) && (
                     <div className="px-2.5 pb-2">
                       <p className="text-xs text-slate-400 leading-relaxed">{f.detail}</p>
                     </div>
@@ -120,7 +121,7 @@ function LayerSection({ layer, index, expandedNode, onToggle }) {
   )
 }
 
-function PersonnelNetwork({ personnel, expandedNode, onToggle }) {
+function PersonnelNetwork({ personnel, expanded, onToggle }) {
   return (
     <div className="mt-6 pt-4 border-t border-slate-800">
       <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
@@ -131,7 +132,7 @@ function PersonnelNetwork({ personnel, expandedNode, onToggle }) {
           <div
             key={i}
             className={`rounded-lg border overflow-hidden transition-colors ${
-              expandedNode === p.name
+              expanded.has(p.name)
                 ? 'border-slate-600/60 bg-slate-800/40 sm:col-span-2 lg:col-span-3'
                 : 'border-slate-700/40 bg-slate-900/60 hover:border-slate-600'
             }`}
@@ -149,9 +150,9 @@ function PersonnelNetwork({ personnel, expandedNode, onToggle }) {
                   <div className="text-[11px] text-slate-500 truncate">{p.role}</div>
                 </div>
               </div>
-              <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expandedNode === p.name ? 'rotate-180' : ''}`}>&#9662;</span>
+              <span className={`text-slate-500 text-[10px] shrink-0 transition-transform ${expanded.has(p.name) ? 'rotate-180' : ''}`}>&#9662;</span>
             </button>
-            {expandedNode === p.name && <NodeDetail node={p} />}
+            {expanded.has(p.name) && <NodeDetail node={p} />}
           </div>
         ))}
       </div>
@@ -284,17 +285,53 @@ const CHART_DATA = {
   ],
 }
 
+function getAllNodeNames() {
+  const names = []
+  for (const layer of CHART_DATA.layers) {
+    for (const agency of layer.agencies) {
+      for (const node of agency.nodes) names.push(node.name)
+    }
+    if (layer.facilities) {
+      for (const f of layer.facilities) names.push(f.name)
+    }
+  }
+  for (const p of CHART_DATA.personnel) names.push(p.name)
+  return names
+}
+
 export default function LegacyProgramChart() {
-  const [expandedNode, setExpandedNode] = useState(null)
+  const [expanded, setExpanded] = useState(() => {
+    if (typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches) {
+      return new Set(getAllNodeNames())
+    }
+    return new Set()
+  })
 
   function toggle(name) {
-    setExpandedNode(prev => prev === name ? null : name)
+    setExpanded(prev => {
+      const next = new Set(prev)
+      if (next.has(name)) next.delete(name)
+      else next.add(name)
+      return next
+    })
+  }
+
+  const allNames = getAllNodeNames()
+  const allExpanded = allNames.every(n => expanded.has(n))
+
+  function toggleAll() {
+    setExpanded(allExpanded ? new Set() : new Set(allNames))
   }
 
   return (
     <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/20 border border-indigo-500/20 rounded-lg overflow-hidden">
       <div className="p-4 sm:p-6">
-        <div className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-indigo-400 mb-1">Interactive Framework</div>
+        <div className="flex items-center justify-between mb-1">
+          <div className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-indigo-400">Interactive Framework</div>
+          <button onClick={toggleAll} className="text-[11px] text-slate-500 hover:text-slate-300 transition-colors cursor-pointer">
+            {allExpanded ? 'Collapse All' : 'Expand All'}
+          </button>
+        </div>
         <h2 className="text-lg font-bold text-slate-100 mb-1">The Legacy Program</h2>
         <p className="text-xs text-slate-500 mb-1">Based on UAP Gerb's research — click any element for details</p>
         <p className="text-xs text-slate-400 leading-relaxed mb-6">
@@ -308,7 +345,7 @@ export default function LegacyProgramChart() {
               key={i}
               layer={layer}
               index={i}
-              expandedNode={expandedNode}
+              expanded={expanded}
               onToggle={toggle}
             />
           ))}
@@ -316,7 +353,7 @@ export default function LegacyProgramChart() {
 
         <PersonnelNetwork
           personnel={CHART_DATA.personnel}
-          expandedNode={expandedNode}
+          expanded={expanded}
           onToggle={toggle}
         />
 
