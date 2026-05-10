@@ -311,14 +311,18 @@ export default function LegacyWeb() {
 
       docNodes.forEach(n => {
         const conns = connectionCounts[n.doc_id] || 0
+        const size = Math.max(20, Math.min(44, 20 + conns * 2.5))
+        const shortLabel = (n.label || '').split(',')[0].replace(/^(DOW|FBI|NASA|DoS)-?(UAP-?)?/i, '').trim().slice(0, 28)
         elements.push({
           group: 'nodes',
           data: {
             id: `doc_${n.doc_id}`,
-            label: n.label,
+            label: shortLabel || n.label,
+            fullLabel: n.label,
             nodeType: 'document',
             color: agencyColor(n.agency),
-            nodeSize: Math.max(12, Math.min(30, 12 + conns * 2)),
+            nodeSize: size,
+            bgImage: `/data/thumbnails/${n.doc_id}_thumb.jpg`,
             docId: n.doc_id,
             agency: n.agency || '',
             decade: n.decade || '',
@@ -349,13 +353,27 @@ export default function LegacyWeb() {
             selector: 'node',
             style: {
               'background-color': 'data(color)',
-              'background-opacity': 0.8,
+              'background-opacity': 0.15,
+              'background-image': 'data(bgImage)',
+              'background-fit': 'cover',
+              'background-clip': 'node',
+              'background-image-opacity': 0.85,
               'width': 'data(nodeSize)',
               'height': 'data(nodeSize)',
+              'shape': 'round-rectangle',
+              'corner-radius': 3,
               'label': '',
-              'border-width': 1.5,
+              'border-width': 2,
               'border-color': 'data(color)',
-              'border-opacity': 0.5,
+              'border-opacity': 0.7,
+            },
+          },
+          {
+            selector: 'node.no-thumb',
+            style: {
+              'background-image-opacity': 0,
+              'background-opacity': 0.8,
+              'shape': 'ellipse',
             },
           },
           {
@@ -481,15 +499,29 @@ export default function LegacyWeb() {
               'text-max-width': '140px',
             },
           },
+          {
+            selector: 'node.zoom-label',
+            style: {
+              'label': 'data(label)',
+              'color': '#94a3b8',
+              'font-size': '9px',
+              'text-valign': 'bottom',
+              'text-margin-y': 4,
+              'text-outline-width': 1.5,
+              'text-outline-color': '#020617',
+              'text-max-width': '100px',
+              'text-wrap': 'ellipsis',
+            },
+          },
         ],
         layout: {
           name: 'cose',
-          idealEdgeLength: 100,
-          nodeOverlap: 10,
-          nodeRepulsion: 8000,
-          edgeElasticity: 80,
-          gravity: 0.25,
-          numIter: 1000,
+          idealEdgeLength: 130,
+          nodeOverlap: 20,
+          nodeRepulsion: 12000,
+          edgeElasticity: 60,
+          gravity: 0.2,
+          numIter: 1200,
           animate: true,
           animationDuration: 1500,
           animationEasing: 'ease-out-cubic',
@@ -551,6 +583,17 @@ export default function LegacyWeb() {
         }
       })
 
+      cy.on('zoom', () => {
+        const zoom = cy.zoom()
+        cy.batch(() => {
+          if (zoom > 1.2) {
+            cy.nodes().not('.dimmed,.filtered-out,.agency-hidden').addClass('zoom-label')
+          } else {
+            cy.nodes().removeClass('zoom-label')
+          }
+        })
+      })
+
       cy.on('mouseover', 'node', (evt) => {
         container.style.cursor = 'pointer'
         const node = evt.target
@@ -561,10 +604,18 @@ export default function LegacyWeb() {
       cy.on('mouseout', 'node', (evt) => {
         container.style.cursor = 'default'
         const node = evt.target
-        if (!node.hasClass('highlighted')) {
+        if (!node.hasClass('highlighted') && !node.hasClass('zoom-label')) {
           node.removeClass('show-label')
         }
         setHoveredDocId(null)
+      })
+
+      cy.ready(() => {
+        cy.nodes().forEach(node => {
+          const img = new Image()
+          img.onerror = () => node.addClass('no-thumb')
+          img.src = node.data('bgImage')
+        })
       })
 
       cyRef.current = cy
