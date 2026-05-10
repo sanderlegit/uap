@@ -126,6 +126,12 @@ export function useEntities() {
   return data
 }
 
+export function usePulse() {
+  const [data, setData] = useState(null)
+  useEffect(() => { fetchJSON('/data/pulse.json').then(setData).catch(() => {}) }, [])
+  return data
+}
+
 export function agencyClass(agency) {
   if (!agency) return 'agency-dow'
   const lower = agency.toLowerCase()
