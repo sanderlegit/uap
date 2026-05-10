@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { agencyColor, agencyClass, thumbUrl } from '../hooks/useData'
+import { agencyColor, agencyClass, thumbUrl, microThumbUrl } from '../hooks/useData'
 import LegacyTree from '../components/LegacyTree'
 
 const AGENCIES = [
@@ -322,7 +322,7 @@ export default function LegacyWeb() {
             nodeType: 'document',
             color: agencyColor(n.agency),
             nodeSize: size,
-            bgImage: `/data/thumbnails/${n.doc_id}_thumb.jpg`,
+            bgImage: `/data/thumbnails/${n.doc_id}_micro.webp`,
             docId: n.doc_id,
             agency: n.agency || '',
             decade: n.decade || '',

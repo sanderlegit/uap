@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useCallback, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { useDocuments, agencyColor, agencyClass, formatDate, thumbUrl } from '../hooks/useData'
+import { useDocuments, agencyColor, agencyClass, formatDate, microThumbUrl } from '../hooks/useData'
 import DocThumbnail from '../components/DocThumbnail'
 
 const AGENCIES = [
@@ -263,7 +263,7 @@ export default function Timeline() {
                           >
                             <div className="flex items-start gap-2">
                               <img
-                                src={thumbUrl(doc.id)}
+                                src={microThumbUrl(doc.id)}
                                 alt=""
                                 loading="lazy"
                                 className="w-8 h-[42px] object-cover rounded bg-slate-800 flex-shrink-0"

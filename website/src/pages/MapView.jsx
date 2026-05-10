@@ -1,7 +1,7 @@
 import { useMemo, useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from 'react-leaflet'
-import { useDocuments, agencyColor, agencyClass, formatDate, thumbUrl } from '../hooks/useData'
+import { useDocuments, agencyColor, agencyClass, formatDate, microThumbUrl } from '../hooks/useData'
 
 const AGENCIES = [
   { label: 'Dept. of War', color: '#3b82f6' },
@@ -128,7 +128,7 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter, docs }) {
                             const d = docs?.find(x => x.id === docId)
                             return d ? (
                               <Link key={docId} to={`/documents/${docId}`} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-purple-500/10 transition-colors group">
-                                <img src={thumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
+                                <img src={microThumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
                                 <span className="text-[10px] text-slate-400 group-hover:text-slate-200 line-clamp-1">{d.title}</span>
                               </Link>
                             ) : null
@@ -174,7 +174,7 @@ function SpaceSidebar({ expandedEncounter, setExpandedEncounter, docs }) {
                             const d = docs?.find(x => x.id === docId)
                             return d ? (
                               <Link key={docId} to={`/documents/${docId}`} className="flex items-center gap-2 py-1 px-1.5 -mx-1.5 rounded hover:bg-cyan-500/10 transition-colors group">
-                                <img src={thumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
+                                <img src={microThumbUrl(docId)} alt="" className="w-6 h-8 object-cover rounded flex-shrink-0 bg-slate-800" onError={e => { e.target.style.display = 'none' }} />
                                 <span className="text-[10px] text-slate-400 group-hover:text-slate-200 line-clamp-1">{d.title}</span>
                               </Link>
                             ) : null
@@ -311,7 +311,7 @@ export default function MapView() {
                 <Popup>
                   <div className="min-w-[200px]">
                     <div className="flex gap-3 mb-2">
-                      <img src={thumbUrl(doc.id)} alt="" className="w-10 h-[52px] object-cover rounded bg-slate-800 flex-shrink-0" onError={(e) => { e.target.style.display = 'none' }} />
+                      <img src={microThumbUrl(doc.id)} alt="" className="w-10 h-[52px] object-cover rounded bg-slate-800 flex-shrink-0" onError={(e) => { e.target.style.display = 'none' }} />
                       <div className="min-w-0">
                         <h3 className="text-sm font-semibold text-slate-100 leading-snug mb-1">{doc.title}</h3>
                         <div className="flex flex-wrap items-center gap-2 text-xs">
@@ -381,7 +381,7 @@ export default function MapView() {
                     }`}
                   >
                     <img
-                      src={thumbUrl(doc.id)}
+                      src={microThumbUrl(doc.id)}
                       alt=""
                       className="w-8 h-10 object-cover rounded flex-shrink-0 bg-slate-800"
                       onError={e => { e.target.style.display = 'none' }}

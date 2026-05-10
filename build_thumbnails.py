@@ -18,7 +18,9 @@ DOCS_JSON = BASE / "website" / "public" / "data" / "documents.json"
 
 THUMB_SCALE = 0.5   # ~306x396
 COVER_SCALE = 1.5   # ~918x1188
+MICRO_WIDTH = 48    # tiny webp for lists/graphs
 JPEG_QUALITY = 80
+MICRO_QUALITY = 50
 
 
 def render_pdf_page(pdf_path, page_num=0, scale=1.5):
@@ -106,14 +108,27 @@ def main():
 
         manifest[str(doc_id)] = entry
 
+    # Generate micro thumbnails from existing thumbs
+    micro_total = 0
+    for doc_id_str, entry in manifest.items():
+        thumb_path = OUT_DIR / f"{doc_id_str}_thumb.jpg"
+        micro_path = OUT_DIR / f"{doc_id_str}_micro.webp"
+        if thumb_path.exists():
+            img = Image.open(thumb_path)
+            ratio = MICRO_WIDTH / img.width
+            img = img.resize((MICRO_WIDTH, int(img.height * ratio)), Image.LANCZOS)
+            img.save(micro_path, "WEBP", quality=MICRO_QUALITY)
+            micro_total += micro_path.stat().st_size
+            img.close()
+
     manifest_path = OUT_DIR / "manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2))
 
     total_thumb = sum(e.get("thumb_kb", 0) for e in manifest.values())
     total_cover = sum(e.get("cover_kb", 0) for e in manifest.values())
     print(f"\nDone: {len(manifest)} documents")
-    print(f"Thumbnails: {total_thumb}KB, Covers: {total_cover}KB")
-    print(f"Total: {(total_thumb + total_cover) / 1024:.1f}MB")
+    print(f"Thumbnails: {total_thumb}KB, Covers: {total_cover}KB, Micro: {micro_total // 1024}KB")
+    print(f"Total: {(total_thumb + total_cover + micro_total // 1024) / 1024:.1f}MB")
 
 
 if __name__ == "__main__":

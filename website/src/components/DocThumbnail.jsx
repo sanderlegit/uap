@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { thumbUrl, coverUrl } from '../hooks/useData'
+import { thumbUrl, microThumbUrl, coverUrl } from '../hooks/useData'
 
 function FallbackIcon() {
   return (
@@ -14,7 +14,7 @@ export default function DocThumbnail({ docId, size = 'sm', className = '' }) {
 
   if (failed) return <div className={className}><FallbackIcon /></div>
 
-  const src = size === 'lg' ? coverUrl(docId) : thumbUrl(docId)
+  const src = size === 'lg' ? coverUrl(docId) : size === 'md' ? thumbUrl(docId) : microThumbUrl(docId)
   const dims = size === 'lg'
     ? 'w-full max-w-sm'
     : size === 'md'

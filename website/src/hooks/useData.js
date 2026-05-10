@@ -96,6 +96,10 @@ export function thumbUrl(docId) {
   return `/data/thumbnails/${docId}_thumb.jpg`
 }
 
+export function microThumbUrl(docId) {
+  return `/data/thumbnails/${docId}_micro.webp`
+}
+
 export function coverUrl(docId) {
   return `/data/thumbnails/${docId}_cover.jpg`
 }
