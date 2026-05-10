@@ -265,7 +265,7 @@ export default function Documents() {
                           : 'bg-slate-800/60 border-slate-700/50 hover:border-slate-600 hover:bg-slate-800/80'
                     }`}
                   >
-                    <DocThumbnail docId={doc.id} size="md" className="hidden sm:block" />
+                    <DocThumbnail docId={doc.id} size={doc.total_pages === 1 ? 'cover' : 'md'} className="hidden sm:block" />
                     <div className="min-w-0 flex-1 pr-7">
                       <h2 className={`text-sm font-semibold group-hover:text-primary-light transition-colors mb-2 line-clamp-2 ${read ? 'text-slate-400' : 'text-slate-200'}`}>
                         {doc.title}

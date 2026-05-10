@@ -14,9 +14,14 @@ export default function DocThumbnail({ docId, size = 'sm', className = '' }) {
 
   if (failed) return <div className={className}><FallbackIcon /></div>
 
-  const src = size === 'lg' ? coverUrl(docId) : size === 'md' ? thumbUrl(docId) : microThumbUrl(docId)
+  const src = size === 'lg' ? coverUrl(docId)
+    : size === 'cover' ? coverUrl(docId)
+    : size === 'md' ? thumbUrl(docId)
+    : microThumbUrl(docId)
   const dims = size === 'lg'
     ? 'w-full max-w-sm'
+    : size === 'cover'
+    ? 'w-28 h-[145px]'
     : size === 'md'
     ? 'w-20 h-[104px]'
     : 'w-12 h-[62px]'
