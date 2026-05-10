@@ -1,36 +1,79 @@
 {
-  "hook": "A U.S. Navy ISR crew from the 1172 ATKS squadron filed this Range Fouler Reporting Form after tracking a round, thermally cold object via ATFLIR infrared sensor over the Gulf of Aden on October 15, 2020, for approximately 73 seconds before it made several abrupt directional changes and the contact ended.",
-  "why_it_matters": "This report is notable because the object's infrared signature is explicitly described as 'cold' — appearing bright white in 'black hot' IR mode, meaning it was cooler than ambient surroundings rather than radiating heat from propulsion. Combined with slow speed (~20 mph) and abrupt directional changes, it does not match the thermal profile of a conventional aircraft or drone. The use of SPEAR, the Navy's sanitized UAP reporting pipeline, confirms this falls within the post-2019 institutional framework for collecting pilot UAP data that feeds into AARO.",
+  "hook": "A Range Fouler Reporting Form filed by an O-2 crew member of 1172 ATKS on October 15, 2020, documenting a roughly 74-second infrared sensor contact with a round, thermally cold object over the Gulf of Aden that made abrupt directional changes before disappearing.",
+  "why_it_matters": "This form represents the standardized military apparatus for capturing UAP contacts during active operations — not training exercises — providing sensor-derived geometry (slant range, ground range, sensor depression angle) alongside behavioral anomalies. The thermal signature is notable: the object appeared bright white in black-hot IR mode, meaning it was cold relative to its surroundings, the inverse of a propulsion-heated craft. The abrupt directional changes at only 20 mph add a maneuverability data point not explained by conventional balloon-drift dynamics.",
   "key_findings": [
-    "Object tracked from 14:18:39Z to 14:19:52Z — approximately 73 seconds of sensor contact — while the ISR aircraft flew at 19,073 feet HAT over the Gulf of Aden.",
-    "IR sensor was set to 'black hot' mode and the object appeared bright white, explicitly labeled a 'cold object,' indicating it emitted less infrared radiation than its background — inconsistent with a heat-producing engine.",
-    "Object traveled at heading 319 degrees (northwest) at approximately 20 mph, a speed well within the range of balloons but accompanied by 'a few abrupt directional changes' that complicate a simple balloon explanation.",
-    "Sensor geometry is documented precisely: ATFLIR aimed ~50 degrees below aircraft altitude, slant range 4.06NM, ground range 4.78KM — providing enough data for geometric reconstruction of the object's position.",
-    "Report filed through SPEAR, the Navy's sanitized UAP reporting system, with all crew and squadron identifying information removed prior to analysis, consistent with the post-UAPTF reporting protocols."
+    {
+      "finding": "The object was tracked as round and thermally cold in infrared — appearing bright white in black-hot mode — traveling northwest at 319 degrees and approximately 20 mph from an altitude near sea level while the aircraft was at 19,073 feet.",
+      "quotes": [
+        {
+          "text": "While at 19,073 HAT o'1,er the Gulf of Aden we tracked a round, cold object in IR traveling 3,19 degrees at 20 mph.",
+          "page": 1
+        },
+        {
+          "text": "The IR sensor was set to black hot an\nĮ the object in question was a bright white.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The contact made abrupt directional changes during the approximately one-minute observation window, behavior inconsistent with passive balloon drift at 20 mph.",
+      "quotes": [
+        {
+          "text": "It made a fewiabrupt directional changes during the 1 minute contact.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "Precise sensor geometry was recorded: the ATFLIR was depressed approximately 50 degrees below aircraft altitude, with a slant range of 4.06 NM and a ground range of 4.78 KM, enabling geometric reconstruction of the contact's position.",
+      "quotes": [
+        {
+          "text": "Our sensor was aimed -50 degrees below our altitude with a slant range of 4.06NM and ground range of 4. 78KM.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The event occurred during an ISR (Intelligence, Surveillance, Reconnaissance) mission — not a training exercise — placing operational context around the observation and making the airspace intrusion potentially more significant.",
+      "quotes": [
+        {
+          "text": "Mission Description (CAS, BFM. etc)\nLFE?\nE\nContact Wot1<ing Area",
+          "page": 1
+        },
+        {
+          "text": "Day\nISR\nDate (mmlddlyy)\nTime of detection\nDay I Night\n(hh:mm:ss Z)",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The report was processed through the SPEAR system, which explicitly sanitizes all identifying information for aircrew and squadron before analysis — indicating an institutionalized anonymization protocol for UAP reports at the time of this filing.",
+      "quotes": [
+        {
+          "text": "This information is for contact only. SPEAR sanitizes all r .ports of identifying information. Absolutely no identifying information for aircrew or squadr:: n will be recorded for analysis.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "This is precisely the type of post-2019 standardized pilot UAP report that AARO was established to collect and analyze; the SPEAR sanitization pipeline referenced in the form is part of the reporting infrastructure feeding into AARO's database."
+      "reasoning": "This standardized Range Fouler form from 2020 is precisely the category of military operator report that AARO was established to collect and analyze under post-2021 UAP disclosure mandates."
     },
     {
       "node_id": "mitre",
       "relevance": "low",
-      "reasoning": "MITRE has provided analytical support to DoD UAP programs including UAPTF and AARO, and reports like this one — with documented sensor geometry and IR signature data — are the type of structured inputs MITRE-affiliated analysts would process."
-    },
-    {
-      "node_id": "wright_patterson",
-      "relevance": "low",
-      "reasoning": "Wright-Patterson historically served as the repository for military UAP case files dating to Project Blue Book; modern reports from CENTCOM AOR like this one exist in a different institutional chain but share lineage with that archival function."
+      "reasoning": "MITRE has provided analytical support to DoD UAP programs and the SPEAR data-collection infrastructure represents the kind of standardized reporting architecture MITRE has helped design for the intelligence community."
     }
   ],
   "related_topics": [
-    "infrared cold signature",
-    "ATFLIR sensor tracking",
+    "infrared thermal signature",
     "Gulf of Aden",
-    "SPEAR reporting pipeline",
-    "abrupt directional change"
+    "ISR mission UAP",
+    "abrupt maneuvering",
+    "SPEAR reporting system"
   ]
 }

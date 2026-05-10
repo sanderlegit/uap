@@ -18,13 +18,6 @@ const EDGE_TYPE_STYLES = {
   media_pairing: { color: '#34d399', style: 'dotted', label: 'Media' },
 }
 
-// Mobile bottom tabs for the graph page
-const MOBILE_TABS = {
-  graph: 'Network',
-  tree: 'Program',
-  filters: 'Filters',
-}
-
 function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc, onSelectOrg }) {
   if (!node) return null
 
@@ -32,13 +25,8 @@ function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc
   const narrative = narratives?.[String(node.doc_id)]
 
   return (
-    <div className="absolute inset-x-0 bottom-0 max-h-[80vh] sm:inset-x-auto sm:max-h-none sm:left-4 sm:top-4 sm:bottom-4 sm:w-96 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-t-xl sm:rounded-xl shadow-2xl z-30 flex flex-col overflow-hidden">
-      {/* Mobile drag indicator + close hint */}
-      <button onClick={onClose} className="sm:hidden flex flex-col items-center pt-2 pb-1 cursor-pointer w-full shrink-0">
-        <div className="w-10 h-1 rounded-full bg-slate-600" />
-        <span className="text-[10px] text-slate-600 mt-1">tap to close</span>
-      </button>
-      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-700/50">
+    <div className="absolute left-4 top-4 bottom-4 w-96 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-xl shadow-2xl z-30 flex flex-col overflow-hidden">
+      <div className="flex items-center justify-between px-4 py-2 border-b border-slate-700/50">
         <span className="text-[11px] font-mono tracking-[0.15em] uppercase" style={{ color }}>
           {node.agency}
         </span>
@@ -76,7 +64,7 @@ function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc
             <h4 className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-2">
               Related Documents ({node.connections.length})
             </h4>
-            <div className="space-y-2 max-h-64 overflow-y-auto">
+            <div className="space-y-2">
               {node.connections.map((c, i) => {
                 const style = EDGE_TYPE_STYLES[c.edgeType] || {}
                 return (
@@ -132,9 +120,10 @@ function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc
         <div className="flex flex-col gap-2">
           <Link
             to={`/documents/${node.doc_id}`}
+            state={{ fromGraph: true, nodeId: `doc_${node.doc_id}` }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono tracking-wider hover:bg-amber-500/20 transition-colors"
           >
-            View Document &rarr;
+            View Full Document &rarr;
           </Link>
           <div className="flex items-center gap-3">
             <Link
@@ -514,6 +503,7 @@ export default function LegacyWeb() {
 
         setSelectedNode({ ...nodeData, connections })
         updateParam('node', `doc_${docId}`)
+        if (window.innerWidth < 768) setMobileTab('doc')
       })
 
       cy.on('tap', (evt) => {
@@ -708,7 +698,6 @@ export default function LegacyWeb() {
       target.emit('tap')
       cy.animate({ center: { eles: target }, zoom: cy.zoom() }, { duration: 300 })
     }
-    setMobileTab('graph')
   }, [])
 
   const activeFilterCount = hiddenAgencies.size + (activeDecade ? 1 : 0) + selectedOrgs.size + (selectedLayer ? 1 : 0) + (search ? 1 : 0)
@@ -878,23 +867,6 @@ export default function LegacyWeb() {
               <div className="absolute top-2 left-2 z-20 bg-slate-900/90 backdrop-blur border border-slate-700/50 rounded-lg px-2.5 py-1.5">
                 <span className="text-[11px] text-slate-400 font-mono">{graphData.nodes.length} docs &middot; {graphData.edges.length} links</span>
               </div>
-
-              <DetailPanel
-                node={selectedNode}
-                narratives={narratives}
-                legacyConnections={selectedDocLegacyConns}
-                onClose={() => {
-                  setSelectedNode(null)
-                  setHoveredDocId(null)
-                  updateParam('node', null)
-                  cyRef.current?.elements().removeClass('highlighted highlighted-edge dimmed show-label')
-                }}
-                onSelectDoc={handleSelectDoc}
-                onSelectOrg={(orgId) => {
-                  handleToggleOrg(orgId)
-                  setMobileTab('tree')
-                }}
-              />
             </>
           )}
         </div>
@@ -1007,16 +979,146 @@ export default function LegacyWeb() {
             )}
           </div>
         </div>
+
+        {/* Document tab */}
+        <div className={`absolute inset-0 overflow-y-auto bg-slate-950 ${mobileTab === 'doc' ? 'z-10' : 'z-0 pointer-events-none hidden'}`}>
+          {selectedNode ? (
+            <div className="p-4">
+              <button
+                onClick={() => setMobileTab('graph')}
+                className="flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-300 mb-4 cursor-pointer"
+              >
+                &larr; Back to network
+              </button>
+
+              {/* Preview card */}
+              <div className="flex gap-3 mb-4">
+                <img
+                  src={thumbUrl(selectedNode.doc_id)}
+                  alt=""
+                  className="w-20 h-auto rounded bg-slate-800 shrink-0"
+                  onError={(e) => { e.target.style.display = 'none' }}
+                />
+                <div className="min-w-0">
+                  <span className="text-[10px] font-mono tracking-[0.15em] uppercase block mb-1" style={{ color: agencyColor(selectedNode.agency) }}>
+                    {selectedNode.agency}
+                  </span>
+                  <h3 className="text-sm font-bold text-slate-100 leading-snug mb-1">{selectedNode.label}</h3>
+                  <div className="flex flex-wrap gap-2 text-[11px] text-slate-500">
+                    {selectedNode.decade && <span>{selectedNode.decade}</span>}
+                    {selectedNode.pages > 0 && <span>{selectedNode.pages} pg</span>}
+                    {selectedNode.has_redaction && <span className="text-red-400">Redacted</span>}
+                  </div>
+                </div>
+              </div>
+
+              {narratives?.[String(selectedNode.doc_id)]?.hook && (
+                <p className="text-xs text-slate-400 leading-relaxed mb-4">{narratives[String(selectedNode.doc_id)].hook}</p>
+              )}
+
+              <Link
+                to={`/documents/${selectedNode.doc_id}`}
+                state={{ fromGraph: true, nodeId: `doc_${selectedNode.doc_id}` }}
+                className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-medium hover:bg-amber-500/20 transition-colors mb-5"
+              >
+                Open Full Document &rarr;
+              </Link>
+
+              {/* Graph connections — unique to this view */}
+              {selectedNode.connections && selectedNode.connections.length > 0 && (
+                <div className="mb-4">
+                  <h4 className="text-[10px] font-mono tracking-wider uppercase text-slate-500 mb-2">
+                    Network Connections ({selectedNode.connections.length})
+                  </h4>
+                  <div className="space-y-1.5">
+                    {selectedNode.connections.map((c, i) => {
+                      const style = EDGE_TYPE_STYLES[c.edgeType] || {}
+                      return (
+                        <button
+                          key={i}
+                          onClick={() => handleSelectDoc(c.docId)}
+                          className="w-full text-left text-xs rounded-md px-2 py-2 hover:bg-slate-800/60 transition-colors cursor-pointer group flex items-center gap-2"
+                        >
+                          <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: c.color || '#94a3b8' }} />
+                          <span className="text-slate-300 group-hover:text-slate-100 flex-1 truncate">{c.label}</span>
+                          <span className="w-3 h-0.5 rounded shrink-0" style={{ backgroundColor: style.color || '#64748b' }} />
+                          {c.weight != null && (
+                            <span className="text-slate-600 text-[10px] font-mono shrink-0">{(c.weight * 100).toFixed(0)}%</span>
+                          )}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {selectedDocLegacyConns.length > 0 && (
+                <div className="mb-4">
+                  <h4 className="text-[10px] font-mono tracking-wider uppercase text-amber-500/70 mb-2">
+                    Legacy Program Connections
+                  </h4>
+                  <div className="space-y-2">
+                    {selectedDocLegacyConns.map((c, i) => (
+                      <button
+                        key={i}
+                        onClick={() => { handleToggleOrg(c.nodeId); setMobileTab('tree') }}
+                        className="w-full text-left text-xs rounded-md px-2 py-2 hover:bg-slate-800/60 transition-colors cursor-pointer group"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: c.color }} />
+                          <span className="text-slate-200 group-hover:text-white flex-1">{c.label}</span>
+                          <span className="text-slate-600 text-[10px] font-mono">{c.weight?.toFixed(2)}</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex items-center gap-3 pt-2 border-t border-slate-800">
+                <Link
+                  to={`/timeline?doc=${selectedNode.doc_id}${selectedNode.decade ? `&decade=${selectedNode.decade}` : ''}`}
+                  className="text-[11px] text-indigo-400/70 hover:text-indigo-400 font-mono py-1"
+                >
+                  Timeline &rarr;
+                </Link>
+                <Link
+                  to={`/map?doc=${selectedNode.doc_id}`}
+                  className="text-[11px] text-indigo-400/70 hover:text-indigo-400 font-mono py-1"
+                >
+                  Map &rarr;
+                </Link>
+              </div>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center justify-center h-full text-center px-6">
+              <div className="w-12 h-12 rounded-full border-2 border-slate-700 flex items-center justify-center mb-3">
+                <span className="text-slate-600 text-lg">?</span>
+              </div>
+              <p className="text-sm text-slate-500 mb-1">No document selected</p>
+              <p className="text-xs text-slate-600">Tap a node on the Network tab to inspect it here.</p>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Mobile: Bottom tab bar */}
       <div className="md:hidden flex border-t border-slate-800 bg-slate-900/95 backdrop-blur shrink-0">
-        {Object.entries(MOBILE_TABS).map(([key, label]) => (
+        {[
+          { key: 'graph', label: 'Network' },
+          { key: 'doc', label: 'Document', disabled: !selectedNode },
+          { key: 'tree', label: 'Program' },
+          { key: 'filters', label: 'Filters' },
+        ].map(({ key, label, disabled }) => (
           <button
             key={key}
-            onClick={() => setMobileTab(key)}
-            className={`flex-1 py-3 text-xs font-medium text-center transition-colors cursor-pointer relative ${
-              mobileTab === key ? 'text-amber-400' : 'text-slate-500'
+            onClick={() => !disabled && setMobileTab(key)}
+            className={`flex-1 py-3 text-xs font-medium text-center transition-colors relative ${
+              disabled
+                ? 'text-slate-700 cursor-default'
+                : mobileTab === key
+                  ? 'text-amber-400 cursor-pointer'
+                  : 'text-slate-500 cursor-pointer'
             }`}
           >
             {label}
@@ -1024,6 +1126,9 @@ export default function LegacyWeb() {
               <span className="absolute top-1.5 right-1/4 w-4 h-4 rounded-full bg-amber-500/80 text-[9px] text-slate-950 font-bold flex items-center justify-center">
                 {activeFilterCount}
               </span>
+            )}
+            {key === 'doc' && selectedNode && mobileTab !== 'doc' && (
+              <span className="absolute top-1.5 right-1/4 w-2 h-2 rounded-full bg-amber-400" />
             )}
             {mobileTab === key && (
               <span className="absolute bottom-0 inset-x-4 h-0.5 bg-amber-400 rounded-full" />

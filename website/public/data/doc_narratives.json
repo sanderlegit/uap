@@ -1,33 +1,81 @@
 {
   "0": {
-    "hook": "A U.S. Air Force ISR platform flying a reconnaissance/XCAS mission under Operation INHERENT RESOLVE over Iraq on May 6, 2022 observed five UAPs through its Full Motion Video sensor over a nearly four-hour window; the crew assessed the first as a 'possible missile' and the remaining four as 'possible birds.'",
-    "why_it_matters": "This mission report is one of the first declassified AARO-formatted UAP filings from an active combat zone, demonstrating that post-2021 UAP reporting protocols were being applied to real operational sorties — not just training or peacetime contexts. The document shows how aircrew classified ambiguous contacts in real time using visual reconnaissance assessments, with no radar confirmation data included. The dusty environmental conditions explicitly noted as degrading FMV collection add credibility to the ambiguity but also limit any definitive identification.",
+    "hook": "A U.S. Air Force ISR platform conducting reconnaissance and SIGINT collection under Operation INHERENT RESOLVE in Iraq observed five UAPs via infrared FMV sensor on May 6, 2022 — one assessed as a 'possible missile' and four as 'possible birds' — in this official USCENTCOM mission report submitted to AARO.",
+    "why_it_matters": "This document captures a routine operational ISR mission in which UAP sightings were formally processed through USCENTCOM's mission reporting system and forwarded to AARO, demonstrating the institutional reporting pipeline functioning as intended. The crew's real-time field characterizations — distinguishing a missile-like object from bird-like objects based on visual reconnaissance profile — illustrate how frontline analysts are now tasked with UAP triage under active operational conditions. The nearly four-hour observation window spanning five separate UAPs, conducted during a live SIGINT collection mission, underscores that these encounters occur embedded within ongoing military operations rather than in isolation.",
     "key_findings": [
-      "From 1514Z to 1934Z on May 6, 2022, the ISR platform observed a total of 5 UAPs crossing its field of view; the first at 1514Z was assessed via VISRECCE as a 'possible missile,' while all four subsequent UAPs were assessed as fitting 'closer to the profile of possible birds.'",
-      "The observation was made via Full Motion Video (FMV) sensor; dust conditions during the mission are explicitly documented as having 'hindered most FMV collection of the ground,' which contextualizes the ambiguity of all five identifications.",
-      "The aircraft operated under Operation INHERENT RESOLVE, assigned to the 432nd Air Expeditionary Wing under AFCENT/USCENTCOM, with the mission report processed through the 609 CAOC — a standard combat air operations chain of command, not a specialized UAP unit.",
-      "The platform conducted both SIGINT collection (0958Z–2036Z) and target development as its primary tasking; the UAP observation was incidental to a planned ISR mission, not a dedicated UAP investigation.",
-      "The report was approved for release to AARO and carries a SECRET//REL TO USA, FVEY classification, indicating it was shared across Five Eyes partners and formally entered into the AARO reporting framework."
+      {
+        "finding": "Five separate UAPs were observed over approximately four hours during an active ISR mission, with the crew observing them fly across the sensor field of view sequentially from 1514Z to 1934Z.",
+        "quotes": [
+          {
+            "text": "FROM 1514Z to 1934Z, 1.4a OBSERVED 5X UAP FLY ACROSS THE SCREEN.",
+            "page": 6
+          },
+          {
+            "text": "AT 1514Z, 1.4a OBSERVED 1X UAP (SEE OBSERVATION 1).",
+            "page": 1
+          }
+        ]
+      },
+      {
+        "finding": "The first UAP was assessed by the crew as resembling a 'possible missile' based on its visual reconnaissance profile as it flew across the infrared sensor field of view near a specific MGRS grid coordinate.",
+        "quotes": [
+          {
+            "text": "AT 1514Z 1.4a OBSERVED A UAP WITH THE VISRECCE OF A POSSIBLE 1.4a MISSILE FLY ACROSS THE FOV IVO 38SMC531.4a961.4a",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "finding": "The four subsequent UAPs were assessed as more consistent with birds based on their visual profiles, showing crew-level differentiation between UAP types in real time.",
+        "quotes": [
+          {
+            "text": "1.4a PROCEEDED TO SEE 4X OTHER UAPS IN THEIR FOV UNTIL 1934Z. ALL 4X REMAINING UAP FIT CLOSER TO THE PROFILE OF POSSIBLE BIRDS.",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "finding": "Dust conditions significantly degraded FMV infrared collection during the mission, a factor that would have materially limited the quality and completeness of footage available for post-mission exploitation.",
+        "quotes": [
+          {
+            "text": "DUST HINDERED MOST FMV COLLECTION OF THE GROUND.",
+            "page": 6
+          }
+        ]
+      },
+      {
+        "finding": "The mission was flown by a 432nd Air Expeditionary Wing asset under Operation INHERENT RESOLVE, with full motion video subsequently exploited by Distributed Ground Station 1 (DGS1), indicating formal post-mission analytical processing of the footage.",
+        "quotes": [
+          {
+            "text": "FULL MOTION VIDEO WAS EXPLOITED BY DGS1.",
+            "page": 1
+          },
+          {
+            "text": "• Operation: INHERENT RESOLVE \n• Domain: AIR \n• Operations Center: 609th \n• Major Command (MAJCOM): AFCENT \n• Combatant Command (COCOM): USCENTCOM",
+            "page": 2
+          }
+        ]
+      }
     ],
     "document_type": "mission_report",
     "legacy_program_connections": [
       {
         "node_id": "aaro",
         "relevance": "high",
-        "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and follows the structured AARO MISREP format with dedicated OBSERVATION fields, making this a direct product of the AARO reporting pipeline."
+        "reasoning": "The document header explicitly states 'Approved for Release to AARO' and the USCENTCOM manifest confirms it was submitted to AARO as a formal UAP observation report, making this a direct example of AARO's operational intake pipeline."
       },
       {
         "node_id": "five_eyes",
-        "relevance": "high",
-        "reasoning": "The document carries a SECRET//REL TO USA, FVEY caveat throughout, meaning this UAP observation from a combat zone was shared with all Five Eyes intelligence partners."
+        "relevance": "medium",
+        "reasoning": "The classification bears the caveat 'REL TO USA, FVEY,' indicating this UAP mission report was authorized for sharing with Five Eyes partner nations at the time of classification."
       }
     ],
     "related_topics": [
-      "full motion video (FMV)",
-      "Operation INHERENT RESOLVE",
-      "SIGINT collection",
-      "combat zone UAP observation",
-      "visual reconnaissance assessment"
+      "infrared FMV UAP observation",
+      "Operation Inherent Resolve",
+      "SIGINT ISR platform",
+      "missile-profile UAP",
+      "AARO reporting pipeline"
     ]
   },
   "1": {

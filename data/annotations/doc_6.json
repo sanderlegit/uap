@@ -1,36 +1,87 @@
 {
-  "hook": "A declassified U.S. Air Force MISREP from Operation Inherent Resolve documents F-16CM pilots observing 10–20 bright, fast-moving objects northeast of a redacted location at FL600+ altitude, with one object briefly tracked on a SNIPER targeting pod before dimming and disappearing.",
-  "why_it_matters": "This report is significant because it combines crew testimony with an attempted electro-optical sensor track, and includes an analyst note that the targeting pod return from the UAP differed from a star comparison — providing a rudimentary but documented sensor discrimination. The objects were noted as not flying in formations previously observed in prior sorties, implying these pilots had encountered similar phenomena before. Filed through official AARO reporting channels, this represents the kind of operational military UAP data that Congress mandated be collected and disclosed.",
+  "hook": "A declassified MISREP from the 77th Expeditionary Fighter Squadron documents a 2-ship F-16CM crew's observation of 10-20 bright, fast-moving objects during a Defensive Counter Air mission over the ESSA killbox during Operation Inherent Resolve, with one object tracked on a SNIPER targeting pod for approximately 20 seconds before dimming and vanishing.",
+  "why_it_matters": "This report is significant because it documents sensor-corroborated UAP observations by trained military aviators in an active combat theater, with the crew explicitly comparing the targeting pod return of the UAP against a known star and noting the results were 'DIFFERENT.' The implied altitude of FL600+ for the objects — over 60,000 feet — placed them well above the F-16's operating altitude of FL265, ruling out common airspace traffic. The report also notes that unlike 'prior sorties,' no formations were observed, suggesting a recurring phenomenon documented across multiple missions.",
   "key_findings": [
-    "A 2-ship of F-16CM aircraft from the 77th Expeditionary Fighter Squadron (77 EFS), 378th Air Expeditionary Wing, observed 10–20 possibly UAP objects starting at 2302:05Z on 31 March 2023 during a Defensive Counter Air (DCA) mission over the ESSA killbox in Iraq.",
-    "The objects were described as 'several bright objects maneuvering quickly west to east' at an estimated altitude of FL600+ (above 60,000 feet), well above the F-16's operating ceiling of FL265.",
-    "One aircraft obtained a track on a possible UAP using its SNIPER targeting pod in TV (electro-optical) mode for approximately 20 seconds before the object became dim and disappeared from the pod — consistent with a luminosity change or cloaking behavior.",
-    "An analyst comment notes that the crew compared the targeting pod signature of the UAP against a star, and the results were 'different,' suggesting the object was not a celestial artifact.",
-    "The pilot report explicitly states none of the objects flew in formations 'as previously seen in prior sorties,' indicating this crew had prior UAP encounter experience in the same operational area."
+    {
+      "finding": "The crew observed a possible 10 to 20 bright objects maneuvering quickly from west to east, at an estimated altitude above FL600 (above 60,000 feet), while the aircraft operated at FL265.",
+      "quotes": [
+        {
+          "text": "STARTING AT 2302:052 ~FLT OBSERVED SEVERAL BRIGHT OBJECTS MANUEVERING QUICKLY WEST TO EAST NE OF RLZ",
+          "page": 6
+        },
+        {
+          "text": "Number of UAP Sighted: POSS 10X-20X",
+          "page": 6
+        },
+        {
+          "text": "UAP Altitude, Depth, Velocity, and Trajectory (indicate estimated or measured): FL600+",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "One of the objects was tracked on the SNIPER targeting pod in TV (electro-optical) mode for approximately 20 seconds before it dimmed and disappeared from the sensor.",
+      "quotes": [
+        {
+          "text": "FLT WOULD OBTAIN POSS UAP ON TARGETING POD (TV MODE) FOR APPROX 20S BEFORE OBJECT WOULD BECOME DIM AND DISAPPEAR FROM TARGETING POD.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "An analyst note — partially redacted — records that the crew compared the targeting pod return of the UAP against a star, and the results were different, indicating the object did not behave like a celestial body on sensor.",
+      "quotes": [
+        {
+          "text": "ANALYST COMMENT:! 1.4a IFLT COMPARED TARGETING POD BETWEEN POSS UAP AND STAR. RESULTS WERE DIFFERENT.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The report explicitly notes the objects were not in formations, contrasting with observations from prior sorties — implying a documented history of UAP sightings in this operational area, some of which featured formations.",
+      "quotes": [
+        {
+          "text": "NONE OF THE OBJECTS WERE SEEN IN ANY FORMATIONS AS PREVIOUSLY SEEN IN PRIOR SORTIES. NFTR.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The mission was a 6-hour 47-minute Defensive Counter Air sortie flown by two F-16CMs from Prince Sultan Air Base under Operation Inherent Resolve, with the UAP contact occurring at 2302Z while the aircraft was on station in the ESSA killbox.",
+      "quotes": [
+        {
+          "text": "Total Mission Time: 6 hours 47 minutes",
+          "page": 5
+        },
+        {
+          "text": "FLT WAS FRAGGED TO CONDUCT DCA IN THE ESSA (2100-0000). MISSION WAS FLOWN AS FRAGGED.",
+          "page": 1
+        },
+        {
+          "text": "Initial Contact DTG: 312302:05ZMAR23",
+          "page": 6
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document was formally submitted to and declassified for release to AARO, and follows the standardized MISREP UAP reporting format AARO uses to collect military encounter data."
+      "reasoning": "The document was explicitly declassified and released to AARO, and the MISREP format and UAP section conform to AARO's standardized military reporting pipeline for UAP incidents."
     },
     {
-      "node_id": "wright_patterson",
+      "node_id": "cia_oga",
       "relevance": "low",
-      "reasoning": "The F-16CM equipment list (SNIPER pod, ALQ-184, AIM-120) connects to USAF aerospace systems historically processed and evaluated through Wright-Patterson's acquisition and analysis infrastructure, though no direct reference appears in the text."
-    },
-    {
-      "node_id": "five_eyes",
-      "relevance": "medium",
-      "reasoning": "The mission operated under USCENTCOM in Iraqi airspace (ESSA killbox) coordinated through the 609th Combined Air Operations Center, an environment where allied intelligence sharing under Five Eyes-adjacent frameworks is routine."
+      "reasoning": "The Operation Inherent Resolve theater (Iraq/Syria) involves multi-agency intelligence activity, though the document itself is an Air Force tactical report with no direct OGA reference."
     }
   ],
   "related_topics": [
     "pilot testimony",
-    "electro-optical targeting pod",
-    "high-altitude UAP",
+    "targeting pod electro-optical",
     "Operation Inherent Resolve",
-    "luminosity change / disappearance"
+    "high-altitude UAP",
+    "F-16 sensor tracking"
   ]
 }

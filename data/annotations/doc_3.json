@@ -1,26 +1,91 @@
 {
-  "hook": "A U.S. military armed reconnaissance mission report from Operation Inherent Resolve in Syria documents an incidental UAP sighting on July 31, 2022 at 0239Z, during an extensive ~21-hour ISR sortie over eastern Syria — the UAP moved north to south in under a minute while the platform flew at 19,359 feet and 116 knots.",
-  "why_it_matters": "This report represents formal, standardized UAP reporting integrated directly into a combat mission report submitted to AARO, demonstrating that USCENTCOM had operationalized UAP documentation procedures by mid-2022. The sighting occurred during an active armed reconnaissance mission tracking ground forces and vehicle convoys, meaning the sensor suite was actively tasked and calibrated at the time of observation. The explicit 'UAP Signatures: No' entry confirms no RF signal was detected, ruling out one category of conventional explanation.",
+  "hook": "A U.S. Air Force MISREP from the 89th Attack Squadron documents an armed reconnaissance mission over Syria on July 30-31, 2022, during which the aircraft crew observed a UAP moving from north to south in under one minute, recorded via dual infrared and electro-optical sensors and submitted to AARO.",
+  "why_it_matters": "This document is significant as one of the first formally structured AARO submission packages to emerge from a combat theater (Operation INHERENT RESOLVE), demonstrating that the UAP reporting pipeline was operational within USCENTCOM by mid-2022. The explicit 'UAP Signatures: No' field in the structured report form shows AARO had already standardized its intake forms to capture RF and sensor signature data. The observation occurred during an active ISR mission tracking armed personnel and military vehicles, ruling out sensor confusion with friendly or coordinated assets as an explanation.",
   "key_findings": [
-    "UAP observed at 0239Z on July 31, 2022, in grid square 37SFU2[redacted], KP 9, Syria — the event lasted less than one minute and the object moved from north to south.",
-    "At the moment of UAP observation, the friendly aircraft was at 19,359 feet altitude traveling at 116 knots, providing precise platform state data for any subsequent analysis.",
-    "The UAP section explicitly records 'UAP Signatures: No,' indicating no RF frequency or duration was detected, and no effects on personnel were reported.",
-    "The mission platform had simultaneous IMINT and SIGINT capabilities active for 18+ hours; SIGINT collection ran from 301829Z to 311409Z — the UAP sighting at 310239Z fell within the active SIGINT collection window, yet no signals were associated with it.",
-    "The document was declassified by MG Richard A. Harrison, USCENTCOM Chief of Staff, on October 8, 2025 under MDR 25-0094, and was specifically approved for release to AARO — indicating institutional recognition of UAP reporting as a distinct reporting category within combat operations."
+    {
+      "finding": "The UAP was observed at 02:39Z on July 31, 2022, lasted less than one minute, and moved from north to south, consistent with the official AARO video description of an object traversing the sensor field of view.",
+      "quotes": [
+        {
+          "text": "AT 310239Z,! 1.4a I OBSERVED AN UAP EVENT IYO 37SFU2~~IN KP 9. THE UAP OCCURED IN LESS THAN A MINUTE, WITH THE UAP MOVING FROM N TO S.",
+          "page": 7
+        },
+        {
+          "text": "~OBSERVED AN UNIDENTIFIED AERIAL PHENOMENON IVO 37SFU271w'7~(SEE UAP 1).",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "No UAP signatures — including RF frequency or RF duration — were detected by the platform's onboard sensors at the time of the sighting.",
+      "quotes": [
+        {
+          "text": "• UAP Signatures: No",
+          "page": 7
+        },
+        {
+          "text": "• UAP RF Frequency: -",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The observing aircraft was flying at 19,359 feet altitude and 116 knots airspeed at the time of the UAP contact, providing reference parameters for any relative motion or parallax analysis of the sensor footage.",
+      "quotes": [
+        {
+          "text": "• Friendly Aircraft Altitude/Depth: 19,359 FT",
+          "page": 7
+        },
+        {
+          "text": "• Friendly Aircraft Speed: 116 KTS",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The mission accumulated over 20 hours airborne with both IMINT and SIGINT collection active, and full-motion video of the UAP event was subsequently exploited by DGS1 (a Defense Ground Station), indicating the footage entered the intelligence exploitation chain.",
+      "quotes": [
+        {
+          "text": "FULL MOTION VIDEO WAS EXPLOITED BY DGSl. 20.9 MISSION HOURS, 17 .2 IMINT HOURS, 1 IMINT TA SKIN GS PROSECUTED, 18. 7 SIG INT HOURS, 1 SIG INT TASKINGSPROSECUTED,2TOTALTASKINGSPROSECUTED",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "The UAP was observed during an active armed reconnaissance mission under Operation INHERENT RESOLVE, supporting Task Force CHOSIN, with the crew simultaneously tracking ground personnel, armed vehicles, and what may have been weapons systems — context that makes sensor artifact or friendly-asset confusion less plausible.",
+      "quotes": [
+        {
+          "text": "• Operation: INHERENT RESOLVE",
+          "page": 1
+        },
+        {
+          "text": "AT 07532, lX WHITE PUT WITH UI OBJECT, POSS ARTILLERY SYSTEM, IN THE BED AND lX ADM WERE OBSERVED.",
+          "page": 6
+        },
+        {
+          "text": "AT 11342, 2X TELARS WITH 3 ROCKETS LOADED WERE INACTIVE.",
+          "page": 6
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The mission report contains a dedicated UAP section formatted explicitly for AARO submission, and the declassification cover page states it was 'Approved for Release to AARO,' confirming AARO as the direct recipient and custodian of this sighting record."
+      "reasoning": "The document is explicitly an AARO submission package — structured with standardized UAP fields and declassified under MDR 25-0094/25-0099 specifically for release to AARO, making it a primary source for AARO's Syria 2022 case file."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "low",
+      "reasoning": "The Air Force (AFCENT/USCENTCOM) chain of command and the Defense Ground Station exploitation of FMV represent institutional Air Force ISR infrastructure, though no direct Wright-Patterson connection is named in the document."
     }
   ],
   "related_topics": [
     "armed reconnaissance",
-    "infrared/EO sensor",
     "SIGINT collection",
+    "infrared sensor footage",
     "Operation Inherent Resolve",
-    "UAP reporting standardization"
+    "AARO reporting pipeline"
   ]
 }

@@ -1,31 +1,86 @@
 {
-  "hook": "A mission report (MISREP) filed by the 482nd Attack Squadron documenting a 19-hour ISR sortie over Iraq on December 1–2, 2022, during which the crew observed a single possible UAP/UAV flying west to east near Baghdad at FL180, captured on FMV and submitted to AARO.",
-  "why_it_matters": "This document is notable as a firsthand operational military report generated during an active combat ISR mission under Operation INHERENT RESOLVE, not a retrospective or investigative file. The UAP was logged with a precise grid reference near Baghdad and a specific contact time (1620Z), yet the crew recorded no detectable signatures and chose not to pursue it, illustrating standard operational protocol when UAP are encountered mid-mission. The accompanying ten-second infrared video — showing an area of contrast transiting the sensor field-of-view — provides rare visual documentation of a UAP contact in a combat zone.",
+  "hook": "A classified mission report (MISREP) from the 482nd Attack Squadron documents a brief UAP sighting over Iraq on December 1, 2022, during a 19-hour ISR mission under Operation Inherent Resolve, in which the crew observed one object flying west to east but did not divert to investigate.",
+  "why_it_matters": "This report illustrates the standard military UAP reporting pipeline in action: a USCENTCOM unit files a MISREP that flows to AARO, the office stood up specifically to consolidate such reports. The crew's own characterization of the object as a 'possible UAP/UAV' — explicitly hedging between anomalous and conventional — reflects the ambiguity typical of operational UAP encounters. The decision not to follow the object and continue the assigned tasking means the sighting was not further characterized, leaving the resolution open.",
   "key_findings": [
-    "At 1620Z on December 1, 2022, the crew observed one possible UAP/UAV flying west to east in the vicinity of grid 38SMB4[redacted]83[redacted] near Baghdad, Iraq, while operating at FL180 (18,000 feet).",
-    "The crew did not follow the UAP and continued the mission as tasked; no further UAP events were observed for the remainder of the sortie.",
-    "No UAP signatures were detected, no RF frequency or duration was recorded, and effects on persons were explicitly reported as 'NONE REPORTED.'",
-    "The mission was a 19-hour 17-minute ISR/TARGET DEV sortie with primary sensor FMV; the aircraft also collected SIGINT via AIRHANDLER, and FMV footage was exploited by DGS-AR.",
-    "The report was filed by the 482ATKS under USCENTCOM/Operation INHERENT RESOLVE and declassified by MG Richard A. Harrison, USCENTCOM Chief of Staff, on 8 October 2025 for release to AARO."
+    {
+      "finding": "The crew observed one object flying west to east at 1620Z and explicitly labeled it a 'possible UAP/UAV,' leaving open whether it was anomalous or a conventional unmanned aerial vehicle.",
+      "quotes": [
+        {
+          "text": "AT 16202, \n I \n 1.4a \n !OBSERVED lX POSSIBLE UAP/UAV FLYING WEST TO EAST IVO \n38SMB4~831I:4al ~DID NOT FOLLOW UAP. ~CONTINUED THE MISSION AS \nTASKED, NO FURTHER EVENTS WERE OBSERVED.",
+          "page": 6
+        },
+        {
+          "text": "AT 1620Z,! 1.4a !OBSERVED POSSIBLE UAP. \nSEE UAP LINE l.",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "No RF signatures were detected from the object and no effects on personnel were reported, ruling out two common sensor-confirmation pathways.",
+      "quotes": [
+        {
+          "text": "• UAP Signatures: No",
+          "page": 6
+        },
+        {
+          "text": "• UAP Effects on Persons: (U) NONE REPORTED",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The crew did not pursue the UAP and returned immediately to their assigned ISR tasking, meaning no follow-on characterization or intercept was attempted.",
+      "quotes": [
+        {
+          "text": "~DID NOT FOLLOW UAP. ~CONTINUED THE MISSION AS \nTASKED, NO FURTHER EVENTS WERE OBSERVED.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The observing aircraft was at FL180 (18,000 feet) and the UAP's altitude, velocity, and trajectory were not measured or estimated — listed as a dash in the formal report fields.",
+      "quotes": [
+        {
+          "text": "• Friendly Aircraft Altitude/Depth: FLl 80",
+          "page": 6
+        },
+        {
+          "text": "• UAP Altitude, Depth, Velocity, and Trajectory (indicate estimated or measured): -",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The mission was a 19-hour ISR sortie under Operation Inherent Resolve, collecting SIGINT and FMV, with the video footage subsequently exploited by a Distributed Ground Station.",
+      "quotes": [
+        {
+          "text": "• Total Mission Time: 19 hours 17 minutes",
+          "page": 4
+        },
+        {
+          "text": "COLLECTED SIGINT VIA AIRHANDLER.",
+          "page": 1
+        },
+        {
+          "text": "FMV WAS EXPLOITED BY DGS-AR",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The MISREP was explicitly submitted to and declassified for release to AARO, making it a direct input into AARO's UAP reporting and resolution pipeline."
-    },
-    {
-      "node_id": "congressional",
-      "relevance": "medium",
-      "reasoning": "The document is part of the PURSUE public disclosure release, which reflects congressionally mandated UAP transparency efforts, and its declassification references multiple MDR numbers consistent with structured legislative-driven review."
+      "reasoning": "The report was formally submitted to AARO and declassified specifically for release to AARO, representing the exact intake pipeline AARO was created to manage."
     }
   ],
   "related_topics": [
-    "infrared/FMV UAP observation",
-    "combat zone UAP contact",
-    "Operation INHERENT RESOLVE",
-    "AARO reporting pipeline",
-    "ISR mission UAP encounter"
+    "infrared/FLIR sensor",
+    "Operation Inherent Resolve",
+    "ISR mission",
+    "possible UAV",
+    "SIGINT collection"
   ]
 }

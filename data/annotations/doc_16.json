@@ -1,31 +1,66 @@
 {
-  "hook": "A U.S. military pilot filed a standardized Mission Report (MISREP) at 1258Z documenting a brief observation of a possible UAP near grid coordinate 34SDG9041417044 in the Arabian Gulf, estimating its velocity at 321 knots before it accelerated and turned east.",
-  "why_it_matters": "This MISREP represents the kind of operationally-generated UAP report that feeds into AARO's collection pipeline, as the official description explicitly states military services use this format to report to AARO. The document demonstrates that UAP observations are occurring in active U.S. military operational areas like the Arabian Gulf, not just training ranges. The brevity of the observation — explicitly noted as precluding altitude estimates — highlights a recurring limitation in UAP data collection: events are often too short for comprehensive sensor engagement.",
+  "hook": "A U.S. military pilot's MISREP GENTEXT from the Arabian Gulf in 2020 records a brief observation of a possible UAP moving at an estimated 321 knots that then accelerated and turned east, logged at 1258Z at a specific MGRS grid coordinate.",
+  "why_it_matters": "This MISREP represents the kind of standardized military reporting chain that feeds into AARO's formal UAP database, giving it evidentiary weight as an officially filed operational record rather than an anecdotal account. The observed behavior — spontaneous acceleration combined with a directional change — is the specific characteristic that distinguishes this contact from a conventional slow-moving or ballistic object. The brevity of the observation, acknowledged in the report itself, reflects an honest limitation that adds credibility to the filing.",
   "key_findings": [
-    "The UAP was observed at 1258Z at grid coordinate 34SDG9041417044 in the Arabian Gulf in 2020.",
-    "The observation was brief enough that no altitude estimate could be made.",
-    "Velocity was estimated at 321 knots (approximately 369 mph) by the observing pilot.",
-    "The UAP exhibited dynamic behavior: it increased speed and changed direction toward the east during the observation.",
-    "The report was filed by a pilot, as indicated by the 'PILOT:' attribution line at the end of the GENTEXT — pages 1 through 4 of the 5-page document contain no recoverable text, suggesting they are standard MISREP form fields that were either blank or not captured by OCR."
+    {
+      "finding": "The UAP was observed at a specific MGRS grid location at 1258Z, providing a precise time-space fix for the encounter.",
+      "quotes": [
+        {
+          "text": "AT 1258Z, AB] OBSERVED POSS UAP IVO 34SDG9041417044.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The observer estimated the UAP's velocity at 321 knots, a speed consistent with fast-moving aircraft but noted without sensor confirmation.",
+      "quotes": [
+        {
+          "text": "VELOCITY ESTIMATED AT 321 KNOTS.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The UAP exhibited active maneuvering — it accelerated and changed direction to the east — behavior that distinguishes it from a passive or ballistic object.",
+      "quotes": [
+        {
+          "text": "UAP INCREASED SPEED AND CHANGED DIRECTION TOWARDS THE EAST.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The observation window was too brief for the pilot to estimate UAP altitude, an acknowledged data gap recorded in the report.",
+      "quotes": [
+        {
+          "text": "BRIEF OBSERVATION PRECLUDED UAP ALTITUDE ESTIMATES.",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "Pages 1 through 4 of the MISREP form — which would contain standardized quantitative fields such as unit, classification header, and operational details — yielded no extractable text, leaving the GENTEXT as the sole substantive content in this release.",
+      "quotes": []
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The official war.gov description explicitly states that U.S. military services use MISREPs like this one to report UAP observations to AARO, placing this document directly in AARO's collection pipeline."
+      "reasoning": "The official war.gov manifest explicitly states MISREPs of this type are submitted to AARO as part of its formal UAP reporting intake process."
     },
     {
-      "node_id": "mitre",
+      "node_id": "wright_patterson",
       "relevance": "low",
-      "reasoning": "MITRE has supported DoD UAP data standardization efforts, and this MISREP format is an example of the standardized military reporting structure that feeds into those analytical frameworks."
+      "reasoning": "As a military operational UAP report, it feeds into the same centralized DoD reporting architecture historically anchored at Wright-Patterson, though no direct institutional link is stated in the text."
     }
   ],
   "related_topics": [
-    "pilot testimony",
-    "Arabian Gulf UAP",
-    "velocity estimation",
-    "direction change behavior",
-    "military MISREP reporting"
+    "pilot visual observation",
+    "aerial velocity estimation",
+    "Arabian Gulf operations",
+    "MGRS grid reference",
+    "UAP maneuvering behavior"
   ]
 }

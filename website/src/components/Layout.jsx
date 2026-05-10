@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useMemo } from 'react'
 import { Outlet, NavLink, Link, useLocation, useParams } from 'react-router-dom'
 import WelcomeBanner from './WelcomeBanner'
-import ChatPanel from './ChatPanel'
 import { useExplorationTrail } from '../hooks/useExplorationTrail'
 
 const primaryNav = [
@@ -256,7 +255,6 @@ export default function Layout() {
           ))}
         </div>
       </nav>
-      <ChatPanel />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { useParams, useNavigate, Link } from 'react-router-dom'
+import { useParams, useNavigate, useLocation, Link } from 'react-router-dom'
 import {
   useDocument,
   useDocuments,
@@ -117,6 +117,9 @@ export default function DocumentDetail() {
   const { id } = useParams()
   const numId = Number(id)
   const navigate = useNavigate()
+  const location = useLocation()
+  const fromGraph = location.state?.fromGraph
+  const graphNodeId = location.state?.nodeId
   const doc = useDocument(numId)
   const docs = useDocuments()
   const manifest = useManifest()
@@ -250,6 +253,15 @@ export default function DocumentDetail() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 pb-24">
+      {fromGraph && (
+        <Link
+          to={`/graph${graphNodeId ? `?node=${graphNodeId}` : ''}`}
+          className="flex items-center gap-2 mb-4 px-3 py-2.5 rounded-lg bg-slate-800/60 border border-slate-700/40 text-sm text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors"
+        >
+          <span>&larr;</span>
+          <span>Back to Network Graph</span>
+        </Link>
+      )}
       {/* ── Document Header ────────────────────────────────────────── */}
       <div className="mb-6">
         <h1 className="text-xl sm:text-2xl font-bold text-slate-100 mb-3 leading-snug">{doc.title}</h1>

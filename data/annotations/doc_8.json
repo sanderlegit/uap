@@ -1,36 +1,103 @@
 {
-  "hook": "A U.S. Air Force ISR asset from the 33rd Special Operations Squadron observed a diamond-shaped UAP traveling at approximately 434 knots over the Mediterranean on January 25, 2024, visible only on its Short-Wave Infrared (SWIR) sensor during a 2-minute window at 05:09Z.",
-  "why_it_matters": "This MISREP is notable because the UAP was invisible to all sensors except SWIR, raising questions about its thermal signature and why it would appear in infrared but not visually or on radar. The document is formally routed through USCENTCOM to AARO under the post-2022 mandatory UAP reporting framework, illustrating how the military's standardized reporting pipeline now captures and preserves such observations. The observer's assessment of 'benign' combined with 'UNK' for intelligent control and propulsion reflects the structured uncertainty these reports are designed to document.",
+  "hook": "A declassified USCENTCOM Mission Report documenting an incidental UAP sighting by a U.S. Air Force special operations ISR aircraft during a 20-hour surveillance mission over Greece in January 2024, in which a diamond-shaped object traveling at approximately 434 knots was observed exclusively through a Short-Wave Infrared (SWIR) sensor for roughly two minutes.",
+  "why_it_matters": "This report is significant because the UAP was detectable only on the SWIR camera and produced no radar return when interrogated, suggesting either a very low radar cross-section or an unusual thermal signature profile — a combination that complicates conventional identification. The structured MISREP format captures the sighting in official DoD reporting channels under USCENTCOM and was explicitly approved for release to AARO, placing it within the formal UAP disclosure pipeline established after the 2022 NDAA. The observer's description of a non-maneuvering probe or 'tail' appended to a diamond shape adds an unusual morphological detail not commonly described in other released UAP reports.",
   "key_findings": [
-    "The UAP was observed at 05:09Z on January 25, 2024, while the aircraft was in transit, before it reached its primary ISR tasking area — the sighting was incidental to the main mission.",
-    "The object was described as 'round diamond shape with straight, non-maneuverable tail' and appeared only on the SWIR camera, with no returns from other sensors including radar.",
-    "Speed was estimated at approximately 434 knots; altitude was FL200 (20,000 feet); the UAP maintained a westward trajectory without changing course over the ~2-minute event.",
-    "The UAP's anomalous characteristics are listed as: 'maintained steady flight path, increased and decreased altitude profile, did not change trajectory' — vertical motion was observed but lateral trajectory held constant.",
-    "The reporting observer was a Senior Airman (E-4) from the 56th Special Operations Intelligence Squadron, 27th Special Operations Wing, operating under USCENTCOM/AFSOC with the aircraft equipped with an AN/DAS-4 targeting pod and Link 16 datalink."
+    {
+      "finding": "The UAP was only detectable through the aircraft's Short-Wave Infrared (SWIR) sensor and did not appear visually or on any other sensor system, with its signature logged as 'SWIR WHT' (white on SWIR).",
+      "quotes": [
+        {
+          "text": "THE UAP ONLY APPEARED ON THE SWIR CAMERA.",
+          "page": 7
+        },
+        {
+          "text": "• UAP Signatures: SWIR WHT",
+          "page": 6
+        },
+        {
+          "text": "• Observation Interrogation of UAP (yes/no; if yes list sensor(s) and returns):: NO",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The observer described the UAP as having a round diamond shape with a straight, non-maneuvering appendage extending from the bottom, described alternately as a 'probe' and a 'tail' in different sections of the same report.",
+      "quotes": [
+        {
+          "text": "• UAP Description (e.g., size, shape, color, markings, recognizable features): ROUND DIAMOND \nSHAPE WITH STRAIGHT, NON MANUEVERABLE \"TAIL\"",
+          "page": 7
+        },
+        {
+          "text": "THE UAP APPEARED DIAMOND IN \nSHAPE WITH A NON-MANUEVERING PROBE AT THE BOTTOM.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The UAP was traveling at approximately 434 knots at FL200 (20,000 feet), roughly 5,000 feet below the observing aircraft at FL250, moving on a westward trajectory, while exhibiting altitude variations but no change in heading.",
+      "quotes": [
+        {
+          "text": "UPON INITIAL OBSERVATION, THE \nUAP WAS FLYING AT A SPEED OF APPROX 434 KNOTS.",
+          "page": 7
+        },
+        {
+          "text": "• Kinetic Altitude: FL200",
+          "page": 7
+        },
+        {
+          "text": "• UAP Anomalous Characteristics/ Behaviors: MAINTAINED STEADY FLIGHT PATH, \nINCREASED AND DECREASED ALTITUDE PROFILE, DID NOT CHANGE TRAJECTORY",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The UAP sighting was incidental to the primary mission: the aircraft was conducting ISR surveillance under USCENTCOM tasking, including a vehicle stop-follow operation in which a large white box was observed being transferred between vehicles.",
+      "quotes": [
+        {
+          "text": "FROM 1353Z-1500Z, (b)(1)1.4a\nCONDUCTED A 1X STOP FOLLOW ON 1X ADM IN A SILVER SUV. AT 1400Z, (b)(1)1.4a OBSERVED \nA LARGE WHITE BOX BEING TRANSFERRED FROM BLACK SUV TO WHITE VAN.",
+          "page": 5
+        },
+        {
+          "text": "AT 0509Z, (b)(1)1.4a\nOBSERVED AN UNIDENTIFIED AERIAL PHENOMENON (SEE UAP 1).",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "finding": "Despite unknown propulsion and unknown intelligent control status, the observer formally assessed the UAP as 'Benign,' and the report records no effects on personnel, equipment, or the aircraft, with the two-minute event ending without incident.",
+      "quotes": [
+        {
+          "text": "• Observer Assessment of UAP: Benign",
+          "page": 6
+        },
+        {
+          "text": "• UAP Propulsion Means: UNK \n• UAP Payload: \n• UAP Under Intelligent Control (yes/no; if yes, describe): UNK",
+          "page": 6
+        },
+        {
+          "text": "THE EVENT LASTED APPROX 2 MINUTES ENDING AT 0511Z, \nWITHOUT ANY OTHER INCIDENT OCCURING.",
+          "page": 7
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The MISREP is explicitly approved for release to AARO and includes a formal UAP Event Serial Number (250509ZJAN2024-CENTCOM 001), placing it directly within AARO's mandatory reporting intake pipeline."
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and carries a USCENTCOM MDR reference number, placing it directly within the formal AARO UAP reporting and disclosure chain."
     },
     {
       "node_id": "five_eyes",
-      "relevance": "high",
-      "reasoning": "The document is classified SECRET//REL TO USA, FVEY, meaning it was authorized for release to Five Eyes partner nations, indicating the intelligence was shared within that alliance framework."
-    },
-    {
-      "node_id": "cia_oga",
-      "relevance": "low",
-      "reasoning": "The mission involved SIGINT collection (8:27 SIGINT hours) under USCENTCOM authority in the Mediterranean, a theater with overlapping intelligence community equities, though no direct CIA connection is stated."
+      "relevance": "medium",
+      "reasoning": "The document is classified SECRET//REL TO USA, FVEY throughout, indicating it was authorized for sharing with Five Eyes partner nations at the time of classification."
     }
   ],
   "related_topics": [
-    "SWIR-only detection",
-    "ISR platform UAP observation",
+    "SWIR infrared detection",
     "diamond-shaped UAP",
-    "USCENTCOM AARO reporting",
-    "infrared anomaly"
+    "special operations ISR",
+    "sensor-limited observation",
+    "Mediterranean theater UAP"
   ]
 }

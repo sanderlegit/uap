@@ -1,31 +1,118 @@
 {
-  "hook": "A USCENTCOM special operations mission report (Misrep 9337873) documenting a 20-hour, 1-minute ISR sortie over the Aegean Sea during which a redacted AFSOC crew observed an unidentified, seemingly circular solid object flying just above the ocean surface toward land at an estimated 30 MPH before losing it from their sensor feed.",
-  "why_it_matters": "This report shows the U.S. military's post-2023 UAP reporting pipeline functioning as designed: a combat ISR crew from 33 SOS filed a structured MISREP through USCENTCOM channels that was formally reviewed and released to AARO. Despite the object remaining unexplained — with propulsion, RF frequency, and advanced capabilities all logged as unknown — the crew's official assessment was 'benign,' illustrating how the institutional framework categorizes low-anomaly UAP encounters. The document's declassification under USCENTCOM MDR 26-0019 and release through the PURSUE program reflects the congressional mandate for systematic UAP disclosure from military archives.",
+  "hook": "A U.S. Air Force Special Operations Command (AFSOC) Mission Report from the 33rd Special Operations Squadron documenting a UAP sighting during a 20-hour ISR mission over the Aegean Sea on 28–29 October 2023, submitted to AARO following declassification by USCENTCOM's Chief of Staff in January 2026.",
+  "why_it_matters": "This report is notable for being an official USCENTCOM-submitted UAP filing to AARO from an active special operations ISR platform, giving it high institutional credibility. The crew observed and recorded the object using Full Motion Video during a return-to-base phase, meaning the sighting was incidental rather than tasked, which lends additional weight to the report. The document's structured UAP section provides rare quantified kinetic data—an estimated velocity of 30 MPH—alongside explicit assessments of propulsion, control, and anomalous characteristics, making it a well-formatted data point for AARO's analytical baseline.",
   "key_findings": [
-    "UAP was observed at 0811Z on 29 October 2023 by a single AFSOC aircraft (33 SOS / 27 SOW) that was returning to base after a 9-hour-24-minute on-station ISR period; the crew was RTB when the sighting occurred.",
-    "The object was formally described in the report as 'seemingly circular, too small to make out details,' flying just above the ocean surface and moving straight toward land — consistent with the war.gov video description of a contrast area tracked by an infrared sensor that became indistinguishable as the background transitioned from water to land.",
-    "Estimated kinetic velocity recorded as 30 MPH; both first and last coordinate accuracy are listed as 'estimated,' within a 5-unit radius at grid 35SMV3[redacted], indicating the crew could not precisely fix the object's position.",
-    "All formal UAP assessment fields indicate a non-anomalous encounter: physical state = solid; propulsion = unknown; intelligent control = NO; maneuverability observations = none; signatures = none; effects on equipment and persons = none; objects/material recovered = no.",
-    "The aircraft carried AGM-114R9E and AGM-114R2 Hellfire missiles and an AN/DAS-4 targeting pod, confirming it was an armed special operations ISR platform; sensors available included G-MESH and FMV/SIGINT collection was the primary mission tasking, with 9:24 FMV hours logged."
+    {
+      "finding": "The UAP was described as small and circular, observed flying just above the ocean surface and moving toward land before being lost from the sensor feed as the background transitioned from water to land.",
+      "quotes": [
+        {
+          "text": "AT 081 lZ,~BSERVED IX POSS UAP (SEE UAP 1).",
+          "page": 1
+        },
+        {
+          "text": "• UAP Description (e.g., size, shape, color, markings, recogniz \ble features): SEEMINGLY CIRCULAR, TOO SMALL TO MAKE OUT DETAILS",
+          "page": 7
+        },
+        {
+          "text": "AT 081 IZ,! \n1.4a \n!WAS RIB WHEN THEY SPOTTE A UAP FLYING JUST ABOVE \nTHE SURFACE OF THE OCEAN WATER. THE UAP FLEWS \nIGHT ABOVE THE OCEAN \nTOWARDS LANDS. AT 081 IZ,~LOST THE UAP FROM \nHEIR FEED.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The observer assessed the UAP as benign, with no maneuverability anomalies recorded and no effects on personnel or equipment.",
+      "quotes": [
+        {
+          "text": "• UAP Maneuverability Observations: NONE",
+          "page": 6
+        },
+        {
+          "text": "• Observer Assessment of UAP: Benign",
+          "page": 6
+        },
+        {
+          "text": "• UAP Effects on Persons: NO",
+          "page": 6
+        },
+        {
+          "text": "• UAP Effects on Equipment: NONE",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The UAP's kinetic velocity was estimated at 30 MPH; its physical state was recorded as solid, its propulsion means as unknown, and the crew did not assess it to be under intelligent control.",
+      "quotes": [
+        {
+          "text": "• Kinetic Velocity: 30 MPH",
+          "page": 7
+        },
+        {
+          "text": "• UAP Physical State: Solid",
+          "page": 6
+        },
+        {
+          "text": "• UAP Propulsion Means: UNK",
+          "page": 6
+        },
+        {
+          "text": "• UAP Under Intelligent Control (yes/no; if yes, describe): NO",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The mission was a long-duration AFSOC ISR sortie lasting 20 hours and 1 minute, operating under USCENTCOM from the 33rd Special Operations Squadron, with Full Motion Video as the primary sensor and G-MESH listed as an additional sensor capability.",
+      "quotes": [
+        {
+          "text": "20:01 MISSION HOURS, 09:24 FMV HOURS, IX FMV TASKING$ PROSECU \nD.",
+          "page": 1
+        },
+        {
+          "text": "• Originator (Unit or Squadron): 33 SOS",
+          "page": 2
+        },
+        {
+          "text": "• Primary Sensor: FMV",
+          "page": 5
+        },
+        {
+          "text": "• Sensors Available: G-MESH",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The UAP sighting occurred at 0811Z on 29 October 2023 while the aircraft was returning to base, meaning the observation was incidental to the mission's primary ISR tasking, which involved target development and pattern-of-life collection on associated points of interest.",
+      "quotes": [
+        {
+          "text": "• Initial Contact DTG: 290811 :00ZOCT23",
+          "page": 6
+        },
+        {
+          "text": "• Activity Description: TARGET DEVELOPMENT",
+          "page": 5
+        },
+        {
+          "text": "FROM \n2019Z TO 2243Z,~CONDUCTED POL ON SEVERAL AS~OCIATED COIS, NO EEi RELATED \nACTIVITY OBSERVED.",
+          "page": 6
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and the UAP section follows AARO's standardized reporting schema, making AARO the direct institutional recipient and custodian of this report."
-    },
-    {
-      "node_id": "congressional",
-      "relevance": "medium",
-      "reasoning": "Declassification under USCENTCOM MDR 26-0019 on 22 January 2026 and release through the PURSUE program reflects the congressional UAP transparency mandates that compelled DoD to systematically declassify and publish military UAP records."
+      "reasoning": "The document is explicitly marked 'Approved for Release to AARO' and was submitted to AARO by USCENTCOM as an official UAP incident report, making AARO the direct institutional recipient and processing body."
     }
   ],
   "related_topics": [
-    "infrared sensor UAP tracking",
+    "infrared FMV tracking",
+    "AFSOC ISR mission",
     "ocean surface UAP",
-    "AFSOC special operations ISR",
-    "AARO standardized reporting",
-    "USCENTCOM UAP pipeline"
+    "USCENTCOM UAP reporting",
+    "kinetic velocity estimate"
   ]
 }

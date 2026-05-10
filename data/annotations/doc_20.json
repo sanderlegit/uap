@@ -1,36 +1,97 @@
 {
-  "hook": "The 30th Space Wing's official launch registry documents every major Vandenberg AFB launch operation from the first flight on December 16, 1958 through February 2000, compiled by historian Jeffrey Geiger as an administrative reference distributed to military commands, NASA, and defense contractors.",
-  "why_it_matters": "This document contains no UAP reports or anomaly investigations — it is a purely administrative historical record. Its inclusion in the PURSUE UAP release is most likely contextual: Vandenberg AFB has been a reported location of anomalous object observations in proximity to missile launches, and this registry establishes the complete operational timeline and infrastructure that would be needed to cross-reference any such incident reports against specific launch events. The document also reveals the full scope of classified and unclassified launch activity at the site across four decades.",
+  "hook": "The official historical registry of all major launches conducted from Vandenberg Air Force Base between 1958 and 2000, compiled by the 30th Space Wing Office of History and distributed to over 30 military commands, agencies, and contractors as of February 3, 2000.",
+  "why_it_matters": "Vandenberg AFB is the primary West Coast launch facility for U.S. military ICBMs and reconnaissance satellites, making its complete operational launch history a potential baseline for correlating reported UAP events with known missile and space launch activity. The document's inclusion in the PURSUE release is significant because launch-correlated anomalous observations—objects appearing near missile tests—form a recurring pattern in UAP reporting. However, the visible extracted text contains no UAP-specific content; the registry's value lies in establishing the factual launch record against which anomalous sightings could be cross-referenced.",
   "key_findings": [
-    "The registry covers launches by program type across six major systems: Atlas ICBM, Minuteman ICBM, Titan ICBM/Space, Thor IRBM/Space, Peacekeeper, and Scout/Space Shuttle, with separate annual summary matrices organized by booster and by command.",
-    "As of February 3, 2000, the document records 12 silo sites as currently active and an unspecified number as decommissioned, stripped, or destroyed.",
-    "The distribution list spans military commands (HQ AFSPC, HQ USSPACECOM, 45th SW, SMC), NASA HQ, and major defense contractors including Boeing, TRW, Aerospace Corporation, Lockheed Martin, ITT Federal Services, and Jet Propulsion Laboratory.",
-    "The glossary documents over 80 program abbreviations, revealing the breadth of operations: from ballistic missile reentry test programs (ABRES, BMRS, RSLP) to science satellites (COBE, IRAS, SAMPEX) to operational military systems (DMSP, NAVSTAR, GLCM).",
-    "Launch facility types are formally defined as SOFT (exposed above-ground), SEMI-HARD (ground-level concrete housing), HARD (underground concrete housing), SILO, SILO-LIFT, and COFFIN-TYPE, providing technical context for infrastructure that was active during the full UAP reporting era."
+    {
+      "finding": "The document serves as the official, chronological record of all major launches from Vandenberg AFB, with the first launch dated 16 December 1958, providing a complete 42-year baseline of known launch events against which anomalous observations could theoretically be correlated.",
+      "quotes": [
+        {
+          "text": "This is the official registry of all major launch operations conducted from Vandenberg Air Force Base, California. The vehicles are presented in chronofogical order beginning with the first launch on 16 December 1958.",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "finding": "The document was distributed to a broad cross-section of military commands, NASA, and major defense contractors—including TRW, Boeing, Aerospace Corporation, and Jet Propulsion Laboratory—reflecting the wide institutional footprint of Vandenberg launch operations.",
+      "quotes": [
+        {
+          "text": "2 Aerospace Corporation 1 Boeing Defense & Space Group 2 ITT Federal Services Corporation 2 TRW",
+          "page": 2
+        },
+        {
+          "text": "1 HO NASA 1 HO AFMC/ORS 2 Ogden ALC/LMIM 1 JIC/ODT 1 TRW/SEDD 1 Jet Propulsion Laboratory 1 PA-MSB, Kennedy Space Center",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "Sandia National Laboratories had a direct programmatic presence at Vandenberg through the SAMAST program (Sandia ABRES Material Systems Test), linking the base to nuclear weapons reentry vehicle development.",
+      "quotes": [
+        {
+          "text": "SAMAST Sandia ABRES Material Systems Test",
+          "page": 5
+        },
+        {
+          "text": "ABRES Advanced Ballistic Reentry System",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The launch facility index distinguishes between active and decommissioned sites, with 12 sites listed as currently active as of the document date, spanning Atlas, Minuteman, Peacekeeper, Thor, Titan, Scout, and Space Shuttle launch complexes.",
+      "quotes": [
+        {
+          "text": "Number of Sit,ls Currently Active: ___!2,_",
+          "page": 9
+        },
+        {
+          "text": "(* = Active Sites)",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "finding": "The glossary defines multiple launch configuration types from exposed above-ground pads to hardened underground silos, reflecting decades of facility evolution from early IRBM/ICBM programs through modern space launch operations.",
+      "quotes": [
+        {
+          "text": "SOFT - Missile emplaced and launched from exposed launcher above ground (e.g., Gantry-type; er Test Pad). SEMI-HARD - Missile emplaced in protective ground-level concrete housing prior to launch (see Coffin Type below). HARD - Missile emplaced in protective concrete housing underground prior to launch (see Silo and Silo-Lift below).",
+          "page": 10
+        },
+        {
+          "text": "SILO - Protective vertical tube-type housing from which missile is launched from its emplaced position (Minuteman and Titan II). SILO-LIFT - Missile is stored in silo, but is elevated clear of the tube for above ground launching (Atlas F and Titan I).",
+          "page": 10
+        }
+      ]
+    }
   ],
   "document_type": "historical_file",
   "legacy_program_connections": [
     {
-      "node_id": "wright_patterson",
+      "node_id": "sandia",
       "relevance": "medium",
-      "reasoning": "HQ AFMC/ORS appears in the distribution list; AFMC (Air Force Materiel Command) is headquartered at Wright-Patterson and oversaw the missile and space programs documented throughout this registry."
+      "reasoning": "Sandia National Laboratories is explicitly referenced through the SAMAST (Sandia ABRES Material Systems Test) program, which tested nuclear warhead reentry vehicles at Vandenberg."
     },
     {
-      "node_id": "lockheed",
-      "relevance": "high",
-      "reasoning": "Lockheed Martin is explicitly named in the distribution list and in the glossary as the provider of the LLV-1/Athena launch vehicle, making it a primary contractor for launches documented in this registry."
+      "node_id": "doe_aec",
+      "relevance": "medium",
+      "reasoning": "The Atomic Energy Commission (AEC) appears in the glossary as a participating entity, reflecting AEC's role in nuclear warhead development tied to the ICBM and reentry vehicle programs conducted at Vandenberg."
+    },
+    {
+      "node_id": "wright_patterson",
+      "relevance": "medium",
+      "reasoning": "Air Force Systems Command (AFSC) and Air Force Materiel Command (AFMC) are cited throughout the glossary and distribution list as the primary Air Force R&D commands overseeing Vandenberg programs."
     },
     {
       "node_id": "nro",
       "relevance": "low",
-      "reasoning": "Vandenberg's SLC-4E and SLC-4W Titan launch pads were the primary west coast launch sites for NRO reconnaissance satellites throughout this period, though the NRO is not named anywhere in the visible document text."
+      "reasoning": "SLC-4E and SLC-4W (active Titan IV pads) and the 576th FLTS are listed as active sites; these pads served as primary NRO reconnaissance satellite launch facilities, though NRO is not named explicitly in the visible text."
     }
   ],
   "related_topics": [
-    "Vandenberg AFB launch history",
-    "ICBM test operations",
-    "space launch infrastructure",
-    "missile reentry programs",
-    "30th Space Wing"
+    "ICBM launch operations",
+    "Vandenberg AFB missile testing",
+    "reentry vehicle programs",
+    "military space launch history",
+    "launch-correlated UAP observations"
   ]
 }

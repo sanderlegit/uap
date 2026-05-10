@@ -1,31 +1,94 @@
 {
-  "hook": "A USCENTCOM mission report from the 33rd Special Operations Squadron documenting a brief airborne infrared sensor observation of a seemingly circular UAP making multiple sharp 90-degree turns at approximately 80 MPH just above the ocean surface during an ISR mission on October 27, 2023, operating out of Larissa Air Base, Greece.",
-  "why_it_matters": "This document is a standardized DoD UAP incident report submitted directly to AARO and declassified by USCENTCOM's Chief of Staff in January 2026, representing the formalized military reporting pipeline AARO depends on. The encounter occurred as a secondary observation during an active counter-VEO ISR mission, meaning the crew had no prior tasking to observe UAP—their report reflects an incidental, real-time observation. The crew's simultaneous assessment of 'benign' and 'no intelligent control' despite observing aerodynamically anomalous 90-degree turns at speed illustrates the tension in how military observers classify these events.",
+  "hook": "A U.S. Air Force Special Operations Command mission report (33 SOS, 27 SOW) documents an incidental UAP sighting at 0035Z on 27 October 2023 during an ISR/target development mission over the Aegean Sea, describing a seemingly circular object flying just above the ocean surface and executing multiple 90-degree turns at approximately 80 MPH before being lost from the sensor feed at 0038Z.",
+  "why_it_matters": "This report is notable because it captures a UAP with sharp right-angle maneuvers from an AN/DAS-4 targeting pod aboard a special operations platform — a sensor suite optimized for precision tracking — yet the crew still lost the object within three minutes. The contradictory combination of anomalous kinematics (90-degree turns at 80 MPH) with a 'Benign' observer assessment and a determination that the object was 'not under intelligent control' illustrates the interpretive uncertainty embedded even in structured military reporting formats. The document was declassified in January 2026 and formally released to AARO, placing it within the current statutory UAP disclosure pipeline.",
   "key_findings": [
-    "The UAP was observed at 0035Z on October 27, 2023, flying just above the ocean surface and making multiple sharp 90-degree turns at an estimated velocity of 80 MPH; the crew lost the UAP from their sensor feed approximately three minutes later at 0038Z.",
-    "The object was described as 'seemingly circular, too small to make out details,' assessed as 'solid' in physical state, with propulsion means, RF frequency, and advanced capabilities all recorded as 'UNK.'",
-    "The observing crew formally assessed the UAP as 'benign' and specifically marked 'NO' to intelligent control, 'NONE' to signatures, and 'NONE' to effects on equipment—despite the documented sharp-turn maneuvers.",
-    "The reporting unit was the 33rd Special Operations Squadron, 27th Special Operations Wing, AFSOC, operating under USCENTCOM with primary sensors listed as FMV and SIGINT; the aircraft was equipped with an AN/DAS-4 targeting pod and AWGMESH datalink.",
-    "The mission was primarily a counter-violent-extremist-organization (VEO) ISR tasking; the UAP sighting occurred while the aircraft was en route to its assigned target, making this an incidental observation rather than a dedicated UAP investigation."
+    {
+      "finding": "The UAP executed multiple sharp 90-degree turns at an estimated 80 MPH while flying just above the ocean surface, behaviors logged in a structured MISREP field as well as in the freetext narrative.",
+      "quotes": [
+        {
+          "text": "UAP Maneuverability Observations: Sharp 90 degree turns",
+          "page": 6
+        },
+        {
+          "text": "THE UAP TOOK MULTIPLE 90 DEGREE TURNS AT AN ESTIMATED 80 MPH. AT 00382, 1.4a LOST THE UAP FROM THEIR FEED.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The observing crew described the UAP as seemingly circular but too small to resolve further detail, and the contact lasted only approximately three minutes from first sighting to loss of feed.",
+      "quotes": [
+        {
+          "text": "UAP Description (e.g., size, shape, color, markings, recogniza le features): SEEMINGLY CIRCULAR, TOO SMALL TO MAKE OUT DETAILS",
+          "page": 7
+        },
+        {
+          "text": "AT 0035Z,~WAS EN ROUTE TO THEIR TAR I ET WHEN THEY SPOTTED A UAP FLYING JUST ABOVE THE SURFACE OF THE OCEAN WATER.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Despite logging anomalous 90-degree turns, the observer formally assessed the UAP as benign, not under intelligent control, and with no detected signatures across RF, physical effects, or equipment interference.",
+      "quotes": [
+        {
+          "text": "Observer Assessment of UAP: Benign",
+          "page": 6
+        },
+        {
+          "text": "UAP Under Intelligent Control (yes/no; if yes, describe): NO",
+          "page": 6
+        },
+        {
+          "text": "UAP Signatures: NONE",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The reporting unit was 33 SOS (Special Operations Squadron) under 27 SOW and AFSOC/USCENTCOM, and the UAP observation was incidental — the primary mission was ISR target development for a violent extremist organization campaign.",
+      "quotes": [
+        {
+          "text": "Originator (Unit or Squadron): 33 SOS",
+          "page": 2
+        },
+        {
+          "text": "Global Campaign Plan: GCP - VEO (violent extremist group)",
+          "page": 5
+        },
+        {
+          "text": "Activity Description: TARGET DEVELOPMENT",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The aircraft was equipped with an AN/DAS-4 targeting pod, AWGMESH, and Link 16 data link; full motion video was exploited by GET (Ground Exploitation Team), totaling 13 hours 30 minutes of mission time with 6 hours 29 minutes of FMV collection.",
+      "quotes": [
+        {
+          "text": "TGT Pod Name or Designator: AN/DAS-4",
+          "page": 4
+        },
+        {
+          "text": "FULL MOTION VIDEO WAS EXPLbITED BY GET. 13:30 MISSION HOURS, 06:29 FMV HOURS, IX FMV TASKINGS PROSECUT D.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document was formally submitted to AARO and stamped 'Approved for Release to AARO 01/26/26,' making it a direct product of the DoD-to-AARO UAP reporting pipeline AARO was established to receive."
-    },
-    {
-      "node_id": "congressional",
-      "relevance": "low",
-      "reasoning": "AARO's collection of standardized military UAP reports like this one directly feeds the congressional UAP oversight and disclosure requirements mandated by successive NDAAs, giving this document downstream relevance to the legislative accountability framework."
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO 01/26/26' and the UAP event was submitted to AARO as a formal UAP incident report under USCENTCOM MDR 26-0019."
     }
   ],
   "related_topics": [
-    "90-degree turns",
-    "infrared sensor observation",
-    "low-altitude ocean surface UAP",
+    "infrared sensor tracking",
+    "90-degree turns ocean surface",
     "AFSOC special operations ISR",
-    "AARO reporting pipeline"
+    "UAP kinematics low altitude",
+    "USCENTCOM Aegean"
   ]
 }

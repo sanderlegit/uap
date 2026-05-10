@@ -1,36 +1,111 @@
 {
-  "hook": "A U.S. Air Force Special Operations aircrew returning to base from an ISR mission over the Gulf of Oman at 0457Z on June 7, 2024 detected a single UAP flying just over the water at 140 knots — described as a glowing hot spherical object with a vertical cylindrical pole or bar attached to its underside, possibly casting a reflection in the water below.",
-  "why_it_matters": "This MISREP is notable for the specificity of its physical description: the observer characterized the UAP as a solid, 'glowing hot' sphere with a structural appendage — a level of morphological detail that goes beyond the typical light or orb report. The event was captured during return-to-base from a routine maritime ISR patrol by a 3rd Special Operations Squadron aircrew operating under USCENTCOM, lending institutional credibility to the observation. The document was declassified and formally released to AARO, making it part of the official disclosure pipeline.",
+  "hook": "A U.S. Air Force Special Operations aircraft returning from an ISR mission (Operation ENDURING SENTINEL) over the Gulf of Oman detected a glowing spherical object with a downward-projecting cylindrical pole flying straight over the water at 140 knots, formally reported as a UAP Incident to USCENTCOM and AARO.",
+  "why_it_matters": "This report is notable for its unusually specific visual description: a 'glowing hot' spherical object with an 'unwavering cylindrical pole/bar' extending from its underside — an unconventional morphology not consistent with known aircraft or balloons. The document also reveals a discrepancy between the official metadata summary (which attributes 163 knots and 24,000 ft to the UAP) and the actual report text, where 163 knots and 23,999 ft are the *observer aircraft's* parameters, and 140 knots is the UAP's estimated velocity flying near sea level. Despite possessing an AN/DAS-1 targeting pod, the crew made no sensor interrogation attempt.",
   "key_findings": [
-    "The UAP was described as a 'GLOWING HOT SPHERICAL UNIDENTIFIED OBJECT WITH A VERTICAL UNWAVERING CYLINDRICAL POLE/BAR ATTACHED ON THE BOTTOM' — a structurally specific description that includes a possible water reflection beneath it.",
-    "The UAP was traveling at 140 knots just over the water's surface while the observing aircraft was at 23,999 ft MSL and 163 knots on a 294-degree heading, establishing a clear geometry of the encounter.",
-    "The observer assessed the UAP as 'Benign,' reported no change in UAP behavior in response to the observation, no effects on personnel or equipment, and no sensor interrogation was attempted.",
-    "The mission was conducted under Operation ENDURING SENTINEL by the 3rd Special Operations Squadron (3 SOS), 27th Special Operations Wing (27 SOW), AFSOC, operating out of Al Minhad Air Base (OMAM) in the UAE under the 609th CAOC.",
-    "The UAP serial number is 060457ZJUN2024-CENTCOM, and the report was approved for release to AARO on October 28, 2025, declassified by USCENTCOM Chief of Staff MG Richard A. Harrison."
+    {
+      "finding": "The UAP was described as a glowing, hot spherical object with a vertical cylindrical pole or bar attached to its underside, possibly producing a water reflection — a morphology inconsistent with standard aircraft or balloons.",
+      "quotes": [
+        {
+          "text": "GLOWING HOT SPHERICAL UNIDENTIFIED OBJECT WITH A VERTICAL UNWAVERING CYLINDRICAL POLE/BAR ATTACHED ON THE BOTTOM OF THE OBJECT POSS REFLECTION FROM THE OBJECT IN THE WATER, MOVING AT 140KNOTS",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The UAP was observed flying straight and low over the water at 140 knots with unknown propulsion, while the observer aircraft was at 23,999 feet MSL traveling at 163 knots — indicating the UAP was operating at a drastically lower altitude than the reporting aircraft.",
+      "quotes": [
+        {
+          "text": "FLYING STRAIGHT JUST OVER THE WATER AT SPEED OF 140KNOTS",
+          "page": 6
+        },
+        {
+          "text": "• Friendly Aircraft Altitude/Depth: 23,999FT",
+          "page": 6
+        },
+        {
+          "text": "• Kinetic Velocity: 140 KNOTS",
+          "page": 6
+        },
+        {
+          "text": "• UAP Propulsion Means: UNKNOWN",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The crew made no sensor interrogation of the UAP despite being equipped with an AN/DAS-1 targeting pod (infrared/FLIR), and the observer assessed the UAP as benign with no advanced capabilities detected.",
+      "quotes": [
+        {
+          "text": "• Observation Interrogation of UAP (yes/no; if yes list sensor(s) and returns):: NO",
+          "page": 6
+        },
+        {
+          "text": "• Observer Assessment of UAP: Benign",
+          "page": 6
+        },
+        {
+          "text": "• UAP Advanced Capabilities And/Or Materials  (yes/no; if yes, describe): NO",
+          "page": 6
+        },
+        {
+          "text": "• TGT Pod Name or Designator: AN/DAS-1",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "finding": "The UAP detection occurred during the return-to-base leg of a 10-hour ISR mission (Operation ENDURING SENTINEL) tasked with maritime surveillance of dhow traffic in the Gulf of Oman — the UAP sighting was incidental to the primary mission.",
+      "quotes": [
+        {
+          "text": "AT 0457Z, DURING RTB (b)(1)1.4a DETECTED 1X UAP (SEE UAP 1).",
+          "page": 1
+        },
+        {
+          "text": "• Operation: ENDURING SENTINEL",
+          "page": 2
+        },
+        {
+          "text": "A. BEGIN SCANS AT 75NM WEST, NORTH, AND EAST OF SP FOR DHOWS TRANSITING IN THE DIRECTION OF SP",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "finding": "The report was filed by AFSOC's 3rd Special Operations Squadron (3 SOS), 27th Special Operations Wing, under USCENTCOM authority, and was formally approved for release to AARO — indicating the event entered the official UAP reporting chain.",
+      "quotes": [
+        {
+          "text": "• Major Command (MAJCOM): AFSOC",
+          "page": 2
+        },
+        {
+          "text": "• Originator (Unit or Squadron): 3 SOS",
+          "page": 2
+        },
+        {
+          "text": "Approved for Release to AARO",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document was explicitly approved for release to AARO and carries the UAP event serial number format CENTCOM uses for AARO reporting, confirming it is part of the formal UAP disclosure pipeline."
+      "reasoning": "The document is explicitly stamped 'Approved for Release to AARO' and uses AARO's standardized UAP Incident reporting fields throughout the MISREP form."
     },
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "Multiple sections of the report carry the classification caveat SECRET//REL TO USA, FVEY, indicating the underlying ISR mission intelligence was shared with Five Eyes partners."
-    },
-    {
-      "node_id": "congressional",
-      "relevance": "low",
-      "reasoning": "The document was declassified under MDR (Mandatory Declassification Review) case USCENTCOM MDR 25-0100 through 25-0103, reflecting congressional and oversight pressure driving CENTCOM UAP disclosures."
+      "reasoning": "Intelligence dissemination throughout the document is classified 'SECRET//REL TO USA, FVEY,' indicating Five Eyes partners were authorized recipients of the ISR tasking and reporting."
     }
   ],
   "related_topics": [
-    "spherical UAP morphology",
-    "maritime low-altitude UAP",
-    "AFSOC special operations ISR",
-    "Gulf of Oman UAP encounter",
-    "AARO mandatory disclosure pipeline"
+    "maritime surveillance",
+    "pilot testimony",
+    "low-altitude UAP",
+    "infrared/FLIR observation",
+    "special operations ISR"
   ]
 }

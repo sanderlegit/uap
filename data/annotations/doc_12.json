@@ -1,36 +1,87 @@
 {
-  "hook": "A U.S. Air Force Special Operations Command ISR platform flying over Syria at 20,088 feet observed multiple unexplained light and glare phenomena crossing its FMV camera feed over an 85-minute window on October 20, 2024, during Operation INHERENT RESOLVE.",
-  "why_it_matters": "This document represents one of the few publicly released UAP reports from an active combat theater, submitted by USCENTCOM to AARO under the formal UAP reporting framework established post-2022. The aircrew's explicit ruling out of a laser event ('assessed this not to be a lasing event') is significant in a theater where laser dazzling of aircraft sensors is a known adversary tactic. The categorization of the UAP's physical state as 'Plasma' in the structured report fields, while the narrative describes it as a 'misshapen and uneven ball of white light,' illustrates the tension between standardized reporting taxonomy and actual observed phenomena.",
+  "hook": "A U.S. Air Force Special Operations Command ISR platform flying over Syria at 20,088 feet reported a series of light and glare anomalies crossing its FMV camera feed across a 45-minute window on 20 October 2024, formally logged as a UAP incident and submitted to AARO under Operation INHERENT RESOLVE.",
+  "why_it_matters": "This report demonstrates the institutionalization of UAP reporting within active USCENTCOM counterterrorism operations, with a field crew submitting a structured AARO-format incident report mid-mission while continuing target development tasking against VEOs. Notably, the formal UAP data fields classify the phenomenon's physical state as 'Plasma' despite no active sensor interrogation being performed and all kinematic parameters being left blank—illustrating how field-level classification categories can outrun actual observational data. The aircrew's explicit ruling out of a laser attack reflects post-2022 DoD guidance requiring reporters to consider directed-energy explanations before logging an anomaly.",
   "key_findings": [
-    "Between 1559Z and 1644Z, the ISR platform observed multiple light/glare events from unknown origin at different angles and directions — specifically at 1559Z, 1602Z, 1609Z, 1620Z, and 1644Z — with some crossing directly on the FMV camera and others appearing as a halo effect at the top of the feed.",
-    "The UAP was formally described in the structured fields as 'Plasma' in physical state, with unknown propulsion, no intelligent control, no advanced capabilities, and no effects on personnel or equipment — the crew assessed it as 'Benign' with 'NO MISSION IMPACT.'",
-    "No interrogation of the UAP was conducted (no sensor returns attempted), no engagement occurred, and no third-party observers were listed — the sole data source is the FMV feed from a single platform.",
-    "The reporting unit is the 12th Special Operations Squadron (12 SOS), 27th Special Operations Wing (27 SOW), operating under AFSOC and USCENTCOM's 609th Combined Air Operations Center, with the observer an E-4 (Airman First Class).",
-    "The mission was a 20-hour, 24-minute ISR flight conducting FMV and SIGINT collection against violent extremist organization targets under Operation INHERENT RESOLVE; the UAP event occurred during the second of three ISR taskings and did not alter the mission."
+    {
+      "finding": "The UAP manifested as multiple distinct light and glare events over a 45-minute window at different angles and positions, not a single discrete sighting—with separate observations recorded at five specific timestamps.",
+      "quotes": [
+        {
+          "text": "FROM 1559Z-1644Z, (b)(1)1.4a OBSERVED MULTIPLE GLARES OR LIGHT FROM UNKNOWN ORIGIN AT DIFFERENT ANGLES AND DIRECTIONS. AT 1559Z, 1602Z AND AT 1644Z, OBSERVED 1X LIGHT/GLARE CROSSED DIRECTLY ON THE FMV CAMERA. AT 1609Z AND 1620Z, (b)(1)1.4a OBSERVED A LIGHT/GLARE HALO EFFECT AT THE TOP OF (b)(1)1.4a FMV FEED.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The narrative description of the UAP as a 'misshapen and uneven ball of white light' is categorized in the formal data fields as 'Plasma'—a specific physical-state classification entered despite no sensor return or measurement data supporting it.",
+      "quotes": [
+        {
+          "text": "MISHAPEN AND UNEVEN BALL OF WHITE LIGHT.",
+          "page": 8
+        },
+        {
+          "text": "• UAP Physical State: Plasma",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "No active sensor interrogation of the UAP was attempted, and all kinematic parameters—altitude, depth, velocity, and trajectory—were left blank with 'Estimated' accuracy ratings, meaning no measured data on the object's own movement was obtained.",
+      "quotes": [
+        {
+          "text": "• Observation Interrogation of UAP (yes/no; if yes list sensor(s) and returns):: NO",
+          "page": 7
+        },
+        {
+          "text": "• Kinetic Altitude: -\n• Kinetic Depth Accuracy: Estimated\n• Kinetic Depth: -\n• Kinetic Velocity Accuracy: Estimated\n• Kinetic Velocity: -\n• Kinetic Trajectory Accuracy: Estimated\n• Kinetic Trajectory: -",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The aircrew explicitly ruled out a directed-energy laser attack and assessed the phenomenon as benign with no mission impact, continuing their ISR tasking without interruption.",
+      "quotes": [
+        {
+          "text": "• UAP Anomalous Characteristics/ Behaviors: LIGHT/GLARE FROM UNKNOWN ORIGIN  \nFLASHED ACCROSS FMV CAMERA FEED. AIRCREW ASSESSED THIS NOT TO BE A LASING \nEVENT.",
+          "page": 7
+        },
+        {
+          "text": "AIRCREW CONSIDERED THIS NO MISSION IMPACT OR CHANGE AND UAP WAS BENIGN.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The reporting platform was an AFSOC special operations ISR asset from the 12th Special Operations Squadron (27 SOW) conducting target development against violent extremist organizations under Operation INHERENT RESOLVE, logging over 20 hours of total mission time and 14 hours of FMV collection.",
+      "quotes": [
+        {
+          "text": "• Operation: INHERENT RESOLVE \n• Domain: AIR \n• Operations Center: 609th \n• Major Command (MAJCOM): AFSOC \n• Combatant Command (COCOM): USCENTCOM",
+          "page": 2
+        },
+        {
+          "text": "FULL MOTION VIDEO WAS EXPLOITED BY GET. 20:24 MISSION HOURS, 14:22 FMV \nHOURS, 3X FMV TASKINGS PROSECUTED, 13:02 SIGINT HOURS, 3X SIGINT TASKINGS.",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The document was formally submitted by USCENTCOM to AARO and explicitly approved for release to AARO on 10/28/25, making AARO the direct institutional recipient of this UAP report."
+      "reasoning": "The document was formally approved for release to AARO and structured using AARO's standardized UAP incident reporting fields, demonstrating AARO's role as the designated recipient of operational UAP reports from USCENTCOM."
     },
     {
       "node_id": "five_eyes",
       "relevance": "medium",
-      "reasoning": "The document is classified SECRET//REL TO USA, FVEY, meaning it was authorized for release to all Five Eyes partners, indicating UAP reporting at this level flows through the allied intelligence sharing framework."
-    },
-    {
-      "node_id": "nro",
-      "relevance": "low",
-      "reasoning": "The platform's sensors include SIGINT collection capabilities alongside FMV, and the aircraft type and callsign are redacted under 1.4a/1.4g exemptions consistent with classified ISR platforms that may involve NRO-adjacent systems."
+      "reasoning": "The document carries a SECRET//REL TO USA, FVEY classification caveat on every page, indicating it was authorized for sharing with Five Eyes partner intelligence services."
     }
   ],
   "related_topics": [
-    "FMV camera artifact",
-    "combat theater UAP",
-    "AFSOC ISR",
-    "plasma classification",
-    "laser dazzle ruling"
+    "FMV camera anomaly",
+    "Operation INHERENT RESOLVE",
+    "AFSOC special operations ISR",
+    "plasma physical state classification",
+    "lasing event assessment"
   ]
 }

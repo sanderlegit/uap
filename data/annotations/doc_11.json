@@ -1,36 +1,79 @@
 {
-  "hook": "A U.S. Air Force MISREP (Mission Report #8799515) filed under AFCENT documenting four UAP observed during an ISR mission over the Arabian Gulf at approximately 1736Z in 2020, with observations sequenced over roughly 27 seconds.",
-  "why_it_matters": "This report is notable for its precise timestamped sequencing of four distinct UAP in a short window, consistent with the 'line of dots followed by a trailing dot' characterization in the war.gov manifest. It is one of few released MISREPs where the UAP section is partially populated with unredacted answers, including an explicit 'NO' to the advanced capabilities field. The SECRET//REL TO USA, FVEY marking indicates the report was shared with Five Eyes partners at the time of classification.",
+  "hook": "Air Force MISREP #8799515 documents an ISR crew's observation of four UAP over approximately 27 seconds during an Arabian Gulf mission in 2020, with sequential appearance times logged to the second and visual tracking disrupted by cloud coverage.",
+  "why_it_matters": "This report demonstrates that U.S. Air Forces Central (AFCENT) is actively using the standardized MISREP format to formally document UAP encounters during operational ISR missions, confirming institutional integration of UAP reporting into combat command workflows. The second-level timing detail (17:36:22, 17:36:30, 17:36:49) suggests the crew was recording against sensor timestamps rather than estimating, lending precision to the observation record. The explicit 'NO' answer to the Advanced Capabilities field, combined with heavy operational redaction, reflects the structured but intelligence-constrained nature of AARO-format submissions.",
   "key_findings": [
-    "Four UAP were observed in a specific temporal sequence: 1x UAP at 17:36:22Z, 2x UAP side-by-side at 17:36:30Z, and 1x UAP at 17:36:49Z — a 27-second observation window.",
-    "Cloud coverage explicitly obstructed the sensor operator from following and obtaining a clear visual, limiting the quality of the observation.",
-    "The field 'UAP Advanced Capabilities And/Or Materials' is answered 'NO' — one of the few unredacted UAP-section responses in the document.",
-    "The mission was an ISR (Intelligence, Surveillance, Reconnaissance) sortie under AFCENT (Air Forces Central Command), placing it in the Middle East/Arabian Gulf area of operations.",
-    "The document carries a SECRET//REL TO USA, FVEY classification caveat, indicating it was authorized for sharing with Five Eyes intelligence partners, and has a declassification date of June 3, 2048."
+    {
+      "finding": "Four UAP appeared sequentially over approximately 27 seconds, with two observed side by side at the same timestamp — consistent with the 'line of dots followed by a trailing dot' characterization in the war.gov manifest.",
+      "quotes": [
+        {
+          "text": "AT APPROX 1736Z 4 UAP WERE OBSERVED BENEATH (b)(1)1.4a 1X UAP OBSERVED AT 17:36:22, 2X UAP OBSERVED SIDE BY SIDE AT 17:36:30, AND 1X UAP OBSERVED AT 17:36:49.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Cloud coverage actively disrupted sensor tracking and prevented a clear visual on the UAP, limiting what the ISR platform could capture.",
+      "quotes": [
+        {
+          "text": "CLOUD COVERAGE OBSTRUCTED (b)(1)1.4a FROM FOLLOWING AND GETTING A CLEAR VISUAL. (SEE ISR 1).",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "The reporting crew's assessment explicitly answered 'NO' to whether UAP exhibited advanced capabilities or anomalous materials, a required structured field in the MISREP UAP section.",
+      "quotes": [
+        {
+          "text": "UAP Advanced Capabilities And/Or Materials  (yes/no; if yes, describe): NO",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "The mission falls under Air Forces Central (AFCENT) and was conducted by a U.S. Air Force unit; all personnel identifiers, the specific operation, aircraft callsign, and ISR sensor details are withheld under national security exemptions (b)(1)1.4a).",
+      "quotes": [
+        {
+          "text": "Major Command (MAJCOM): AFCENT",
+          "page": 1
+        },
+        {
+          "text": "Country Tasked: US - UNITED STATES \n• Service Tasked: A - AIR FORCE",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "finding": "The report is classified SECRET and will not be declassified until June 3, 2048 — a 28-year hold from the present day — indicating the operational context remains sensitive beyond the UAP observation itself.",
+      "quotes": [
+        {
+          "text": "Classification: SECRET",
+          "page": 1
+        },
+        {
+          "text": "Declassification Date (YYYYMMDD): 20480603",
+          "page": 1
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The war.gov manifest explicitly states U.S. military services use MISREPs like this one to report UAP to AARO, making this a direct example of the formal UAP reporting pipeline AARO relies on."
+      "reasoning": "This MISREP was submitted to AARO using the standardized UAP reporting format with structured fields (UAP Event Type, Maneuverability, Signatures, Advanced Capabilities) that AARO requires from military operators."
     },
     {
       "node_id": "five_eyes",
-      "relevance": "high",
-      "reasoning": "The document carries a 'SECRET//REL TO USA, FVEY' classification caveat, explicitly authorizing sharing with Five Eyes partners at the time it was filed."
-    },
-    {
-      "node_id": "blue_book",
       "relevance": "low",
-      "reasoning": "The Air Force (AFCENT) institutional role in UAP reporting continues a legacy that traces back to Project Blue Book, though this document reflects the modern AARO-era reporting structure rather than any direct Blue Book connection."
+      "reasoning": "The classification caveat 'REL TO USA, FVEY' appears in the takeoff gentext, indicating the report or portions of it are releasable to Five Eyes partners."
     }
   ],
   "related_topics": [
-    "ISR mission UAP observation",
-    "Arabian Gulf airspace",
-    "AFCENT operations",
-    "timestamped UAP sequencing",
-    "Five Eyes classification sharing"
+    "ISR mission UAP encounter",
+    "AFCENT Arabian Gulf operations",
+    "sequential UAP formation",
+    "sensor-timestamped observation",
+    "Air Force MISREP reporting"
   ]
 }

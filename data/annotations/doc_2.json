@@ -1,36 +1,91 @@
 {
-  "hook": "A U.S. Air Force ISR aircraft (50th Attack Squadron, 432nd AEW) flying a 20.5-hour reconnaissance mission over the Eastern Mediterranean on May 29-30, 2022 filed both a UAP report and conventional intelligence observations documenting extensive Russian military activity near the Syrian coast, including naval vessels, aircraft, and a separate SU-27/35 landing at the Latakia airfield area.",
-  "why_it_matters": "This document illustrates that the UAP sighting occurred in a heavily contested operational environment where Russian forces were actively present—including a likely SU-27/35 landing and takeoff roughly one hour before the UAP contact—yet the screener still could not obtain a positive identification on the 0117Z object. The report demonstrates AARO's intake of operationally-filed UAP events rather than dedicated UAP investigations, and the Five Eyes classification indicates allied intelligence sharing of this event. The co-presence of identified Russian aircraft and an unidentified object in the same airspace within the same mission window is the core ambiguity the document leaves unresolved.",
+  "hook": "A U.S. Air Force mission report documenting a 20-hour ISR flight over the Eastern Mediterranean on May 29–30, 2022, during which operators collected against 39 Syrian and Russian military targets, witnessed a Russian aircraft intercept, and observed a single UAP flying north-northeast that ground screeners could not positively identify.",
+  "why_it_matters": "This document illustrates how UAP sightings are embedded within active intelligence collection missions rather than isolated incidents — the UAP observation on this flight occurred during a prolonged surveillance operation tracking Russian naval vessels and aircraft at Khmeimim Air Base. The screener's inability to obtain a positive ID despite persistent tracking distinguishes it from the adjacent SU-27/35 sightings on the same flight, which were identified by type. The document's submission to AARO and declassification under MDR review reflects the formal institutional pipeline now processing military UAP reports.",
   "key_findings": [
-    "At 0117Z on May 30, 2022, one UAP was observed flying north to northeast at FL240, 142 KIAS; the screener tracked it as long as possible but could not obtain a positive identification—no shape, size, color, or RF signatures are recorded in the unredacted text.",
-    "Approximately one hour earlier (0011Z), the same asset separately observed a 'probable SU-27/35' landing near grid 36SYE6 (consistent with Bassel al-Assad International Airport, Latakia), and at 0029Z observed a probable SU-27/35 taking off to the south—these are filed under OBSERVATION, not the UAP section.",
-    "The U.S. aircraft was intercepted at 2147Z by 1-3 Russian Air Force aircraft, including at least one possible SU-30, which approached from the Syrian coast, flew directly under the U.S. aircraft's orbit (FL190 vs FL240), flew south 10 NM, then returned west; there was no impact to the mission.",
-    "The mission surveilled 39 named targets across Syria and Lebanon including Tartus Naval Base, Latakia Naval HQ, multiple Syrian Navy coastal defense sites, and the Bassel al-Assad airfield, and observed Russian naval vessels including a Slava-class cruiser, a Gorshkov-class frigate, and two Udaloy I-class destroyers transiting east.",
-    "Russian aircraft parked at Latakia were identified as one A-50U Mainstay AEW aircraft and two IL-38 maritime patrol aircraft, plus a probable IL-76 transport active at 0006Z—placing the UAP sighting in an environment with confirmed, identified Russian military air activity minutes prior."
+    {
+      "finding": "A single UAP was observed at 0117Z flying north to northeast; the screener followed it as long as possible but could not obtain a positive identification, distinguishing it from the conventional aircraft observed on the same mission.",
+      "quotes": [
+        {
+          "text": "AT 01172, ONE POSSIBLE SMALL UAP WAS OBSERVED. SEE UAP LINE 1.",
+          "page": 1
+        },
+        {
+          "text": "OBSERVED A UAP AT 0117Z FLY NORTH TO NORTH EAST AND FOLLOWED AS LONG AS POSSIBLE.~SCREENER COULD NOT GET A POSITIVE ID ON THE UAP.",
+          "page": 8
+        }
+      ]
+    },
+    {
+      "finding": "The mission was a 20-hour-plus ISR flight collecting against 39 named targets across Syria and Lebanon, including Syrian Navy operations areas, coastal defense sites, Latakia naval facilities, and Israeli-Lebanon-Syria OPIR regions.",
+      "quotes": [
+        {
+          "text": "FROM 1938Z TO 0230Z,~COLLECTED ON 39X TGTS: SYRIAN NAVY OPS",
+          "page": 5
+        },
+        {
+          "text": "LOOKING FOR RFN SURFACE AND SUBSURFACE ROUTES, MUNITION HANDLING, AND PERSONNEL MOVEMENT.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Russian military aircraft conducted an intercept of the U.S. platform at 2147Z, with 1–3 aircraft including a possible RFAF SU-30 approaching within 5 nautical miles, flying directly under the U.S. aircraft's orbit for approximately 2 minutes before returning west; the crew reported no visual acquisition and no mission impact.",
+      "quotes": [
+        {
+          "text": "AT 2147Z,~WAS REACTED TO BY 1-3 ACFT, INCLUDING IX POSS RFAF SU-30, THAT GOT APPROXIMATELY 5NM FROM~ THE ACFT APPROACHED WESTWARD FROM THE SYRIAN COAST, FLEW DIRECTLY UNDER! 1.4a !ORBIT (FL190, VS ~ FL243) FOR APPROXIMATELY 2 MIN, FLEW SOUTH FOR ABOUT 1 0NM, AND THEN RETURNED WEST. THERE WAS NO IMPACT TO THE MISSION.",
+          "page": 7
+        },
+        {
+          "text": "~DID NOT VISUALLY ACQUIRE THE REPORTED ACFT.",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "finding": "Operators observed a significant concentration of Russian military aircraft at what appears to be Khmeimim/Bassel Al Assad airfield, including an A-50U Mainstay AEW aircraft, two IL-38 maritime patrol aircraft, a probable IL-76 transport, and SU-27/35 fighters conducting both landing and takeoff operations.",
+      "quotes": [
+        {
+          "text": "AT 2120Z, IX A-50U MAINSTAY D AND 2X IL-38 OBSERVED PARKED IVO 36SYE6~~ AT 0006Z, ONE PROBABLE IL-76 OBSERVED ACTIVE IVO 36SYE6~~ AT 00llZ, ONE PROBABLE SU-27/35 OBSERVED LANDING IVO 36SYE6~~",
+          "page": 6
+        },
+        {
+          "text": "AT 0029Z, ONE PROBABLE SU-27/35 WAS OBSERVED TAKING OFF TO THE SOUTH.",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "finding": "Multiple Russian naval vessels were tracked transiting the Eastern Mediterranean during the mission, including probable Gorshkov-class frigates and Udaloy-class destroyers identified by hull number, alongside a Slava-class cruiser.",
+      "quotes": [
+        {
+          "text": "AT 1745Z, ~ OBSERVED IX SLAVA HEADING EAST IVO 35SPU3~~WHILE TRANSITING TO SP. AT 1808Z, IX PROBABLE GORSHKOV FFG HEADING EAST IVO 36STD2~7lua!WHILE TRANSITING TO SP.",
+          "page": 6
+        },
+        {
+          "text": "AT 0344Z, ONE PROBABLE GORSHKOV FFG, HULL 461 HEADED EAST IVO 36SUD74wl~ AT 0405Z ONE PROBABLE UDALOY I DD, HULL 626 HEADED EAST IVO 36STC8~4luiii] AT 041 lZ ONE PROBABLE SLAVA CG, HULL 055 HEADED EAST IVO 36STD7~~",
+          "page": 6
+        }
+      ]
+    }
   ],
   "document_type": "mission_report",
   "legacy_program_connections": [
     {
       "node_id": "aaro",
       "relevance": "high",
-      "reasoning": "The mission report was explicitly submitted to AARO and declassified under MDR 25-0094 through 25-0099 for release to AARO, making this a primary AARO intake document."
+      "reasoning": "The document was explicitly submitted to AARO as a UAP report and declassified under MDR review specifically for release to AARO, as stated on every page."
     },
     {
       "node_id": "five_eyes",
       "relevance": "high",
-      "reasoning": "The document is classified SECRET//REL TO USA, FVEY throughout, indicating the UAP event and associated ISR intelligence were shared across the Five Eyes partnership."
-    },
-    {
-      "node_id": "nro",
-      "relevance": "low",
-      "reasoning": "The mission collected SIGINT via airhandler and IMINT (FMV exploited by DGS-1N and DGS4), suggesting coordination with national-level imagery and signals exploitation infrastructure, though no NRO entity is named directly."
+      "reasoning": "The document carries a classification marking of SECRET//REL TO USA, FVEY throughout, indicating it was cleared for release to all Five Eyes partner nations."
     }
   ],
   "related_topics": [
-    "Russian military presence Syria",
+    "Russian military aircraft tracking",
     "Eastern Mediterranean ISR",
-    "airspace intercept RFAF",
-    "AARO operational reporting",
-    "infrared sensor UAP tracking"
+    "intercept event",
+    "infrared sensor UAP",
+    "naval vessel surveillance"
   ]
 }
