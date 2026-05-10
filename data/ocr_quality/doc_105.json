@@ -1,0 +1,71 @@
+{
+  "doc_id": 105,
+  "title": "NASA-UAP-D6, Apollo 17 Technical Crew Debriefing, 1973",
+  "agency": "NASA",
+  "filename": "nasa-uap-d6-apollo-17-technical-crew-debriefing-1973.pdf",
+  "total_pages": 2,
+  "pages_sampled": 2,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "handwritten_marks",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Main document title and body text captured accurately, but OCR struggles with handwritten marginalia at top, form fields and table structure at bottom, and declassification box date format.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Transcript of astronaut dialogue with crisp text and clear readability; one error where page number '24-4' was misread as 'eh-4' at the start, but all dialogue text captured accurately despite CONFIDENTIAL redaction stamps.",
+      "page": 2
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "cover_page",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 88.5,
+    "content_type_counts": {
+      "cover_page": 1,
+      "typeset": 1,
+      "typewritten": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1,
+      "scan_original": 1
+    },
+    "scan_quality_counts": {
+      "good": 2
+    },
+    "ocr_artifact_counts": {
+      "handwritten_marks": 1,
+      "stamps_marks": 2,
+      "bleed_through": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 2
+    }
+  }
+}

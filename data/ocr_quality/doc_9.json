@@ -1,0 +1,155 @@
+{
+  "doc_id": 9,
+  "title": "DOW-UAP-D27, Mission Report, United Arab Emirates, October 2023",
+  "agency": "Department of War",
+  "filename": "dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf",
+  "total_pages": 8,
+  "pages_sampled": 8,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typeset government document with declassification header and extensive redactions (gray boxes and red strikethrough). OCR captured non-redacted narrative and metadata accurately; properly marked redacted sections with (b)(1)1.4a references. Minor formatting variations but text content matches the visible portions well.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Cleanly scanned government form with intentional FOIA redactions; OCR accurately captured all visible text including redaction notice labels with minimal errors.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified military form with personnel and equipment fields; OCR accurately captured all visible text, including FOIA redaction citations and exemption markers; redacted areas properly shown as blank or marked with (b)(1)1.4a.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Clean military form with excellent scan quality and crisp readability; OCR captured nearly all visible structured content accurately, but includes SECRET//NOFORN text at redacted locations (red bars), suggesting redactions were applied after OCR extraction.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Clean scan of a classified intelligence report with extensive intentional redactions (red boxes); OCR captures visible text and redaction markers accurately, with no scan artifacts or skew detected.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Classified UAP incident report form with structured data fields; OCR captured the content accurately despite overlaid FOIA exemption notices and redaction marks on coordinates and some sensitive fields.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified government intelligence form with extensive redactions shown as red boxes; OCR captures visible typewritten text accurately and represents redacted sections with classification codes (b)(1)1.4a and SECRET//NOFORN markers.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Declassified government document with classified portions redacted; OCR captured nearly all visible text accurately except for a missing space between redaction marker and 'CONDUCTED' on line 2 of main text.",
+      "page": 8
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.12,
+    "avg_text_coverage_pct": 90.5,
+    "content_type_counts": {
+      "typewritten": 5,
+      "redacted": 4,
+      "form": 6
+    },
+    "source_medium_counts": {
+      "scan_original": 4,
+      "scan_photocopy": 4
+    },
+    "scan_quality_counts": {
+      "good": 7,
+      "excellent": 1
+    },
+    "ocr_artifact_counts": {
+      "redacted": 4,
+      "stamps_marks": 2
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 7,
+      "accurate": 1
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "doc_id": 71,
+  "title": "59_64634_711.5612[7-2852",
+  "agency": "Department of State",
+  "filename": "59_214434_sp_16_7.18.1963.pdf",
+  "total_pages": 6,
+  "pages_sampled": 6,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks",
+        "cut_off"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Official memorandum with handwritten routing/approval marks; OCR captured body text well but misread 'is' as '7S' in one instance and text is cut off at page bottom.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten government document with aged paper and OFFICIAL USE ONLY classification marks; OCR captured nearly all body text accurately despite yellowing and minor paper spots.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten page with OFFICIAL USE ONLY stamps; OCR captured main text well but misread stamp as 'OFFICTAE=USE*ONLY' and had word errors ('gasses'/'eminating' instead of 'gases'/'emanating'); occasional line-break hyphens and a stray tilde in 're-~adjustment'.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified government document with OFFICIAL USE ONLY stamps; OCR captures 95% of text accurately but contains errors including 'other~side-of-the-moon' (tilde should be hyphen) and phantom text 'PPTUIF' at end not visible in image.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Main body text captured accurately, but OCR mangled the classification stamp headers ('OFFICTAL-USE-ONL' for 'OFFICIAL USE ONLY') and page number ('6 Bee' for '- 5 -'), with incomplete footer rendering.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Body text captured accurately; handwritten signature completely garbled as 'Yop le fla zz' instead of being recognized as cursive writing, and page number formatted as '= 6=' instead of '- 6 -'; Roman numeral II misread as IL.",
+      "page": 6
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 90.3,
+    "content_type_counts": {
+      "typewritten": 6,
+      "handwritten": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 5,
+      "scan_original": 1
+    },
+    "scan_quality_counts": {
+      "good": 6
+    },
+    "ocr_artifact_counts": {
+      "skew": 1,
+      "stamps_marks": 4,
+      "cut_off": 1,
+      "faded": 2
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 6
+    }
+  }
+}

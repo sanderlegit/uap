@@ -1,0 +1,53 @@
+{
+  "doc_id": 82,
+  "title": "FBI Photo B14",
+  "agency": "FBI",
+  "filename": "fbi-photo-b14.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "redacted",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 3,
+      "notes": "Heavily redacted surveillance or technical photograph with grayscale noisy background, measurement grid overlay, and only a timestamp (12/31/99 18:20:08) visible; black bars obscure what was likely the primary content.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "photograph",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 3.0,
+    "content_type_counts": {
+      "photograph": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "redacted": 1,
+      "dark_scan": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

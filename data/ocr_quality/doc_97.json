@@ -1,0 +1,55 @@
+{
+  "doc_id": 97,
+  "title": "FBI Photo B6",
+  "agency": "FBI",
+  "filename": "fbi-photo-b6.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "redacted",
+        "dark_scan",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 1,
+      "notes": "Page is heavily redacted with large black bars obscuring most content; a coordinate grid or targeting diagram is visible beneath redactions, with only a timestamp '12/31/99 18:10:00' remaining legible at bottom.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 1.0,
+    "content_type_counts": {
+      "redacted": 1,
+      "diagram": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "redacted": 1,
+      "dark_scan": 1,
+      "noise": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

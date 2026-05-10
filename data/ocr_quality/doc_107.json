@@ -1,0 +1,70 @@
+{
+  "doc_id": 107,
+  "title": "FBI September 2023 Sighting - Serial 3",
+  "agency": "FBI",
+  "filename": "serial 5 redacted_redacted.pdf",
+  "total_pages": 2,
+  "pages_sampled": 2,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "FBI FD-302 interview form with extensive redactions covering names, dates, and locations; OCR captured substantive narrative content accurately but garbled the header (OFFICIAL RECORD → 'Orricia. Recorp') and shows some formatting inconsistencies in the masked areas.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "FD-302a continuation form with heavy redactions; the main narrative text about the meteor is accurately captured, but OCR misinterprets redacted areas in the header, producing garbled characters like '(H/T MY cought' and '09 4 | {2023' where black bars mask content.",
+      "page": 2
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 72.5,
+    "content_type_counts": {
+      "form": 2,
+      "typewritten": 1,
+      "redacted": 2
+    },
+    "source_medium_counts": {
+      "scan_original": 2
+    },
+    "scan_quality_counts": {
+      "good": 2
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 1,
+      "noise": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 1,
+      "partial": 1
+    }
+  }
+}

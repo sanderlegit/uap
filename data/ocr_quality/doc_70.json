@@ -1,0 +1,2284 @@
+{
+  "doc_id": 70,
+  "title": "38_143685_box_Incident_Summaries_173-233",
+  "agency": "Department of War",
+  "filename": "38_143685_box7_incident_summaries_173-233.pdf",
+  "total_pages": 144,
+  "pages_sampled": 144,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Declassified government document with authority stamp, handwritten annotations, and attached typed memo; OCR captured header and footer elements but missed extensive handwritten text and document excerpt, with garbled artifacts from official stamps.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "redacted",
+        "bleed_through",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Government UAP incident report form with 23 numbered fields, typewritten responses, and extensive black redactions in items 22-23; OCR engine failed to capture any text despite substantial visible content throughout the page.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Structured incident report form with numbered fields; OCR text contains numerous character substitution errors (e.g., 'Towenty' for 'Township', 'Rast' for 'East', 'Bew' for 'New', 'eonsiderable' for 'considerable') indicating poor OCR quality despite clear original typeface.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Typewritten government document on aged paper showing numerous character-level OCR errors (o/0, e/at, s/e substitutions: 'wode' for 'woods', '@o0line' for 'gasoline', 'eouth' for 'south', 'liane' for 'Marine') but overall structure and meaning remain discernible.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "blank",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page with minimal typewritten 'Facing South' label and reference marks (black dots); OCR returned empty despite readable text visible.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten incident report form with critical OCR errors: wrong incident number (275→175), wrong year (1980→1946), multiple spelling errors (Buble→Rabie, Sante→Santa, Weon→Neon); numbered form structure causes fragmented output.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Declassified document with clear typewritten text but frequent OCR character substitution errors (W→W, multiple a/u/o misrecognitions), particularly in words like 'While'→'Waile', 'appeared'→'appesred', 'minutes'→'mimites'; the overall narrative structure survives but individual word accuracy is degraded by aging and typewriter font.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Typewritten incident report form with struck-through corrections; OCR badly scrambled field labels and observer metadata but captured most descriptive details with errors ('cunflower' for 'sunflower', '7OO' for '700', 'Bortheast' for 'Northeast', 'WH' for 'MPH').",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten document with consistent character-level OCR errors throughout (Pairehild→Fairchild, tally→t lly, appeared→ane red, 800→80, tumflower→cumflowr, etc.), likely due to aged document fading and typewriter font characteristics; document structure and sentence flow remain generally discernible despite numerous substitutions.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Form-structured incident report with clear numbering; OCR captured most content but produced numerous misspellings (Bakins→Balkins, Ether→Esther), fragmented field labels, and poor formatting preservation despite readable scan quality.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewriter text on aged cream paper is clearly readable, but OCR shows systematic character substitution errors: 'Army'→'Aray', 'Makins'→'Bakins'/'Zakins', 'and'→'ani', 'Incl.'→'@', and numerous other misreadings that suggest difficulty with the typewriter font rendering.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Age-deteriorated 1940s incident report form; OCR captured structure and ~85% of content but has word-level errors (Sen→San, Baff→Buff, mimtes→minutes, horisontal→horizontal, caterial→material, Gol→Col, a/s→M/S, 4,1→4.1, ENT SUeARy→INCIDENT SUMMARY).",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 82,
+      "notes": "Typewritten government document with numerous OCR errors including systematic character misreadings (Set/Sept, aypeured/appeared, weoring/wearing, glnvece/glasses) and major name corruptions (Zekins for Bakine, liornce Eakins for George Bakine); scan quality is good but OCR achieved ~80-85% accuracy, suggesting algorithmic confusion with typewriter fonts.",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "Declassified UFO incident report form with scattered OCR extraction showing multiple spelling errors (detwoen, eltitude, eny, Umenal, ging) and word substitutions; captures only fragments from across the page with poor reliability.",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 82,
+      "notes": "Typewritten government document page with aged paper; OCR mostly captured text structure but has character-level errors: 'investig:tion' for 'investigation', '\\cDaniel' for 'McDaniel', 'ination' for 'imagination', and 'umamal moi<ee' for 'unusual noises'.",
+      "page": 15
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "Document is a structured incident report with 25+ numbered items and clear typewritten text, but OCR output is heavily corrupted with character substitution errors (e.g., 'BSP' for 'BST', '1g' for '18'), missing major sections, and garbled passages capturing only fragments.",
+      "page": 16
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government document with numerous character-level OCR errors (Q→O, d4n→incident, Spproximate→approximate, ci md→cloud, etc.) but nearly complete text coverage; scan quality is good despite photocopy age/yellowing.",
+      "page": 17
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Document is a clear UFOB report form with excellent scan quality, but OCR output is severely corrupted (e.g., 'Apoumd' for 'Around', 'SenFrapcieco' for 'San Francisco'), capturing only fragmented text from the top fields with pervasive character errors.",
+      "page": 18
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 94,
+      "notes": "Typewritten document with systematic character substitution errors (w→N, n→m, h→n, H→K) throughout; nearly complete text capture but with numerous spelling mistakes that affect readability.",
+      "page": 19
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged incident report form with 25 numbered fields, clearly legible typewritten text, but OCR output is completely empty despite readable content.",
+      "page": 20
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 12,
+      "notes": "Typed UFO sighting report form with numbered questions; OCR heavily corrupted with character substitutions throughout (e.g., '24 October 1948' → '+4 Qefober 3948', 'Approx 1430 hours' → 'Aghnoy 3430 hours'). Visible text is legible but OCR engine failed significantly.",
+      "page": 21
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 78,
+      "notes": "Aged typewritten government document with yellowing typical of declassified files; OCR captures most text but contains frequent character substitution errors (@ replacing letters, dropped characters) and word misreadings, likely due to faded typewriter impressions and document aging.",
+      "page": 22
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 25,
+      "notes": "Typewritten UFOB sighting report form (October 1948) with clear scan, but OCR heavily mangled the content with character substitution errors ('Soip's' for 'Ship's', 'mimtes' for 'minutes') and fragmented output that doesn't follow the form's structure.",
+      "page": 23
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Typewritten incident report with aging/yellowing; OCR errors include 'shspe' for 'shape', 'Qulfcart' for 'Gulfcart', and garbled struck-through bearing notation ('sxkektmie', 'akeitete'), plus space in 'Disappe red'; main narrative largely captured.",
+      "page": 24
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "This is a numbered government incident report form from October 1948 about a UAP sighting near Fukuoka, Japan. The OCR output is severely garbled with many character substitutions and missing text sections; it captures perhaps 40% of the visible content with significant errors like 'Jnigamo' for 'Iminamo' and fragmented field responses.",
+      "page": 25
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Typewritten government memo with significant OCR character substitution errors throughout (sircraft→aircraft, dott→both, rader→radar, imossible→impossible, etc.), making many words require careful parsing despite overall document structure being preserved.",
+      "page": 26
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Aged government incident form with significant OCR character substitution errors (e.g., 'leet' for 'feet', '&' for '6', 'mmerous' for 'numerous', 'mameroup' for garbled word), but most text fields are captured despite the corruption.",
+      "page": 27
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten government document from newspaper clipping; OCR captures main structure but has frequent character recognition errors (scid→said, apy→appeared, TH008→THOSE, BOT→NOTE, witnevses→witnesses) and word segmentation issues.",
+      "page": 28
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "Aged government incident report form with numbered fields; OCR captured only partial content with significant character substitution errors (O→0, l→i), word misspellings (Hameen→Hamefen, Minneaoolis), and incomplete extraction of visible text.",
+      "page": 29
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 87,
+      "notes": "Typewritten government document with aged appearance; OCR captured most text but made numerous character-level errors (Odject→Object, Lewrence→Lawrence, geen→seem, amoke→smoke, Shects→Sheets, distences→distances, stort→short, witne ses→witnesses).",
+      "page": 30
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Aged incident report form with legible typewritten entries; OCR captures main content but introduces significant errors including spelling corruption (e.g., 'Tine' for 'Time', 'eirplene' for 'airplane', '§' for '5'), field label misidentification, and fragmented layout that obscures the structured form organization.",
+      "page": 31
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten government document with numerous OCR character-substitution errors (W→Wo, s→sp, s→z, partial word capture) affecting readability, though general narrative content is recognizable; significant degradation includes faded text and filing punch holes.",
+      "page": 32
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten military incident report form with good scan clarity, but OCR extraction is severely fragmented and error-ridden: 'Aug' → 'dmg', 'Eastern' → 'Rastern', 'Waugh' → 'Wangh', 'reflection' → 'fetisction', missing ~65% of form content.",
+      "page": 33
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Military incident report with consistent OCR character errors throughout (e.g., 'Flight' → 'Plight', 'reflection' → 'eeotion', '1132R' → '11323', 'azimuth' → 'asimath', 'Commanding' → 'Coumsnding'). While structure is intact and most words recoverable, numerous single-character and phonetically similar misreadings suggest typewriter font confusion; document remains parseable but requires careful verification of technical details.",
+      "page": 34
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 20,
+      "notes": "Government UFO sighting report form (Incident 168, Oct 1948) with numbered fields clearly visible in the scan, but OCR output is severely corrupted with most words malformed or unrecognizable despite legible source material.",
+      "page": 35
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Aged typewritten document with numerous character substitution errors (Atrocraft, sppexred, Ginappeared, Gieappesred) despite capturing overall structure; fading and photocopy degradation caused OCR to misread worn characters systematically.",
+      "page": 36
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 30,
+      "notes": "Military incident report form with clear typewritten entries but OCR output is highly fragmented, capturing only scattered text fragments from the form fields rather than coherent content; many errors and large sections omitted.",
+      "page": 37
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "age_spots"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 62,
+      "notes": "Typewritten 1940s-era report with multiple character substitution errors (O→@, C→O, etc.), word corruption (eppreaching, aypeurec, auape, descrintion), and spacing issues; latter paragraphs significantly fragmented with degraded character recognition despite readable source scan.",
+      "page": 38
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "Aged 1940s incident report form with extensive handwritten annotations and redactions overlaid on typewritten text; OCR severely mangled most text (e.g., '11.October.1948' → 'LL Ogteder.1948', '1300.hours' → 'B300.homrs'), capturing only fragmented text with ~15% usable accuracy due to layered text types and yellowed paper.",
+      "page": 39
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten government report clearly visible on aged paper; OCR captures ~92% of text but contains numerous character-level substitution errors ('Incicent' for 'Incident', 'Catoder' for 'October', 'aix' for 'six', 'diso=shaped' for 'disc-shaped', etc.) that degrade accuracy despite good readability.",
+      "page": 40
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "Government incident report form with mostly legible typewritten fields; OCR text is severely garbled in the names/address section (e.g., 'Suptain #Lenm i. taker, Bayon 3 Offigers' appears to be corrupted handwritten entries), with typos ('Soparate Shoot' for 'Separate Sheet'), though structural headers captured correctly.",
+      "page": 41
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten government document with decent scan quality, but OCR has numerous character-level errors: 'Oxpt' for Capt, 'Buber' for Baber, 'airersft' for aircraft, 'turmed' for turned, 'groumd' for ground, '@' for 'a', and incomplete text at end ('South-Sou at' instead of 'South-Southwest').",
+      "page": 42
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 5,
+      "notes": "Official incident survey form with numerous typed fields; OCR captured only opening header and fragmented text from line 2, with significant errors (Serly→early, apound→around), missing entire line 1 and most of the 23-line form.",
+      "page": 43
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten incident report with aged yellowing and classification stamps; OCR preserved document structure but contains ~30 character-level substitution errors throughout (e.g., 'oa' for 'on', '@' for 'O', 'buen' for 'been', 'them' for 'than', 'tine' for 'time').",
+      "page": 44
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Page is a typewritten government UFO/UAP sighting report form with numbered fields; OCR captured only a small fragment from the bottom section with significant errors including 'weet-of' (west of), 'Beubiberg' (Reulberg), and 'tastiad' (illegible original text).",
+      "page": 45
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten incident report with classification marks; OCR has numerous character substitution errors throughout (e.g., 'butwoen' for 'between', 'Seubiberg' for 'Neubiberg', 'Bralustion: BZ' for 'Evaluation: B-2'), making ~35% of text garbled despite overall structure being captured.",
+      "page": 46
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "Page is a 23-item CIDERA Summary Sheet with typewritten entries. OCR captured only scattered fragments with heavy garbling (e.g., 'Gow Fain, Cooct Guard' for 'Lt. Cdr. Pain, Coast Guard Pilot'). Most form content is not reflected in the OCR output.",
+      "page": 47
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 88,
+      "notes": "Typewritten government document with aged/faded appearance; OCR captured structure and most text but made numerous character-level substitutions (e.g., 'wes cleasified' for 'was classified', 'vere mot' for 'were not', 'apvroximately' for 'approximately'), suggesting difficulty with faded typewriter impressions.",
+      "page": 48
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 15,
+      "notes": "Typewritten incident report form with numbered fields. 'Southwest' correctly captured from item 18 (Direction of Flight), but 'foundlun' does not appear in visible text or is severely garbled OCR artifact. Page contains extensive form content that was not captured.",
+      "page": 49
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly legible typewritten government incident report text (Incident 195, multi-line paragraph), but OCR engine captured zero characters despite readable content.",
+      "page": 50
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 3,
+      "notes": "Typewritten incident-report form with document stamps and age-related yellowing; OCR captured minimal text (55 chars) with character-substitution errors (@ for e, z for m, m for u) indicating poor recognition despite readable source material.",
+      "page": 51
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten radar incident report with numerous character-level OCR errors (om→on, 21452→2145Z, stetion→station, disappe red, drercft, etc.), though overall structure and content remain identifiable; approximately 65% word-level accuracy despite significant individual character mistakes throughout.",
+      "page": 52
+    },
+    {
+      "content_types": [
+        "form",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 25,
+      "notes": "UFO sighting report form with typewritten fields and handwritten entries; OCR is severely garbled, capturing only fragments from items 7, 9, 12, 13, 21-22 with heavy corruption, likely due to difficulty parsing mixed typewritten/handwritten content on aged document.",
+      "page": 53
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government UAP report (5 Nov 1948) with scattered OCR errors on individual characters (e.g., 'Rov' for 'Nov', 'hed' for 'had', 'weiter' for 'writer'), but overall text structure and content preserved; aging paper and bleed-through visible from reverse side.",
+      "page": 54
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Aged typewritten form documenting a 1946 radar observation; OCR captures structure but has numerous character recognition errors in faded text (e.g., 'Imediately' for 'Immediately', '157 br' for '1157 hrs', 'Reder' for 'Radar', 'Fadarseope' for 'radarscope').",
+      "page": 55
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Aged photocopied typewritten page with multiple OCR character errors (appesred→appeared, eirer-ft→aircraft, afrersft→aircraft, mthorised→authorized, viewal→visual) but overall readability preserved; two circular stamps at top, yellowing and spotting from age reduces scan crispness.",
+      "page": 56
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Aged military incident report form with numbered fields; OCR captured structure and most text but with significant character errors throughout (e.g., '19%8' for 1945, 'Kunemea' for apparent 'Kumman', garbled abbreviations like 'sisth' for '318th').",
+      "page": 57
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 32,
+      "notes": "OCR captured ~first third of incident report with significant character errors (w@lor→color, Kunsran→Kunsman) and missing bulk of text; truncation after 'He' and 'Bo estination' suggests recognition or extraction failure rather than scanning issue.",
+      "page": 58
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Aged typewritten form with numbered fields; OCR captures structure and main facts but has pervasive character-level errors (e.g., 'Where' → 'Wnere', 'egg-shaped' → 'eggeheped', 'minutes' → 'mimtes', 'Apparent' → 'Agperent'), particularly in multi-character words.",
+      "page": 59
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 82,
+      "notes": "Typewritten UAP incident report with numerous character recognition errors (1510→1610, nis→his, Cd if→Calif, sew→saw, Sppeerance→appearance, sinoke→smoke, u5→45, yre→yrs) scattered throughout, though most text remains interpretable despite the aged scan and dust marks.",
+      "page": 60
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "skew",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten incident report form with clear physical scan but significant OCR errors; header nearly unreadable in OCR output, field labels mostly captured but values contain numerous character substitutions and garbling (e.g., 'INCIDENT' → 'NCIDBRT', 'piper cub plane' → 'piper cub plene fl', '300 MPH' → '300 MPR').",
+      "page": 61
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten incident report with multiple OCR character errors (fishernan→fisherman, sgund→sound, appesrance→appearance, ebout→about, ws→was, 2→a) but text is clearly legible and all content captured.",
+      "page": 62
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten government incident report with 25 numbered fields; OCR captured structure well but contains multiple character substitutions (21→1, B/S→M/S, gouth→south, cava→some, mde→made) and missing content (metallic for construction).",
+      "page": 63
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten government report about UAP sighting; OCR severely truncated multi-line paragraphs into fragments, missed words (Ernest→Erne!, resembling→resembl ng), misspelled place names (Crescent→Creseent), and failed to capture full sentences, capturing less than one-third of the readable text.",
+      "page": 64
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "age_wear"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "The provided OCR text is severely truncated and contains errors (e.g., '19kg' instead of '1948', 'Mre' instead of 'Mrs'); it captures only items 1-6 from the 25-item incident report form visible in the scan, missing the entire detailed portion of this typed government UFO sighting report.",
+      "page": 65
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "OCR severely mangled the text with numerous character substitutions (e.g., 'Erneet' for Ernest, 'bdrjlliant' for brilliant, 'Hengei' for Henggi), dropped words, and fragmented passages, though the underlying typewritten document is crisp and legible in the scan itself.",
+      "page": 66
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 30,
+      "notes": "Military incident report form with severe OCR degradation; stamped/handwritten annotations were heavily distorted, while some typewritten form entries like '15 miles' and 'winds from' were partially captured but embedded in garbled surrounding text.",
+      "page": 67
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Aged typewritten document with consistent character-level OCR errors (406→4o6, reported→revorted, following→fol owing, 48→4S, 0230Z→02302, ground→Tround, but→bat, 150→160, was→wae, bluewhite→Dluewhite, same→seme, disappeared→disapeared, 3→}, minutes→mimtes, seen→scen) affecting ~18% of word accuracy; all visible text captured but multiple substitutions from aging/fading paper.",
+      "page": 68
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Clearly legible 1948 government incident summary form with crisp typewritten fields, but OCR extraction is almost entirely garbled, failing to capture any of the structured form content or visible text.",
+      "page": 69
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten government incident report with visible aging and paper staining; OCR captured all text but contains ~8 character errors including '02302' for '0230Z', 'eter' for 'meter', 'ite' for 'its', 'mimtes' for 'minutes', 'benind' for 'behind', and 'Mo waz' for 'No was'.",
+      "page": 70
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "OCR severely degraded on field 21 (Weather Conditions); produced garbled fragments like 'fcathar Conditi' instead of 'Weather Conditions' and 'wisidility' instead of 'visibility', with many character substitutions despite the typewritten text being reasonably legible in the scan.",
+      "page": 71
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "Typewritten government document with aged/deteriorated original showing binding holes and paper aging; OCR captured main content but with significant character-level errors including 'buld' for 'bulb', '@' for 'a', 'stage red' for 'disappeared', 'de loc ted' for 'be located', and multiple other substitutions indicating OCR struggled with faded typewriter characters.",
+      "page": 72
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 38,
+      "notes": "Aged government incident report form with significant OCR degradation; dates, locations, and observer details are heavily garbled (e.g., 'Nov 45' → 'Mov kg', 'Newark' → 'Mewark', coordinates largely corrupted), though some field values like altitude and speed are partially captured.",
+      "page": 73
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Heavily corrupted OCR fragments from observer section (lines 4-6); captures names and AF serial but with severe character garbling (T° for TO, Eittiqnmss for Kittisonitt, p00! for pool); misses 90%+ of visible form content.",
+      "page": 74
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten page with aged/faded paper quality; OCR captures general content structure but contains numerous character errors (e.g., 'flaning' for 'flaming', 'shane' for 'shape', 'vas' for 'was', 'whieh' for 'which'), making it partially readable but requiring significant manual correction.",
+      "page": 75
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten witness statement on aged paper with SECRET stamps; OCR captured bulk of content but exhibits frequent character substitutions typical of aged typewritten documents (e.g., 'Rdmund' for Edmund, '@' for 'a', 'acroas' for across).",
+      "page": 76
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "cut_off",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 8,
+      "notes": "Declassified form with visible handling stamps at top; OCR extracted only field 3 with 'Object(s)' truncated and 'Sighted' misspelled as 'Sichted', capturing approximately 8% of visible page content.",
+      "page": 77
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 62,
+      "notes": "Typewritten archival document with pervasive OCR errors including character substitutions (0→O, l→I), word misreadings (Nov→How, appeared→appecred, Venus→Yems, sunrise→surriee), and number corruptions (1918→19hg, 40 minutes→)nimtce, 128,000→128,00), though the overall document structure is captured.",
+      "page": 78
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten government UFO report form with handwritten observer responses; OCR struggles with cursive handwriting, producing significant errors including 'Weley.H' for 'Wesley E.', 'Walemt $t' for 'Walmat St', and fragments like 'Bitsonly round' of unclear origin; some correctly identified elements like location name and address digits.",
+      "page": 79
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten UAP incident report with systematic OCR errors: 'aluminum' → 'aluminun', '30 feet' → '3 to', 'Object' → 'Aject', 'No' → 'Ro', 'Noticed' → 'Roticed', and poor line break placement that fragments sentences, reducing readability despite capturing ~65% of text accurately.",
+      "page": 80
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Structured government UAP incident report form from 1948; OCR has significant character substitution errors (e.g., '42 Bov 194g' for '12 May 1948', 'lark' for 'Clark', 'Haintenance' for 'Maintenance'), likely due to typewriter font and document aging, but overall structure and content mostly captured.",
+      "page": 81
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten government document with aged/faded appearance; OCR captures structure and ~75% of content but has numerous character-level errors (ws→was, wateohing→watching, appezred→appeared, ce immo ible→be impossible, croft→craft, etc.), making automated text unreliable without manual correction.",
+      "page": 82
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten incident report form with substantial OCR degradation—character substitutions throughout (18 Nov→18 Bor, Circling→Gireling, Jackson→Jacksom, etc.) but overall structure and content recognizable; many homophones and transpositions suggest typewriter-OCR confusion on aged paper.",
+      "page": 83
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten military incident report with aged paper; OCR has numerous character-level errors (Nov→Bov, made→mide, MPH→W?H, Jackson→Jackwon, etc.) but captures overall content structure.",
+      "page": 84
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "fading",
+        "age_discoloration"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "1948 incident report form (Andrews AF Base, Henry G. Combs). OCR captures structure and most fields but has systematic errors: E→B substitutions (Evasive→Bvasive, emanated→eninoted), E→Z (Exhaust→Zxhoust), spacing breaks (instcmce, vori tion), and digit errors (4 instead of 1 for object count). Readability impacted despite content being ~75% complete.",
+      "page": 85
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten military incident report with numerous OCR errors including character substitutions (dpproximtely→approximately, Ravigntion→navigation, airer<ft→aircraft) and garbled words, but overall content remains roughly recognizable; aged document with punch holes and fading reduced OCR confidence.",
+      "page": 86
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 2,
+      "notes": "Page shows a 23-item UAP observation reporting form with extensive typewritten text and handwritten annotations. OCR captured only a fragment from the bottom line with spelling errors (Soparate/Separate, Sheot/Sheet) and incomplete text, missing 98% of the visible form content.",
+      "page": 87
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Typewritten incident report with significant OCR errors—proper names corrupted (Kushner→ons, Jackson→¥.J), common words mangled (corroborates→gorrotorates, shining→sbinis), and numbers garbled (B-47→sae ee), though overall structure and narrative sequence remain discernible.",
+      "page": 88
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "OCR text is heavily corrupted fragment capturing only portions of the structured form (items ~10-25), with numerous character substitution errors (e.g., 'Observation' → 'Otservation', 'plane' → 'plame', 'corkscrew' → 'spmeages'); scan is legible despite aged paper yellowing and background noise.",
+      "page": 89
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government incident report on aged paper with numerous single-character OCR errors (o/0, l/1, a/@, letter substitutions) throughout, reducing readability despite capturing text structure and content.",
+      "page": 90
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Military CIDPRO Summary Sheet form with aged original paper; OCR text captures only field 3 (location) with severe corruption of degree symbols (®) and misspellings (Seuth-Korea instead of South-Korea), ignoring 22+ other form fields.",
+      "page": 91
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten military incident report with significant OCR degradation; many words severely corrupted (aircraft→airor, altitude→cltitui, observation→obsorystion, believed→sovirt), likely due to microfilm scan fading and noise.",
+      "page": 92
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 5,
+      "notes": "OCR extracted only fragments from the first two form fields with character errors: 'Approx' misread as 'dpprox', 'Nov' as 'Bor', '5100' as '5300'; the filled government UFO report form contains extensive visible text (23+ numbered fields) that was not captured.",
+      "page": 93
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Typewritten government memo with substantial multi-paragraph text and 'Incident 211' label, but OCR captured only a fragment and produced garbled output ('CATS THAT 0.'), missing approximately 92% of the visible content due to document age and scan degradation.",
+      "page": 94
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 32,
+      "notes": "Scanned microfilm of a numbered incident summary form with extensive handwritten annotations and corrections. OCR severely garbled with widespread character recognition errors, missing words, and fragmented extraction across items 6-19.",
+      "page": 95
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Declassified typewritten UAP incident report; OCR captures most content structure but suffers from numerous character-level substitution errors (e.g., 'Wnile' for 'While', 'Noffran' for 'Hoffman', 'Ohic' for 'Ohio', 'Statzer' for 'Stst-er').",
+      "page": 96
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten incident report form with clear legible scan, but OCR contains numerous character substitution errors throughout (e.g., 'Otservati' instead of observation header, 'Needmore' instead of 'Meedmore', 'Signted' instead of 'Sighted'), resulting in heavily corrupted output despite good scan quality.",
+      "page": 97
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 1,
+      "notes": "Page contains substantial typewritten government correspondence about Project Sign with handwritten annotations, but OCR captured only a 7-character fragment 'elone} representing near-complete failure; faded photocopy quality degraded recognition.",
+      "page": 98
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains a numbered incident report form with 25 fields of clearly legible typewritten text, but OCR completely failed to extract any text despite good readability; the form documents a UAP sighting from July 1948.",
+      "page": 99
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Incident Summary Sheet form with 25 numbered fields; OCR captured structure but missed significant details including struck-through text, handwritten marks, and character-level errors (e.g., 'SHEST' for 'SHEET', '3/38' for 'N/S', 'Cdject' for 'Object'), making it partially unreliable.",
+      "page": 100
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "cut_off",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "OCR captured the main content but with significant errors: cut-off words at line starts ('ntrol' for 'Control', 'ghted' for 'sighted'), character misrecognitions ('silnouett' for 'silhouette', 'dslloon' for 'balloon', 'exhmst' for 'exhaust'), garbled sections ('Spower binocujars', fragmented altitude reading), and missing words throughout, particularly in the middle section describing the climb.",
+      "page": 101
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 62,
+      "notes": "Typewritten incident summary form from 1948 (Incident No. 216, not 226 as OCR shows) with many character-level OCR errors throughout: 'SHEDT' for SHEET, 'Qnamte' for Chanute, 'Decesber' for December, garbled observer names and multiple field errors, though some sections capture correctly.",
+      "page": 102
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten military incident report with systematic OCR character substitution errors (e.g., 'eilter ny' for 'either a sky', 'cecomie' for 'seconds', 'Kontag's' for 'Montag's'); document structure captured but ~40-50% of words contain recognition errors, likely due to typewriter font and document degradation.",
+      "page": 103
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "fading",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "Typewritten incident report form with aged paper showing yellowing and dust artifacts; OCR struggles with character recognition, systematically misreading numbers and letters (e.g., 'ay' for '217', 'Dee ae' for 'Dec 66', 'Tine' for 'Time'), resulting in significant errors despite preserving overall document structure.",
+      "page": 104
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Typewritten incident report with aged paper showing yellowing and spotting; OCR captured nearly all text but made character-level errors (e.g., 'g@agles' for 'glasses', 'movevent' for 'movement', 'repidly' for 'rapidly', 'C-l5' for 'C-45', 'bdehind' for 'behind', 'Pg inet sr of' for 'background of').",
+      "page": 105
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 20,
+      "notes": "Declassified incident summary form with handwritten annotations; OCR attempted to read handwriting on lines 4 and 22 but produced fragmented and heavily garbled output ('ntrol tower' missing 'co', 'Syamged eqler' instead of 'Changed color').",
+      "page": 106
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Typewritten government incident report with significant OCR degradation; opening sentence ('Object sighted...B-29 and crew') is severely garbled, and multiple words contain character substitutions ('paractmte' for parachute, 'slantsa' for sighted, 'menber' for member), reducing overall legibility to roughly 60%.",
+      "page": 107
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "handwritten_overlays"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Page shows an Incident Summary Sheet form with 23 numbered fields. OCR captured only fragments from item 21 ('Weather Conditions Existing at the Time') and the footer text ('Attach a Separate Sheet if Additional') but severely mangled both, missing most of the page content.",
+      "page": 108
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "spots_marks",
+        "aging_paper"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten incident report on aged document. OCR has multiple character errors: 'grede' → 'grade', 'HN.Y.' → 'N.Y.', missing '1948' from date, 'lat' → '1st', 'exat' → 'east'; text appears truncated at end mid-sentence.",
+      "page": 109
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Typewritten incident report form with systematic OCR errors: N/S misread as 4/S/B/S/u/s, Shape→Snape, Nature→Weture, Nov→Wow, Made→sade, and numerous spelling/character substitutions; structural formatting (numbered list) lost in OCR output; document is aged and shows wear affecting readability of certain characters.",
+      "page": 110
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "Typewritten incident report with clear, readable text but OCR produced numerous character substitution errors: 'en' for 'an', 'Hg' for '4th', 'revort' for 'report', 'Frencisco' for 'Francisco', 'disappesred' for 'disappeared', 'oting stur' for 'shooting star', and others, indicating the OCR model struggled with this typewriter font.",
+      "page": 111
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 75,
+      "notes": "Incident summary form with numbered fields captured in structure, but numerous OCR errors throughout including systematic character misrecognitions (Object→Mbject, Objcct), spelling mistakes (Weethir, Appercnt, Porsible), and severely garbled item 13; aged/yellowed paper with punch holes and handwritten markings affect readability.",
+      "page": 112
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 30,
+      "notes": "Typewritten military document with significant OCR degradation due to faded text and age-related staining; most words are incorrectly recognized (e.g., 'OSAF ITEM 5' read as 'CSAP ITEX 5', 'REFERENCE' as 'REVEREROE', 'SIGN' as 'Slan').",
+      "page": 113
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 25,
+      "notes": "Provided OCR is heavily fragmented with numerous character errors (Mor→Mar, Otservation→Observation, Porstenfeldbrack→Furstenfeldbrack, aq→22) and captures only scattered text snippets while missing the structured form's layout and most fields entirely.",
+      "page": 114
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Aged typewritten military report with consistent OCR errors including 'Qireotly' for 'directly', 'Bow' for 'May', 'exst' for 'east', 'rediish' for 'reddish', and multiple symbol/word misreadings ('st ted' for 'stated', 'am' for 'an', '@p' for 'up') due to fading and character degradation.",
+      "page": 115
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "OCR severely struggled with typewritten form fields; many errors include 'kes Vegas' (Las Vegas), 'Tine' (Time), 'Otservation' (Observation), 'Goade' (Goode), missing/garbled field labels, and corrupted sections like '5 Poa: inst Slope ef' (East Slope of). Image scan is clear and readable but OCR engine failed to properly parse the structured form layout.",
+      "page": 116
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "The OCR captured the main narrative paragraphs with moderate accuracy but severely garbled the witness list table, with pervasive character misidentification (¥ for N.M., jnst for just, Hexico for Mexico) and broken words, requiring substantial manual correction for reliable transcription.",
+      "page": 117
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "Declassified incident summary form with numbered fields; OCR suffered significant character misrecognition (e.g., '194g' for 1948, 'Tine' for Time, 'houre' for hours) and field structure collapse, despite the document text being legible in the scan.",
+      "page": 118
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Aged photocopy with faded text and staining; OCR captured structural elements and key phrases (incident number, names, locations) but exhibits significant character-level errors and garbling, especially in the first section (e.g., 'neer' for Airlines, fragmented words like 'sorghe ise ik ca'), making roughly 35% of the captured text corrupted or unintelligible.",
+      "page": 119
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten incident report form with numerous OCR errors including character substitutions (g→8, x→n), word fragmentations, and field structure confusion; the scan itself is readable but aged document and typewriter font degradation caused systematic recognition failures.",
+      "page": 120
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Original typewritten FBI document with extensive OCR errors including character substitutions (s→w, a→@, etc.), number misreads (1745 as 'Lg', 11,500 as 12,500, compass bearings), misspellings (Kirtland→Kirtlend, sighted→signted), and garbled phrases; handwritten annotation at bottom not captured by OCR.",
+      "page": 121
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "Typewritten government incident report form with clear human readability, but OCR severely misread most text (e.g., 'Vaughn' → 'Taugat', 'Highway' → 'Bighvay'); systematic character confusion suggests the OCR model struggled with this typewriter font despite good scan quality.",
+      "page": 122
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "Typewritten government document with aged yellowing and handling marks. OCR captures most words but suffers from systematic character substitution errors (@ for p, wrong letters like 'abowe' for 'above'), word boundary breaks that split terms incorrectly ('pheno ena' for 'phenomena'), and spacing inconsistencies that significantly degrade readability despite capturing the overall structure.",
+      "page": 123
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten incident report form with numerous OCR errors: incident number misread (26→29g), 'N.M.' rendered as 'B.M.', 'driving' as 'ariving', 'New light on windshield' garbled to 'Sew light on windehieLa', proper names misspelled (Sandia→Sendia, Toulouse present). OCR captures only fragment of full 25-item form with pervasive character substitutions.",
+      "page": 124
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten government incident report with clear layout but numerous OCR errors: character confusion (6 vs O, spaces within words), wrong names (Kr Jose vs Mr Joseph B.), missing/extra letters (dire ctly, srrived), and complete misreadings (sign at } vs stop sign at Main Street, © for The). Overall structure captured but significant errors throughout.",
+      "page": 125
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten government incident report form (Incident No. 227, Dec 12 1948) with age-related fading; OCR completely failed with widespread character substitutions throughout (e.g., '227'→'a', '12 Dec 1948'→'2 Bee 198', numerous garbled words like 'Wect'→'near'), rendering it largely unusable despite clear human readability.",
+      "page": 126
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Typewritten government document about UAP incident 227; OCR suffers from significant character substitutions (L→E, west→weet), word garbling (\"From by indirect vision he became aware\" → \"oy ars were\"), and missing phrase fragments, though overall structure is captured.",
+      "page": 127
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typewritten government report with age-related yellowing; OCR captured structure and majority of text but has scattered character/word errors including 'grest' for 'great', 'dowmwverd' for 'downward', 'LIO' for '40', 'fire!' for 'fireball', and 'Flore' for 'Fireballs'.",
+      "page": 128
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Aged government document with clear typewritten text; OCR captured word positions and structure but has numerous character-level substitutions throughout (norvally→normally, thooe→those, renorted→reported, NcOullough's→McCullough's, etc.), affecting ~28% of words.",
+      "page": 129
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 45,
+      "notes": "INCIDENT SUMMARY SHEET form (numbered 1-25 fields) on aged paper with clear structure, but provided OCR text contains severe character corruption throughout (e.g., 'INCIIENT' for INCIDENT, 'Pocnible' for Possible, 'Jpecd' for Speed) making it largely unusable despite the underlying document being quite readable.",
+      "page": 130
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten incident summary form with two confidentiality stamps and redacted section (item 25). OCR significantly corrupted field labels and many data entries, though major structure was captured.",
+      "page": 131
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Standard UAP incident report form with clearly readable typewritten fields and some handwritten annotations; OCR extraction is severely garbled with fragmentation, character substitution errors (e.g., '10 Dec 1948' → '8 Dee 19k8'), and poor field parsing despite the source scan being of decent quality.",
+      "page": 132
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "Typewritten incident report form with numbered fields; OCR attempted field extraction but produced garbled text with systematic errors (e.g., 'Xo' for 'No.', 'Wnere' for 'Where', 'Otservation' for 'Observation') and structural confusion, capturing roughly half the content with significant accuracy issues.",
+      "page": 133
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 82,
+      "notes": "Typewritten incident report with substantial OCR errors including character substitutions ('ith' for '14th', 'squgh' for 'south', '@' for 'a', 'appexred' for 'appeared', 'tensity' for 'intensity'), indicating struggles with the typewriter font despite reasonable scan quality.",
+      "page": 134
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 18,
+      "notes": "Typewritten incident report form with clear numbered fields (1-25); OCR severely failed to preserve form structure and captures only ~18% of visible text with heavy corruption (e.g., 'Ot me' for 'Date', 'Ldke' for 'Like', 'Ho' for 'No', missing most field labels).",
+      "page": 135
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten incident report with numerous OCR character substitution errors (thie/this, vftne/witnessed, wich/which, fem/fan, etc.) but overall structure and meaning preserved; aged document with yellowing and age spots affects readability.",
+      "page": 136
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten checklist form for UFO incident reporting with clear handwritten entries; OCR severely scrambled field structure and reordered content, mixing header text with field values and jumbling the numbered list format despite visible legibility in the scan.",
+      "page": 137
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 62,
+      "notes": "Typewritten UAP incident report form with significant OCR character-substitution errors (O→C, B→F, etc.), garbled words (\"Miseiced pi\" → Mississippi, \"Cbject\" → Object, \"socelerating\" → accelerating), and corrupted numbers (\"&@\" → 60, \"24\" → 2d); overall structure captured but content heavily corrupted throughout.",
+      "page": 138
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise",
+        "warped"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten UAP incident report with numerous character-level OCR errors (ate→east, tee→tall, trrget→target, pescengers→passengers) and some garbled sections, but overall structure and content preserved; aged document with yellowing and stains.",
+      "page": 139
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Form for reporting unidentified aerial objects with 16 numbered fields; OCR output is severely fragmented with major errors (missing text, word boundaries corrupted, fields out of sequence), capturing only scattered fragments despite the image being clearly readable.",
+      "page": 140
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 20,
+      "notes": "Typewritten investigation form with numbered questions (items 17-24) about UAP sightings; OCR severely fragmented the text with character recognition errors, missing most content, and capturing only scattered corrupted fragments.",
+      "page": 141
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Typewritten government investigation form with structured questions about radar sightings; OCR severely fragmented text by pulling content from different sections out of order, missing substantial portions and breaking lines mid-word.",
+      "page": 142
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 30,
+      "notes": "Page contains a numbered investigation guide with clear typewritten text, but OCR output is severely fragmented with broken words, missing line content, and incorrect word boundaries; only ~30% of actual text captured intelligibly.",
+      "page": 143
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with official classification stamps and handwritten notations in red; OCR failed completely due to extreme document age and loss of contrast, making text nearly illegible.",
+      "page": 144
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "partial",
+    "avg_quality_score": 3.73,
+    "avg_text_coverage_pct": 51.1,
+    "content_type_counts": {
+      "form": 78,
+      "handwritten": 5,
+      "typewritten": 128,
+      "blank": 1,
+      "mixed": 1,
+      "stamps_marks": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 45,
+      "scan_photocopy": 89,
+      "scan_microfilm": 10
+    },
+    "scan_quality_counts": {
+      "fair": 39,
+      "good": 105
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 80,
+      "faded": 132,
+      "redacted": 2,
+      "bleed_through": 26,
+      "noise": 24,
+      "light_scan": 4,
+      "age_spots": 1,
+      "dark_scan": 2,
+      "skew": 2,
+      "cut_off": 3,
+      "age_wear": 1,
+      "fading": 2,
+      "age_discoloration": 1,
+      "warped": 2,
+      "handwritten_overlays": 1,
+      "spots_marks": 1,
+      "aging_paper": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 84,
+      "empty": 7,
+      "garbled": 32,
+      "mostly_accurate": 21
+    }
+  }
+}

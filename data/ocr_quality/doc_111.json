@@ -1,0 +1,88 @@
+{
+  "doc_id": 111,
+  "title": "Western US Event",
+  "agency": "Department of War",
+  "filename": "western_us_event_slides_5.08.2026.pdf",
+  "total_pages": 4,
+  "pages_sampled": 4,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clean, well-aligned scan of a typeset briefing document; OCR text matches image precisely with no detectable errors or artifacts.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typeset",
+        "photograph"
+      ],
+      "source_medium": "digital_native",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clean, modern typeset layout with an embedded artist rendering illustration; OCR captured all visible text accurately with no errors or artifacts detected.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified document with typeset narrative text and embedded schematic diagram. OCR captures all visible text content accurately including title, bullet points, main narrative, image caption, and footnote.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Clean, professional scan with crisp typeface and proper alignment; OCR captured all visible text accurately including the object diagram caption.",
+      "page": 4
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typeset",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "excellent",
+    "dominant_ocr_accuracy": "accurate",
+    "avg_quality_score": 4.75,
+    "avg_text_coverage_pct": 96.5,
+    "content_type_counts": {
+      "typeset": 4,
+      "photograph": 1,
+      "diagram": 2
+    },
+    "source_medium_counts": {
+      "scan_original": 3,
+      "digital_native": 1
+    },
+    "scan_quality_counts": {
+      "excellent": 3,
+      "good": 1
+    },
+    "ocr_artifact_counts": {},
+    "ocr_accuracy_counts": {
+      "accurate": 4
+    }
+  }
+}

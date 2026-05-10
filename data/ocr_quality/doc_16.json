@@ -1,0 +1,107 @@
+{
+  "doc_id": 16,
+  "title": "DOW-UAP-D4, Mission Report, Arabian Gulf, 2020",
+  "agency": "Department of War",
+  "filename": "dow-uap-d4-mission-report-arabian-gulf-2020.pdf",
+  "total_pages": 5,
+  "pages_sampled": 5,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted government document page showing only red '1.4(a)' redaction citation on black background; OCR failed to capture the visible text entirely.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is almost entirely redacted under FOIA exemption 1.4(a), with only the red redaction marking visible; OCR correctly produced no output for this blank redacted page.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page shows FOIA exemption marking 1.4(a) in red text at top with rest of page blank/redacted; OCR captured no text despite visible marking.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is almost entirely redacted (black) with only a FOIA exemption citation '1.4(a)' visible in red at top; OCR captured nothing despite readable redaction marker.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Declassified government report with heavy redactions and strikethrough markings; OCR correctly captures most unredacted UAP observation details (coordinates, velocity, direction) but garbles the strikethrough text and misses redaction boxes.",
+      "page": 5
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 16.4,
+    "content_type_counts": {
+      "redacted": 5,
+      "typewritten": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 5
+    },
+    "scan_quality_counts": {
+      "fair": 1,
+      "good": 3,
+      "excellent": 1
+    },
+    "ocr_artifact_counts": {
+      "dark_scan": 2,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 4,
+      "mostly_accurate": 1
+    }
+  }
+}

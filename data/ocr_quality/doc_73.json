@@ -1,0 +1,301 @@
+{
+  "doc_id": 73,
+  "title": "65_HS1-101634279_100-DE-26505",
+  "agency": "FBI",
+  "filename": "65_hs1-101634279_100-de-26505.pdf",
+  "total_pages": 15,
+  "pages_sampled": 15,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks",
+        "bleed_through",
+        "warped"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "FBI form FD-245 with heavy redactions and FOIA markings; OCR predominantly captured marks and redacted areas as garbled text rather than the limited readable content (letterhead, form labels, document metadata).",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "OCR correctly captured the main typewritten interview reference and document IDs, but missed the handwritten classification/envelope notes at the bottom of the page.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "handwritten",
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "Page contains heavily annotated handwritten text and official stamps on a faded photocopy; OCR captured footer information (NW 90290, DocId, Page 3) with reasonable accuracy but produced mostly garbled results for handwritten content and upper document sections.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 10,
+      "notes": "Handwritten sketch page with annotated UFO sighting diagrams; OCR only captured footer metadata (NW 90290, DocId), completely missed handwritten notes, diagram labels, and sketch annotations due to cursive script and photocopy degradation.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "redacted",
+        "bleed_through",
+        "light_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 25,
+      "notes": "Heavily faded form page with multiple redaction stamps/seals obscuring content; only the handwritten annotation at bottom (WLADYSLAW KRASUSKI, date, reference number) is legible, but OCR corrupted it significantly; most typewritten text above is illegible.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 15,
+      "notes": "Handwritten name 'Franciszek Grabowski' at top was completely missed by OCR; only machine-printed footer text was captured from this aged form.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "FBI form FD-125 with typewritten structure and handwritten entries (names, addresses); OCR correctly captures most field labels but severely mangles checkbox symbols as letters, misses or garbles handwritten text, and hallucinates entire lines of non-existent content.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "FBI memo with clear typewritten text but OCR struggled with degraded areas; key errors include 'KIASUSKI' misread as 'KTASUSKI'/'cinsyeer', 'ELEVEN' as 'EKEVE N', 'TO KNOW' as 'me KNOW', and handwritten marks rendered as garbage characters.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "FBI interview document with clear typewritten text and FOIA stamps. Main OCR error: 'Robert Gutler' should be 'Robert Cutler'. Redacted sections (FOIA markings) created garbled output. Overall text capture is strong despite age-related degradation.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "Aged typewritten document with heavy OCR corruption; key terms like 'swamp area' rendered as 'wap area', 'cutting' as 'atting', and numerous character/word errors throughout. Overall structure preserved but individual word accuracy severely compromised by paper age, typewriter inconsistencies, and scan degradation.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 18,
+      "notes": "OCR completely missed the main FBI distribution notice text at the top and only captured footer metadata; light faded scan likely caused the miss of the primary content.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "FBI document with multiple OCR errors including consistent misreading of KRASUSKI as KHASUSKI/KiASUSKI, FROM→PROM, DETROIT→DETRUIT, address 2457→54.57, and garbled credit inquiry text; main content structure preserved but with character-level substitutions and number errors.",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "FBI memo on UAP observations from 1957; OCR captured main content structure but contains numerous spelling errors (DMTROIT/DETROIT, UNIDENTIFIAD/UNIDENTIFIED, REBUTEL/REBUTTAL, POURTY/FORTY, SLUWLY/SLOWLY) and character corruption (SU*®PICIENT, PO\\W, UBSTRUCTED, siVeHAL), with some handwritten signatures and redaction marks present.",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "1966 letter from Oklahoma UFO Research Association to FBI; typewritten body text captured accurately but organizational letterhead missing and handwritten stamps/marks garbled in OCR.",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 10,
+      "notes": "Full FBI letter from 1986 addressed to Kerry Liesch regarding UFO research; OCR captured only footer metadata (NW 90290, DocId) correctly while severely garbling the recipient name, organization, and sender information.",
+      "page": 15
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "partial",
+    "avg_quality_score": 3.27,
+    "avg_text_coverage_pct": 44.7,
+    "content_type_counts": {
+      "form": 8,
+      "redacted": 2,
+      "typewritten": 10,
+      "handwritten": 7,
+      "mixed": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 11,
+      "scan_microfilm": 3,
+      "scan_original": 1
+    },
+    "scan_quality_counts": {
+      "fair": 9,
+      "good": 5,
+      "poor": 1
+    },
+    "ocr_artifact_counts": {
+      "redacted": 2,
+      "stamps_marks": 9,
+      "bleed_through": 6,
+      "warped": 1,
+      "noise": 1,
+      "faded": 13,
+      "skew": 3,
+      "light_scan": 3,
+      "dark_scan": 2
+    },
+    "ocr_accuracy_counts": {
+      "garbled": 3,
+      "mostly_accurate": 5,
+      "partial": 7
+    }
+  }
+}

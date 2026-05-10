@@ -1,0 +1,81 @@
+{
+  "doc_id": 76,
+  "title": "State Department UAP Cable 2, Kazakhstan, January 31, 1994",
+  "agency": "Department of State",
+  "filename": "dos-uap-d2-cable-2-kazakhstan-january-1994.pdf",
+  "total_pages": 3,
+  "pages_sampled": 3,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Diplomatic cable with mostly accurate OCR, but contains character-level errors: 'FL YING' (should be 'FLYING'), 'Tl' (should be 'TI'), and one instance of 'DUSHAN' (should be 'DUSHANBE'); scan is crisp and well-aligned with no visible skew.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 96,
+      "notes": "Typewritten declassified intelligence report with crisp, well-aligned scan; OCR captures all visible text accurately including headers, body paragraphs, and signature.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Document back page with classification metadata and dissemination information. OCR accurately captured all visible text elements with crisp, clean scan quality.",
+      "page": 3
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "excellent",
+    "dominant_ocr_accuracy": "accurate",
+    "avg_quality_score": 4.67,
+    "avg_text_coverage_pct": 95.3,
+    "content_type_counts": {
+      "typewritten": 2,
+      "form": 1,
+      "typeset": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 2,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "excellent": 2,
+      "good": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 2
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 1,
+      "accurate": 2
+    }
+  }
+}

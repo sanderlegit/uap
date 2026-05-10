@@ -1,0 +1,49 @@
+{
+  "doc_id": 17,
+  "title": "DOW-UAP-D42, Range Fouler Debrief, Japan, 2023",
+  "agency": "Department of War",
+  "filename": "dow-uap-d42-range-fouler-debrief-japan-2023.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "Range Fouler Debrief Form with military redactions; OCR captured form structure and body text reasonably well but severely corrupted redacted sections at top and bottom, with character encoding errors throughout (special characters, garbled text), particularly on email addresses and classified portions.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "partial",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 50.0,
+    "content_type_counts": {
+      "form": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 1
+    },
+    "scan_quality_counts": {
+      "good": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 1
+    }
+  }
+}

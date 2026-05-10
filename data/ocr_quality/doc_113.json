@@ -1,0 +1,2986 @@
+{
+  "doc_id": 113,
+  "title": "65_HS1-834228961_62-HQ-83894_Section_10",
+  "agency": "FBI",
+  "filename": "65_hs1-834228961_62-hq-83894_section_10.pdf",
+  "total_pages": 184,
+  "pages_sampled": 184,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page",
+        "form"
+      ],
+      "source_medium": "photograph_of_doc",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "This is a photograph of an aged FBI folder cover with multiple barcodes, administrative markings, and red-printed stamps. OCR completely failed to extract any text despite substantial visible content including 'FBI HEADQUARTERS RECORDS CENTER', 'BUREAU', 'INVESTIGATION', 'USE CARE IN HANDLING THIS FILE', and 'Transfer-Call 3421'.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten FBI letter from John Edgar Hoover with handwritten annotations, routing marks, and filing stamps; OCR captures body text well but errs on address details (03048 vs 03045, misreads middle initial), garbles some date/stamp overlays, and struggles with handwritten marks.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded typewritten document with redaction bars and classification stamps; OCR completely failed due to severe text fading, producing only nonsensical character fragments unrelated to actual page content.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "age_yellowing"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Letter to FBI Director Hoover about UFO/NICAP concerns; OCR errors include '1I' for 'I.' in F.B.I., missing 'a' in 'I am a member', and possible date misread (shows 1960 vs likely 1969); red ink stamps and handwritten annotations partially captured.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Handwritten letter dated August 31, 1966 from sender discussing NICAP membership; OCR failed almost entirely as the system cannot adequately process cursive handwriting, producing nearly unreadable character sequences.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page with two punch holes; faint handwritten notations at bottom left and '*ENCLOSURE ATTACHED*' text at center bottom are visible but OCR captured nothing.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Archive envelope or folder cover with faint handwritten reference marking (appears to be 'Box 43894-444'); OCR completely missed the handwritten text.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typeset",
+        "photograph",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Two-page spread combining a convention flyer (left) with a magazine cover (right); OCR captured the flyer text almost completely but largely missed the right-side magazine masthead and title text, with some initial noise artifacts.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "cut_off"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Multi-column typeset magazine page with visible center fold crease; OCR captured most visible content but cuts off incomplete mid-word at 'ECONO', suggesting text recognition ended abruptly rather than capturing full page.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "small_text"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Multi-column scan of a UFO/flying saucer publication page with dense typeset text; OCR captured the convention announcements and news items well, though some small details and contact information at the end appear cut off.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typeset",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Newspaper page with convention program (left) and article about UFO sightings (right). Significant show-through from reverse side and fading typical of microfilm reduces clarity, but OCR captures most content with moderate character-level errors in the program schedule section.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "typeset",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Newspaper page with directory listings (right) and UFO sighting articles with photos (left); OCR captures directory names/addresses well but article text at bottom is truncated and some content appears incomplete.",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "photograph",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Page shows UFO photographs on left side and Wall Street Journal newspaper columns on right; OCR captured the article text with good accuracy, though some minor character errors and missing punctuation are visible in the dense column text.",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "typeset",
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 55,
+      "notes": "Newspaper clipping page with multiple articles and embedded photographs; main article captured with several character-level OCR errors (y-tablishment for establishment, way-hing for watching, ar ig garbled) but overall structure and readability preserved.",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "1966 Oakland Tribune newspaper page with multiple articles; OCR captured the main Gabriel Green/flying saucer article clearly but shows garbled text in closing section (appears corrupted mid-word and with stray characters).",
+      "page": 15
+    },
+    {
+      "content_types": [
+        "typeset",
+        "cover_page"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "OCR captured main headlines 'FLYING SAUCERS ARE REAL!' and organization name, but missed the address footer information and text within the saucer illustration; vintage photocopy with darkened scan and color fading limits full text extraction.",
+      "page": 16
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Largely blank page with only a handwritten reference number (62-8389942-448) visible at bottom; OCR correctly captured nothing as there is minimal text content on this page.",
+      "page": 17
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "FBI memorandum with numerous OCR character substitution errors: 'OWTIONAL' for OPTIONAL, 'staTe@overnmenr' for STATES GOVERNMENT, 'entitiegeLyaNG' for entitled FLYING, 'contounl ares' for contemplated, 'igamated' for Amalgamated, plus overlaid handwritten annotations and redaction marks causing systematic corruption.",
+      "page": 18
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded photocopy with large blocks of barely legible typewritten text and official blue-ink date stamps at bottom; provided OCR text is corrupted gibberish bearing no resemblance to actual visible content.",
+      "page": 19
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI letter with clear typewritten body text; OCR misread recipient's name as 'Weight' instead of 'Wright' and failed to parse routing stamps/markings at top and handwritten annotations at bottom, but captured the main letter content correctly.",
+      "page": 20
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Faded typewritten government memo with severe text fading and light yellowed scan quality; OCR completely failed to capture visible typewritten content, likely due to insufficient contrast between faded text and aged paper background.",
+      "page": 21
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "1966 letter to FBI Director about UFO sightings; OCR captured fragmented text with frequent character misrecognition, broken words, and missing content throughout document despite attempting full transcription.",
+      "page": 22
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is severely faded with only ghosting traces of typewritten text visible; document control stamps visible at bottom but no legible text for OCR to capture.",
+      "page": 23
+    },
+    {
+      "content_types": [
+        "blank",
+        "handwritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 40,
+      "notes": "Mostly blank page with a typewritten date stamp (12 OCT 20 1966) accurately captured; significant bleed-through from reverse side and faded handwritten marks reduce overall text coverage clarity.",
+      "page": 24
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dust_spots",
+        "handwritten_overlay"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 83,
+      "notes": "FBI memorandum with extensive handwritten annotations and stamps; OCR missed date digit (10/19/66 became 20/19/66) and misread some characters ($300,q@00 for $300,000), but captured overall content and structure well.",
+      "page": 25
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded microfilm scan with visible but extremely light typewritten text throughout; OCR captured nothing despite readable content present on page.",
+      "page": 26
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "warped",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Aged typewritten government document with two character-level OCR errors: 'research' misread as 'researcl' and 'described' as 'deseribed'; page shows typical book-scanning warp and aging marks with two black dots near top edge.",
+      "page": 27
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten government memo with age-related yellowing. OCR captures structure but has significant errors: 'crewmen' becomes 'cr', 'described' becomes 'deseribed', large garbled sections ('tz', 'iberate', 'ert'), and multiple dropped/misread words throughout, particularly in middle paragraphs.",
+      "page": 28
+    },
+    {
+      "content_types": [
+        "typeset",
+        "photograph",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Newspaper article with embedded photo (Dr. Condon) and map. OCR captured most text but has systematic errors: garbled word breaks (\"articularly ce last sum-m e\"), incomplete words (\"ndent, ci-vestigato-\"), missing letters, and inconsistent spacing throughout. The general content is recoverable but requires significant correction.",
+      "page": 29
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Magazine article scan with three-column layout; OCR captured most content but has scattered errors including incomplete words ('Ai' for 'Air', 'u' fragments), hyphenation breaks, and missed character pairs; small UFO diagram at bottom-right has no text to OCR; age degradation and column boundaries caused some word segmentation issues.",
+      "page": 30
+    },
+    {
+      "content_types": [
+        "form",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Government memo form with handwritten edits; OCR significantly errors on subject line (missed 'JOHN MOSS') and FROM field ('M.A Zapags fi' should be 'M. A. Jones'), but main body text is accurately captured despite strikethrough marks and stamps.",
+      "page": 31
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "Document body is heavily faded and nearly illegible; OCR incorrectly captured reference numbers/stamps at bottom with significant character substitution errors (€ for S, garbled letter combinations).",
+      "page": 32
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI letter from Hoover on UFO investigation policy (November 1966) with postal marks and red/blue handwritten annotations; OCR has multiple character substitutions (K→pee, Edgar→Edoay) and word errors (November→lovember, records→recerds, Also→Aliso) but captures overall structure.",
+      "page": 33
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document with severe deterioration; text is barely legible even visually. Multiple redaction stamps visible at top and bottom. OCR failure is expected given extreme fading and poor scan quality.",
+      "page": 34
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten letter to FBI Director Hoover dated November 26, 1966; OCR captured the main body reasonably well but mangled the letterhead and made scattered errors (missing 'I', 'any' read as 'ny', 'placed' as 'pleced'); official stamps and handwritten signatures/annotations present.",
+      "page": 35
+    },
+    {
+      "content_types": [
+        "blank",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 2,
+      "notes": "Page is heavily faded with two black redaction marks and administrative stamps (XEROX COPIES, DATE 11-29-66) barely visible at bottom; OCR failed entirely despite readable date stamps.",
+      "page": 36
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "skew",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 20,
+      "notes": "This is a 1965 FBI letter from L. Edgar Hoover with poor OCR quality—the date is corrupted (January 2, 190 instead of January 23, 1965), most body text is missing or severely garbled, and handwritten annotations plus aging/fading significantly impact recognition despite the document being reasonably readable visually.",
+      "page": 37
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "OCR captures about 70% of text but misses the header and opening sentence (starts mid-phrase with 'g object was sighted'), contains character error '1ur' for 'Arthur', and lacks 'one Lonnie Zamora' phrase; faded scan with background bleed-through reduces confidence on cut-off portions.",
+      "page": 38
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI letter from J. Edgar Hoover with correct main body text but OCR errors in header (HTK for SI-105, @ for L in signature) and struggles with overlaid stamps and handwritten routing marks.",
+      "page": 39
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 2,
+      "notes": "Heavily faded government document with visible classification stamps and markings; body text nearly illegible; provided OCR text is almost entirely garbled and does not correspond to any visible content on the page.",
+      "page": 40
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Formal 1966 letter to FBI Director Hoover from Princeton, WV police chief discussing UFO sightings; substantial typewritten content is clearly readable but OCR captured zero text, likely due to photocopy degradation combined with handwritten annotations and markings.",
+      "page": 41
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Historic FBI letter with main body captured accurately; OCR misread handwritten reference numbers at top (shows garbled '69 £455') and omitted routing checklist/distribution list at bottom, though primary correspondence content is correct.",
+      "page": 42
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded typewritten document with aged yellowing paper; text is extremely light and barely legible, causing OCR to fail entirely; visible stamp marks at top.",
+      "page": 43
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "skew"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "FBI letter with routing annotations; OCR captures main body text reasonably but struggles with margin routing info, letterhead corruption (e.g., 'INVESTIGA' YN'), handwritten markings, and stamps; significant garbling in administrative sections.",
+      "page": 44
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 15,
+      "notes": "Heavily aged typewritten document with severe fading and bleed-through; OCR captured only visible blue classification stamps/reference numbers (WIIM O-93y) and partial declassification markings, missing nearly all body text content.",
+      "page": 45
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 2,
+      "notes": "Handwritten letter from Judith Hodgman to J. Edgar Hoover dated August 5, 1966, inquiring about UFO information. OCR is almost completely unusable—the system failed to recognize handwritten cursive and produced nearly 100% gibberish output.",
+      "page": 46
+    },
+    {
+      "content_types": [
+        "form",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Page shows government form with stamped administrative markings (RECEIVED-DIRECTOR, FBI, date stamps, FD-4); OCR text bears no resemblance to visible content, appearing to be noise or misaligned extraction from heavily faded areas.",
+      "page": 47
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is essentially blank with only aging marks and dark spots at bottom; OCR correctly found no text to extract.",
+      "page": 48
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 18,
+      "notes": "OCR captured routing form names (top right) and date stamps but almost completely failed on the yellow-highlighted typewritten memorandum, missing large sections about Flying Saucers and Dr. Condon; handwritten annotations and signatures also largely unrecognized.",
+      "page": 49
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Blank page with faded administrative stamps and archival markings scattered throughout; OCR captured no text despite visible markings.",
+      "page": 50
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI routing and case document with aged yellowing and handwritten annotations; OCR captured structure well but stumbled on specific text: 'ALLEGED SIGHTING' → 'SURGHLE SIGHTING', 'James C. Collins' → 'James pA = oil', and '8:00 p.m.' → '8:90 p.m.' are notable errors.",
+      "page": 51
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged typewritten government document with significant yellowing and text fading; OCR extraction failed entirely despite 30-40% of content being human-readable, likely due to low contrast between faded text and aged paper background.",
+      "page": 52
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted SECRET memorandum with significant grain and fading from what appears to be microfilm; OCR captured no text despite visible typewritten content, likely due to poor scan quality and extensive redaction marks.",
+      "page": 53
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 15,
+      "notes": "Classified SECRET document with typewritten body text and handwritten annotations discussing espionage/manipulation tactics; OCR has severely garbled the content producing mostly incoherent output with minimal accurate word recovery.",
+      "page": 54
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten SECRET document with extensive visible text, but OCR engine failed to capture any characters (0% recovery); text is legible but significantly faded from microfilm scan with redaction marks present.",
+      "page": 55
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified SECRET government memo with multiple paragraphs of typewritten text clearly visible on the page, but OCR produced no text output despite readable content due to significant grain and dark scan quality.",
+      "page": 56
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "skew",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "FBI Records Bureau search request form with typewritten headers and handwritten annotations; OCR captured form structure but with systematic character errors (e.g., '@f' for 'of', 'Eofward' for 'Forwarded') and largely failed to capture the handwritten subject names, dates, and signatures.",
+      "page": 57
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Government memorandum with extensive handwritten annotations and official stamps, but OCR captured only scattered fragments from the form header, missing the entire memo body and handwritten content.",
+      "page": 58
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "This is a 1967 SECRET government memorandum with multiple redacted sections; the OCR output is nearly unintelligible, capturing mostly garbled symbols and fragments rather than the actual typewritten text visible on the faded photocopy scan.",
+      "page": 59
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Microfilm scan of a declassified government form with checkboxes and fields; visible text includes 'Dr. Edward M. Condon' and 'UNIVERSITY OF DENVER' with handwritten annotations, but OCR engine captured zero characters despite readable content.",
+      "page": 60
+    },
+    {
+      "content_types": [
+        "form",
+        "mixed"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "Noisy microfilm scan of a government form with printed fields and handwritten entries; OCR captured only scattered fragments (subject, location fields visible but heavily degraded due to microfilm grain and low contrast).",
+      "page": 61
+    },
+    {
+      "content_types": [
+        "form",
+        "mixed"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "FBI memorandum with clear typewritten text but OCR misses form header details (e.g., 'vwunteered' for 'volunteered') and struggles with overlaid handwritten stamps; handwritten 'FLYING SAUCERS' annotation and multiple official stamps complicate extraction.",
+      "page": 62
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "FBI document from 1967 with clear typewritten text and handwritten annotations/stamps; OCR captures body text well but contains minor errors (\"aboye\" instead of \"above\", parenthesis formatting issues around KUEHR name) and misses handwritten side markings and \"ENCLOSURE\" stamp.",
+      "page": 63
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Typewritten FBI document with redaction stamps at top; OCR captured nearly all text but contains one chemical formula error (NoH4,0 should be N2H4O for hydrazine).",
+      "page": 64
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten FBI memo with mostly accurate OCR; minor character errors include '69..0011328' for file number (should be '69-0-11328'), '®' for 'a', 'ny' for 'my', and punctuation errors (semicolon/comma instead of colon/period in header lines). Paper shows age-related degradation but scan is clear and readable.",
+      "page": 65
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "OCR captured fragments of the correct content but with severe mangling — missing large sections, broken word boundaries, and scrambled sentence structure; the scan itself is clear and readable, indicating poor OCR processing rather than image quality issues.",
+      "page": 66
+    },
+    {
+      "content_types": [
+        "diagram",
+        "photograph",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Page contains a geographical diagram and a circular object photograph with minimal text; provided OCR is largely garbled noise, capturing only handwritten margin annotations ('BOTTOM') very poorly.",
+      "page": 67
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "FBI memo with clear typewritten text and visible seal. OCR captured ~87% correctly but has character-level errors: 'dune' for June, 'vadio' for radio, 'ny' for my, 'stall' for still, missing 'UNITED' from header, and 'ae' artifact in JUSTICE. Minor graininess from microfilm scan but highly readable overall.",
+      "page": 68
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten FBI document with clear OCR of most text, but contains errors: 'yertaining' (should be 'pertaining'), 'lecated' (should be 'located'), 'eon' (should be 'on'), and mangled chemical formulas with subscripts (CHg0H, NoH,O). Age-related dust spots and photocopy fading visible but do not significantly impair readability.",
+      "page": 69
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "redacted"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 0,
+      "notes": "Page contains two line-drawn diagrams (map and illustration) with minimal handwritten annotations; OCR missed all visible text including handwritten marks.",
+      "page": 70
+    },
+    {
+      "content_types": [
+        "photograph",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Page contains two reproduced photographs with grainy scan quality and several handwritten margin annotations; OCR captured the main label 'Best Possible Image' but missed all handwritten notes including 'blurry?', numbered markers, and other handwritten text.",
+      "page": 71
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "FBI memorandum with handwritten annotations and multiple stamps; OCR has significant errors including name inconsistency (ANDERSON vs SANDERSON), garbled text (wilI™'soon), incomplete words (sonation Statute, mitted only), and completely mangled phrases (is content Tarouney, u now has).",
+      "page": 72
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "Main letter body captured well, but significant errors in red mailed stamp (AUG/FBI misread), NOTE section (multiple word errors like 'Bufiles', 'oer', 'possiblyuse'), and handwritten elements; document yellowing and age reduce clarity in secondary text.",
+      "page": 73
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 15,
+      "notes": "Page contains multiple lines of heavily faded typewritten text with classification stamps and handling marks; OCR captured only a small fraction of visible content, missing most of the document text due to extreme fading.",
+      "page": 74
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten letter to J. Edgar Hoover from Theodore Gray Hullett dated August 19, 1967, with heavy OCR errors in middle paragraphs (e.g., 'igap' vs 'IGAP', 'Thokne Nety Mollet' vs correct name, garbled character sequences like 'gz to the attentionzof'); photocopying degradation and official stamps/markings contributed to poor recognition accuracy.",
+      "page": 75
+    },
+    {
+      "content_types": [
+        "redacted",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 10,
+      "notes": "Heavily redacted FBI document with large blue classification stamps obscuring most content; OCR captured visible stamps and sparse footer text but majority of substance is concealed.",
+      "page": 76
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Image shows a manila envelope cover with handwritten reference number (622-839941-462 in blue/red ink) and a red 'ENCLOSURE' stamp, but OCR system returned no text despite visible markings.",
+      "page": 77
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Journal cover page with decorative geometric design center; OCR captured main title and some text correctly but generated garbled characters from design patterns, and missed or mangled publication date (june 1967), international/get acquainted subtitle details.",
+      "page": 78
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Mixed page: left side is typeset IGAP/UFO CONTACT magazine content (well-captured by OCR), right side is formal NASA letter with handwritten signature (not included in OCR text). Age-related yellowing and fading reduce contrast but text remains readable.",
+      "page": 79
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Magazine page with two-column layout; OCR captures left column (page 140) text clearly and accurately, discussing 1950s TV reception anomalies and KLEE station mystery. Text is crisp and legible with no major scan distortions.",
+      "page": 80
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "slight_skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 50,
+      "notes": "Scan shows two facing pages (114 left, 119 right); OCR text captures only the left page with the Queen Juliana letter but misses the right column entirely, cutting off mid-sentence at the bottom.",
+      "page": 81
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Typeset article on UFOs and spectral analysis; OCR captured left column and partial right column with mostly accurate transcription, minor errors detected ('earch' for 'earth', possibly 'Can' for 'San' in byline), document has age-related yellowing but remains legible.",
+      "page": 82
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Typeset book page with two-column narrative text about UFO contact experiences; OCR captures the bulk of the story accurately with minor word-level errors and typical two-column layout handling issues.",
+      "page": 83
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "warped"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Left column of book page with two-column layout; OCR captures the main text about George Adamski and Leonard Cramp's UFO research analysis very well; minor aging/yellowing typical of older printed documents; no significant OCR errors detected.",
+      "page": 84
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Scanned photocopy of typewritten document with two-column layout; OCR captured left column narrative accurately, though photocopy fading and minor graininess introduce slight degradation at character edges.",
+      "page": 85
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Two-column typeset page from a UAP/UFO book or magazine with a centered photograph. OCR captured the main text accurately with typical minor Spanish character substitutions (ñ→fi in 'Compañia'). Text is legible throughout with good contrast despite document age.",
+      "page": 86
+    },
+    {
+      "content_types": [
+        "typeset",
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Page contains typeset articles and UFO photographs; OCR captures text with high accuracy but cuts off before the page ends; minor errors like 'wculd' instead of 'would' present.",
+      "page": 87
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 48,
+      "notes": "Two-page spread; OCR accurately captures left column (page 132) but completely omits right column (page 121) content including 'What Adamski said...' article, resulting in roughly 50% text coverage.",
+      "page": 88
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Two-column typeset page from a printed book about UFO contact experiences; OCR captured narrative text about a 1959 palace visit well, with most content accurately rendered despite minor photocopy degradation typical of scanned documents.",
+      "page": 89
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Typeset article about science and religion by Dr. Wernher von Braun in two columns; OCR captures left and center content but cuts off mid-right column before end of article, missing approximately 30% of visible text.",
+      "page": 90
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 50,
+      "notes": "Left column typewritten text captured with good accuracy but right column (UFOLOGY title section and introductory text) entirely omitted from OCR; page shows slight skew.",
+      "page": 91
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "cut_off"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Two-column typeset page discussing UFO contact and religious apocrypha; OCR captures most of the left column accurately but cuts off mid-word at the end ('control colu' instead of 'control column'), typical of photocopy aging and resolution.",
+      "page": 92
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Two-column typeset page with lists of UFO researchers, Soviet contribution section, and start of 'Visitors from outer space' article; OCR captures content accurately but ends incomplete mid-word, missing bottom portion of page.",
+      "page": 93
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "redacted",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "Typewritten FBI letter with OCR capturing the main body reasonably well, but struggling significantly with the signature line (J. Edgar Hoover garbled to 'J. Ea / Bar Hi over'), the redacted section, and the NOTE section at bottom; handwritten annotations and margin marks largely missed.",
+      "page": 94
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Heavily declassified document with extreme text fading, large redaction bar covering center content, and multiple classification stamps; OCR produced mostly unintelligible character sequences that don't correspond to readable text on the page.",
+      "page": 95
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "OCR accurately captured the main letter text and signature block but missed 'Dear Sirs:' at the beginning; document shows age-related fading and archival stamps/routing marks that OCR ignored.",
+      "page": 96
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten letter on lined paper with legible text (Dear Sirs, signature Ray Robinson, address) but OCR captured zero characters despite clear handwriting visibility and several redacted sections.",
+      "page": 97
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten",
+        "photograph"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "cut_off",
+        "warped"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Mostly blank ruled notebook page with faded handwritten annotations on left margin, a pasted tan photograph in upper right, and angled/rotated stamp text at bottom; OCR output bears no relationship to actual page content and appears to be random character fragments.",
+      "page": 98
+    },
+    {
+      "content_types": [
+        "photograph",
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 65,
+      "notes": "Page shows a heavily faded pencil sketch of a humanoid figure with a typewritten 'Best Possible Image' label and handwritten classification markings; OCR captured the main labels but missed additional handwritten reference numbers at bottom (C2-23284 and other characters are partially obscured by the fading).",
+      "page": 99
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "handwritten",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI memorandum with legible main body text, but OCR struggles with header metadata (garbles \"GOVERNMENT\" as \"cl palate\", misses leading \"U\" in \"UNIDENTIFIED\"), and fails to capture handwritten annotations and red ink stamps; primary document content is 85-90% accurately captured.",
+      "page": 100
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Declassified intelligence document with typewritten text; OCR output appears to be completely reversed/mirrored and garbled, bearing almost no resemblance to the actual page content which discusses intelligence matters with classification markings.",
+      "page": 101
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten FBI memo with age-related staining and brown spots throughout; OCR captured nearly all content but rendered one character incorrectly as 'knéw' instead of 'know' near the end of the main body text.",
+      "page": 102
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Heavily faded microfilm scan with dark stamps/marks and significant degradation; OCR output is largely reversed or severely corrupted, capturing almost no readable text from the legible typewritten document.",
+      "page": 103
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "FBI memo with crisp typewritten text; OCR misread opening 'She' as 'sé' and missed 'Re:' line prefix, but captured full document content accurately despite aged paper.",
+      "page": 104
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten FBI memo with several OCR errors: garbage at start ('e@', 'e'), missing 'A UFO' in item 3 ('oy' instead), 'mor' instead of 'nor' in footer, 'ite' instead of 'its', and erroneous accent on 'know'; aged yellowed paper with two redaction marks visible at top, but text remains clearly readable.",
+      "page": 105
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 68,
+      "notes": "OCR missed the header lines (ANONYMOUS INFORMANT, DALLAS TEXAS, OCTOBER 9 1967) and contains character errors: '@H@' instead of 'she', 'cam' instead of 'can', 'PBI' instead of 'FBI', indicating moderate degradation from document aging/scan quality.",
+      "page": 106
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "fading"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "FBI memo with mostly accurate OCR; errors include 'duly' instead of 'July', 'A ag' instead of 'A UFO' (point 3), 'Antartica' instead of 'Antarctica', and 'knéw' instead of 'know'; document shows typical photocopy grain and aging.",
+      "page": 107
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten memo from 1967 with mostly accurate OCR but missing header metadata (Re:, ANONYMOUS INFORMANT, dates) and containing character errors: 'inelude' for 'include', 'Gewn' for 'down', 'officiale' for 'officials', 'PBI' for 'FBI'.",
+      "page": 108
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "FBI memo with clear typewritten text; OCR captured nearly all content accurately including header, body paragraphs, numbered items, and disclaimer. Minor issues: possible unusual capitalization in 'knOw' appears present in both OCR and source. Microfilm scan shows typical aging grain but text remains clearly readable throughout.",
+      "page": 109
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten FBI memo on aged paper with visible discoloration. OCR errors include: missing 'Re:' prefix (shows '@'), '88S' for beginning of paragraph, 'é@2mm' for 'down', and 'PBI' for 'FBI' — otherwise content well captured.",
+      "page": 110
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI memorandum from 1968 about unidentified flying objects with handwritten annotations and administrative stamps; OCR captured most content but has minor character recognition errors (e.g., 'fnidentified' for 'unidentified', partial words due to handwriting overlay) from document age and marked-up surface.",
+      "page": 111
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "OCR text is completely backwards/mirrored - entire page was read in reverse orientation, rendering it unintelligible; faded typewritten government document with visible red stamps and classification markings.",
+      "page": 112
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "1967 NICAP memo with clear OCR overall, but has notable errors: 'Phenonema' (should be 'Phenomena'), 'Major D-E._Keyhoe' (should be 'Major Donald E. Keyhoe'), and missing 'To:' field; archive disclosure stamp visible at bottom.",
+      "page": 113
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI letter to Glenn Evans about UFO investigation, March 1968. OCR captures main typewritten content well but struggles with handwritten annotations, filing codes at bottom, and some marked/stamped elements. Minor errors like 'Lb (, ' at start and garbled text at end (filing notations and initials).",
+      "page": 114
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Page is severely faded with most content illegible; OCR captures only fragmented, corrupted text from barely-visible typewritten material; scattered stamped reference codes at bottom are more readable than body text.",
+      "page": 115
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "faded",
+        "warped"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Letter with envelope and archival markings; OCR misspelled 'writing' as 'writting' and missed some handwritten annotations, but captured main body text accurately.",
+      "page": 116
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 1,
+      "notes": "Page contains extensive cursive handwritten text discussing saucers and government agencies, with red ENCLOSURE and CORRESPONDENCE stamps, but OCR captured essentially nothing—characteristic failure on cursive handwritten documents.",
+      "page": 117
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Scan of a manila envelope with printed 'ENCLOSURE' label and handwritten reference number '62-83774-466'; OCR captured no text despite visible content.",
+      "page": 118
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten business card/header for USHO with contact info for two people. OCR misread 'RADIO' as 'RapDio' and completely missed the handwritten date notation in the bottom right corner. Layout structure (two-column arrangement) not preserved in OCR output.",
+      "page": 119
+    },
+    {
+      "content_types": [
+        "blank",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page with handwritten reference number '62-83894-466' visible at top, which OCR failed to capture entirely.",
+      "page": 120
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "FBI letter with handwritten annotations and stamps; OCR errors include 'Miss Jane New' (should be 'Miss Jane Ferry') and '3, Edgar Hoover' (should be 'J. Edgar Hoover'), plus missing 'be' in 'could not be identified'.",
+      "page": 121
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded typewritten text on aged yellow paper with visible stamps and reference numbers at bottom; OCR captured minimal content, returning nearly unreadable garbled output that doesn't match the actual document.",
+      "page": 122
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten letter with handwritten annotation 'FLYING SAUCERS' and routing marks; main letter body captured accurately but handwritten annotations and agency routing information at bottom are partially garbled or missing.",
+      "page": 123
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "punch_holes",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Handwritten letter with clear cursive script is almost completely unrecognized by OCR; the provided text is gibberish bearing no relation to actual content, which is a student letter requesting UFO research information dated March 1968.",
+      "page": 124
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Blank lined form page with archival stamps and reference marks visible at top and bottom; OCR correctly identified no substantive text content.",
+      "page": 125
+    },
+    {
+      "content_types": [
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "OCR correctly captured typewritten elements (CHANGED TO, MAY 29 1968) but severely failed on handwritten numbers and letters, generating incorrect text (62A- //ABYEL- 38, ob; Bz \\ Ve) instead of actual content (62- 828944- 448, 449; DmL \\ vL), plus added spurious lines not present on page.",
+      "page": 126
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Formal letter dated March 19, 1969 to J. Edgar Hoover regarding a UAP sighting allegedly preceding a Pan Am plane crash; OCR captures ~95% accurately but has character-level errors ('umsual' for 'unusual', 'Hoovers' for 'Hoover:', '636' for '1963') and struggles with some handwritten marks and official red stamps (REC128, CORRESPONDENCE routing stamp).",
+      "page": 127
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Page contains a full page of heavily faded typewritten text that is barely legible due to age deterioration and poor scan contrast; OCR captured only scattered marginal notations and failed to recognize the main body content.",
+      "page": 128
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten page with two redaction stamps and good clarity; OCR captured nearly all text correctly but has one minor error ('osGillate' instead of 'oscillate' in item 3 of the numbered list).",
+      "page": 129
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten letter with handwritten signatures and address annotations; OCR captures typed text accurately but severely mangles cursive handwriting (e.g., 'Russia is &' for 'Russia is well', 'Srey fwd MevrTfe' for handwritten signature, 'fare ng people' for 'following people').",
+      "page": 130
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Professional business letter with typed body text captured accurately; handwritten signature and administrative annotations at bottom show OCR errors (garbled signature area, misread initials/markings) but main content is legible.",
+      "page": 131
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "1969 FBI letter from J. Edgar Hoover declining to assist with UFO inquiry; OCR captures most content accurately but misreads correspondent's surname (Cerame→me), drops initial letter from 'National' (→onal), and errors on street number (77→717) in address block.",
+      "page": 132
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Heavily faded typewritten document with administrative stamps/reference markings at bottom. OCR attempted to read reversed/upside-down stamped text at bottom of page but produced garbled output; faint body text throughout is nearly illegible.",
+      "page": 133
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Typewritten letter from NICOUFO requesting UAP investigation reports from FBI; OCR captures the letter body correctly but includes a spurious standalone 'We' line between paragraphs that does not appear in the document.",
+      "page": 134
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Extremely faded photocopy of a typewritten government document with handwritten annotations (visible in blue ink: 'MR. JAMES', 'REFILED') and official stamps; nearly all typewritten content illegible, OCR failure is justified given severe fading throughout.",
+      "page": 135
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "FBI memorandum form with clear typewritten body text and extensive handwritten annotations/routing marks; OCR captures main content well but mishandles some handwritten overlays and has minor errors like 'Clevelan' instead of 'Cleveland'.",
+      "page": 136
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document with classification stamps and markings; text is barely legible due to severe degradation, explaining why OCR returned no text despite visible content.",
+      "page": 137
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI letter dated May 21, 1969; OCR captures main typewritten body well but garbles the routing form section at bottom and misses handwritten signatures/annotations. Minor errors in header (date stamp misread as 'eee. S|' and 'MAY 2 11969') and routing slip text nearly illegible.",
+      "page": 138
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document from microfilm with nearly illegible text; declassification marking visible on right side.",
+      "page": 139
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typed FBI inquiry letter with handwritten annotations and red oversight stamps. OCR errors include merging \"disturbing\" and \"almost\" as \"disturbingzalmost\", and severe garbling of the struck-through P.S. line (\"FEi% IRGSctions\" should be \"FBI's functions\"). Main body text captured accurately.",
+      "page": 140
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 12,
+      "notes": "Handwritten letter from 1969 about UFO rumors; OCR severely failed to recognize cursive text, capturing only isolated fragments like the address box number while completely garbling the body text.",
+      "page": 141
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Mostly blank page with faint text at bottom; OCR captured \"69.HV 2S G 61 MW\" but garbled the opening characters as \"go. HE\" instead of \"69.HV\", achieving partial accuracy on visible classification markings.",
+      "page": 142
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 2,
+      "notes": "Clearly legible handwritten letter on lined notebook paper with binding holes, but OCR is completely garbled and unintelligible, failing to recognize any of the actual words or sentence structure.",
+      "page": 143
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "noise",
+        "bleed_through",
+        "stamps_marks",
+        "redacted",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified memorandum with typewritten body and handwritten annotations; text is legible despite photocopied scan quality and redactions, but OCR failed to extract any content.",
+      "page": 144
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Official FBI letter from J. Edgar Hoover dated October 13, 1969 with handwritten markings and editorial corrections; OCR has minor errors ('anc' for 'and', 'argreaves' for 'Hargreaves') and misreads some handwritten annotations at top.",
+      "page": 145
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with declassification stamps and filing marks; OCR returned nothing despite visible (though degraded) content throughout the page.",
+      "page": 146
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "slight_discoloration"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten letter well-captured with minor spacing errors (e.g., 'pagesthere'); handwritten signatures and administrative stamps at bottom are largely garbled; redacted section over 'German' shown as X's, which is appropriate.",
+      "page": 147
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 5,
+      "notes": "Page is a formal handwritten letter about flying saucers dated June 24, 1970; OCR captured only fragmented text from stamps/marks and missed the substantive handwritten letter content entirely.",
+      "page": 148
+    },
+    {
+      "content_types": [
+        "form",
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "Mostly blank lined page with minimal text at bottom; faint classification markings and reversed text at bottom edge are barely visible; OCR captured some characters but with significant errors (misread dashes as special characters, upside-down text mostly lost).",
+      "page": 149
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is largely blank with heavily faded watermarked content barely visible in center, two black hole punches at top, and red handwritten annotations (page number '16' and date stamp '60JUL101970'). OCR correctly produced no text.",
+      "page": 150
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Typewritten Pentagon letter dated June 20, 1972 with clear OCR errors: 'ogcod' for 'to', 'Elying' for 'Flying', and garbled handwritten routing/classification notations at bottom; main letter body well captured despite photocopy age.",
+      "page": 151
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Formal FBI letter with strong OCR capture of main body, but character substitution errors in marginal stamps and notations (\"2\" for \"a\" in \"matter\", \"6QMAR2\" for \"60MAR2\", \"MLN;je\" for \"MLN;jc\").",
+      "page": 152
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly visible typewritten text that is heavily faded and yellowed from age; OCR system captured zero characters despite readable content present, suggesting OCR failure on low-contrast faded text.",
+      "page": 153
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "Main letter content (address through signature) is captured well, but footer stamps and handwritten administrative markings are heavily garbled with incorrect characters and a date error (1979 instead of 1972).",
+      "page": 154
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 2,
+      "notes": "Handwritten cursive letter dated February 15, 1992; OCR completely failed to recognize the handwriting, producing only garbled unintelligible text with no recognizable words.",
+      "page": 155
+    },
+    {
+      "content_types": [
+        "blank",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Mostly blank lined page with two black redaction marks at top and faint stamped text at bottom; OCR captured minimal degraded content with poor accuracy.",
+      "page": 156
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Routing memorandum with significant OCR errors in header (DEPARTMENT→DEPARTS, CHIEF→HEF, MR. GRAHAM→GRARAM) and checkbox symbols (square brackets misread as curly braces), but routing content, date, and signature section mostly preserved; handwritten annotation visible on document.",
+      "page": 157
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page with extremely faint ghosted text and visible archival/classification stamps; page is heavily aged and degraded, making OCR retrieval impossible.",
+      "page": 158
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "FBI memorandum form with good OCR on main body (~80%), but header garbled ('GNITED ren'), line breaks splitting 'unidentified', and handwritten annotations/routing stamps missed entirely.",
+      "page": 159
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains heavily faded typewritten text with institutional archive stamps and handwritten annotations; the original document is so faded that OCR could not extract any legible text.",
+      "page": 160
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks",
+        "cut_off"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "FBI memo from 1973 about UFO inquiry; OCR captures main body well but struggles with redacted header ('or@srice' instead of proper text), interprets phone digit oddly ('$26' vs '526'), and cuts off 'ENCLOSURE' stamp at bottom.",
+      "page": 161
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "FBI memo with clear typewritten text; header OCR error where 'UNITED' became 'unger' and redacted 'JUSTICE' is mangled to '@srce'; main body text captured accurately; handwritten mark next to phone number not detected by OCR.",
+      "page": 162
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 94,
+      "notes": "FBI typewritten document with two black redaction marks obscuring header text and a handwritten mark near the address section misread as 'per'; remainder of document captured clearly and accurately.",
+      "page": 163
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI letter from 1973 on aged yellowed paper with handwritten annotations and routing form; OCR captured main content but misspelled recipient as 'Praid' instead of 'Praide' and signature line as 'My Kelley' instead of 'M. Kelley', plus garbled some routing abbreviations.",
+      "page": 164
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 10,
+      "notes": "Page is almost entirely blank with extreme fading and yellowing; minimal visible text (mostly punch holes and faint stamps); OCR appears to be misinterpreting noise and very faint degraded marks as text.",
+      "page": 165
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "age_yellowing",
+        "noise"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 20,
+      "notes": "FBI letter dated October 18, 1973 regarding flying saucer sightings in California; OCR severely corrupted with character substitution, random spacing, and structural breakdown—most readable text is the typewritten body which should be machine-readable but OCR engine failed dramatically.",
+      "page": 166
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 73,
+      "notes": "FBI letter with routing slip (April 15, 1974). Main letter body captured well, but OCR struggled with left-margin routing notations and handwritten annotations; garbled text like 'bes,' 'roe,' 'bmp. Syst.' are corrupted routing slip entries. Multiple stamps and office marks reduce clarity.",
+      "page": 167
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Page is extremely faded with routing stamps visible at bottom; OCR text is garbled nonsense that bears no resemblance to the faint, barely legible routing and classification text actually visible on the page.",
+      "page": 168
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten letter with handwritten annotations and FBI stamps; OCR captures main body accurately but has errors in administrative codes (e.g., 'gec-i18' vs actual 'REC-10') and signature area.",
+      "page": 169
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily aged/faded typewritten document with redaction marks at top and classification stamps; text is too faint for OCR extraction.",
+      "page": 170
+    },
+    {
+      "content_types": [
+        "form",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 45,
+      "notes": "FBI Form 22 (Rev. 6-26-73) for records search requests with printed form fields, typewritten text, and handwritten entries; OCR severely corrupted with character substitution errors ('Pal' for 'Form', 'Segreh' for 'Search', 'Nome' for 'Name'), missing text, and garbled checkbox labels throughout.",
+      "page": 171
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "FBI memorandum with red stamp annotations; OCR has critical errors in subject line (UNIDENTIFIED→IDENTIFIED, SKY AT→S), incomplete agency names (Milwaukee→Milwau, Division→Divisio), missing proper name (Robert before Koller), and garbled agency acronym (United Press International→sewer).",
+      "page": 172
+    },
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded microfilm scan of classified document with administrative stamps and markings; main body text is illegible and OCR produced mostly garbled noise rather than coherent words.",
+      "page": 173
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Official Air Force letter regarding UFO inquiries and Project Blue Book. OCR misses header elements (e.g., 'FORCE' dropped from 'AIR FORCE', 'OFFICE' misread as 'OBFICE'), omits date and 'FEDERAL GOVERNMENT' text, but captures main body content reasonably well despite multiple stamps, handwritten annotations, and aged paper.",
+      "page": 174
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "redacted",
+        "light_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 10,
+      "notes": "Heavily faded typewritten page with two redaction marks at top; OCR output is severely garbled due to extreme fading making almost all body text illegible, capturing only scattered character fragments with no coherent words.",
+      "page": 175
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 96,
+      "notes": "Clearly readable scanned photocopy with government stamps at top; OCR accurately captured the full paragraph about scientific organizations, the attachments notation, and both list items with no significant errors.",
+      "page": 176
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Clean typewritten government document (1960s era) with good scan quality; OCR captured nearly all body text accurately, though 'BRCLOSUR' at end should be 'DISCLOSURE' based on visible stamp, and handwritten annotations at bottom are not transcribed.",
+      "page": 177
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "OCR captured only the title and TOTAL SIGHTINGS column numbers, but completely missed the YEAR column (1947-1969) and entire UNIDENTIFIED column with values, plus the totals row footer (701).",
+      "page": 178
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Bibliography entries on aged paper with minor OCR errors: 'Z2Vor' should be '22151', 'Obyects' should be 'Objects'. Text is clearly readable despite age spots and redaction marks at top.",
+      "page": 179
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Main letter body is mostly accurate, but header has multiple errors (GOVERMMEN→GOVERNMENT, Jbieutenant→Lieutenant, fice 0→Office of), signature line garbled (oenald→Donald), and routing list severely corrupted with nonsense text like 'pymaremees® OETTUNeT'.",
+      "page": 180
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document with visible redaction/classification stamps at bottom; text is extremely degraded from age and copying, rendering OCR ineffective despite content being faintly visible to human inspection.",
+      "page": 181
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI memo from June 1977 with accurate OCR of typewritten letter body, but significant garbling in handwritten signature area (OCR shows 'Gehan SH' for 'Jay Cochran Jr') and missed handwritten annotations; main message preserved.",
+      "page": 182
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 76,
+      "notes": "FBI memorandum with heavy handwritten annotations and date stamps; OCR captured main body text accurately but garbled FROM field ('J. COCHRAN, JR.' rendered as scattered characters) and misread 'conduct' as 'sengact'; routing distribution mostly correct.",
+      "page": 183
+    },
+    {
+      "content_types": [
+        "form",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Heavily faded page with mostly illegible content; OCR output is primarily noise and garbled characters rather than actual text, capturing only fragmented stamps and marks.",
+      "page": 184
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 3.46,
+    "avg_text_coverage_pct": 48.5,
+    "content_type_counts": {
+      "cover_page": 3,
+      "form": 55,
+      "typewritten": 118,
+      "handwritten": 43,
+      "redacted": 10,
+      "typeset": 23,
+      "photograph": 11,
+      "mixed": 12,
+      "blank": 13,
+      "stamps_marks": 5,
+      "diagram": 3,
+      "table": 1
+    },
+    "source_medium_counts": {
+      "photograph_of_doc": 1,
+      "scan_photocopy": 123,
+      "scan_original": 30,
+      "scan_microfilm": 30
+    },
+    "scan_quality_counts": {
+      "good": 112,
+      "poor": 28,
+      "fair": 44
+    },
+    "ocr_artifact_counts": {
+      "bleed_through": 59,
+      "faded": 127,
+      "stamps_marks": 124,
+      "noise": 25,
+      "age_yellowing": 2,
+      "skew": 13,
+      "dark_scan": 9,
+      "cut_off": 5,
+      "small_text": 1,
+      "light_scan": 26,
+      "dust_spots": 1,
+      "handwritten_overlay": 1,
+      "warped": 8,
+      "redacted": 12,
+      "slight_skew": 1,
+      "handwritten": 1,
+      "fading": 1,
+      "punch_holes": 1,
+      "slight_discoloration": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 35,
+      "mostly_accurate": 87,
+      "garbled": 33,
+      "partial": 28,
+      "accurate": 1
+    }
+  }
+}

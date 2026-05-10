@@ -1,0 +1,2946 @@
+{
+  "doc_id": 69,
+  "title": "38_143685_box_Incident_Summaries_101-172",
+  "agency": "Department of War",
+  "filename": "38_143685_box7_incident_summaries_101-172.pdf",
+  "total_pages": 178,
+  "pages_sampled": 177,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "photograph",
+        "cover_page"
+      ],
+      "source_medium": "photograph_of_doc",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "photograph_of_doc"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": null,
+      "notes": "Photograph of the exterior of a classified document folder/envelope with a small cover label, but the label text is too small and at an oblique angle to be reliably captured by OCR.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "handwritten"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 15,
+      "notes": "Mostly blank administrative page with handwritten classification markings (CONFIDENTIAL/SECRET stamps with strikethroughs), redaction marks, and document reference numbers (020249 30014, S7P-1(126)); minimal text content suitable for OCR.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten UFO incident report form with dark photocopy background. OCR has significant character recognition errors: garbled line numbers at start, date truncated (198 instead of 1948), time misread (5301 vs 5101), and systematic misspellings (observer→obsorvor, Stehbiel→Srehbiel, etc.), though overall structure and most content is captured.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten government document with mostly accurate OCR; errors include 'narthern' (northern), 'smuige' (smudge), and misread 'M' and 'N' as quote marks ('exico, 'ebraska), likely due to dark scan and typewriter font artifacts.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Typewritten testimony document with legible scan but moderate OCR errors including word concatenations (towardthe, amd), misspellings (altitule, hear), and spurious artifacts at the beginning (= us eo é e A). Marginal stamps visible on left side.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten 1948 Army memo about a meteor explosion near Norcatur, Kansas; OCR captures most content but misreads several digits (1948→1918/19h8/198), substitutes 'é' for '8' in dates, converts 'line' to 'lime', and has minor character/spacing issues throughout.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Mostly accurate OCR with several errors: '+f' misread as 'If', 'illimunated' instead of 'illuminated', 'mexplained' (likely for 'unexplained'), and possible '2h' for '21' in date; document shows age-related darkening but remains clearly readable throughout.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten letter with clear content discussing lunar observations and signed by Norman Garrett Markham; dark microfilm scan quality prevented OCR from capturing any of the ~250+ words visible to human eyes, despite text being legible.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "Typewritten memo about UAP sightings with reasonable structural capture but systematic errors in dates (1947→197, 1948→19148), file references (SIGDE-M-1→SIGGE-u-1), and symbol confusion (° → %, : omitted). Most text present but numerous digit/character substitutions throughout.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Aged typewritten page with several OCR errors: '):00' misread as '4:00', '1947' truncated to '197', '14 July' become '1, July', 'OAKLAND' misread as 'QAKIAND', and 'together' as 'togehter'; extra 'plea' at start; mostly readable despite aging but errors affect data accuracy.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten declassified document with moderate OCR errors in numbers: coordinates read as '3 degrees'/'12 degrees' instead of '13 degrees'/'124 degrees', dates corrupted ('19,7' for '1947', 'November 2), 197' for 'November 24, 1947'), 'latitude' read as '1 titude', and '400 yards' as '00 yards'.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typewritten memo with good overall text capture, but several character misreads: 'June 2)' should be 'June 24', 'inoon' should be 'moon', 'Pr,' should be 'Dr.', and a stray 'OG' artifact. Dark microfilm scan quality reduced OCR accuracy on specific characters.",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "spots"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Microfilm scan of typewritten letter with good legibility; OCR captured nearly all text but has minor character recognition errors ('1j' for '14', likely 'foal' for 'real').",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "spots_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Typewritten page from microfilm scan with clear readability; OCR captured the main text well but made character substitution errors (well-to-dO instead of well-to-do, t+ instead of th, récovered accent mark) and picked up formatting artifacts at the beginning (eS, underscore, tte).",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten government document with good readability, but OCR has multiple character errors: ')?50' should be '4:50', 'suidenly' → 'suddenly', 'ceriter' → 'center', 'ani' → 'and', 'orton' → 'Norton', 'andthat' → 'and that', 'clow' → 'cloud', 'lowi' → 'loud'. Dark scan with visible copy stamps contributes to OCR confusion on numbers and certain letter patterns.",
+      "page": 15
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten government document page with incident testimony; OCR captures nearly all text but has character-level errors (ani→and, clouw→cloud, t ought→thought, vicinity'of→vicinity of).",
+      "page": 16
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government checklist form with redaction marks and age-related fading; OCR captured all 26 line items but contains consistent character-level errors throughout (e.g., 'observer' → 'obsorvor', 'Speed' → 'Speod', 'Altitude' → 'Altitudo', 'Multi-colored' → 'Malti-golered') likely due to document degradation and overlapping censorship marks.",
+      "page": 17
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government incident report with numerous OCR character errors: 'buge'→huge, '4s'→45, 'Wat'→W at, 'ément'→Bombardment, 'lmge'→huge, 'Colorads'→Colorado, 'Cerl'→Carl, and truncated military designations. Most text captured but requires correction.",
+      "page": 18
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typewritten UFO checklist form with RESTRICTED stamps; OCR captures most content but has notable errors: 'Howard' misread as 'wos ey', 'objects' as 'chijeete', 'detected' as 'dotectea', and 'Name' as 'Mame'. Dark, faded photocopy scan quality degrades accuracy on some letter recognition.",
+      "page": 19
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Dark microfilm scan of Air Force UFO sighting checklist form with visible RESTRICTED markings; OCR has significant garbled text in the opening section and inconsistent word accuracy, but captures most of the numbered form entries and key data fields.",
+      "page": 20
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains a typewritten UAP sighting report with RESTRICTED markings and visible redaction circles, but OCR captured zero text despite the content being legible—likely failed due to low contrast and faded image quality.",
+      "page": 21
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "UFO incident checklist form with significant OCR errors in letter recognition (observer→obsorvor, objects→objocts, place→placo) likely due to faded typewriter text and dark photocopy scan, but most field content and structure captured correctly.",
+      "page": 22
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Dark declassified document with RESTRICTED stamps; OCR captured overall structure and meaning but contains multiple character-level errors (e.g., 'pron tie etd' for 'observed', 'Belmont, ar ne' for 'Belmont, N.C.', 'Hlectric' for 'Electric', 'Tesponsible' for 'responsible'), primarily affecting rare letter combinations and low-contrast passages.",
+      "page": 23
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Microfilm scan of classified UFO checklist form; OCR captured most form fields correctly but produced garbage characters at start and occasional misreadings (N/S vs w/S) due to dark background and age of source.",
+      "page": 24
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Military memo from Fourth Air Force Intelligence (March 1948) regarding flying disc investigation. OCR captured most text structure but has systematic errors: dates rendered as '198' instead of '1948', name garbled as '4arsen' for Larsen, minor word breaks (Elect,ic). Dark scan with CONFIDENTIAL stamps and age-related staining impacts readability.",
+      "page": 25
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "handwritten_annotations"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten classified document with clear content but multiple OCR errors including 'bromish-white' for 'brownish-white', '1918' for '1948', '& March' for '8 March', 'Haberfelde' as 'Haber felde', and misreading 'E.' as '=' in a name; handwritten marks on margins also captured as spurious symbols.",
+      "page": 26
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly visible typewritten text with evaluation table and CONFIDENTIAL markings, but OCR captured nothing despite legible content; photocopy degradation and dark scan likely contributed to OCR failure.",
+      "page": 27
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Typewritten UFO incident checklist with RESTRICTED stamps; OCR severely garbled the opening (line numbers/formatting artifacts rendered as random characters), then improved but contains persistent errors (cuts off '1948' to '198', renders 'Incident #107' as 'seesdone F107', various field character misreadings).",
+      "page": 28
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten UFO incident checklist with systematic OCR character substitution errors (Locetion, Timo, Shapo, Effoct, disappoarance, Romarks, Dato, Ancidont, Obsorvor); dark scan degradation and RESTRICTED stamps/punch holes visible; most form content captured despite typos.",
+      "page": 29
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten UFO incident checklist with RESTRICTED classification stamps; OCR captured all text but contains systematic character errors (1948→1oks, observer→obsorver, Place→Placo, 4000→000 feet, Weather→Woathor, Effect→Effoct) and scrambled line numbers.",
+      "page": 30
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "slight_skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten military memo with RESTRICTED classification. OCR captured ~95% of text but contains errors: date misread as '1918' instead of '1948', and multiple typos including 'Intellijence', 'soufiding', 'ani' for 'and', and 'tothe' that suggest OCR struggled with some character combinations.",
+      "page": 31
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typewritten checklist form with RESTRICTED stamps; OCR has multiple character substitution errors (19h8→1948, Namo→Name, Numbor→Number, Woather→Weather, Effoct→Effect) and missed digits (110 reported as 10), but overall structure and most content captured correctly.",
+      "page": 32
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "Incident summary form with typewritten and filled responses; OCR captured structure and some fields correctly but introduced numerous garbling errors (e.g., 'Amp@ating' instead of 'Appearing', 'fram' instead of 'from'), struggles with faded/aged text and handwritten elements.",
+      "page": 33
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten military report on aged paper with redaction marks; OCR captures the document structure and content flow but contains numerous character-level errors (e.g., '12% §2*' for '12° E21', 'obj ct' for 'object', '@pproximately', 'resesbled', 'mide', 'festures', 'wes') that would require manual review.",
+      "page": 34
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Government UFO incident checklist form with RESTRICTED stamps; OCR captured document structure but made critical field errors including Number of objects (OCR '2K' vs actual '1'), Time in sight (OCR 'W/S' vs actual 'N/S'), and multiple yes/no field misreadings, with corrupted text fragments at beginning.",
+      "page": 35
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten government document on aged paper with RESTRICTED stamps. OCR captured all text but made two character substitution errors: 'appesred' for 'appeared' and 'appesrance' for 'appearance', likely due to the faded/noisy scan quality.",
+      "page": 36
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "Typewritten UFO report form with numerous OCR errors: 'Dato' for 'Date', 'Shio' for 'Ohio', 'obsorvor' for 'observer', 'Shapo' for 'Shape', 'Woathor' for 'Weather', 'dotected' for 'detected'. Dark microfilm scan with RESTRICTED stamps and visible hole punches. Content recognizable but marred by systematic character recognition failures.",
+      "page": 37
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Declassified UFO incident checklist with severe fading and dark microfilm scan quality. OCR has numerous character substitution errors (observer→obsorvor, direction→diroction, shape→shapo) and garbled line numbers at the start; incident number appears misread as 1200 instead of 1128, and date digits corrupted. Document structure and most content recoverable but significant transcription errors present.",
+      "page": 39
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Microfilm scan with significant grain degradation; OCR captured the main content but introduced errors: 'appfed' for 'appeared', '2%' for 'at', 'manueverings' for 'maneuverings', 'altitwie' for 'altitude', and noise artifacts like '@@' in shadow.",
+      "page": 40
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten government form with RESTRICTED classification; OCR captured the structure but contains numerous character-level errors throughout (19h8 for 1948, Uhio for Ohio, obsorvor for observer), particularly in early items; dark scan of aged microfilm document with archive punch holes; text legible but aging visible.",
+      "page": 41
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten declassified document with RESTRICTED stamps; OCR captured all text but introduced several character-level errors including word boundary artifacts (hyphens/underscores for spaces) and letter substitutions (+t for It, lt for It).",
+      "page": 42
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Classified UFO report form with structured 26-item checklist; OCR completely garbled line numbers 1-26 at start, missed the RESTRICTED header and field labels, captured only partial data values with some errors (e.g., address '112' should be '111').",
+      "page": 43
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten text is clearly visible but OCR captured nothing; dark photocopy scan with faded content, RESTRICTED stamps, and binding holes make text difficult for OCR to process.",
+      "page": 44
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Government UFO report form with clear typewritten content, but OCR exhibits character substitution errors throughout (obsorvor→observer, Spood→Speed, Woather→Weather, Effoct→Effect) and critical misreadings in early fields (1948→log, 1430→30, Delaware,Ohio→oi jag Delaware,Unio); header text severely garbled despite form content being mostly captured.",
+      "page": 45
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government document with RESTRICTED stamps; clearly legible 3-4 lines of witness testimony text at top appears to have been completely missed by OCR despite good readability.",
+      "page": 46
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "UFO incident checklist form with significant OCR corruption in header and scattered errors throughout (garbage characters at beginning, 'Incidont' for 'Incident', 'womewhat' for 'somewhat', 'disappoarance' for 'disappearance'); substantive field values and descriptions are mostly captured but unreliable without manual verification.",
+      "page": 47
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 20,
+      "notes": "Page contains substantial typewritten text paragraph describing an observation, but OCR only captured the RESTRICTED classification stamp while missing the full body text above it.",
+      "page": 48
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Form checklist with numbered items 1-26 is mostly captured but OCR contains numerous systematic errors (observer→obsorvor, 1948→19h8, Lt.→+t.) and completely garbles the opening section; approximately half the text is usable despite physical readability.",
+      "page": 49
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Page contains multiple paragraphs of typewritten text describing aircraft observations; OCR captured only fragmented pieces from one paragraph with significant errors (e.g., '1s' for 'is', 'plan ioe' for 'plane rather than'), missing ~92% of the visible content.",
+      "page": 50
+    },
+    {
+      "content_types": [
+        "diagram",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Technical diagram labeled 'EXHIBIT I' with visible text labels (SILVER, DARK CABLE, BALL OR A CANISTER) and measurement annotations, but OCR captured no text despite multiple readable labels throughout the page.",
+      "page": 51
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 48,
+      "notes": "Typewritten UFO incident form with widespread OCR corruption including character substitutions (¥ for N, £ for f), spelling errors throughout (Munbor, Placo, Woathor), garbled beginning section, and symbol artifacts; core field structure recognizable but many values are severely corrupted.",
+      "page": 52
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Microfilm scan with visible degradation and dark background; OCR added spurious characters at the beginning (%, &, iu, &) that don't appear in the document, and misread some text like 'NE-SW heading' as 'NE~Sit', but captured most substantive content correctly.",
+      "page": 53
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Microfilm scan of government UFO checklist form with mostly accurate OCR, but notable errors including date typo (\"hs\" for \"48\"), direction of flight completely misread as \"Ai ad\" instead of \"North\", and character confusion in numbers (\"2Q000\" for \"20000\"). Fading and microfilm grain degradation present.",
+      "page": 54
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Aged archival document with clear typewritten text; OCR captured ~95% of content but has multiple character errors (mizht→might, mimtes→minutes twice, wereout→were out, gpproximately→approximately).",
+      "page": 55
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Classified document with typewritten numbered list (1-4) and handwritten directional annotations; OCR truncated 'disappeared' to 'cc' and omitted list numbers and structural markers.",
+      "page": 56
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 45,
+      "notes": "Typewritten UFO sighting form with poor OCR quality; numerous character substitutions and word corruptions throughout (e.g., '4g' for '49', 'fmtioumsn' for unreadable word, 'Aaeaeeaie' for 'exploded'), though basic structure remains recognizable.",
+      "page": 57
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "Microfilm scan with significant darkness and grain; OCR captured nearly all text accurately, though 'EST' was mis-read as 'ES?' and some faded edges are slightly unclear.",
+      "page": 58
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "spots_marks",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "Government UFO incident checklist form with typewritten entries; OCR missed several items including incident number formatting, misread 'Memphis' as 'Memohis', dropped digits from weather data (404 vs 40%), and shows inconsistent N/S capitalization; overall text captured with reasonable accuracy despite aged scan.",
+      "page": 59
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten microfilm scan with several character-level OCR errors (Memhis/Memphis, Hyneak/Hynek, Buream/Bureau, en/an, Weldorf/Waldorf) but text is mostly legible; restricted classification stamp and binding holes visible.",
+      "page": 60
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "dark_scan",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten UFO observation form with microfilm degradation and dark scan; OCR struggled with character recognition, producing systematic errors throughout ('Tine' for 'Time', 'obsorvor' for 'observer', 'objoct' for 'object', '4s' for '48'), and failed to properly parse the numbered structure at the beginning of the OCR text.",
+      "page": 61
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "OCR captures main content but with errors: 'mignred' misread as 'sighted', spurious header lines ('| 5h', 'to', 'ayn'), and 'Exeinmetall' vs correct 'Exeimetall'. Dark aged scan with fading affects character recognition.",
+      "page": 62
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Aged government form with clear RESTRICTED markings; OCR captures most field labels and values but contains typographical errors (Unidentifiea/Unidentified, 4g/48, Effectoon/Effect on, pert/part) and inconsistent capitalization (N/S vs n/s).",
+      "page": 63
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten document with readable text but significant OCR errors: 'approximately' garbled as 'dpe hth', '48' misread as '4S', 'ended' as 'onied', 'thin' word omitted, 'bulky' as 'balky', 'Statements' as 'Statesments', 'local' as 'locel'. RESTRICTED stamps visible at top and bottom.",
+      "page": 64
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UAP checklist form with clear field layout, but OCR misread several items: '20 Feb lig' should be '20 Feb 48', 'Aregua ie' should be 'Aregua -', and 'withhela' should be 'withheld'; RESTRICTED stamps and age-related darkening visible throughout.",
+      "page": 65
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Dark photocopy of a numbered UAP incident checklist form; OCR has garbled beginning (spurious line numbers), numerous character substitutions (o/0, t, etc.), and misspellings (Incidont, Numbor, inghe, Placo) scattered throughout despite recognizing the overall structure.",
+      "page": 66
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten witness account of a UAP sighting; OCR has one error ('dise' instead of 'disc') but otherwise captures all visible text correctly despite dark scan background and grain.",
+      "page": 67
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten government checklist form with RESTRICTED stamps; OCR captures the structured content and most field values correctly, but struggles with character recognition in poor lighting conditions (N/S becomes 4¥/S, Feb 46 becomes Fed ig), and the provided OCR output appears condensed/reformatted rather than presenting sequential numbered items.",
+      "page": 68
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Heavily redacted classified document with extremely dark scan; OCR captured document structure and key phrases but made numerous character-level errors (Three→Taree, Denmark→Dennark, observed→cdiarvod, high speed→Sigh epecd), likely due to low contrast and microfilm degradation.",
+      "page": 69
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten 1948 UAP checklist form; OCR captured most structure but made critical errors including incident number (121→101), speed (400→00 mph), and contains garbage text artifacts at the beginning.",
+      "page": 70
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Microfilm scan of declassified government document with visible CONFIDENTIAL stamps and binding holes; OCR contains character substitution errors (Shartly/Shortly, inmediately/immediately, umlmown/unknown, bub/but) and header noise but captures all body text.",
+      "page": 71
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UFO sighting checklist with RESTRICTED markings; OCR captured structure and most content but contains multiple spelling errors (ossecrs→OBJECTS, obsorver→observer, domward→downward, Rowded→Rounded, Skotehes→Sketches, dotected→detected) and initial numbering confusion, likely due to microfilm scan quality and aging paper.",
+      "page": 72
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Microfilm scan of declassified government document with typical grain and fading; OCR captures most text correctly but includes garbled fragment 'guiev' at start and misreads 'It' as '+t' in final paragraph.",
+      "page": 73
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 28,
+      "notes": "Typewritten UFO sighting checklist form on dark microfilm with visible RESTRICTED stamps and redaction marks; OCR heavily garbled with numerous spelling errors ('pbjoct', 'obscrvor', 'Woathor', 'Shapo'), dropped text, and corrupted spacing throughout items 9-26.",
+      "page": 74
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 2,
+      "notes": "Page contains substantial typewritten narrative and notes but OCR captured only stray characters (§, :, i, a, 4), likely due to dark microfilm scan and RESTRICTED watermark overlay interfering with text recognition.",
+      "page": 75
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten UFO incident form scanned from degraded microfilm; OCR captures field structure and most values but has numerous character substitution errors (e.g., 'Namo'→Name, 'Woathor'→Weather, 'Une'→One, 'Shapo'→Shape) and misaligned field numbering at start.",
+      "page": 76
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Dark, low-contrast scan of classified document with RESTRICTED stamps and punch holes. Major OCR error: '30 mMepeh' should be '30 m.p.h.', plus spacing issues ('fadingat' vs 'fading at', 'thoroughly search' vs 'searched'). Most content captured despite degradation.",
+      "page": 77
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 72,
+      "notes": "Government UFO incident checklist form with RESTRICTED stamps. OCR misreads date as 'los' (should be 1948), coordinates as 0°00' (should be 40°00'), and includes garbled numbering at start; otherwise captures field labels and responses reasonably well with minor typos.",
+      "page": 78
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Form with 26 numbered checklist items is mostly captured but OCR made critical errors: date year '1948' misread as '19ks', field 7 'Air' became 'jy', field 16 '25 - 40 ft' became '25-0 ft', and spurious garbage text at start suggests OCR struggled with the RESTRICTED stamp overlay and document darkness.",
+      "page": 79
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Aged photocopy with faded RESTRICTED stamps; OCR has critical errors: 'm.p.h.' misread as 'M.ePeohs' and 'altitude' as 'altitwie', but most other text captured correctly. Two black punch holes visible on left margin.",
+      "page": 80
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UFO incident form with RESTRICTED stamps; OCR captured structure and most content but shows numerous character recognition errors (e.g., 'Numbor' for Number, 'Disvabton' for Direction, 'Woathor' for Weather, '19s' for 1948, 'CHECK=LIST' for CHECK-LIST).",
+      "page": 81
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains minimal typewritten text describing a sighting from Yugoslavia, but OCR produced zero output; severe darkness and fading from the scan prevented text extraction despite content being visually readable.",
+      "page": 82
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "Dark, degraded scan with overlaid CONFIDENTIAL stamp and visible punch holes; OCR heavily garbled with numerous character substitutions (1%5 for 11, na otaebeer xfs for from observer, Direotion, Souma, etc.), making most output unreliable despite capturing document structure.",
+      "page": 83
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 5,
+      "notes": "Page contains a full typewritten paragraph at top describing UAP observations by New York Central officials, but OCR captured only the handwritten '$7a' notation in bottom right corner, completely missing the main body text.",
+      "page": 84
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten UFO incident report form with legible body text; severe corruption in the header section with garbled characters, and occasional substitutions like 'Awfally' for 'Awfully' and 'long' for 'Oblong' (field 18).",
+      "page": 85
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 2,
+      "notes": "Page contains substantial typewritten narrative text about aircraft observation and CAA investigation, but OCR captured only stray vertical marks (likely punch holes) while completely missing the actual content due to dark microfilm scan quality.",
+      "page": 86
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten UFO incident report form with systematic OCR errors: '1918' misread as 'lols', 'Between' as 'Betvoa', 'Moonlight' as 'Mopnlight', 'cloudy' as 'clouwly', 'Sketches' as 'Skotches', and multiple single-letter confusions ('Shape'→'Shapo', 'Effect'→'Effcct', 'Remarks'→'Romarks'). Dark microfilm scan with faded sections reduced OCR confidence on letterforms.",
+      "page": 87
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten letter with mostly accurate OCR, but contains character substitution errors (wmusual→unusual, clowl→cloud, juige→judge, darimess→darkness, vefy→very, funabout→fun about) likely due to OCR difficulty with typewriter font on dark microfilm background; dark background and punch marks visible on left margin.",
+      "page": 88
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Aged microfilm scan of typewritten military correspondence with visible RESTRICTED classification stamps; OCR captured most content but contains character substitution errors (e.g., 'ami' for 'and', spacing issues with 'carrieedor') typical of high-contrast microfilm scanning.",
+      "page": 89
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Microfilm photocopy of a typed Q&A letter with scattered OCR character errors (Mer→Mgr, clouis→clouds, ith→with, releated→related) but strong overall capture; grainy background and some dark spots typical of microfilm source.",
+      "page": 90
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UFO sighting report form with multiple OCR errors: 'dune' for June, 'Wm' misread as 'Wa T', 'Becation' for Location, '@leppearance' for Appearance; document has aged dark appearance with visible RESTRICTED watermark making text extraction challenging but most content captured.",
+      "page": 91
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Checklist form with 26 field entries on a declassified UFO incident report (Oslo, Dec 1947). OCR captures most field names and values correctly but has character-level errors: 'SSB' instead of 'SSE' (line 13), 'psig' instead of 'luminous white' (line 17), 'ster-lit' instead of 'star-lit' (line 22), and 'umisual' instead of 'unusual' (line 26). Document has RESTRICTED stamps and typical photocopy degradation.",
+      "page": 92
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typewritten UFO checklist with several OCR errors: 'Fed 4g' instead of 'Feb 48', 'y/s' instead of 'N/S' (lines 4, 7), '£' instead of 'f' in altitude, 'Pernemunde' misspelled, and garbled strikethrough text (line 20). Dark microfilm scan with grain and RESTRICTED stamps partially obscures clarity.",
+      "page": 93
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government UFO incident checklist with readable OCR overall, but notable errors: date shows '28 May 1948' (OCR says '23'), 'disc' becomes 'dise', weather field corrupted ('Sdice miles', 'Sore w/ehin'), direction of flight heavily garbled with OCR misrecognition in marked/crossed areas, and 'haze' becomes 'hee'. Dark microfilm scan with stamps and handwritten marks reduces OCR reliability in those zones.",
+      "page": 94
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified 1948 UFO observation checklist with mostly correct OCR, but significant errors in Item 3 (location field shows 'Salfrids Wid.' instead of 'Enroute to Selfridge'), Item 8 ('e' instead of '2' objects), Item 12 (garbled speed data), and Item 23 ('xf' instead of '10'). Dark scan quality contributes to OCR failures on degraded text.",
+      "page": 95
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Cold War-era military UFO report form with dark photocopy quality; OCR captured nearly all form data accurately but misread header 'UNIDENTIFIED' as 'UNIDENTH TED' and some symbols are garbled; redaction marks visible on right margin.",
+      "page": 96
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through",
+        "high_contrast"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "This is a RESTRICTED government UFO incident checklist form (dated 30 June 1948, incident 136) with clearly readable typewritten content across 26 numbered items, but the OCR extraction failed completely, returning zero characters despite the text being legible.",
+      "page": 97
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Typewritten witness statement on aged/photocopied government document with RESTRICTED classification; OCR captured nearly all text but made 5+ errors: 'orangescolor' (should be 'orange-color'), 'streemer' (stream), 'cound' (sound), 'Pennesee' (Tennessee), 'perhour' (per hour).",
+      "page": 98
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten UFO sighting checklist form from 1948 with systematic OCR errors: date truncated (missing '48'), N/S values misread as v/s/x/s/w/s, location field garbled, and altitude crossed-out text heavily corrupted; dark scan and stamps impact readability but main content structure is preserved.",
+      "page": 99
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Form-based UFO incident report from July 1948 with mixed typewritten and handwritten entries; OCR struggles with handwritten overlays and typewriter font, producing garbled output (e.g., 'Insiders' for 'Incident', 'Biumh' for 'Blunt', 'Mast.Morthimst.' for 'East-Northeast') with ~70% text coverage but significant character substitution errors throughout.",
+      "page": 100
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "UFO checklist form with RESTRICTED stamp; OCR captured most numbered items but with numerous spelling errors (Dato→Date, obsorvor→observer, mimute→minute, etc.), garbled line numbers at start (1h, ot, ae, Bt), case errors (y/S vs N/S), and early items severely corrupted or missing.",
+      "page": 101
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Aged photocopy of typed incident report form with significant OCR errors (e.g., 'Golumbus Ghfe' for 'Columbus Ohio', '2ittek' for 'Sittek', '@powmd' for 'Ground'); structure captured but text accuracy severely degraded by scan quality and contrast issues.",
+      "page": 102
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "OCR captured all visible text but made character substitution errors: P=80 (should be P-80), Colusbus (Columbus), Mre (Mrs), ws (was), 4n (An), Chie (Ohio), § (5). Typewriter font and aged document appearance likely caused misreading of similar-looking characters.",
+      "page": 103
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Aged original document with clear typewriter text but two character-level OCR errors: 'treil' for 'trail' and 'persorwnot' for 'persons not'; also captures unexplained 'de' and 'eo' fragments at top, possibly page artifacts or partial headers.",
+      "page": 104
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten 1948 interrogation report with CONFIDENTIAL stamps and redactions; OCR has substitution errors (wes/was, poet/poor, t&il/tail) and garbled 'emoothigumtiniating' for what appears to be 'smooth undulating'.",
+      "page": 105
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Typewritten government UFO report form with significant OCR errors including garbled header text, systematic misspellings (obsorvor/observer, Woathor/Weather, disappoarance/disappearance), misread punctuation (CHECK=LIST vs CHECK-LIST), and incorrect date reading (4g vs 48).",
+      "page": 106
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 86,
+      "notes": "Typewritten 1948 UFO sighting report with significant OCR failures including corrupted dates (48→is, 1948→19/8), misread classification code (MCIAXO→MCTAKO), and numerous character-level errors throughout (glows, beame, locking, FP-SO, airorafte).",
+      "page": 107
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 77,
+      "notes": "Form is clearly readable with aged photocopy appearance and redaction stamps. OCR captured overall structure and most fields correctly, but contains notable errors: 'Incident # 1400' (should be 1140a), 'Altitude 3000 to 000 ft' (should be 4000), 'Tactics' field severely garbled ('akratghkxtina'), 'Manner of disappearance' corrupted ('dia ieceeailve'), and scattered character substitutions (B/S, x/s, dotoctod). Multiple fields still readable despite errors.",
+      "page": 108
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten military interrogation report with numerous OCR character errors (throvgh→through, therr→three, ditntt→didn't, yy→Mr.) and semantic issues (19 July bs→19 July 19[47], @:→angle), but nearly all text was detected despite aged document condition and visible redaction marks.",
+      "page": 109
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified UFO sighting checklist form with typewriter text. OCR has character-level errors (e.g., 'dune' for 'June', '19148' for '1948', 'bue/pbeetite' for 'approx position') and miscaptured words ('obgorvor' for 'observer'), but captures overall structure and ~85% of content correctly despite aged photocopy quality and confidentiality stamps.",
+      "page": 110
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Dark scan of classified document with multiple OCR errors: 'mmxkimeasily' for 'easily', 'seomingly' for 'seemingly', 'contimed' for 'continued', 'dissappeared' for 'disappeared', 'ninutes' for 'minutes', and spurious 'aha' at end; low contrast impacts character recognition.",
+      "page": 111
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "UFO incident report checklist with numerous OCR character substitution errors ('obsorvor' for observer, 'objocts' for objects, 'Idsho' for Idaho, 'Incident # 142' shown as 112 in image); dark microfilm scan with visible grain and deterioration makes accurate recognition difficult.",
+      "page": 112
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten UFO sighting checklist form with clear text visible across 26 numbered lines, but OCR completely failed to capture any content despite readable quality.",
+      "page": 113
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 50,
+      "notes": "Classic 1948 Chiles-Whitted UFO sighting report form with readable typewritten text, but the provided OCR is severely garbled with significant errors throughout (e.g., 'hs' for '48', '@0' for '20'), garbled incident number, and missing/incorrect content in early lines, suggesting OCR failed to properly parse the form structure.",
+      "page": 114
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 82,
+      "notes": "Typewritten UFO incident form with numerous OCR misreads of 'N/S' notations (rendered as 3/S, B/S, W/S, y/s, §/S) and character confusion in names (Feldwary→Peldwary, Only→Mnly); dark photocopy scan with CONFIDENTIAL stamp and punch holes degraded legibility.",
+      "page": 115
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified typewritten document from microfilm with redaction marks; OCR captured full text but substituted 'a' with '@' twice ('@ very', '@ bearing'), added errant apostrophe before 'sighting', and capitalized 'saw'.",
+      "page": 116
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Microfilm-scanned 1948 military memo; OCR systematically misreads dates (31→ji, 24→2), splits words ('passenger'→'sen ger'), and mangles some passages, but captures overall narrative structure.",
+      "page": 117
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UAP sighting report with CONFIDENTIAL stamp; OCR captures main narrative but has systematic character substitutions (was→wes, aircraft→atrcreft, craft→eraft), drops words (upper in upper/lower deck), and garbles the passenger observation section (ae cca seagate aaa).",
+      "page": 118
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dust_marks",
+        "slight_skew",
+        "bleed_through",
+        "aged_appearance"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten UFO incident checklist form with systematic OCR spelling errors (observer→obsorver, observation→obsorvation) and key data misread (date '24 July 48' read as 'lg'); mostly readable but affected by microfilm scan artifacts including dust marks and age-related degradation.",
+      "page": 119
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Microfilm scan with expected degradation; OCR captured layout and most content but made character substitution errors (unususl→unusual, appeered→appeared, fpom→from, 30©→30°, garbled Atlanta/Lle references), typical of aged document scanning.",
+      "page": 120
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Form is a UFO incident checklist with typewritten entries; OCR has garbage text at start, persistent misspellings (obsorver/observer), and struggles with crossed-out/edited text sections. Core form data captured but with accuracy issues.",
+      "page": 121
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly readable typewritten text describing a UAP observation (objects in formation, sound characteristics, no exhaust trails), marked CONFIDENTIAL, but OCR extraction completely failed despite high human readability.",
+      "page": 122
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 48,
+      "notes": "Government checklist form for UFO sighting (17 July 1948, San Acacia Dam). OCR has extensive errors: complete gibberish in header section, misspellings throughout ('obsorvers', 'objocts', 'alumimum', 'CAYU'), and garbled field titles. Core data and structure captured but accuracy severely compromised by OCR failures.",
+      "page": 123
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Microfilm scan with significant fading and grain; OCR captured most text but has character-level errors (e.g., 'wes' for 'was', 'balve ns' for 'bellous', 'Set' for 'Sgt', 'aircreft' for 'aircraft', double-p in 'Diseppeared'), and '2' for 'a'.",
+      "page": 124
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Microfilm scan with very dark background and poor contrast; OCR captured document structure but introduced numerous errors in field labels and text (e.g., 'July' → 'duly', 'East' → 'Bast', 'Occupation' → 'Ws eaten', 'Number' → 'onic', 'huge ball' → 'mge bet').",
+      "page": 125
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Microfilm scan of typed document with RESTRICTED stamps and redaction marks; OCR captured nearly all text but contains several character errors (suziaz, saddenly, Wer Ministry) typical of degraded microfilm source material.",
+      "page": 126
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "UFO sighting report form with typewritten fields. OCR captures most structure but suffers from numerous spelling errors (Sizo/Size, Shapo/Shape, Divert/Dibert, 19ug/1948, 1g/1148), character confusions (heerd/heard, mimtes/minutes, stetionary/stationary), and garbled text sections (e.g., '[ae stented object'). Dark microfilm scan quality contributes to misreads.",
+      "page": 127
+    },
+    {
+      "content_types": [
+        "form",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Declassified UFO incident form with RESTRICTED stamps and hole punches; OCR captured most field labels and values but contains significant character errors (Jen/Jan, tilde/hyphen, dtsappearance/disappearance) and garbled garbage text at the beginning suggesting form-field misalignment during processing.",
+      "page": 128
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "Typewritten UFO incident checklist form with RESTRICTED stamps; OCR has pervasive character substitution errors (obsorvor, Namo, Timo, bluich-greon) and field misreadings (W/S instead of N/S, hg instead of 48, deodseut instead of Incident #), but overall document structure and key details are partially recoverable.",
+      "page": 129
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Typewritten classified document with OCR missing opening paragraph entirely and ending prematurely at 'P%e' instead of 'Great Britain'; multiple character errors (camitted→emitted, Simm→firm, earbh's→earth's) in captured text.",
+      "page": 130
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "UFO sighting checklist (Incident 151, July 1948) with significant OCR failures in header, occupation field, and address lines; dark photocopy degradation and fading reduced text clarity but most numbered checklist items captured with varying accuracy.",
+      "page": 131
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government memo with dark, faded microfilm scan quality; OCR captured main content but has errors ('pzpecred' for 'appeared', 'alumimm' for 'aluminum', 'wes' for 'was', missing 'exhaust' in 'haust trail'), reducing accuracy despite good coverage.",
+      "page": 132
+    },
+    {
+      "content_types": [
+        "diagram",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Technical diagram showing UFO schematic with measurements (6' to 8' width, 12 ft height) and signature block for Russell J. Carev Jr., 1st Lt. USAF Intel Officer; CONFIDENTIAL stamp visible but OCR completely failed due to extreme dark scan quality and poor contrast.",
+      "page": 133
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Hand-drawn map showing sighting path with multiple labeled locations (Path of Object, Woods, Cantilever Type Bridge, Ball Creek, Lady wood School); OCR captured nothing despite visible typewritten labels, likely due to very low contrast and microfilm scan degradation.",
+      "page": 134
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "noise",
+        "bleed_through",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Government UAP checklist form with mostly legible typewritten text; OCR has notable errors in critical fields: date reads '31 July hg' (should be '48'), speed '1890 MPH' (should be '1800'), and Size field severely garbled; Weather conditions field rendered as gibberish despite being clearly 'Sky clear' in image.",
+      "page": 135
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 25,
+      "notes": "Aged photocopy scan is very dark, making recognition difficult; provided OCR captures only ~25% of visible page content and contains errors (wes→was, Spproximtely→approximately, &→8, @→a, goed→good).",
+      "page": 136
+    },
+    {
+      "content_types": [
+        "diagram",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page shows a handdrawn UFO disc diagram with measurements (6'8\" height, 20' length) and 'NOTED SHADOW' annotation; typewritten text includes signature and officer details at bottom, but OCR captured nothing despite visible text—likely due to handwriting, low contrast, faded CONFIDENTIAL stamps, and microfilm degradation.",
+      "page": 137
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten UFO incident report form with RESTRICTED stamps; OCR captured most field labels and values but with spelling errors (Dato/Date, Incidont/Incident) and garbling in opening lines, though all substantive information is recognizable despite dark scan quality.",
+      "page": 138
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten government document with dark scan quality; OCR captured full content but contains character substitution errors (@pparent→apparent, sbout→about, mimte→minute) and truncation issues (str→streak, travel→traveling).",
+      "page": 139
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UFO checklist form with readable structure but OCR has systematic errors: character substitutions (Sttorna→Attorney, Perallelogram), misread abbreviations (N/S→a/s), and formatting issues (1015 mimtes→10-15 minutes); microfilm scan degradation reduces text clarity in places.",
+      "page": 140
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten FBI report with shape diagrams showing 4 object positions. OCR captures overall content but has numerous character substitutions (diemeter→diameter, cbject→object, disappesred→disappeared, mimtes→minutes) and severely garbled the final paragraph. Dark microfilm scan with visible CONFIDENTIAL stamps and perforations reduced legibility.",
+      "page": 141
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten government form clearly visible but OCR shows numerous character-level substitution errors throughout (e.g., 'Woathor' for 'Weather', 'mimtes' for 'minutes', 'Seunders' for 'Saunders') and the header section appears corrupted; most content captured but with significant accuracy issues.",
+      "page": 142
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten government document with numerous OCR errors including character substitutions (Aug→sug, husband→lmsband, Saunders→Senders) and significant word garbling (some neighborhood children→called er mashed Chats teen omens); document age and contrast issues complicate recognition.",
+      "page": 143
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "UFO checklist form with numerous OCR errors in key fields: date (263@→1438), location field (Guuewaukan→observation), sound field (lead w/s→Sound N/S), and garbled words throughout (Qdor→Odor, Woathor→Weather). Microfilm scan quality with visible CONFIDENTIAL stamps and grain degradation accounts for ~28% error rate, mostly in single-character misreads of N/S fields and OCR confusion on faded text.",
+      "page": 144
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Witness statement is mostly captured but with significant OCR errors: 'lerge' for 'large', 'Gost i viasce eat speared' for 'close distance appeared', 'en ash tray' for 'an ash tray', and mangled final line. Dark photocopy scan and document darkness contribute to accuracy issues.",
+      "page": 145
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten government UFO incident checklist with RESTRICTED classification stamps. OCR captured most form structure and data but has systematic character errors throughout (e.g., 'obsorvor', 'Woathor', 'disappaaranco') and completely garbled opening text unrelated to document content. Scan quality shows typical photostat/microfilm graininess with legible text.",
+      "page": 146
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "OCR captured only fragments of the page with significant errors; missing the opening paragraph entirely and breaking text into corrupted pieces ('Oe', 'bling', 'luge'), though the actual typewritten text on the scanned document is clearly legible and complete.",
+      "page": 147
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "slight_skew"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Classic microfilm scan of UFO incident checklist form; OCR struggles with numbers and some words (reads '8:00' as '68:90', '1' as 'bE', 'Range' as 'Regge', loses detail on size '2 ft x 3-1/2 ft'), but field labels and narrative text mostly legible despite multiple garbled entries.",
+      "page": 148
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten text is mostly legible with several OCR errors: '7b' artifact at start, 'S +' for 'Student', 'amall' for 'small', 'crepe|paper' with pipe character, 'ch' for 'which', and 'Incient' for 'Incident'; faded CONFIDENTIAL stamps visible in background, hole punches and binding marks on left margin.",
+      "page": 149
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Typewritten UFO incident report form with significant OCR errors including garbled header text, numerous misspellings (Numbor, Distanco, odor dotectod, disappearanco), and corrupted field values, though core document structure and most content remain identifiable despite the degraded microfilm scan quality.",
+      "page": 150
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Typewritten FBI sighting report with hand-drawn sketches at bottom; OCR missed \"peculiar\" (reads \"jar\"), substituted \"@\" for \"a\", and \"Wim\" for \"WITH\", but captured overall narrative structure and layout.",
+      "page": 151
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Standard UFO sighting checklist form with significant OCR errors: garbled text hallucinated at top, critical data error (Number of objects shows 2 instead of 1), numerous character substitutions throughout (objocts, duly, mimtes, Onio, Romarks, etc.), but form structure and most fields preserved.",
+      "page": 152
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten government document with RESTRICTED markings; OCR captured nearly all text accurately except for two character errors: 'gudged' (should be 'judged') and 'mimtes' (should be 'minutes'). Dark scan with visible aging but readable throughout.",
+      "page": 153
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten incident report form with systematic OCR errors: multiple N/S fields misread as similar characters (4/8, a/S, 3/S), misspellings (ster→star, Dravasburg→Dravasburg), and missed punctuation (11315 P.M. instead of 11:15 P.M.). Dark scan quality and RESTRICTED watermark reduced accuracy, but narrative text mostly captured.",
+      "page": 154
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Microfilm scan of declassified document with significant OCR degradation; a heavily struck-through or redacted line produces completely garbled output; readable sections (witness account, NOTE) captured with minor errors (e.g., '4S' for '48', 'sew' for 'saw'); dark scan background and inherent microfilm grain reduce overall accuracy.",
+      "page": 155
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 28,
+      "notes": "Security classification document with typed checklist form heavily degraded by photocopy process; OCR is severely corrupted with widespread character substitution errors, missing most numbered items 1-9, and capturing only fragments of the actual content with numerous misspellings throughout.",
+      "page": 156
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 86,
+      "notes": "Typewritten document with age-related fading; OCR captured most text but introduced character errors: 'lookeglike' (should be 'looked like'), 'sbout' (should be 'about'), 'disappesred' (should be 'disappeared'), and spurious '<3' artifact at end of first paragraph that doesn't appear in image.",
+      "page": 157
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "OCR captures most of the typed UFO incident report form correctly, but includes garbage characters at the beginning and a minor spelling error (Lever vs. Leuer); document shows age-related fading and CONFIDENTIAL stamps.",
+      "page": 158
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "FBI document with typewritten text captured overall but numerous character-level OCR errors: 'en' for 'an', 'egein' for 'again', 'shop' for 'shot', 'tel ne wires' for 'telephone wires', 'ensnces' for an appendage term, 'seucer' for 'saucer', 'eathorities' for 'authorities'.",
+      "page": 159
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Typewritten UFO incident checklist with numerous character-level OCR errors throughout (objocts, Timo, Altitudo, dotectod, Woather, Romarks); header numbering completely garbled; several field values significantly corrupted despite overall form structure being captured.",
+      "page": 160
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten text is mostly legible but the scan is quite dark with age-related deterioration. OCR captured the full narrative with several errors: garbage text at start ('afi hee' from stamps), typos ('feir'/'are'/'mre'/'wes'), and missing words ('snapped', 'quite'). Core content is intact and readable.",
+      "page": 161
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UFO incident report form with several OCR errors: 'MaS' for 'Mrs.', 'swkauwm' for occupation field, 'W/S' misread for 'N/S' multiple times, 'MB' for 'NE' direction, and garbled text in item 25 ('senate' instead of visible 'obstructed by neighboring houses'). Dark scan with circular stamps/marks impact legibility.",
+      "page": 162
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten witness statement on aged, faded document with visible CONFIDENTIAL stamp. OCR captured most text but has notable errors: 'wkmmmiz' for 'wispy', 'f@' appears garbled (unclear from image), and 'tims' in witness name section appears misread. Document aging and fading account for the OCR struggles.",
+      "page": 163
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Typewritten UFO incident checklist form scanned from microfilm; OCR captured overall structure and content correctly but contains character-level errors (obsorvor, chnetiase, dotectea, theaxe) and struggles with faded microfilm grain.",
+      "page": 164
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "bleed_through",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Typewritten government document about UAP sighting on 26 July 1948. OCR captures overall content but contains scattered errors: 'Smckitadergxi' (header garbling), 'Grae' for 'thing', 'eppesred emuummird' (multiple character substitutions), and 'wa: da'. Dark photocopy scan with visible bleed-through from CONFIDENTIAL stamps reduces clarity, but main narrative and witness list are mostly legible.",
+      "page": 165
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 62,
+      "notes": "Microfilm scan of a UFO incident checklist form with severe OCR errors: multiple character substitutions (obsorvor→observer, Halno→Name, Wewe@'@Slimt→West to East), garbled line-number artifacts at the start, and word formation issues. Core data fields are mostly identifiable but specific values are frequently corrupted.",
+      "page": 166
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clearly visible typewritten text describing a UAP sighting with specific technical details (V-2 rocket comparison, altitude, speed, color) was not captured by OCR, resulting in zero text extraction despite legible content.",
+      "page": 167
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Dark, low-contrast microfilm scan of official UFO checklist form with mostly accurate OCR of form fields; garbage text at beginning of OCR output likely from scan artifacts, but main form content (dates, observer info, sighting details) captured correctly despite poor image quality.",
+      "page": 168
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Microfilm scan with dark background and faded text; OCR captured nearly all visible text but has several character errors (éapt→Capt, wes→was, teceived→received) and misread handwritten marking at top as 'Xy'.",
+      "page": 169
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Typewritten UFO checklist form with significant OCR character substitution errors (obsorvor, Placo, Cof., Woathor) and corrupted coordinates (ye 30° EB instead of 4° 30' E); overall structure preserved but multiple fields contain garbled text reducing reliability.",
+      "page": 170
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Government UFO checklist form capturing only the lower half of the page with garbled line numbers (13 rendered as '1h', 15 as '156'); missed the upper section with incident details (date, time, location, observer name).",
+      "page": 171
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Faded microfilm scan of a typewritten government incident report; OCR captured most text but made character-level errors: 'arive'→arrive, 'contimed'→continued, 'fern'→farm, 'wes'→was, 'Gommend'→Command.",
+      "page": 172
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "Form with mostly legible typed labels but significant OCR errors on filled content: incident number misread as 176 instead of 170, location names garbled, handwritten annotations poorly recognized, with mixed fading and stamp artifacts reducing text clarity.",
+      "page": 173
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Aged declassified document with clear redaction marks; OCR misses several words (northwest→ego, an→en, experts→axerte, investigate→inve stigate, contained→contaimd, Sabah→Sabsh, Eastern→Bastern) but captures overall content structure and meaning.",
+      "page": 174
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Military incident summary form with typewritten labels and handwritten field entries; OCR captures typed structure well but struggles significantly with handwritten text (e.g., '3-Aug-1948' becomes 'S-amg 19s:', 'Moscow, USSR' mangled, 'long-narrow' becomes garbled), with a black redaction mark visible near item 8.",
+      "page": 175
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Typewritten government document with multiple OCR errors: 'dout' for 'about', 'newspaner' for 'newspaper', 'gpite' for 'spite', and garbled phrase 'very ee Sey' for what appears to be 'very slightly different'; black redaction marks visible on left and bottom margins but text body is readable despite paper aging.",
+      "page": 176
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "OCR completely failed on this UFO sighting checklist despite clearly readable typewritten content; microfilm scan quality with visible damage marks and darkened image likely confused OCR system.",
+      "page": 177
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Blank page with visible CONFIDENTIAL stamps (top/bottom with strikethrough) and RECEIVED marking; OCR failed to capture any text.",
+      "page": 178
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 3.34,
+    "avg_text_coverage_pct": 67.2,
+    "content_type_counts": {
+      "photograph": 1,
+      "cover_page": 2,
+      "redacted": 11,
+      "form": 95,
+      "typewritten": 155,
+      "diagram": 6,
+      "handwritten": 3,
+      "stamps_marks": 1,
+      "blank": 1
+    },
+    "source_medium_counts": {
+      "photograph_of_doc": 1,
+      "scan_photocopy": 86,
+      "scan_original": 6,
+      "scan_microfilm": 84
+    },
+    "scan_quality_counts": {
+      "fair": 107,
+      "good": 65,
+      "poor": 5
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 137,
+      "photograph_of_doc": 1,
+      "handwritten": 1,
+      "dark_scan": 120,
+      "noise": 61,
+      "skew": 4,
+      "faded": 107,
+      "spots": 1,
+      "spots_marks": 2,
+      "light_scan": 1,
+      "bleed_through": 32,
+      "handwritten_annotations": 1,
+      "slight_skew": 3,
+      "cut_off": 2,
+      "high_contrast": 1,
+      "warped": 1,
+      "redacted": 1,
+      "dust_marks": 1,
+      "aged_appearance": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 19,
+      "partial": 66,
+      "mostly_accurate": 86,
+      "garbled": 6
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "doc_id": 86,
+  "title": "FBI Photo B18",
+  "agency": "FBI",
+  "filename": "fbi-photo-b18.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "noise",
+        "redacted",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted document with almost all text covered by black bars, grainy microfilm scan quality, only visible element is timestamp at bottom (12/31/99 18:21:02) which was not captured by OCR.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "poor",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 2.0,
+    "avg_text_coverage_pct": 0.0,
+    "content_type_counts": {
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "poor": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "redacted": 1,
+      "dark_scan": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

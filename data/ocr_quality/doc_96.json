@@ -1,0 +1,53 @@
+{
+  "doc_id": 96,
+  "title": "FBI Photo B5",
+  "agency": "FBI",
+  "filename": "fbi-photo-b5.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted",
+        "diagram"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Page is heavily redacted with black bars covering most content; a measurement scale and timestamp (12/31/99 18:12:20) are visible at bottom but OCR captured nothing from this page.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 5.0,
+    "content_type_counts": {
+      "redacted": 1,
+      "diagram": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "dark_scan": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

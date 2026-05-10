@@ -1,0 +1,2288 @@
+{
+  "doc_id": 19,
+  "title": "DOW-UAP-D48, Department of the Air Force Report, 1996",
+  "agency": "Department of War",
+  "filename": "dow-uap-d48-report-september-1996.pdf",
+  "total_pages": 181,
+  "pages_sampled": 168,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Title page with mostly accurate capture of metadata and distribution notice, but OCR introduces garbage characters at top header, misreads quality marking ('mJC' instead of 'DTIC'), and corrupts footer address (Atlantic→Al1antic, Florida→Flo0ida, zip code malformed).",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "cover_page"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Government document title page with accurate typeset text; handwritten reference number at top is garbled as symbols and dashes in OCR.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Standard US government report documentation form with multiple OCR errors (character substitutions: '1' for 'i', '!' for 'i', '~' for 'n', etc.) and faded text in lower sections; OCR cuts off mid-word at end suggesting some bottom text wasn't fully captured.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clean, crisp scan of a typed abstract on missile performance analysis; OCR captured all visible text with high fidelity and no detectable errors.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "Typeset Table of Contents is crisp and readable in the scan, but the OCR output is truncated (cuts off mid-section 6.4, missing sections 6.4 completion through 8) and contains systematic character errors (dots in middle of words: 'Consta.nts', 'Attitu.de', 'Tum.') that don't appear in the actual image.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "none"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Table of contents page with clear typeset text; OCR captured nearly all content but has minor character errors (A'tlas instead of Atlas in D.2.1, spurious tildes in D.1.3 and D.2.2, extra dots in D.1.1 formatting line).",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Table of Figures with mostly correct text, but OCR has character errors (Titctn·IV, Titan·Simulation with odd characters) and is truncated—missing Figures 29-30 and incomplete Figure 28 ending.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Table of contents page with crisp typeset text; one character recognition error (£ instead of f in 'f-Ratios') and OCR text truncated at final table entry, cutting off mid-word.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Table of contents page with mostly correct OCR; primary errors include special character misrecognition (£ instead of f, · instead of space), letter/digit confusion (O vs 0), hyphenation artifacts (IIAS-with vs IIAS with), and bracket confusion ({ vs ().",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten technical document with clean black text on white background; OCR captures nearly all visible content accurately with proper paragraph breaks, though text cuts off mid-word at end suggesting page boundary truncation rather than OCR error.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document page with clearly legible body text; OCR captures all visible content accurately with minor graininess typical of document scans, ending at 'Alth' (cutoff mid-word) which matches the visible page boundary.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Technical document on rocket failure modes with clear, well-preserved typewritten text. OCR is highly accurate with only minor character confusion (LLVl vs LLV1); all technical content, missile designations, dates, and numerical data are correctly captured.",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document describing spacecraft/missile launch failures with flight telemetry; OCR captures text well but contains one minor error ('first-~tage' instead of 'first-stage').",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        ""
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Crisp, well-aligned scan with clean typewritten text. OCR errors: 'slow tum' should be 'slow turn' (word truncation), and a spurious bullet point artifact before 'system is not at risk' in the second paragraph.",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Body text accurately captured; OCR misread diagram labels (e.g., 'CYBER A' as 'CYIER A', diagram abbreviations garbled) and technical parameters, but overall narrative content is clear and complete.",
+      "page": 15
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "character_substitution"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document with clear typeset text; OCR captured ~95% with minor errors (Mod~S for Mode-5, fro:r,n for from) and some equation formatting issues, but content remains highly readable.",
+      "page": 16
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Technical document with clear, crisp text. OCR captured ~88% correctly; minor errors include 'cari' (should be 'can'), 'CTO$!ange' (should be 'crossrange'), and special character rendering with middle dots.",
+      "page": 17
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Clean technical document with crisp print quality. Minor OCR errors detected: 'valqes' instead of 'values', 'IIAm' instead of 'IIAb' (superscript), and 'Modew5' instead of 'Mode-5'. Mathematical equation (3) is present and readable.",
+      "page": 18
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Technical report page with data table; OCR captured all content but has character substitution errors in column headers (Expectancv instead of Expectancy, 10°' instead of 10⁶) and a spacing issue (in·the instead of in the).",
+      "page": 19
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 8,
+      "notes": "Technical anatomical diagram showing Atlas IIAS risk contours with rotated text label on left side and figure caption; OCR completely failed on rotated and body text, only partially capturing footer elements (9/10/96, RTI).",
+      "page": 20
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "Technical diagram showing risk contours with complete figure caption and footer captured, but OCR missed handwritten margin annotations (left side) and internal contour line labels (10^-5, 10^-4).",
+      "page": 21
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Technical document with crisp, well-aligned typeset text; one OCR error detected ('engin~ng' should be 'engineering'), otherwise captures the full page accurately with good contrast and readability.",
+      "page": 22
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clear typewritten document with strong contrast; OCR captured nearly all text correctly but has one significant error (e.Idng should be e. Icing) and minor spacing inconsistencies.",
+      "page": 23
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clean, high-contrast scan of professional technical report with sharp typeface; OCR captures all body text, section headings, quoted passages, and footer accurately with no visible errors or omissions.",
+      "page": 24
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Professional typeset government document with crisp, well-aligned text; minor OCR character recognition errors including 'Probat>ility' instead of 'Probability', 'Index-count .weighting' with spurious period, and errant hyphens in 'To-' and 'to-', but nearly complete text capture.",
+      "page": 25
+    },
+    {
+      "content_types": [
+        "table",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Clean technical report page with data table and analysis text; minor OCR character errors detected (·o.0134 in Delta row, 0~1019 in paragraph text) but otherwise comprehensive capture of all visible content.",
+      "page": 26
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document with complex failure probability table for spacecraft vehicles (Atlas, Delta, Titan); OCR captured table structure, numerical values, and surrounding text well; scan is clean and readable with crisp text.",
+      "page": 27
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typeset technical report page with detailed weighting percentages table; OCR captures content well but contains one notable typo ('Weicllting' instead of 'Weighting' in table title).",
+      "page": 28
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Technical document on data weighting methods with clear, well-aligned scan; OCR has 2 errors: '[Eq. (18), Appendix C]' misread as 'CJ' and 'omitted' as 'o~tted', otherwise excellent capture of dense technical text.",
+      "page": 29
+    },
+    {
+      "content_types": [
+        "table",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Table 5 with vehicle filter data and supporting paragraph text extracted with high fidelity; minor error where Delta filter constant 0.96 was misread as '0.%', and one stray bullet point artifact before 'results' in body text.",
+      "page": 30
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Clean scan of technical document discussing vehicle failure probability filtering; OCR nearly perfect with one minor error: 'to-appear' should be 'to appear' (line about 36% of time in sample of 50).",
+      "page": 31
+    },
+    {
+      "content_types": [
+        "diagram",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "The typeset text (caption and body paragraphs) is captured accurately, but the chart/graph is rendered as corrupted symbols and gibberish, with the y-axis label completely mangled into special characters and the plot data represented as meaningless dot patterns rather than structured data.",
+      "page": 32
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "character_substitution"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Page contains Table 6 and dense technical text on failure probabilities. OCR captures ~92% of visible content accurately, but with minor errors: 'Probabllltles' instead of 'Probabilities' (section 5.2 heading), stray 'j' character before 'To-show', and some hyphenation variations. Scan shows typical declassified document aging with slight fading but adequate contrast and alignment.",
+      "page": 33
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Page contains technical launch vehicle failure data tables. OCR captures most content but has errors: misspells 'Configurations' as 'Confisrurations', breaks 'Failure-Response Mode' across lines with character corruption, mangles Table 8 column headers and scrambles some row data, and renders '9/10/96' as '9/10/%'. Tables 7, 9, and 10 are mostly correct; Table 8 has significant structural issues.",
+      "page": 34
+    },
+    {
+      "content_types": [
+        "table",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 80,
+      "notes": "Table structure severely mangled with headers read as linear text (e.g., 'Fail' + 'ure-Res' + 'oonse Mode'), but all numeric data values and paragraph text captured accurately.",
+      "page": 35
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Two numerical tables with supporting text; OCR captured layout and most content correctly, but corrupted scientific notation in exponents (e.g., '1()2' for 10², 'Hf' for 10³, 'l(f' for 10³) affecting approximately 10-15% of table data precision.",
+      "page": 36
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document on launch vehicle failure analysis with data table; OCR captures most text correctly but has errors in table header (Svstems, .caunch) and symbol substitution issues (middle dots for spaces).",
+      "page": 37
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document with flight-phase failure probability tables; OCR captured all numeric table data accurately but had minor header formatting issues ('S stems' for 'Systems', bracket inconsistencies).",
+      "page": 38
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typeset technical document with clean scan; OCR has several word errors: 'tenninate' (should be 'terminate'), 'basedona' (should be 'based on a'), 'Flie.:ht' (should be 'Flight'), and a stray character after 'given', but overall text coverage is high.",
+      "page": 39
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Technical document with clear typeset text; minor OCR errors include 'Slmulatlons' for 'Simulations', 'slow-tum' for 'slow-turn', and 'pos~ible' for 'possible' but do not significantly impact readability.",
+      "page": 40
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Dense technical text from a declassified government document, clearly scanned. OCR captured the full body text including sections 6.1.1 and 6.1.2 with minimal errors; minor character misrecognitions are possible but the overall transcription is highly usable.",
+      "page": 41
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Clear photocopy scan with well-preserved text and equations, but OCR contains systematic errors: 'turn' misread as 'tum' (3+ instances), 'Mode-5' misread as 'Mode-s', and Greek letters/subscripts (θ, θ̇d) incorrectly rendered as '8', '8d'.",
+      "page": 42
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "cut_off"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Technical document about vehicle dynamics and malfunction turn calculations with clear typewritten text; OCR is mostly accurate but contains character-level substitutions (e.g., 'tum' instead of 'turn' in several places) and the final sentence is truncated mid-word at the bottom of the image.",
+      "page": 43
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Technical analysis text with mathematical notation; OCR accurately captured all paragraphs, equations, and section references—subscripts rendered as plain text is expected and correct.",
+      "page": 44
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Technical graph with clear plot and readable axis labels, but OCR heavily corrupted by grid lines and dotted background patterns; key text (title, legend, figure caption, dates) identifiable despite significant character noise and symbol degradation.",
+      "page": 45
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Clean scan of technical document with text and line chart; OCR captures main paragraphs correctly but heavily corrupts chart representation with spurious dots, dashes, and formatting artifacts.",
+      "page": 46
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Technical document on vehicle failure analysis; minor OCR errors include 'α' misread as '<r' in 'qα', underscore in 'left-hand _column', and dot character in 'shown in·the column', but overall excellent text capture.",
+      "page": 47
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Map diagram showing Atlas IIAS impact analysis with vertical text label on left and caption below. OCR correctly captures bottom text (figure caption, date, page number) but completely garbles the vertically-oriented label, producing nonsensical character sequences due to text rotation.",
+      "page": 48
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "garbled"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 28,
+      "notes": "Technical diagram showing Atlas IIAS debris field with geographic overlay. OCR completely failed on vertical text annotation (rendered as corrupted mathematical notation), but correctly captured the figure caption and footer metadata.",
+      "page": 49
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 85,
+      "notes": "Large numerical table with impact distribution data; OCR captured the numbers but linearized the entire table structure (losing all row/column organization) and misread 'IAS' as 'HAS' in the title.",
+      "page": 50
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Page contains technical text and a complex line graph with gridlines and overlapping curves. OCR captured opening and closing paragraphs partially but the graph area is severely corrupted with garbled characters, likely due to difficulty parsing dense gridlines, multiple curve lines, and the legend box simultaneously.",
+      "page": 51
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "Technical document with several OCR errors: 'Atlas HAS' should be 'Atlas IAS', 'malfunction-tum' should be 'malfunction-turn', asterisk footnote rendered as quote marks, incorrect smart quotes for 'non-simulatable', and extraneous period before 'consequence'.",
+      "page": 52
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 5,
+      "notes": "Technical line graph with legend and labels (Atlas IIAS Simulation Results). OCR completely failed, producing nearly unintelligible garbled text with random special characters and corrupted words throughout; only page footer elements partially recognizable.",
+      "page": 53
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 50,
+      "notes": "Scientific simulation results graph with heavily garbled OCR of title and subtitle containing special characters; figure caption and footer text accurate, but axis labels and legend text contain significant character corruption from dotted grid background noise.",
+      "page": 54
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Technical graph with multiple curve lines and legend is visually clear, but OCR severely corrupted most axis labels and title text (e.g., 'Random' as 'Randpm', 'Attitude' as 'tttde', 'IIAS' as 'HA$'), capturing only basic numbers and the figure caption correctly.",
+      "page": 55
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "light_scan"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 25,
+      "notes": "Technical simulation graph with title, legend, and axis labels; OCR severely corrupted by excessive dot/noise artifacts, making most text unrecognizable despite decent scan quality of the underlying document.",
+      "page": 56
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "OCR has a systematic substitution error converting 'qa' to 'qcx.' throughout the document; table structure and numerical values are correct, but this character substitution appears repeatedly in the paragraph and table header.",
+      "page": 57
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Technical document with clear printed text and a technical graph; main paragraphs are captured accurately, but graph labels show OCR errors (e.g., 'B' misread as '13', '100,000' as '1oo,odo').",
+      "page": 58
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typeset technical analysis page with data table on Atlas IIAS risk assessment; OCR performed well on table values and body text but significantly garbled the table title (\"Shaping Constants and Related Risks\" became fragmented across multiple lines), likely due to formatting/line-break confusion in the header.",
+      "page": 59
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Technical report page with clear typewritten text and a line graph. OCR captured paragraphs and section headings well, but includes garbled artifact (~ ~ 00 00 1001~1~100100) from misreading graph axis labels.",
+      "page": 60
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document page with body text and embedded tabular data; OCR captures nearly all visible content accurately with clean scan and proper alignment; footer shows date 9/10/96 and RTI marking.",
+      "page": 61
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "Clean, high-quality scan of a technical document with paragraph text and contour graph. The opening paragraph is mostly captured but with symbol/spacing errors; graph axis labels, legend text, and figure caption are heavily corrupted or fragmented—OCR struggled with mixed text-diagram layout.",
+      "page": 62
+    },
+    {
+      "content_types": [
+        "diagram",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 28,
+      "notes": "Technical chart showing Atlas IIAS contours with comprehensive legend and axis labels; OCR captured only x-axis numbers, axis label, figure title (with error: 'HAS' instead of 'IIAS'), and footer, missing y-axis label, y-axis tick values, and most legend/annotation content.",
+      "page": 63
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Technical contour plot with crisp image quality, but OCR heavily corrupted in legend and parameter labels; axis labels and figure caption mostly readable despite character recognition errors.",
+      "page": 64
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 45,
+      "notes": "Technical contour plot with clear visual scan, but OCR failed severely by interpreting grid lines and contour curves as text characters, producing extensive spurious output. Key numeric labels (A=3.45, B=1,000, date, page number) captured correctly, but axis labels ('Crossrange Distance') fragmented into scattered characters and some text misread ('AU-Mode' for 'All-Mode').",
+      "page": 65
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 15,
+      "notes": "Technical diagram showing Atlas IIAS Mode-5 ship-hit contours with scattered dashed contour lines on a grid; OCR captures only footer and figure caption while missing legend (10^-5/10^-6), axis labels/values, and plot parameters (B=5,000,000).",
+      "page": 66
+    },
+    {
+      "content_types": [
+        "diagram",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Technical page with contour diagram and body text; the diagram representation is heavily garbled with ASCII noise, but text portions (figure caption, section heading, paragraph, footer) are captured with minor errors.",
+      "page": 67
+    },
+    {
+      "content_types": [
+        "diagram",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "garbled"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 68,
+      "notes": "Technical impact-range distribution graph with detailed body text; OCR severely corrupted chart elements and legend (grid lines/symbols rendered as garbled text) but captured the body paragraphs and figure caption reasonably well.",
+      "page": 68
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Clean technical document with mostly accurate OCR, but has errors: 'HAS' should be 'IIAS', 'impact-densityiunction' should be 'impact-density function', and 'Mode-s' is a line-break artifact for 'Mode-5'.",
+      "page": 69
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Clean, high-quality scan with crisp text. OCR accurately captured the heading, body paragraph, and caption, but the graph legend became garbled with excessive dots and punctuation marks instead of cleanly rendering the legend text; the actual text content (q-alpha values) is present but poorly formatted visually.",
+      "page": 70
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "garbled"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 35,
+      "notes": "OCR captured the opening paragraph accurately but completely mangled the technical line graph into ASCII art gibberish, and missed the figure caption and footer text entirely.",
+      "page": 71
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 60,
+      "notes": "The paragraph text at the top and figure caption OCR accurately, but the graph visualization with gridlines was completely garbled—OCR interpreted the plotting grid as random ASCII characters rather than extracting the axis labels and legend text integrated into the chart.",
+      "page": 72
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Technical report page with clean typeset text and complex data table; OCR captured content accurately with one minor hyphenation artifact ('differ by-less' from line break) and correct interpretation of 'old baseline' despite potentially unclear original printing.",
+      "page": 73
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Body text and section heading are accurately captured, but the graph area OCR is heavily corrupted with noise artifacts and garbled characters, particularly in the legend entries and axis labels which render as nonsensical dot patterns and malformed text.",
+      "page": 74
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 48,
+      "notes": "Paragraph text is mostly captured accurately, but the graph legend and labels are heavily corrupted with dots/symbols in OCR output, likely due to complex diagram content rather than scan quality issues.",
+      "page": 75
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Paragraph and figure caption captured accurately; scientific graph converted to garbled ASCII-art representation with dots/dashes rather than recognized as non-text diagram, significantly reducing usable text recovery.",
+      "page": 76
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "The paragraph text is captured accurately, but the table structure is severely mangled—OCR flattened the columnar layout into a list, lost cell relationships, and introduced errors like 'II' instead of data, 'in-Table' instead of 'in Table,' and missed superscripts (ft² rendered as ft2).",
+      "page": 77
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Body text and figure title captured accurately, but figure axis labels, legend entries, and numerical grid information severely garbled with corrupted characters and symbols.",
+      "page": 78
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Opening paragraph captured accurately, but graph legend and axis labels severely corrupted with random symbols and garbled characters; scan image is clear and readable but OCR struggled significantly with legend text and chart area.",
+      "page": 79
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "The paragraph text at the top is captured accurately, but the graph area is severely corrupted with random characters where the grid lines, curves, and axis labels should be—OCR interpreted visual chart elements as noise rather than treating them as a diagram.",
+      "page": 80
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document with two data tables and body text. OCR captures most content accurately but has character-level substitution errors: £ for f in 'ft²', lowercase l for numeral 1 in 'LLV1', 'HAS' for 'IIAS', and 'CLVl' for 'LLVI' in table entries.",
+      "page": 81
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Crisp, well-scanned technical document page with mostly accurate OCR. Notable errors: 'Potentlal' instead of 'Potential' in title, 'malfunction-tum' instead of 'malfunction-turn', Greek character α misread as 'a', and scattered punctuation errors.",
+      "page": 82
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Technical document section on risk-analysis methodology; OCR captured nearly all text accurately with minor character encoding issues (e.g., 'to·' instead of 'to') and natural cutoff at page boundary where text ends mid-word.",
+      "page": 83
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "slight_character_spacing_errors"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Clean scan of a technical document with three data tables. OCR captured all numerical values accurately but introduced spacing errors in multi-word headers: 'Res onse' instead of 'Response', 'Percenta es' instead of 'Percentages', 'Fli ht' instead of 'Flight', and truncated 'Probability' to 'Probabili'.",
+      "page": 84
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Typeset government document with data table and technical body text; OCR captured nearly all content correctly but has one clear error in Table 30 where a numeric value is transcribed as 'nn11n' instead of the actual number.",
+      "page": 85
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Technical report page with crisp typeset text and two well-formatted data tables (Mode-5 shaping constants). All numerical values, column headers, and body text accurately captured; no scanning or OCR artifacts detected.",
+      "page": 86
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical report page with crisp, well-aligned text; OCR captured most content accurately but has minor character errors: 'qa' instead of 'qu' in 'breakup qu', and extraneous dot character after 'again'.",
+      "page": 87
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical appendix on vehicle failure response modes with clear typeset text and mostly accurate OCR, though at least one error detected ('ocrur' instead of 'occur' in Mode 5).",
+      "page": 88
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Technical document about missile safety modes with excellent clarity; minor OCR errors include spurious period before 'are' and quotation mark after 'DAMP', but nearly all text captured correctly.",
+      "page": 89
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Technical report with crisp, well-aligned body text; OCR struggles with mathematical notation where superscripts and special characters (exponents, phi, theta symbols) are rendered as garbled characters, but all body paragraphs and footer are captured accurately.",
+      "page": 90
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Complex numerical data table with crisp, well-aligned scan, but OCR fails on header text (£ for f, φ as cl>, Varvimz for Varying, Mode~5 for Mode-5) and scrambles table structure, though most numeric values are captured.",
+      "page": 91
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Typeset table with clear structure and excellent readability; OCR errors include title misreads (£-Ratio→f-Ratio, Varving→Varying, 10run→10 nm) and one digit error (32A→32.4), but table values are captured accurately overall.",
+      "page": 92
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Clean, well-scanned technical table with precise numerical data; OCR errors include title misreadings (£ for f, Varving for Varying, 8 for B), header symbol corruption (φ read as --1), and at least one decimal point error (13:4 instead of 13.4 at row 170).",
+      "page": 93
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Table data mostly captured correctly, but OCR shows decimal point error at row 80 (32.5 rendered as 325) and line-break parsing failures in rows 150-180 where values are split across lines instead of remaining on same row.",
+      "page": 94
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Body paragraph is mostly accurate (85% of visible text captured) but with character substitution errors: '£' for 'f', '8' for 'θ', 'arid' for 'and'. The chart/diagram section is heavily garbled with fragmented axes and legend data that's nearly unreadable; the visual graph itself cannot be OCR'd.",
+      "page": 95
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Main paragraph text captured accurately, but graph legend and labels heavily corrupted by OCR formatting errors including garbled characters ('jfor' for 'for', 'IIA~' for 'IIAS') and spurious punctuation/formatting marks throughout the chart area.",
+      "page": 96
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Main text accurately captured, but figure legend/graph area shows significant OCR corruption (e.g., 'Oat~' for 'Data', degraded parameter labels with spacing issues); body paragraphs and equation intact.",
+      "page": 97
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "Clear typeset document with minor OCR errors: 'burn' misread as 'bum', 'R are' as 'Rare', multiple Greek π symbols misread as '1t', and subscript notation (Ri, Rn) garbled as 'R,_' and '~'.",
+      "page": 98
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "none"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Page scans cleanly with mostly accurate OCR; minor errors include '~s model' (should be 'This model'), 'Su<;h' (should be 'Such'), and subscript variables formatted as plain text (x1 instead of x₁).",
+      "page": 99
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Technical document with mathematical formulas; OCR captures body text accurately but struggles with mathematical notation (summation symbols, multiplication dots, fraction bars represented as ASCII approximations; first term shows '1-6' instead of '1·6').",
+      "page": 100
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Equation (17)'s table with three rows (n=1,2,3 examples) is completely missing from OCR output; typo 'sqown' instead of 'shown'; remaining text accurately captured from crisp, well-scanned document.",
+      "page": 101
+    },
+    {
+      "content_types": [
+        "diagram",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "warped"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "OCR successfully captured paragraph text and equation structure, but the graph/chart representation was heavily garbled with excessive dots, dashes, and symbols; mathematical formula mostly readable but with formatting artifacts; footer and page numbers correct.",
+      "page": 102
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 94,
+      "notes": "Technical document with mathematical notation; OCR mishandles subscripts (converts aₙ to 'an'), adds spurious hyphen ('zero- and'), and introduces stray underscore ('_that'). Body text otherwise well-captured; graph labels and figure number correctly read.",
+      "page": 103
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document on failure probability filtering with detailed numeric table; OCR captured all table values and body text accurately but introduced spurious 'j[]' and mangled table header subscript notation ('lter factor, an' instead of 'Filter factor, aₙ').",
+      "page": 104
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Scan is clear and well-aligned. OCR has several character substitution errors: 'D.1 Basic Data' rendered as '0.1 S-asic Data', 'Appendix D as follows' as 'Appendix Das_', and 'Sources' as 'S-ources'. Most content is correctly captured despite these scattered errors.",
+      "page": 105
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Bibliography/reference list page; OCR captures nearly all text correctly with minor errors in superscript citations ([to] for [10], [141] for [14]) and one typo ('bl' instead of 'by' in item 7).",
+      "page": 106
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clear technical document with strong OCR performance; one detectable error where 'Flight Phase' column was misread as 'Flight Phase11' in the D.1.3 section.",
+      "page": 107
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Two technical tables with launch vehicle flight phase definitions are well captured; minor OCR error where 'Delta/Thor' is rendered as 'Deltall'hor', but all substantive content and numbers are present.",
+      "page": 108
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "Typeset technical document (vehicle configuration criteria); OCR errors include section heading (0.1.4 vs D.1.4), placeholder character misrecognition ((Y' vs 0), and spacing issues (L V-3A vs LV-3A), but content overall readable.",
+      "page": 109
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Typeset technical document with clear table; OCR captures nearly all text accurately with minor errors: missing first letters in table headers ('onfiguration' and 'scription' instead of 'Configuration' and 'Description'), and 'reliabilitv' instead of 'reliability'.",
+      "page": 110
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Body text paragraphs are accurately captured, but the bar chart (Figure 37) is severely garbled in OCR output with random dots/dashes/characters replacing the actual graph structure and axis labels.",
+      "page": 111
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Page D.2.1 contains Atlas launch history text and detailed launch table; OCR captured most content but contains errors: 'D.2.1' misread as '0.2.1', systematic date formatting errors in table (e.g., '08/02/58' as '08/02168', '11/28/58' as '11128/58'), and word OCR errors ('ConfKJuration' for 'Configuration', 'Ranae' for 'Range').",
+      "page": 112
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Table data mostly captured but contains systematic character confusion errors: letter 'D' frequently misread as '0' in vehicle designations (e.g., '290' vs '29D', '310' vs '31D'), and header text errors ('Confiauration' for Configuration, 'Ranae' for Range); data structure and most content legible despite these OCR recognition failures.",
+      "page": 113
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Launch/mission data table; OCR captured nearly all content with minor character errors (Confiauration→Configuration, Ranae→Range, date slashes dropped in one entry 06/22161).",
+      "page": 114
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "Space mission data table with mission names and dates mostly captured; OCR failed to parse table structure, resulting in scrambled column headers and misaligned cell relationships, plus character errors (Daintv/Dainty, ALLJAZl/ALL JAZZ, Conflauration/Configuration, Ranae/Range).",
+      "page": 115
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Typewritten mission log table with 1963-1964 spacecraft/vehicle test data; OCR captures most content correctly but has errors on several mission names (e.g., 'In Bia Four' for 'Big Four', 'DamoClav'/'DamoDuck' likely misread); minimal skew and generally clear readability.",
+      "page": 116
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Table of satellite/spacecraft missions is captured well structurally, but contains OCR errors: 'ShioRail' should be 'Skip Rail', 'AirPumo' should be 'Air Pump', and some vehicle configurations have digit-letter confusion (e.g., '2450' vs '245D', '2880' vs '288D').",
+      "page": 117
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "none"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Launch and mission data table with systematic OCR errors in specific mission codenames (e.g., 'Seethina Citv' for unclear source, 'Haoov Mt.' for 'Happy Mt.'), and spurious line numbers (262-307) added by OCR that do not appear in the original image.",
+      "page": 118
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Space mission launch table with structured data; OCR captures the table structure well but has recurring errors (e.g., 'Busv' instead of 'Busy', 'Gleamina' instead of 'Gleaming') due to faded text quality.",
+      "page": 119
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Typeset launch/mission data table with ~50 rows spanning 1968-1972; OCR captures structure and most entries correctly despite age-related fading and slight document tilt, but some entries at margins and in dense columns may have minor transcription errors.",
+      "page": 120
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Table of spacecraft launch missions is clearly structured and mostly legible, but OCR has significant character corruption throughout (ll→n, )→}, malformed dates/codes), making many entries unreliable despite capturing the overall table layout.",
+      "page": 121
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Space mission launch data table; OCR captures content but loses table column structure and introduces spacing errors (e.g., 'TIROSN' instead of 'TIROS N'), though most data values are readable.",
+      "page": 122
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Space mission data table with clear formatting and typography; OCR captured nearly all content but has character-level errors (e.g., 'GAIJJ.XY' instead of 'GALAXY' in multiple rows).",
+      "page": 123
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 99,
+      "notes": "Typewritten technical documentation of Atlas rocket failure narratives with clear, well-contrasted text. OCR captures all visible text accurately with no discernible errors or artifacts.",
+      "page": 124
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "minor character substitutions"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Technical report on missile test failures with clear, well-scanned text; OCR captures nearly all content accurately but has occasional character errors (B1/Bl confusion, stray periods like '.82.9') typical of number/letter confusion.",
+      "page": 125
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Numbered list of missile flight test data with crisp, well-aligned scan; OCR captured nearly all text with three minor character-level errors: 'dose' instead of 'close' in item 24, extra colon before 'Flight' in item 32, and middle dot artifact in item 35.",
+      "page": 126
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Technical document listing Atlas missile flight test failures with dates and causes. OCR incorrectly reads 'Able IV' as 'Able M' in entry 38; all other text accurately captured with clean scanning and no artifacts.",
+      "page": 127
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Declassified technical document with numbered missile test flight entries; clean OCR capture with minimal artifacts despite aged scan appearance and document dating stamps.",
+      "page": 128
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical document listing missile and satellite launch flight details. OCR captured nearly all text with one error: '7 4 seconds' instead of '74 seconds' in the first entry.",
+      "page": 129
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Clean scan of typed missile launch failure logs; OCR captured nearly all text accurately, with one spelling error: 'sustiliner' (entry 99) should be 'sustainer'. All numbered entries and footer metadata captured correctly.",
+      "page": 130
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Technical missile test report with crisp, well-scanned typewritten text; one OCR error detected ('comparhnent' instead of 'compartment' in entry 118).",
+      "page": 131
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clear scan of a technical government document with numbered entries about rocket/missile flights; OCR captured nearly all text accurately except for one error: 'm1ss10n' in entry 148 should be 'mission'.",
+      "page": 132
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten technical document about missile flight failures; OCR captured nearly all visible text accurately with minimal scan artifacts.",
+      "page": 133
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Typewritten technical document with numbered missile test flight entries; OCR is mostly accurate with two character-level errors: '620.miles' should be '620 miles' and 'Flight Phase 2~5' should be '2.5'.",
+      "page": 134
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten missile test incident report with mostly accurate OCR; errors include 'bum' for 'burn' (entries 219, 232), semicolon vs comma in entry 227, and character recognition issues like 'OVl\"l' for 'OV1' and punctuation artifacts.",
+      "page": 135
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Declassified technical document listing numbered missile launch failures with dates and technical details; OCR accurately captured all visible text including footer markings despite document aging and fading.",
+      "page": 136
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "substitution_error"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 93,
+      "notes": "Crisp monospace typewritten document with one clear OCR error ('1hrust' instead of 'Thrust' on first line) and minor dot artifacts where spaces occur; right margin shows slight cut-off but content integrity intact.",
+      "page": 137
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Dense typewritten technical report documenting missile flight test incidents. OCR is highly accurate; minor quirks like 'norm.al' appear to be original document typos, not OCR errors. Visible stamps and date markings (9/10/96, RTI) present but legible.",
+      "page": 138
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten technical document with numbered launch vehicle failure entries; OCR accurately captured all text with excellent consistency against the scan.",
+      "page": 139
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Technical report on spacecraft launch incidents with numbered entries. OCR captured nearly all text accurately; minor character-level errors detected: 'tum' for 'turn', 'bum' for 'burn' (×2), and 'secorids' for 'seconds'.",
+      "page": 140
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Clear technical document scan with mostly accurate OCR, but contains character-level errors: 'Galaxy lR' should be '1R', '9225 nmk' has extraneous 'k', '120 run' should be '120 nm', '65% .of' has extra period, and footer date '9/10/%' should be '9/10/96'.",
+      "page": 141
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Technical specifications document with configuration table; OCR has 2 errors ('form' for 'from' in first paragraph, 'Erurine' for 'Engine' in table row A) but captures text structure and content well overall.",
+      "page": 142
+    },
+    {
+      "content_types": [
+        "table",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Table with configuration descriptions; OCR has systematic Roman numeral errors (Ils→IIs, N→IV, NA→IVA) and minor punctuation issues (RS:.27A should be RS-27A), but overall structure and most content captured correctly.",
+      "page": 143
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Main paragraph text captured accurately; graph axis labels garbled with character artifacts ('en', 'C:', etc.); footer contains character substitution errors (% for 96, ! for I).",
+      "page": 144
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Launch history table with mostly accurate numeric/mission data, but OCR errors in headers (Configuration→Confiauration, Range→Ranae) and spacing issues (TIROS A2→TIROSA2).",
+      "page": 145
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Table of satellite launch data with clear printed text. OCR captured most mission names and dates but lost table column structure and has character-level errors (Range→Ranae, Configuration→Confiauration).",
+      "page": 146
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Satellite launch data table with clear, well-aligned scan; OCR captures nearly all content but has minor character recognition errors (e.g., 'TO-1' instead of 'TD-1' in row 88, 'EATS-A' instead of 'ERTS-A' in row 89).",
+      "page": 147
+    },
+    {
+      "content_types": [
+        "table",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Table of satellite/spacecraft launch missions with dates, configurations, and test parameters. OCR captured most data accurately but contains errors in row 174 (shows 'L&SAT-D'' instead of what appears to be 'LANSAT-D' with incorrect trailing punctuation) and possibly other minor mission name discrepancies; numerical values appear correct.",
+      "page": 149
+    },
+    {
+      "content_types": [
+        "table",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Table of satellite launch data with systematic OCR error: Roman numeral 'II' in mission names (NAVSTAR II-16, II-17, etc.) incorrectly read as '11', and minor spacing issues in compound terms like 'GALAXYI-R' missing space.",
+      "page": 150
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "warped"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "OCR captured the majority of text correctly but has character-level errors: 'bum' for 'burn' in entry 24, 'O50-C' for 'OSO-C' in entry 33, and 'AF-ff' for 'AE-B' in entry 38; minor formatting differences in entry 38 with dash and dot characters.",
+      "page": 151
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Technical report on spacecraft launch failures; OCR text matches visible content with high accuracy, minimal scanning artifacts, and clear readability.",
+      "page": 152
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clear typeset document with numbered space mission entries; one OCR error detected (entry 155: 'DE' misread as 'DJr'), otherwise accurate capture of all visible text.",
+      "page": 153
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Clean typeset document with excellent OCR accuracy; all visible text including item 228 and footer captured correctly with no discernible errors or distortions.",
+      "page": 154
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Crisp, well-scanned typeset page with two paragraphs and clear footer. OCR captured nearly all text accurately; minor anomalies appear as stray middle-dot characters in OCR output (\"system·\" and \"in·\") not visible in the image, suggesting slight tokenization quirks rather than scan issues.",
+      "page": 155
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Narrative text captured accurately, but table structure completely destroyed—column layout, headers, and cell boundaries are mangled into continuous text, making the table content unreadable despite text characters being present.",
+      "page": 156
+    },
+    {
+      "content_types": [
+        "typeset",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 55,
+      "notes": "The narrative paragraph was captured with minor character substitution errors (tildes in 'Failu~e', numbers in 'Nor1a1'). The bar chart and its legend were completely garbled into ASCII noise—OCR failed to represent the structured chart data, showing only random characters and grid artifacts instead of recognizable bars, axes, or labels.",
+      "page": 157
+    },
+    {
+      "content_types": [
+        "typeset",
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "garbled_table_formatting"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Document is a technical table (Titan Launch History) with preceding explanatory text. OCR captured nearly all content correctly but inserted spurious leading characters (I L...) and struggles with precise table column alignment in text representation.",
+      "page": 158
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Missile/spacecraft test log table with well-preserved structure; one error found at row 41 where '(J-17)' was misread as '(J-m)', and column headers appear scrambled in OCR output but data rows transcribed correctly.",
+      "page": 159
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Table of spacecraft test flight missions with clear structure; OCR mostly accurate but has systematic errors including date formatting issues (slashes rendered as numbers like '08115/63' instead of '08/15/63', '04108/64' instead of '04/08/64') and missing spaces in mission names ('WESTWINDI' vs 'WESTWIND I', 'ARTICSUN' vs 'ARTIC SUN').",
+      "page": 160
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Launch vehicle test response table with clear structure; OCR captures most content accurately but struggles with Roman numerals (IIIC misread as 1110), row 139 shows 'eLOSETOueH' instead of 'CLOSETOUCH', and several numeric/letter combinations slightly garbled.",
+      "page": 161
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Launch vehicle test data table with systematic character-level errors: 'ConfKJuration' (Configuration), 'Ranae' (Range), 'rrans' (Trans.), parenthesis/bracket confusion {(}, and I/1 digit-letter substitutions; row number 177 corrupted to '1n'; overall content structure intact.",
+      "page": 162
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Satellite launch data table; OCR systematically misreads Roman numerals (IIID, IIIB, etc.) as numbers (1110, 1118, etc.), and scrambles the header row with a typo ('Confiauration').",
+      "page": 163
+    },
+    {
+      "content_types": [
+        "table",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Launch vehicle test data table with consistent OCR errors in character recognition (e.g., '2n' for '277', 'm' for '/', 'IUD' vs 'IIID'); table structure and most alphanumeric codes are preserved but individual character substitutions affect accuracy of specific entries.",
+      "page": 164
+    },
+    {
+      "content_types": [
+        "table"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Table of launch vehicle test data with clear structure and good readability. OCR captures most content correctly but has systematic errors: Roman numerals (II, III) frequently confused with numbers (11, 1ll); dates sometimes lack slashes (12122194); configuration codes occasionally misread (34D vs 340).",
+      "page": 165
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "none_observed"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Clear, well-aligned typewritten page with nearly perfect OCR. Minor OCR errors: 'Mo.de' in item 25 (should be 'Mode'), and '·60' in item 13 (should be '60'), representing character misreads rather than missing content.",
+      "page": 166
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Clean typewritten page with crisp text; OCR captured ~96% accurately, with errors including 'Stage-Ilignition' (entry 28), '7 4' spacing (entry 34), 'sell-destructed' (entry 53), and 'bum' for 'burn' (entries 56, 58).",
+      "page": 167
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Typewritten missile test log entries. OCR error on entry 69: '.56 seconds' should be '56 seconds'. Otherwise text is accurately captured with proper formatting and spacing.",
+      "page": 168
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Page contains numbered flight test failure reports with clear typewritten text. OCR has one substantive error: entry 104 shows 'IIIA' in image but 'IHA' in OCR; some minor formatting differences with centered dots noted.",
+      "page": 169
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typeset",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.09,
+    "avg_text_coverage_pct": 83.7,
+    "content_type_counts": {
+      "cover_page": 2,
+      "typeset": 89,
+      "form": 1,
+      "typewritten": 51,
+      "table": 58,
+      "diagram": 39
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 69,
+      "scan_original": 98,
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "good": 149,
+      "excellent": 17,
+      "fair": 2
+    },
+    "ocr_artifact_counts": {
+      "noise": 29,
+      "faded": 11,
+      "stamps_marks": 4,
+      "cut_off": 2,
+      "none": 3,
+      "": 1,
+      "character_substitution": 2,
+      "skew": 4,
+      "light_scan": 6,
+      "bleed_through": 4,
+      "garbled": 3,
+      "slight_character_spacing_errors": 1,
+      "warped": 2,
+      "minor character substitutions": 1,
+      "substitution_error": 1,
+      "garbled_table_formatting": 1,
+      "none_observed": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 118,
+      "accurate": 11,
+      "partial": 36,
+      "garbled": 3
+    }
+  }
+}

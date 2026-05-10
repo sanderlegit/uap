@@ -1,0 +1,81 @@
+{
+  "doc_id": 0,
+  "title": "DOW-UAP-D10, Mission Report, Middle East, May 2022",
+  "agency": "Department of War",
+  "filename": "dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+  "total_pages": 6,
+  "pages_sampled": 3,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Clean declassified document with crisp typewritten text; OCR accurately captures narrative timeline and classification metadata; redacted sections properly represented as '1.4a' markers throughout document.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified military form with crisp, well-aligned scan. OCR captured all readable non-redacted text accurately; red redaction bars and declassification stamps are present as expected on official documents.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Structured military intelligence form with official redactions (1.4a codes); OCR captures text accurately but renders visual red-strikethrough redactions as full text, which is expected behavior for redacted content classification markings.",
+      "page": 6
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.33,
+    "avg_text_coverage_pct": 88.3,
+    "content_type_counts": {
+      "typewritten": 1,
+      "form": 3,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 3
+    },
+    "scan_quality_counts": {
+      "good": 2,
+      "excellent": 1
+    },
+    "ocr_artifact_counts": {
+      "redacted": 1,
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 2,
+      "accurate": 1
+    }
+  }
+}

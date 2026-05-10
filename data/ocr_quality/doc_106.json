@@ -1,0 +1,173 @@
+{
+  "doc_id": 106,
+  "title": "NASA-UAP-D7, Skylab Techincal Crew Debriefing 1973",
+  "agency": "NASA",
+  "filename": "nasa-uap-d7-skylab-technical-crew-debriefing-1973.pdf",
+  "total_pages": 11,
+  "pages_sampled": 11,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "OCR captured all major typeset text accurately but missed the handwritten annotation 'BEAT / Grimmes' at the top of the page. Logo and overall layout are clean with no significant scan distortion.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Typewritten dialogue transcript clearly captured, but OCR parser reorganized speaker labels at the beginning and introduced two errors: '<ERWIN' should be 'KERWIN' and 'Idid' should be 'I did'.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Skylab mission transcript with excellent text legibility; OCR captured all dialog accurately but incorrectly separated speaker names into a header list rather than pairing them with dialog.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typeset",
+        "cover_page"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Clean NASA Skylab cover page with near-perfect OCR; spurious '=' character introduced before 'LYNDON B. JOHNSON SPACE CENTER' that doesn't exist in the image.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Clean typewritten transcript of astronaut dialogue about observations of an unusual satellite during spaceflight. OCR accurately captured all main text content with high fidelity; only page reference number (7-4) at bottom not included in OCR text.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Clean typewritten transcript with high OCR accuracy; critical error: page number shows 7-5 but OCR captured 1-5; possible character confusion on T002 vs TO02.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "All dialogue content captured accurately, but OCR incorrectly aggregated multiple speaker names (LOUSMA, BEAN, GARRIOTT) at the top of output instead of interspersed with their statements as shown in the original.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten transcript page with astronaut testimony about UAP sightings; OCR capture is accurate and comprehensive with clean scan quality.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Cover page of NASA Skylab crew debrief document with good contrast and readability; OCR correctly captured all typewritten text, but garbled the handwritten annotation at top right ('BET Mrumaree tL' instead of what appears to be 'BE4K Brimwood').",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Clean typewritten transcript with one notable OCR error: 'GIE.SON' should be 'GIBSON'. All other text accurately captured including the Skylab mission narrative about ammonia odors and light sightings.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Typewritten interview transcript scanned cleanly; all text content captured accurately but speaker labels appear on separate lines in OCR rather than as left-margin labels in the original layout.",
+      "page": 11
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.18,
+    "avg_text_coverage_pct": 94.8,
+    "content_type_counts": {
+      "cover_page": 3,
+      "typeset": 2,
+      "typewritten": 9
+    },
+    "source_medium_counts": {
+      "scan_original": 6,
+      "scan_photocopy": 5
+    },
+    "scan_quality_counts": {
+      "good": 9,
+      "excellent": 2
+    },
+    "ocr_artifact_counts": {},
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 9,
+      "accurate": 2
+    }
+  }
+}

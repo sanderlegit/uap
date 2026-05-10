@@ -1,0 +1,247 @@
+{
+  "corpus_stats": {
+    "total_documents": 3,
+    "content_type_distribution": {
+      "typewritten": 3,
+      "form": 3,
+      "redacted": 1,
+      "photograph": 1,
+      "diagram": 1,
+      "cover_page": 1
+    },
+    "source_medium_distribution": {
+      "scan_original": 4,
+      "scan_photocopy": 2
+    },
+    "scan_quality_distribution": {
+      "good": 4,
+      "excellent": 1,
+      "fair": 1
+    },
+    "ocr_accuracy_distribution": {
+      "mostly_accurate": 2,
+      "accurate": 1,
+      "not_applicable": 1,
+      "partial": 1,
+      "garbled": 1
+    },
+    "artifact_frequency": {
+      "redacted": 1,
+      "stamps_marks": 2,
+      "faded": 1,
+      "noise": 1
+    },
+    "avg_text_coverage_pct": 50.9,
+    "documents_by_quality_tier": {
+      "high": [
+        0,
+        50
+      ],
+      "medium": [
+        65
+      ],
+      "low": []
+    }
+  },
+  "documents": {
+    "0": {
+      "doc_id": 0,
+      "title": "DOW-UAP-D10, Mission Report, Middle East, May 2022",
+      "agency": "Department of War",
+      "filename": "dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+      "total_pages": 6,
+      "pages_sampled": 3,
+      "extraction_method": "pymupdf",
+      "ocr_applied": 0,
+      "pages": [
+        {
+          "content_types": [
+            "typewritten",
+            "form",
+            "redacted"
+          ],
+          "source_medium": "scan_original",
+          "scan_quality": "good",
+          "ocr_artifacts": [],
+          "ocr_accuracy": "mostly_accurate",
+          "text_coverage_pct": 85,
+          "notes": "Clean declassified document with crisp typewritten text; OCR accurately captures narrative timeline and classification metadata; redacted sections properly represented as '1.4a' markers throughout document.",
+          "page": 1
+        },
+        {
+          "content_types": [
+            "form"
+          ],
+          "source_medium": "scan_original",
+          "scan_quality": "excellent",
+          "ocr_artifacts": [
+            "redacted",
+            "stamps_marks"
+          ],
+          "ocr_accuracy": "accurate",
+          "text_coverage_pct": 95,
+          "notes": "Declassified military form with crisp, well-aligned scan. OCR captured all readable non-redacted text accurately; red redaction bars and declassification stamps are present as expected on official documents.",
+          "page": 3
+        },
+        {
+          "content_types": [
+            "form"
+          ],
+          "source_medium": "scan_original",
+          "scan_quality": "good",
+          "ocr_artifacts": [],
+          "ocr_accuracy": "mostly_accurate",
+          "text_coverage_pct": 85,
+          "notes": "Structured military intelligence form with official redactions (1.4a codes); OCR captures text accurately but renders visual red-strikethrough redactions as full text, which is expected behavior for redacted content classification markings.",
+          "page": 6
+        }
+      ],
+      "summary": {
+        "dominant_content_type": "form",
+        "dominant_source_medium": "scan_original",
+        "dominant_scan_quality": "good",
+        "dominant_ocr_accuracy": "mostly_accurate",
+        "avg_quality_score": 4.33,
+        "avg_text_coverage_pct": 88.3,
+        "content_type_counts": {
+          "typewritten": 1,
+          "form": 3,
+          "redacted": 1
+        },
+        "source_medium_counts": {
+          "scan_original": 3
+        },
+        "scan_quality_counts": {
+          "good": 2,
+          "excellent": 1
+        },
+        "ocr_artifact_counts": {
+          "redacted": 1,
+          "stamps_marks": 1
+        },
+        "ocr_accuracy_counts": {
+          "mostly_accurate": 2,
+          "accurate": 1
+        }
+      }
+    },
+    "50": {
+      "doc_id": 50,
+      "title": "NASA-UAP-VM1, Apollo 12, 1969",
+      "agency": "NASA",
+      "filename": "nasa-uap-vm1-apollo-12-1969.jpg",
+      "total_pages": 1,
+      "pages_sampled": 1,
+      "extraction_method": "",
+      "ocr_applied": 0,
+      "pages": [
+        {
+          "content_types": [
+            "photograph",
+            "diagram"
+          ],
+          "source_medium": "scan_photocopy",
+          "scan_quality": "good",
+          "ocr_artifacts": [],
+          "ocr_accuracy": "not_applicable",
+          "text_coverage_pct": null,
+          "notes": "Lunar surface photograph with annotation overlays (yellow bounding boxes); no extractable text content—OCR correctly returned empty.",
+          "page": 1
+        }
+      ],
+      "summary": {
+        "dominant_content_type": "photograph",
+        "dominant_source_medium": "scan_photocopy",
+        "dominant_scan_quality": "good",
+        "dominant_ocr_accuracy": "not_applicable",
+        "avg_quality_score": 4.0,
+        "avg_text_coverage_pct": null,
+        "content_type_counts": {
+          "photograph": 1,
+          "diagram": 1
+        },
+        "source_medium_counts": {
+          "scan_photocopy": 1
+        },
+        "scan_quality_counts": {
+          "good": 1
+        },
+        "ocr_artifact_counts": {},
+        "ocr_accuracy_counts": {
+          "not_applicable": 1
+        }
+      }
+    },
+    "65": {
+      "doc_id": 65,
+      "title": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+      "agency": "Department of War",
+      "filename": "341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf",
+      "total_pages": 7,
+      "pages_sampled": 2,
+      "extraction_method": "ocrmypdf",
+      "ocr_applied": 1,
+      "pages": [
+        {
+          "content_types": [
+            "cover_page",
+            "typewritten"
+          ],
+          "source_medium": "scan_photocopy",
+          "scan_quality": "good",
+          "ocr_artifacts": [
+            "stamps_marks"
+          ],
+          "ocr_accuracy": "partial",
+          "text_coverage_pct": 12,
+          "notes": "OCR captured only bottom metadata (NW 90307, Docld, Authority) while missing top security markings, address block, declassified stamp label, and the central text about document filing sequence; content present is accurate.",
+          "page": 1
+        },
+        {
+          "content_types": [
+            "typewritten"
+          ],
+          "source_medium": "scan_original",
+          "scan_quality": "fair",
+          "ocr_artifacts": [
+            "faded",
+            "noise"
+          ],
+          "ocr_accuracy": "garbled",
+          "text_coverage_pct": 15,
+          "notes": "OCR captured only scattered fragments (NW 90307, partial 'countries', 'Docld') while completely missing the main body text about CIC source reports, Russian radar tube purchases, and mission instructions; significant garbling in reconstructed words like 'ecion aleo' (section also) and 'inetructed' (instructed).",
+          "page": 7
+        }
+      ],
+      "summary": {
+        "dominant_content_type": "typewritten",
+        "dominant_source_medium": "scan_photocopy",
+        "dominant_scan_quality": "good",
+        "dominant_ocr_accuracy": "partial",
+        "avg_quality_score": 3.5,
+        "avg_text_coverage_pct": 13.5,
+        "content_type_counts": {
+          "cover_page": 1,
+          "typewritten": 2
+        },
+        "source_medium_counts": {
+          "scan_photocopy": 1,
+          "scan_original": 1
+        },
+        "scan_quality_counts": {
+          "good": 1,
+          "fair": 1
+        },
+        "ocr_artifact_counts": {
+          "stamps_marks": 1,
+          "faded": 1,
+          "noise": 1
+        },
+        "ocr_accuracy_counts": {
+          "partial": 1,
+          "garbled": 1
+        }
+      }
+    }
+  }
+}

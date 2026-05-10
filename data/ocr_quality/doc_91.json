@@ -1,0 +1,55 @@
+{
+  "doc_id": 91,
+  "title": "FBI Photo B22",
+  "agency": "FBI",
+  "filename": "fbi-photo-b22.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "photograph",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Heavily redacted thermal or infrared photograph with measurement marks and timestamp (12/31/99 18:19:19) visible at bottom; OCR failed to capture even the readable timestamp text, likely due to noise and contrast issues.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "photograph",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 5.0,
+    "content_type_counts": {
+      "photograph": 1,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "dark_scan": 1,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

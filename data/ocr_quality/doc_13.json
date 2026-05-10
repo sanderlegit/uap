@@ -1,0 +1,146 @@
+{
+  "doc_id": 13,
+  "title": "DOW-UAP-D33, Mission Report, Greece, October 2023",
+  "agency": "Department of War",
+  "filename": "dow-uap-d33-mission-report-greece-october-2023.pdf",
+  "total_pages": 7,
+  "pages_sampled": 7,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typeset",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified government document with embedded classification markers and redactions; OCR captured most visible text but contains errors including 'EXPLBITED' (should be 'EXPLOITED'), '7•LINED' (should be '7-LINED'), and line-wrapping inconsistencies in the narrative section.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 72,
+      "notes": "Military intelligence form with official redactions. Header has significant OCR errors (e.g., 'D cl d by' for 'Declassified by', 'Jaruary' for 'January'); form structure and field names mostly captured correctly, but redacted field markers produce OCR artifacts; footer information legible.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Form with personnel and equipment fields captures well overall, but OCR degraded the faded declassification header (misread 'Richard A. Harrison' as 'chard A Hamson', 'Chief' as 'Ct11ef'); redaction boxes and formatting of classification codes show minor errors.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Declassified government form with aircraft mission timeline; OCR captured most text accurately but mishandled some redacted field indicators and misread 'AH/GMESH' as 'AWGMESH'.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified intelligence form with structured fields and narrative sections. OCR struggles with the pink declassification header (reads 'V.G R1cnard A. 1-'amso~' instead of 'MG Richard A. Harrison') and misinterprets redaction boxes as text characters; main document body is mostly accurate.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Structured military form with multiple redacted fields (marked with classification codes like 1.4a, 1.4g); OCR captures the form structure and most readable text accurately, but represents some redaction boxes inconsistently (showing ~ and | characters instead of box notations) and misreads the Friendly Aircraft Location field where multiple redactions overlap.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Form content clearly captured, but OCR struggled with redacted coordinate sections (reading tildes and nonsense characters instead of blanked areas) and misread 'Harrison' as 'He:iison'. Red redaction bars and classification stamps interfered with some text recognition.",
+      "page": 7
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 84.1,
+    "content_type_counts": {
+      "typeset": 1,
+      "form": 7,
+      "redacted": 3,
+      "typewritten": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 6,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 7
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 4,
+      "faded": 1,
+      "redacted": 4
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 6,
+      "partial": 1
+    }
+  }
+}

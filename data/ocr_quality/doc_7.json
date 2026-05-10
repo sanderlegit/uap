@@ -1,0 +1,177 @@
+{
+  "doc_id": 7,
+  "title": "DOW-UAP-D23, Mission Report, United Arab Emirates, October 2023",
+  "agency": "Department of War",
+  "filename": "dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+  "total_pages": 9,
+  "pages_sampled": 9,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 68,
+      "notes": "Military mission narrative with extensive redactions shown as red strikethrough; OCR captures readable mission timeline and events accurately but renders redacted portions as garbage characters; scan itself is crisp and perfectly aligned.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Government administrative form with structured fields is mostly captured correctly, but OCR struggled with redacted classification markings and produced garbled text for restricted fields (e.g., 'Declass fled' typo, scrambled caveat data), plus errors on redacted contact information encoded as '3.5c,(b)(6)' notation.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Declassified government form with redaction boxes and classification stamps; OCR accurately captured structured form fields and most text, but struggled with garbled stamp text and some redaction code characters.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Well-structured military form with equipment specifications captured mostly correctly; minor character confusions (ANDAS1 vs ANDASl, em-dash encoding) and redaction header garbling, but main content intact.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Military mission status form with mission data (times, locations, callsigns) captured accurately, but classification header is severely garbled and redacted/redline portions create OCR artifacts throughout.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Declassified military ISR report with structured sections; OCR captures most readable text accurately but shows corruption around redacted sections and produces garbled characters (e.g., 'Septel\"lber' for September, 'filir>~h4a' for redacted data).",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 78,
+      "notes": "Structured UAP incident report form with mostly correct OCR, but significant errors around redacted/boxed sensitive fields (coordinates, tail numbers showing as tildes/garbled text) and character recognition issues (MOR vs MDR, redaction notation misread).",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 76,
+      "notes": "Declassified military UAP incident report form with numerous redactions (1.4a/1.4g classification marks); OCR captures most bulleted fields correctly but fails on header (reads 'IIIMT UHINI' instead of proper header), garbles sections with redaction overlays (e.g., 'AT 02412,~OBSERVED IX UAP IYO'), and misspells 'Declassified' and 'September' in the classification line.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "UAP reporting form with multiple redacted sections (shown as red boxes/stamps); OCR captured most form fields accurately but made errors reading coordinates through redaction boxes, misread the slash in 'GENTEXT/UAP' as 'I', and struggled with header text and redacted content areas.",
+      "page": 9
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.11,
+    "avg_text_coverage_pct": 80.6,
+    "content_type_counts": {
+      "typewritten": 6,
+      "form": 7,
+      "redacted": 2
+    },
+    "source_medium_counts": {
+      "scan_original": 7,
+      "scan_photocopy": 2
+    },
+    "scan_quality_counts": {
+      "excellent": 1,
+      "good": 8
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 6,
+      "redacted": 6,
+      "faded": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 7,
+      "partial": 2
+    }
+  }
+}

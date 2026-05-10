@@ -1,0 +1,53 @@
+{
+  "doc_id": 98,
+  "title": "FBI Photo B7",
+  "agency": "FBI",
+  "filename": "fbi-photo-b7.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "diagram",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted document with a coordinate diagram (crosshairs and numerical axes) as primary content; only visible text is timestamp '12/31/99 18:10:02' at bottom left, but OCR captured nothing.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "diagram",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 0.0,
+    "content_type_counts": {
+      "diagram": 1,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "faded": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

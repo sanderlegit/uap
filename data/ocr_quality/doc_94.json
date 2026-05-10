@@ -1,0 +1,53 @@
+{
+  "doc_id": 94,
+  "title": "FBI Photo B3",
+  "agency": "FBI",
+  "filename": "fbi-photo-b3.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "redacted",
+        "diagram"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 5,
+      "notes": "Heavily redacted page with visible timestamp (12/31/99 18:11:34) and coordinate grid; OCR captured only '..' and missed all readable elements including the timestamp and numerical scale.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "partial",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 5.0,
+    "content_type_counts": {
+      "redacted": 1,
+      "diagram": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "faded": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 1
+    }
+  }
+}

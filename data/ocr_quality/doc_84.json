@@ -1,0 +1,53 @@
+{
+  "doc_id": 84,
+  "title": "FBI Photo B16",
+  "agency": "FBI",
+  "filename": "fbi-photo-b16.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Document heavily redacted with multiple black bars obscuring nearly all content; only timestamp (12/31/99 18:20:41) is visible at bottom; excessive grain and noise, with crosshair marks and coordinate indicators suggesting surveillance or classified imagery.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "poor",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 2.0,
+    "avg_text_coverage_pct": 0.0,
+    "content_type_counts": {
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "poor": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "dark_scan": 1,
+      "bleed_through": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

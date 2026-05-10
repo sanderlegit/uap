@@ -1,0 +1,47 @@
+{
+  "doc_id": 50,
+  "title": "NASA-UAP-VM1, Apollo 12, 1969",
+  "agency": "NASA",
+  "filename": "nasa-uap-vm1-apollo-12-1969.jpg",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "photograph",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Lunar surface photograph with annotation overlays (yellow bounding boxes); no extractable text content—OCR correctly returned empty.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "photograph",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "not_applicable",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": null,
+    "content_type_counts": {
+      "photograph": 1,
+      "diagram": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 1
+    },
+    "ocr_artifact_counts": {},
+    "ocr_accuracy_counts": {
+      "not_applicable": 1
+    }
+  }
+}

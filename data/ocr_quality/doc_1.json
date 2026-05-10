@@ -1,0 +1,124 @@
+{
+  "doc_id": 1,
+  "title": "DOW-UAP-D12, Mission Report, Iraq, May 2022",
+  "agency": "Department of War",
+  "filename": "dow-uap-d12-mission-report-iraq-may-2022.pdf",
+  "total_pages": 6,
+  "pages_sampled": 6,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Declassified military MISREP form with classification-level redaction markers (1.4a, 3.5c) shown as boxes and red strikethrough text. OCR accurately captured narrative timestamps, operations metadata, and all visible text content despite marked redactions.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Classified military form documenting tasking order details with redacted personnel information; OCR accurately captured all readable structured fields, section headers, and FOIA exemption codes despite visual redaction marks.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Structured military equipment specification form with all field labels and values accurately captured; classification and redaction markings (red strikethrough) are visible but not rendered with visual styling in OCR text.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Mission timeline form with structured fields (takeoff, on-station, landing data); redactions shown as red strikethrough and labeled with exemption codes; OCR captures all visible non-redacted text accurately with proper handling of dates, callsigns, and location codes.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified ISR report with structured form fields and FOIA redactions; OCR captures most text accurately but inconsistently handles redacted fields (e.g., Aircraft Callsign shows exemption code instead of redaction indicator).",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Declassified UAP incident report form with structured field labels and narrative text captured accurately; redaction boxes (1.4a exemptions) and classification markings are visible but formatting preservation around these elements may not be perfect.",
+      "page": 6
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 91.2,
+    "content_type_counts": {
+      "typewritten": 3,
+      "form": 6,
+      "redacted": 2,
+      "typeset": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 3,
+      "scan_photocopy": 3
+    },
+    "scan_quality_counts": {
+      "good": 6
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 2,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 4,
+      "accurate": 2
+    }
+  }
+}

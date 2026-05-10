@@ -1,0 +1,189 @@
+{
+  "doc_id": 12,
+  "title": "DOW-UAP-D32, Mission Report, Syria, October 2024",
+  "agency": "Department of War",
+  "filename": "dow-uap-d32-mission-report,-syria-october-2024.pdf",
+  "total_pages": 10,
+  "pages_sampled": 10,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Classified military document with clear typewritten text and multiple redactions (gray boxes). OCR captured nearly all content accurately but contains one spelling error: 'ARRIEAL' should be 'AERIAL' in the UAP observation line.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 92,
+      "notes": "Clean scan of a declassified military operational report form with classification markings and redaction placeholders; OCR accurately captures all visible structured field content including FOIA exemption citations with crisp text and no distortion.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Classified military form with FOIA redaction codes clearly visible; OCR accurately captures all readable field labels, values, and redaction notices with minimal artifacts.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Military mission timeline form with classified redactions (b)(1) codes clearly visible and correctly captured by OCR; crisp scan with no skew, noise, or degradation; essentially all readable text accurately transcribed.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified military ISR mission report with proper redaction handling; header faded but all visible unredacted text captured accurately including timestamps, ICAO codes, and mission details.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Military intelligence ISR report form with classified redactions; OCR captures main text accurately, correctly skipping redacted sections.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Classified military deconfliction form with structured UAP incident report; OCR accurately captures non-redacted text and redaction exemption codes, with clear readability throughout.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Government UAP incident report form with visible redaction boxes containing classification codes; OCR captured main field content and narrative accurately, with minor formatting inconsistencies in redaction code placement.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "form",
+        "typeset",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Classified ISR report with multiple redaction boxes; OCR captures most text correctly including labels, dates, and metadata fields, though redaction handling and precise spacing in masked sections may vary slightly.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified military assessment form with clear typewritten text; OCR captured all substantive content accurately including classification markings, weather data, and effectiveness metrics despite faded red header declassification notice.",
+      "page": 10
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.2,
+    "avg_text_coverage_pct": 91.5,
+    "content_type_counts": {
+      "typewritten": 6,
+      "redacted": 5,
+      "form": 9,
+      "typeset": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 2,
+      "scan_original": 8
+    },
+    "scan_quality_counts": {
+      "good": 8,
+      "excellent": 2
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 5,
+      "faded": 1,
+      "redacted": 1,
+      "light_scan": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 6,
+      "accurate": 4
+    }
+  }
+}

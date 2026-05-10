@@ -1,0 +1,47 @@
+{
+  "doc_id": 87,
+  "title": "FBI Photo B19",
+  "agency": "FBI",
+  "filename": "fbi-photo-b19.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "photograph",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 2,
+      "notes": "Scanned photograph of a measurement diagram or coordinate system with crosshairs and numbered scale (-15 to +15); heavily redacted with black boxes obscuring most content; only visible text is timestamp '12/31/99 18:18:53' at bottom left, which OCR failed to capture.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "photograph",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 2.0,
+    "content_type_counts": {
+      "photograph": 1,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 1
+    },
+    "ocr_artifact_counts": {},
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

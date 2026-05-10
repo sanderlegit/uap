@@ -1,0 +1,55 @@
+{
+  "doc_id": 77,
+  "title": "FBI Photo B1",
+  "agency": "FBI",
+  "filename": "fbi-photo-b1.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "diagram",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "redacted",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Measurement diagram with coordinate grid and heavily redacted text blocks; OCR extracted nothing despite visible numerical axes and timestamp (12/31/99 18:11:19).",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "diagram",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 0.0,
+    "content_type_counts": {
+      "diagram": 1,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "redacted": 1,
+      "dark_scan": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

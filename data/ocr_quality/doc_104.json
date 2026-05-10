@@ -1,0 +1,79 @@
+{
+  "doc_id": 104,
+  "title": "NASA-UAP-D5, Apollo 17 Crew Debriefing for Science, 1973",
+  "agency": "NASA",
+  "filename": "nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
+  "total_pages": 3,
+  "pages_sampled": 3,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "garbled",
+      "text_coverage_pct": 40,
+      "notes": "Clear NASA Apollo 17 cover page with excellent scan quality, but OCR output is severely corrupted with repeated noise characters (dots, colons, underscores) obscuring most readable text despite image clarity.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "OCR misread page number as 'll9' instead of '119' (1 confused with l); otherwise text is captured accurately with good contrast and minimal scanning artifacts.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Crisp typewritten transcript of testimony; OCR captured nearly all text accurately with only minor capitalization inconsistency ('Just' vs 'just') and an appropriate uncertainty marker for a difficult name.",
+      "page": 3
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.33,
+    "avg_text_coverage_pct": 77.0,
+    "content_type_counts": {
+      "cover_page": 1,
+      "form": 1,
+      "typewritten": 2
+    },
+    "source_medium_counts": {
+      "scan_original": 2,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "excellent": 1,
+      "good": 2
+    },
+    "ocr_artifact_counts": {
+      "noise": 1
+    },
+    "ocr_accuracy_counts": {
+      "garbled": 1,
+      "mostly_accurate": 2
+    }
+  }
+}

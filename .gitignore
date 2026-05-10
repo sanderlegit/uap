@@ -50,3 +50,8 @@ pulse.db
 pulse.db-shm
 pulse.db-wal
 data/pulse_lsh.pkl
+uap_documents.db
+
+# Runtime artifacts
+.claude/
+*.log

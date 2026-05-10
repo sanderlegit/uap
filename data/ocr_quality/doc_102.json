@@ -1,0 +1,232 @@
+{
+  "doc_id": 102,
+  "title": "NASA-UAP-D2, Apollo 17 Transcript, 1972",
+  "agency": "NASA",
+  "filename": "nasa-uap-d2-apollo-17-transcript-1972.pdf",
+  "total_pages": 16,
+  "pages_sampled": 16,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Apollo 17 mission transcript with yellow highlighting on key passages about bright particles; OCR errors include 'bunce' for 'bunch', erroneous quote mark before 'They're', and minor line-break misalignment on 'fragments'.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Typewritten transcript of Apollo mission radio communications with yellow highlighting overlaid post-scan. OCR captures speaker labels, timestamps, and dialogue accurately; minor ambiguities in aged typewriter fonts don't significantly impact overall readability.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 97,
+      "notes": "Apollo mission transcript with timestamp and speaker identifiers; yellow highlight markup on original document; OCR accurately captures entire conversation text with proper formatting.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Apollo mission radio transcript with several OCR errors: 'gosh' misread as 'gr.,sh', 'DELTA-V in' missing space, scrambled line breaks in 'check the covers' section, and inconsistent spacing around colons (59:30 rendered as '59 : 30').",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten transcript of tape recording with timestamps and speaker labels (CDR, CMP, CC). Yellow highlighting overlaid on portions of dialogue. OCR accurately captured all visible text with minimal errors.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten transcript with one OCR error: timestamp shows 'l8' instead of '18' (numeral 1 misread as lowercase L), otherwise excellent accuracy and complete text capture.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 97,
+      "notes": "Spacecraft communication transcript between CMP, CC, and CDR crew discussing ALFMED stowage and LOI abort chart briefing; OCR accurately captured all text with columnar layout linearized, ending mid-sentence with highlighted CDR observation of a bright rotating object.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Apollo mission audio transcript with yellow highlighting applied to key passages; text content captured accurately but speaker labels and timestamps were reorganized incorrectly at the document start, disrupting the dialogue structure.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten Apollo mission communications transcript with modern yellow highlighting on key passages; OCR shows one error ('Ja.ck' instead of 'Jack') but otherwise accurately captures the dialogue, timestamps, and speaker identifiers.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 99,
+      "notes": "Apollo mission transcript scan with two character-level OCR errors: 'tvo' for 'two' and 'we' 11' for 'we'll'; otherwise complete and accurate capture of typewritten text.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Apollo mission transcript with clear typewritten text. OCR accurately captures all dialogue and speaker labels (CDR, CMP, LMP, CC) with minimal errors—only a possible comma/period discrepancy at the very end.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten conversation transcript with crisp, clear text and good alignment; OCR captures most content accurately with minor fragmentation in early dialogue exchanges and occasional hyphenation inconsistencies.",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten transcript of radio conversation with crisp scan quality; OCR has 3 minor character-level errors: 'Okey' (should be 'Okay'), 'todey' (should be 'today'), 'deys' (should be 'days').",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten transcript captured almost completely; minor OCR errors include 'I.MP' (should be 'IMP') and 'It I s' (should be \"It's\"), with some special dash characters incorrectly encoded.",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 97,
+      "notes": "Apollo 17 air-to-ground transcript with one OCR error: 'TRANSCRIPrION' (lowercase r) should be 'TRANSCRIPTION'; otherwise captures all speaker labels, timestamps, and dialogue accurately.",
+      "page": 15
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 97,
+      "notes": "Typewritten transcript of Apollo lunar communications with yellow highlighting on passages about a surface flash observation; OCR is accurate with clear scan and well-preserved text.",
+      "page": 16
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.06,
+    "avg_text_coverage_pct": 95.2,
+    "content_type_counts": {
+      "typewritten": 16
+    },
+    "source_medium_counts": {
+      "scan_original": 7,
+      "scan_photocopy": 9
+    },
+    "scan_quality_counts": {
+      "good": 15,
+      "excellent": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 11,
+      "accurate": 5
+    }
+  }
+}

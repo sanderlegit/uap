@@ -1,0 +1,147 @@
+{
+  "doc_id": 14,
+  "title": "DOW-UAP-D35, Mission Report, Greece, October 2023",
+  "agency": "Department of War",
+  "filename": "dow-uap-d35-mission-report-greece-october-2023.pdf",
+  "total_pages": 7,
+  "pages_sampled": 7,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typeset",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "Typeset government form with red redaction bars and handwritten classification marks (1.4a); OCR misreads timestamps (1504Z→15042,I; 1515Z→151$2; 1618Z→16182), struggles with overlaid handwritten notations, and mangles redacted content, but captures most narrative and admin sections despite errors.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "character_substitution"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Military/government form with extensive redactions; OCR captures main structural elements and most field labels correctly, but systematically garbles redaction code characters (§ for ), } for ), missing characters).",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified military form with well-structured personnel and equipment fields; OCR captured layout and most text correctly but garbled some redaction code representations (e.g., email field shows noise characters mixed with redaction markers).",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Military mission report form with structured timeline sections (Takeoff, Landing, On Station); OCR accurately captured all visible text including redacted fields marked with classification codes; minimal errors.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Declassified military ISR report with structured form data and multiple redaction boxes. OCR captured layout and most content correctly, but struggled with some character recognition (VE«ICLES vs VEHICLES, AS~OCIATED vs ASSOCIATED, ACTVITY vs ACTIVITY, N vs NO) and redaction box handling, where boxes containing '1.4a' sometimes appear as text in the OCR output rather than being properly masked.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Form captures most content correctly, but OCR struggles with black redaction boxes, rendering them as tildes, exclamation marks, and other characters (e.g., 'MDS Type / Asset Type~ 1.4a, 1.4g I' and 'Ha•rison' instead of 'Harrison').",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Declassified UAP incident report with heavy redactions; OCR struggled significantly with redaction boxes and had multiple character-level errors: STRAIGHT→IGHT (missing prefix), THEIR→HEIR, SPOTTED→SPOTTE, RTB→RIB, Richard→Ricrard, and Harrison→Har•1sor in the header.",
+      "page": 7
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 81.9,
+    "content_type_counts": {
+      "typeset": 1,
+      "form": 7,
+      "redacted": 4,
+      "typewritten": 3
+    },
+    "source_medium_counts": {
+      "scan_original": 6,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 7
+    },
+    "ocr_artifact_counts": {
+      "redacted": 4,
+      "stamps_marks": 2,
+      "character_substitution": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 1,
+      "mostly_accurate": 6
+    }
+  }
+}

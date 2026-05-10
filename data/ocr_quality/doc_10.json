@@ -1,0 +1,125 @@
+{
+  "doc_id": 10,
+  "title": "DOW-UAP-D28, Mission Report, Iraq, September 2024",
+  "agency": "Department of War",
+  "filename": "dow-uap-d28-mission-report-east-china-sea-2024.pdf",
+  "total_pages": 6,
+  "pages_sampled": 6,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typeset",
+        "form"
+      ],
+      "source_medium": "digital_native",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Military mission report with perfect OCR capture of typeset text and structured metadata; redacted sections correctly represented; no scan artifacts or alignment issues.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Document is a military tasking order form with clear text and heavy redactions shown as strikethrough/boxes. OCR captured main body accurately but missed the pink-colored declassification statement in top right corner (Declassified by MG Richard A. Harrison, etc.).",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Military equipment specifications form for operations center personnel. Redaction box over callsign field handled correctly in OCR as FOIA exemption code. All structured fields and equipment data transcribed accurately with crisp, well-aligned scan.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 97,
+      "notes": "Military aircraft mission timeline form with redacted callsigns and asset details; OCR accurately captured dates, times, field labels, and all unredacted values with proper formatting.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified USCENTCOM form with embedded FOIA exemption codes for redacted sections; OCR captures structure and unredacted text accurately, with expected representation of redacted sensitive information.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Declassified UAP incident report with clearly captured metadata fields and narrative sections; OCR accurately represents redacted areas as FOIA exemption codes; pink declassification stamp and minor age-related discoloration present but do not significantly impact readability.",
+      "page": 6
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.33,
+    "avg_text_coverage_pct": 92.7,
+    "content_type_counts": {
+      "typeset": 1,
+      "form": 6,
+      "typewritten": 2
+    },
+    "source_medium_counts": {
+      "digital_native": 1,
+      "scan_original": 4,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "excellent": 2,
+      "good": 4
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 2,
+      "redacted": 1,
+      "faded": 1
+    },
+    "ocr_accuracy_counts": {
+      "accurate": 2,
+      "mostly_accurate": 4
+    }
+  }
+}

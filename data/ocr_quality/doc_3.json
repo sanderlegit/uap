@@ -1,0 +1,145 @@
+{
+  "doc_id": 3,
+  "title": "DOW-UAP-D16, Mission Report, Syria, July 2022",
+  "agency": "Department of War",
+  "filename": "dow-uap-d16-mission-report-syria-july-2022.pdf",
+  "total_pages": 7,
+  "pages_sampled": 7,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Mission narrative and operational details captured accurately; classification headers, strikethrough redactions, and FOIA exemption boxes heavily corrupted by OCR, affecting approximately 25% of text.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Mission report form with clear typewritten text and FOIA-redacted sections; OCR captures structure and most content accurately but struggles slightly with redaction box text and strikethrough headers (SECRET/NOFORN).",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Form with FOIA exemption markings captures most field labels correctly, but misses the red strikethrough 'SECRET/NOFORN' classification header and loses formatting of redaction boxes.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Document is a military aircraft mission report form with clear, well-scanned original. OCR corrupts the SECRET/NOFORN header as 'tfflf!ltl'PifN81'8Nf' but accurately captures the mission timeline, timestamps, and redaction codes (1.4a, 1.4c, 1.4g); footer declassification text is rendered correctly.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Classified ISR mission report with multiple redacted sections (shown as black boxes); OCR severely garbled the SECRET//NOFORN header and mishandled redacted areas with tildes/strikethrough, though bulk narrative and unredacted structural text were mostly captured correctly.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "garbled_text_in_redacted_areas"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 76,
+      "notes": "Operational reconnaissance report with multiple redacted coordinate references. OCR captures main narrative text accurately but produces garbled character sequences (~lua], ~(@, <iLiil) where black redaction bars appear over grid coordinates and location codes, reducing overall fidelity.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 80,
+      "notes": "Form with structured UAP reporting fields captured mostly correctly, but OCR struggled significantly with redacted/strikethrough portions (showing garbled characters instead of redaction marks) and boxed credential fields, producing errors like '~' for redacted sections and occasional character misreads (IYO vs IVO).",
+      "page": 7
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.14,
+    "avg_text_coverage_pct": 79.1,
+    "content_type_counts": {
+      "typewritten": 3,
+      "redacted": 4,
+      "form": 5
+    },
+    "source_medium_counts": {
+      "scan_original": 6,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 6,
+      "excellent": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 3,
+      "redacted": 3,
+      "garbled_text_in_redacted_areas": 1,
+      "cut_off": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 5,
+      "partial": 2
+    }
+  }
+}

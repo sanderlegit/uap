@@ -1,0 +1,69 @@
+{
+  "doc_id": 109,
+  "title": "FBI September 2023 Sighting - Serial 5",
+  "agency": "FBI",
+  "filename": "serial-4-redacted_redacted.pdf",
+  "total_pages": 2,
+  "pages_sampled": 2,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FD-302 FBI form dated October 2023 describing a UAP/UFO sighting incident with extensive redacted sections; OCR captured zero text despite substantial readable content on the page.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI FD-302 form with extensive name/identifier redactions; main narrative text captured accurately but OCR shows spurious '(/' patterns at paragraph breaks that don't match visual formatting.",
+      "page": 2
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 42.5,
+    "content_type_counts": {
+      "typewritten": 1,
+      "form": 2,
+      "redacted": 2
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 2
+    },
+    "scan_quality_counts": {
+      "good": 2
+    },
+    "ocr_artifact_counts": {
+      "redacted": 1,
+      "noise": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1,
+      "mostly_accurate": 1
+    }
+  }
+}

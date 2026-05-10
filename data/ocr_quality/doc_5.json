@@ -1,0 +1,199 @@
+{
+  "doc_id": 5,
+  "title": "DOW-UAP-D19, Mission Report, Syria, February 21, 2023",
+  "agency": "Department of War",
+  "filename": "dow-uap-d19-mission-report-syria-february-21-2023.pdf",
+  "total_pages": 10,
+  "pages_sampled": 10,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 68,
+      "notes": "Header area (first line) is severely garbled with character corruption; main narrative mission timeline is captured accurately with proper timestamps, locations, and flight details, but redaction boxes and classification marks cause minor formatting inconsistencies.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "This is a military intelligence form with structured field data mostly captured correctly, but the header classification markings are severely garbled and redacted/exemption text areas produce corrupted character sequences.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Personnel information form with FOIA redaction boxes; OCR captured structure and most text but with moderate character-level errors in field labels (e.g., 'Numller' for 'Number', 'Fall' for 'Full Name', 'Nunww' for 'Number'), especially near redaction boxes, and corrupted exemption codes.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Declassified military aircraft equipment specification form with mostly accurate OCR; the top SECRET/NOFORN header is garbled, and minor character errors exist (MW-51/53 vs MJU-51/53, M61Al vs M61A1), but the bulk of structured field data is correctly captured.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Military mission document with good scan quality; OCR captured most content correctly but has scattered character-level errors including 'Callsign' split into 'C allsign', 'DCA' as 't DCA', and a garbled strikethrough line 'EiJl.l&i• +Q Qi th, i'Hi'.¥)' instead of '-(S//REL TO USA, FVEY)-'.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "garbled text in redacted sections",
+        "classification header noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Mission briefing form with structured data is largely captured correctly; primary OCR errors occur in redacted/strikethrough sections and classification markings, where character recognition degrades, while core mission details (times, locations, callsigns) are accurately preserved.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 67,
+      "notes": "Military air refueling form with moderate OCR accuracy; classification headers and redacted text areas heavily garbled (e.g., 'SIH:fltlfflHfflPOttn' for 'SECRET/NOFORN', corrupted gentext lines), but structured data fields and numeric values mostly captured correctly.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Structured form with classified redactions and declassification stamps; OCR corrupted the SECRET/NOFORN header and the Gentext narrative line with character substitution errors, but captured ~90% of field content correctly including timestamps, system names (APG-82, RADAR JAMMING), and numeric values (FL270, 3 minutes, frequency range).",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified government briefing document with structured sections; OCR has character recognition failures on strikethrough text and special characters (e.g., '(S/NF)' rendered as 'tBONF)' and 'tSilNf}'), but overall content structure and meaning preserved despite redaction boxes.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 76,
+      "notes": "Form-structured data mostly captured correctly, but OCR struggles with strikethrough text and redaction boxes; garbled \"SileJIBll¥'i8li8Nf\" for GENTEXT/NOFORN footer, missing slash in GENTEXT/AIRSIGHT, and merged redacted box text (SHADDADil1.4al).",
+      "page": 10
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 78.1,
+    "content_type_counts": {
+      "typewritten": 5,
+      "form": 9,
+      "redacted": 3
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 4,
+      "scan_original": 6
+    },
+    "scan_quality_counts": {
+      "good": 10
+    },
+    "ocr_artifact_counts": {
+      "noise": 2,
+      "stamps_marks": 6,
+      "redacted": 5,
+      "dark_scan": 1,
+      "garbled text in redacted sections": 1,
+      "classification header noise": 1,
+      "bleed_through": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 7,
+      "partial": 3
+    }
+  }
+}

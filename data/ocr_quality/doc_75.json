@@ -1,0 +1,79 @@
+{
+  "doc_id": 75,
+  "title": "State Department UAP Cable 1, Papua New Guinea, January 28, 1985",
+  "agency": "Department of State",
+  "filename": "dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
+  "total_pages": 3,
+  "pages_sampled": 3,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 96,
+      "notes": "State Department telegram with clear typewritten text and official header/footer. OCR accurately captured all routing information, metadata fields, and body paragraph about Papua New Guinea overflight inquiry from January 1985. Released in Full stamp and signature block also captured correctly.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Declassified government memo with clean typewritten text and good alignment. One OCR error detected: reference number shows '280704Z' in image but OCR transcribed as '2807042'.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 100,
+      "notes": "Final page of declassified document with administrative markings (classification labels, document IDs, dissemination rules). OCR accurately captured all visible text including headers, footers, and page numbering.",
+      "page": 3
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 98.0,
+    "content_type_counts": {
+      "typewritten": 2,
+      "form": 2,
+      "cover_page": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1,
+      "scan_original": 2
+    },
+    "scan_quality_counts": {
+      "good": 3
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "accurate": 2,
+      "mostly_accurate": 1
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "doc_id": 81,
+  "title": "FBI Photo B13",
+  "agency": "FBI",
+  "filename": "fbi-photo-b13.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 2,
+      "notes": "Heavily redacted document scanned from microfilm with extensive grain noise; nearly all text content is obscured by black redaction bars, with only a timestamp (12/31/99 18:19:54) barely visible at the bottom.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "poor",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 2.0,
+    "avg_text_coverage_pct": 2.0,
+    "content_type_counts": {
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "poor": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "dark_scan": 1,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

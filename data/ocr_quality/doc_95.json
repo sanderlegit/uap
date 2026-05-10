@@ -1,0 +1,53 @@
+{
+  "doc_id": 95,
+  "title": "FBI Photo B4",
+  "agency": "FBI",
+  "filename": "fbi-photo-b4.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "diagram",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted document with coordinate axes (numbered -15 to 15) and visible timestamp (12/31/99 18:12:16) at bottom, but OCR captured zero characters despite readable text elements present.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "diagram",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 0.0,
+    "content_type_counts": {
+      "diagram": 1,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

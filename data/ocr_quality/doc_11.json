@@ -1,0 +1,136 @@
+{
+  "doc_id": 11,
+  "title": "DOW-UAP-D3, Mission Report, Arabian Gulf, 2020",
+  "agency": "Department of War",
+  "filename": "dow-uap-d3-mission-report-arabian-gulf-2020.pdf",
+  "total_pages": 7,
+  "pages_sampled": 7,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Heavily redacted military classification form with metadata; OCR captured structure and visible text accurately but missed formatting like strikethrough on 'SECRET' and italicized section headers.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Typewritten military form with three contact sections (POC, QC, APPROVER) containing redacted PII; OCR accurately captured all visible text, field labels, redaction codes (b)(1)1.4a and (b)(6)/(b)(3) 10 U.S.C.), and unredacted values like service and email domains.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 96,
+      "notes": "Government form documenting personnel information and aircraft/avionics configuration; multiple sections contain intentional redactions marked with (b)(1)1.4a classification codes; OCR accurately captured all visible field labels, section headers, and redaction markers with no apparent errors.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Classified document form with multiple redaction boxes; OCR accurately captures visible structure, labels, and unredacted text including classification marking (SECRET//REL TO USA, FVEY); redaction markers represented as (b)(1)1.4a.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "redacted",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted page showing 'Global Campaign Plan:' heading and redaction markers (b)(1)1.4a and (b)(1)4a, but OCR captured no text despite visible, readable content.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Government UAP observation form with extensive redactions; OCR captured visible field labels accurately but occasionally split redaction markers incorrectly (e.g., '(b)(' fragment at 'Number of UAP Sighted').",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typed government form with multiple redacted sections (marked as (b)(1)1.4a). OCR captures form structure, visible text, and redactions accurately with no artifacts or skew.",
+      "page": 7
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.14,
+    "avg_text_coverage_pct": 76.6,
+    "content_type_counts": {
+      "form": 6,
+      "typewritten": 2,
+      "redacted": 5
+    },
+    "source_medium_counts": {
+      "scan_original": 6,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "excellent": 1,
+      "good": 6
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 1,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 4,
+      "accurate": 2,
+      "empty": 1
+    }
+  }
+}

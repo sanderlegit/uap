@@ -1,0 +1,3140 @@
+{
+  "doc_id": 114,
+  "title": "65_HS1-834228961_62-HQ-83894_Section_2",
+  "agency": "FBI",
+  "filename": "65_hs1-834228961_62-hq-83894_section_2.pdf",
+  "total_pages": 194,
+  "pages_sampled": 194,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified FBI/DoJ document cover with substantial visible text including administrative stamps, classification marks, case numbers, and handling instructions, but OCR completely failed despite legible scan quality.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI Office Memorandum from August 1947 about flying discs with clearly legible typewritten body text, but OCR captured nothing despite good scan quality and readable content.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with poor legibility throughout; classification markings and stamps visible at bottom confirm document origin; severe fading prevented OCR extraction.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten office memorandum regarding a Flying Disc incident at Hackensack with handwritten margin annotations and official stamps; OCR extraction produced no text despite clear text legibility.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document with multiple ink blots and a blue declassification stamp; text is too faint for OCR to extract any characters.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Formal government interview letter dated August 13, 1947, with clearly legible typewritten text describing a UFO sighting in New Jersey, but OCR completely failed to extract any content despite excellent readability.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Full-page typewritten letter dated August 13, 1947 with clear, readable text describing UAP sightings, but OCR returned no text despite substantial visible content; some black marks/stamps visible at top of page.",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Pink photocopy of FBI teletype from 1947 with clear typewritten text describing a UFO sighting, but OCR captured no text despite substantial readable content; handwritten annotations and redaction stamps are present.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded photocopy of classified document cover page with visible classification markings and document metadata at bottom, but OCR extracted no text despite visible content.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government document on pink carbon copy paper with substantial readable text content, but OCR extraction completely failed—likely due to the light pink background confusing the OCR engine despite good visual scan quality.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded declassified document with visible teletype and received stamps but the body text is nearly completely illegible due to severe fading, explaining the empty OCR output.",
+      "page": 11
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "skew"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 office memorandum regarding flying disc report from Detroit Office; substantial typewritten body text clearly visible but OCR extracted nothing; multiple handwritten annotations and date stamps throughout.",
+      "page": 12
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Faded typewritten government document with visible classification stamps, reference dates, and markings; OCR completely failed to capture any text despite clear presence of content, likely due to low contrast and document aging.",
+      "page": 13
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains substantial 1947 typewritten text about flying disc investigations and Raymond Lane background, but OCR completely failed to extract any content despite clear legibility.",
+      "page": 14
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI 1947 telemeter memo with crisp, legible typewritten text about a Chicago flying disc sighting, but OCR captured zero characters despite clearly readable content.",
+      "page": 15
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded scan of 1947 FBI document with visible administrative stamps, but body text is degraded to near-illegibility, explaining the zero OCR capture.",
+      "page": 16
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government memorandum about flying saucers with extensive handwritten annotations and declassification stamps; OCR extraction completely failed despite substantial readable text content.",
+      "page": 17
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Classified FBI memo dated August 8, 1947 with clear, legible typewritten text in multiple paragraphs plus handwritten annotations and red classification stamps; OCR returned no text despite substantial readable content throughout the page.",
+      "page": 18
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten FBI memorandum from July 1947 regarding Richard F. Shaver and flying saucer sightings, with handwritten annotations in red and blue ink; OCR captured no text despite excellent legibility of the typewritten content.",
+      "page": 19
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten memo with clear, readable text describing a flying disk report and contact information for Richard F. Shaver, with handwritten date/receipt notations and a red redaction box on 'GAYNOR'; OCR completely failed to capture any of the visible text despite good scan quality.",
+      "page": 20
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 military memo about flying saucer observations with clearly legible typewritten text and archive marks at top, but OCR failed entirely to extract any content despite good document readability.",
+      "page": 21
+    },
+    {
+      "content_types": [
+        "diagram"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Vintage USAF aeronautical chart with visible header text and map labels, but OCR captured nothing despite readable text elements present.",
+      "page": 22
+    },
+    {
+      "content_types": [
+        "diagram",
+        "mixed"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged aeronautical chart document with multi-panel layout including indexed content, aeronautical maps, and reference diagrams; all text is significantly faded and OCR failed completely to extract any content.",
+      "page": 23
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memorandum from August 6, 1947 regarding flying discs with substantial readable typewritten text; OCR completely failed to capture any text despite clear content, likely due to pink background interfering with text detection.",
+      "page": 24
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded declassified document with pink overlay and archive punch holes; rubber stamp markings visible throughout but typewritten text is too faint for OCR extraction.",
+      "page": 25
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains substantial typewritten text about interviews with military personnel and UFO sightings, but OCR captured nothing despite clear legibility; likely failed on microfilm pink background.",
+      "page": 26
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Pink teletype transmission cover sheet from 1947 with clearly visible header text (RECEIVED TELETYPE UNIT, AUG 6 11 34 PM '47, F.B.I. DEPT. OF JUSTICE) but heavily faded body text; OCR completely failed despite readable content, likely due to color saturation and fading making character recognition impossible.",
+      "page": 27
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memorandum dated August 11, 1947 with substantial typewritten content and handwritten routing/annotation marks; OCR failed completely despite the document being clearly readable.",
+      "page": 28
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten letter dated July 9, 1947, with multiple blue and red stamps/annotations overlaid (FLYING SAUCERS, MRS ARTHUR, EX-34). Document is clearly readable to humans but OCR captured no text.",
+      "page": 29
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 15,
+      "notes": "Mostly blank page with faded declassification stamp and handwritten marks at bottom; OCR failed to capture visible but faint stamped text and administrative markings.",
+      "page": 30
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "mixed"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains a clearly readable 1947 typewritten letter with government stamps and handwritten annotations, but OCR captured zero text; age-related fading and official marks may have hindered recognition despite legible typeface.",
+      "page": 31
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text on aged yellowed paper with visible damage (holes/tears at top) and blue stamp marks; OCR captured nothing despite legible text present on the page.",
+      "page": 32
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten cursive memo dated July 10 regarding 'Flying Disk' with administrative stamps; OCR failed entirely on the cursive handwriting, capturing zero characters.",
+      "page": 33
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains handwritten cursive letter with typed address block at bottom; OCR returned no text, indicating inability to process handwritten content.",
+      "page": 34
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "cut_off"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 5,
+      "notes": "Mostly blank page with a punch hole and faded, barely legible document stamps at bottom; OCR captured none of the minimal faded text visible.",
+      "page": 35
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI laboratory memo from 1947 with typewritten form listing recipients and room numbers, plus substantial handwritten annotations and signatures, yet OCR captured nothing despite clear visible text.",
+      "page": 36
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": null,
+      "notes": "Heavily faded typewritten document with illegible text due to age/microfilm degradation; classification stamps visible at bottom; OCR failure is expected given extreme fading and poor contrast.",
+      "page": 37
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI security division routing form with typewritten supervisor lists and significant handwritten annotations throughout; OCR extraction completely failed despite clearly readable text.",
+      "page": 38
+    },
+    {
+      "content_types": [
+        "handwritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Scan of archival envelope/folder with handwritten case number (appears to be 64-83874-01X) and DECLASSIFIED stamp; OCR failed entirely on cursive handwriting despite clear visibility.",
+      "page": 39
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten text on grid paper with multiple lines visible, including what appears to be coded abbreviations and signatures at bottom; OCR captured zero characters despite substantial visible content, indicating complete OCR failure on handwritten text.",
+      "page": 40
+    },
+    {
+      "content_types": [
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Blank graph paper form with only a small red handwritten annotation at bottom right; OCR correctly identified no printed text on this predominantly empty page.",
+      "page": 41
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Vintage newspaper clipping with clearly readable typeset text in a 'County Irritant' column describing a shortwave radio message; OCR completely failed to extract any content despite legible source material.",
+      "page": 42
+    },
+    {
+      "content_types": [
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "cut_off",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly visible printed text on aged, yellowed paper with red annotation marks, but OCR captured no text; appears to be a narrative document page with moderate readability issues from fading and edge cutoff.",
+      "page": 43
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten FBI letter dated July 21, 1947 from J. Edgar Hoover with substantial readable text, but OCR returned no content despite clear legibility of the document.",
+      "page": 44
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "warped",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded microfilm scan of aged typewritten government memo with multiple paragraphs and a diagram; OCR engine failed to capture any text despite significant visible content on the page.",
+      "page": 45
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Office Memorandum from August 15, 1947 with clearly legible typewritten text about flying discs and Soviet espionage, plus routing marks and distribution list, but OCR captured zero characters despite excellent text readability.",
+      "page": 46
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with two black redaction marks at top and declassification stamp at bottom; OCR failed to capture any content despite visible text throughout.",
+      "page": 47
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten 1947 government memorandum regarding flying discs with clear legible content and handwritten signatures; OCR system failed to capture any text despite readable typewritten body.",
+      "page": 48
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Predominantly blank page with very faint typewritten text at margins and ink stamp marks; OCR failed to capture any visible content despite some faint text being present.",
+      "page": 49
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified 1947 Office Memorandum about flying discs with clearly readable typewritten text (TO/FROM/SUBJECT headers, body paragraphs, RECOMMENDATION section) but zero OCR capture; handwritten signatures and date stamps likely interfered with OCR processing.",
+      "page": 50
+    },
+    {
+      "content_types": [
+        "redacted",
+        "blank"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is heavily faded with two large black redaction marks at top and illegible underlying text throughout; minimal handwritten marks and stamps visible but unreadable.",
+      "page": 51
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten Office Memorandum from 1947 regarding a flying disc incident from Oregon; OCR completely failed to extract any text despite clear readability and good scan quality, indicating a processing failure.",
+      "page": 52
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with significant bleed-through from reverse side makes content nearly illegible; handwritten routing stamps visible at bottom in blue ink but main text body unreadable.",
+      "page": 53
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten page from declassified document with legible text about investigation near Myrtle Creek, Oregon, with redaction marks but OCR captured nothing despite clear readability.",
+      "page": 54
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "cut_off",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 FBI routing/distribution form with clear typewritten text listing bureau officials and routing instructions, but OCR captured zero characters despite visible legible text throughout the page.",
+      "page": 55
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 10,
+      "notes": "Page contains heavily faded typewritten text with clear 'RECEIVED' and 'INTERNAL SECURITY' stamps at top; OCR captured nothing despite visible text throughout the page due to severe fading.",
+      "page": 56
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI urgent teletype (Aug 20, 1947) reporting flying disc sightings in Twin Falls, Idaho with extensive handwritten annotations and markings, but OCR captured zero characters despite substantial readable typewritten content—likely due to the salmon-tinted photocopy background interfering with text recognition.",
+      "page": 57
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Nearly blank page with only faint classification stamps and punch holes visible at edges; minimal legible content justifies zero OCR capture.",
+      "page": 58
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clearly typewritten government report with legible text describing UAP observations, but OCR captured zero characters despite substantial readable content; visible redactions/stamps and age-related discoloration did not prevent human readability.",
+      "page": 59
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Pink separator/cover page with heavily faded stamped text visible at bottom (classification markings, dates, routing stamps) but OCR captured nothing despite visible content.",
+      "page": 60
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Pink carbon/photocopy paper with clearly readable typewritten text (memo to Army Air Forces about UAP phenomena), but OCR captured zero characters despite high text visibility.",
+      "page": 61
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified document with typewritten content and multiple administrative stamps/date marks, but heavily faded with salmon/pink coloration typical of aged photocopy scans; OCR completely failed to capture any visible text despite legible content present.",
+      "page": 62
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten 1947 FBI memo on flying discs with handwritten signatures and red date stamps; OCR extraction completely failed despite clearly readable text throughout the document.",
+      "page": 63
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 Office Memorandum regarding flying discs with substantial typewritten text and handwritten annotations, but OCR captured zero characters despite legible content.",
+      "page": 64
+    },
+    {
+      "content_types": [
+        "blank",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "light_scan",
+        "faded",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page with faded FBI receiving stamps dated 1947 (visible in upper corners); OCR captured nothing despite legible stamp impressions, suggesting OCR engine failed on the light, faded text.",
+      "page": 65
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memo dated August 30, 1947 regarding flying discs investigation with legible typewritten body and handwritten annotations, but OCR extracted zero characters; aging and administrative stamps likely impacted extraction.",
+      "page": 66
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily aged document with extreme text fading, multiple classification and file stamps, OCR captured no text despite visible typewritten content throughout the page.",
+      "page": 67
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Standard Form 64 Office Memorandum dated September 5, 1947, about flying discs with substantial typewritten text and handwritten annotations; OCR failed to capture any of the clearly readable text content.",
+      "page": 68
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document with significant age-related discoloration and bleed-through; OCR produced no output despite visible text, likely due to extreme fading and low contrast making text unrecognizable to the engine.",
+      "page": 69
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI director letter from 1947 with clear typewritten body text and handwritten annotations; OCR captured nothing despite legible content, likely due to aggressive redaction detection or document classification flags on the scan.",
+      "page": 70
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank aged page with two punch holes and extremely faint typewritten text visible in middle section and faded library stamps at bottom; OCR returned zero characters despite visible but severely faded content.",
+      "page": 71
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten personal letter with visible date (8/18/147) and stamps overlaying portions of text; aged cream paper with ink fading and bleed-through make OCR challenging; OCR produced no text capture.",
+      "page": 72
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": null,
+      "notes": "Handwritten letter with clear cursive text that OCR completely failed to capture; contains legible content including salutation, body paragraphs, and signature with date/location at bottom (4/17-6, Stimson, Florence, Ala).",
+      "page": 73
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten cursive letter on aged cream paper with a black redaction mark; OCR system failed completely (0 characters extracted), which is expected for cursive handwriting—text is legible to human reading.",
+      "page": 74
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memorandum (1947) regarding a flying disc with legible typewritten body text, but OCR completely failed to capture any content.",
+      "page": 75
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": null,
+      "notes": "Heavily damaged page with brown archival tape covering most content, ink stamps at top, and faded text barely visible beneath tape residue; OCR correctly found no readable text to extract.",
+      "page": 76
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Back of envelope/cover with handwritten reference number '62-8394-71' in red ink and purple DECLASSIFIED stamp; OCR completely failed to extract any visible text.",
+      "page": 77
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "cut_off"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clearly readable typewritten memo/enclosure cover sheet with handwritten red annotations, but OCR captured zero text despite legible content.",
+      "page": 78
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Black and white photograph of a spherical/circular technical object or device mounted on white backing; no visible text on the page, OCR appropriately empty.",
+      "page": 79
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clear typewritten entry: '#27- \"Flying Disc\" 819 Found Saybrook, Ill. 7-26-47' but OCR captured zero text despite visible, readable content.",
+      "page": 80
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Overhead scientific photograph of a circular disk with horizontal striations and a small rectangular scale reference object; no text content present.",
+      "page": 81
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page shows a typewritten header with title 'Flying Disc' and location 'Found Saybrook, Ill. 7-26-47', reference number 319, and handwritten archival notation; OCR failed completely despite clear, readable text.",
+      "page": 82
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "photograph_of_doc",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Black and white photograph of laboratory/experimental equipment mounted on a document backing; no visible text, so empty OCR is correct for this image type.",
+      "page": 83
+    },
+    {
+      "content_types": [
+        "cover_page"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank cover page with clear typewritten title 'Flying Disc' and location/date 'Found Saybrook, Ill. 7-26-47' at top, but OCR completely failed to capture any of the visible text.",
+      "page": 84
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Black and white photograph of a circular mechanical device or object with a scale ruler and pen for reference; no text content to OCR on this page.",
+      "page": 85
+    },
+    {
+      "content_types": [
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged document back/cover with typewritten heading 'Flying Disc' and location/date (Saybrook, Ill. 7-26-47), plus stamped reference number '319'; OCR completely failed to extract any visible text.",
+      "page": 86
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Black and white photograph of technical/scientific equipment photographed from above; appears to be a gauge or instrument with mechanical apparatus; scan is clean with good contrast but no readable OCR text expected.",
+      "page": 87
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly legible typewritten text ('319', 'Flying Disc', 'Found Saybrook, Ill. 7-25-47') but OCR returned no output despite good scan quality and visible contrast.",
+      "page": 88
+    },
+    {
+      "content_types": [
+        "photograph"
+      ],
+      "source_medium": "photograph_of_doc",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "not_applicable",
+      "text_coverage_pct": null,
+      "notes": "Black and white photograph of experimental equipment or apparatus mounted on a circular base; no text visible, so empty OCR result is appropriate.",
+      "page": 89
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains two lines of typewritten text at top ('Flying Disc' and 'Found Saybrook, Ill., 7-26-47') followed by blank space; OCR failed completely to capture any of the visible text.",
+      "page": 90
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 FBI memo with clear typewritten body text, routing form, and handwritten annotations throughout; OCR returned zero characters despite readable text, indicating OCR failure or non-execution.",
+      "page": 91
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI teletype from September 4, 1947 with clearly readable typewritten text reporting UFO sightings in Oswego, Oregon, but OCR captured zero text despite legible content.",
+      "page": 92
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Government routing cover with blue-stamped received dates and FBI routing marks on salmon-colored paper; OCR captured no text despite multiple clearly visible stamps (RECEIVED TELETYPE UNIT, SEP dates, internal security marks) and routing information.",
+      "page": 93
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified 1947 FBI memorandum with substantial, clearly readable typewritten content about flying disc reports from Oregon, but OCR failed to capture any text despite the legible typescript.",
+      "page": 94
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains typewritten text that is significantly faded and low-contrast, with classification markings and redactions visible; OCR engine captured zero characters despite readable text being present.",
+      "page": 95
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 FBI office memorandum on flying discs with clearly legible typewritten body text and multiple handwritten annotations/stamps, but OCR failed to capture any of the visible text despite good scan quality.",
+      "page": 96
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": null,
+      "notes": "Page is almost entirely blank with extremely faint typewritten text barely visible; includes two binding holes and a faint blue stamp in the center; OCR failed completely due to the severely faded scan quality.",
+      "page": 97
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten letter from J. Edgar Hoover dated September 25, 1947, with archival stamps and handwritten notations; OCR completely failed to extract the clearly readable text content.",
+      "page": 98
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memo dated September 25, 1947 with clear typewritten text about flying discs, but OCR failed entirely to capture any text despite excellent readability of the typewritten content; document has red ink stamp, handwritten annotations, and age-related fading.",
+      "page": 99
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clear typewritten 1947 letter from Vermont education official to FBI reporting a flying saucer sighting, with handwritten marginalia and official stamps, but OCR extracted zero text despite readable content.",
+      "page": 100
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "redacted",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted typewritten page with severe fading and light washed-out scan quality, making text extraction impossible; large black redaction stamps obscure significant portions of content.",
+      "page": 101
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "handwritten_annotations"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memo dated September 8, 1947 with legible typewritten text but OCR produced zero output; extensive handwritten annotations, multiple stamps, and marked distribution list visible but not captured.",
+      "page": 102
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks",
+        "cut_off"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains faded typewritten text with handwritten annotations and official stamps at bottom, but OCR completely failed to extract any text despite visible content, likely due to low contrast and severe fading.",
+      "page": 103
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "handwritten_overlay",
+        "stamps_marks",
+        "bleed_through",
+        "crossed_out_text"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typed letter from July 13, 1947 discussing UAP sightings, with extensive handwritten annotations and red/blue markings overlaying the text; OCR completely failed to extract substantial typewritten content that is clearly visible and readable.",
+      "page": 104
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Mostly blank page with heavily faded text throughout and a received/classification stamp at bottom; OCR failed to capture any content despite visible (though barely legible) markings.",
+      "page": 105
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government document with substantial cleartext discussing UFO investigation contacts, but OCR extraction completely failed despite good scan quality and legible typewriter text.",
+      "page": 106
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government document with visible redaction marks (black circles) at top; substantial readable text present but OCR failed to extract any content despite clear legibility.",
+      "page": 107
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten letter with handwritten signature and red editorial marks; OCR completely failed to capture visible text despite good scan quality and clear legibility.",
+      "page": 108
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "redacted",
+        "faded",
+        "water_damage",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten cursive document on lined paper with significant age-related water staining, black redaction marks at top, and multiple institutional stamps; OCR captured no text, likely due to cursive handwriting combined with document degradation and redaction marks.",
+      "page": 109
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "skew",
+        "stamps_marks",
+        "faded",
+        "dark_scan",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Blank ruled form page with handwritten classification stamps and redacted sections at bottom; OCR captured nothing despite visible text in stamps, likely due to heavy redaction, fading, and stamp overlay.",
+      "page": 110
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten Office Memorandum from August 1947 regarding materials received from Mrs. J. Dixon in South Carolina, with multiple handwritten annotations and official stamps clearly visible, but OCR completely failed to capture any text despite legible content.",
+      "page": 111
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "skew",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Mostly blank page with very faint institutional stamps and classification markings visible at bottom margin, oriented at angle; OCR correctly returned empty result as text is illegible and sparse.",
+      "page": 112
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clear 1947 FBI memorandum on flying saucer material analysis (identified as powdered soap stones), but OCR failed completely to extract any text despite good scan quality and legible typewritten content.",
+      "page": 113
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded document with barely legible text and stamped marks in lower portion; extreme fading renders nearly all text unreadable, appropriately resulting in no OCR capture.",
+      "page": 114
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged Office Memorandum from 1947 with clear typewritten text and handwritten annotations, but OCR captured zero characters despite visible, legible content due to document age and discoloration.",
+      "page": 115
+    },
+    {
+      "content_types": [
+        "blank",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "skew",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page with three black redaction blocks at top and aging marks; faint stamped/handwritten text at bottom is heavily obscured by skew, fading, and deterioration; OCR failed to capture any text.",
+      "page": 116
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten document with multiple paragraphs of clearly readable text describing William Albert Bingos and UFO sightings, but OCR failed completely (0 characters captured); text is legible to human readers despite photocopy quality and redaction marks at top.",
+      "page": 117
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten FBI narrative document (Phoenix file 62-213, page 3) with clearly visible biographical section; OCR pipeline completely failed to extract readable text despite excellent legibility.",
+      "page": 118
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government memo (Phoenix file 62-213) with multiple paragraphs of legible text and redaction marks at top, but OCR failed to capture any text despite good readability; scan shows age deterioration and dust marks typical of 1940s archival documents.",
+      "page": 119
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged FBI memo from 1947 with clear typewritten content, handwritten signatures and routing list; OCR completely failed despite legible text, likely due to pink/sepia discoloration from aging and overlay of stamps and handwriting.",
+      "page": 120
+    },
+    {
+      "content_types": [
+        "cover_page"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI teletype cover sheet dated September 14, 1947 with clearly readable header stamps (\"RECEIVED TELETYPE UNIT\", \"F.B.I. DEPT. OF JUSTICE\"), but extensive page fading and light background prevented OCR from capturing any text.",
+      "page": 121
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified FBI flying disc sighting report with clearly legible typewritten text, heavy handwritten routing marks and annotations throughout, and some redacted passages; OCR completely failed despite readable content.",
+      "page": 122
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded microfilm document with only Department of Justice teletype unit stamp legible; entire page body is too degraded to read or OCR successfully.",
+      "page": 123
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "warped"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified 1947 Army Air Forces letter regarding Flying Discs research, with clear typewritten text but OCR extracted zero characters despite readable content.",
+      "page": 124
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Full-page Office Memorandum with clearly legible typewritten text discussing flying discs (date 9/16/47), but OCR completely failed to capture any content despite excellent readability of the typed portions.",
+      "page": 125
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly visible typewritten text with multiple paragraphs and classification markings, but OCR system captured zero characters despite legible content; faded text and aged paper may have caused OCR failure.",
+      "page": 126
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI Standard Form 64 memorandum with clear, legible typewritten text describing flying disc sightings; OCR failed to capture any text despite excellent scan quality and readable content.",
+      "page": 127
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Faded typewritten government memo with redacted sections (black blocks) at top and date stamp at bottom; OCR captured zero text despite multiple readable paragraphs, likely due to weak contrast and age-related degradation.",
+      "page": 128
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "An Office Memorandum about Flying Discs (August 26, 1947) with clearly readable typewritten text, but OCR failed to capture any content despite good scan quality and legible text throughout the page.",
+      "page": 129
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "warped",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text is clearly visible on the page but OCR extraction failed completely, likely due to very light print intensity and age-related fading of the document.",
+      "page": 130
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clear typewritten memorandum with ~40% text coverage, but OCR failed to capture any text despite legible content; partial redaction marks visible at top of page.",
+      "page": 131
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "handwritten_annotations"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Office memorandum with substantial typewritten body text and handwritten annotations/signatures; OCR captured zero characters despite clearly legible text, indicating complete OCR failure.",
+      "page": 132
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "skew",
+        "warped",
+        "cut_off"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten page with significant age-related fading and deterioration; multiple paragraphs of text are visible but quite light. OCR completely failed to extract any text despite readable content being present—likely due to text fading below OCR threshold.",
+      "page": 133
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten letter dated October 8, 1947 from J. Edgar Hoover regarding the Flying Saucer Mystery, with clearly readable content, but OCR completely failed to capture any text, likely due to aged paper yellowing, government stamps, and routing marks obscuring portions.",
+      "page": 134
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with handwritten annotations and classification stamp; OCR captured nothing due to extreme text fading making content nearly illegible.",
+      "page": 135
+    },
+    {
+      "content_types": [
+        "handwritten",
+        "form",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Handwritten letter on Ryan Funeral Home letterhead with multiple colored pen annotations and rubber stamps; OCR failed completely, likely due to cursive handwriting recognition limitations rather than scan quality.",
+      "page": 136
+    },
+    {
+      "content_types": [
+        "handwritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clear cursive handwritten letter with age-related discoloration; OCR failed completely to capture any of the legible text, likely due to difficulty recognizing cursive handwriting.",
+      "page": 137
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI teletype document from August 19, 1947 about flying disk sightings in Tacoma, Washington. Text is clearly legible and typewritten, but OCR captured zero characters—the pink/salmon color cast of the scan likely prevented text recognition despite good visual clarity.",
+      "page": 138
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Nearly blank pink-tinted page with extremely faded typewritten text barely visible against background; two black redaction marks at top and faint administrative stamps at bottom make OCR extraction infeasible.",
+      "page": 139
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "noise"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains substantial typewritten text on pink declassified paper with handwritten redaction marks, but OCR captured nothing despite clear readability of the full paragraph about Hamilton Field and the flying disk incident.",
+      "page": 140
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank pink-toned page with faint classification stamps and document reference markings at the bottom; minimal text content and poor contrast prevented OCR capture.",
+      "page": 141
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government document page (PAGE THREE) clearly readable with distinct text throughout, but OCR returned no output despite legible content about a B-25 incident investigation.",
+      "page": 142
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Mostly blank page scanned from microfilm with characteristic pink discoloration, two redaction marks at top, and extremely faint illegible stamps at bottom.",
+      "page": 143
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly legible typewritten FBI memo text discussing flying disk stories and interviews, with handwritten redactions and routing marks, but OCR captured zero characters despite readable content throughout.",
+      "page": 144
+    },
+    {
+      "content_types": [
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI administrative routing page with typewritten stamps and August 7, 1947 date markings, but OCR system failed to capture any visible text elements.",
+      "page": 145
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten declassified document with clear, legible text visible on pink photocopy background; OCR failed to capture any text (0 characters) despite readable content, likely due to color interference with text detection.",
+      "page": 146
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "warped",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Heavily faded pink photocopy with extremely faint typewritten text and brown classification/redaction marks at bottom; OCR failed due to severe document fading making text illegible.",
+      "page": 147
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "redacted",
+        "faded",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten document on pink/salmon paper with substantial black redaction covering central text area; handwritten signatures and notes at bottom; OCR failed to capture any text despite visible readable typewritten content.",
+      "page": 148
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Cover page with heavy redactions and administrative stamps (teletype unit, FBI Dept. of Justice); OCR captured nothing despite visible text; faded pink background and varying text orientations (including vertical stamps) likely caused OCR failure.",
+      "page": 149
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 FBI teletype on flying discs with substantial typewritten content and handwritten routing/stamp marks on a pink carbon copy; OCR failed to capture any of the readable typewritten text, likely due to the colored background and handwritten overlays confusing the recognition engine.",
+      "page": 150
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded microfilm scan of a 1947 government typewritten document with FBI/DOJ routing stamps and redaction marks; text too deteriorated for OCR extraction to capture meaningful content.",
+      "page": 151
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memo from September 1947 about flying disc sightings in Utah, printed on faded pink teletype paper with numerous handwritten annotations, routing marks, and official stamps; OCR completely failed to capture the legible typewritten text.",
+      "page": 152
+    },
+    {
+      "content_types": [
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "redacted",
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily redacted page with multiple black censorship blocks covering most content; pinkish-faded background indicates poor photocopy quality; only administrative stamps and teletype markings visible but obscured by redactions and fading.",
+      "page": 153
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI letter dated September 4, 1947 with crisp, clearly readable typewritten text across multiple paragraphs; OCR captured zero characters despite excellent scan quality and legible content.",
+      "page": 154
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten document with visible redactions and classification markings, but OCR completely failed to extract any text despite legible content throughout the page.",
+      "page": 155
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Newspaper clipping dated 7/12/47 with readable typewritten column about UFO sightings pasted on government document with routing marks and redactions, but OCR extracted zero characters despite legible text.",
+      "page": 156
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Office Memorandum with substantial typewritten body text and handwritten signatures is clearly readable, but OCR completely failed to extract any text despite good scan quality and legible content.",
+      "page": 157
+    },
+    {
+      "content_types": [
+        "blank"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Page is nearly entirely blank with only extremely faint text at top and classification stamps/markings at bottom; OCR correctly identified minimal extractable content due to severe fading and light scan.",
+      "page": 158
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "July 1947 FBI memorandum about flying discs investigation with substantial readable typewritten body text, handwritten annotations, and official stamps; OCR failed to extract any text.",
+      "page": 159
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded",
+        "skew"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified document with substantial typewritten investigation text, handwritten signatures, and official stamps; OCR completely failed despite clear readability of the page content.",
+      "page": 160
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through",
+        "skew"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Classified typewritten memorandum from 1947 with substantial readable body text, but OCR failed completely—no text was captured despite clear legibility of the document content.",
+      "page": 161
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly readable typewritten text with classification markings (Incident 41F 1208 I, memo from Frank M. Brown), but OCR failed to capture any of the visible content despite good scan quality.",
+      "page": 162
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten declassified memo with substantial readable content about aerospace and aircraft topics; OCR completely failed to capture any text despite clear, legible typewritten paragraphs throughout.",
+      "page": 163
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten narrative describing observations over Canada mountains is clearly readable in the image, but OCR extraction failed completely, returning zero characters despite substantial visible text content.",
+      "page": 164
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "skew",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten document with clearly visible text but OCR captured zero characters; faded ink, printed redaction marks, and handwritten annotations present; slight page skew visible.",
+      "page": 165
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten government document with visible age/discoloration and significant staining in lower right obscuring ~15% of text; OCR failed to capture any content despite reasonable legibility of remaining text.",
+      "page": 166
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through",
+        "cut_off"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clearly readable typewritten letter with handwritten sketches and annotations, but OCR captured zero characters despite substantial visible text; complete OCR failure on legible content.",
+      "page": 167
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "bleed_through",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains a clear typewritten memorandum dated July 1947 discussing Kenneth Arnold and flying saucer sightings, but OCR failed entirely to capture any text despite good readability.",
+      "page": 168
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten statement dated July 12, 1947 regarding UAP/flying disc sightings with clear, legible text marked CONFIDENTIAL, but OCR failed to extract any content despite excellent readability.",
+      "page": 169
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten classified document with multiple readable paragraphs, CONFIDENTIAL stamps, and age spots, but no OCR text was extracted.",
+      "page": 170
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "warped",
+        "bleed_through",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly readable typewritten text with official classification markings, signatures, and notary attestation dated July 1947, but OCR completely failed to extract any content despite visible legible text throughout the document.",
+      "page": 171
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains clearly readable typewritten text (header and descriptive paragraph) plus a hand-drawn diagram with numbered positions; OCR failed completely, returning zero characters despite legible content.",
+      "page": 172
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Full page of clearly readable typewritten text with CONFIDENTIAL stamps, but OCR completely failed to capture any content despite good scan quality.",
+      "page": 173
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "mixed"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified 1947 memo with clearly visible typewritten text about a Captain Smith UFO sighting interview, but OCR failed entirely to capture any text despite good scan quality.",
+      "page": 174
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "skew",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains substantial typewritten memo text that is clearly visible and readable, but OCR extraction returned zero characters, indicating complete OCR failure despite legible content.",
+      "page": 175
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "age_wear"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Readable typewritten memorandum dated July 1947 about flying discs with substantial body text, but OCR failed to extract any characters despite clear legibility.",
+      "page": 176
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clear typewritten Office Memorandum dated September 2, 1947 with handwritten annotations and official stamps, but OCR returned no text despite fully readable content—complete OCR failure.",
+      "page": 177
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains substantial typewritten text heavily faded from photocopy degradation, with classification stamps and handwritten markings, but OCR failed entirely—likely due to low contrast and image quality making character recognition impossible.",
+      "page": 178
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "skew",
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page contains substantial readable typewritten text discussing UFO sightings in Twin Falls with witness statements, but OCR system failed to extract any content; two black redaction marks at top, slight page skew, and aging discoloration present.",
+      "page": 179
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "OCR completely failed on this clearly readable 1947 FBI Office Memorandum about flying disc reports; the document contains substantial typewritten body text that should have been captured.",
+      "page": 180
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Faded typewritten memo/report with multiple paragraphs and redacted areas at top; OCR completely failed to extract any text despite visible content, likely due to severe fading and low contrast from aging photocopy.",
+      "page": 181
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "stamps_marks",
+        "light_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Declassified 1947 military memo with substantial readable typewritten text, but OCR completely failed to capture any content despite legible typeface; aging and fading from archival scan likely caused recognition failure.",
+      "page": 182
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typewritten military memo from 1947 about UFO sighting near Bethel, Alaska; marked CONFIDENTIAL with FBI stamp. OCR completely failed (0 characters extracted) despite substantial readable text visible—dark scan and age-related fading likely prevented recognition.",
+      "page": 183
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "1947 FBI memorandum about flying discs with substantial, clearly legible typewritten body text and multiple handwritten annotations; OCR captured nothing despite readable content.",
+      "page": 184
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "stamps_marks"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "light_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Extremely faded typewritten text with blue handling stamps and binding holes; OCR failed entirely due to the document's severe age-related fading making text nearly invisible.",
+      "page": 185
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 3,
+      "notes": "OCR captured only the declassification stamp at bottom but missed the entire typewritten memorandum body; dark scan with visible fading and bleed-through throughout document.",
+      "page": 186
+    },
+    {
+      "content_types": [
+        "blank",
+        "handwritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Essentially blank page with only minimal handwritten archival markings at top (document reference number and redaction indicator); two punch holes visible at bottom.",
+      "page": 187
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "dark_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Microfilm scan of a 1947 Air Force memo with poor contrast and dark imaging; typewritten text is partially visible but OCR failed to capture any characters, likely due to insufficient contrast between text and background.",
+      "page": 188
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Clear typewritten memo about unidentifiable objects dated July 1947 with substantial visible text including detailed observations and agent notes, but OCR failed entirely capturing zero characters from this readable page.",
+      "page": 189
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Typed FBI office memorandum from August 27, 1947 regarding flying discs reports; clearly legible despite age and official stamps/handwritten annotations, but OCR returned no text despite substantial visible typewritten content.",
+      "page": 190
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily faded typewritten text with visible classification stamps at bottom; extreme low contrast and degradation from photocopy/microfilm caused complete OCR failure.",
+      "page": 191
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "bleed_through",
+        "redacted"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Aged photocopy with substantial visible typewritten text partially obscured by redaction (orange overlay) and a blue information box; OCR captured zero characters despite readable content, indicating complete OCR failure.",
+      "page": 192
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "FBI memo with clear typewritten text about Flying Discs, but OCR completely failed to extract any content despite legible text; probable OCR processing failure rather than scan quality issue.",
+      "page": 193
+    },
+    {
+      "content_types": [
+        "typeset",
+        "newspaper_clipping"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "poor",
+      "ocr_artifacts": [
+        "bleed_through",
+        "faded",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Heavily aged newspaper clipping with severe browning, fading, and deterioration obscuring most text; archival punch holes visible at top; OCR failure is expected given scan condition.",
+      "page": 194
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.48,
+    "avg_text_coverage_pct": 0.4,
+    "content_type_counts": {
+      "cover_page": 8,
+      "typewritten": 141,
+      "form": 47,
+      "redacted": 21,
+      "handwritten": 45,
+      "diagram": 3,
+      "mixed": 5,
+      "stamps_marks": 8,
+      "blank": 15,
+      "typeset": 3,
+      "photograph": 6,
+      "newspaper_clipping": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 114,
+      "scan_original": 53,
+      "scan_microfilm": 25,
+      "photograph_of_doc": 2
+    },
+    "scan_quality_counts": {
+      "good": 119,
+      "fair": 46,
+      "poor": 28,
+      "excellent": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 144,
+      "bleed_through": 51,
+      "faded": 132,
+      "dark_scan": 21,
+      "noise": 9,
+      "light_scan": 27,
+      "skew": 18,
+      "warped": 16,
+      "redacted": 19,
+      "cut_off": 7,
+      "handwritten_annotations": 2,
+      "handwritten_overlay": 1,
+      "crossed_out_text": 1,
+      "water_damage": 1,
+      "age_wear": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 185,
+      "partial": 3,
+      "not_applicable": 6
+    }
+  }
+}

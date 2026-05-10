@@ -1,0 +1,166 @@
+{
+  "doc_id": 2,
+  "title": "DOW-UAP-D14, Mission Report, Iraq, May 2022",
+  "agency": "Department of War",
+  "filename": "dow-uap-d14-mission-report-iraq-may-2022.pdf",
+  "total_pages": 9,
+  "pages_sampled": 9,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Clear scan of declassified military intelligence document with visible redactions and classification markings; OCR systematically converts Zulu timestamps (Z → numeric suffixes) and redaction indicator boxes (1.4a → ~) but otherwise captures narrative content accurately.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 78,
+      "notes": "Military intelligence form with FOIA redactions and exemption boxes; OCR captures most unredacted fields accurately but garbles text within boxed redaction areas (Full Name, Phone Number, Email fields).",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Classification form with redacted personnel fields in boxes; OCR correctly captures structure and most content, but struggles significantly with names in redaction boxes and special characters in exemption markers.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Form with military/aviation mission data fields; OCR captured most visible text accurately. Minor discrepancy in how redacted header text (shown as red strikethrough) was interpreted (OCR shows 'REL' where image shows strikethrough marking).",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Military ISR form with classified sections; OCR accurately captures most mission data fields but garbles header area (\"Mfflffl'f/l:RB\"), misses capitalization (EEis vs EEIs), and has errors in gentext section with spurious tilde characters and garbled opening (\"tSfltiL}AT\").",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Military SIGINT report with extensive redactions; OCR captures most location names and vessel observations accurately, but struggles with header line, grid reference special characters (coordinate notations), and some redacted section markers, representing them as tildes and garbled symbols.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 87,
+      "notes": "Military tactical report with classification redactions; OCR accurately captured most field values but misinterpreted redacted location coordinates in boxes (37S BV 34[1.4a] rendered as 3~1~, Enemy Aircraft Location redaction box misread as garbled underscores and dashes).",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Structured intelligence form with extensive classification redactions (black boxes labeled 1.4a/1.4e) and red strikethrough overlays; OCR captured field labels and visible text well but has minor formatting issues (missing slash in 'GENTEXT/REACTION', some coordinate garbling where redactions overlap text).",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified government observation report form with clear typography but significant redactions; OCR captured readable content accurately but misrepresented redacted areas (black boxes and strikethrough) with placeholder characters like 'ffi' and '~'.",
+      "page": 9
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 85.7,
+    "content_type_counts": {
+      "typewritten": 5,
+      "form": 8,
+      "redacted": 5
+    },
+    "source_medium_counts": {
+      "scan_original": 8,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 9
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 3,
+      "redacted": 3
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 9
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "doc_id": 88,
+  "title": "FBI Photo B2",
+  "agency": "FBI",
+  "filename": "fbi-photo-b2.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "redacted",
+        "diagram"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 0,
+      "notes": "Page is heavily redacted with a coordinate grid diagram and timestamp (12/31/99 18:11:27) at bottom; photocopy scan quality shows visible grain and noise throughout.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "redacted",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 0.0,
+    "content_type_counts": {
+      "redacted": 1,
+      "diagram": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "bleed_through": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

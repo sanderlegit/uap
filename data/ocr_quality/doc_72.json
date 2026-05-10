@@ -1,0 +1,55 @@
+{
+  "doc_id": 72,
+  "title": "65_HS1-101634279_100-DE-18221_Serial_844",
+  "agency": "FBI",
+  "filename": "65_hs1-101634279_100-de-18221_serial_844.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "mixed"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI Standard Form 64 memorandum with clear typewritten content, some character-level OCR errors (e.g., 'dhe' for 'he', '}):08' for '11:08', 'JEAVER' for 'WEAVER'), but main narrative text is substantially captured; document shows age/yellowing with stamps and handwritten annotations.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 85.0,
+    "content_type_counts": {
+      "form": 1,
+      "typewritten": 1,
+      "mixed": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "good": 1
+    },
+    "ocr_artifact_counts": {
+      "faded": 1,
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 1
+    }
+  }
+}

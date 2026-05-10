@@ -1,0 +1,55 @@
+{
+  "doc_id": 18,
+  "title": "DOW-UAP-D44, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+  "agency": "Department of War",
+  "filename": "dow-uap-d44-range-fouler-arabian-sea-october-2020.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "handwritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "noise",
+        "skew"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 72,
+      "notes": "Military UAP reporting form with mix of typewritten labels and handwritten entries; OCR heavily corrupted the classification header and scattered character errors throughout, but captured most form field labels and the contact description section.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 72.0,
+    "content_type_counts": {
+      "form": 1,
+      "typewritten": 1,
+      "handwritten": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "skew": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 1
+    }
+  }
+}

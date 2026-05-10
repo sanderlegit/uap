@@ -1,0 +1,82 @@
+{
+  "doc_id": 110,
+  "title": "USPER Statement about UAP Sighting",
+  "agency": "FBI",
+  "filename": "usper-statement-redacted.pdf",
+  "total_pages": 3,
+  "pages_sampled": 3,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 70,
+      "notes": "Declassified intelligence document with extensive redactions shown as black boxes. OCR captures structure but has scattered character recognition errors (e.g., 'intelligence official' → 'inte Igence o Ic1al'), artifacts near redacted areas (e.g., 'llll', 'F~L', 'FACIU~ye'), and garbled sections, making it unsuitable for automated processing without manual correction.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "light_scan",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten classified document with systematic redactions (rendered as bracketed placeholders). OCR captured ~92% of text but has character-level errors: 'FUR' should be 'FLIR', 'ained' should be 'gained', and underscores/redaction marks misread as 'l's. Redaction handling is reasonable overall.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 75,
+      "notes": "Classified document with black redaction boxes; OCR captured most visible text correctly but produced errors where redactions exist, including garbled text like 'na~ilots' and 'sIg Ings were a ove e e ,cop er' in sections with redaction boxes.",
+      "page": 3
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 79.0,
+    "content_type_counts": {
+      "typewritten": 3,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 2,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 3
+    },
+    "ocr_artifact_counts": {
+      "light_scan": 1,
+      "faded": 1,
+      "redacted": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 1,
+      "mostly_accurate": 2
+    }
+  }
+}

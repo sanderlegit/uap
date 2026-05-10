@@ -1,0 +1,57 @@
+{
+  "doc_id": 79,
+  "title": "FBI Photo B11",
+  "agency": "FBI",
+  "filename": "fbi-photo-b11.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "photograph",
+        "diagram",
+        "redacted"
+      ],
+      "source_medium": "scan_microfilm",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "noise",
+        "dark_scan",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "empty",
+      "text_coverage_pct": 5,
+      "notes": "Heavily redacted surveillance or measurement image with coordinate grid overlay and timestamp (12/31/99 18:11:06) at bottom; OCR missed the visible timestamp despite clear text, yielding zero extracted characters.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "photograph",
+    "dominant_source_medium": "scan_microfilm",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "empty",
+    "avg_quality_score": 3.0,
+    "avg_text_coverage_pct": 5.0,
+    "content_type_counts": {
+      "photograph": 1,
+      "diagram": 1,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_microfilm": 1
+    },
+    "scan_quality_counts": {
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "noise": 1,
+      "dark_scan": 1,
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "empty": 1
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "doc_id": 6,
+  "title": "DOW-UAP-D20, Mission Report, Southern United States, 2020",
+  "agency": "Department of War",
+  "filename": "dow-uap-d20-mission-report-southern-united-states-2020.pdf",
+  "total_pages": 6,
+  "pages_sampled": 6,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Document scan is clear with good contrast, but OCR heavily corrupts redacted/strikethrough text and classification headers; narrative mission text is mostly legible but metadata headers show significant garbling.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Military MISREP form with structured fields and FOIA redaction boxes; OCR captures field names and most values correctly but struggles with struck-through/redacted areas, producing garbled text in POC/QC contact information sections.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified military form with equipment specifications; OCR cleanly captures the structured form data and field values (ranks, serial numbers, equipment designators), but garbles the redacted SECRET/NOFORN markings at top and bottom, and misreads some field labels near redactions.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [
+        "noise"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Clean military equipment specification form with redacted fields; OCR corrupts the SECRET/NOFORN header ('Bettm'l'if!fMM!f') but captures ~85% of the main bullet-point content accurately, including weapons systems, radar, and avionics specifications.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typeset"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Structured military mission timeline form with accurate capture of all operational data, but OCR garbled the security header/footer markings (struck-through SECRET/NOFORN) at top and bottom of page.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "excellent",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Well-scanned document with crisp text, but OCR has errors: spurious 'SEatE iifWl'11 ORL' text at start (not in image), 'Numbed' instead of 'Number', and redaction/exemption box formatting corrupted; core narrative and data fields mostly correct.",
+      "page": 6
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.33,
+    "avg_text_coverage_pct": 82.3,
+    "content_type_counts": {
+      "typewritten": 4,
+      "form": 6,
+      "redacted": 1,
+      "typeset": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 5,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 4,
+      "excellent": 2
+    },
+    "ocr_artifact_counts": {
+      "redacted": 2,
+      "stamps_marks": 4,
+      "noise": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 1,
+      "mostly_accurate": 5
+    }
+  }
+}

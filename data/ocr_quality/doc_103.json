@@ -1,0 +1,201 @@
+{
+  "doc_id": 103,
+  "title": "NASA-UAP-D4, Apollo 11 Technical Crew Debriefing, 1969",
+  "agency": "NASA",
+  "filename": "nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
+  "total_pages": 11,
+  "pages_sampled": 11,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "cover_page",
+        "typeset"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 65,
+      "notes": "Cover page of Apollo 11 Technical Crew Debriefing is legible but OCR heavily corrupted strikethrough text, classification markings, handwritten annotations, and the bottom indexing table; core title and metadata partially captured.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Typewritten Apollo mission dialogue transcript with accurate main text; OCR errors include misplaced speaker names (listed at top rather than inline) and spurious end characters ('~ ol TL AL. ae') not present in original image.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten dialogue transcript with minor character substitution errors ('ii' for 'L', 'Lt.' for 'it.'); hand-stamped CONFIDENTIAL markings visible but don't significantly impede text extraction.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 98,
+      "notes": "Pristine OCR capture of a declassified Apollo astronaut interview transcript discussing unidentified object observations; all dialogue and speaker attributions accurately transcribed from the well-preserved original document.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Dialogue transcript OCR captures nearly all text correctly but has errors: document ID shows '6-36' in OCR but image shows 'C-36', one instance of 'IM' instead of 'LM', and stray characters 'ST Ar b' at end. Clean scan with minor age-related staining.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 96,
+      "notes": "Typewritten Apollo 11 declassified document; OCR captures nearly all text but contains two errors: 'During' misread as 'wae' in 'transearth coast' passage, and erroneous ':' inserted between lines, likely due to slight fading and typewriter font variations.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Typewritten government interview transcript with CONFIDENTIAL stamps; OCR accurately captures nearly all text but misreads '50' as '20' in the final line ('20 significant observations' should be '50').",
+      "page": 7
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Typewritten transcript of space mission observations (Aldrin/Armstrong dialogue) with clear scan quality; OCR errors include 'CONEIDENTIAT' for CONFIDENTIAL header, stray 'oo', and 'eould' for 'could', but body text is well captured.",
+      "page": 8
+    },
+    {
+      "content_types": [
+        "cover_page",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks",
+        "bleed_through"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 40,
+      "notes": "NASA Apollo 11 Technical Crew Debriefing cover page from July 31, 1969 with heavy OCR degradation; major errors include 'SCONFDENTAL' for CONFIDENTIAL, 'APOLLO II' for APOLLO 11, and significant corruption of the body text and notice section.",
+      "page": 9
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "dust_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 80,
+      "notes": "Apollo mission transcript with CONFIDENTIAL markings; OCR fabricates header gibberish (\"onesie = allele ee\", malformed speaker labels), misreads \"ascent\" as \"oe\" in section 21.5, and \"sort\" as \"SOT\", but captures ~80% of actual body text accurately.",
+      "page": 10
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 98,
+      "notes": "Declassified government transcript with CONFIDENTIAL stamps; OCR error in line 'probably a reflection off a lake' rendered as 'xp ChAbi e reflection off a: lake' suggests character recognition issue with that specific phrase.",
+      "page": 11
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 3.91,
+    "avg_text_coverage_pct": 87.1,
+    "content_type_counts": {
+      "cover_page": 2,
+      "typeset": 1,
+      "typewritten": 10
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 8,
+      "scan_original": 3
+    },
+    "scan_quality_counts": {
+      "good": 10,
+      "fair": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 7,
+      "bleed_through": 2,
+      "faded": 5,
+      "dust_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "partial": 3,
+      "mostly_accurate": 7,
+      "accurate": 1
+    }
+  }
+}

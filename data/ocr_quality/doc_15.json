@@ -1,0 +1,51 @@
+{
+  "doc_id": 15,
+  "title": "DOW-UAP-D38, Range Fouler Debrief, Middle East, May 2020",
+  "agency": "Department of War",
+  "filename": "dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
+  "total_pages": 1,
+  "pages_sampled": 1,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Range Fouler Debrief Form with good scan quality, but OCR contains multiple character recognition errors including 'preforming' for 'performing', 'moments' for 'movements', 'w ite 1' for 'white', and embedded numbers/spaces like 'th1e' and 'place ent'.",
+      "page": 1
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 80.0,
+    "content_type_counts": {
+      "form": 1,
+      "typewritten": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 1
+    },
+    "scan_quality_counts": {
+      "good": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 1
+    }
+  }
+}

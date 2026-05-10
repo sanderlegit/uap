@@ -1,0 +1,146 @@
+{
+  "doc_id": 8,
+  "title": "DOW-UAP-D25, Mission Report, Greece, January 2024",
+  "agency": "Department of War",
+  "filename": "dow-uap-d25-mission-report-greece-january-2024.pdf",
+  "total_pages": 7,
+  "pages_sampled": 7,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified military narrative document with extensive redactions (red strikethrough); OCR captures nearly all readable text including some redacted content, but faded header text on upper right is partially missed and redaction marks create minor formatting issues.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Page is a structured form (MSGID/MSNID/Poc/QC/Approver fields) with multiple FOIA redactions overlaid; OCR captures form structure and most readable content accurately, though redaction boxes contain overlapping text notation that creates minor noise in output.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "faded"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 88,
+      "notes": "Military personnel and equipment form with redacted PII sections; OCR correctly captures all visible form structure, labels, and classification markings, with proper handling of exemption codes and reference numbers.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "accurate",
+      "text_coverage_pct": 95,
+      "notes": "Declassified military ISR mission report with structured form data including aircraft systems and timeline details; OCR captured text with high fidelity, all major fields and redaction codes correctly recognized.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Declassified government ISR report with intentional redactions (marked b(1)1.4a); OCR accurately captured non-redacted content and redaction markers; text is sharp and well-aligned.",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Government UAP incident report form with clear typewritten fields; OCR accurately captured structured form data and redacted fields showing FOIA exemption codes, with minimal errors despite red redaction bars and strikethrough marks.",
+      "page": 6
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Document is a structured military form with clear typewritten fields and values; OCR captured most content accurately including the detailed UAP description narrative, though redaction bars and (b)(1) exemption overlays are visibly marked in red in the scan.",
+      "page": 7
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 87.9,
+    "content_type_counts": {
+      "typewritten": 5,
+      "form": 7,
+      "redacted": 3
+    },
+    "source_medium_counts": {
+      "scan_original": 6,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 7
+    },
+    "ocr_artifact_counts": {
+      "redacted": 2,
+      "stamps_marks": 4,
+      "faded": 2
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 6,
+      "accurate": 1
+    }
+  }
+}

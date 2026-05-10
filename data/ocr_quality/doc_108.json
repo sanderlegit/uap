@@ -1,0 +1,67 @@
+{
+  "doc_id": 108,
+  "title": "FBI September 2023 Sighting - Serial 4",
+  "agency": "FBI",
+  "filename": "serial-3_redacted.pdf",
+  "total_pages": 2,
+  "pages_sampled": 2,
+  "extraction_method": "ocrmypdf",
+  "ocr_applied": 1,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "fair",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "FBI FD-302 form with extensive redactions (black bars covering sensitive information). OCR captures most unredacted text reasonably well but produces garbled output around redacted sections; readable passages like the gate incident narrative are largely preserved.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten",
+        "form"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "FBI FD-302a form with intentional redactions; OCR source appears unredacted (contains names where image shows redaction bars); visible body text captured accurately.",
+      "page": 2
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_photocopy",
+    "dominant_scan_quality": "fair",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 3.5,
+    "avg_text_coverage_pct": 77.5,
+    "content_type_counts": {
+      "form": 2,
+      "typewritten": 2,
+      "redacted": 1
+    },
+    "source_medium_counts": {
+      "scan_photocopy": 2
+    },
+    "scan_quality_counts": {
+      "fair": 1,
+      "good": 1
+    },
+    "ocr_artifact_counts": {
+      "stamps_marks": 1
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 2
+    }
+  }
+}

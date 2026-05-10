@@ -1,0 +1,133 @@
+{
+  "doc_id": 4,
+  "title": "DOW-UAP-D18, Mission Report, Iraq, December 2022",
+  "agency": "Department of War",
+  "filename": "dow-uap-d18-mission-report-iraq-december-2022.pdf",
+  "total_pages": 6,
+  "pages_sampled": 6,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "digital_native",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 70,
+      "notes": "Digital government document with strikethrough redactions causing significant OCR corruption in narrative section (e.g., 'Tiliii)TO OH'), but structured metadata and Admin sections captured reasonably well; 1.4a redaction boxes recognized throughout.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 80,
+      "notes": "Military personnel/tasking form with extensive FOIA redactions. OCR captured most structured fields correctly but failed on some plain text ('Poc' → 'Poe', 'AIC' → 'AlC') and garbled redacted field overlays and strikethrough text.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Military incident form with equipment specification fields; OCR successfully captured most structured data but garbled the red \"SECRET/NOFORN\" classification stamps at top and bottom, rendering them as corrupted characters.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 92,
+      "notes": "Declassified military form with structured mission timeline data; OCR captured most content accurately but generated garbage text artifact (fteMTff!fM8Ni) in header area, likely from security markings.",
+      "page": 4
+    },
+    {
+      "content_types": [
+        "form",
+        "redacted"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 81,
+      "notes": "Declassified military ISR asset utilization form with redaction boxes. OCR captured most content but struggled at redaction boundaries, causing missing/corrupted characters (e.g., 'T~236' instead of 'TH[1.4a]236', '~ONDUCTED' instead of 'CONDUCTED').",
+      "page": 5
+    },
+    {
+      "content_types": [
+        "form",
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "redacted"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 82,
+      "notes": "Declassified government form with multiple redacted sections (1.4a). OCR captured main content and structure well, but garbled header/footer formatting (SECRET/NOFORN rendered as '!f:!emffl'11N'M6lt!f') and struggled with special characters like the (S/NF) classification marking.",
+      "page": 6
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "form",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 81.7,
+    "content_type_counts": {
+      "form": 6,
+      "typewritten": 3,
+      "redacted": 3
+    },
+    "source_medium_counts": {
+      "digital_native": 1,
+      "scan_original": 4,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 6
+    },
+    "ocr_artifact_counts": {
+      "redacted": 4,
+      "stamps_marks": 5
+    },
+    "ocr_accuracy_counts": {
+      "mostly_accurate": 6
+    }
+  }
+}

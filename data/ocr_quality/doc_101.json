@@ -1,0 +1,93 @@
+{
+  "doc_id": 101,
+  "title": "NASA-UAP-D1, Apollo 12 Transcript, 1969",
+  "agency": "NASA",
+  "filename": "nasa-uap-d1-apollo-12-transcript-1969.pdf",
+  "total_pages": 4,
+  "pages_sampled": 4,
+  "extraction_method": "pymupdf",
+  "ocr_applied": 0,
+  "pages": [
+    {
+      "content_types": [
+        "typewritten",
+        "table"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "partial",
+      "text_coverage_pct": 75,
+      "notes": "OCR captured most dialogue text accurately but severely garbled the tabular structure, separating timestamps, speaker codes, and dialogue into different sections instead of preserving the columnar layout from the original transcript.",
+      "page": 1
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_photocopy",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "faded",
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 95,
+      "notes": "Apollo mission radio transcript with nearly complete text capture; OCR has character substitution errors (tildes and colons replacing letters) and failed to preserve the columnar table structure of timestamps, call signs, and dialog.",
+      "page": 2
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [
+        "stamps_marks"
+      ],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 90,
+      "notes": "Apollo mission communications transcript with multiple OCR character substitution errors (dmm→down, 81 s→8's, tcucb→touch, lef't→left, yo~→you, t estin'→testing, ve' ve→we've) but overall text structure and layout captured correctly.",
+      "page": 3
+    },
+    {
+      "content_types": [
+        "typewritten"
+      ],
+      "source_medium": "scan_original",
+      "scan_quality": "good",
+      "ocr_artifacts": [],
+      "ocr_accuracy": "mostly_accurate",
+      "text_coverage_pct": 85,
+      "notes": "Apollo mission transcript with clear scan quality but OCR has character-level errors: 'llght' for 'light', 'vith' for 'with', 'wbiffer<1.ill' for 'whifferdill', 'thr0ugh' for 'through', 'b~ckward3' for 'backwards', and spacing issues in contractions.",
+      "page": 4
+    }
+  ],
+  "summary": {
+    "dominant_content_type": "typewritten",
+    "dominant_source_medium": "scan_original",
+    "dominant_scan_quality": "good",
+    "dominant_ocr_accuracy": "mostly_accurate",
+    "avg_quality_score": 4.0,
+    "avg_text_coverage_pct": 86.2,
+    "content_type_counts": {
+      "typewritten": 4,
+      "table": 1
+    },
+    "source_medium_counts": {
+      "scan_original": 3,
+      "scan_photocopy": 1
+    },
+    "scan_quality_counts": {
+      "good": 4
+    },
+    "ocr_artifact_counts": {
+      "faded": 1,
+      "stamps_marks": 2
+    },
+    "ocr_accuracy_counts": {
+      "partial": 1,
+      "mostly_accurate": 3
+    }
+  }
+}
