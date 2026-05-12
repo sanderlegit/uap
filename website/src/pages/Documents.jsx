@@ -150,7 +150,7 @@ export default function Documents() {
       </p>
 
       {/* Filter Bar — sticky on scroll */}
-      <div className="sticky top-14 z-30 -mx-4 px-4 py-2 bg-slate-950/90 backdrop-blur-sm mb-3">
+      <div className="sticky top-0 md:top-14 z-30 -mx-4 px-4 py-2 bg-slate-950/90 backdrop-blur-sm mb-3">
         <div className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-3">
           {/* Row 1: Agency pills + starred filter */}
           <div className="flex items-center gap-2 mb-2 sm:mb-0 sm:inline-flex">

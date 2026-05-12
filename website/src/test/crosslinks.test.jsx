@@ -600,6 +600,30 @@ describe('Map link state', () => {
   })
 })
 
+describe('PageReader mobile defaults', () => {
+  it('defaults to scan view on mobile widths', async () => {
+    const originalWidth = window.innerWidth
+    Object.defineProperty(window, 'innerWidth', { configurable: true, value: 390 })
+
+    try {
+      const PageReader = (await import('../components/PageReader')).default
+      render(
+        <PageReader
+          docId={5}
+          pageCount={1}
+          pages={['Radar contact established.']}
+          redactedPages={[]}
+        />
+      )
+
+      expect(screen.getByRole('button', { name: 'Scan' })).toHaveClass('bg-slate-700/60')
+      expect(screen.getByRole('button', { name: 'Side-by-side' })).not.toHaveClass('bg-slate-700/60')
+    } finally {
+      Object.defineProperty(window, 'innerWidth', { configurable: true, value: originalWidth })
+    }
+  })
+})
+
 describe('Map button always present', () => {
   it('shows Map link for doc with coordinates', async () => {
     const DocumentDetail = (await import('../pages/DocumentDetail')).default

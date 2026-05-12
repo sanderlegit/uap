@@ -45,32 +45,12 @@ const CATEGORY_LABELS = {
   quote: 'Key Finding',
 }
 
-function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate, activeQuote, vocabTerms, pageText, findings }) {
-  const touchRef = useRef({ x: 0, y: 0 })
+const MATCH_LABELS = {
+  sensor: 'Sensor', behavior: 'Behavior', shape: 'Shape',
+  witness: 'Witness', vocab: 'Term', quote: 'Quote',
+}
 
-  useEffect(() => {
-    const handler = (e) => {
-      if (e.key === 'Escape') onClose()
-      if (e.key === 'ArrowLeft' && pageNum > 1) onNavigate(pageNum - 1)
-      if (e.key === 'ArrowRight' && pageNum < totalPages) onNavigate(pageNum + 1)
-    }
-    window.addEventListener('keydown', handler)
-    return () => window.removeEventListener('keydown', handler)
-  }, [pageNum, totalPages, onClose, onNavigate])
-
-  const onTouchStart = useCallback((e) => {
-    touchRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }
-  }, [])
-
-  const onTouchEnd = useCallback((e) => {
-    const dx = e.changedTouches[0].clientX - touchRef.current.x
-    const dy = e.changedTouches[0].clientY - touchRef.current.y
-    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
-      if (dx > 0 && pageNum > 1) onNavigate(pageNum - 1)
-      else if (dx < 0 && pageNum < totalPages) onNavigate(pageNum + 1)
-    }
-  }, [pageNum, totalPages, onNavigate])
-
+function PageContext({ findings, vocabTerms, pageText, pageNum, activeQuote, showSearch = true, className = '' }) {
   const pageFindings = useMemo(() => {
     if (!findings) return []
     return findings
@@ -97,7 +77,7 @@ function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate, activeQuote
     const term = activeQuote.searchTerm || activeQuote.quote
     if (!term) return null
     const esc = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    const re = new RegExp(esc, 'i')
+    const re = new RegExp(activeQuote.searchTerm ? '\\b' + esc + '\\w*' : esc, 'i')
     const m = re.exec(pageText)
     if (!m) return null
     const idx = m.index
@@ -114,8 +94,10 @@ function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate, activeQuote
   const hasContext = !!(pageFindings.length > 0 || searchSnippet || pageVocab.length > 0)
   const hl = activeQuote ? (HIGHLIGHT_COLORS[activeQuote.category] || DEFAULT_HIGHLIGHT) : null
 
-  const contextPanel = hasContext ? (
-    <div className="space-y-3">
+  if (!hasContext) return null
+
+  return (
+    <div className={`space-y-3 ${className}`}>
       {pageFindings.length > 0 && (
         <div>
           <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-amber-400/70 mb-1.5">
@@ -133,7 +115,7 @@ function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate, activeQuote
           </div>
         </div>
       )}
-      {searchSnippet && (
+      {showSearch && searchSnippet && (
         <div>
           <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase mb-1.5"
             style={{ color: hl?.text || '#fde68a' }}>
@@ -168,15 +150,98 @@ function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate, activeQuote
         </div>
       )}
     </div>
-  ) : null
+  )
+}
+
+function Lightbox({ docId, pageNum, totalPages, onClose, onNavigate, activeQuote, vocabTerms, pageText, findings, matchPages }) {
+  const touchRef = useRef({ x: 0, y: 0 })
+  const lightboxRef = useRef(null)
+
+  useEffect(() => {
+    document.documentElement.classList.add('doc-reader-fullscreen')
+    document.body.style.overflow = 'hidden'
+    if (window.innerWidth < 768 && lightboxRef.current) {
+      try { lightboxRef.current.requestFullscreen?.()?.catch?.(() => {}) } catch {}
+    }
+    return () => {
+      document.documentElement.classList.remove('doc-reader-fullscreen')
+      document.body.style.overflow = ''
+      try { if (document.fullscreenElement) document.exitFullscreen() } catch {}
+    }
+  }, [])
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowLeft' && pageNum > 1) onNavigate(pageNum - 1)
+      if (e.key === 'ArrowRight' && pageNum < totalPages) onNavigate(pageNum + 1)
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [pageNum, totalPages, onClose, onNavigate])
+
+  const onTouchStart = useCallback((e) => {
+    touchRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }
+  }, [])
+
+  const onTouchEnd = useCallback((e) => {
+    const dx = e.changedTouches[0].clientX - touchRef.current.x
+    const dy = e.changedTouches[0].clientY - touchRef.current.y
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      if (dx > 0 && pageNum > 1) onNavigate(pageNum - 1)
+      else if (dx < 0 && pageNum < totalPages) onNavigate(pageNum + 1)
+    }
+  }, [pageNum, totalPages, onNavigate])
+
+  const matchIndex = matchPages?.indexOf(pageNum) ?? -1
+  const prevMatchPage = matchPages && matchIndex > 0 ? matchPages[matchIndex - 1]
+    : matchPages?.filter(p => p < pageNum).pop() ?? null
+  const nextMatchPage = matchPages && matchIndex >= 0 && matchIndex < matchPages.length - 1
+    ? matchPages[matchIndex + 1]
+    : matchPages?.find(p => p > pageNum) ?? null
+  const hasMatchNav = matchPages && matchPages.length > 0
+  const hl = activeQuote ? (HIGHLIGHT_COLORS[activeQuote.category] || DEFAULT_HIGHLIGHT) : null
+  const contextPanel = (
+    <PageContext
+      findings={findings}
+      vocabTerms={vocabTerms}
+      pageText={pageText}
+      pageNum={pageNum}
+      activeQuote={activeQuote}
+    />
+  )
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/90 flex flex-col" onClick={onClose}
+    <div ref={lightboxRef} className="fixed inset-0 z-[100] bg-black/90 flex flex-col" onClick={onClose}
       onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-      <div className="shrink-0 flex items-center justify-end gap-3 px-4 h-10 md:h-12 z-10">
-        <span className="text-xs md:text-sm text-slate-400 font-mono">Page {pageNum} of {totalPages}</span>
-        <button onClick={(e) => { e.stopPropagation(); onClose() }}
-          className="text-slate-400 hover:text-white text-2xl leading-none cursor-pointer">&times;</button>
+      <div className="shrink-0 flex items-center justify-between px-3 h-12 z-10" onClick={(e) => e.stopPropagation()}>
+        {hasMatchNav ? (
+          <div className="flex items-center gap-0.5">
+            <button
+              onClick={() => prevMatchPage != null && onNavigate(prevMatchPage)}
+              className={`px-2 py-1.5 rounded text-xs transition-colors cursor-pointer ${
+                prevMatchPage != null ? 'hover:bg-slate-700/60' : 'opacity-30'
+              }`}
+              style={{ color: hl?.text || '#94a3b8' }}
+            >&#9666;</button>
+            <span className="text-[11px] font-mono px-1" style={{ color: hl?.text || '#94a3b8' }}>
+              {MATCH_LABELS[activeQuote?.category] || 'Match'}{' '}
+              {matchIndex >= 0 ? matchIndex + 1 : '—'}/{matchPages.length}
+            </span>
+            <button
+              onClick={() => nextMatchPage != null && onNavigate(nextMatchPage)}
+              className={`px-2 py-1.5 rounded text-xs transition-colors cursor-pointer ${
+                nextMatchPage != null ? 'hover:bg-slate-700/60' : 'opacity-30'
+              }`}
+              style={{ color: hl?.text || '#94a3b8' }}
+            >&#9656;</button>
+          </div>
+        ) : <div />}
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-slate-400 font-mono">p.{pageNum}/{totalPages}</span>
+          <button onClick={onClose}
+            className="text-slate-400 hover:text-white text-2xl leading-none cursor-pointer">&times;</button>
+        </div>
       </div>
 
       <div className="flex-1 flex min-h-0">
@@ -256,8 +321,9 @@ function HighlightedText({ text, quote, searchTerm, searchCategory, vocabTerms }
   if (searchActive) {
     const escQ = (quote || searchTerm).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
     const flexWs = escQ.replace(/\s+/g, '\\s+')
-    const boundary = searchTerm ? '\\b' : ''
-    const pattern = new RegExp(boundary + flexWs + boundary, 'gi')
+    const prefix = searchTerm ? '\\b' : ''
+    const suffix = searchTerm ? '\\w*' : ''
+    const pattern = new RegExp(prefix + flexWs + suffix, 'gi')
     let match
     while ((match = pattern.exec(text)) !== null) {
       highlights.push({ start: match.index, end: match.index + match[0].length, type: 'search' })
@@ -320,12 +386,16 @@ const VIEW_MODES = {
   text: { label: 'Text', title: 'Transcript only' },
 }
 
+function getInitialViewMode() {
+  return typeof window !== 'undefined' && window.innerWidth < 768 ? 'scan' : 'side'
+}
+
 export default function PageReader({ docId, pageCount, pages, redactedPages, originalUrl, activeQuote, onClearQuote, vocabTerms, findings }) {
   const [lightboxPage, setLightboxPage] = useState(null)
   const [currentPage, setCurrentPage] = useState(1)
   const [imageFailed, setImageFailed] = useState(new Set())
   const hasVocab = vocabTerms && vocabTerms.length > 0
-  const [viewMode, setViewMode] = useState('scan')
+  const [viewMode, setViewMode] = useState(getInitialViewMode)
   const [vocabHighlight, setVocabHighlight] = useState(false)
   const [matchIdx, setMatchIdx] = useState(0)
   const [matchCount, setMatchCount] = useState(0)
@@ -341,8 +411,6 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
     if (hasVocab && hasAnyText && !vocabInitRef.current) {
       vocabInitRef.current = true
       setVocabHighlight(true)
-      const mobile = window.innerWidth < 768
-      setViewMode(mobile ? 'text' : 'side')
     }
   }, [hasVocab, hasAnyText])
 
@@ -376,12 +444,32 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
   const matchPages = useMemo(() => {
     if (!activeQuote?.searchTerm || !pages) return []
     const escaped = activeQuote.searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    const pattern = new RegExp('\\b' + escaped + '\\b', 'i')
+    const pattern = new RegExp('\\b' + escaped + '\\w*', 'i')
     return pages.reduce((acc, p, i) => {
       if (p && pattern.test(p)) acc.push(i + 1)
       return acc
     }, [])
   }, [activeQuote, pages])
+
+  const activeMatchPages = useMemo(() => {
+    if (!activeQuote) return []
+    if (activeQuote.category === 'quote' && findings) {
+      const pgs = new Set()
+      for (const f of findings) {
+        if (typeof f !== 'object' || !f) continue
+        const qs = f.quotes || (f.quote ? [{ text: f.quote, page: f.page }] : [])
+        for (const q of qs) if (q.page != null) pgs.add(q.page)
+      }
+      return [...pgs].sort((a, b) => a - b)
+    }
+    return matchPages
+  }, [activeQuote, findings, matchPages])
+
+  useEffect(() => {
+    if (!activeQuote || window.innerWidth >= 768) return
+    const target = activeQuote.page || activeMatchPages[0]
+    if (target) setLightboxPage(target)
+  }, [activeQuote, activeMatchPages])
 
   useEffect(() => {
     if (!activeQuote) {
@@ -469,12 +557,10 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
       )}
 
       {/* Sticky header */}
-      <div ref={stickyRef} className="md:sticky md:top-0 z-20 bg-slate-950/95 backdrop-blur-sm border-b border-slate-700/50 py-2 px-1 mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <span className="text-xs font-mono text-slate-400">
-            Page <span className="text-slate-200">{currentPage}</span> of {effectivePageCount}
-          </span>
-        </div>
+      <div ref={stickyRef} className="md:sticky md:top-0 z-20 bg-slate-950/95 backdrop-blur-sm border-b border-slate-700/50 py-2 px-1 mb-4 flex items-center justify-between gap-3 flex-wrap">
+        <span className="text-xs font-mono text-slate-400">
+          Page <span className="text-slate-200">{currentPage}</span> of {effectivePageCount}
+        </span>
         <div className="flex items-center gap-2">
           {hasAnyText && (
             <div className="flex rounded-md border border-slate-700/50 overflow-hidden">
@@ -524,7 +610,7 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
       </div>
 
       {/* Pages */}
-      <div className="space-y-6">
+      <div className="space-y-6 max-w-7xl mx-auto">
         {Array.from({ length: effectivePageCount }, (_, i) => i + 1).map(num => {
           const pageText = pages?.[num - 1]?.trim()
           const isRedacted = redactedSet.has(num)
@@ -562,11 +648,15 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
               </div>
 
               {/* Content area */}
-              <div className={viewMode === 'side' && showImage && showText ? 'flex' : ''}>
+              <div className="md:flex">
                 {/* Image column */}
                 {showImage && (
                   <div
-                    className={`cursor-zoom-in ${viewMode === 'side' && showText ? 'w-1/2 flex-shrink-0' : ''}`}
+                    className={`cursor-zoom-in ${
+                      viewMode === 'side' && showText
+                        ? 'md:w-[42%] flex-shrink-0'
+                        : 'md:flex-1 mx-auto'
+                    }`}
                     onClick={() => setLightboxPage(num)}
                   >
                     <PageImage
@@ -581,8 +671,8 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                 {showText && (
                   <div className={`p-4 ${
                     viewMode === 'side'
-                      ? 'w-1/2 flex-shrink-0 overflow-y-auto max-h-[80vh] border-l border-slate-700/30 bg-slate-900/40'
-                      : 'bg-slate-900/60'
+                      ? 'flex-1 min-w-0 overflow-y-auto max-h-[80vh] border-l border-slate-700/30 bg-slate-900/40'
+                      : 'md:flex-1 min-w-0 bg-slate-900/60'
                   }`}>
                     <HighlightedText
                       text={pageText}
@@ -600,12 +690,31 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
                     <pre className="doc-text text-slate-300 text-sm whitespace-pre-wrap font-mono">{pageText}</pre>
                   </div>
                 )}
+
+                <PageContext
+                  findings={findings}
+                  vocabTerms={vocabTerms}
+                  pageText={pageText}
+                  pageNum={num}
+                  activeQuote={activeQuote}
+                  className="hidden md:block w-72 flex-shrink-0 border-l border-slate-700/30 bg-slate-950/70 px-3 py-3"
+                />
               </div>
 
               {/* Hidden searchable text — always in DOM for Ctrl+F even in scan mode */}
               {viewMode === 'scan' && pageText && (
                 <div className="sr-only" aria-hidden="true">{pageText}</div>
               )}
+
+              <PageContext
+                findings={findings}
+                vocabTerms={vocabTerms}
+                pageText={pageText}
+                pageNum={num}
+                activeQuote={activeQuote}
+                showSearch={false}
+                className="md:hidden border-t border-slate-700/30 bg-slate-900/45 px-3 py-3"
+              />
             </div>
           )
         })}
@@ -637,6 +746,7 @@ export default function PageReader({ docId, pageCount, pages, redactedPages, ori
           vocabTerms={vocabTerms}
           pageText={pages?.[lightboxPage - 1]?.trim()}
           findings={findings}
+          matchPages={activeMatchPages}
         />
       )}
     </div>

@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect, useMemo } from 'react'
-import { Outlet, NavLink, Link, useLocation, useParams } from 'react-router-dom'
+import { useState } from 'react'
+import { Outlet, NavLink, Link, useLocation } from 'react-router-dom'
 
 import { useExplorationTrail } from '../hooks/useExplorationTrail'
 
@@ -12,14 +12,15 @@ const primaryNav = [
   { to: '/search', label: 'Search', icon: '⌕' },
 ]
 
-const insightsNav = [
-  { to: '/disclosure', label: 'Disclosure Index', icon: '%', activeBg: 'bg-purple-500/20', activeText: 'text-purple-300' },
-  { to: '/cases', label: 'Cases', icon: '◆', activeBg: 'bg-red-500/20', activeText: 'text-red-300' },
-  { to: '/entities', label: 'Entities', icon: '▣', activeBg: 'bg-amber-500/20', activeText: 'text-amber-300' },
-  { to: '/international', label: 'International', icon: '⊕', activeBg: 'bg-emerald-500/20', activeText: 'text-emerald-300' },
-  { to: '/pulse', label: 'Pulse', icon: '◌', activeBg: 'bg-cyan-500/20', activeText: 'text-cyan-300' },
-  { to: '/vocabulary', label: 'Vocabulary', icon: '◊', activeBg: 'bg-teal-500/20', activeText: 'text-teal-300' },
+const bottomNav = [
+  { to: '/', label: 'Home', icon: '⌂', end: true },
+  { to: '/theories', label: 'Briefing', icon: '◈' },
+  { to: '/documents', label: 'Docs', icon: '◫' },
+  { to: '/graph', label: 'Graph', icon: '◈' },
+  { to: '/map', label: 'Map', icon: '◎' },
+  { to: '/timeline', label: 'Timeline', icon: '━' },
 ]
+
 
 const breadcrumbMeta = {
   '/graph': { label: 'Graph', hint: 'Legacy Program structure and document cross-references in one network.' },
@@ -136,58 +137,13 @@ function ExplorationTrail() {
   )
 }
 
-function InsightsDropdown() {
-  const [open, setOpen] = useState(false)
-  const ref = useRef(null)
-  const location = useLocation()
-  const isInsightActive = insightsNav.some(n => location.pathname === n.to || location.pathname.startsWith(n.to + '/'))
-
-  useEffect(() => {
-    if (!open) return
-    const close = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false) }
-    document.addEventListener('mousedown', close)
-    return () => document.removeEventListener('mousedown', close)
-  }, [open])
-
-  useEffect(() => { setOpen(false) }, [location.pathname])
-
-  return (
-    <div ref={ref} className="relative">
-      <button
-        onClick={() => setOpen(o => !o)}
-        className={`px-3 py-1.5 rounded text-xs font-medium transition-colors cursor-pointer flex items-center gap-1 ${
-          isInsightActive ? 'bg-accent/20 text-accent-light' : 'text-slate-400 hover:text-slate-200'
-        }`}
-      >
-        Insights
-        <svg className={`w-3 h-3 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      {open && (
-        <div className="absolute right-0 top-full mt-1 w-48 bg-slate-900 border border-slate-700 rounded-lg shadow-xl overflow-hidden z-50">
-          {insightsNav.map(n => (
-            <NavLink key={n.to} to={n.to}
-              className={({isActive}) => `flex items-center gap-2.5 px-3 py-2 text-xs font-medium transition-colors ${
-                isActive ? `${n.activeBg} ${n.activeText}` : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
-              }`}>
-              <span className="w-4 text-center text-sm">{n.icon}</span>
-              {n.label}
-            </NavLink>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
 
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
 
   return (
     <div className="min-h-dvh flex flex-col">
-      <header className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800">
+      <header className="app-top-bar hidden md:block sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800">
         <div className="flex items-center justify-between px-4 h-14">
           <NavLink to="/" className="flex items-center gap-2 font-bold text-sm tracking-wide">
             <span className="text-amber-500 text-lg tracking-[0.15em]">CENTRAL DISCLOSURE AGENCY</span>
@@ -206,95 +162,43 @@ export default function Layout() {
                 {n.label}
               </NavLink>
             ))}
-            <InsightsDropdown />
-            <NavLink to="/analysis/report"
-              className={({isActive}) => `px-3 py-1.5 rounded text-xs font-medium transition-colors ${isActive || location.pathname.startsWith('/analysis') ? 'bg-primary/20 text-primary-light' : 'text-slate-400 hover:text-slate-200'}`}>
-              Analysis
-            </NavLink>
           </nav>
-          <div className="md:hidden flex items-center gap-1">
-            <NavLink to="/" end className={({isActive}) => `p-2 ${isActive ? 'text-amber-400' : 'text-slate-400'}`}>
-              <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-              </svg>
-            </NavLink>
-            <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 text-slate-400 cursor-pointer">
-              {menuOpen ? '✕' : '☰'}
-            </button>
-          </div>
+          <div className="md:hidden" />
         </div>
-        {menuOpen && (
-          <nav className="md:hidden border-t border-slate-800 bg-slate-900 px-4 pb-3 pt-2 flex flex-col gap-1">
-            <NavLink to="/" end
-              onClick={() => setMenuOpen(false)}
-              className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-amber-500/20 text-amber-300' : 'text-slate-300'}`}>
-              <span className="text-base w-5 text-center">⌂</span>Home
-            </NavLink>
-            {primaryNav.map(n => (
-              <NavLink key={n.to} to={n.to}
-                onClick={() => setMenuOpen(false)}
-                className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-primary/20 text-primary-light' : 'text-slate-300'}`}>
-                <span className="text-base w-5 text-center">{n.icon}</span>{n.label}
-              </NavLink>
-            ))}
-            <div className="mt-1 mb-1 border-t border-slate-800" />
-            <span className="px-3 text-[10px] font-mono tracking-widest uppercase text-slate-600 mb-1">Insights</span>
-            {insightsNav.map(n => (
-              <NavLink key={n.to} to={n.to}
-                onClick={() => setMenuOpen(false)}
-                className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? `${n.activeBg} ${n.activeText}` : 'text-slate-300'}`}>
-                <span className="text-base w-5 text-center">{n.icon}</span>{n.label}
-              </NavLink>
-            ))}
-            <div className="mt-1 mb-1 border-t border-slate-800" />
-            <span className="px-3 text-[10px] font-mono tracking-widest uppercase text-slate-600 mb-1">Analysis</span>
-            {['report', 'fbi', 'apollo', 'redactions', 'high_interest'].map(s => (
-              <NavLink key={s} to={`/analysis/${s}`}
-                onClick={() => setMenuOpen(false)}
-                className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm pl-8 ${isActive ? 'bg-primary/20 text-primary-light' : 'text-slate-400'}`}>
-                {s === 'report' ? 'Full Report' : s === 'fbi' ? 'FBI Deep Dive' : s === 'apollo' ? 'Apollo Deep Dive' : s === 'redactions' ? 'Redaction Analysis' : 'High Interest Cases'}
-              </NavLink>
-            ))}
-          </nav>
-        )}
       </header>
       <Breadcrumb />
       <ExplorationTrail />
       <main className="flex-1 relative pb-16 md:pb-0">
         <Outlet />
       </main>
-      <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 safe-area-pb">
-        <div className="flex justify-around items-center h-14 px-1">
-          <NavLink to="/theories"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
-            <span className="text-base">◈</span>
-            <span className="text-[10px]">Briefing</span>
-          </NavLink>
-          <NavLink to="/documents"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
-            <span className="text-base">◫</span>
-            <span className="text-[10px]">Docs</span>
-          </NavLink>
-          <NavLink to="/graph"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
-            <span className="text-base">◈</span>
-            <span className="text-[10px]">Graph</span>
-          </NavLink>
-          <NavLink to="/map"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
-            <span className="text-base">◎</span>
-            <span className="text-[10px]">Map</span>
-          </NavLink>
-          <NavLink to="/timeline"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
-            <span className="text-base">━</span>
-            <span className="text-[10px]">Timeline</span>
-          </NavLink>
+      {menuOpen && (
+        <nav className="app-mobile-menu md:hidden fixed bottom-14 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-800 px-4 pb-3 pt-2 safe-area-pb">
           <NavLink to="/search"
-            className={({isActive}) => `flex flex-col items-center gap-0.5 px-2 py-2 min-w-[40px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
-            <span className="text-base">⌕</span>
-            <span className="text-[10px]">Search</span>
+            onClick={() => setMenuOpen(false)}
+            className={({isActive}) => `flex items-center gap-3 px-3 py-2.5 rounded text-sm ${isActive ? 'bg-primary/20 text-primary-light' : 'text-slate-300'}`}>
+            <span className="text-base w-5 text-center">⌕</span>Search
           </NavLink>
+        </nav>
+      )}
+      <nav className="app-bottom-bar md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur border-t border-slate-800 safe-area-pb">
+        <div className="flex justify-around items-center h-14 px-1">
+          {bottomNav.map(n => (
+            <NavLink key={n.to} to={n.to} end={n.end}
+              onClick={() => setMenuOpen(false)}
+              className={({isActive}) => `flex flex-col items-center gap-0.5 px-1 py-2 min-w-[38px] ${isActive ? 'text-primary-light' : 'text-slate-500'}`}>
+              <span className="text-base">{n.icon}</span>
+              <span className="text-[9px]">{n.label}</span>
+            </NavLink>
+          ))}
+          <button
+            onClick={() => setMenuOpen(v => !v)}
+            className={`flex flex-col items-center gap-0.5 px-1 py-2 min-w-[38px] cursor-pointer ${menuOpen ? 'text-primary-light' : 'text-slate-500'}`}
+            aria-expanded={menuOpen}
+            aria-label="Open menu"
+          >
+            <span className="text-base">{menuOpen ? '✕' : '☰'}</span>
+            <span className="text-[9px]">Menu</span>
+          </button>
         </div>
       </nav>
     </div>

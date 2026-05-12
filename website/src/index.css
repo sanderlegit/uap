@@ -42,6 +42,18 @@
 html { scroll-behavior: smooth; }
 body { min-height: 100dvh; }
 
+@media (max-width: 767px) {
+  html.doc-detail-open,
+  html.doc-detail-open body {
+    overflow: hidden;
+  }
+
+  html.doc-reader-fullscreen .app-top-bar,
+  html.doc-reader-fullscreen .app-bottom-bar {
+    display: none;
+  }
+}
+
 .leaflet-container { background: #1e293b !important; }
 .leaflet-popup-content-wrapper { background: #1e293b !important; color: #e2e8f0 !important; border-radius: 0.5rem !important; }
 .leaflet-popup-tip { background: #1e293b !important; }

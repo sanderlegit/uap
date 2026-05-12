@@ -229,7 +229,7 @@ export default function Timeline() {
       ) : (
         <div
           className="overflow-x-auto scroll-container"
-          style={{ paddingBottom: selectedDoc ? '7rem' : '6rem' }}
+          style={{ paddingBottom: selectedDoc ? 'calc(7rem + 56px)' : 'calc(4rem + 56px)' }}
         >
           <div className="relative min-w-max px-6 pt-4 pb-8">
             {/* Horizontal axis */}
@@ -310,7 +310,7 @@ export default function Timeline() {
 
       {/* Selected document detail panel */}
       {selectedDoc && (
-        <div className="fixed bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur-md border-t border-slate-700/50 safe-area-pb">
+        <div className="fixed bottom-14 md:bottom-0 inset-x-0 z-40 bg-slate-900/95 backdrop-blur-md border-t border-slate-700/50 safe-area-pb">
           <div className="max-w-2xl mx-auto px-4 py-3">
             <div className="flex items-start gap-3">
               <DocThumbnail docId={selectedDoc.id} size="md" />

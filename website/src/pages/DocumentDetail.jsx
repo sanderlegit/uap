@@ -35,6 +35,43 @@ const BADGE_SYNONYMS = {
   'light/orb': 'light|orb|glow|bright|luminous',
 }
 
+const LEGACY_SEARCH_TERMS = {
+  sandia: 'sandia',
+  wright_patterson: 'wright-patterson',
+  blue_book: 'blue book',
+  cia_oga: 'cia',
+  nro: 'satellite',
+  doe_aec: 'atomic',
+  lanl_ornl_battelle: 'los alamos',
+  lockheed_skunkworks: 'lockheed',
+  battelle: 'battelle',
+}
+
+function cleanMentionTerm(term) {
+  return (term || '')
+    .split(',')[0]
+    .replace(/\\\?\.|\.\\\?/g, '-')
+    .replace(/\.\?/g, '-')
+    .replace(/\\b|\\/g, '')
+    .replace(/[()[\]{}^$*+?|]/g, '')
+    .trim()
+}
+
+function getReasonSearchTerm(reason) {
+  const text = Array.isArray(reason) ? reason.join('; ') : reason || ''
+  const match = text.match(/Content mentions:\s*([^;(]+)/i)
+  return cleanMentionTerm(match?.[1])
+}
+
+function getLegacySearchTerm(conn) {
+  if (!conn) return ''
+  const reasonTerm = getReasonSearchTerm(conn.reasons || conn.reasoning || conn.reason)
+  if (reasonTerm) return reasonTerm
+  const id = conn.nodeId || conn.id
+  if (LEGACY_SEARCH_TERMS[id]) return LEGACY_SEARCH_TERMS[id]
+  return (conn.label || '').split(/\s+/)[0]?.replace(/[^\w-]/g, '').toLowerCase() || ''
+}
+
 function findBestSearchTerm(label, text) {
   const synonyms = BADGE_SYNONYMS[label]
   if (!synonyms || !text) return null
@@ -154,6 +191,8 @@ export default function DocumentDetail() {
   const urlSearchTerm = searchParams.get('search')
   const fromGraph = location.state?.fromGraph
   const graphNodeId = location.state?.nodeId
+  const graphContextNodeId = location.state?.graphContextNodeId
+  const graphContextLabel = location.state?.graphContextLabel
   const fromMap = location.state?.fromMap
   const fromSearch = location.state?.fromSearch
   const searchQuery = location.state?.searchQuery
@@ -173,7 +212,7 @@ export default function DocumentDetail() {
   const [narratives, setNarratives] = useState(null)
   const [legacyWeb, setLegacyWeb] = useState(null)
   const [activeQuote, setActiveQuote] = useState(null)
-  const [mobileTab, setMobileTab] = useState('analysis')
+  const [mobileTab, setMobileTab] = useState('document')
   const pageReaderRef = useRef(null)
   const docTopRef = useRef(null)
 
@@ -181,6 +220,11 @@ export default function DocumentDetail() {
   const { markRead, isStarred, toggleStar, isSuggested } = useDocPrefs()
 
   useEffect(() => { markRead(numId) }, [numId, markRead])
+
+  useEffect(() => {
+    document.documentElement.classList.add('doc-detail-open')
+    return () => document.documentElement.classList.remove('doc-detail-open')
+  }, [])
 
   const docVocabTerms = useMemo(() => {
     if (!vocabulary || !vocabScores) return null
@@ -319,6 +363,16 @@ export default function DocumentDetail() {
     }, 50)
   }, [doc])
 
+  const handleLegacyFind = useCallback((conn) => {
+    const searchTerm = getLegacySearchTerm(conn)
+    if (!searchTerm) return
+    setMobileTab('document')
+    setActiveQuote({ searchTerm, category: 'quote' })
+    setTimeout(() => {
+      pageReaderRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 50)
+  }, [])
+
   const prevId = numId > 0 ? numId - 1 : null
   const nextId = docs && numId < docs.length - 1 ? numId + 1 : null
 
@@ -341,95 +395,161 @@ export default function DocumentDetail() {
   const hasCrossRefs = crossRefs.length > 0 || doc.cross_refs?.length > 0
   const hasMetadata = hasSensors || hasBehaviors || hasShapes || hasWitnesses || hasEntities
 
+  const legacyContextContent = legacyConnections.length > 0 && (
+    <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-4 mb-6">
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-amber-400">Legacy Program Context</h2>
+        <Link to={`/graph?node=doc_${numId}`} className="text-[11px] text-amber-500/60 hover:text-amber-400 transition-colors">
+          View in graph &rarr;
+        </Link>
+      </div>
+      <div className="space-y-3">
+        {legacyConnections.map(conn => (
+          <div key={conn.nodeId} className="flex items-start gap-3">
+            <div className="flex-shrink-0 w-24 mt-1.5">
+              <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full"
+                  style={{ width: `${conn.weight * 100}%`, backgroundColor: conn.color }}
+                />
+              </div>
+              <div className="text-[9px] text-slate-500 mt-0.5 text-right font-mono">{conn.weight.toFixed(2)}</div>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium text-slate-200">{conn.label}</span>
+                <span className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: `${conn.color}15`, color: conn.color }}>
+                  {LAYER_LABELS[conn.layer] || conn.layer}
+                </span>
+                {getLegacySearchTerm(conn) && (
+                  <button
+                    onClick={() => handleLegacyFind(conn)}
+                    className="ml-auto text-[10px] px-2 py-1 rounded bg-amber-500/10 text-amber-400 hover:bg-amber-500/20 transition-colors cursor-pointer"
+                  >
+                    Find in text
+                  </button>
+                )}
+              </div>
+              <div className="mt-1 space-y-0.5">
+                {conn.reasons.map((r, i) => (
+                  <p key={i} className="text-xs text-slate-400 leading-relaxed">
+                    {r}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+
+  const whyThisMattersContent = (narrative?.why_it_matters || manifestEntry?.description) && (
+    <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950/20 border border-blue-500/20 rounded-lg p-5 mb-6">
+      <h2 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-blue-400 mb-2">Why This Matters</h2>
+      <p className="text-sm text-slate-200 leading-relaxed">
+        {narrative?.why_it_matters || manifestEntry?.description}
+      </p>
+    </div>
+  )
+
+  const extractedEvidenceContent = (hasSensors || hasBehaviors || hasShapes || hasWitnesses) && (
+    <div className="mb-6 py-3 px-4 bg-slate-800/30 border border-slate-700/40 rounded-lg">
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-slate-500">Extracted Evidence</span>
+        <span className="text-[10px] text-slate-600 italic">pattern-matched from text</span>
+      </div>
+      <div className="flex flex-wrap gap-x-6 gap-y-3">
+        {hasSensors && (
+          <div>
+            <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-blue-400/70 mb-1.5">Sensors</div>
+            <div className="flex flex-wrap gap-1.5">
+              {doc.sensors.map((s, i) => {
+                const match = findBestSearchTerm(s.sensor_type, doc.full_text)
+                return (
+                  <button key={i} onClick={() => handleBadgeClick(s.sensor_type, 'sensor')} className="cursor-pointer hover:brightness-125 transition-all"
+                    title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[s.sensor_type] || s.sensor_type).replace(/\|/g, ', ')}`}>
+                    <Badge color="#3b82f6">
+                      {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}{!match && ' *'}
+                    </Badge>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
+        {hasBehaviors && (
+          <div>
+            <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-amber-400/70 mb-1.5">Behaviors</div>
+            <div className="flex flex-wrap gap-1.5">
+              {doc.behaviors.map((b, i) => {
+                const match = findBestSearchTerm(b, doc.full_text)
+                return (
+                  <button key={i} onClick={() => handleBadgeClick(b, 'behavior')} className="cursor-pointer hover:brightness-125 transition-all"
+                    title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[b] || b).replace(/\|/g, ', ')}`}>
+                    <Badge color="#f59e0b">{b.replace(/_/g, ' ')}{!match && ' *'}</Badge>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
+        {hasShapes && (
+          <div>
+            <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-purple-400/70 mb-1.5">Shapes</div>
+            <div className="flex flex-wrap gap-1.5">
+              {doc.shapes.map((s, i) => {
+                const match = findBestSearchTerm(s.shape, doc.full_text)
+                return (
+                  <button key={i} onClick={() => handleBadgeClick(s.shape, 'shape')} className="cursor-pointer hover:brightness-125 transition-all"
+                    title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[s.shape] || s.shape).replace(/\|/g, ', ')}`}>
+                    <Badge color="#8b5cf6">
+                      {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}{!match && ' *'}
+                    </Badge>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
+        {hasWitnesses && (
+          <div>
+            <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-emerald-400/70 mb-1.5">Witnesses</div>
+            <div className="flex flex-wrap gap-1.5">
+              {doc.witnesses.map((w, i) => (
+                <button key={i} onClick={() => handleBadgeClick(w, 'witness')} className="cursor-pointer hover:brightness-125 transition-all"
+                  title={`Click to find "${w}" in text`}>
+                  <Badge color="#10b981">{w}</Badge>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="mt-2 text-[10px] text-slate-600">* no exact match — click to search synonym</div>
+    </div>
+  )
+
+  const desktopSummaryContent = (
+    <div className="hidden md:grid max-w-[1800px] mx-auto px-4 py-4 grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)] gap-4 border-t border-slate-800/50">
+      <div>{whyThisMattersContent}</div>
+      <div>
+        {extractedEvidenceContent}
+        {legacyContextContent}
+      </div>
+    </div>
+  )
+
   const analysisContent = (
     <>
       {/* ── "Why This Matters" ─────────────────────────────────────── */}
-      {(narrative?.why_it_matters || manifestEntry?.description) && (
-        <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950/20 border border-blue-500/20 rounded-lg p-5 mb-6">
-          <h2 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-blue-400 mb-2">Why This Matters</h2>
-          <p className="text-sm text-slate-200 leading-relaxed">
-            {narrative?.why_it_matters || manifestEntry?.description}
-          </p>
-        </div>
-      )}
+      <div className="md:hidden">{whyThisMattersContent}</div>
 
       {/* ── Document Evidence (sensors, behaviors, shapes, witnesses) ── */}
-      {(hasSensors || hasBehaviors || hasShapes || hasWitnesses) && (
-        <div className="mb-6 py-3 px-4 bg-slate-800/30 border border-slate-700/40 rounded-lg">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-slate-500">Extracted Evidence</span>
-            <span className="text-[10px] text-slate-600 italic">pattern-matched from text</span>
-          </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-3">
-            {hasSensors && (
-              <div>
-                <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-blue-400/70 mb-1.5">Sensors</div>
-                <div className="flex flex-wrap gap-1.5">
-                  {doc.sensors.map((s, i) => {
-                    const match = findBestSearchTerm(s.sensor_type, doc.full_text)
-                    return (
-                      <button key={i} onClick={() => handleBadgeClick(s.sensor_type, 'sensor')} className="cursor-pointer hover:brightness-125 transition-all"
-                        title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[s.sensor_type] || s.sensor_type).replace(/\|/g, ', ')}`}>
-                        <Badge color="#3b82f6">
-                          {s.sensor_type}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}{!match && ' *'}
-                        </Badge>
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
-            {hasBehaviors && (
-              <div>
-                <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-amber-400/70 mb-1.5">Behaviors</div>
-                <div className="flex flex-wrap gap-1.5">
-                  {doc.behaviors.map((b, i) => {
-                    const match = findBestSearchTerm(b, doc.full_text)
-                    return (
-                      <button key={i} onClick={() => handleBadgeClick(b, 'behavior')} className="cursor-pointer hover:brightness-125 transition-all"
-                        title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[b] || b).replace(/\|/g, ', ')}`}>
-                        <Badge color="#f59e0b">{b.replace(/_/g, ' ')}{!match && ' *'}</Badge>
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
-            {hasShapes && (
-              <div>
-                <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-purple-400/70 mb-1.5">Shapes</div>
-                <div className="flex flex-wrap gap-1.5">
-                  {doc.shapes.map((s, i) => {
-                    const match = findBestSearchTerm(s.shape, doc.full_text)
-                    return (
-                      <button key={i} onClick={() => handleBadgeClick(s.shape, 'shape')} className="cursor-pointer hover:brightness-125 transition-all"
-                        title={match ? `Click to find "${match}" in text` : `Inferred from: ${(BADGE_SYNONYMS[s.shape] || s.shape).replace(/\|/g, ', ')}`}>
-                        <Badge color="#8b5cf6">
-                          {s.shape}{s.mention_count > 1 ? ` (${s.mention_count})` : ''}{!match && ' *'}
-                        </Badge>
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
-            {hasWitnesses && (
-              <div>
-                <div className="text-[10px] font-mono font-bold tracking-[0.15em] uppercase text-emerald-400/70 mb-1.5">Witnesses</div>
-                <div className="flex flex-wrap gap-1.5">
-                  {doc.witnesses.map((w, i) => (
-                    <button key={i} onClick={() => handleBadgeClick(w, 'witness')} className="cursor-pointer hover:brightness-125 transition-all"
-                      title={`Click to find "${w}" in text`}>
-                      <Badge color="#10b981">{w}</Badge>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-          <div className="mt-2 text-[10px] text-slate-600">* no exact match — click to search synonym</div>
-        </div>
-      )}
+      <div className="md:hidden">{extractedEvidenceContent}</div>
+
+      {/* ── Legacy Program Context ─────────────────────────────────── */}
+      <div className="md:hidden">{legacyContextContent}</div>
 
       {/* ── Key Findings ───────────────────────────────────────────── */}
       {narrative?.key_findings?.length > 0 && (
@@ -454,48 +574,6 @@ export default function DocumentDetail() {
                 </div>
               )
             })}
-          </div>
-        </div>
-      )}
-
-      {/* ── Legacy Program Context ─────────────────────────────────── */}
-      {legacyConnections.length > 0 && (
-        <div className="bg-slate-800/40 border border-slate-700/50 rounded-lg p-4 mb-6">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-[10px] font-mono font-bold tracking-[0.2em] uppercase text-amber-400">Legacy Program Context</h2>
-            <Link to={`/graph?node=doc_${numId}`} className="text-[11px] text-amber-500/60 hover:text-amber-400 transition-colors">
-              View in graph &rarr;
-            </Link>
-          </div>
-          <div className="space-y-3">
-            {legacyConnections.map(conn => (
-              <div key={conn.nodeId} className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-24 mt-1.5">
-                  <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                    <div
-                      className="h-full rounded-full"
-                      style={{ width: `${conn.weight * 100}%`, backgroundColor: conn.color }}
-                    />
-                  </div>
-                  <div className="text-[9px] text-slate-500 mt-0.5 text-right font-mono">{conn.weight.toFixed(2)}</div>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium text-slate-200">{conn.label}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded" style={{ backgroundColor: `${conn.color}15`, color: conn.color }}>
-                      {LAYER_LABELS[conn.layer] || conn.layer}
-                    </span>
-                  </div>
-                  <div className="mt-1 space-y-0.5">
-                    {conn.reasons.map((r, i) => (
-                      <p key={i} className="text-xs text-slate-400 leading-relaxed">
-                        {r}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       )}
@@ -681,16 +759,23 @@ export default function DocumentDetail() {
   )
 
   return (
-    <div className="pb-20">
+    <div className="md:pb-20 max-md:fixed max-md:inset-x-0 max-md:top-0 max-md:bottom-14 max-md:flex max-md:flex-col max-md:overflow-hidden max-md:bg-slate-950 max-md:z-10">
+      <div className="max-md:flex-1 max-md:overflow-y-auto max-md:overflow-x-hidden">
       {/* ── Shared header ─────────────────────────────────────────── */}
       <div ref={docTopRef} className="max-w-7xl mx-auto px-4 py-6">
         {fromGraph && (
           <Link
-            to={`/graph${graphNodeId ? `?node=${graphNodeId}` : ''}`}
+            to={{
+              pathname: '/graph',
+              search: new URLSearchParams({
+                ...(graphNodeId ? { node: graphNodeId } : {}),
+                ...(graphContextNodeId ? { org: graphContextNodeId } : {}),
+              }).toString(),
+            }}
             className="flex items-center gap-2 mb-4 px-3 py-2.5 rounded-lg bg-slate-800/60 border border-slate-700/40 text-sm text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors"
           >
             <span>&larr;</span>
-            <span>Back to Network Graph</span>
+            <span>Back to Network Graph{graphContextLabel ? `: ${graphContextLabel}` : ''}</span>
           </Link>
         )}
         {fromMap && (
@@ -783,14 +868,16 @@ export default function DocumentDetail() {
           <Link to={`/map?${doc.latitude != null && doc.longitude != null ? `lat=${doc.latitude}&lng=${doc.longitude}&zoom=10&` : ''}doc=${doc.id}`} className="px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
             Map
           </Link>
-          <Link to={`/search?q=${encodeURIComponent(doc.title.split(',')[0].trim())}`} className="px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
+          <Link to={`/search?q=${encodeURIComponent(doc.title)}`} className="hidden md:inline-block px-3 py-1.5 rounded bg-slate-800/60 border border-slate-700/40 text-slate-400 hover:text-slate-200 hover:border-slate-600 transition-colors">
             Search
           </Link>
         </div>
       </div>
 
+      {desktopSummaryContent}
+
       {/* ── Mobile tab bar ────────────────────────────────────────── */}
-      <div className="md:hidden sticky top-14 z-20 bg-slate-950/95 backdrop-blur-sm border-b border-slate-700/50">
+      <div className="md:hidden sticky top-0 z-20 bg-slate-950/95 backdrop-blur-sm border-b border-slate-700/50">
         <div className="flex">
           {['analysis', 'document'].map(tab => (
             <button
@@ -810,23 +897,24 @@ export default function DocumentDetail() {
       </div>
 
       {/* ── Desktop: side-by-side ─────────────────────────────────── */}
-      <div className="hidden md:flex max-w-7xl mx-auto sticky top-14" style={{ height: 'calc(100vh - 56px - 44px)' }}>
+      <div className="hidden md:flex mx-auto sticky top-14 max-w-[1800px]" style={{ height: 'calc(100vh - 56px - 44px)' }}>
         <div className="w-[420px] lg:w-[480px] shrink-0 overflow-y-auto px-4 py-4">
           {analysisContent}
         </div>
-        <div className="flex-1 min-w-0 overflow-y-auto border-l border-slate-700/30 px-4 py-4">
+        <div className="flex-1 min-w-0 overflow-y-auto border-l border-slate-700/30 px-6 py-4">
           {documentContent}
         </div>
       </div>
 
       {/* ── Mobile: tabbed content ────────────────────────────────── */}
-      <div className="md:hidden px-4 pb-8">
+      <div className="md:hidden px-4 pb-16">
         {mobileTab === 'analysis' ? analysisContent : documentContent}
+      </div>
       </div>
 
       {/* ── Previous / Next navigation (pinned) ─────────────────────── */}
       <div className="fixed bottom-14 md:bottom-0 left-0 right-0 z-30 bg-slate-950/95 backdrop-blur-sm border-t border-slate-700/50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+        <div className="max-w-[1800px] mx-auto flex items-center justify-between px-4 py-2">
           {prevId != null ? (
             <button
               onClick={() => navigate(`/documents/${prevId}`)}

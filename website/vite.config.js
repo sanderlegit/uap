@@ -18,11 +18,8 @@ export default defineConfig({
     },
   },
   preview: {
-    host: '0.0.0.0',
+    host: '127.0.0.1',
     port: 4173,
-    allowedHosts: ['enge', '100.111.185.11', 'enge.tempel-lungfish.ts.net'],
-    proxy: {
-      '/api': 'http://localhost:3001',
-    },
+    allowedHosts: ['enge.tempel-lungfish.ts.net'],
   },
 })

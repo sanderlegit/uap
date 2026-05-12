@@ -36,7 +36,59 @@ const EDGE_LEGEND = [
   { color: '#34d399', label: 'Same Mission' },
 ]
 
-function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc, onSelectOrg, isStarred, isRead, onToggleStar }) {
+const LEGACY_SEARCH_TERMS = {
+  sandia: 'sandia',
+  wright_patterson: 'wright-patterson',
+  blue_book: 'blue book',
+  cia_oga: 'cia',
+  nro: 'satellite',
+  doe_aec: 'atomic',
+  lanl_ornl_battelle: 'los alamos',
+  lockheed_skunkworks: 'lockheed',
+  battelle: 'battelle',
+}
+
+function cleanMentionTerm(term) {
+  return (term || '')
+    .split(',')[0]
+    .replace(/\\\?\.|\.\\\?/g, '-')
+    .replace(/\.\?/g, '-')
+    .replace(/\\b|\\/g, '')
+    .replace(/[()[\]{}^$*+?|]/g, '')
+    .trim()
+}
+
+function getReasonSearchTerm(reason) {
+  const text = Array.isArray(reason) ? reason.join('; ') : reason || ''
+  const match = text.match(/Content mentions:\s*([^;(]+)/i)
+  return cleanMentionTerm(match?.[1])
+}
+
+function getLegacySearchTerm(context) {
+  if (!context) return ''
+  const reasonTerm = getReasonSearchTerm(context.reasoning || context.reason)
+  if (reasonTerm) return reasonTerm
+  const id = context.nodeId || context.id
+  if (LEGACY_SEARCH_TERMS[id]) return LEGACY_SEARCH_TERMS[id]
+  return (context.label || '').split(/\s+/)[0]?.replace(/[^\w-]/g, '').toLowerCase() || ''
+}
+
+function buildDocumentLink(docId, contextConnection) {
+  const term = getLegacySearchTerm(contextConnection)
+  return `/documents/${docId}${term ? `?search=${encodeURIComponent(term)}` : ''}`
+}
+
+function buildDocumentState(docId, contextConnection) {
+  return {
+    fromGraph: true,
+    nodeId: `doc_${docId}`,
+    graphContextNodeId: contextConnection?.nodeId,
+    graphContextLabel: contextConnection?.label,
+    graphContextSearchTerm: getLegacySearchTerm(contextConnection),
+  }
+}
+
+function DetailPanel({ node, narratives, legacyConnections, contextConnection, onClose, onSelectDoc, onSelectOrg, isStarred, isRead, onToggleStar }) {
   if (!node) return null
 
   const color = agencyColor(node.agency)
@@ -160,11 +212,11 @@ function DetailPanel({ node, narratives, legacyConnections, onClose, onSelectDoc
 
         <div className="flex flex-col gap-2">
           <Link
-            to={`/documents/${node.doc_id}`}
-            state={{ fromGraph: true, nodeId: `doc_${node.doc_id}` }}
+            to={buildDocumentLink(node.doc_id, contextConnection)}
+            state={buildDocumentState(node.doc_id, contextConnection)}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono tracking-wider hover:bg-amber-500/20 transition-colors"
           >
-            View Full Document &rarr;
+            View Full Document{contextConnection ? ` at "${getLegacySearchTerm(contextConnection)}"` : ''} &rarr;
           </Link>
           <div className="flex items-center gap-3">
             <Link
@@ -321,6 +373,17 @@ export default function LegacyWeb() {
       .filter(Boolean)
       .sort((a, b) => b.weight - a.weight)
   }, [selectedNode, legacyData, narratives])
+
+  const activeContextOrg = useMemo(() => {
+    if (!legacyData || selectedOrgs.size !== 1) return null
+    const orgId = Array.from(selectedOrgs)[0]
+    return legacyData.nodes.find(n => n.id === orgId) || null
+  }, [legacyData, selectedOrgs])
+
+  const activeContextConnection = useMemo(() => {
+    if (!activeContextOrg || !selectedDocLegacyConns.length) return null
+    return selectedDocLegacyConns.find(c => c.nodeId === activeContextOrg.id) || null
+  }, [activeContextOrg, selectedDocLegacyConns])
 
   // Resize Cytoscape when switching to graph tab on mobile
   useEffect(() => {
@@ -1114,6 +1177,7 @@ export default function LegacyWeb() {
           node={selectedNode}
           narratives={narratives}
           legacyConnections={selectedDocLegacyConns}
+          contextConnection={activeContextConnection}
           onClose={() => {
             setSelectedNode(null)
             setHoveredDocId(null)
@@ -1378,11 +1442,11 @@ export default function LegacyWeb() {
               )}
 
               <Link
-                to={`/documents/${selectedNode.doc_id}`}
-                state={{ fromGraph: true, nodeId: `doc_${selectedNode.doc_id}` }}
+                to={buildDocumentLink(selectedNode.doc_id, activeContextConnection)}
+                state={buildDocumentState(selectedNode.doc_id, activeContextConnection)}
                 className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-medium hover:bg-amber-500/20 transition-colors mb-5"
               >
-                Open Full Document &rarr;
+                Open Full Document{activeContextConnection ? ` at "${getLegacySearchTerm(activeContextConnection)}"` : ''} &rarr;
               </Link>
 
               {/* Graph connections — unique to this view */}

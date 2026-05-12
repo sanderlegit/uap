@@ -285,17 +285,7 @@ export default function Dashboard() {
           </span>
         </div>
 
-        <Link
-          to="/theories"
-          className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/15 transition-colors group"
-        >
-          <span className="text-amber-400 text-sm font-semibold">The Legacy Program</span>
-          <svg className="w-4 h-4 text-amber-500/60 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-        </Link>
-
-        <p className="mt-4 text-[10px] text-slate-500">
+        <p className="text-[10px] text-slate-500">
           Source:{' '}
           <a
             href="https://war.gov/UFO"
@@ -493,6 +483,18 @@ export default function Dashboard() {
           </>
         )}
       </section>
+
+      <div className="px-4 sm:px-6 pb-10 sm:pb-12 max-w-6xl mx-auto text-center">
+        <Link
+          to="/theories"
+          className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg border border-amber-500/30 bg-amber-500/10 hover:bg-amber-500/15 transition-colors group"
+        >
+          <span className="text-amber-400 text-sm font-semibold">The Legacy Program</span>
+          <svg className="w-4 h-4 text-amber-500/60 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </Link>
+      </div>
 
 
       {/* ────────────────────────────────────────────────────────────────

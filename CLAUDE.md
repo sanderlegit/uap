@@ -16,9 +16,19 @@
 - Pipeline: `export_data.py` exports SQLite → JSON
 
 ## Hosting
-- Tailscale network: machine `enge` at 100.111.185.11
-- Vite preview server on port 4173 with `allowedHosts: ['enge']`
-- Build: `cd website && npm run build && npm run preview`
+- Machine `enge` on Tailscale network (100.111.185.11)
+- Public URL: `https://enge.tempel-lungfish.ts.net/` via Tailscale Funnel
+- Build & serve: `cd website && npm run build`
+- Start Funnel: `/Applications/Tailscale.app/Contents/MacOS/Tailscale funnel 4173`
+- Start server: `npx vite preview --port 4173`
+
+## Hardening (internet-facing)
+- Vite preview binds to `127.0.0.1` only — not reachable on LAN or Tailscale IP directly
+- `allowedHosts` restricted to `enge.tempel-lungfish.ts.net` — rejects spoofed Host headers
+- No `/api` proxy — no path to internal services
+- Tailscale Funnel terminates TLS, hides home IP, rate-limits traffic
+- Fully static site: no server-side code, no auth, no database, no secrets at runtime
+- No source maps or sensitive files in `dist/`
 
 ## Conventions
 - Dark theme (slate-950 bg), intelligence-briefing aesthetic
@@ -31,7 +41,8 @@
 - Use subagents for research tasks (web search, data gathering)
 - Parallel agent orchestration for independent work streams
 - Always rebuild and verify before pushing: `npm run build`
-- Preview on Tailscale: `npx vite preview --host 0.0.0.0 --port 4173`
+- Local dev: `npx vite --host 0.0.0.0 --port 5173`
+- Public preview: see Hosting section (never use `--host 0.0.0.0` for preview when internet-facing)
 
 ## UI Patterns (User Preferences)
 - Card-expand pattern preferred (collapsed summary → click to expand detail)

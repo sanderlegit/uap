@@ -40,21 +40,36 @@ function SectionSidebar({ theories }) {
   const sections = useMemo(() => buildSidebarSections(theories), [theories])
 
   useEffect(() => {
-    const els = sections.map(s => document.getElementById(s.id)).filter(Boolean)
-    if (!els.length) return
+    let observer
+    let prevCount = 0
 
-    const observer = new IntersectionObserver(
-      entries => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
-        if (visible.length) setActiveId(visible[0].target.id)
-      },
-      { rootMargin: '-80px 0px -60% 0px', threshold: 0 }
-    )
+    function setup() {
+      const els = sections.map(s => document.getElementById(s.id)).filter(Boolean)
+      if (els.length === prevCount) return
+      prevCount = els.length
+      if (!els.length) return
 
-    els.forEach(el => observer.observe(el))
-    return () => observer.disconnect()
+      if (observer) observer.disconnect()
+      observer = new IntersectionObserver(
+        entries => {
+          const visible = entries
+            .filter(e => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+          if (visible.length) setActiveId(visible[0].target.id)
+        },
+        { rootMargin: '-80px 0px -60% 0px', threshold: 0 }
+      )
+      els.forEach(el => observer.observe(el))
+    }
+
+    setup()
+    const mutObs = new MutationObserver(setup)
+    mutObs.observe(document.body, { childList: true, subtree: true })
+
+    return () => {
+      if (observer) observer.disconnect()
+      mutObs.disconnect()
+    }
   }, [sections])
 
   function scrollTo(id) {
